@@ -1,0 +1,16 @@
+# Runtime history and generated output
+/work/
+/outputs/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Temporary editor and operating-system files
+*.tmp
+*.bak
+*~
+.DS_Store
+Thumbs.db
+
+# Accidental command-output draft
+/Export one event as a label-free plain draft,.txt
