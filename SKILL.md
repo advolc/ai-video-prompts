@@ -83,6 +83,9 @@ description: 为AI短片和动画提供灵感孵化、剧本精修、视觉风�
 | 寻找真实武学/影视武指参考、提炼发力与接触措辞（用户授权后） | [动作参考卡系统](references/action-reference-system.md) |
 | 生成有深度、符合角色DNA的台词提示词（用户授权后） | [台词深度引擎](references/dialogue-engine.md)；[台词参考卡库](references/dialogue-reference-cards.md) |
 | 设计精准的微表情、神态与心理动作（用户授权后） | [表演与心理动作系统](references/performance-and-psychology.md) |
+| 文戏生活动作、已有物件的隐性叙事（默认情境处理） | [生活微动作](narrative/life-actions.md)；[道具叙事](narrative/prop-storytelling.md)，共用整场一个信号 |
+| 既定天气/光源对当前动作的影响 | [环境叙事干预](visual/environment-interaction.md) |
+| 主观状态驱动的摄影与镜头介质 | [主观情绪镜语](production/camera-and-rhythm.md)，基础轴线仍用原运镜页 |
 
 单项问题只读相关部分，不强制交整套文件。Lite只应用已载入核心约束与本次平台条件，不为短提示词读全工程库。完整任务按加载图分阶段读取所需小节：先骨架再视觉/表演，再做生成交接；沿用已读摘要，不在同一轮强制塞满交付模板、一致性、管线等所有链接。默认输出纯文本不豁免相应内部检查。
 
@@ -98,9 +101,9 @@ description: 为AI短片和动画提供灵感孵化、剧本精修、视觉风�
 |---|---|
 | core | [按需加载图](core/load-graph.md) P0；[模块契约](core/module-contract.md) P0；[冲突裁决](core/precedence-rules.md) P0；[维护与执行入口](core/README.md) P0；[任务路由](core/task-router.md) P0 |
 | ux | [对话与交互总入口](ux/conversation-rules.md) P0；[实时反馈归因](ux/feedback-interpretation.md) P0；[使用模式](ux/modes.md) P0；[五分钟开始](ux/onboarding.md) P0；[参考输入分类](ux/reference-intake.md) P0；[协作角色](ux/roles.md) P0 |
-| visual | [色彩系统](visual/color-system.md) P0；[构图系统](visual/composition.md) P0；[光线系统](visual/lighting.md) P0；[风格卡空壳](visual/style-library/_template.md) P1；[赛博都市](visual/style-library/cyberpunk.md) P0；[风格卡索引](visual/style-library/index.md) P0；[水墨留白](visual/style-library/ink-wash.md) P0；[现实裂隙](visual/style-library/kon.md) P0；[天气与群体](visual/style-library/kurosawa.md) P0；[晴空与距离](visual/style-library/shinkai.md) P0；[极简巨物](visual/style-library/villeneuve.md) P0；[都市距离](visual/style-library/wong-kar-wai.md) P0；[单色寓言江湖](visual/style-library/zhang-yimou.md) P0；[参考风格转译](visual/style-translation.md) P0 |
-| narrative | [氛围、空镜与仪式](narrative/atmosphere-and-ritual.md) P1；[人物弧光与选择](narrative/character-arc.md) P1；[对话场景组织](narrative/dialogue-scene.md) P1；[题材混搭](narrative/genre-mashup.md) P1；[剧本与可拍动作](narrative/screenplay.md) P1；[叙事结构与节奏](narrative/structure.md) P1；[主题与母题](narrative/theme-and-motif.md) P1；[世界规则与日常](narrative/worldbuilding.md) P1 |
-| production | [批量生成与筛选](production/batch-and-selection.md) P2；[剪辑语法](production/editing-grammar.md) P1；[模型与工作方式决策树](production/model-decision-tree.md) P2；[针对性负面约束](production/negative-prompts.md) P2；[低成本预演](production/previz.md) P1；[提示词工程与平台语法](production/prompt-engineering.md) P2；[镜头脚本与拍摄清单](production/shot-list.md) P1；[故事板](production/storyboard.md) P1；[生成到交付工具链](production/toolchain.md) P2 |
+| visual | [色彩系统](visual/color-system.md) P0；[构图系统](visual/composition.md) P0；[光线系统](visual/lighting.md) P0；[风格卡空壳](visual/style-library/_template.md) P1；[赛博都市](visual/style-library/cyberpunk.md) P0；[风格卡索引](visual/style-library/index.md) P0；[水墨留白](visual/style-library/ink-wash.md) P0；[现实裂隙](visual/style-library/kon.md) P0；[天气与群体](visual/style-library/kurosawa.md) P0；[晴空与距离](visual/style-library/shinkai.md) P0；[极简巨物](visual/style-library/villeneuve.md) P0；[都市距离](visual/style-library/wong-kar-wai.md) P0；[单色寓言江湖](visual/style-library/zhang-yimou.md) P0；[参考风格转译](visual/style-translation.md) P0；[环境叙事干预](visual/environment-interaction.md) P1 |
+| narrative | [氛围、空镜与仪式](narrative/atmosphere-and-ritual.md) P1；[人物弧光与选择](narrative/character-arc.md) P1；[对话场景组织](narrative/dialogue-scene.md) P1；[题材混搭](narrative/genre-mashup.md) P1；[剧本与可拍动作](narrative/screenplay.md) P1；[叙事结构与节奏](narrative/structure.md) P1；[主题与母题](narrative/theme-and-motif.md) P1；[世界规则与日常](narrative/worldbuilding.md) P1；[生活微动作](narrative/life-actions.md) P1；[道具隐性叙事](narrative/prop-storytelling.md) P1 |
+| production | [批量生成与筛选](production/batch-and-selection.md) P2；[剪辑语法](production/editing-grammar.md) P1；[模型与工作方式决策树](production/model-decision-tree.md) P2；[针对性负面约束](production/negative-prompts.md) P2；[低成本预演](production/previz.md) P1；[提示词工程与平台语法](production/prompt-engineering.md) P2；[镜头脚本与拍摄清单](production/shot-list.md) P1；[故事板](production/storyboard.md) P1；[生成到交付工具链](production/toolchain.md) P2；[主观情绪镜语](production/camera-and-rhythm.md) P1 |
 | sound | [整体声音设计](sound/sound-design.md) P1 |
 | post | [音频后期](post/audio-post.md) P2；[后期调色](post/color-grading.md) P2；[基础合成](post/compositing.md) P2；[母版与平台交付](post/output-specs.md) P2；[标题与字幕](post/titles-and-subtitles.md) P2；[特效后期合成](post/vfx-comp.md) P2 |
 | distribution | [封面与标题](distribution/cover-and-title.md) P3；[多平台版本改编](distribution/multi-platform-adaptation.md) P3；[平台能力与交付矩阵](distribution/platform-matrix.md) P2；[发布策略](distribution/release-strategy.md) P3 |
@@ -118,6 +121,14 @@ description: 为AI短片和动画提供灵感孵化、剧本精修、视觉风�
 
 用户明确指定风格时才加载风格模块。通用模块管武指、横屏与制作交接；风格模块提供选择与例证，二者冲突时先遵循用户当前设定，再看适用条件，不照搬参考。效果分层细则以能力特效模块为准，接触拆段细则以生成段模块为准，避免在不同文件维护两套定义。
 
+### 默认静默的情境细节推演
+
+创意与场次已定或获准代拟后，按人物当下状态、现场物件、材料与光源静默细化，不抽固定词库，不另问“是否开启”：文戏按[生活微动作](narrative/life-actions.md)与[道具叙事](narrative/prop-storytelling.md)，天气/光源按[环境干预](visual/environment-interaction.md)，既定交汇按[打击上下文](references/hit-feel.md#全风格打击上下文推演)，主观摄影按[情绪镜语](production/camera-and-rhythm.md)，声音按[心理声学](sound/sound-design.md#主观心理声学按角色当下状态推演)取当前最相关部分。不是每轮全读；候选无依据或与极简/静止要求冲突就不加。
+
+默认细节不增加核心必执行：固定描述与原因果链细化直接融合，非关键信号共用原2条氛围；新增独立动作/关键状态变化不能免费加塞，默认舍弃候选或按原事件处理。生活与道具模块整场共用一个角色一个新增小动作，不能逐镜累加。执行[情境细节契约](core/module-contract.md#情境细节的静默推演与负荷边界)。
+
+这项基础处理无需单独授权，也不触发质感推销；不自动扩展剧情、胜负、身份/关键道具或深度台词/心理分析。对超出既定事实范围的全面造型/陈设代拟，仍遵守下节原授权规则。纯文本正文不解释推演过程，精确后期与未核原生声音按三层分流，不冒充模型已执行。
+
 ### 主动识别与推荐协议
 
 先做骨架（目标、动作因果、空间与接触），再选血肉（动作参考、台词、表演）；无灵感先向导和大纲，不在首次抽卡就加载所有高级模块。高级模块只在用户明确点名要求该能力，或明确接受推荐后读取与应用；点名一个模块不授权其余模块。未授权时仍做原有基本武指与可见化转写，不能把基础质量扣留成“先开模块才修”。
@@ -132,7 +143,7 @@ description: 为AI短片和动画提供灵感孵化、剧本精修、视觉风�
 
 上述普通模块打包仅限两个强关联模块，不因文戏标签自动加载。后台pending_offer记录两项及范围；用户明确接受整包才授权两项，只选台词或表演时只开所选项，含混回应不算同意。整包算一次推荐、一次忽略，不拆成两道选择题；原有短输入静默、两次忽略停推荐、拒绝不再推和六模块加载预算继续有效，两项按两个实际模块计数。表演反应复用原动作或占原3+2额度，不能额外加微相清单；不降低未授权基础稿的质量。
 
-全维度质感探针在识别到基础设定且尚无相应授权时触发，不必等到完整大纲或严重短板出现；先选与当前画面最相关的维度举例，不把酒馆、烛火、磨损或灰尘当作其他题材的默认设定。它是一项完整的代拟选择，不受普通推荐最多两个模块的打包上限约束；获准后按任务调配所需专业规则，仍遵守单轮加载预算与动作负荷。已获授权直接补齐，已拒绝或明确关闭推荐时不重复询问。
+全维度质感探针仅在需要扩展已定事实之外的造型、陈设等设计范围且尚无相应授权时触发，不必等到完整大纲或严重短板出现；先选与当前画面最相关的维度举例，不把酒馆、烛火、磨损或灰尘当作其他题材的默认设定。它是一项完整的代拟选择，不受普通推荐最多两个模块的打包上限约束；获准后按任务调配所需专业规则，仍遵守单轮加载预算与动作负荷。已获授权直接补齐，已拒绝或明确关闭推荐时不重复询问。
 
 不因出现情绪词、关系转折或直白台词就认定必有问题；有意的直白威吓、沉默和简单测试也成立。Lite模式不追加卡表或多轮问卷，仅在存在明确短板时一句推荐；用户说“直接出/只要提示词”则本次不插推荐。
 
@@ -142,7 +153,7 @@ description: 为AI短片和动画提供灵感孵化、剧本精修、视觉风�
 
 “需要/你看着办”须对应本次全维度质感问题或已有明确同等授权；若回答的是单独场景、台词或动作问题，只确认该问题。解除的是专业细节代拟的克制限制，保留用户已定身份、剧情目标、核心动作和结局；若这些创意仍未确定且未授权代拟，先补相应内容，不用质感授权替代剧情授权。声音设计照常补齐，原生生成与后期制作仍按实际平台能力分流。拒绝则保持基础版并停止本项推荐；未回复继续保持未授权，不能自动补为同意。
 
-每阶段只读取当前获准模块的相关小节，留下“选定动作/对白/表演信号、事实边界、后期分流”短摘要再进入下一阶段；不同时堆满所有高级参考，不轮轮重读整库。只批准动作时，动作模块中提到台词模块的链接不构成读取授权。
+每阶段只读取当前获准模块或本轮默认基础情境模块的相关小节，留下“选定动作/对白/表演信号、事实边界、后期分流”短摘要再进入下一阶段；不同时堆满所有高级参考，不轮轮重读整库。只批准动作时，动作模块中提到台词模块的链接不构成读取授权。
 
 **短输入静默闸门。** 当前用户指令正文去空白后少于20个字符时，本轮暂停普通主动探针；仅因字数短不能屏蔽已触发的全维度质感探针，例如“两名剑客在酒馆打斗”。但用户明确说“直接出提示词/别推荐/只要能复制的”，或已拒绝该质感提议、主动推荐已关闭时，不再主动询问，按已获授权的范围输出，未授权部分保持基础版。字符数不是判断需求完整、选择 Lite 或批准高级模块的依据。对“B”“换一批”“继续”“没有灵感”先按已有向导/对话状态处理，不抢跑输出完整方案；附件和前文中的长剧本仍要读。明确的“加载台词引擎”等短指令照常视为该模块的主动请求，不因静默而拒绝执行。“需要/你看着办”等短回复先匹配待回应问题，不能因短输入丢失已给出的授权。短输入本身只影响本轮；明确“别推荐/直接出”按上文关闭本次对话的主动推荐。缺少会改变交付的关键条件时仍可集中补问，不以静默为由编造平台、身份或跳过大纲确认。
 
