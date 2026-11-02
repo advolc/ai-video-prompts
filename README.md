@@ -240,7 +240,7 @@ python -X utf8 ai-video-prompts/scripts/validate_modules.py
 
 **只有一句模糊想法，也能用吗？**
 
-可以。先走灵感向导，支持自由输入、换批和跳级；需求已经明确时直接执行，不强行填写整套问卷。
+可以。先走灵感向导，默认按世界、空间、关系、奇观逐维拼装，一轮只问一维，支持自由输入与换批；“全由你定”也逐轮代选汇报。用户明确要求跳步或直接给完整方案时遵从；已有完整需求则直接执行，不重做问卷。
 
 **必须提供参考图吗？**
 
@@ -262,7 +262,7 @@ python -X utf8 ai-video-prompts/scripts/validate_modules.py
 
 ## 示例与方法来源
 
-动作方法、跨题材规则及原创案例的证据范围见[方法来源与继续学习边界](references/source-scope.md)。[不良人参考模块](references/styles/buliangren/methods.md)用于分析空间、受力与节奏，按需启用；发布版保留文字拆解，原片观察与原创编排分别记录。
+动作方法、跨题材规则及原创案例的证据范围见[方法来源与继续学习边界](references/source-scope.md)。[不良人参考模块](references/styles/buliangren/methods.md)保留空间、受力与节奏方法及原创编排，按需启用。旧原稿和逐段参考拆解另存独立历史资料包，不是安装或日常使用的依赖；现行填写示例和制作备注仍在 examples/。
 
 ## 反馈与改进
 
