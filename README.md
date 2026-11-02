@@ -1,3 +1,4 @@
+👉 **[点击这里观看：系统完整使用与生成效果演示（视频）[sha256:9df3727d248c52c17ca898beef5a954fd277cea78a33d6970c0207fffebcad31]](https://github.com/advolc/ai-video-prompts/releases/download/video-demo/ai-video-prompts_._.mp4)**
 # AI生成视频提示词 Skill
 
 > 👉 **不想看代码？** 把仓库完整下载保存，再把 `SKILL.md` 和本轮需要的规则文件提供给支持附件阅读的大模型（如 ChatGPT / Claude / 豆包），对它说：**“使用 $ai-video-prompts 帮我写个打戏”**。让它读取规则后在后台推演，最后只交付能直接复制的、自足的白话纯文本提示词。
