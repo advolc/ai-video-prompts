@@ -19,6 +19,8 @@ description: 为AI短片和动画提供灵感孵化、剧本精修、视觉风�
 
 按[加载图](core/load-graph.md)单轮新增内容模块不超过6个，按依赖和优先级筛选；微调复用已读摘要。不可用静默截断跳过核心质检或必需依赖。
 
+按[模型能力路由](core/task-router.md#模型能力路由)选择full/lean/unknown；无法核实按lean，单轮新读≤3且不读可选深层。用户明确“展开XX”后局部升级，full仍≤6；精简不删已要求的多段、对白、表演或必要承接，未定规模的简短任务才默认一镜一主动作。实际代定在复制区外用一句人话交代取舍与升级方式，见[代定告知](ux/conversation-rules.md#人话与边界)。
+
 ### 规则不可见铁律
 
 默认不向创作用户展示模块名、规则编号、加载图、裁决表、验收清单和内部待核标记，只交所需结果与必要的人话边界。主动要求看结构/规则/工程表时才展开。仓库维护属于结构任务，可报告文件与检查。所有交互以[对话规则](ux/conversation-rules.md)为入口。
@@ -104,7 +106,7 @@ description: 为AI短片和动画提供灵感孵化、剧本精修、视觉风�
 | visual | [色彩系统](visual/color-system.md) P0；[构图系统](visual/composition.md) P0；[光线系统](visual/lighting.md) P0；[风格卡空壳](visual/style-library/_template.md) P1；[赛博都市](visual/style-library/cyberpunk.md) P0；[风格卡索引](visual/style-library/index.md) P0；[水墨留白](visual/style-library/ink-wash.md) P0；[现实裂隙](visual/style-library/kon.md) P0；[天气与群体](visual/style-library/kurosawa.md) P0；[晴空与距离](visual/style-library/shinkai.md) P0；[极简巨物](visual/style-library/villeneuve.md) P0；[都市距离](visual/style-library/wong-kar-wai.md) P0；[单色寓言江湖](visual/style-library/zhang-yimou.md) P0；[参考风格转译](visual/style-translation.md) P0；[环境叙事干预](visual/environment-interaction.md) P1 |
 | narrative | [氛围、空镜与仪式](narrative/atmosphere-and-ritual.md) P1；[人物弧光与选择](narrative/character-arc.md) P1；[对话场景组织](narrative/dialogue-scene.md) P1；[题材混搭](narrative/genre-mashup.md) P1；[剧本与可拍动作](narrative/screenplay.md) P1；[叙事结构与节奏](narrative/structure.md) P1；[主题与母题](narrative/theme-and-motif.md) P1；[世界规则与日常](narrative/worldbuilding.md) P1；[生活微动作](narrative/life-actions.md) P1；[道具隐性叙事](narrative/prop-storytelling.md) P1 |
 | production | [批量生成与筛选](production/batch-and-selection.md) P2；[剪辑语法](production/editing-grammar.md) P1；[模型与工作方式决策树](production/model-decision-tree.md) P2；[针对性负面约束](production/negative-prompts.md) P2；[低成本预演](production/previz.md) P1；[提示词工程与平台语法](production/prompt-engineering.md) P2；[镜头脚本与拍摄清单](production/shot-list.md) P1；[故事板](production/storyboard.md) P1；[生成到交付工具链](production/toolchain.md) P2；[主观情绪镜语](production/camera-and-rhythm.md) P1 |
-| sound | [整体声音设计](sound/sound-design.md) P1 |
+| sound | [整体声音设计](sound/sound-design.md) P1；[角色音色设计](sound/voice-design.md) P1（用户明确请求或接受推荐，非默认加载） |
 | post | [音频后期](post/audio-post.md) P2；[后期调色](post/color-grading.md) P2；[基础合成](post/compositing.md) P2；[母版与平台交付](post/output-specs.md) P2；[标题与字幕](post/titles-and-subtitles.md) P2；[特效后期合成](post/vfx-comp.md) P2 |
 | distribution | [封面与标题](distribution/cover-and-title.md) P3；[多平台版本改编](distribution/multi-platform-adaptation.md) P3；[平台能力与交付矩阵](distribution/platform-matrix.md) P2；[发布策略](distribution/release-strategy.md) P3 |
 | management | [项目协作与交接](management/collaboration.md) P2；[项目级反馈循环](management/feedback-loop.md) P2；[项目管理空壳](management/project-templates.md) P2；[版本与回滚](management/version-control.md) P2 |
