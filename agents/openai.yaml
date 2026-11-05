@@ -1,4 +1,0 @@
-interface:
-  display_name: "AI生成视频提示词skill"
-  short_description: "灵感、剧本、视觉、打戏、AI视频提示词及后期交接"
-  default_prompt: "使用 $ai-video-prompts，根据我的想法或参考，按需完成灵感、剧本、视觉与视频制作交接；默认直接给能复制的自足白话提示词。"
