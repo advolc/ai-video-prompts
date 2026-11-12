@@ -1,56 +1,63 @@
-# 模型适配器
+# Model Adapters
 
-旧版技能的平台矩阵几乎全是“待核实”。本文件夹用一套方法替代它：简短的能力检查表、每项答案如何改变提示词的对照表，以及每个模型一份、**仅依据已核实来源或自己的试片**填写的文件。
+v1's platform matrix was almost entirely "to verify." v3 replaces it with a method: a capability checklist, a table that says how each answer changes the prompt, and an adapter template that may be filled **only from verified sources or your own test clips**. Nothing here claims what any specific model can do; capabilities change quickly.
 
-这里不宣称任何具体模型具备什么能力。模型能力变化很快；依赖某条记录前，先查当前官方文档或做一次测试。
+## 1. Capability checklist (answer per model, with a date)
 
-## 1. 能力检查表（逐模型作答，记录日期）
-
-| # | 问题 | 核实方法 |
+| # | Question | How to verify |
 |---|---|---|
-| 1 | 最大与常用片段时长 | 官方文档或界面 |
-| 2 | 仅单镜头，还是一次生成可包含多镜头？ | 先查文档，再测试 |
-| 3 | 支持哪些参考输入：图片、视频、音频；数量多少，各有什么用途 | 先查文档，再测试 |
-| 4 | 首帧、尾帧，还是两者都支持 | 文档 |
-| 5 | 原生音频：环境/音效、对白、口型同步（三项分别回答） | 先查文档，再测试 |
-| 6 | 效果最好的提示词语言 | 先查文档，再做A/B测试 |
-| 7 | 是否有独立负面提示词栏？ | 界面 |
-| 8 | 摄影控制：仅文字，还是有真实参数？ | 界面 |
-| 9 | 分辨率、画幅、帧率选项 | 界面 |
-| 10 | 提示词长度表现（长提示词会被截断或稀释吗？） | 测试 |
+| 1 | Maximum and typical clip duration | Official docs or the interface |
+| 2 | Single shot only, or several shots in one generation | Docs, then a test |
+| 3 | Reference inputs accepted (image, video, audio), how many, what each is used for | Docs, then a test |
+| 4 | First frame, last frame, or both | Docs |
+| 5 | Native audio: ambience/effects, **speech**, **lip sync** (three separate answers) | Docs, then a test |
+| 6 | Prompt language(s) that work best | Docs, then an A/B test |
+| 7 | Separate negative-prompt field | Interface |
+| 8 | Camera control: text only, or real parameters | Interface |
+| 9 | Resolution, aspect, frame rate options | Interface |
+| 10 | **Prompt length behavior** (truncated, diluted, or fully used) | Test with the length ladder (`evals/cases.md`, case 10) |
+| 11 | **Cinematography vocabulary** the model responds to (lens, grain, halation, rim light, handheld) | Test with case 9 |
+| 12 | **Fine face control** (gaze, brow, micro-flicker) by shot size | Test with case 12 |
 
-## 2. 每项答案怎样改变写法
+## 2. How each answer changes what you write
 
-| 如果模型…… | 则 |
+| If the model... | Then |
 |---|---|
-| 生成单个短镜头 | 每段一个主要交互；用接缝台账维持连续；每次首句都自足 |
-| 一次生成多个镜头 | 在一条提示词内写带时间范围的简短镜头表；每镜保留一条接触链；单次生成内部的连续性交给模型，因此固定身份和空间锚点写一次，再检查结果；不同次生成之间仍需接缝承接 |
-| 接受多份参考输入 | 在控制备注中说明每份参考的用途（身份、动作、场景、声音）；仍保留文字锚点；不能用脸部肖像代替服装或兵器接触角度 |
-| 接受首帧和/或尾帧 | 使用前按计划检查画面（左右、支撑、手位、损毁）；描述两帧之间的运动，不重复描述静帧 |
-| 支持原生对白 | 生成正文只放选定短句、说话者和动作触发；深度台词卡留备注（见 `dialogue-engine.md` 第9节）；实际试听确认同步 |
-| 有原生音频，但对白未核实 | 只写环境与接触音；台词转后期 |
-| 没有原生音频 | 声音方案全部进入制作备注 |
-| 更适合英文（或中文）提示词 | 用该语言写提示词；设计笔记用用户的语言；不同语言间保持人物姓名一致 |
-| 有负面提示词栏 | 最多放两个简短排除项；正文仍用正面表述约束 |
-| 只有文字摄影控制 | 用自然句子描述相机关系，绝不用伪参数 |
-| 会截断或稀释长提示词 | 先删竞争任务；保留身份和接触链；其他移入备注 |
+| Accepts long prompts | Extended in full |
+| Truncates or dilutes long prompts | Use the largest tier that holds; sacrifice in the order set in `core/pipeline.md` |
+| Generates one short single shot | One Tier A chain per clip; self-contained first sentences; seams carry continuity |
+| Generates several shots in one pass | Write the look anchor and subject lock once, then cut language (`lens/output-skeletons.md` section 7) |
+| Accepts several reference inputs | Say in the control notes what each reference is for; keep text anchors; a face portrait does not stand in for costume or weapon contact angles |
+| Takes first and/or last frames | Check the frame against the design; describe the motion between frames |
+| Supports native speech | Lines inline with delivery; voice script optional |
+| Has native audio but unverified speech | Lines inline for mouth timing plus a voice script; sync untested |
+| Has no native audio | Voice script outside the block; ambience as one line |
+| Responds well to cinematography vocabulary | Use the optics/light terms freely in the look anchor |
+| Ignores cinematography vocabulary | Rely on depiction ("a thin orange edge on his hair"), keep terms minimal |
+| Prefers English or Chinese | Write the prompt in that language; keep names consistent |
+| Has a negative field | At most two short exclusions there; the body stays positive |
+| Has only text camera control | Camera relationships in natural sentences, never pseudo-parameters |
+| Renders fine facial detail poorly | Use the fallback order in `lens/face-pass.md` section 7 |
 
-## 3. 适配器文件模板
+## 3. Adapter file template
 
-创建 `models/<model>-<version>.md`。只填写核实过的内容。
+Create `models/<model>-<version>.md` (copy `_adapter-template.md`). Fill only what you have verified. An entry without a date and a source is not an entry. When a model updates, mark the old entry "superseded"; do not edit it into the new one.
 
-```
-# <模型名称与版本>
-核实日期：<日期>   来源：<官方文档链接或“自行测试，N个片段”>
-检查表答案（1—10）：……
-有效做法：……（附产生该结果的提示词）
-失败做法：……（附提示词和最早错误类型）
-有帮助/有负面影响的措辞：……
-待解问题：……
-```
+## 4. Status
 
-适配器规则：没有日期和来源的记录不算有效记录。模型名称不等于版本。模型更新时，把旧记录标为“已被取代（superseded）”，不要把旧记录直接改成新版记录。
+No adapters have been verified yet. Run `evals/cases.md` on your model and fill in the first adapter from the results.
 
-## 4. 当前状态
+## 5. Appendix: v1 decision tree (work method, not a capability score)
 
-尚无适配器经过核实。在你的模型上运行 `evals/cases.md`，根据结果填写第一份适配器。
+Each node first checks that the current mode supports it; previews and pre-vis are not guarantees.
+
+| Primary need | Candidate path | Fallback |
+|---|---|---|
+| Character consistency | A qualified reference (image-to-video or character reference); with none, strong text anchors or build the asset first | Fix asset angles or costume first; avoid conflicting multi-image references |
+| Complex action and contact | Fewer concurrent events; split events; use first/last poses or controllable motion references when supported | Split contact phases, fix the camera, use a white-model or composite; do not demand a last frame |
+| Style exploration | Text-to-video, or text-to-image first to compare signatures | Fix the scene, change one dimension at a time, then lock the character |
+| Continuous long take | Define the continuous space first, then first/last frames or segment handoff by support | First/last frames do not guarantee the path between; interpolation adds samples, not plot or contact |
+| Exact lip sync | A dedicated lip-sync workflow, a qualified audio track, close shots | Split into dedicated dialogue shots, or voice-over; do not demand exact micro-expression in a fight clip |
+| Pure atmosphere | Text-to-video, steady camera, one visible change | Reduce detail, use a still with slight motion or post; do not pad with empty shots |
+
+Order: user goal → available assets → interface capability → cost → pilot results. One brand's versions and hosting platforms may differ; unknown capability is internal "to verify", and to the user say "I'll work from the settings you can actually choose." Never silently downgrade a user's explicit goal.

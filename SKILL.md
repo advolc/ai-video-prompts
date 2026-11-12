@@ -1,72 +1,83 @@
 ---
 name: ai-video-prompts
-description: 为AI视频模型（Sora、Veo、Kling、Seedance/即梦、Runway、Hailuo、Wan等）设计并编写提示词。适用于打斗/动作编排、对白与潜台词场景、人物表演与微表情、多片段连续性，以及把剧本或想法转成可直接用于生成的纯文本。触发词：视频提示词、分镜、打戏、武打、台词、潜台词、微表情、连续性、剧本转提示词。
+description: Director-level design plus cinematic prompt writing for AI video models (Sora, Veo, Kling, Seedance/Jimeng, Runway, Hailuo, Wan, etc.). Use for any request to write, design, upgrade, or storyboard AI video prompts - action and fight choreography, dialogue and power-dynamic scenes, character performance and micro-expressions, multi-clip continuity, or turning a script into generation-ready text. Delivers vivid, camera-recordable Extended prompts by default. 触发词：视频提示词、分镜、打戏、台词、潜台词、微表情、肢体语言、质感、剧本转提示词。
 ---
 
-# AI视频提示词
+# AI Video Prompts v3
 
-把场景想法或剧本转成视频模型可生成的纯文本提示词。方法是：先设计**可见、符合物理关系**的内容，再把每个片段写成一段自然语言。本技能的其余内容都为此服务。
+Deep director-level thinking stays **internal**. What leaves the skill is **pure cinematic execution**: one vivid, physical, camera-recordable prompt per clip, with real optics, light, skin, face, body, and speech.
 
-## 工作流程
+## The pipeline: three rooms
 
-1. **收集信息（一次完成）。** 只收集会改变结果的信息：场景的创作核心、目标模型（或“未知”）、片段时长，以及现有输入（参考图、首尾帧、原生音频）。一次集中询问。缺项若不影响结果，就作出假设，标注为“假设”，然后继续。
-2. **内部设计。** 推演选择、接触、支撑、状态，以及存在对白时的台词意图与表演。按下表读取参考文件。设计笔记绝不进入提示词。
-3. **按负荷拆分。** 一个片段承载一个主要交互（见“负荷”）。
-4. **编写。** 每个片段写成一段自足的纯文本。遵循 `references/delivery.md`。
-5. **自检。** 执行 `references/delivery.md` 中的检查表。修正后再交付。
-6. **交付。** 先给提示词。备注（假设、待测试项、后期事项）放在复制区之外。结尾最多提出一个可选下一步；用户忽略过的建议不要重复。
+1. **Director's Room (design).** Run the deep systems at full depth: choices and contact causality, the four-layer dialogue engine, psychological action, status and power, continuity seams. Output is an internal design record. It never appears in the prompt. See `core/pipeline.md`.
+2. **Lens (translation).** Convert the design into statements a camera could record, then enrich with five passes: optics, physical light, skin and material, face, body and status. See `lens/lens-layer.md`.
+3. **Prompt (output).** Write the **Extended** prompt by default (`lens/output-skeletons.md`), lint it (`scripts/lint_prompt.py`), deliver it. Notes sit outside the copy block.
 
-## 不可变通的规则
+## Defaults (change only when the user asks)
 
-1. **不得擅自编造创作核心。** 剧情、结局、胜负、人物身份和标志性招式由用户决定。缺项若会改变这些，就问一次；用户说“你定”时，只在授权范围内决定。否则把选项作为候选，不能冒充已定事实。
-2. **只有可见内容进入模型。** 情绪、潜台词、理论术语和模块名称留在设计笔记中。提示词只承载身体、物件、空间、运动，以及支持时的声音。
-3. **先接触，后结果。** 身体只有在受到实际作用力后才作出受力反应。支撑、接触和结果必须可追溯。先修正动作编排，再加光效、震动或粒子。
-4. **每段只保留一个主要交互。** 见“负荷”。
-5. **每段都交接结束状态。** 位置与朝向、支撑与姿态、持有物、伤势与体力、能力状态、环境状态。下一段从这里开始。
-6. **区分已核实与假设。** 平台功能只有经用户确认，或查过当前官方文档，才能称为“支持”。提示词只有实际生成过片段，才能称为“已测试”。绝不承诺成功率。
-7. **保护用户明确指定的目标。** 指定招式、必须保留的面部特写、选定台词，都不能静默降级。若与其他要求冲突，给出2—3个选项并等待选择。用户已授权某类降级时，按授权执行并说明改了什么。
+- **Depth: on.** Every depth system the scene calls for is used. There is no opt-in ladder. "short", "lite", "quick", "简版" lowers depth and length to the Compact tier.
+- **Length: Extended.** Fill every slot of the skeleton at full richness, up to the target model's prompt limit. If the model's limit is lower, fit the largest version that fits and say so in one line.
+- **Dialogue: spoken, inline.** Lines go into the prompt as quoted speech with delivery cues. See `dialogue/`.
+- **Language:** the prompt is written in the language best supported by the target model; if unknown, the user's language. Design notes use the user's language.
 
-## 优先级（唯一的裁决顺序）
+## Rules that do not bend
 
-规则冲突时，上层优先。其他文件不得另设优先权。
+1. **Do not invent the story.** Plot, outcome, who wins, who knows what, character identity and established look, plot-bearing objects, injuries, world rules, and any move, line, or face target the user named are **locked**. If a gap would change them, ask once; if the user delegates ("you decide"), decide inside that scope only.
+2. **Texture is yours to enrich.** Anything that changes how a moment looks, sounds, or feels without changing what happens is **open**: lens, grain, light, skin, hair, fabric, breath, posture, prop business with ordinary setting props, ambient motion, speech rhythm. Add it generously. Note notable additions in one line outside the copy block so the user can veto. See `core/pipeline.md` for the full locked/open/gray split.
+3. **Depict, never specify.** Every sentence in the prompt describes something a camera or microphone would capture. No conditionals, no negations, no explanation, no theory words, no production labels. See `lens/lens-layer.md`.
+4. **Contact before consequence.** A body reacts to a force only after something delivers it. Support, contact, and result are traceable. Fix choreography before adding light, shake, or particles.
+5. **Every clip hands over its end state** (position and facing, support and posture, held objects, injury and stamina, ability state, environment state), and the next clip opens from it.
+6. **Say what is verified and what is assumed.** A platform feature is "supported" only if the user confirmed it or you checked current official docs. A prompt is "tested" only if a clip was generated. Never promise results.
+7. **Protect explicit user targets.** If one competes with something else, offer options and wait; never silently downgrade.
 
-1. 安全、法律与平台政策
-2. 用户的明确决定（规则7）
-3. 动作的物理与因果完整性（规则3）
-4. 身份与状态连续性（规则5）
-5. 片段负荷（规则4）
-6. 深度系统：台词、表演、情境细节
-7. 风格与润色
+## Budgets: three tiers, not one count
 
-可以舍弃或简化低层要求来满足高层要求。未经询问，不能为了低层要求修改高层要求。
+| Tier | Covers | Rule |
+|---|---|---|
+| A: story and contact | Attack/defense/transfer events, outcomes, ability use | Strict: about 3 independent interactions per ~5 s of runtime; split clips beyond that |
+| B: performance and body | Gaze, face, posture, hands, prop business, listening, speech delivery | Generous, written beat by beat; limited by readability, not by count |
+| C: texture | Optics, light, skin, fabric, atmosphere, micro-motion, sound bed | No count; limited only by coherence and the model's prompt length |
 
-## 负荷
+Details and coherence rules: `core/pipeline.md`.
 
-- **主要交互**＝一组有明确结果的攻防或力量转移（逼近、接触、受迫反应可以算作一组）。
-- **约5秒时长的指导值：** 最多3个必发生节拍、2个氛围细节、2个保护条件（以正面描述表达）。这是面向当前一代模型短片段的校准参考；在真实模型和实际时长上测试后再调整。
-- **何时拆分：** 片段出现新的进攻、防守关系改变、新的复杂接触，或第二个摄影任务。时长更长不代表可以把数次交锋当成一组。
-- 表演细节共用同一份预算。它替换模糊措辞，不额外叠加。
+## Precedence (the only ladder)
 
-## 读取哪些文件
+When rules conflict, the higher one wins. No other file claims priority; `scripts/check_skill.py` fails if one does.
 
-只读取任务中出现对应触发条件的文件。通常两三份。绝不一次加载整个文件夹。
+1. Safety, legal, platform policy
+2. The user's explicit decisions and locked story facts
+3. Physical and causal integrity of Tier A
+4. Continuity of identity and state
+5. Lens validity (depiction grammar, coherence)
+6. Performance and dialogue depth (Tier B)
+7. Texture and style (Tier C)
 
-| 任务涉及…… | 读取 |
+When Tier A and a richer Tier B or C detail collide, **re-stage** (move the gesture to a free limb or a later moment) rather than delete richness.
+
+## What to read
+
+Read the files whose trigger appears. For an Extended prompt, the Lens files are always read.
+
+| Task has... | Read |
 |---|---|
-| 打斗、追逐、身体冲突、兵器或多段动作 | `references/action-causality.md` |
-| 台词、独白、画外音、谈判、对峙 | `references/dialogue-engine.md`（参考卡：`references/dialogue-cards.md`） |
-| 情绪或心理节拍、面部特写、掩饰、克制 | `references/performance-psychology.md` |
-| 人物外形与建模、道具、环境、跨段身份 | `references/character-scene-continuity.md` |
-| 镜头选择、节奏、声音、打击音效 | `references/camera-and-sound.md` |
-| 编写或检查最终提示词（始终最后读取） | `references/delivery.md` |
-| 某个具体视频模型 | `models/README.md` |
+| Any prompt output (always) | `core/pipeline.md`, `lens/lens-layer.md`, `lens/output-skeletons.md` |
+| Extended (default): the five passes | `lens/optics-and-stock.md`, `lens/physical-light.md`, `lens/skin-and-material.md`, `lens/face-pass.md`, `lens/body-and-status.md` |
+| Any spoken line, monologue, negotiation, confrontation | `dialogue/spoken-register.md`, `dialogue/conversation-units.md`, then `references/dialogue-engine.md` (cards: `references/dialogue-reference-cards.md`) |
+| Fight, chase, weapons, multi-clip action | `references/choreography.md`, `references/hit-feel.md`, `references/action-reference-system.md`, `references/consistency.md` |
+| An emotional or psychological beat, close-up, concealment | `references/performance-and-psychology.md`, `references/character-and-performance.md` |
+| Camera, rhythm, composition, color | `references/camera-and-rhythm.md`, `visual/composition-and-color.md` |
+| Setting, props, environment, weather | `references/world-and-style.md`, `visual/environment-interaction.md`, `narrative/story-and-scene.md` |
+| Powers, VFX | `references/powers-and-vfx.md` |
+| A style or reference | `visual/style-translation.md`, `visual/style-library.md` |
+| Sound or voice | `sound/sound-and-voice.md`, `references/hit-feel.md` |
+| Splitting into clips, continuity, platform | `references/prompts-and-segments.md`, `references/generation-handoff.md`, `models/README.md` |
+| Final check, delivery | `references/delivery-and-qa.md` |
+| Story ideation from nothing | `references/inspiration-wizard.md`, `references/inspiration-library.md` |
+| Real periods, objects, sources; compliance | `references/cultural-research.md`, `references/source-scope.md`, `references/framing-and-compliance.md` |
+| Planning and tooling a full pipeline | `references/ai-pipeline.md`, `references/template-contract.md` (optional ledgers), `references/delivery-and-example.md` (v1 design example) |
+| Workflow, planning, post, release | `production/workflow.md`, `post/finishing-and-release.md`, `quality/quality.md` |
+| Tone and interaction rules | `ux/interaction.md` |
 
-**深度开关。** 内容需要时启用深度系统（有对白的场景加载台词引擎）。用户可以说“quick”或“lite”选择不展开深度分析；仍保留规则1—7。不要维护推荐/拒绝的状态记录。
+## Honesty about this skill
 
-## 输出语言
-
-提示词使用目标模型支持最好的语言；不清楚时使用用户的语言。设计笔记使用用户的语言。
-
-## 关于本技能的诚实说明
-
-本技能整理了设计原则，尚未做基准测试。通过 `evals/cases.md` 检验哪些原则在你的模型上有效。
+v3 encodes design principles and a vocabulary. It has not been benchmarked against any specific model, and the optics, light, face, and speech vocabulary is flagged "confirm per model" until you test it. `evals/cases.md` is how to find out what works on yours.

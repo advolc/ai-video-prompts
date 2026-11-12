@@ -1,60 +1,57 @@
 #!/usr/bin/env python3
-"""Lint the skill folder. Usage: python scripts/check_skill.py [path]
+"""Lint the skill package. Usage: python scripts/check_skill.py [path]
 
-Checks (exit code 1 if any fail):
-  - SKILL.md exists, has name/description front matter, stays under size budget
-  - every reference file stays under its size budget
-  - every relative markdown link resolves
-  - only SKILL.md may claim precedence over other files (no competing authorities)
-  - every file in references/ is routed from SKILL.md
+Fails (exit 1) on:
+  - SKILL.md missing name/description front matter, or over the size budget
+  - broken relative links
+  - competing authority claims outside SKILL.md and core/precedence.md
+  - leftover v1 gates: the old 3+2 budget law, "lean不加载"/"仅full" opt-in gating, the ten-character dialogue cap
+  - a file in references/, lens/, dialogue/ not routed from SKILL.md
+Warns on tiny stub files.
 """
-import re, sys, pathlib
+import os, re, sys
+ROOT = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else ".")
+SKILL_MAX = 14000
+EXEMPT_AUTH = {"SKILL.md", "core/precedence.md", "MIGRATION.md", "README.md", "evals/cases.md", "examples/legacy-v1"}
+AUTH = re.compile(r"(最高红线|最高禁令|最高优先|优先于所有|覆盖所有|高于所有|最高裁决|overrides? all|highest priority|supersedes? all)")
+GATE = re.compile(r"(?<![\d.+])3\+2(?![\d.+])|lean不加载|lean跳过|lean不补|仅full|十个汉字|10个汉字")
+LINK = re.compile(r"\]\(([^)\s]+?)\)")
+problems, warns = [], []
 
-ROOT = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else ".").resolve()
-SKILL_MAX = 7000        # characters
-REF_MAX = 30000         # characters per reference file
-AUTHORITY = re.compile(
-    r"(overrides? (all|every)|supersedes? (all|every)|highest (priority|red line|prohibition)|"
-    r"takes? precedence over (all|every|any))", re.I)
-LINK = re.compile(r"\]\((?!https?://|#|mailto:)([^)#\s]+)")
+def rd(p): return open(p, encoding="utf-8").read()
+mds = []
+for r, _, fs in os.walk(ROOT):
+    for f in fs:
+        if f.endswith(".md"): mds.append(os.path.relpath(os.path.join(r, f), ROOT).replace("\\", "/"))
+mds.sort()
+sk = rd(os.path.join(ROOT, "SKILL.md"))
+m = re.match(r"---\n(.*?)\n---", sk, re.S)
+if not m or "name:" not in m.group(1) or "description:" not in m.group(1): problems.append("SKILL.md: missing name/description front matter")
+if len(sk) > SKILL_MAX: problems.append(f"SKILL.md: {len(sk)} chars exceeds {SKILL_MAX}")
 
-problems = []
+for rel in mds:
+    t = rd(os.path.join(ROOT, rel))
+    legacy = rel.startswith("examples/legacy-v1")
+    for lk in LINK.findall(t):
+        if re.match(r"^(https?:|mailto:|#)", lk): continue
+        path = lk.partition("#")[0]
+        if path and not os.path.exists(os.path.normpath(os.path.join(ROOT, os.path.dirname(rel), path))):
+            problems.append(f"{rel}: broken link -> {lk}")
+    if not legacy and not any(rel == e or rel.startswith(e) for e in EXEMPT_AUTH) and AUTH.search(t):
+        problems.append(f"{rel}: claims authority over other files ({AUTH.search(t).group(0)})")
+    if not legacy and rel not in ("MIGRATION.md", "README.md", "core/pipeline.md", "evals/cases.md", "lens/lens-layer.md") and GATE.search(t):
+        problems.append(f"{rel}: leftover v1 gate ({GATE.search(t).group(0)})")
+    if len(t) < 1000 and not legacy and not rel.startswith(("models/", "assets/")): warns.append(f"{rel}: only {len(t)} chars (stub?)")
 
-def read(p):
-    return p.read_text(encoding="utf-8")
-
-skill = ROOT / "SKILL.md"
-if not skill.exists():
-    sys.exit("SKILL.md not found")
-s = read(skill)
-m = re.match(r"---\n(.*?)\n---", s, re.S)
-if not m or "name:" not in m.group(1) or "description:" not in m.group(1):
-    problems.append("SKILL.md: missing name/description front matter")
-if len(s) > SKILL_MAX:
-    problems.append(f"SKILL.md: {len(s)} chars exceeds budget {SKILL_MAX}")
-
-md_files = sorted(p for p in ROOT.rglob("*.md"))
-for p in md_files:
-    t = read(p)
-    rel = p.relative_to(ROOT)
-    if p.parent.name == "references" and len(t) > REF_MAX:
-        problems.append(f"{rel}: {len(t)} chars exceeds budget {REF_MAX}")
-    for link in LINK.findall(t):
-        target = (p.parent / link).resolve()
-        if not target.exists():
-            problems.append(f"{rel}: broken link -> {link}")
-    if p != skill and p.name != "MIGRATION.md" and AUTHORITY.search(t):
-        problems.append(f"{rel}: claims precedence over other files; only SKILL.md may")
-
-for ref in sorted((ROOT / "references").glob("*.md")):
-    if f"references/{ref.name}" not in s:
-        problems.append(f"references/{ref.name}: not routed from SKILL.md")
-
-total = sum(len(read(p)) for p in md_files)
-print(f"{len(md_files)} markdown files, {total:,} characters total, SKILL.md {len(s):,}")
+for d in ("references", "lens", "dialogue"):
+    for f in sorted(os.listdir(os.path.join(ROOT, d))):
+        if f.endswith(".md") and f"{d}/{f}" not in sk:
+            problems.append(f"{d}/{f}: not routed from SKILL.md")
+total = sum(len(rd(os.path.join(ROOT, r))) for r in mds)
+print(f"{len(mds)} markdown files, {total:,} characters, SKILL.md {len(sk):,}")
+for w in warns: print("  warn:", w)
 if problems:
-    print("\nFAIL")
-    for x in problems:
-        print(" -", x)
+    print("FAIL")
+    for p in problems: print(" -", p)
     sys.exit(1)
 print("OK")

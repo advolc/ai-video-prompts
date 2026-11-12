@@ -1,40 +1,52 @@
-# 从v1迁移
+# Migration: v1 to v3.0
 
-v1有104个文件、约215K中文字符。v2有14份Markdown文件和一个静态检查脚本，约130K英文字符（合计约32K token）。典型任务加载 `SKILL.md` 和两三份参考，约10—17K token，而不是从大得多的文件树中取六个模块。采用v2前请先归档v1（例如打上 `v1-archive` 标签）；本版不要求删除旧版。
+v3 is a fork of v1, not a rewrite. The depth systems you valued stay. What changed is **where depth is spent** and **how it is turned into text**.
 
-## 保留了什么（深度系统）
+## Diagnosis recap (from the review)
 
-| 系统 | v1来源 | v2位置 | 变化 |
-|---|---|---|---|
-| 台词引擎：四层、三轴、现场取材、六种手法、场景公式、6＋4种质感引擎、语言DNA、负向约束、音频分流 | `dialogue-engine.md` | `dialogue-engine.md` | 翻译并压缩；保留权力宣示的窄例外；题材种子库缩为五类 |
-| 14张台词卡 | `dialogue-reference-cards.md` | `dialogue-cards.md` | JSON改为表格；14张全部保留 |
-| 心理动作、微相矩阵、可见化转换、降级预案、反套话、生理泄露、题材矩阵、视距转译、三轴 | `performance-and-psychology.md` | `performance-psychology.md` | 全部保留；保留“不能静默降级明确的脸部目标” |
-| 生活微动作与道具 | `narrative/life-actions.md`、`prop-storytelling.md` | `performance-psychology.md` §11 | 合并 |
-| 动作编排：选择、兵器逻辑、发力链、距离、连招母题、动作单元、群战 | `choreography.md` | `action-causality.md` | 保留 |
-| 打击因果链与受击上下文推演 | `hit-feel.md` | `action-causality.md` §5、`camera-and-sound.md` §7 | 合并 |
-| 动作参考卡 | `action-reference-system.md` | `action-causality.md` §11 | 压缩为术语到措辞的转换表 |
-| 状态接缝台账、六项传递 | `choreography.md`、`consistency.md` | `action-causality.md` §10、`character-scene-continuity.md` | 保留；接缝仅定义一次 |
-| 人物建构、服装、无参考图锚点 | `character-and-performance.md`、`generation-handoff.md` | `character-scene-continuity.md` | 保留 |
-| 环境与天气、可交互物分级 | `visual/environment-interaction.md` | `character-scene-continuity.md` §8 | 保留 |
-| 运镜、节奏、镜头表、声音分层、主观心理声学 | `camera-and-rhythm.md`、`sound/sound-design.md` | `camera-and-sound.md` | 合并 |
-| 纯文本交付、四条红线、剧本转提示词、负荷检查 | `generation-handoff.md`、`anti-lazy-and-delivery.md` | `delivery.md` | 合并并去重 |
+v1 used one conservative gate for two different things. Story facts needed protection; sensory texture needed freedom. v1 put both behind "3+2" (65 mentions in 38 files), 187 prohibitions, opt-in depth ("lean不加载 / 仅full"), and a rule against model-native cinematography vocabulary. All four symptoms (director's-note prose, plastic look, wooden actors, fake dialogue) came from that.
 
-## 移除了什么，以及原因
+## What changed
 
-- **加载图、任务路由器、模块契约、precedence-rules、五处“最高权限”声明。** 改为 `SKILL.md` 中的一套优先级和一张路由表。其他文件若宣称优先权，`check_skill.py` 现在会报错。
-- **推荐/忽略/拒绝状态机和“质感探针”。** 深度系统改为按内容启用（有对白的场景加载台词引擎），用户可说“quick”。不再记授权流水账。
-- **带有三条例外的“3+2”硬法。** 改为约5秒片段的明确指导值，须实测校准，以“每段一个主要交互”为主导。
-- **发行、发布、封面/标题、A/B、协作、管理，以及大部分质检与后期。** 这些是通用制作管理检查表，有能力的模型本已掌握。
-- **工程G表输出与导出脚本。** 最终只交纯文本；制作备注放复制区外。需要工程表时保留v1处理。
-- **灵感向导与灵感库。** 不属于核心价值；需要头脑风暴时保留v1。
-- **平台矩阵。** 用一套方法（`models/`）替代：能力检查表、各项答案如何改变提示词的对照表，以及只能依据已核来源或自己的试片填写的适配器模板。
+| Symptom | Cause in v1 | v3 fix |
+|---|---|---|
+| Reads like a director's note | Prompt derived from an engineering form; constraints rewritten as conditionals ("only after..."); no translation spec | `lens/lens-layer.md` depiction grammar; prompt-first; `scripts/lint_prompt.py` |
+| Plastic look | No optics, skin, or physical-light layer; lens and halation barely mentioned; cinematography terms discouraged | Passes 1–3: `optics-and-stock`, `physical-light`, `skin-and-material` |
+| No muscle-level faces | One-signal cap; matrix pessimistic | Pass 4 `face-pass.md` (FACS-informed lexicon, masking, fallbacks) |
+| Wooden actors | One life-action per scene; ambient cap of 2; no status or prop-business system | Pass 5 `body-and-status.md`: Status & Proxemics, listener acting, prop business, dyad templates |
+| Fake dialogue | Lines routed to notes by default; ten-character trim target; aphoristic cards; one line per 5 s event | `dialogue/spoken-register.md`, `dialogue/conversation-units.md`, inline quoted lines by default |
+| Thin default output | Depth opt-in; Compact-like by default | Depth on by default; **Extended** is the default tier |
 
-## 未迁移、需要你核对的内容
+## Rules replaced
 
-我没有阅读，也没有迁移：灯光、构图、画面框定/合规、世界与画风、文化考据、音色设计、音频后期、AI管线与生成段文件，以及模板。若其中有你依赖的知识，把相关段落从v1移入最接近的v2参考文件，而不是恢复整份文件。台词引擎中更完整的题材种子库也按此处理。
+| v1 | v3 |
+|---|---|
+| "3+2" must-do/ambient/guard budget as law with three exemptions | **Tiers:** A story and contact (about 3 independent interactions per ~5 s), B performance (generous), C texture (coherence only) |
+| Locked and unlocked treated alike | **Texture Authority**: locked story facts, open sensory texture, gray cases with a one-line added-texture note |
+| Several files claiming supremacy | One precedence ladder in `SKILL.md`; `check_skill.py` fails on any other authority claim |
+| Depth behind consent phrases | Depth default on; "short/lite/简版" lowers it |
+| Dialogue to production notes | Lines inline with delivery cues; voice script as a second output |
 
-## 诚实说明
+## What was kept (the depth systems)
 
-- v2经过人工翻译和压缩。中文原稿的一些细微含义可能丢失；对最重视的文件逐节比较。
-- 两个版本都没有做过基准测试。v2增加 `evals/cases.md`，供你验证。
-- 当前默认面向英语使用，也支持中文输出；题材示例主要是武侠和仙侠，因为原始示例如此。按实际工作补充自己的题材。
+Choreography and force/support/contact, hit chain and hit-context derivation, state-seam ledger, the four-layer dialogue engine with subtext axes, texture engines, language DNA, the 14 dialogue cards, psychological action, micro-signal matrix and leak formula, character and costume design, consistency, camera and rhythm, powers and VFX, world and style, inspiration wizard and library, cultural research, the Buliangren style study. Where they referred to the 3+2 budget, gating, or supreme authority, the references were patched to the tier model. Their original Chinese text is retained.
+
+## What was merged or removed
+
+- **Merged stubs:** narrative (9 files) → `narrative/story-and-scene.md`; production (8) → `production/workflow.md`; post, distribution, management (13) → `post/finishing-and-release.md`; quality (3) → `quality/quality.md`; sound (2) → `sound/sound-and-voice.md`; style cards (10) → `visual/style-library.md`; ux (7) → `ux/interaction.md`. Camera subjective notes moved into `references/camera-and-rhythm.md`.
+- **Removed:** core load-graph, task-router, module-contract, precedence-rules (replaced by `core/pipeline.md`, `core/precedence.md`, and the ladder); `anti-lazy-and-delivery.md` (replaced by `references/delivery-and-qa.md`); `visual/lighting.md` (absorbed into `lens/physical-light.md`); `production/prompt-engineering.md` (replaced by the Lens layer); the generation input template and `export_prompt.py` (prompt-first replaces the form-first workflow); `validate_modules.py` (replaced by `check_skill.py`, which also catches competing authorities and leftover v1 gates); dead `depends_on` metadata.
+- **Archived:** v1 worked examples at `examples/legacy-v1/`. They use the old FIXED/EVENT/SEAM design surface and are design-side illustrations only.
+
+## Decisions you made that I implemented as asked
+
+- **Extended is the default for every prompt.** It targets about 320–520 English words (about 650–1000 Chinese characters) per clip, up to the model's limit. This is your call; the risk is that some models truncate, dilute, or contradict themselves on long prompts. `evals/cases.md` case 10 (the length ladder) tests it per model, and `models/` records the result.
+- **Dialogue is inline by default**, which means some prompts will include speech the model cannot voice. Lip sync is untested everywhere until you test it.
+
+## Honest caveats
+
+- **Nothing here has been run on a video model.** The cinematography, face, and speech vocabulary is marked "confirm per model". The belief that models respond to cinematography terms is reasonable but unverified.
+- **More vocabulary can backfire.** Stacked jargon makes models contradict themselves. That is why coherence rules and the linter exist.
+- **I could not verify the newest models** (Seedance 2.5, current Sora, etc.). The model layer is a method, not a database.
+- **The patches to v1 files were surgical.** I replaced budget and gating sentences and kept the rest. Run `python scripts/check_skill.py .` to find any leftover gate I missed; it fails on the 3+2 law, "lean不加载", "仅full", and the ten-character cap.
+- **Language mix.** v1's deep files are Chinese; the new layers are English with Chinese lexicon columns. The model reading them handles both; if you prefer one language, translate the new layers.
+- **v2 failed in your test.** v3 deliberately keeps v1's depth and changes the allocation. Treat each layer as a hypothesis until your A/B says otherwise.

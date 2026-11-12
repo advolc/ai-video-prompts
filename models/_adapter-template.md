@@ -1,22 +1,24 @@
-# <模型名称与版本>
+# <Model name and version>
 
-核实日期：<日期>
-来源：<官方文档链接，或“自行测试，N个片段”>
+Verified on: <date>
+Source: <official doc link, or "own test, N clips">
 
-## 检查表答案
-1. 时长：
-2. 单镜头或多镜头：
-3. 参考输入：
-4. 首帧/尾帧：
-5. 原生音频（环境声/对白/口型同步）：
-6. 最佳提示词语言：
-7. 负面提示词栏：
-8. 摄影控制：
-9. 分辨率/画幅/fps：
-10. 提示词长度表现：
+## Checklist answers
+1. Duration:
+2. Single or multi-shot:
+3. Reference inputs:
+4. First/last frame:
+5. Native audio (ambience / speech / lip sync):
+6. Best prompt language:
+7. Negative field:
+8. Camera control:
+9. Resolution / ratio / fps:
+10. Prompt length behavior (which tier worked):
+11. Cinematography vocabulary that worked / did not:
+12. Fine face control by shot size:
 
-## 结果
-有效做法（附提示词）：
-失败做法（附提示词与最早错误类型）：
-有帮助/有负面影响的措辞：
-待解问题：
+## Results
+What worked (with the prompt):
+What failed (with the prompt and the earliest failure type):
+Phrasing that helped / hurt:
+Open questions:

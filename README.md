@@ -1,30 +1,58 @@
-# ai-video-prompts（v2）
+# ai-video-prompts v3.0
 
-用于设计AI视频提示词的技能。它让模型呈现**可见、符合物理关系、有因果**的场景：打斗先接触再出结果，对白意图通过身体显现，表演用一个可读信号胜过堆满表情，多片段场景逐段传递状态。
+A director-level system for AI video prompts. The deep thinking (choices and contact causality, the four-layer dialogue engine, psychological action, status and power, continuity seams) stays **internal**. What comes out is **pure cinematic execution**: one vivid, camera-recordable **Extended** prompt per clip, with real optics, physical light, skin, face, body language, and spoken-register dialogue.
 
-## 目录结构
+## Architecture: three rooms
 
 ```
-SKILL.md                              工作流程、7条规则、唯一优先级顺序、路由表
-references/
-  action-causality.md                 接触、支撑、结果、兵器逻辑、状态接缝台账
-  dialogue-engine.md                  四层模型、潜台词三轴、质感引擎、音频分流
-  dialogue-cards.md                   14张可适配的言语策略卡
-  performance-psychology.md           心理动作、微相、泄露公式、降级规则
-  character-scene-continuity.md       人物与服装建构、环境、一致性、返工
-  camera-and-sound.md                 镜头选择、节奏、镜头表、声音分层
-  delivery.md                         信息收集、负荷检查、纯文本组装、自检
-models/                               能力检查表＋空白逐模型适配器（根据测试填写）
-examples/worked-example.md            运用三套深度系统的双片段场景（示意）
-evals/cases.md                        8个测试案例和用于衡量效果的评分标准
-scripts/check_skill.py                静态检查：体量预算、链接、路由、优先权冲突
-MIGRATION.md                          v1以来的改动与各系统去向
+Director's Room (design)  ->  Lens (translate + enrich)  ->  Prompt (Extended output + lint)
+ v1's deep systems, kept       depiction grammar,             plain prose, 7-slot skeleton,
+ internal, never in the        five passes: optics, light,    quoted spoken lines, notes
+ prompt                        skin, face, body and status    outside the copy block
 ```
 
-## 使用方法
+Texture Authority: story facts are **locked**; sensory texture is **open**. Budgets are three tiers (A story and contact: strict; B performance: generous; C texture: unlimited but coherent).
 
-加载 `SKILL.md` 和任务所需的参考文件（通常两三份）。说“quick”即可走精简流程：保留七条规则，不展开深度分析。编辑后运行 `python scripts/check_skill.py .`。
+## Layout
 
-## 当前状态
+```
+SKILL.md                      Entry: pipeline, defaults, 7 rules, one precedence ladder, routing
+core/        pipeline.md      Three rooms, Texture Authority, tiered budgets
+             precedence.md    Resolution examples for the single ladder
+lens/        lens-layer.md            Depiction grammar and the design-to-prompt procedure
+             output-skeletons.md      Extended (default), Standard, Compact, multi-shot, continuation
+             optics-and-stock.md      Pass 1: lens, depth of field, stock, grain, halation, camera behavior
+             physical-light.md        Pass 2: sources, color temperature, falloff, catchlights, atmosphere
+             skin-and-material.md     Pass 3: skin, hair, fabric, material, anti-plastic
+             face-pass.md             Pass 4: FACS-informed face lexicon, micro-expressions, masking
+             body-and-status.md       Pass 5: Status & Proxemics, posture, prop business, listening
+dialogue/    spoken-register.md       Real-speech texture, delivery tags, voice script
+             conversation-units.md    Multi-turn units, timing math, coverage, seams
+references/  Director's Room systems: choreography, hit-feel, dialogue-engine, performance-and-psychology,
+             character-and-performance, consistency, camera-and-rhythm, world-and-style, powers-and-vfx,
+             action-reference-system, prompts-and-segments, ai-pipeline, delivery-and-qa, generation-handoff, ...
+visual/ narrative/ sound/ production/ post/ quality/ ux/   Domain files (stubs merged)
+models/       README.md + adapter template   Capability checklist, how answers change the prompt
+evals/        cases.md                       12 cases, rubric, A/B protocol
+examples/     v3-extended-examples.md        Three Extended prompts (EN, ZH, face close-up) + before/after
+              legacy-v1/                     v1 examples (design-side illustration; kept for reference)
+scripts/      lint_prompt.py                 Lint a final prompt for the Lens grammar
+              check_skill.py                 Lint the package (links, routing, competing authorities)
+              draw_inspiration.py            v1 inspiration drawing tool (unchanged)
+MIGRATION.md                    What changed from v1 and why
+```
 
-仅为设计原则。尚未做基准测试。信赖某条规则前，先在你的模型上运行 `evals/cases.md`。
+## Using it
+
+- Say what you want. The default is full depth and an Extended prompt. Say "short", "lite", or "简版" for the Compact tier.
+- Check a prompt: `python scripts/lint_prompt.py prompt.txt` (add `--tier standard|compact` if relevant).
+- Check the package after editing: `python scripts/check_skill.py .`
+- Measure: run `evals/cases.md` on your model before trusting any rule or any vocabulary.
+
+## Context cost
+
+Extended by default loads more than v1's lean path did. Rough estimates (Chinese counted at ~1.3 characters per token, other text at ~4): the Extended core alone is about 19K tokens; a dialogue scene about 30K; a fight scene about 25K. If your model or plan struggles with that, say "short" or "lite", or trim the passes you do not need for the shot.
+
+## Status
+
+v3 encodes design principles and a vocabulary. It has not been benchmarked on any video model. Optics, light, face, and speech terms are marked "confirm per model". Language note: the v1 depth systems keep their original Chinese; the v3 layers are written in English with Chinese equivalents in the lexicons. Prompts are written in the language the target model handles best.

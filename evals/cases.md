@@ -1,51 +1,49 @@
-# 评测：找出真正有效的做法
+# Evals: find out what actually works
 
-本技能尚未实测。用这些案例进行测试。每个案例在目标模型上分两组运行：**A**＝你平常的提示词，**B**＝运用本技能写出的提示词。每组至少生成3个片段。条件允许时盲评（让他人打乱片段顺序）。结果记录到 `evals/results.md`。
+v3 has not been benchmarked. These cases are how you find out. Your own test of v1 against v2 was the first evidence either design had; this harness makes that repeatable.
 
-## 案例
+## Protocol
 
-| # | 案例 | 重点检验 |
+For each case, run **Arm A** (your current best prompt, or the v1 output) and **Arm B** (the v3 Extended output). Generate at least 3 clips per arm on your target model. Score blind if you can (someone else shuffles the clips). Record results in `evals/results.md` using the template below.
+
+## Cases
+
+| # | Case | Stresses |
 |---|---|---|
-| 1 | 一对一剑斗，一次交锋（格挡后反击） | 接触、支撑、结果 |
-| 2 | 长兵器对短兵器，贴近交锋 | 兵器逻辑、距离、连招母题 |
-| 3 | 同一场打斗的第二段，接续踉跄与兵器掉落之后 | 状态/接缝承接 |
-| 4 | 两个人物，轻声威胁，没有打斗 | 仅用可见动作表达台词潜台词 |
-| 5 | 人物说话时掩饰伤势 | 表演泄露、单一微相 |
-| 6 | 快速交锋中明确要求面部特写 | 保护用户目标、降级选项 |
-| 7 | 群戏：被护送者、守护者、两名攻击者 | 左右分区、一条清楚的交锋 |
-| 8 | 一段文学性剧本 | 剧本转提示词 |
+| 1 | One-on-one sword duel, one exchange (parry then counter) | Contact, support, consequence |
+| 2 | Long weapon vs short weapon, close-in | Weapon logic, distance |
+| 3 | Same fight, second clip, after a stagger and a dropped weapon | Seams and state carry-over |
+| 4 | Two characters, a soft threat across a table, no fight | Status, listening, prop business |
+| 5 | A character hides a wound while talking | Face beats, one leak |
+| 6 | Explicit face close-up demanded during a fast exchange | Protecting user targets |
+| 7 | Group scene: escort, defender, two attackers | Zoning, one clear exchange |
+| 8 | A script paragraph in literary prose | Script-to-prompt translation |
+| 9 | **Optics vocabulary:** one scene with three looks (35 mm handheld grain; 85 mm shallow tungsten; anamorphic halation) | Which terms the model responds to |
+| 10 | **Length ladder:** the same scene at Compact, Standard, Extended | Where the model starts to drift or truncate |
+| 11 | **Dialogue naturalness:** the same exchange as aphoristic lines vs spoken-register lines | Speech realism, mouth timing |
+| 12 | **Face and body:** a seated two-person scene, Extended vs Compact | Plastic look, wooden actors |
 
-## 评分标准（逐片段、逐项记0或1分，再求和）
+## Rubric (score each clip 0 or 1 per line; sum)
 
-动作（案例1、2、3、6、7）
-- 先看见接触，再出现反应。
-- 受力身体的支撑与移动符合该作用力。
-- 交汇时攻击线抵达目标实际所在位置。
-- 在脑中去掉特效后，仍能说清谁击中了谁。
+**Action** (cases 1, 2, 3, 6, 7): contact is visible before the reaction; the reacting body's support and movement fit the force; the attack line meets the target at the crossing; with effects off in your head you can say who hit whom.
 
-连续性（案例3及片段衔接）
-- 位置与朝向匹配前段结尾。
-- 持有物与伤势延续。
-- 左右和惯用手没有互换。
+**Continuity** (case 3 and joins): position and facing match; held objects and injuries carry over; left/right and handedness did not swap.
 
-台词与表演（案例4、5、6）
-- 不靠台词也能从身体读出意图。
-- 没有把情绪标签或套话直接画成刻板表情（例如夸张“冷笑”）。
-- 最多读到一个主要微相；没有细节与动作争抢。
-- 用户明确目标（面部、指定招式）得到保留，或已提供取舍选项。
+**Plastic look** (all cases): skin shows believable variation (not uniform); lighting has a visible source and direction; eyes have catchlights; hair and cloth show imperfection; the image has a physical camera quality (grain, depth, lens character).
 
-提示词质量（所有案例）
-- 每条提示词自足，不含制作框架文字。
-- 约束写成可见条件，而不是“不要”清单。
-- 提示词没有提出模型无法核验的断言。
+**Wooden actors** (cases 4, 5, 12): both people move during the clip; the listener reacts; a prop is handled with purpose; posture reads status without a line; no looped fidgeting.
 
-## 决策规则
+**Dialogue** (cases 4, 5, 11): lines sound like speech (breaks, fragments, repeats); delivery fits the line; mouth timing roughly matches; silence is used; the line length fits the clip.
 
-只有在至少2个案例、至少3个片段中，B组在某条规则对应的评分项上胜过A组，才把该规则保留在技能中。没有差异的规则应删除或标为“未证实”。把经验补充到 `models/<model>.md`。
+**Prompt quality** (all): self-contained; no production scaffolding (the linter agrees); no claim the model cannot verify.
 
-## 结果模板
+## Decision rule
+
+Keep a rule or pass only if arm B beats arm A on that rule's rubric lines across at least 3 clips on at least 2 cases. If it shows no difference, cut it or mark it "unproven". Cases 9 and 10 write directly into the model adapter (`models/`).
+
+## Results template
 
 ```
-日期：____   模型/版本：____   每组片段数：____
-案例 | A组得分 | B组得分 | 最早错误类型（B） | 备注
+Date: ____   Model/version: ____   Clips per arm: ____
+Case | Arm A score | Arm B score | Earliest failure (B) | Notes
 ```
