@@ -1,6 +1,6 @@
 # Pass 5: Body, Status, and Proxemics
 
-Body language is the largest channel the old skill left almost unused. Two people at a table are not mannequins who take turns moving their mouths. They sit, shift, hold things, listen, and make status moves the audience feels before it understands them. This pass replaces v1's "one life-action per scene" cap. Body beats are **Tier B**: generous, anchored, readable. Terms are **confirm per model**; test how many simultaneous beats your model can follow.
+Body language is the largest channel the old skill left almost unused. Two people at a table are not mannequins who take turns moving their mouths. They sit, shift, hold things, listen, and make status moves the audience feels before it understands them. This pass replaces v1's "one life-action per scene" cap. Plan macro dialogue geometry with [spatial blocking](../dialogue/spatial-blocking.md) before enriching body detail; a hand gesture is not a replacement for that plan. Body beats are **Tier B**: generous, anchored, readable. Terms are **confirm per model**; test how many simultaneous beats your model can follow.
 
 ## 1. Status is a transaction
 
@@ -150,13 +150,13 @@ The vocabulary above was first built for seated scenes. Adapt it by situation (`
 
 | Situation | How status and behavior change |
 |---|---|
-| Standing | Status shows in weight, space, and who moves. The dominant moves less and chooses where to stand; the subordinate adjusts, shifts, and fills silence. Hands are visible, still, or occupied with a purposeful object |
+| Standing | Read who proposes a distance, route or place and how the other responds. Stillness, mobility, standing height and physical capacity do not by themselves establish status. Hands support the designed relationship rather than filling silence |
 | Walking | Pace, lead and follow, and alignment carry status. Slowing or stopping is a status move; speeding up is an escape; stepping into the other's path is confrontation |
 | Public with onlookers | Status is performed for the audience; volume drops, gestures shrink, and the rupture is a status event when a mask fails |
 | High arousal | Status signals compress. Composure becomes the signal of status; losing it is a status loss and can be the turn |
-| Exhausted or injured | Status goes to whoever can still stand, support the weight, and speak clearly; leaning, sitting, and breath are status facts |
+| Exhausted or injured | Preserve support needs, reach and breath limits in the spatial plan. Leaning, sitting or using an aid is a physical state, not automatic loss of authority |
 | Intimate or private | Status flattens; distance, touch, and who initiates are the vocabulary |
-| Confined space (car, kitchen, elevator) | Avoidance is gaze and posture; whoever blocks the exit or drives holds the status |
+| Confined space (car, kitchen, elevator) | Check actual routes, seating, visibility and access before selecting gaze, posture or movement. Driving or proximity to the exit alone does not determine relational power; do not invent confinement |
 | Moving platform (horse, boat, cart) | Balance and control of the platform are status; who holds the reins, the oar, or the wheel |
 
 Rules: choose the situation first; props must exist in the setting; a cup is one choice, not the default business; status in motion is shown by space and pace before hand business; when the situation changes, the status vocabulary changes with it.

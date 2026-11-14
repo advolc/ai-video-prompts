@@ -6,7 +6,7 @@ This file defines how the three rooms hand off and what each may change. It does
 
 | Room | Input | Does | Output | Never |
 |---|---|---|---|---|
-| Director's Room | The user's story, constraints, references | **Context Profile and routing** (`context-routing.md`), **arena card and 3D position ledger** (`references/spatial-tactics.md`), choices, contact and support, four-layer dialogue, psychological action, status and power, seams, continuity | A design record (internal) | Writes the final prompt text; invents locked facts |
+| Director's Room | The user's story, constraints, references | **Context Profile and routing** (`context-routing.md`), **arena card and 3D position ledger for fights** (`references/spatial-tactics.md`), **unit spatial spine for dialogue or silent interaction** ([dialogue blocking](../dialogue/spatial-blocking.md)), choices, contact and support, four-layer dialogue, psychological action, status and power, seams, continuity | A design record (internal) | Writes the final prompt text; invents locked facts |
 | Lens | The design record | Translates to recordable statements; runs five enrichment passes; applies coherence | A texture-rich shot description | Changes locked facts; adds Tier A events |
 | Prompt | The shot description | Orders it into the skeleton, writes it in model language, lints it | One clip prompt (Extended by default) + notes outside the copy block | Contains design vocabulary, labels, or explanations |
 
@@ -24,6 +24,8 @@ Each room can send work back. If the Lens cannot depict something, return it to 
 - Posture, weight, stillness, fidgeting, status behavior, prop business with **ordinary, setting-consistent props** (a cup, a pen, a sleeve, a lamp), listener acting
 - Ambient motion: dust, steam, breath fog, fabric drift, water
 - Speech rhythm, disfluency, breath, voice quality, room tone
+
+**Dialogue blocking is designed before texture:** ordinary rising, walking, yielding space, changing orientation and deliberate holds are usually Tier B performance. Record their paths or hold reasons and the listener's response. A consequential restriction, forced contact, departure, transfer or reveal is checked under existing story locks and Tier A; never add one as sensory enrichment. See [dialogue spatial blocking](../dialogue/spatial-blocking.md). Fight density rules do not set dialogue movement quotas.
 
 **Gray (check, then usually open):** a new object that a character *uses in a way that affects the scene*; new weather or time-of-day change; a new off-screen sound that implies an event. Open if it is mundane and does not change what happens or what anyone knows. If it does, offer it as a candidate. Weapons, letters, keys, wounds, and secrets are never added.
 
@@ -60,7 +62,7 @@ Ask at most once, together, for what changes the outcome: the creative core, tar
 
 Keep it brief and structured, never in the prompt:
 
-`Context Profile and routed modes | Arena card and position ledger | Locked facts | Added texture | Beats and status shifts | Dialogue (intent, subtext, spoken form) | Contact chain and support | Seam state in/out | Shot list with camera tasks | Open risks`
+`Context Profile and routed modes | Fight arena/position ledger or dialogue unit spatial spine (as applicable) | Locked facts | Added texture | Beats and status shifts | Dialogue (intent, subtext, spoken form) | Contact chain and support | Seam state in/out | Shot list with camera tasks | Open risks`
 
 ## 6. Clip splitting
 

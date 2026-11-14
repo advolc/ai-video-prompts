@@ -48,11 +48,13 @@ Ask once, if unknown: all prompts now, or one trial clip first? Reuse the answer
 9. Is the added-texture note written, and are assumptions labeled?
 10. Verified, assumed, untested: labeled correctly, no result promises?
 11. **Spatial gate** (any fight): is there an arena card and a position ledger? Does `python scripts/check_spatial.py ledger.json` pass for the mode (line-lock run, lateral deviation, bearing sweep and coverage, level change, anchors, plant-and-absorb share)? Does every defensive response include a displacement?
-12. **Linear-verb check:** does `lint_prompt.py` report more linear moves (steps in or back, retreats) than spatial ones (circle, slip, pass, level change, push-off)? Does the camera use at least two axes relative to the duel line?
+12. **Linear-verb check (fights only):** does `lint_prompt.py` report more linear moves (steps in or back, retreats) than spatial ones (circle, slip, pass, level change, push-off)? Does the camera use at least two axes relative to the duel line?
+
+13. **Dialogue spatial decision gate** (including silent interaction): apply [dialogue spatial blocking](../dialogue/spatial-blocking.md) section 6 to each unit. Check opening geometry, cue/goal, maintain/relocate/mixed choice, physically feasible path or concrete hold reason, counterpart response, ending relation/consequence, and seam. A motivated seated scene passes; decorative pacing and camera-only movement do not. This is a semantic/manual check, not a word-count test; fight displacement and axis thresholds do not apply.
 
 ## 7. When a clip fails
 
-Label the failure type: identity, space (including **spatial-linear**: a fight confined to one line), action, contact, light/optics, face, body, speech, sound. Find the **earliest** wrong point; check what depends on it. Fix by removing competing tasks, tightening the contact chain, or changing the look anchor; do not pile on adjectives. Without actual output, do not claim a model "cannot" do something. Record results in `models/` (`evals/cases.md` has a template).
+Label the failure type: identity, space (including **spatial-linear**: a fight confined to one line), dialogue-spatial-flat / dialogue-spatial-busywork / dialogue-spatial-jump (see `dialogue/spatial-blocking.md`), action, contact, light/optics, face, body, speech, sound. Find the **earliest** wrong point; check what depends on it. Fix by removing competing tasks, tightening the contact chain, or changing the look anchor; do not pile on adjectives. Without actual output, do not claim a model "cannot" do something. Record results in `models/` (`evals/cases.md` has a template).
 
 ## 8. Honest status language
 

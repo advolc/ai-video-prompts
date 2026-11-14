@@ -3,7 +3,7 @@ name: ai-video-prompts
 description: Director-level design plus cinematic prompt writing for AI video models (Sora, Veo, Kling, Seedance/Jimeng, Runway, Hailuo, Wan, etc.). Use for any request to write, design, upgrade, or storyboard AI video prompts - action and fight choreography, dialogue and power-dynamic scenes, character performance and micro-expressions, multi-clip continuity, or turning a script into generation-ready text. Delivers vivid, camera-recordable Extended prompts by default. 触发词：视频提示词、分镜、打戏、台词、潜台词、微表情、肢体语言、质感、剧本转提示词。
 ---
 
-# AI Video Prompts v3
+# AI Video Prompts v3.3.1
 
 Deep director-level thinking stays **internal**. What leaves the skill is **pure cinematic execution**: one vivid, physical, camera-recordable prompt per clip, with real optics, light, skin, face, body, and speech.
 
@@ -31,6 +31,8 @@ Deep director-level thinking stays **internal**. What leaves the skill is **pure
 7. **Protect explicit user targets.** If one competes with something else, offer options and wait; never silently downgrade.
 8. **Route by context.** There is no default scene. A fight is a duel, a last stand, a stealth takedown, a sparring match, or another mode; a conversation is a seated exchange, a street argument, a farewell, or another situation. Build the Context Profile first; never copy an example's posture, rhythm, or ending into a scene whose profile differs.
 9. **Space is three-dimensional.** Every fight starts with an arena card and a position ledger (x, y, z, facing, anchor per beat). Fighters traverse the arena, answer attacks with displacement (off-line, arc, pass, level change, push-off, terrain funnel), and change anchors. A fight confined to one line is a defect unless the mode calls for it (`references/spatial-tactics.md`).
+
+10. **Dialogue needs spatial decisions.** Before gesture and coverage, plan each conversation unit's starting geometry, motivated movement or deliberate hold, the other person's response, and the resulting geometry. Apply [dialogue spatial blocking](dialogue/spatial-blocking.md), including silent interaction. Deliberate stillness is valid; displacement, height and camera quotas from fights do not apply to dialogue.
 
 ## Budgets: three tiers, not one count
 
@@ -64,8 +66,9 @@ Read the files whose trigger appears. For an Extended prompt, the Lens files are
 |---|---|
 | Any prompt output (always) | `core/pipeline.md`, `core/context-routing.md`, `lens/lens-layer.md`, `lens/output-skeletons.md` |
 | Extended (default): the five passes | `lens/optics-and-stock.md`, `lens/physical-light.md`, `lens/skin-and-material.md`, `lens/face-pass.md`, `lens/body-and-status.md` |
-| Any spoken line, monologue, negotiation, confrontation | `dialogue/situation-profiles.md`, `dialogue/spoken-register.md`, `dialogue/conversation-units.md`, then `references/dialogue-engine.md` (cards: `references/dialogue-reference-cards.md`) |
+| Any spoken line, monologue, negotiation, confrontation | `dialogue/situation-profiles.md`, `dialogue/spatial-blocking.md`, `dialogue/spoken-register.md`, `dialogue/conversation-units.md`, then `references/dialogue-engine.md` (cards: `references/dialogue-reference-cards.md`) |
 | Fight, chase, weapons, multi-clip action | `references/action-modes.md`, `references/spatial-tactics.md`, `references/choreography.md`, `references/hit-feel.md`, `references/action-reference-system.md`, `references/consistency.md` |
+| Silent interaction between co-present characters | `dialogue/situation-profiles.md`, `dialogue/spatial-blocking.md` |
 | An emotional or psychological beat, close-up, concealment | `references/performance-and-psychology.md`, `references/character-and-performance.md` |
 | Camera, rhythm, composition, color | `references/camera-and-rhythm.md`, `visual/composition-and-color.md` |
 | Setting, props, environment, weather | `references/world-and-style.md`, `visual/environment-interaction.md`, `narrative/story-and-scene.md` |

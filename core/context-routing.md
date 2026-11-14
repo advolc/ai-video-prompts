@@ -29,6 +29,7 @@ In the Director's Room, before any module runs, build a one-line profile from th
 | Fighter movement through the arena (3D ledger, footwork, path vocabulary, line-break rule) | Space, mode, tools | `references/spatial-tactics.md` |
 | Clip splitting and Tier A density | Action mode | `references/generation-handoff.md` section 3 |
 | Dialogue physicality, movement, timing, silence, coverage | Situation (purpose, space, audience, relationship, arousal) | `dialogue/situation-profiles.md` |
+| Dialogue/silent-interaction geometry, paths, deliberate holds and listener responses | Purpose, relationship, state, actual routes and access | [Dialogue spatial blocking](../dialogue/spatial-blocking.md) |
 | Body language and status behavior | Situation and power | `lens/body-and-status.md` section 13 |
 | Facial display (mask strength, leak channels) | Audience, relationship, arousal, fatigue, stakes | `lens/face-pass.md` section 10 |
 | Camera behavior (observe, participate, subjective) | Purpose, arousal, space | `references/camera-and-rhythm.md` and `lens/optics-and-stock.md` section 10 |
@@ -41,8 +42,8 @@ In the Director's Room, before any module runs, build a one-line profile from th
 1. **Purpose picks the primary mode.** A stealth takedown with a panicked character is still a stealth takedown, performed badly.
 2. **State modifies tempo, never purpose.** Fatigue, injury, and arousal change speed, precision, guard height, breath, and what a character can hide. They do not change what the scene is for.
 3. **Audience modifies the face and the voice before the blocking.** A public setting suppresses expression first; private settings release it. Blocking changes when the audience can interrupt or intervene.
-4. **Space constrains moves.** The environment limits what the mode can do (a confined corridor removes flanking; an open field removes cover).
-5. **Blend, don't average.** When two modes apply (a sparring match turns real), use the first until a **turn** event, then switch. The turn is itself a Tier A event.
+4. **Space constrains moves.** For dialogue, map available anchors, routes, sight/hearing and actual access limits; record the unit spatial spine before fine gestures. A profile tag is not a blocking plan. For fights, the environment limits what the mode can do (a confined corridor removes flanking; an open field removes cover).
+5. **Blend, don't average.** When two modes apply (a sparring match turns real), use the first until a **turn** event, then switch. Check a fight transition's actual event under Tier A. A dialogue turn or ordinary change of alignment is not automatically a new Tier A event or a new model request; use the conversation unit and the actual consequence.
 6. **Re-route at turning points.** A change in power, arousal, audience, or purpose triggers the router again. A scene may use several profiles in sequence.
 7. **Locked facts and user decisions override the router.** If the user says "it must be a back-and-forth duel", it is one.
 
@@ -60,6 +61,6 @@ Examples in this skill (the tea scene, the canyon duel, the doorway) are illustr
 
 Add to the design record:
 
-`Context Profile | Action mode (if any) | Situation profile (if dialogue) | Display rules | Camera stance | Look mood | Density and splitting | End-state mode | What a failed generation would look like in this mode`
+`Context Profile | Action mode (if any) | Situation profile and unit spatial spine (if dialogue/silent interaction) | Display rules | Camera stance | Look mood | Density and splitting | End-state mode | What a failed generation would look like in this mode`
 
 The last field is deliberate: each mode has a distinct way of going wrong, and knowing it makes triage faster.

@@ -4,7 +4,11 @@ v1 built dialogue around 5-second event units, so a clip carried one short line 
 
 ## 1. The unit
 
-A conversation unit has **3 to 8 turns** and one change: a status shift, a revelation, a decision, a refusal. In most current models it runs about 8 to 20 seconds; use the model's real clip length (`models/README.md`). A longer scene is a chain of units joined by seams.
+A conversation unit has one meaningful change: a status shift, a revelation, a decision, a refusal or an accepted invitation. Three to eight turns is a planning example, not a minimum: a two-line exchange or a silent response can form a complete unit. Do not add speech or gestures to fill a turn quota. Fit the unit to the requested duration and the model's real clip length (`models/README.md`); a longer scene is a chain of units joined by seams.
+
+## 1b. Spatial spine (required design)
+
+Before line-level acting, use [spatial blocking](spatial-blocking.md) to record the unit's opening geometry, cue and goal, choice to maintain/relocate/mix, path or hold reason, counterpart response, and ending geometry/consequence. Revisit it at a meaningful turn, not for every utterance. Stillness, warmth and cooperation can pass; a changing camera and busy hands cannot substitute for this decision. A long scene carries the resulting relations forward across units.
 
 ## 2. Unit skeleton
 
@@ -26,7 +30,7 @@ Each turn contains, in time order:
 
 1. **Listener beat while the speaker begins** (stillness, a glance, a prop beat)
 2. **The line** in spoken form with delivery (`spoken-register.md`)
-3. **A body beat riding on the line** (a swallow, a hand moving, a posture change)
+3. **A body beat riding on the line** (a swallow, a hand moving, a posture change, or a phase of the already-designed path/hold). The unit spatial spine precedes these details; it is not rebuilt or forced to move once per line
 4. **The listener's response** (a backchannel, a silence, a micro-reaction)
 5. **A camera cue** only where it adds information (a push-in on the pivotal word, a cut to the hands)
 
@@ -62,7 +66,9 @@ The table below is for a seated two-person exchange. Other situations route the 
 | The prop beat | Insert (cup, hands) | Detail carries subtext |
 | The exit | Two-shot or a slow pull | Aftermath, restored distance |
 
-Do not cut to a face for every line. In a single-clip prompt, weave 2–3 camera cues into the timeline. In a multi-shot prompt, use cut language (`lens/output-skeletons.md` section 7).
+Choose coverage after blocking. Preserve readable evidence of a key rise, route or change of alignment, then use closer coverage when it serves performance. A seated hold can retain a fixed composition; no camera-axis quota applies to dialogue.
+
+Do not cut to a face for every line. Add camera cues where a change of information or geometry calls for them; a fixed-camera scene may keep one framing throughout. In a multi-shot prompt, use cut language (`lens/output-skeletons.md` section 7). No fixed cue count overrides the user's framing or the unit's blocking.
 
 ## 6b. Framing: choose for acting, not for fear of sync
 
@@ -70,7 +76,7 @@ One observation: on the user's model, two lines spoken in a medium-wide, camera-
 
 ## 7. Chaining units (seams)
 
-At the end of a unit, record: **last line and who held the floor, both postures, prop states (cup level, lid, paper pile), distance, light, any unresolved silence.** The next unit opens from those facts, written as present: "Chen's cup is half empty on his knee; Wu's palms are still flat."
+At the end of a unit, record: **last line and who held the floor; each person's world anchor, facing, posture/height and distance; routes/access and unresolved spatial invitations; prop states (cup level, lid, paper pile), light, any unresolved silence.** The next unit opens from those facts, written as present: "Chen's cup is half empty on his knee; Wu's palms are still flat."
 
 ## 8. Monologue and voice-over
 
@@ -88,6 +94,8 @@ A spoken monologue still has breath groups, false starts, and pauses. Voice-over
 
 - [ ] Is the situation profile named, and do movement, distance, pace, and silence match it (not a default table)?
 - [ ] Does the unit have a single turn?
+- [ ] Is the unit spatial spine complete and plausible (start, cue/goal, choice, path or hold reason, counterpart response, result)? Has it passed `spatial-blocking.md` section 6?
+- [ ] Do world positions, routes, orientation and access survive cuts and seams, with movement evidence or an explicit motivated hold?
 - [ ] Is every line in spoken form, with delivery?
 - [ ] Does each turn include a listener beat?
 - [ ] Do the lines fit the clip length with silence included?

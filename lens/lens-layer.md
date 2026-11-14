@@ -55,7 +55,7 @@ Rules:
 ## 5. From design record to prompt: the procedure
 
 1. **Freeze the facts.** List locked facts and user demands (identity, weapon, outcome, named moves, lines, face targets).
-2. **Write the beat timeline.** Time-ordered visible events across all characters, with Tier A events marked. Use the design record's status shifts, subtext, and speech acts as the *reason* for each beat, but write only the beat.
+2. **Write the beat timeline.** For dialogue or silent interaction, carry the already-designed [unit spatial spine](../dialogue/spatial-blocking.md): cue, path or concrete hold, listener response, resulting relation. Keep body movement in world space distinct from camera movement. Then write time-ordered visible events across all characters, with Tier A events marked. Use the design record's status shifts, subtext, and speech acts as the *reason* for each beat, but write only the beat.
 3. **Convert each beat to a recordable statement** using section 1. Replace every emotion and theory word with its physical proxy (`face-pass.md`, `body-and-status.md`).
 4. **Run the five passes** (Extended default): optics, light, skin and material, face, body. Each pass adds only what the shot size can show and what is consistent with locked facts.
 5. **Order into the skeleton** (`output-skeletons.md`).
@@ -72,6 +72,7 @@ Rules:
 - Objects: one state at a time (the cup is full, then lighter after the sip; not both).
 - Identity anchors do not contradict the locked look or earlier clips.
 - Hands and limbs: no two actions on the same limb at once.
+- Dialogue: the unit spatial choice is depicted; its path or meaningful hold, counterpart response and resulting anchors are readable. Cuts do not reset positions, and hand business does not replace the macro decision.
 - Speech: line lengths fit the shot duration (`dialogue/conversation-units.md`).
 - No sentence exists only to sound cinematic.
 - Nothing in the prompt names a design concept, a module, a card, or a pass.

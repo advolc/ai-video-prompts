@@ -4,6 +4,8 @@ v3.0 treated every conversation as two people at a table. That is one situation 
 
 The tea scene in the examples is **profile A below**, and nothing else.
 
+All thirteen profiles route through [spatial blocking](spatial-blocking.md) before fine gestures and coverage. Their movement tendencies are not a completed plan: choose maintain, relocate or mixed for each conversation unit, with a motive, the other person's response and a resulting geometry. Minimal motion is valid when grounded in the scene; pacing and changing anchors are not compulsory. Silent exchanges use the same spatial decision check.
+
 ## 1. The profiles
 
 Each profile lists the starting parameters. They are tendencies to adapt, not rules.
@@ -26,7 +28,7 @@ Each profile lists the starting parameters. They are tendencies to adapt, not ru
 
 **I. Whispered exchange under threat (secret).** *Movement:* heads close, bodies turned away from the danger, eyes on the doorway. *Voice:* whisper, breath-heavy, 1.5–2.5 words/s, broken by listening. *Silence:* 40–55%, with noise as the tension. *Camera:* tight, low-key, a long lens, the threat out of focus in the background. *Pitfall:* a clear, projected whisper.
 
-**J. Confined-space argument (car, kitchen, elevator).** *Movement:* restricted; people cannot leave, so avoidance is gaze and posture. *Hands:* gripping a wheel, a counter, a bag. *Voice:* tight and loud for the room; the space makes volume feel larger. *Silence:* 15–30%. *Camera:* handheld, close, a cramped frame, reflections. *Pitfall:* people with room to pace.
+**J. Confined-space argument (car, kitchen, elevator).** *Movement:* constrained by the actual space and circumstances; verify whether and why leaving is restricted. In a car seat or crowded elevator, avoidance may use gaze, torso orientation and reach; a kitchen may still permit routes around a counter. *Hands:* gripping a wheel, a counter, a bag. *Voice:* tight and loud for the room; the space makes volume feel larger. *Silence:* 15–30%. *Camera:* handheld, close, a cramped frame, reflections. *Pitfall:* people with room to pace.
 
 **K. Bedside or grief.** *Movement:* near stillness; a hand held, a cloth, a bowl. *Voice:* halting, 1–2 words/s, unfinished sentences, breath. *Silence:* 40–60%. *Camera:* low, steady, long holds, a watchful distance. *Light:* soft, a lamp or window. *Pitfall:* over-articulate grief.
 
@@ -83,7 +85,7 @@ Public settings change **voice and face before blocking**: volume drops and spee
 
 1. Name the profile from the Context Profile.
 2. Choose the skeleton, the pace for the characters' states, and the silence share.
-3. Write movement and distance before props.
+3. Build the unit spatial spine using [spatial blocking](spatial-blocking.md): starting geometry, cue/goal, maintain/relocate/mixed, path or concrete hold reason, counterpart response, ending geometry and consequence. Do this before props; not once per line. A table, doorway or window is usable only if present, reachable and relevant.
 4. Choose camera behavior and light from the profile.
-5. Check against the pitfall.
+5. Check against the pitfall and the spatial QA in `spatial-blocking.md` section 6. Do not accept either unmotivated pacing or an unexplained static default.
 6. If the situation changes mid-scene (a quarrel becomes an embrace), re-route and write the change as a turn.

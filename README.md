@@ -1,4 +1,6 @@
-# ai-video-prompts v3.3
+# ai-video-prompts v3.3.1
+
+Dialogue/silent-interaction updates use `dialogue/spatial-blocking.md`: mandatory spatial decisions and listener responses, with motivated stillness preserved; fight thresholds remain fight-specific.
 
 A director-level system for AI video prompts. The deep thinking (choices and contact causality, the four-layer dialogue engine, psychological action, status and power, continuity seams) stays **internal**. What comes out is **pure cinematic execution**: one vivid, camera-recordable **Extended** prompt per clip, with real optics, physical light, skin, face, body language, and spoken-register dialogue.
 

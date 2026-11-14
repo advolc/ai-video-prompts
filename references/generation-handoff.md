@@ -47,7 +47,7 @@ Core intent and locked facts do not change. Adjust syntax, control parameters, p
 
 ## 7. Seam state (carry between clips)
 
-Position (x, y, z) and facing, anchor, support and posture, held objects, injury and stamina, ability state, environment state, plus light direction, prop state, and distance for dialogue scenes. Write them as the next clip's opening facts.
+Position (x, y, z) and facing, anchor, support and posture, held objects, injury and stamina, ability state, environment state, plus light direction and prop state. Dialogue scenes carry each person's anchor, orientation, posture/height, distance, routes/access and any unresolved approach, invitation or refusal from the [unit spatial spine](../dialogue/spatial-blocking.md). Preserve deliberate holds too; a routine walk or turn is not automatically another request. Write them as the next clip's opening facts.
 
 ## 8. When the platform forces a downgrade
 
