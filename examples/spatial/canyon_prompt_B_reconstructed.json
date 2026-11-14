@@ -1,0 +1,203 @@
+{
+ "mode": "duel",
+ "runtime_s": 15,
+ "note": "Reconstructed from the text of prompt_B_ceiling.txt (fight section), my own 'ceiling' prompt. Illustrative; not measured from any clip.",
+ "arena": {
+  "has_height": true,
+  "landmarks": [
+   {
+    "id": "R1",
+    "x": 6.6,
+    "y": 3.2,
+    "z": 0.8,
+    "type": "slope rock step"
+   },
+   {
+    "id": "R2",
+    "x": 3.0,
+    "y": 0.8,
+    "z": 0.8,
+    "type": "low rock"
+   },
+   {
+    "id": "W",
+    "x": 3.0,
+    "y": 5.0,
+    "z": 0,
+    "type": "canyon wall"
+   }
+  ]
+ },
+ "beats": [
+  {
+   "t": 0,
+   "A": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "facing": 0,
+    "anchor": null
+   },
+   "B": {
+    "x": 2.5,
+    "y": 0.2,
+    "z": 0,
+    "facing": 180,
+    "anchor": null
+   },
+   "event": "after the two lines"
+  },
+  {
+   "t": 2,
+   "A": {
+    "x": -2.0,
+    "y": 0.1,
+    "z": 0,
+    "facing": 0,
+    "anchor": null
+   },
+   "B": {
+    "x": 0.5,
+    "y": 0.2,
+    "z": 0,
+    "facing": 180,
+    "anchor": null
+   },
+   "event": "flurry: swordsman driven back three steps",
+   "answer": "retreat"
+  },
+  {
+   "t": 4,
+   "A": {
+    "x": -1.5,
+    "y": 1.2,
+    "z": 0,
+    "facing": 0,
+    "anchor": null
+   },
+   "B": {
+    "x": 0.3,
+    "y": 0.1,
+    "z": 0,
+    "facing": 180,
+    "anchor": null
+   },
+   "event": "overhead chop; swordsman slides left; blade bites the wall",
+   "answer": "slip"
+  },
+  {
+   "t": 6,
+   "A": {
+    "x": -0.4,
+    "y": 0.9,
+    "z": 0,
+    "facing": 0,
+    "anchor": null
+   },
+   "B": {
+    "x": 0.2,
+    "y": 0.2,
+    "z": 0,
+    "facing": 180,
+    "anchor": null
+   },
+   "event": "steps inside, shoulder drive, wrist clamp",
+   "answer": "advance"
+  },
+  {
+   "t": 8,
+   "A": {
+    "x": -1.5,
+    "y": 0.9,
+    "z": 0,
+    "facing": 0,
+    "anchor": null
+   },
+   "B": {
+    "x": 0.2,
+    "y": 0.3,
+    "z": 0,
+    "facing": 180,
+    "anchor": null
+   },
+   "event": "wrench free, grip butt, boot: swordsman stumbles back",
+   "answer": "retreat"
+  },
+  {
+   "t": 10,
+   "A": {
+    "x": 0.2,
+    "y": 0.7,
+    "z": 0,
+    "facing": 0,
+    "anchor": null
+   },
+   "B": {
+    "x": 0.8,
+    "y": 0.3,
+    "z": 0,
+    "facing": 180,
+    "anchor": null
+   },
+   "event": "rolls under the scissor cut, rises inside",
+   "answer": "level_down"
+  },
+  {
+   "t": 12,
+   "A": {
+    "x": 2.8,
+    "y": 1.0,
+    "z": 0,
+    "facing": 0,
+    "anchor": null
+   },
+   "B": {
+    "x": 4.5,
+    "y": 1.5,
+    "z": 0.3,
+    "facing": 180,
+    "anchor": null
+   },
+   "event": "raider forced back toward the slope",
+   "answer": "advance"
+  },
+  {
+   "t": 14,
+   "A": {
+    "x": 3.6,
+    "y": 1.1,
+    "z": 0,
+    "facing": 0,
+    "anchor": null
+   },
+   "B": {
+    "x": 5.0,
+    "y": 1.8,
+    "z": 0.8,
+    "facing": 180,
+    "anchor": "R1"
+   },
+   "event": "raider's heel catches the rock step",
+   "answer": "advance"
+  },
+  {
+   "t": 15,
+   "A": {
+    "x": 3.8,
+    "y": 1.1,
+    "z": 0,
+    "facing": 0,
+    "anchor": null
+   },
+   "B": {
+    "x": 5.1,
+    "y": 1.8,
+    "z": 0.8,
+    "facing": 180,
+    "anchor": "R1"
+   },
+   "event": "final stand",
+   "answer": "plant"
+  }
+ ]
+}

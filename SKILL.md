@@ -9,7 +9,7 @@ Deep director-level thinking stays **internal**. What leaves the skill is **pure
 
 ## The pipeline: three rooms
 
-1. **Director's Room (design).** Run the deep systems at full depth: choices and contact causality, the four-layer dialogue engine, psychological action, status and power, continuity seams. Output is an internal design record. It never appears in the prompt. See `core/pipeline.md`.
+1. **Director's Room (design).** Run the deep systems at full depth: choices and contact causality, the four-layer dialogue engine, psychological action, status and power, continuity seams. **First build the Context Profile and route** (`core/context-routing.md`): purpose, power, body state, space, audience, relationship, tools, tone, stakes. The profile picks the action mode, the situation profile, the display rules, the camera stance, and the look. Output is an internal design record. It never appears in the prompt. See `core/pipeline.md`.
 2. **Lens (translation).** Convert the design into statements a camera could record, then enrich with five passes: optics, physical light, skin and material, face, body and status. See `lens/lens-layer.md`.
 3. **Prompt (output).** Write the **Extended** prompt by default (`lens/output-skeletons.md`), lint it (`scripts/lint_prompt.py`), deliver it. Notes sit outside the copy block.
 
@@ -29,12 +29,14 @@ Deep director-level thinking stays **internal**. What leaves the skill is **pure
 5. **Every clip hands over its end state** (position and facing, support and posture, held objects, injury and stamina, ability state, environment state), and the next clip opens from it.
 6. **Say what is verified and what is assumed.** A platform feature is "supported" only if the user confirmed it or you checked current official docs. A prompt is "tested" only if a clip was generated. Never promise results.
 7. **Protect explicit user targets.** If one competes with something else, offer options and wait; never silently downgrade.
+8. **Route by context.** There is no default scene. A fight is a duel, a last stand, a stealth takedown, a sparring match, or another mode; a conversation is a seated exchange, a street argument, a farewell, or another situation. Build the Context Profile first; never copy an example's posture, rhythm, or ending into a scene whose profile differs.
+9. **Space is three-dimensional.** Every fight starts with an arena card and a position ledger (x, y, z, facing, anchor per beat). Fighters traverse the arena, answer attacks with displacement (off-line, arc, pass, level change, push-off, terrain funnel), and change anchors. A fight confined to one line is a defect unless the mode calls for it (`references/spatial-tactics.md`).
 
 ## Budgets: three tiers, not one count
 
 | Tier | Covers | Rule |
 |---|---|---|
-| A: story and contact | Attack/defense/transfer events, outcomes, ability use | Strict: about 3 independent interactions per ~5 s of runtime; split clips beyond that |
+| A: story and contact | Attack/defense/transfer events, outcomes, ability use | Strict, and **mode-dependent**: density comes from the action mode (`references/action-modes.md`). A duel may run 1–3 interactions per ~5 s, a last stand 2–4 overlapping, a stealth takedown 0–1 per clip. Split clips beyond the mode's density |
 | B: performance and body | Gaze, face, posture, hands, prop business, listening, speech delivery | Generous, written beat by beat; limited by readability, not by count |
 | C: texture | Optics, light, skin, fabric, atmosphere, micro-motion, sound bed | No count; limited only by coherence and the model's prompt length |
 
@@ -60,10 +62,10 @@ Read the files whose trigger appears. For an Extended prompt, the Lens files are
 
 | Task has... | Read |
 |---|---|
-| Any prompt output (always) | `core/pipeline.md`, `lens/lens-layer.md`, `lens/output-skeletons.md` |
+| Any prompt output (always) | `core/pipeline.md`, `core/context-routing.md`, `lens/lens-layer.md`, `lens/output-skeletons.md` |
 | Extended (default): the five passes | `lens/optics-and-stock.md`, `lens/physical-light.md`, `lens/skin-and-material.md`, `lens/face-pass.md`, `lens/body-and-status.md` |
-| Any spoken line, monologue, negotiation, confrontation | `dialogue/spoken-register.md`, `dialogue/conversation-units.md`, then `references/dialogue-engine.md` (cards: `references/dialogue-reference-cards.md`) |
-| Fight, chase, weapons, multi-clip action | `references/choreography.md`, `references/hit-feel.md`, `references/action-reference-system.md`, `references/consistency.md` |
+| Any spoken line, monologue, negotiation, confrontation | `dialogue/situation-profiles.md`, `dialogue/spoken-register.md`, `dialogue/conversation-units.md`, then `references/dialogue-engine.md` (cards: `references/dialogue-reference-cards.md`) |
+| Fight, chase, weapons, multi-clip action | `references/action-modes.md`, `references/spatial-tactics.md`, `references/choreography.md`, `references/hit-feel.md`, `references/action-reference-system.md`, `references/consistency.md` |
 | An emotional or psychological beat, close-up, concealment | `references/performance-and-psychology.md`, `references/character-and-performance.md` |
 | Camera, rhythm, composition, color | `references/camera-and-rhythm.md`, `visual/composition-and-color.md` |
 | Setting, props, environment, weather | `references/world-and-style.md`, `visual/environment-interaction.md`, `narrative/story-and-scene.md` |

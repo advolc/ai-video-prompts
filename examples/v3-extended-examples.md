@@ -6,6 +6,8 @@ Three illustrative Extended prompts. **None has been run on a video model.** Cha
 
 **Inputs from the user:** An office study, late afternoon. Chen is Wu's superior. Wu reports that a shipment failed customs. Chen should not raise his voice. Outcome: Wu finishes his sentence steadily; Chen lets him.
 
+**Profile:** situation A (seated formal) | Purpose: expose a failure and test composure | Power: Chen high, Wu low | Audience: none | End mode: hold.
+
 **Design record (internal, not in the prompt):**
 - Locked: Chen superior, Wu subordinate; shipment failed customs on Tuesday; Chen stays calm; Wu ends steady.
 - Added texture: porcelain cup and saucer for Chen; tungsten desk lamp; window light; dust in the beam.
@@ -42,6 +44,8 @@ Wu | "Tuesday. Yes, sir. The paperwork was filed late, and I should have caught 
 
 **Inputs:** 雪夜，旧塔门口。林握短杖守门，韩持长矛。林左前臂有伤，不能暴露。韩一刺，林架开并近身，韩退半步。结果：不分胜负。
 
+**情境档案：** 动作模式：对决（守门的僵持，一方隐藏伤势）｜终态：定格。若改为困兽之斗，节奏会不同（见 `context-routing-examples.md` 第2例）。
+
 **设计记录（内部）：** 锁定：林左前臂伤、短杖、长矛、不分胜负。新增质感：雪、呼出白气、门边灯笼、杖上的包浆。事件层（A）：刺—架—近身—退，一条接触链。表演层（B）：林左手藏袖、呼吸浅而平；韩目光落在她的袖口。质感层（C）：灯笼琥珀光、冷蓝环境、粗颗粒、窄快门。
 
 **可复制文本（扩展版）：**
@@ -61,6 +65,8 @@ Wu | "Tuesday. Yes, sir. The paperwork was filed late, and I should have caught 
 ## Example 3: Face close-up (English, protect the user target)
 
 **Inputs:** The user demands a close-up of Lin hiding fear when Han names her wound.
+
+**Profile:** display rules: among enemies, strong mask | shot: close | End mode: hold.
 
 **Design (internal):** Mask: calm and level. Leak: one swallow and a flicker at the brows. Keep the fight out of this clip.
 

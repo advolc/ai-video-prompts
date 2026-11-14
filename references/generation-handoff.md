@@ -25,7 +25,8 @@ Reference IDs and asset names are for management. If the platform does not carry
 ## 3. Clip splitting (Tier A)
 
 - **Main interaction:** one exchange of attack, defense, or transfer with a clear outcome.
-- **Guideline:** about 3 independent interactions per ~5 s of runtime. This calibrates to short clips on current-generation models; scale after testing at your real duration.
+- **Density depends on the action mode** (`references/action-modes.md`), not on one number: duel 1–3 per ~5 s, last stand 2–4 with overlap, ambush 3 or more in the first 2 s then 1–2, sparring 1–2, stealth 0–1 per clip, ritual 0–2. Starting points for short clips; scale after testing at your real duration.
+- **Splitting by mode:** a duel splits by exchange pairs; a last stand chains clips and carries stamina and injury in the seam; a stealth takedown keeps approach and strike in one unit; an ambush splits burst from aftermath; sparring splits by teaching beat; a flight fight splits by terrain segment.
 - **Split** when a clip contains a new attack, a changed defensive relationship, a new complex contact, or a second camera task. A longer duration does not make several exchanges into one.
 - **Long takes:** a dodge of one wave with no complex contact can remain one long unit, if the prompt says it is one continuous take.
 - **Dialogue scenes** split by conversation unit (`dialogue/conversation-units.md`), not by event count.
@@ -46,7 +47,7 @@ Core intent and locked facts do not change. Adjust syntax, control parameters, p
 
 ## 7. Seam state (carry between clips)
 
-Position and facing, support and posture, held objects, injury and stamina, ability state, environment state, plus light direction, prop state, and distance for dialogue scenes. Write them as the next clip's opening facts.
+Position (x, y, z) and facing, anchor, support and posture, held objects, injury and stamina, ability state, environment state, plus light direction, prop state, and distance for dialogue scenes. Write them as the next clip's opening facts.
 
 ## 8. When the platform forces a downgrade
 

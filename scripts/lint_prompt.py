@@ -2,9 +2,10 @@
 """Lint a final video prompt for the Lens-layer grammar (replaces v1's export_prompt.py).
 
 Usage:
-  python scripts/lint_prompt.py prompt.txt [--tier extended|standard|compact] [--lang en|zh|auto]
+  python scripts/lint_prompt.py prompt.txt [--tier extended|standard|compact] [--lang en|zh|auto] [--seconds N]
   cat prompt.txt | python scripts/lint_prompt.py -
 
+Also warns when movement verbs are mostly linear (steps in/back, retreats) and few are spatial.
 Finds PATTERNS only. It cannot judge meaning: a clean lint does not mean a good prompt,
 and a flag is a question, not a verdict. Exit code 1 if any ERROR is found.
 """
@@ -24,6 +25,7 @@ def rules():
         (W, "conditional", r"(?i)\b(only (after|when|if)|must|should|has to|needs to|in order to|so that)\b|\u5fc5\u987b|\u5e94\u8be5|\u53ea\u6709.{0,12}\u624d|\u4ec5\u5f53|\u4e3a\u4e86"),
         (W, "negation", r"(?i)\b(no|not|never|without|don'?t|doesn'?t|isn'?t|cannot|can'?t|avoid|none)\b|\u4e0d\u8981|\u4e0d\u5f97|\u7981\u6b62|\u6ca1\u6709|\u4e0d\u80fd|\u907f\u514d|\u5207\u52ff|\u65e0\u9700"),
         (W, "explanation", r"(?i)\b(to show|to convey|to suggest|because|as a sign of|symboli[sz]\w*|represent\w*|indicat\w*)\b|\u8868\u73b0\u51fa|\u663e\u793a\u51fa|\u8c61\u5f81\u7740|\u56e0\u4e3a|\u4ee3\u8868\u7740"),
+        (W, "control-param", r"(?i)\b(\d{3,4}p|\d{1,3}\s?(?:s|sec|secs|seconds)|\d{2,3}\s?fps)\b|\d{1,3}\s?\u79d2\u949f?(?=[,\uff0c.\u3002\s]|$)|\d{3,4}[pP]\b"),
         # empty evaluatives
         (W, "evaluative", r"(?i)\b(stunning|epic|masterpiece|flawless|perfect(ly)?|gorgeous|breathtaking|ultra[- ]?(detailed|realistic)|8k|4k|cinematic masterpiece|award[- ]winning)\b|\u9707\u64bc|\u5b8c\u7f8e|\u7edd\u7f8e|\u53f2\u8bd7\u7ea7|\u6770\u4f5c|\u6781\u81f4|\u7535\u5f71\u611f\u62c9\u6ee1"),
         # emotion labels that need a physical proxy beside them
@@ -42,6 +44,7 @@ def main():
     ap.add_argument("path")
     ap.add_argument("--tier", default="extended", choices=list(LIMITS))
     ap.add_argument("--lang", default="auto", choices=["auto", "en", "zh"])
+    ap.add_argument("--seconds", type=float, default=0, help="clip runtime; above 10 s the Extended target scales to ~25-35 words/s (~50-70 chars/s)")
     a = ap.parse_args()
     text = sys.stdin.read() if a.path == "-" else open(a.path, encoding="utf-8").read()
     zh = len(re.findall(r"[\u4e00-\u9fff]", text))
@@ -59,9 +62,17 @@ def main():
     for i, line in enumerate(lines, 1):
         for m in re.finditer(r"\((?:pause|beat|silence|\u505c\u987f|\u6c89\u9ed8)[^)]*\)|\uff08(?:\u505c\u987f|\u6c89\u9ed8)[^\uff09]*\uff09", line, re.I):
             findings.append((i, "ERROR", "stage-direction", m.group(0)))
+    # linear-movement check: movement that lives only on the duel line (see references/spatial-tactics.md)
+    LIN = re.compile(r"(?i)\b(?:steps?|stepped|stepping)\s+(?:in|back|forward)\b|\bretreat\w*|\badvanc\w*|\bhalf (?:a )?step\b|\bgives? ground\b|\bpulls? (?:back|in)\b|\bback(?:s|ing)? (?:away|off)\b|\u8fdb\u534a\u6b65|\u9000\u534a\u6b65|\u540e\u9000|\u524d\u8fdb|\u4e0a\u524d\u4e00\u6b65|\u9000\u4e00\u6b65|\u64a4\u6b65|\u540e\u64a4")
+    SPA = re.compile(r"(?i)\b(?:circl\w+|arcs?|arcing|around|orbit\w*|slides? off|slip\w*|sidestep\w*|pivot\w*|cuts? past|passes? (?:past|by)|behind (?:him|her|them|the)|leaps?|springs?|vault\w*|climb\w*|drops? (?:under|to|low)|ducks?|rolls?|pushes? off|off the line|outside (?:the|his|her))\b|\u7ed5|\u73af\u7ed5|\u4fa7\u95ea|\u4fa7\u79fb|\u79bb\u7ebf|\u7a7f\u8eab|\u8eab\u540e|\u8dc3|\u817e|\u6500|\u7ffb\u6eda|\u6eda|\u6c89\u8eab|\u501f\u529b|\u8e6c")
+    nlin, nspa = len(LIN.findall(text)), len(SPA.findall(text))
+    if nlin >= 4 and nspa * 2 < nlin:
+        findings.append((0, "warn", "linear-movement", f"{nlin} linear moves vs {nspa} spatial (circle, slip, pass, level, push-off)"))
     findings.sort()
 
     lo, hi = (LIMITS[a.tier][0], LIMITS[a.tier][1]) if lang == "en" else (LIMITS[a.tier][2], LIMITS[a.tier][3])
+    if a.tier == "extended" and a.seconds > 10:
+        lo, hi = (int(25 * a.seconds), int(35 * a.seconds)) if lang == "en" else (int(50 * a.seconds), int(70 * a.seconds))
     n = en_words if lang == "en" else zh
     unit = "words" if lang == "en" else "characters"
     errs = sum(1 for f in findings if f[1] == "ERROR")

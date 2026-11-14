@@ -8,6 +8,8 @@ A conversation unit has **3 to 8 turns** and one change: a status shift, a revel
 
 ## 2. Unit skeleton
 
+This is the skeleton for a **formal exchange** (situation profiles A and B in `situation-profiles.md`). Other situations (street argument, farewell, confession, interrogation, walking talk, post-exertion) use their own skeletons in `situation-profiles.md` section 3.
+
 | Stage | Purpose | Typical beats |
 |---|---|---|
 | Opening gambit | Establish who holds status and what the topic is | A greeting, a prop beat, a loaded first line |
@@ -32,7 +34,7 @@ Silence is a turn too: a long hold with a visible action in it (a lid ticking on
 
 ## 4. Timing math
 
-Conversational speech runs about **2 to 3 English words per second** and about **3.5 to 5 Chinese characters per second**, with pauses taking more. Plan with these as estimates, then read it aloud.
+Conversational speech runs about **2 to 3 English words per second** and about **3.5 to 5 Chinese characters per second**, with pauses taking more. These figures are for **calm speech**. Other states change the pace (hot anger, whisper, grief, breathless, panic): use the table in `situation-profiles.md` section 2 and plan with the pace of the character's state. Then read it aloud.
 
 | Clip length | English speech incl. pauses | Chinese speech incl. pauses |
 |---|---|---|
@@ -40,7 +42,7 @@ Conversational speech runs about **2 to 3 English words per second** and about *
 | 12 s | about 20–32 words | about 32–50 characters |
 | 15 s | about 25–40 words | about 40–60 characters |
 
-- Silence takes about **20–35%** of a dialogue clip. Do not fill it.
+- Silence share depends on the situation: about 5–15% in a street argument or banter, 20–35% in a formal exchange, 35–55% in a farewell or a confession (`situation-profiles.md`). Do not fill the silence the situation needs.
 - If the speech will not fit, lengthen the clip, split the unit, or cut a turn. Never rush the delivery to cram lines in.
 - These figures are working estimates. Time the real read-through when you can.
 
@@ -49,6 +51,8 @@ Conversational speech runs about **2 to 3 English words per second** and about *
 Write interruptions as sequence: `Wu starts, "But the—" and Chen speaks over him, "Tuesday."` Some models cannot render overlapping voices; then write the interruption as a cut-off followed by the other's line. Mark which version you used in a note.
 
 ## 6. Coverage inside a unit
+
+The table below is for a seated two-person exchange. Other situations route the camera by profile: handheld and participant for a street argument, tracking beside or in front for a walking talk, a long lens and a hold after the departure for a farewell, tight and low-key for a whisper (`situation-profiles.md`).
 
 | Moment | Framing | Why |
 |---|---|---|
@@ -59,6 +63,10 @@ Write interruptions as sequence: `Wu starts, "But the—" and Chen speaks over h
 | The exit | Two-shot or a slow pull | Aftermath, restored distance |
 
 Do not cut to a face for every line. In a single-clip prompt, weave 2–3 camera cues into the timeline. In a multi-shot prompt, use cut language (`lens/output-skeletons.md` section 7).
+
+## 6b. Framing: choose for acting, not for fear of sync
+
+One observation: on the user's model, two lines spoken in a medium-wide, camera-retreating shot were audible and the lip sync was judged good enough (`models/observed-wuxia-30s-clip.md`). So do not avoid wider framing just to protect sync. Choose framing for **performance**: when a line carries a status shift or a face beat, give it a medium or close shot and a listener beat; when the shot is a moving wide, the lines can still ride on it, but expect little face acting. Verify on your own model; one clip is one data point.
 
 ## 7. Chaining units (seams)
 
@@ -78,6 +86,7 @@ A spoken monologue still has breath groups, false starts, and pauses. Voice-over
 
 ## 10. Checklist
 
+- [ ] Is the situation profile named, and do movement, distance, pace, and silence match it (not a default table)?
 - [ ] Does the unit have a single turn?
 - [ ] Is every line in spoken form, with delivery?
 - [ ] Does each turn include a listener beat?

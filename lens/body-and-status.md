@@ -92,7 +92,9 @@ The listener is half the scene. Write what the listener does while the other spe
 - **Mirroring or refusing to mirror** the other's posture.
 - **Verbal backchannel** in the speech layer ("mm", "right", "是吗") when it fits the character.
 
-## 8. Dyad templates (starting points, adapt to the story)
+## 8. Dyad templates for seated and formal scenes (situation profile A)
+
+These templates assume furniture and a table. For standing, walking, public, farewell, whispered, and post-exertion scenes, use `dialogue/situation-profiles.md` and section 13 below.
 
 | Dyad | Seating and distance | Hands and props | Gaze and tempo | Typical shift |
 |---|---|---|---|---|
@@ -103,7 +105,7 @@ The listener is half the scene. Write what the listener does while the other spe
 | Estranged friends or lovers | Wide distance, object between them | Handling a shared object (a letter, a cup) | Eyes avoid, then meet | Distance closes by a half step, then stops |
 | Cautious strangers | Public to social band, door within reach | Guarded bags, hands visible | Quick glance, away | Trust shown by a hand placed on the table |
 
-## 9. Example: the tea scene as a beat timeline
+## 9. Example: the tea scene as a beat timeline (profile A, seated formal)
 
 *Director's note (internal): Chen is Wu's superior; Wu reports a customs failure; Chen's patience decays; Wu steadies.*
 
@@ -141,3 +143,20 @@ This vocabulary is a **starting point**, not universal rules. Gestures, seating 
 ## 12. Life micro-actions (replaces v1's one-per-scene cap)
 
 Scan the present stimulus (cold, heat, sound, someone's words), then the body's adaptation, then the contact detail on an object already in hand. Examples: a cold room and a cup already in hand, so his fingers sit closer to the warm wall of the cup; an evasive answer with a key already in hand, so a fingertip stops on its teeth. They are conditional examples, not a stock list. If the object is not there, do not add it just for the example. A new retrieval, a hand switch, or a slip that changes the scene is a Tier A event, not a micro-action.
+
+## 13. Situation routing
+
+The vocabulary above was first built for seated scenes. Adapt it by situation (`dialogue/situation-profiles.md`); do not import seated business into a standing or moving scene.
+
+| Situation | How status and behavior change |
+|---|---|
+| Standing | Status shows in weight, space, and who moves. The dominant moves less and chooses where to stand; the subordinate adjusts, shifts, and fills silence. Hands are visible, still, or occupied with a purposeful object |
+| Walking | Pace, lead and follow, and alignment carry status. Slowing or stopping is a status move; speeding up is an escape; stepping into the other's path is confrontation |
+| Public with onlookers | Status is performed for the audience; volume drops, gestures shrink, and the rupture is a status event when a mask fails |
+| High arousal | Status signals compress. Composure becomes the signal of status; losing it is a status loss and can be the turn |
+| Exhausted or injured | Status goes to whoever can still stand, support the weight, and speak clearly; leaning, sitting, and breath are status facts |
+| Intimate or private | Status flattens; distance, touch, and who initiates are the vocabulary |
+| Confined space (car, kitchen, elevator) | Avoidance is gaze and posture; whoever blocks the exit or drives holds the status |
+| Moving platform (horse, boat, cart) | Balance and control of the platform are status; who holds the reins, the oar, or the wheel |
+
+Rules: choose the situation first; props must exist in the setting; a cup is one choice, not the default business; status in motion is shown by space and pace before hand business; when the situation changes, the status vocabulary changes with it.

@@ -31,8 +31,8 @@ if len(sk) > SKILL_MAX: problems.append(f"SKILL.md: {len(sk)} chars exceeds {SKI
 
 for rel in mds:
     t = rd(os.path.join(ROOT, rel))
-    legacy = rel.startswith("examples/legacy-v1")
-    for lk in LINK.findall(t):
+    legacy = rel.startswith("examples/legacy-v1") or rel.startswith("PATCHES-")
+    for lk in ([] if rel.startswith("PATCHES-") else LINK.findall(t)):
         if re.match(r"^(https?:|mailto:|#)", lk): continue
         path = lk.partition("#")[0]
         if path and not os.path.exists(os.path.normpath(os.path.join(ROOT, os.path.dirname(rel), path))):

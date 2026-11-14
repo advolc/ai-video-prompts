@@ -45,7 +45,7 @@ Create `models/<model>-<version>.md` (copy `_adapter-template.md`). Fill only wh
 
 ## 4. Status
 
-No adapters have been verified yet. Run `evals/cases.md` on your model and fill in the first adapter from the results.
+One observation is recorded: `observed-wuxia-30s-clip.md` (one clip, model not named). Run `evals/cases.md` on your model and fill in a proper adapter from the results.
 
 ## 5. Appendix: v1 decision tree (work method, not a capability score)
 

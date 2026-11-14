@@ -63,7 +63,7 @@ Micro-expressions are brief, often described as lasting well under half a second
 
 - Write them as a **flicker followed by recovery**: "for an instant his brows draw and his lips thin, then his face smooths into a patient blank."
 - Use a **mask** (the face the character wants to show) over a **leak** (what slips): a polite smile held while the throat swallows; a calm voice while the jaw sets.
-- A leak is **one** small thing. Do not stack three leaks.
+- A leak is a small, specific thing. How many a face can hold depends on context: a calm public mask holds one; high arousal, exhaustion, or high stakes make the mask fail in more channels (section 10), but always in an order the viewer can follow, never all at once.
 - Fast action and fine micro-expression do not share a moment. Put the flicker in a pause, a listening beat, or a close-up.
 
 ## 5. Gaze and eyes
@@ -96,3 +96,25 @@ Order of fallback, from the finest to the broadest: micro-expression → gaze an
 - *Held fear:* "Lin's upper lids lift a hair; she keeps her lips pressed in a thin line and swallows once, her pulse ticking at her throat."
 - *Genuine vs polite smile:* "She smiles, the corners lifting, but the skin beside her eyes stays smooth." (polite) vs "...and fine lines gather at the corners of her eyes." (genuine)
 - *中文：* "听到那个名字，他眉头微微下压，嘴唇抿成一线，喉结滚了一下，随即眼神平平地移开，落在窗外的雪上。"
+
+## 10. Display rules: who is watching
+
+People manage their faces by context. The same news looks different in a closed car and in a courtroom corridor. Route the face by **audience, relationship, arousal, fatigue, and stakes** (`core/context-routing.md`).
+
+| Context | Mask | Where the leak shows | Recovery | Notes |
+|---|---|---|---|---|
+| Private, intimate | Low or none | Everywhere; large, unguarded expressions, crying, laughter | Slow | The mask is lowered; closeness allows big expressions |
+| Semi-public (colleagues, neighbors) | A professional or social mask | Eyes, hands, voice, breath; small | Moderate | The courtesy smile or flat politeness holds, with a lag |
+| Public with an audience (court, ceremony, crowd) | Strong; flat or composed | Jaw, throat, hands, posture; the face stays disciplined | Fast | Wider shots let the body carry it; close shots catch the tight margins |
+| Under authority or threat | Deferential or blank | Brows and mouth for an instant, masked at once | Very fast | Gaze lowered; compliance on the surface |
+| Among enemies | Stoic composure; contempt may show | Controlled; a flicker of satisfaction or fear | Fast | The mask is a weapon |
+| Performing a deception | Over-smooth | The leak is **timing** (a late smile, a too-long pause), not intensity | Moderate | A smooth face can be the tell |
+
+**Modifiers.**
+- **Arousal and exhaustion** reduce masking capacity: leaks appear in more channels and recovery slows. A worn face is slack, with heavy lids and slower expression changes.
+- **Stakes** scale expression: low stakes, small expressions; high stakes, larger ones or harder suppression.
+- **Public and private versions of the same beat:** write the public mask first, then the private after-beat when the door closes (the face drops, the breath breaks). The after-beat suits a close shot.
+- **Culture and era:** display rules differ across cultures and periods (whether grief or anger is shown in public, how contempt is signalled). Do not assume. Pick what fits the established world and label the assumption outside the copy block.
+- **Do not invent a mask where none is motivated.** If nobody is watching and nothing is at stake, let the face move.
+
+Shot size routing still applies (section 7): a public mask suits wider shots where the body does the work; a private leak suits a close-up.

@@ -94,7 +94,7 @@ Grade is not new content. It does not add objects or change locked facts.
 
 Motivate every move: write what causes it ("the camera drifts left as he stands", "the push-in starts when Wu stops speaking").
 
-## 8. Look presets (starting points, adjust to the story)
+## 8. Look presets (examples of context-to-look mappings; see section 10 to route)
 
 | Scene | Look anchor |
 |---|---|
@@ -113,3 +113,22 @@ Motivate every move: write what causes it ("the camera drifts left as he stands"
 - Handheld operator's breath and locked-off tripod in the same shot (a cut between them is fine).
 - Day-bright grade with a night setting.
 - More than three stock or grade terms; pick the dominant one.
+
+## 10. Routing the look from context
+
+Choose the look from the Context Profile (`core/context-routing.md`). These are **leanings**, not rules; confirm per model.
+
+| Context | Lens and camera leaning | Light and grade leaning |
+|---|---|---|
+| Intimate talk, confession | 85–100 mm, shallow depth of field, locked or a very slow push | Single warm practical, deep shadow, fine grain |
+| Panic, ambush, chaos | 24–35 mm handheld, narrow shutter, camera as participant | High contrast, coarse grain, harsh or mixed light |
+| Stealth | Long lens from distance, a slow creep or locked, one close detail at the contact | One hard source, deep shadow, cool and low saturation |
+| Ritual, formal | Wide, symmetrical, locked, slow push; anamorphic or clean spherical | Even stable light, restrained palette |
+| Public argument | 28–35 mm handheld, deep focus for crowd layers | Ambient daylight or street light, natural contrast |
+| Farewell | 85–135 mm compression, lingering locked frame; a hold after the departure | Soft backlight, low contrast, lifted blacks |
+| Dominance and menace | A lower angle, steady, modest lens; the dominant given room and the other cropped | Directional light with a clean edge on the dominant |
+| Grief | 50–85 mm, steady, patient | Soft window light, low saturation |
+| Comic | Wider, brighter, stable framing | High key, saturated, clear |
+| Horror | Slow push, off-center framing, space left empty | Shadows, a motivated source that does not reveal everything |
+
+If the scene changes profile mid-clip, the look may shift at the turn; write it as a depicted change (the light narrows, the lens pushes in), not as a second look anchor.

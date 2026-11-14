@@ -6,7 +6,7 @@ This file defines how the three rooms hand off and what each may change. It does
 
 | Room | Input | Does | Output | Never |
 |---|---|---|---|---|
-| Director's Room | The user's story, constraints, references | Choices, contact and support, four-layer dialogue, psychological action, status and power, seams, continuity | A design record (internal) | Writes the final prompt text; invents locked facts |
+| Director's Room | The user's story, constraints, references | **Context Profile and routing** (`context-routing.md`), **arena card and 3D position ledger** (`references/spatial-tactics.md`), choices, contact and support, four-layer dialogue, psychological action, status and power, seams, continuity | A design record (internal) | Writes the final prompt text; invents locked facts |
 | Lens | The design record | Translates to recordable statements; runs five enrichment passes; applies coherence | A texture-rich shot description | Changes locked facts; adds Tier A events |
 | Prompt | The shot description | Orders it into the skeleton, writes it in model language, lints it | One clip prompt (Extended by default) + notes outside the copy block | Contains design vocabulary, labels, or explanations |
 
@@ -33,7 +33,7 @@ Each room can send work back. If the Lens cannot depict something, return it to 
 
 **Tier A: story and contact events (strict).**
 - An event is one exchange of attack/defense/transfer with a clear outcome. Approach, crossing, and forced reaction of one blow count as one.
-- Guideline: about **3 independent interactions per ~5 s** of runtime. This calibrates to short clips; scale after testing on your model and duration.
+- Density is **mode-dependent** (`references/action-modes.md`): a duel about 1–3 independent interactions per ~5 s, a last stand 2–4 with overlap, an ambush 3 or more in the first 2 s, a stealth takedown 0–1 per clip, a ritual duel 0–2. These are starting points for short clips; scale after testing on your model and duration.
 - Split a clip when it contains a new attack, a changed defensive relationship, a new complex contact, or a second camera task.
 - A new persistent state (knockdown, disability, wall crack, weapon break, door closing) is its own event.
 - This tier exists to keep action physically readable. It never limits how richly each event is described.
@@ -60,8 +60,8 @@ Ask at most once, together, for what changes the outcome: the creative core, tar
 
 Keep it brief and structured, never in the prompt:
 
-`Locked facts | Added texture | Beats and status shifts | Dialogue (intent, subtext, spoken form) | Contact chain and support | Seam state in/out | Shot list with camera tasks | Open risks`
+`Context Profile and routed modes | Arena card and position ledger | Locked facts | Added texture | Beats and status shifts | Dialogue (intent, subtext, spoken form) | Contact chain and support | Seam state in/out | Shot list with camera tasks | Open risks`
 
 ## 6. Clip splitting
 
-Split by Tier A. Within a clip, B and C are unlimited. Dialogue-heavy scenes split by conversation unit (`dialogue/conversation-units.md`), not by 5 s event count. Multi-shot-capable models can take a short shot list inside one prompt; verify per model (`models/README.md`).
+Split by Tier A **as set by the action mode** (a stealth approach and its strike stay one unit; a last stand chains clips). Within a clip, B and C are unlimited. Dialogue-heavy scenes split by conversation unit (`dialogue/conversation-units.md`), not by 5 s event count. Multi-shot-capable models can take a short shot list inside one prompt; verify per model (`models/README.md`).

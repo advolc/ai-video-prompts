@@ -1,0 +1,203 @@
+{
+ "mode": "duel",
+ "runtime_s": 15,
+ "note": "Illustrative 3D redesign of the same arena, same ending. Design, not generated.",
+ "arena": {
+  "has_height": true,
+  "landmarks": [
+   {
+    "id": "R1",
+    "x": 6.6,
+    "y": 3.2,
+    "z": 0.8,
+    "type": "slope rock step"
+   },
+   {
+    "id": "R2",
+    "x": 3.0,
+    "y": 0.8,
+    "z": 0.8,
+    "type": "low rock"
+   },
+   {
+    "id": "W",
+    "x": 3.0,
+    "y": 5.0,
+    "z": 0,
+    "type": "canyon wall"
+   }
+  ]
+ },
+ "beats": [
+  {
+   "t": 0,
+   "A": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "facing": 0,
+    "anchor": null
+   },
+   "B": {
+    "x": 2.5,
+    "y": 0,
+    "z": 0,
+    "facing": 180,
+    "anchor": null
+   },
+   "event": "after the two lines"
+  },
+  {
+   "t": 2,
+   "A": {
+    "x": 1.0,
+    "y": 1.4,
+    "z": 0,
+    "facing": -30,
+    "anchor": null
+   },
+   "B": {
+    "x": 1.8,
+    "y": 0,
+    "z": 0,
+    "facing": 150,
+    "anchor": null
+   },
+   "event": "right slash; swordsman slides off the line to its outside and arcs",
+   "answer": "slip"
+  },
+  {
+   "t": 4,
+   "A": {
+    "x": 1.8,
+    "y": 0.6,
+    "z": 0,
+    "facing": -70,
+    "anchor": null
+   },
+   "B": {
+    "x": 1.8,
+    "y": -0.3,
+    "z": 0,
+    "facing": 90,
+    "anchor": null
+   },
+   "event": "left sweep; swordsman drops under and rolls to one knee",
+   "answer": "level_down"
+  },
+  {
+   "t": 6,
+   "A": {
+    "x": 3.0,
+    "y": 0.8,
+    "z": 0.8,
+    "facing": -140,
+    "anchor": "R2"
+   },
+   "B": {
+    "x": 1.9,
+    "y": -0.2,
+    "z": 0,
+    "facing": 160,
+    "anchor": null
+   },
+   "event": "swordsman springs onto the low rock, a pace above",
+   "answer": "level_up"
+  },
+  {
+   "t": 8,
+   "A": {
+    "x": 1.0,
+    "y": -0.6,
+    "z": 0,
+    "facing": 20,
+    "anchor": "B_blades"
+   },
+   "B": {
+    "x": 2.0,
+    "y": -0.2,
+    "z": 0,
+    "facing": 200,
+    "anchor": null
+   },
+   "event": "pushes off the crossed blades, tucks over, lands behind",
+   "answer": "pushoff"
+  },
+  {
+   "t": 10,
+   "A": {
+    "x": 2.2,
+    "y": 0.4,
+    "z": 0,
+    "facing": -140,
+    "anchor": null
+   },
+   "B": {
+    "x": 1.0,
+    "y": -0.6,
+    "z": 0,
+    "facing": 40,
+    "anchor": null
+   },
+   "event": "they trade places; raider turns, swordsman cuts past his shoulder",
+   "answer": "pass"
+  },
+  {
+   "t": 12,
+   "A": {
+    "x": 3.5,
+    "y": 1.8,
+    "z": 0,
+    "facing": 34,
+    "anchor": null
+   },
+   "B": {
+    "x": 5.0,
+    "y": 2.8,
+    "z": 0.2,
+    "facing": 214,
+    "anchor": null
+   },
+   "event": "swordsman drives the raider along the wall toward the slope",
+   "answer": "funnel"
+  },
+  {
+   "t": 14,
+   "A": {
+    "x": 4.6,
+    "y": 2.4,
+    "z": 0,
+    "facing": 23,
+    "anchor": null
+   },
+   "B": {
+    "x": 6.5,
+    "y": 3.2,
+    "z": 0.8,
+    "facing": 203,
+    "anchor": "R1"
+   },
+   "event": "raider's heel catches the rock step",
+   "answer": "advance"
+  },
+  {
+   "t": 15,
+   "A": {
+    "x": 4.8,
+    "y": 2.2,
+    "z": 0,
+    "facing": 29,
+    "anchor": null
+   },
+   "B": {
+    "x": 6.6,
+    "y": 3.2,
+    "z": 0.8,
+    "facing": 209,
+    "anchor": "R1"
+   },
+   "event": "swordsman at the foot of the slope, raider above",
+   "answer": "plant"
+  }
+ ]
+}

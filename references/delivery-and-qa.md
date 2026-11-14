@@ -27,7 +27,7 @@ A literary script or description is not a prompt. Convert it into visible, time-
 1. **No production scaffolding.** No clip IDs, time-range labels, "must-do", "ambient", "seam", "same as before", "see above". Carry-over is written as present-tense facts.
 2. **No negations or constraints as sentences.** State what is there. A negative field on a verified platform may hold at most two short exclusions.
 3. **No explanation, theory words, or evaluation.** Show the cause as behavior.
-4. **Action reads as one connected chain** using temporal connectives (as, then, when, a beat later), not conditionals.
+4. **Action reads as one connected chain** using temporal connectives (as, then, when, a beat later), not conditionals. Movement through space is written as **paths** (shape plus landmark or opponent-relative direction), not only as steps in and back.
 5. **Self-contained.** The first sentences carry the look and every present character's recognizable look. Never only a name, "the one in red", or "as before".
 6. **Honest.** No claim that the clip was generated, tested, or lip-synced unless it was.
 
@@ -47,10 +47,12 @@ Ask once, if unknown: all prompts now, or one trial clip first? Reuse the answer
 8. Does each clip's opening state equal the previous clip's end state?
 9. Is the added-texture note written, and are assumptions labeled?
 10. Verified, assumed, untested: labeled correctly, no result promises?
+11. **Spatial gate** (any fight): is there an arena card and a position ledger? Does `python scripts/check_spatial.py ledger.json` pass for the mode (line-lock run, lateral deviation, bearing sweep and coverage, level change, anchors, plant-and-absorb share)? Does every defensive response include a displacement?
+12. **Linear-verb check:** does `lint_prompt.py` report more linear moves (steps in or back, retreats) than spatial ones (circle, slip, pass, level change, push-off)? Does the camera use at least two axes relative to the duel line?
 
 ## 7. When a clip fails
 
-Label the failure type: identity, space, action, contact, light/optics, face, body, speech, sound. Find the **earliest** wrong point; check what depends on it. Fix by removing competing tasks, tightening the contact chain, or changing the look anchor; do not pile on adjectives. Without actual output, do not claim a model "cannot" do something. Record results in `models/` (`evals/cases.md` has a template).
+Label the failure type: identity, space (including **spatial-linear**: a fight confined to one line), action, contact, light/optics, face, body, speech, sound. Find the **earliest** wrong point; check what depends on it. Fix by removing competing tasks, tightening the contact chain, or changing the look anchor; do not pile on adjectives. Without actual output, do not claim a model "cannot" do something. Record results in `models/` (`evals/cases.md` has a template).
 
 ## 8. Honest status language
 

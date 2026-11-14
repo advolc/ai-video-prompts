@@ -95,3 +95,21 @@ Skin shows depth when light grazes it: side or three-quarter light brings out po
 - *Interior power scene:* "A low tungsten desk lamp throws amber light across Wu's lower face from the left, steep falloff dropping his right cheek into shadow; cool grey window light behind Chen rims his silver hair, and a small window-shaped highlight shows in each of his eyes. Dust turns slowly in the window beam."
 - *Night exterior:* "Snow falls through the cold blue ambient light; a lantern on the doorpost throws amber light across the threshold and onto Lin's right cheek; each exhale leaves a pale puff in front of her face."
 - *中文：* "窗外的冷灰天光从左后方落在他肩上，桌边的钨丝灯在他下巴投下一小片暖色；两只眼睛里各有一个窗形的亮点，杯口的热气被他的呼吸吹得微微一偏。"
+
+## 12. Mood and context routing
+
+Light should answer the Context Profile (`core/context-routing.md`), not a preset.
+
+| Context | Lighting behavior |
+|---|---|
+| Private, intimate | Small warm sources; the light pool shrinks with closeness; shadows hold the edges |
+| Public, formal | Even, structural light (ceiling, daylight, windows); little shadow drama |
+| High stakes | More contrast; a single hard source; deeper shadow |
+| Low stakes, comic | High key, even, saturated |
+| Public humiliation or exposure | Flat bright light that hides nothing |
+| Stealth | One hard source, cool or night; deep shadow; the subject at the edge of the light |
+| Dominance | A clean edge light on the dominant; the other in softer or mixed light |
+| Grief | Soft window light, low contrast |
+| Time pressure | Moving or changing light (a flickering lamp, passing headlights) only if the source exists |
+
+The sources named in the scene stay consistent; routing chooses how they are used (how close, how hard, how much), never invents a new one.

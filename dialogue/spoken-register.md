@@ -75,7 +75,7 @@ Say less than you mean. Answer the question behind the question. Change the subj
 
 ## 8. Two outputs, both first-class
 
-1. **Native-dialogue prompt (default).** Lines go **inline** in the Extended prompt as quoted speech with delivery cues and body beats. When the platform has native speech, this is the render path. When it does not, the quotes still give the model mouth shapes and timing; whether lips sync is **untested** (see `models/README.md`, item 5). Never promise sync.
+1. **Native-dialogue prompt (default).** Lines go **inline** in the Extended prompt as quoted speech with delivery cues and body beats. When the platform has native speech, this is the render path. When it does not, the quotes still give the model mouth shapes and timing; whether lips sync is **model-specific**: on one tested model it worked acceptably (`models/observed-wuxia-30s-clip.md`); check yours (`models/README.md`, item 5). Never promise sync.
 2. **Voice script** (outside the copy block): for post, TTS, or a voice actor.
 
 ```

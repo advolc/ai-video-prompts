@@ -1,3 +1,35 @@
+# Migration: v1 to v3.3
+
+## v3.3 changes (Spatial Tactics and 3D Footwork)
+
+- **Diagnosis:** the skill defined position as one scalar distance plus facing, so fights collapsed onto one line. The QA checklist had no spatial item, and the "reset test" caught only identical start positions.
+- **New layer** (`references/spatial-tactics.md`): a mandatory arena card, a 3D position ledger (x, y, z, facing, anchor per beat), a path vocabulary (off-line slip, arc, pass, level down and up, anchor push-off, terrain funnel, obstacle play), ten rules including the line-break rule and a displacement answer for every defense, spatial signatures per mode, an airborne rule, camera-axis variety, and a QA gate.
+- **Action unit** changed: "起点" now carries 3D position and bearing; a mandatory "位移（走位）" field was added; the state ledger gains Z and anchors.
+- **Tools:** `scripts/check_spatial.py` (checks a ledger; mode-aware) and a linear-movement warning in `lint_prompt.py`.
+- **Findings on the test clips:** a ledger reconstructed from prompt A fails five checks; one reconstructed from my "ceiling" prompt B fails two (a three-beat line-lock run, a single anchor), so B only partly fixes the problem; an illustrative 3D redesign passes. Reconstructions are from prompt text, not measured from any clip.
+- **Patched files** and exact text are in `PATCHES-v3.3.md`.
+
+# Migration: v1 to v3.2
+
+## v3.2 changes (Context-Aware Routing)
+
+- **Context Profile and router** (`core/context-routing.md`): every scene is profiled before writing; nothing defaults to a template scene.
+- **Action modes** (`references/action-modes.md`): ten fight modes (duel, last stand, stealth, sparring, ambush, dominance, flight fight, brawl, group melee, ritual duel) with their own rhythm, density, initiative, pause legitimacy, fatigue, reach, terrain, and fail-states. The closed exchange is the duel mode only. Tier A density is mode-dependent, not "about 3 per 5 s".
+- **Situation profiles** (`dialogue/situation-profiles.md`): 13 conversation situations (seated formal, standing, street argument, walking, farewell, confession, interrogation, public address, whisper, confined space, bedside, post-exertion, banter) with movement, pace by arousal, silence share, skeletons, and camera. The tea scene is profile A only.
+- **Display rules** (`lens/face-pass.md` section 10): mask strength by audience, relationship, arousal, fatigue, and stakes; public and private versions of one beat.
+- **Camera stance** routed (observe, participate, subjective); **look and light** routed by context; **slot weights and end-state modes** by scene type (not every clip ends on a still hold).
+- **Patched** in place: `choreography.md`, `prompts-and-segments.md`, `camera-and-rhythm.md`, `sound-and-voice.md`, `body-and-status.md`, `conversation-units.md`, `optics-and-stock.md`, `physical-light.md`, `output-skeletons.md`, `generation-handoff.md`, `pipeline.md`, `SKILL.md`. The exact changes are in `PATCHES-v3.2.md`.
+- **Evals:** cases 14–19 and a mode-fit rubric line.
+
+# Migration: v1 to v3.1
+
+## v3.1 changes (from the first generated clip)
+
+- **Length scales with duration.** The 320–520 word range fits a ~5–10 s clip. Longer or multi-shot clips start at about 25–35 words per second (one observation; test it). `lint_prompt.py --seconds N`.
+- **Control parameters stay out of the prose.** Resolution, duration, and fps go in platform fields; the linter warns.
+- **Dialogue framing is chosen for acting, not for sync.** Lines rendered with acceptable lip sync in a moving medium-wide on the tested model.
+- **First model observation recorded:** `models/observed-wuxia-30s-clip.md`. Case 13 (dialogue framing) added to the evals.
+
 # Migration: v1 to v3.0
 
 v3 is a fork of v1, not a rewrite. The depth systems you valued stay. What changed is **where depth is spent** and **how it is turned into text**.
@@ -40,7 +72,7 @@ Choreography and force/support/contact, hit chain and hit-context derivation, st
 ## Decisions you made that I implemented as asked
 
 - **Extended is the default for every prompt.** It targets about 320–520 English words (about 650–1000 Chinese characters) per clip, up to the model's limit. This is your call; the risk is that some models truncate, dilute, or contradict themselves on long prompts. `evals/cases.md` case 10 (the length ladder) tests it per model, and `models/` records the result.
-- **Dialogue is inline by default**, which means some prompts will include speech the model cannot voice. Lip sync is untested everywhere until you test it.
+- **Dialogue is inline by default**, which means some prompts will include speech the model cannot voice. On the one model observed, speech and acceptable lip sync worked; test yours.
 
 ## Honest caveats
 

@@ -96,3 +96,13 @@ When a negation is the clearest way to keep a rare, high-risk artifact out, it m
 - It never changes locked facts to fit richer text.
 - It never explains itself in the prompt.
 - It never pads. Length is earned by distinct, recordable information.
+
+## 9. Writing movement in space
+
+Fighters move through three dimensions, and the prompt has to say how (`references/spatial-tactics.md`).
+
+- A **path sentence** has three parts: where from (a landmark or an opponent-relative direction), what shape (arc, slip, pass, drop, spring, push-off), where to (a landmark or a relationship to the opponent).
+- Prefer opponent-relative and landmark terms: "outside the right blade", "behind his shoulder", "around the boulder", "up the rock step", "with the sun behind him".
+- Level changes are depicted, not named: "drops under the sweep and rolls to one knee", "springs onto the low rock, a full pace above him".
+- A prompt in which most movement is "steps in", "steps back", "retreats half a step" keeps the fight on one line. `lint_prompt.py` warns on this pattern.
+- Camera axis variety is part of the depiction: a fight filmed only in side profile looks linear whatever the ledger says.
