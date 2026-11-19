@@ -22,3 +22,13 @@ What worked (with the prompt):
 What failed (with the prompt and the earliest failure type):
 Phrasing that helped / hurt:
 Open questions:
+
+
+## Reproduction record
+Platform/hosting mode and model version:
+Official capability source and date (separate from observations):
+Task, style, duration, references/first frame and actual settings:
+Prompt variants, output locations, sample count and seed if available:
+Observed successes and failures by target (not just total score):
+Uncontrolled variables, uncertainty and retest date:
+

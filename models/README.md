@@ -35,7 +35,7 @@ v1's platform matrix was almost entirely "to verify." v3 replaces it with a meth
 | Responds well to cinematography vocabulary | Use the optics/light terms freely in the look anchor |
 | Ignores cinematography vocabulary | Rely on depiction ("a thin orange edge on his hair"), keep terms minimal |
 | Prefers English or Chinese | Write the prompt in that language; keep names consistent |
-| Has a negative field | At most two short exclusions there; the body stays positive |
+| Has a negative field | Use only relevant exclusions supported by that interface; prefer positive depiction in the body |
 | Has only text camera control | Camera relationships in natural sentences, never pseudo-parameters |
 | Renders fine facial detail poorly | Use the fallback order in `lens/face-pass.md` section 7 |
 
@@ -45,7 +45,7 @@ Create `models/<model>-<version>.md` (copy `_adapter-template.md`). Fill only wh
 
 ## 4. Status
 
-One observation is recorded: `observed-wuxia-30s-clip.md` (one clip, model not named). Run `evals/cases.md` on your model and fill in a proper adapter from the results.
+Run `evals/cases.md` on the actual target model and fill in an adapter from those results. Development-only observations are archived separately and do not establish a verified capability for an unnamed or different model.
 
 ## 5. Appendix: v1 decision tree (work method, not a capability score)
 
@@ -61,3 +61,9 @@ Each node first checks that the current mode supports it; previews and pre-vis a
 | Pure atmosphere | Text-to-video, steady camera, one visible change | Reduce detail, use a still with slight motion or post; do not pad with empty shots |
 
 Order: user goal → available assets → interface capability → cost → pilot results. One brand's versions and hosting platforms may differ; unknown capability is internal "to verify", and to the user say "I'll work from the settings you can actually choose." Never silently downgrade a user's explicit goal.
+
+## 6. Evidence before presets
+
+No completed per-model benchmark is bundled. Start with a neutral prompt when capability is unknown; mark assumptions and preserve rich design. Test the principal interaction before inferring useful density or vocabulary. Record official capabilities separately from repeated observed behavior, including the actual input mode, version, references, settings and failures. A first-frame workflow can spend less text on already supplied appearance while keeping motion and necessary identity anchors. Do not invent adapter results to complete a template.
+
+The dated cross-model entry point and evidence classes are in [capabilities](capabilities.md).

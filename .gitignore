@@ -11,6 +11,3 @@ __pycache__/
 *~
 .DS_Store
 Thumbs.db
-
-# Accidental command-output draft
-/Export one event as a label-free plain draft,.txt

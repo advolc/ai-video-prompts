@@ -1,0 +1,106 @@
+{
+  "precedence": {
+    "path": "SKILL.md",
+    "heading": "## Precedence (the only ladder)"
+  },
+  "quality_preservation": {
+    "path": "core/pipeline.md",
+    "heading": "## 8. Quality preservation"
+  },
+  "context_selection": {
+    "path": "core/context-routing.md",
+    "heading": "## 1. The Context Profile"
+  },
+  "action_mode": {
+    "path": "references/action-modes.md",
+    "heading": "## 2. The modes"
+  },
+  "contact_and_support": {
+    "path": "references/choreography.md",
+    "heading": "## Force chains and support"
+  },
+  "spatial_requirements": {
+    "path": "references/spatial-tactics.md",
+    "heading": "## 5. Spatial integrity and optional variety"
+  },
+  "dialogue_spatial_decision": {
+    "path": "dialogue/spatial-blocking.md",
+    "heading": "## 1. A spatial decision is required"
+  },
+  "dialogue_intent": {
+    "path": "references/dialogue-engine.md",
+    "heading": "## Four-Layer Model: Check the Scene Without Forcing Hidden Meaning"
+  },
+  "psychological_action": {
+    "path": "references/performance-and-psychology.md",
+    "heading": "## Four Steps of Psychological Action"
+  },
+  "body_status_vocabulary": {
+    "path": "lens/body-and-status.md",
+    "heading": "## 1. Status is a transaction"
+  },
+  "facial_display": {
+    "path": "lens/face-pass.md",
+    "heading": "## 10. Display rules: who is watching"
+  },
+  "speech_pace": {
+    "path": "dialogue/situation-profiles.md",
+    "heading": "## 2. Speech timing by arousal"
+  },
+  "context_to_look": {
+    "path": "lens/optics-and-stock.md",
+    "heading": "## 10. Routing the look from context"
+  },
+  "light_physics": {
+    "path": "lens/physical-light.md",
+    "heading": "## 1. Source before mood"
+  },
+  "depiction_grammar": {
+    "path": "lens/lens-layer.md",
+    "heading": "## 1. The depiction grammar"
+  },
+  "output_length": {
+    "path": "lens/output-skeletons.md",
+    "heading": "## 2. Length"
+  },
+  "request_capacity": {
+    "path": "references/generation-handoff.md",
+    "heading": "## 3. Clip splitting (Tier A)"
+  },
+  "event_boundaries": {
+    "path": "references/generation-handoff.md",
+    "heading": "### Event boundaries"
+  },
+  "model_observation": {
+    "path": "references/source-scope.md",
+    "heading": "## Model observation record"
+  },
+  "seam_state": {
+    "path": "references/generation-handoff.md",
+    "heading": "## 7. Seam state (carry between clips)"
+  },
+  "delivery_choice": {
+    "path": "references/generation-handoff.md",
+    "heading": "## 10. Delivery choice"
+  },
+  "semantic_acceptance": {
+    "path": "references/delivery-and-qa.md",
+    "heading": "## 9. Target coverage before style polish"
+  },
+  "record_selection": {
+    "path": "core/records.md",
+    "heading": "## Selection"
+  },
+  "evidence_classes": {
+    "path": "models/capabilities.md",
+    "heading": "## Evidence classes"
+  },
+  "story_scope": {
+    "path": "core/pipeline.md",
+    "heading": "## 2. Texture Authority"
+  },
+  "tier_budgets": {
+    "path": "core/pipeline.md",
+    "heading": "## 3. Tiered budgets"
+  }
+}

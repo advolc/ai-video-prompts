@@ -4,16 +4,16 @@
 
 The closed exchange (attack, block, step back, reset) is the **duel** mode only. In other modes it reads as polite turn-taking and should be replaced.
 
-Numbers below are starting points for a short-clip workflow. Test them on your model (`evals/cases.md`).
+Numbers below are uncalibrated pacing sketches for a short-clip workflow, not measured model capacities. Use the [event boundaries](generation-handoff.md#event-boundaries): count new causal interaction starts, not every verb, and never combine a whole fight under one label. Do not slow a requested fast fight to hit a range or split requests from a count alone. Test actual timing and complexity (`evals/cases.md`).
 
-**Where the fighters go** (arena, 3D position ledger, footwork, the line-break rule) is decided in `references/spatial-tactics.md` and is mandatory before any exchange is written. Each mode has a spatial signature there (section 6).
+**Where fighters move or hold** is designed using `references/spatial-tactics.md`. Check usable space before exchanges; use concise records for simple action and expanded coordinates for complex paths. Mode signatures are starting points, not movement quotas.
 
 ## 1. Parameters every mode defines
 
 | Parameter | Meaning |
 |---|---|
 | **Rhythm shape** | The tempo curve: bursts and lulls, steady pressure, a single peak, collapse |
-| **Tier A density** | Independent interactions per ~5 s of runtime (replaces the old universal "about 3") |
+| **Tier A density** | Sketch of interaction starts per ~5 s; use the handoff's operational definition. Not a threshold or quality score |
 | **Initiative** | Who owns the fight, how it changes hands, and what causes the change |
 | **Pause legitimacy** | When a separation or stand-off is allowed. **Resets are legitimate only if the mode or the fatigue state makes them meaningful** |
 | **Spatial signature** | How the mode occupies the arena: arcs, a shrinking radius, one clean line in, prescribed marks (`references/spatial-tactics.md` section 6) |
@@ -52,7 +52,7 @@ Numbers below are starting points for a short-clip workflow. Test them on your m
 - **Pressure gradient:** pressure is shown as space given up: steps back, terrain lost, the defender's options narrowing. Record start and end positions as (x, y, z) in the position ledger, not only as a distance; pressure that moves along one line is weaker than pressure that curves the defender around terrain.
 - **Overlap:** where the mode calls for it, a strike begins while the previous one is still resolving ("the left blade is already sweeping in as the first block slides it away").
 - **Consequence accumulation:** each hit, miss, or loss of terrain leaves a trace that changes the next move (a cut strap, a jarred arm, a slipped foot, a cracked wall). A trace that never matters is decoration.
-- **Reset test:** if two consecutive beats begin from the same positions **or the same bearing and height**, the mode has stalled. A fight that oscillates along one line fails the line-break rule in `references/spatial-tactics.md` even though its positions differ. Allow it only where pause legitimacy says so.
+- **Reset test:** repeated positions may express guarding, pressure or ritual. Revise an unmotivated reset that erases consequence, not a purposeful hold or linear exchange. Check that changing attacks, control and recovery remain legible.
 - **Failed attacks matter:** a miss that bites a wall, throws the attacker off balance, or opens him up is worth more than a clean block.
 - **The ending is a result:** the final state must follow from the fight. Positions differ from the opening and the difference is explained.
 

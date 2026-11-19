@@ -1,85 +1,85 @@
-# 提示词分层与生成段规划
+# Prompt Layers and Generation-Segment Planning
 
-## 三种单位分开
+## Separate three units
 
-叙事镜头SHOT说明观众连续看见什么；生成段GEN是一次工具输出；时间线CLIP是实际选用的区间。一个长镜头可由多个GEN拼接，一个GEN也可只取其一部分。先依[生成交接检查](generation-handoff.md)确认实际使用条件、参考素材分支与动作负荷，再决定GEN。复杂交互可先用3—5秒运动段、一次主要接触试验，长度服从用户选择和平台实测；保留的6秒段案例是候选预算，不是通用能力上限。
+A narrative shot, SHOT, describes what viewers continuously see. GEN is one tool output. A timeline CLIP is the interval actually selected. Several GENs may form one long take, and only part of a GEN may be used. First confirm actual operating conditions, reference-material branch, and action load through [generation handoff checks](generation-handoff.md), then decide GENs. For complex interactions, 3–5 seconds of motion with one principal contact can be an initial experiment; duration follows user choice and platform tests. The retained six-second example is a candidate budget, not a universal capability ceiling.
 
-段表：`SHOT_ID/GEN_ID｜时间线起止与净长｜请求时长/首尾余量｜实际输入资产｜起始姿态/构图/状态｜主要攻防/负荷取舍｜结束姿态/构图/状态｜镜头运动｜接缝方式｜音频职责｜关键通过/失败条件｜接受/返工原因`。起止状态是设计要求，不等于已提供首尾帧。余量不是额外故事时间；重叠区剪掉重复动作，总净长才等于单集时长。
+Segment table: `SHOT_ID/GEN_ID | timeline start/end and net duration | requested duration/start-end margins | actual input assets | starting pose/composition/state | principal attack/defense/load tradeoff | ending pose/composition/state | camera movement | seam method | audio responsibilities | key pass/fail conditions | acceptance/rework reason`. Start/end states are design requirements, not proof that first/last images were supplied. Margins are not extra story time. Trim duplicated overlap so total net duration equals episode length.
 
-## 生成层内部描述与三层输出边界
+## Internal generation descriptions and the three output boundaries
 
-输出按[模板结构契约](template-contract.md)分为生成层、控制栏和独立制作备注。固定前缀、事件、可见承接属于生成层；以下五类是生成内容的策划维度，不是再将控制与管理混进五层提示词。
+The [template structure contract](template-contract.md) separates generation prose, control fields, and independent production notes. Fixed prefixes, events, and visible continuity belong to generation. These five categories are planning dimensions of generation content, not permission to mix control/management into five prompt layers.
 
-1. 固定内容：角色可见身份、持械手、兵器/术法结构、风格；资产ID、版本与参考绑定留控制/管理，实际生成规格填参数栏。
-2. 场景层：锚点、轴线、左右前后、损毁和光照状态；分段时描述上段合格状态，实际使用首帧时再以该图约束。
-3. 动作层：一个主要攻防目的、路径、应对、接触/落空、结果及尾姿。优先主体与主动作，次要变化取舍。
-4. 摄影与表演层：景别、单一主运镜、视线对象、呼吸/台词时段、焦点任务。
-5. 效果与限制层：触发、附着、消退，优先列会破坏本段的两三项限制，不堆通用负面词。
+1. Fixed content: visible identity, weapon hand, weapon/power structure, style. Asset IDs, versions, and reference bindings stay in control/management; actual generation specifications go in parameter fields.
+2. Setting: anchors, axis, left/right/depth, damage, lighting state. For segmentation, describe the preceding qualified state; use a first-frame image as a constraint only when actually supplied.
+3. Action: one principal attack/defense goal, path, response, contact/miss, result, ending pose. Prioritize subject/main action and select among secondary changes.
+4. Camera/performance: framing, one principal camera move, gaze target, breath/dialogue interval, focus task.
+5. Effects/limits: trigger, attachment, decay. Prioritize the two or three limits whose failure would break this segment rather than generic negative lists.
 
-固定内容以项目文件管理，实际工具不支持跨段记忆时仍须带入必要描述，不能只写“同上”。参考图职责、绑定与首尾帧文件放控制栏，不把整张绑定表写进生成正文；平台要求正文媒体标记时按核实语法插入最少标记。原生声音可用时在对应事件时间内描述；混音、后期配音与口型修整放独立制作备注。
+Manage fixed content in project files, but include necessary descriptions when the tool lacks cross-segment memory; “same as above” is insufficient. Reference responsibilities/bindings and first/last-frame files go in controls, not a full binding table in prose. If the platform requires inline media markers, insert the minimum using verified syntax. Describe available native sound within its event interval; mixing, post-dubbing, and lip repairs stay in separate production notes.
 
-以上是策划信息层，不要求把五层全部原样粘入每次输入。实际稿按生成交接检查压缩，删除未上传资产的引用及竞争任务；每段文字足以独立识别主体、起点、主要动作和结果。分镜、输入与后期说明分开。
+These are planning layers, not a requirement to paste all five verbatim into every input. Compress through handoff checks, removing references to unuploaded assets and competing tasks. Each segment independently identifies subject, start, main action, and result. Separate storyboard, actual input, and post instructions.
 
-## 横向摄影在AI中的使用条件
+## Conditions for lateral photography in AI
 
-把两侧背景塌陷、边缘人物变形、横移背景漂移和纹理重复列为风险检查，不声称所有模型必然失败。先用低成本小样测试横向覆盖范围；建立左右端点关键帧、静态锚点及合理视差。横移是摄影机平移产生视差，摇摄是机位附近转向，提示词不能混为“背景横着动”。
+Check background collapse at both sides, edge-character deformation, lateral background drift, and repeated textures as risks; do not claim all models inevitably fail. Test coverage with inexpensive samples first. Establish left/right endpoint keyframes, static anchors, and plausible parallax. Tracking translates the camera and creates parallax; panning rotates near its position. Neither is merely “the background moves sideways.”
 
-同框关键交汇先安排在中心安全区；边缘威胁可部分显露但不能把唯一接触丢在变形区。横移/摇摄需给清楚起止锚点、主目标和移动幅度；全景、多敌、细密重复建筑、高速横移同时出现时先降低一个复杂度。若仍漂移，选稳定机位下人物运动、分角度切镜或实建/分层场景，不持续堆“稳定背景”重试。
+First place critical shared-frame encounters within the central safe area. Edge threats may appear partially, but the sole contact cannot live in a distortion zone. Give tracking/panning clear start/end anchors, primary target, and travel amplitude. If a wide, many enemies, dense repeating architecture, and fast lateral travel coexist, reduce one complexity. If drift persists, choose character motion under a stable camera, angular cuts, or a built/layered setting rather than repeatedly adding “stable background.”
 
-验收左右边界和画面中部的连续帧：门柱数量、瓦纹、地面透视、纹样相位、人物比例是否跳变。不要用大模糊掩盖本来需要交代的地图关系。
+Inspect continuous frames at both boundaries and center: doorpost count, roof patterns, ground perspective, pattern phase, and body proportions must not jump. Heavy blur cannot conceal geography that needs explanation.
 
-## 长镜头由多段组成
+## Long takes assembled from segments
 
-多段拼接是选项，不是所有长镜头的强制形态。按[全局协议](delivery-and-qa.md)，约10秒同一紧密因果链、无复杂接触的动作可保留一个长事件单元，实际输入强调“这是一次长镜头连贯动作”；只有复杂交互、支撑或工具条件要求时再拆，不机械按秒数断开。
+Joining segments is optional, not mandatory for all long takes. Under the [global protocol](delivery-and-qa.md), around ten seconds of one tightly connected causal chain without complex contact may remain one long event unit; actual input emphasizes “one continuous long-take action.” Split only when complex interaction, support, or tool conditions require it, not mechanically by seconds.
 
-先设计整条空间路径和动作节拍，再选接缝。优先在动作完成后的自然保持、角色短时遮挡镜头、门柱遮挡或方向明确的掠镜处分段；避免在刀刃穿过身体/双手换握的最复杂瞬间硬接。
+Design the full spatial path and action beats before selecting seams. Favor natural holds after completed actions, brief character occlusion, doorpost cover, or clearly directed passes across the lens. Avoid hard joins during the most complex blade/body crossing or two-hand grip change.
 
-用户实际使用首帧/图像参考时，选用上段合格尾帧或相邻清楚帧，并附状态表；采用尾帧控制时用真实批准图，不反复编码污染原图。无图流程用自足文字描述起始支撑、握法、动量与摄影高度，连续性列为待验证，不能声称帧已锁定。保留少量剪辑余量，比较轮廓位置、速度方向、光影、背景锚点与伤损；余量长度按动作试验决定。
+When the user actually uses first-frame/image references, select the preceding qualified end frame or a clear adjacent frame with its state sheet. For end-frame control, use the actual approved image without repeatedly re-encoding and degrading it. For text-only workflows, self-contained prose specifies starting support, grip, momentum, and camera height; mark continuity pending rather than claiming locked frames. Retain modest editing margins and compare silhouette position, velocity direction, lighting, background anchors, and damage. Determine margin length through action tests.
 
-隐藏接缝仍要检验场景与时间连续。可用短遮挡、动势匹配与连续环境声辅助；角色重影、武器弯曲或明显背景错位不能靠叠化解决。匹配不成时改成有意切镜并重建空间，称“连续交锋”而非虚称无缝长镜头。
+Hidden seams still require spatial/time continuity checks. Brief occlusion, motion matching, and continuous ambience can help; dissolves cannot solve character doubling, bent weapons, or obvious background misalignment. If matching fails, make an intentional cut and reestablish space; call it a continuous exchange, not a seamless long take.
 
-规划示例：24秒镜头，6秒净段×4，GEN各请求覆盖净长与工具允许的余量；接缝依次用架偏后回收、门柱遮挡、入门后构图。最终只选时间线0—6、6—12、12—18、18—24秒，不将重复动作相加成更长故事。阶段形态与手持物须逐段对齐。
+Planning example: a 24-second shot made of four six-second net segments, each GEN requesting net duration plus tool-permitted margins. Seams use recovery after deflection, doorpost occlusion, and framing after entry. Select only timeline intervals 0–6, 6–12, 12–18, 18–24 seconds; duplicated action does not create a longer story. Align phase-specific forms and held objects segment by segment.
 
-具体候选（不含术法的护门片段，尚未动态验证；已将护送与再交手、操作机关与伸矛阻门分开。下表是段表，实际文本仍需按本次使用条件整理）：
+Concrete candidate: a door-defense segment without powers, not dynamically validated. Escorting and renewed fighting, and operating the mechanism versus inserting the spear to block the gate, are separated. This is a segment table; actual text still needs preparation for current conditions.
 
-| 段ID | 时间线净区间 | 起止状态与事件 | 下一接缝 |
+| Segment ID | Net timeline interval | Start/end states and events | Next seam |
 |---|---|---|---|
-| G01 | 0—6秒 | A中、B右、门左；B进刺、A右杖架偏，末尾双方回收未换手 | 架偏后的短保持，匹配杖端/矛尖位置与呼吸 |
-| G02 | 6—12秒 | B收矛跟步但不再进刺；A持杖护着C越过门槛，自己退到控制杆旁 | 门柱短时遮挡时接，柱后空间与明暗不能改变 |
-| G03 | 12—18秒 | C已门内；A左手扳杆启动落闸，随即撤入门内；B仍在门外，矛尚未伸入门缝 | A已入门，门正在下降，匹配矛尖与门底高度 |
-| G04 | 18—24秒 | B双手向下降门缝伸矛，闸门夹住矛杆；A/C在门内左侧，B留右 | 尾部交代夹持结果，环境与门振尾音连续 |
+| G01 | 0–6 seconds | A center, B right, door left; B thrusts, A deflects with right-hand staff; both recover at the end without switching hands | Brief post-deflection hold; match staff tip/spearpoint and breath |
+| G02 | 6–12 seconds | B retracts spear and follows without another thrust; A escorts C over the threshold with staff guarding, then retreats beside the lever | Join under brief doorpost occlusion; space/light behind the post stays consistent |
+| G03 | 12–18 seconds | C inside; A pulls lever with left hand to lower gate, then withdraws inside; B remains outside, spear not yet in the gap | A inside, gate descending; match spearpoint and gate-bottom height |
+| G04 | 18–24 seconds | B uses both hands to insert spear into descending gap; gate grips shaft; A/C inside left, B remains right | Tail establishes clamping result; ambience/gate-vibration tails continue |
 
-采用图像承接时，批准尾帧连同状态表传给下一段；仅文字承接时核查实际输出是否匹配，不能用状态表代替视频证据。接缝处保留可选素材并在剪辑去重。若参考首尾帧能力不足、柱遮挡生成不稳或接缝仍跳，改成同一场戏的明确切镜；24秒连续叙事仍成立，无缝长镜头则记为未实现。
+For image handoff, pass the approved end frame and state sheet forward. For text-only handoff, check actual output matches; a state sheet is not video evidence. Retain seam options and remove duplicated action in editing. If reference first/last-frame capacity is insufficient, post occlusion unstable, or joins still jump, use explicit cuts within the same scene. Continuous 24-second storytelling remains possible; mark a seamless long take unachieved.
 
-## 重试策略
+## Retry strategy
 
-一次只改主要失败变量，保留旧结果、提示词、参考版本与失败标签。先用一个高风险接触段检验可行性，再批量。若同类失败在预算内反复出现，改分段/镜头或走可控动画/合成，不把用户预算耗在不变的抽卡上。诊断见 [AI管线](ai-pipeline.md)。
+Change only the principal failure variable each time; retain old outputs, prompts, reference versions, and tags. Test feasibility with one high-risk contact segment before batching. If similar failures repeat within budget, change segmentation/shots or use controllable animation/compositing rather than spending the budget on unchanged draws. See [AI pipeline](ai-pipeline.md).
 
-## 单段单事件的默认拆法（对决类情境；其他模式见动作模式）
+## Default one-segment/one-event split (duel contexts; see action modes for others)
 
-本节的“前冲—接触—分开—再接触”拆法对应对决类、复杂接触未验证的情境。潜入、困兽、伏击、对练、混战等按[动作模式](action-modes.md)的拆分规则处理，不套用这套节拍。复杂接触未验证时，以3—5秒运动段、一次主要接触作为小样起点；按实际界面选择请求时长，工具不支持短段时生成更长素材再截取。接触插镜剪辑净选用约1—2秒是候选，不伪造接口参数。独立事件的判定与用户一次长段的处理统一见生成交接检查；不能用“一场压制”包装多次攻击，也不声称模型只能一次接触或特写天然更稳定。
+The “rush—contact—separate—contact again” split applies to duels with unvalidated complex contact. Infiltration, last stands, ambushes, sparring, and melees use [action-mode](action-modes.md) splits instead. Start complex-contact samples at 3–5 seconds of movement with one principal contact. Choose requested duration from the actual interface; if short requests are unsupported, generate longer footage and select an interval. Selecting approximately 1–2 net seconds for a contact insert is a candidate edit choice, not a fabricated API parameter. See generation handoff checks for independent events and a user's one-long-segment choice. Do not disguise several attacks as “one suppression,” claim models can handle only one contact, or assert close-ups are inherently more stable.
 
-| 段落 | 要完成的事件 | 接力状态 |
+| Segment | Event | Relay state |
 |---|---|---|
-| 前冲 | 攻方从明确起点进入有效距离 | 交接帧保留攻击线、支撑脚与兵器朝向，接触尚未发生 |
-| 第一次接触 | 格挡、架偏或控制成立 | 同一对武器/肢体，交汇产生具体偏转、位移或限制 |
-| 分开换位 | 释放接触、回收和移到新位置 | 写清谁持械、谁失衡、双方距离与下一条攻击线 |
-| 第二次接触 | 新角度的一次交汇 | 单独编排应对与后果，不复制第一次结果 |
+| Rush | Attacker enters effective range from a clear start | Handoff frame retains attack line, support foot, weapon direction; contact has not occurred |
+| First contact | Block, deflection, or control becomes valid | Same weapons/limbs; encounter produces specific deflection, displacement, or restriction |
+| Separation/repositioning | Release contact, recover, move to a new position | Specify ownership, imbalance, distance, next attack line |
+| Second contact | One encounter from a new angle | Choreograph response/consequences separately, not a duplicate first result |
 
-接触特写先固定近侧手、兵器/护腕与接触面，减少同帧转体和换手；末帧仍须能看出施力方向。若手腕被扣，手指环绕和被控手臂归属必须清楚；若刃口压护腕，要按材质/能力解释为何未直接切穿；脚尖、膝弯等局部关系须与宽景同一条腿及支撑状态相连。
+For contact close-ups, fix near hand, weapon/bracer, and contact surface first; reduce simultaneous turning/hand switching. The final frame still shows force direction. A wrist hold needs clear surrounding fingers and arm ownership; a blade pressing a bracer needs material/ability justification for not cutting through. Toe/knee relationships must connect to the same leg/support state in the wide.
 
-宽—近—宽起稿：0—2秒宽景只做到逼近、攻击将交汇；2—3.5秒近景显示接触与架偏；3.5—5.5秒宽景显示退步/失衡及新距离，总净长5.5秒。不得三个段各演一遍完整击打。时间可按动作调整，接触结果应至少在插镜或回宽里明确出现。
+Wide—close—wide draft: 0–2 seconds wide shows approach up to impending encounter; 2–3.5 seconds close shows contact/deflection; 3.5–5.5 seconds wide shows retreat/imbalance/new distance. Total net 5.5 seconds, not three complete repetitions of the hit. Adjust times to action; contact result appears clearly in the insert or return wide.
 
-柱子、肩背可作遮挡接缝。2—3帧仅是剪辑试验值：24fps下约0.083—0.125秒，30fps下约0.067—0.100秒；按运动与覆盖程度决定，过短露跳变、过长丢动作均需修改。匹配遮挡进入/退出方向、大小、明暗与摄影速度，再核对遮挡前后的世界状态。
+Pillars/shoulder-backs can hide seams. Two to three frames is only an editing experiment: about 0.083–0.125 seconds at 24 fps, 0.067–0.100 at 30 fps. Choose by motion/coverage; revise if too short exposes a jump or too long loses action. Match occlusion entry/exit direction, size, value, and camera speed, then world state across it.
 
-甩镜与切点可以略去非关键的回收过程，但不能把决定胜负的武器交接彻底藏掉。武器交接前后要清楚持有者、交接方向与原因；若交接本身是关键机制，使用可读插镜或可控动画，不以遮挡掩饰生成失败。接缝不成立就改明确切镜。
+Whips/cuts may omit noncritical recovery but cannot entirely hide a decisive weapon transfer. Establish ownership, transfer direction, and cause before/after. If transfer is the key mechanism, use a readable insert or controllable animation rather than hiding generation failure. If the seam fails, use an explicit cut.
 
-## 技术接缝与叙事剪辑分工
+## Technical seams versus narrative editing
 
-本文件管首尾状态、请求段与镜头衔接；[剪辑语法](../production/workflow.md)管信息与节奏选择。技术连续不代表叙事完整，叙事跳切也不冒充无缝长镜。
+This file handles start/end states, generation requests, and shot joins; [editing grammar](../production/workflow.md) handles information/rhythm choices. Technical continuity is not complete narrative; narrative jump cuts are not seamless long takes.
 
-## 电影感要素的可执行写法
+## Executable wording for cinematic qualities
 
-画幅在控制层；景深与焦点、光线质感、材质纹理、必要环境信息写成可见关系；色彩分级与镜头呼吸的后期处理放管理层。只选本镜主信息需要的要素，不把全部风格词塞一段。镜头呼吸若指焦距变化导致视角改变，须有工具/素材依据，不能作玄学修饰。
+Aspect ratio belongs to controls. Depth/focus, light quality, material texture, and necessary environmental information become visible relationships; post grading and camera-breathing treatment belong to management notes. Select only what this shot's principal information needs, not every style term. If breathing means angle-of-view changes caused by focal-length change, it requires tool/material evidence rather than mystical decoration.
 
-负面词的分类与平台退路统一见[针对性负面约束](../production/workflow.md)；本页已有禁止项作为风险例，不作为跨平台通用negative列表。最终正文仍转成肯定可见关系。
+See [targeted negative constraints](../production/workflow.md) for negative-word categories and platform fallbacks. Prohibitions on this page are risk examples, not a universal cross-platform negative list. Final prose still converts them to positive visible relationships.

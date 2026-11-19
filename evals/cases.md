@@ -10,7 +10,7 @@ For each case, run **Arm A** (your current best prompt, or the v1 output) and **
 
 | # | Case | Stresses |
 |---|---|---|
-| 1 | One-on-one sword duel, one exchange (parry then counter) | Contact, support, consequence |
+| 1 | One-on-one sword duel, incoming attack/parry then counter (two causal interactions) | Contact, support, consequence |
 | 2 | Long weapon vs short weapon, close-in | Weapon logic, distance |
 | 3 | Same fight, second clip, after a stagger and a dropped weapon | Seams and state carry-over |
 | 4 | Two characters, a soft threat across a table, no fight | Status, listening, prop business |
@@ -37,21 +37,21 @@ For each case, run **Arm A** (your current best prompt, or the v1 output) and **
 
 **Continuity** (case 3 and joins): position and facing match; held objects and injuries carry over; left/right and handedness did not swap.
 
-**Plastic look** (all cases): skin shows believable variation (not uniform); lighting has a visible source and direction; eyes have catchlights; hair and cloth show imperfection; the image has a physical camera quality (grain, depth, lens character).
+**Look fit** (all cases): evaluate the declared medium and style. Realism needs plausible visible light and materials; animation needs its intended shape, edge and rendering language. Grain, pores, catchlights and imperfection are not universal requirements. Mark irrelevant items N/A.
 
-**Wooden actors** (cases 4, 5, 12): both people move during the clip; the listener reacts; a prop is handled with purpose; posture reads status without a line; no looped fidgeting.
+**Wooden actors** (cases 4, 5, 12): responses follow cues; the listener is accounted for; movement or stillness serves the relationship; any prop use has purpose; no looped fidgeting. Neither moving both actors nor using props is required.
 
 **Dialogue** (cases 4, 5, 11): lines sound like speech (breaks, fragments, repeats); delivery fits the line; mouth timing roughly matches; silence is used; the line length fits the clip.
 
 **Mode and situation fit** (cases 14–19): pacing, pauses, and fail-state match the mode (a stealth clip is quiet and singular; a last stand has no clean resets); movement, distance, pace, and silence match the situation (a farewell is not seated); the mask matches the audience; the clip does not end on a still hold unless the profile calls for it.
 
-**Spatial** (case 20 and every fight): lateral travel is visible (a fighter leaves the initial line by about a body-length or more); the line between the fighters rotates; at least one level change (jump, drop, roll, climb); at least one change of anchor (a rock, post, wall, step); more than one camera axis; a response to an attack includes a displacement, not only a block. Also run `scripts/check_spatial.py` on the design ledger and compare its verdict with what you see.
+**Spatial** (case 20 and fights): positions, paths or purposeful holds, facing, support and end states remain coherent; explicit travel or height targets are visible. Circling, level changes, landmarks and camera changes are assessed only when intended. Numeric diagnostics observe a design; watch continuous footage for execution.
 
 **Prompt quality** (all): self-contained; no production scaffolding (the linter agrees); no claim the model cannot verify.
 
 ## Decision rule
 
-Keep a rule or pass only if arm B beats arm A on that rule's rubric lines across at least 3 clips on at least 2 cases. If it shows no difference, cut it or mark it "unproven". Cases 9 and 10 write directly into the model adapter (`models/`).
+Treat three clips per arm as a pilot, not a stable success rate. Necessary story and causality checks remain independently of model scores. For optional prompting techniques, compare repeated outcomes on relevant cases; inconclusive differences remain unproven. Record cases 9 and 10 in the model adapter.
 
 ## Results template
 
@@ -59,3 +59,17 @@ Keep a rule or pass only if arm B beats arm A on that rule's rubric lines across
 Date: ____   Model/version: ____   Clips per arm: ____
 Case | Arm A score | Arm B score | Earliest failure (B) | Notes
 ```
+
+## Reproduction and regression cases
+
+Freeze task, outcome, exact dialogue, model/version, input mode, assets, runtime and settings. Record seeds when available and sampling uncertainty otherwise. Test one main change at a time. In case 9 vary one optical cue with other cues fixed; in case 10 retain required content across lengths. Case 12 compares whole packages and cannot isolate one face instruction. Save prompts, outputs, per-target scores and failures. No empirical results are bundled.
+
+Behavioral regressions: fixed-camera doorway defense; two deliberately still speakers; locked dialogue containing negation; a short prompt retaining a required reveal; stylized imagery without pores/grain; first-frame input emphasizing motion. These check instruction behavior, not generated-video quality.
+
+## Candidate release gate
+
+Use v3.4.0 as this candidate's baseline unless the user chooses another. Run matched action, dialogue, static defense, style and continuation requests. Keep original inputs and actual outputs. Review target fidelity, action causality and invention, performance/listening, camera design, sensory specificity and continuity separately. A gain on one scene cannot erase a material regression on another. File count and prompt length are not creative scores.
+
+Text-only forward tests assess writing behavior, not rendered quality. Run repeated video comparisons under matched model/version, references, duration and settings before claiming video improvement. If a material regression appears, repair or revert the affected route. This engineering beta has not completed video-quality acceptance; do not label it production-proven or guarantee quality for all future requests.
+
+For beta maintenance, verify these behaviors independently: an explicitly flying character remains airborne under the supplied world rules; an impossible same-hand/same-time instruction yields concrete choices without silent replacement; an authorized fast fight retains evolving attacks and active camera design; a requested hard cut remains requested rather than becoming automatic continuous movement. Inspect actual delivered text, not keyword matches. Keep the full read log separately from any anonymous comparison. Run README's first-use commands from a fresh extraction, including a path with spaces, before distributing the package. Synthetic cut detection validates tooling only; it is not model-generation evidence.

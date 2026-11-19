@@ -1,6 +1,7 @@
 # Pass 4: The Face
 
-This pass gives faces anatomical, layered, believable behavior. It is **performance for fictional characters**, not a diagnostic tool: a muscle pattern does not prove an inner state, and nothing here reads a real person's psychology. Terms are **confirm per model**; fine facial control varies a lot between models and shot sizes, so the pass includes fallbacks.
+Evidence: this is a design vocabulary; direct renderer response follows [evidence classes](../models/capabilities.md#evidence-classes). Preserve the craft even when the final prompt uses ordinary visible language.
+This pass gives faces anatomical, layered, believable behavior. It is **performance for fictional characters**, not a diagnostic tool: a muscle pattern does not prove an inner state, and nothing here reads a real person's psychology. fine facial control varies a lot between models and shot sizes, so the pass includes fallbacks.
 
 The Director's Room decides *what the character is hiding or showing* (`references/performance-and-psychology.md`). This pass decides *what the face visibly does*.
 
@@ -19,24 +20,24 @@ Write expression as layers, from the most readable to the finest:
 
 Action units (AUs) come from the Facial Action Coding System. The prompt carries the **visible effect**, never the AU number or muscle name. The muscle column is for the Director's Room.
 
-| AU | Muscle (design only) | Visible effect | 中文写法 |
-|---|---|---|---|
-| 1 | Frontalis, medial | Inner brows lift; a small tent of skin above the nose | 眉头上提，眉心微微隆起 |
-| 2 | Frontalis, lateral | Outer brows arch | 眉尾上扬 |
-| 4 | Corrugator, procerus | Brows pull together and down; vertical lines between them | 双眉下压并拢，眉间出现竖纹 |
-| 5 | Levator palpebrae | Upper lids lift, more white shows above the iris | 上眼睑抬起，虹膜上方露出眼白 |
-| 6 | Orbicularis oculi, outer | Cheeks rise, skin beside the eyes crinkles, eyes narrow slightly | 脸颊上抬，眼角起褶 |
-| 7 | Orbicularis oculi, inner | Lids tighten, a hard narrowed look | 下眼睑绷紧，目光变硬 |
-| 9 | Levator labii superioris alaeque nasi | Nose wrinkles, upper lip lifts | 鼻梁起皱，上唇上提 |
-| 10 | Levator labii superioris | Upper lip raises, teeth edge shows | 上唇抬起，露出上齿边缘 |
-| 12 | Zygomaticus major | Mouth corners pull up and back | 嘴角上扬并向后 |
-| 14 | Buccinator | Corners tighten into a small dimple | 嘴角收紧，起一个小窝 |
-| 15 | Depressor anguli oris | Mouth corners pull down | 嘴角下压 |
-| 17 | Mentalis | Chin pushes up, lower lip lifts, a dimpled chin | 下巴上顶，下唇上抬，下巴皮肤起窝 |
-| 20 | Risorius | Lips stretch sideways | 嘴唇向两侧拉平 |
-| 23 / 24 | Orbicularis oris | Lips tighten and press into a thin line | 嘴唇收紧，抿成一线 |
-| 25 / 26 / 27 | Jaw and lip muscles | Lips part, jaw drops slightly or wide | 双唇微分，下颌微落或大张 |
-| 43 / 45 | Orbicularis oculi | Eyes close; a blink | 闭眼；眨眼 |
+| AU | Muscle (design only) | Visible effect |
+| --- | --- | --- |
+| 1 | Frontalis, medial | Inner brows lift; a small tent of skin above the nose |
+| 2 | Frontalis, lateral | Outer brows arch |
+| 4 | Corrugator, procerus | Brows pull together and down; vertical lines between them |
+| 5 | Levator palpebrae | Upper lids lift, more white shows above the iris |
+| 6 | Orbicularis oculi, outer | Cheeks rise, skin beside the eyes crinkles, eyes narrow slightly |
+| 7 | Orbicularis oculi, inner | Lower lids tighten, a hard narrowed look |
+| 9 | Levator labii superioris alaeque nasi | Nose wrinkles, upper lip lifts |
+| 10 | Levator labii superioris | Upper lip raises, the edges of the upper teeth show |
+| 12 | Zygomaticus major | Mouth corners pull up and back |
+| 14 | Buccinator | Corners tighten into a small dimple |
+| 15 | Depressor anguli oris | Mouth corners pull down |
+| 17 | Mentalis | Chin pushes up, lower lip lifts, a dimpled chin |
+| 20 | Risorius | Lips stretch sideways |
+| 23 / 24 | Orbicularis oris | Lips tighten and press into a thin line |
+| 25 / 26 / 27 | Jaw and lip muscles | Lips part, jaw drops slightly or wide |
+| 43 / 45 | Orbicularis oculi | Eyes close; a blink |
 
 Unilateral movement (one side only) reads as contempt or irony. Asymmetry is a feature: real expressions are rarely mirrored.
 
@@ -64,7 +65,7 @@ Micro-expressions are brief, often described as lasting well under half a second
 - Write them as a **flicker followed by recovery**: "for an instant his brows draw and his lips thin, then his face smooths into a patient blank."
 - Use a **mask** (the face the character wants to show) over a **leak** (what slips): a polite smile held while the throat swallows; a calm voice while the jaw sets.
 - A leak is a small, specific thing. How many a face can hold depends on context: a calm public mask holds one; high arousal, exhaustion, or high stakes make the mask fail in more channels (section 10), but always in an order the viewer can follow, never all at once.
-- Fast action and fine micro-expression do not share a moment. Put the flicker in a pause, a listening beat, or a close-up.
+- Fast full-body action may obscure a fine expression. Use readable framing, a listening opening or motivated coverage; preserve explicitly requested simultaneous action and facial targets. If meeting both requires changing a locked detail, use the [conflict procedure](../core/precedence.md) rather than deleting either target.
 
 ## 5. Gaze and eyes
 
@@ -95,7 +96,7 @@ Order of fallback, from the finest to the broadest: micro-expression → gaze an
 - *Contempt and mask:* "As Wu stumbles over the word 'customs', one corner of Chen's mouth tightens and lifts for an instant; his eyes stay half-lidded and still, and the patient blank returns before Wu finishes."
 - *Held fear:* "Lin's upper lids lift a hair; she keeps her lips pressed in a thin line and swallows once, her pulse ticking at her throat."
 - *Genuine vs polite smile:* "She smiles, the corners lifting, but the skin beside her eyes stays smooth." (polite) vs "...and fine lines gather at the corners of her eyes." (genuine)
-- *中文：* "听到那个名字，他眉头微微下压，嘴唇抿成一线，喉结滚了一下，随即眼神平平地移开，落在窗外的雪上。"
+- *Alternate wording:* "At the name, his brows lower slightly, his lips press into a line, and his throat moves in a swallow; then his level gaze shifts to the snow beyond the window."
 
 ## 10. Display rules: who is watching
 

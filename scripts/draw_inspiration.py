@@ -37,37 +37,80 @@ def save_history(path, state):
             temporary.unlink()
 
 
-DIMENSIONS = {'一': 'world', '二': 'space', '三': 'relation', '四': 'action', '五': 'blind',
-              '六': 'mood', '七': 'visual', '八': 'archetype'}
-CATEGORY_ALIASES = {'古风': '传统东方/修仙', '修仙': '传统东方/修仙',
-                    '科幻': '赛博/未来科幻', '赛博': '赛博/未来科幻',
-                    '都市': '现代都市/异能', '废土': '异星废土/末日',
-                    '压迫': '压迫/紧绷', '温暖': '温暖/轻盈', '荒凉': '悲壮/诡异/荒凉',
-                    '单色': '单色/无彩', '水墨': '写意/绘制', '霓虹': '光学/数字',
-                    '孤狼': '游离/反抗', '守护者': '守护/担当', '背叛者': '伪装/矛盾'}
+DIMENSIONS = {'\u4e00': 'world', '\u4e8c': 'space', '\u4e09': 'relation', '\u56db': 'action', '\u4e94': 'blind',
+              '\u516d': 'mood', '\u4e03': 'visual', '\u516b': 'archetype'}
+CATEGORY_ALIASES = {'\u53e4\u98ce': '\u4f20\u7edf\u4e1c\u65b9/\u4fee\u4ed9', '\u4fee\u4ed9': '\u4f20\u7edf\u4e1c\u65b9/\u4fee\u4ed9',
+                    '\u79d1\u5e7b': '\u8d5b\u535a/\u672a\u6765\u79d1\u5e7b', '\u8d5b\u535a': '\u8d5b\u535a/\u672a\u6765\u79d1\u5e7b',
+                    '\u90fd\u5e02': '\u73b0\u4ee3\u90fd\u5e02/\u5f02\u80fd', '\u5e9f\u571f': '\u5f02\u661f\u5e9f\u571f/\u672b\u65e5',
+                    '\u538b\u8feb': '\u538b\u8feb/\u7d27\u7ef7', '\u6e29\u6696': '\u6e29\u6696/\u8f7b\u76c8', '\u8352\u51c9': '\u60b2\u58ee/\u8be1\u5f02/\u8352\u51c9',
+                    '\u5355\u8272': '\u5355\u8272/\u65e0\u5f69', '\u6c34\u58a8': '\u5199\u610f/\u7ed8\u5236', '\u9713\u8679': '\u5149\u5b66/\u6570\u5b57',
+                    '\u5b64\u72fc': '\u6e38\u79bb/\u53cd\u6297', '\u5b88\u62a4\u8005': '\u5b88\u62a4/\u62c5\u5f53', '\u80cc\u53db\u8005': '\u4f2a\u88c5/\u77db\u76fe'}
 
+
+ENGLISH_DIMENSIONS = {'world': 'world', 'space': 'space', 'relationship': 'relation',
+                      'action': 'action', 'blind mix': 'blind', 'mood': 'mood',
+                      'visual': 'visual', 'archetype': 'archetype'}
+
+def compatibility_records():
+    path = Path(__file__).resolve().parents[1] / 'assets' / 'inspiration-compatibility.json'
+    if not path.is_file():
+        return []
+    return json.loads(path.read_text(encoding='utf-8'))['records']
 
 def load_cards(path):
+    records = compatibility_records()
+    id_map = {r['key']: r['id'] for r in records}
+    id_map.update({r['legacy_id']: r['id'] for r in records})
     cards = []
     dimension = category = None
     for line in path.read_text(encoding='utf-8-sig').splitlines():
-        heading = re.match(r'^## ([一二三四五六七八])、', line)
-        if heading:
-            dimension = DIMENSIONS[heading.group(1)]
-            category = '反常规/混搭盲盒' if dimension == 'blind' else None
+        old_heading = re.match(r'^## ([\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03\u516b])\u3001', line)
+        new_heading = re.fullmatch(r'## (World|Space|Relationship|Action|Blind Mix|Mood|Visual|Archetype)', line, re.I)
+        if old_heading:
+            dimension = DIMENSIONS[old_heading.group(1)]
+            category = '\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2' if dimension == 'blind' else None
+        elif new_heading:
+            dimension = ENGLISH_DIMENSIONS[new_heading.group(1).casefold()]
+            category = 'Unconventional / Blind Mix' if dimension == 'blind' else None
         subheading = re.match(r'^### \d+\. (.+)$', line)
         if subheading:
             category = subheading.group(1)
         if line.startswith('- '):
-            item = re.fullmatch(r'- \*\*【([^】]+)】\*\*：(.+。)', line)
+            item = re.fullmatch(r'- \*\*\[([^\]]+)\]\*\*: (.+[.!?])', line)
+            if item is None:
+                item = re.fullmatch(r'- \*\*\u3010([^\u3011]+)\u3011\*\*\uff1a(.+\u3002)', line)
             if not item or not dimension or not category:
                 raise ValueError(f'Malformed inspiration card: {line}')
             tag, description = item.groups()
-            cards.append({'id': f'{dimension}::{category}::{tag}', 'dimension': dimension,
+            key = f'{dimension}::{category}::{tag}'
+            cards.append({'id': id_map.get(key, key), 'dimension': dimension,
                           'category': category, 'tag': tag, 'description': description})
     if not cards or len({c['id'] for c in cards}) != len(cards):
         raise ValueError('Empty library or duplicate card IDs')
     return cards
+
+def normalize_legacy(history, category, excluded_tags):
+    records = compatibility_records()
+    aliases = {r['legacy_id']: r['id'] for r in records}
+    categories = {}; tags = defaultdict(set)
+    for record in records:
+        old = record['legacy_id'].split('::', 2)
+        new = record['key'].split('::', 2)
+        categories[old[1]] = new[1]
+        tags[old[2]].add(new[2])
+    normalized = dict(history)
+    for field in ('seen', 'last_batch'):
+        normalized[field] = [aliases.get(value, value) for value in history.get(field, [])]
+    normalized['last_by_dimension'] = {
+        key: [aliases.get(value, value) for value in values]
+        for key, values in history.get('last_by_dimension', {}).items()
+    }
+    category = CATEGORY_ALIASES.get(category, category)
+    category = categories.get(category, category)
+    excluded = set(excluded_tags)
+    for tag in excluded_tags:
+        excluded.update(tags.get(tag, ()))
+    return normalized, category, excluded
 
 
 def balanced_sample(pool, count, rng):
@@ -103,11 +146,13 @@ def draw(cards, dimension, category=None, count=6, history=None, excluded_tags=(
     by_dimension = history.get('last_by_dimension', {})
     if not isinstance(by_dimension, dict) or any(not isinstance(v, list) or any(not isinstance(x, str) for x in v) for v in by_dimension.values()):
         raise ValueError('History last_by_dimension must contain string lists')
+    history, category, excluded_tags = normalize_legacy(history, category, excluded_tags)
+    by_dimension = history.get('last_by_dimension', {})
     seen = set(history.get('seen', []))
     last = set(by_dimension.get(dimension, history.get('last_batch', [])))
     category = CATEGORY_ALIASES.get(category, category)
     pool = [c for c in cards if c['dimension'] == dimension
-            and (not category or category in c['category']) and c['tag'] not in excluded_tags]
+            and (not category or category.casefold() in c['category'].casefold()) and c['tag'] not in excluded_tags]
     if len(pool) < count:
         raise ValueError(f'Only {len(pool)} eligible cards; cannot draw {count} distinct cards')
     fresh = [c for c in pool if c['id'] not in seen]
@@ -133,7 +178,7 @@ def draw(cards, dimension, category=None, count=6, history=None, excluded_tags=(
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--dimension', required=True, choices=list(DIMENSIONS.values()))
-    parser.add_argument('--category', help='Exact/partial subcategory or alias, e.g. 古风 or 科幻')
+    parser.add_argument('--category', help='Exact or partial English category; legacy localized aliases remain accepted')
     parser.add_argument('--count', type=int, default=6, choices=(5, 6))
     parser.add_argument('--exclude-tags', nargs='*', default=[], help='Cards incompatible with current settings')
     parser.add_argument('--history', type=Path, help='Optional JSON session history in project work directory')

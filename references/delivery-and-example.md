@@ -1,136 +1,145 @@
-# 横屏短剧设计字段与15秒最小案例
+# Horizontal Short-Drama Design Fields and a Minimal 15-Second Case
 
-本页是制作字段与已填设计案例，不是留空填写壳。复用提示词的空壳、平台退路与独立制作备注见[模板结构契约](template-contract.md)；新填写值放项目稿或examples，不写回空壳。
+This page contains production fields and completed design examples, not blank forms. For reusable prompt shells, platform fallbacks, and separate production notes, see the [template contract](template-contract.md). Put newly filled values in project drafts or examples, not back into blank shells.
 
-## 交付规模
+## Delivery scale
 
-创意问答只给必要方案；完整横屏单集按下列字段交接。默认16:9、1920×1080。原30秒守门案例保留为可复用动作核心，接入单集目标与后果，不把动作片段直接宣布为完整一集。下面90秒结构是创作建议，可按1—3分钟任务调整。
+Creative Q&A provides only the necessary proposal; a complete horizontal episode hands off the fields below. Defaults are 16:9 and 1920×1080. The original 30-second gate-defense case remains a reusable action core integrated with episode goals and consequences, not automatically declared a complete episode. The 90-second structure below is a creative suggestion adaptable to 1–3-minute tasks.
 
-## 项目与资产卡
+## Project and asset cards
 
-项目：`题材/单集形态｜目标时长｜本集目标/变化/结果｜世界规则｜画幅/生成/交付分辨率｜有效画面/动作安全区/字幕区｜最小观看视口｜平台/模型及已测条件｜本次请求时长/一次或分段｜实际参考与首尾帧使用情况｜预算/迭代上限｜受众尺度/素材权限状态`。交输入稿前按[生成交接检查](generation-handoff.md)确认，未知项不虚填。
+Project: `Genre/episode form | Target duration | Episode goal/change/result | World rules | Aspect/generation/delivery resolution | Active picture/action safe area/subtitle area | Minimum viewing viewport | Platform/model and tested conditions | Current request duration/single or segmented | Actual references and first/last-frame usage | Budget/iteration ceiling | Audience suitability/asset-rights status`. Confirm through [generation handoff](generation-handoff.md) before delivering input; do not fabricate unknown values.
 
-角色：`ID/版本｜身份与服饰固定项｜人物自身左右/惯用手｜武器/能力结构｜本场初始伤损｜参考图职责与排除项`。场景：`ID/状态版本｜俯视图/主轴｜左右前后锚点图｜交互物与毁坏阶段｜可用摄影路径`。细节分别见角色、场景与一致性参考。
+Character: `ID/version | Fixed identity/costume | Character-local left/right/dominant hand | Weapon/ability structure | Initial scene damage | Reference responsibilities/exclusions`. Scene: `ID/state version | Top view/main axis | Left/right/depth anchor map | Interactive objects/destruction stages | Available camera paths`. See character, scene, and consistency references for detail.
 
-武指：`兵器长度/重量感依据/重心/握法｜发力与支撑｜有效距离/攻击线｜连招母题/分支｜破绽与代价｜动态待验证项`。
+Choreography: `Weapon length/weight-feel basis/center of mass/grip | Force and support | Effective range/attack line | Combination motif/branches | Openings and costs | Dynamic items awaiting validation`.
 
-考据：`资产｜年代/地域/身份或架空范围｜形制/纹样/来源定位｜实证/推测/原创改动｜佩戴/操作｜动作影响｜损伤变体`。
+Research: `Asset | Era/region/identity or fictional scope | Form/pattern/source locator | Evidence/inference/original change | Wearing/operation | Action implications | Damage variants`.
 
-## 横屏单集结构示范：90秒守门脱身
+## Horizontal episode example: 90-second gate escape
 
-| 叙事单元 | 时间 | 镜头内的信息变化与动作任务 | 生成规划 |
+| Narrative unit | Time | In-shot information changes and action tasks | Generation planning |
 |---|---|---|---|
-| E01 目标与来敌 | 0—15秒 | 同伴抱箱接近门，守门者发现追兵；同框交代箱、出口、落闸杆和谁挡谁 | 可设计一个连续镜头；按可用段长拆，尾状态对齐下段起点 |
-| E02 连续交锋 | 15—45秒 | 采用下方30秒动作核心：防住首次来刺、送同伴过门、退至控制杆、关门夹矛 | 原样保留时是10镜的剪辑版；若做长镜头，先重排摄影路径，再按动作间隙拆GEN，不直接把10种机位拼成一镜 |
-| E03 结果与代价 | 45—75秒 | 门后继续拽矛，守门者确认伤势与门撑持情况，同伴带箱选择撤离方向；动静之间仍推进选择 | 用新的构图/空间任务组织，可压缩到需要的净长，不能靠30秒无变化保持凑时长 |
-| E04 新行动 | 75—90秒 | 两人开始离开，门内外压力关系结束本场；承接剧情的下一目标由用户设定 | 尾镜留明确局势，不擅自新增重要敌人或关键能力 |
+| E01 Goal and approaching enemy | 0–15 s | A companion approaches the door with a box; the guard notices pursuers. Show box, exit, gate lever, and who blocks whom together | May be one continuous shot; split by available duration, matching end state to next opening |
+| E02 Continuous exchanges | 15–45 s | Use the 30-second action core below: defend the first thrust, send companion through, withdraw to control, shut gate on spear | Unchanged, this is a 10-shot edited version. For a long take, redesign the camera path first and split GENs in action gaps, rather than joining 10 viewpoints into one shot |
+| E03 Result and cost | 45–75 s | Spear tugging continues beyond the gate; guard checks injury and gate support; companion chooses an escape direction with the box. Choices continue through action and stillness | Organize new composition/spatial tasks and compress to needed runtime; do not pad with 30 seconds of unchanged holding |
+| E04 New action | 75–90 s | Both begin leaving; pressure across the gate closes this scene. The user determines the next story goal | End with a clear situation, not a new major enemy or key ability |
 
-这四行是叙事单元，不是固定四个物理镜头。若整集选择3—5个长镜头式连续交锋，重排E02及前后走位为连续摄影，每个SHOT可由多GEN组成；连接方案按 [生成段](prompts-and-segments.md) 执行。不要一边保留原10次明显切镜，一边声称整集只有四个长镜头。
+These four rows are narrative units, not four fixed physical shots. If choosing 3–5 long-take-style continuous exchanges for the episode, restage E02 and neighboring movement for continuous photography. Each SHOT may contain several GENs; follow [generation segments](prompts-and-segments.md). Retaining 10 obvious cuts while claiming only four long takes is contradictory.
 
-## 镜头与生成交接字段
+## Shot and generation handoff fields
 
-分镜：`SHOT_ID｜时间/净长｜同框左中右/前后及起止站位｜攻防与结果｜景别/起止构图/摄影路径｜接触可读区｜切点或长镜头接缝`。
+Storyboard: `SHOT_ID | Time/net duration | Shared-frame left/center/right/depth and opening/ending positions | Attack/defense/result | Shot size/opening/ending composition/camera path | Readable contact area | Cut or long-take seam`.
 
-生成：`GEN_ID/所属SHOT｜选用时间区间｜请求时长/余量｜实际输入资产｜起止姿态/支撑/握法/损毁｜独立事件与负荷取舍｜实际输入文本｜声音职责｜接缝匹配｜关键通过/失败条件｜输出标签`。分镜、提交设置/文本、后期任务分栏；字段用于制作管理，不要求原样全部粘进提示词。
+Generation: `GEN_ID/parent SHOT | Selected interval | Request duration/handles | Actual input assets | Opening/ending pose/support/grip/damage | Independent events/capacity tradeoffs | Actual input text | Sound responsibilities | Seam matching | Key pass/fail criteria | Output labels`. Separate storyboard, submission settings/text, and post tasks. These production fields need not all be pasted verbatim into prompts.
 
-后期：`CLIP_ID/GEN来源｜净长/重复余量去除｜接触事件ID｜对白/气息/破风/接触/材料/环境/音乐/尾音｜字幕/口型｜桌面与手机检查`。
+Post: `CLIP_ID/source GEN | Net duration/repeated handles removed | Contact event ID | Dialogue/breath/whoosh/contact/material/environment/music/tail | Subtitles/lip sync | Desktop/phone checks`.
 
-## 15秒最小独立案例
+## Minimal standalone 15-second case
 
-此例简化原30秒守门核心，无术法、无预设伤势，不是把原10镜加速成15秒。角色A深灰短袍、右手短杖；B暗褐束袖、双手长矛；C灰蓝外衣、双手抱木箱。本例按有角色图、接受分段剪辑起稿，尚未实测；无图或要求一次15秒时，先依生成交接检查改写，不能直接沿用本例的素材前提。造型为架空方案，不声称已完成历史形制考证。
+Simplifies the original 30-second gate core without abilities or preset injuries; it does not accelerate the original 10 shots into 15 seconds. A wears a dark-gray short robe and carries a short staff in the right hand; B has dark-brown bound sleeves and a two-handed spear; C wears gray-blue and holds a wooden box with both hands. This untested draft assumes character images and acceptance of segmented editing. For no images or one 15-second request, adapt through generation handoff first instead of inheriting these asset assumptions. Designs are fictional, not historically researched forms.
 
-场景GATE_v01：门在西/屏幕左，走廊朝东/屏幕右，摄影在南侧；落闸杆在门框南端。本例设定约7.5秒扳动，约10.5秒下降到矛杆高度并夹持，机关行程为新拟约3秒，尚未动态验证。初始C已在门内，A在门外一步，B在东侧能一步进刺的距离。动作安全区用x=0.12—0.88、y=0.10—0.78起稿，字幕候选带y=0.82—0.94，按实际构图复核。初始无破坏，结束门夹矛。
+Scene GATE_v01: door west/screen left, corridor east/screen right, camera south; gate lever at the south end of the frame. Proposed timing: lever operated near 7.5 seconds, gate reaches spear height and clamps near 10.5 seconds; the roughly 3-second travel is newly designed, not dynamically verified. Initially C is inside, A one step outside, B east within a one-step thrust. Draft action safe area: x=0.12–0.88, y=0.10–0.78; candidate subtitle band y=0.82–0.94, rechecked against actual framing. No initial destruction; gate clamps spear at the end.
 
-| 镜头 | 时间/净长 | 动作与结果 | 摄影/生成与声音 |
+| Shot | Time/net duration | Action and result | Camera/generation and sound |
 |---|---|---|---|
-| M01 | 0–5秒 / 5秒 | 门内C抱箱左退；A盯B前手，B进步来刺，A右手杖架偏矛尖向北并退半步；矛尖越过原胸位，无命中 | 南侧中全景稳定，主要交汇在中部，门和C在左后；GEN_M01围绕一次架偏，破风—木杆相碰—靴步 |
-| M02 | 5–10秒 / 5秒 | B收矛，A沿南侧退到落闸杆；左手扳杆后侧身入门。B赶进伸矛阻门，门开始下落 | 同侧中景，头手与门杆可读；这是多事件SHOT，拆为下述M02a/b/c；机关动作声接脚步 |
-| M03 | 10–15秒 / 5秒 | 闸门夹住矛杆而留窄缝，B仍握矛试抽；A持杖护身退入门内，与C离开画面左侧 | 先门缝中近景读接触，再稍拉宽看结果；GEN_M03继承半落门与入缝矛；夹持音头、门振、抽杆、脚步尾音 |
+| M01 | 0–5 s / 5 s | C retreats left inside with box; A watches B's front hand. B steps into a thrust; A's right staff deflects tip north and retreats half a pace. Tip crosses former chest position without impact | Stable southern medium-wide, crossing central, door/C rear left; GEN_M01 centers one deflection, whoosh → wooden shafts contact → bootsteps |
+| M02 | 5–10 s / 5 s | B recovers spear; A retreats along the corridor's south side to the gate lever, pulls with left hand, and turns sideways through door. B rushes in and extends spear to block the descending gate | Same-side medium, head/hands/lever readable. Multi-event SHOT split as M02a/b/c below; mechanism into footsteps |
+| M03 | 10–15 s / 5 s | Gate clamps shaft with a narrow gap; B still grips and tries to pull it free. A retreats inside with staff guarding and leaves screen left with C | Read contact in a medium-close gap view, then slightly widen for result. GEN_M03 inherits half-lowered gate/inserted spear; clamp onset, gate vibration, shaft tug, footstep tails |
 
-SHOT_M01/M02/M03各净5秒，不能误读为三次固定5秒请求。M02提前拆分：GEN_M02a净选5—6.5秒只到杆旁，B回收；GEN_M02b净选6.5—8秒只做扳杆并撤入门内，B尚未伸矛；GEN_M02c净选8—10秒只做B伸矛进入下降门缝，尾部尚未夹住。M03从门矛即将交汇承接。总净长5+1.5+1.5+2+5=15秒；请求时长与余量按真实工具填写，短净选段不暗示平台支持该时长输入，重复余量需剪掉。三镜是剪辑方案，不宣称无缝；短段接缝仍须试片，不能靠静态加总证明动作可完成。
+SHOT_M01/M02/M03 each have 5 net seconds, not three mandatory 5-second requests. Split M02 in advance: GEN_M02a selects 5–6.5 seconds, A reaching lever while B recovers; GEN_M02b selects 6.5–8 seconds, lever pull and withdrawal inside before B extends spear; GEN_M02c selects 8–10 seconds, B extending into the descending gap, not yet clamped at the end. M03 begins just before gate and spear meet. Total net runtime: 5 + 1.5 + 1.5 + 2 + 5 = 15 seconds. Fill request duration/handles from actual tools; short selections imply no corresponding supported input duration. Edit away repeated handles. Three shots are an editing design, not seamlessness; short-segment seams still need pilots. Static arithmetic does not prove actions fit.
 
-M01制作层示例：固定层记录CHAR_A/B/C及GATE实际批准版本；场景层为门左、来敌右、C已门内；动作层为B一步胸高刺、A右杖架偏后退；摄影层为南侧稳定中全景、接触居中；效果限制为无术法、无命中闪光、矛仍在B双手。这是制作卡，不是可直接提交的提示词；实际输入须说明三人可见外观，并只引用本次已上传图片，不用内部ID代替人物。
+M01 production-layer example: fixed layer records actual approved CHAR_A/B/C and GATE versions; scene layer places door left, attacker right, C already inside; action layer has B's one-step chest thrust and A's right-staff deflection/retreat; camera layer is stable south medium-wide with central contact; effects constraints: no powers, no hit flash, spear stays in B's two hands. This is a production card, not directly submit-ready prose. Actual input describes all three visible appearances and references only images actually uploaded, never internal IDs as character substitutes.
 
-首尾检查：M01末B双手仍握矛、A右杖未换手；M02末A在门内、矛进门缝、闸门在下降；M03末门被矛杆卡住、B在东侧、A/C在西侧，无人物瞬移或门突然复原。静态预算已可算，实际动作/口型/听感均待视频验证。
+Opening/ending check: M01 ends with B's two hands on spear and A's staff still right-handed; M02 ends with A inside, spear in gap, gate descending; M03 ends with shaft jamming gate, B east, A/C west, no teleporting or restored gate. Static timing can be calculated; actual action/lip sync/listening await video validation.
 
-## 保留的30秒动作核心：守门者护送同伴
+## Retained 30-second action core: guard escorts a companion
 
-以下为新设计，时间分配是草案，不是四段参考的复现，也尚未制作为动态预演。
+A new design with provisional timing, neither a recreation of the four references nor a completed dynamic previs.
 
-### 目标与约束
+### Goals and constraints
 
-A用短杖护送抱箱同伴C穿过闸门；B用长矛夺箱。A不求打赢，目标是关门阻断追击。A左肩已有轻伤，始终右手持杖。杖的偏折薄膜只能承受一次正面交汇，之后本场不可再用。薄膜只贴杖端，不能自行扩大为全身盾。
+A uses a short staff to escort box-carrying C through a gate; B seeks the box with a spear. A aims to close the gate and break pursuit, not win the fight. A's left shoulder is lightly injured throughout, staff always in the right hand. A deflection membrane at the staff tip survives one frontal crossing only and cannot return during this scene. It stays on the tip, never expanding into a body shield.
 
-画风：清晰赛璐璐、冷灰石材、暖色门内灯光，2D关键姿态配简单3D场景。A短外套与束发避免遮住持械手；B长矛长度约一人身高加半身，动作需留前后空间。小雨只承担湿地反馈，能力外观是贴杖端的窄扇面，不用全屏爆光。
+Look: clear cel shading, cool-gray stone, warm interior lamps, 2D key poses with a simple 3D set. A's short jacket/tied hair preserve weapon-hand visibility; B's spear is about one-and-a-half body heights, needing forward/back clearance. Light rain supplies wet-ground feedback only. The ability forms a narrow fan at the staff tip, not a full-screen flash.
 
-### 空间
+### Space
 
-俯视：西←门内/撤离区｜闸门x=0｜A x=3｜B x=8→东；C开始在x=1，向西撤。主通道宽约4米、无台阶。门的落闸杆位于东侧门框南端，落闸约需3秒；镜头01预先交代开着的门与控制杆。
+Top view: west ← interior/escape | gate x=0 | A x=3 | B x=8 → east. C begins x=1 and withdraws west. Main corridor about 4 meters wide, no steps. Lever at the south end of the east-side doorframe; gate descent about 3 seconds. Shot 01 establishes open gate/control.
 
-摄影机主要在通道南侧，西为屏幕左、东为右。A、C总体右向左撤，B跟进。短暂北侧绕位仍在通道内，镜头不越到北侧。门内外可见相同暖灯与石框作锚点。关门后B仍能行动，只是追击被阻断。
+Camera mainly south: west is screen left, east right. A/C generally withdraw right-to-left, B follows. Brief northward flanking stays within the corridor; camera does not cross north. The same warm lamps and stone frame anchor inside/outside. B remains mobile after closure; only pursuit is blocked.
 
-### 分镜主表
+### Main storyboard
 
-| 镜号 | 时间/时长 | 动作与结果 | 景别与运镜 | 节奏与切点 |
+| Shot | Time/duration | Action and result | Shot size and camera | Rhythm and cut |
 |---|---|---|---|---|
-| S01 | 0–3秒 / 3秒 | A位于C与B之间；C向门口退，B从x=8逼近x=6；门和落闸杆在画面左侧 | 南侧中远景，微横移同时容纳三人和门框 | 建立目标与路径，切B开始压低矛尖 |
-| S02 | 3–5秒 / 2秒 | A瞥见C仍未过门，收回视线盯B握矛的前手；不向侧面让开攻击线 | A中近景，C与门在后景可辨，摄影机稳定 | 一次判断，A示意C继续；切B前脚启动 |
-| S03 | 5–8秒 / 3秒 | B从x=6踏进到x=4.5刺向A胸前；A在x=3小幅转杖，以唯一一次薄膜将矛尖架向通道北侧，退到x=2.5；薄膜破散 | 南侧中全景略跟退，完整保留双方手、脚与矛尖 | 逼近快，交汇短强调，退步可读；不定格 |
-| S04 | 8–10秒 / 2秒 | A右手维持杖端与矛杆外侧接触后脱开，左肩牵动疼痛；B收矛，A已无薄膜 | 手臂与上身近景，带到A脸，保持原屏幕方向 | 看清能力消耗与伤势，切矛杆回收方向 |
-| S05 | 10–13秒 / 3秒 | B向北小跨一步收矛，尝试绕开A；A退到x=1.8再向北半步封线；C穿过门到x=-1 | 南侧较宽镜头，三人和门同框 | 重建侧移关系；C过门改变A可选策略 |
-| S06 | 13–16秒 / 3秒 | B从x=3.8再刺；A此时可向南侧滑步，让矛从原胸位掠过，同时向西退至x=0.8；B推进到x=2.2 | 中全景横跟A，保留擦过的矛尖与空出的路线 | 闪避短促，离开攻击线后留回收；无接触闪光 |
-| S07 | 16–20秒 / 4秒 | B缩短握距抽矛；A继续沿南侧退至门框，用短杖架开B再次探来的矛杆后脱开；左手接近落闸杆，右手仍持杖 | 南侧低中景跟退后收稳，门框和杆进入构图 | 一次防守换操作窗口；A左臂活动小以保伤势连续 |
-| S08 | 20–23秒 / 3秒 | A以左手扳下低位落闸杆，肩痛使面部紧缩；闸门开始降，A立即侧身退入门内x=-0.8；B赶至x=1.5，伸矛阻门 | 门侧中全景，控制杆、A退出路线与下降门同框 | 操作—退门—追击连续，切矛尖进入门缝 |
-| S09 | 23–26秒 / 3秒 | 闸门夹住矛杆前端，B抽不出；A继续退至x=-1.5，短杖护在身前；门停在窄缝，足以阻人但并未完全落底 | 门缝接触近景后在同镜小幅拉开露出A，保持门框方向 | 短促木杆挤压/金属门震动，随后听见挣动；不宣告B败亡 |
-| S10 | 26–30秒 / 4秒 | 门内A回望窄缝、确认B被挡，转身与C沿西侧通道撤离；A左肩低垂，薄膜未恢复；门后B仍拽矛 | 门内南侧中远景，左向撤离，门在画面右后方 | 呼吸与脚步接管，留下阻追结果和余压 |
+| S01 | 0–3 s / 3 s | A between C and B; C withdraws to gate, B approaches x=8 to x=6; gate/lever screen left | Southern medium-wide, slight lateral move retaining all three and frame | Establish goal/route; cut as B lowers spear tip |
+| S02 | 3–5 s / 2 s | A sees C still outside, returns gaze to B's front spear hand; retains attack line | Stable medium-close A, C/door readable behind | One decision; A signals C onward, cut on B's lead-foot start |
+| S03 | 5–8 s / 3 s | B steps x=6 to x=4.5, thrusting at A's chest; A at x=3 slightly turns staff, uses sole membrane to deflect tip north, retreats x=2.5; membrane breaks apart | Southern medium-wide follows retreat slightly, both hands/feet/tip intact | Fast approach, brief crossing accent, readable retreat; no freeze |
+| S04 | 8–10 s / 2 s | A's right hand maintains staff-tip contact outside shaft then releases; left shoulder pain catches. B recovers spear; A has no membrane | Arms/upper-body close, include A's face, retain screen direction | Read cost/injury; cut along recovering shaft |
+| S05 | 10–13 s / 3 s | B steps slightly north while recovering, tries to flank A; A retreats x=1.8 then half a pace north to block line; C crosses to x=-1 | Wider south view with all three and gate | Reestablish lateral relation; C crossing changes A's options |
+| S06 | 13–16 s / 3 s | B thrusts again from x=3.8; A can now slip south, tip passing former chest position, while withdrawing west x=0.8; B advances x=2.2 | Medium-wide laterally follows A, retains passing tip/open route | Brief evasion, recovery after clearing attack line; no contact flash |
+| S07 | 16–20 s / 4 s | B shortens grip to withdraw spear. A continues retreating along the corridor's south side to the doorframe, deflects B's renewed probing shaft with staff, then releases. Left hand nears lever, right keeps staff | Low southern medium follows retreat then settles, frame/lever enter | One defense gains operation window; small left-arm movement preserves injury |
+| S08 | 20–23 s / 3 s | A pulls low lever left-handed, face contracts with shoulder pain. Gate descends; A immediately turns sideways inside x=-0.8. B reaches x=1.5, spear extended to block gate | Door-side medium-wide includes control, A's exit path, descending gate | Operation → withdrawal → pursuit continuously; cut as spear enters gap |
+| S09 | 23–26 s / 3 s | Gate clamps front shaft; B cannot pull it free. A retreats x=-1.5 with guarding staff. Gate stops above bottom with a narrow person-blocking gap | Gap/contact close, then slight same-shot widening to A; frame direction retained | Brief wood compression/metal vibration, then struggling; no declaration of B's defeat/death |
+| S10 | 26–30 s / 4 s | Inside, A checks gap/B blocked, turns and withdraws west with C. Left shoulder low, membrane unrestored; B keeps pulling beyond gate | Interior southern medium-wide, departure left, gate rear right | Breath/steps lead, retaining blocked-pursuit result and pressure |
 
-S08的落闸从20秒后启动，到S09起始附近夹住矛杆，具体动作点在预演中调整；S09用接触变形与抽动交代阻滞，不能把3秒全花在同一静帧。S07的架偏来自方向与杠杆，是普通防守，不让已耗尽的薄膜暗中复活。
+S08 descent begins after 20 seconds and clamps near S09's opening; refine exact timing in previs. S09 uses contact deformation/tugging to convey obstruction, not 3 seconds on one still. S07 deflection is ordinary direction/leverage defense, never a secretly restored membrane.
 
-### 表演与视觉附表
+### Performance and visual supplement
 
-| 镜头 | 表演/声音建议 | 效果与承接 |
+| Shots | Performance/sound proposal | Effects and handoff |
 |---|---|---|
-| S01–02 | A低声“先过门。”，眼神先确认C再盯敌；B沉默推进 | 常态细雨L0；镜头保持手、门杆和路线清晰 |
-| S03–04 | A碰撞时短呼气，随后压住肩痛；B看向薄膜消失处 | 薄膜L2仅杖端，偏折方向向北；接触处短线裂解，湿脚印保留 |
-| S05–06 | A确认同伴已过门后才侧闪，表情从承压转为专注 | 避让L1仅局部水花与矛尖短轨迹；不加命中火花 |
-| S07–08 | A不解释战术，左手操作时短暂紧缩嘴角；B看到落闸立即追 | 普通杖矛接触L1；门由机械下降，没有新增能力 |
-| S09–10 | B拽杆声与门体振动；A呼吸急、转身不甩动伤肩 | 门夹矛L2以形变、少量木屑和震动构成；窄缝与被夹矛持续存在 |
+| S01–02 | A quietly says "Through the gate first," checks C, then watches enemy; B advances silently | Normal light rain L0; hands, control, routes readable |
+| S03–04 | A exhales briefly at collision, then contains shoulder pain; B looks to vanished membrane | Membrane L2 at tip only, deflection north; short fracture lines at contact, wet prints persist |
+| S05–06 | A sidesteps only after confirming C inside; expression shifts from pressure to focus | Evasion L1: local splash/short spear-tip trail only, no hit sparks |
+| S07–08 | A does not explain tactics; mouth briefly tightens on left-hand operation. B pursues on seeing gate | Ordinary staff/spear contact L1; mechanical descent, no new ability |
+| S09–10 | B's shaft tug and gate vibration; A breathes fast, turns without swinging injured shoulder | Gate/spear L2 uses deformation, a little wood debris, vibration; gap/clamped spear persist |
 
-这是声音提案，尚未录制或试听。全场只有一句短台词，不代表别的角色也必须寡言。
+A sound proposal, not recorded or listened to. One brief line here does not require taciturn characters elsewhere.
 
-### 最小资产与待验收
+### Minimum assets and pending acceptance
 
-- A：束发短外套、右手持杖、左肩受限状态；检查转杖、侧滑、低位左手操作和侧身过门。
-- B：长矛前端接触及被夹变形、双手握距变化；检查长矛不会穿过地面/门框。
-- C：抱箱背离动作，过门后保持在门内，不瞬移回交战区。
-- 场景：通道白模、开/降/卡住三种闸门状态、控制杆、门内灯与湿地反馈。
-- 动态预演待确认：S07是否能在4秒完成一次架偏与接近控制杆；S08操作与退门是否足够；门夹矛后缝宽是否确实阻人。若不成立，优先简化动作或调整分段，保留总长30秒，不用快切掩盖。
+- A: tied hair/short jacket, right staff, restricted left shoulder; check staff turns, side slips, low left-hand operation, sideways doorway passage.
+- B: spear-tip contact/clamp deformation, two-handed grip-spacing changes; check no ground/frame penetration.
+- C: box-carrying withdrawal, stays inside after crossing rather than teleporting back to combat.
+- Set: corridor white model, open/descending/jammed gate states, control, interior lamps, wet-ground responses.
+- Dynamic previs must confirm whether S07 fits deflection plus control approach within 4 seconds, S08 allows operation/withdrawal, and clamped gap really blocks a person. If not, simplify action or adjust segmentation first, keeping 30 seconds total; do not hide failures with fast cutting.
 
-## 跨题材迁移
+## Transfer across genres
 
-迁移时保留“目标—约束—选择—后果”，重写动作机制，不能仅替换皮肤。
+Keep "goal → constraint → choice → consequence," rewriting mechanics rather than changing skins only.
 
-- 无能力现实格斗：删去薄膜，重新核算武器和人体能否架开攻击；不能仍让短杖凭空偏折所有重击。
-- 机甲撤离：受限左肩改为失效执行器，门的尺度与夹持强度随之重建；驾驶舱表演与外部机体状态相互对应。
-- 夸张喜剧：可让矛杆弯曲蓄势、敌人延迟反应，但先建立可恢复变形的规则，结果仍是出口被阻或追击方式改变。
+- Realistic combat without powers: remove membrane and recheck whether weapons/bodies can deflect the attack; a short staff cannot still magically redirect every heavy blow.
+- Mecha withdrawal: replace shoulder restriction with a failed actuator and rebuild gate scale/clamp strength accordingly. Cockpit acting corresponds to external machine state.
+- Exaggerated comedy: a shaft may bend and load, with delayed enemy response, but establish recoverable-deformation rules first. The outcome still blocks an exit or changes pursuit.
 
-## 按需转写AI视频提示词
+## AI video prompt adaptation as needed
 
-先按生成交接检查确认平台使用方式和实际素材，有图才写各图职责，无图用自足描述。每个生成段检查独立事件、起止支撑和可观察通过条件；分镜镜头与生成段不必一一对应，复杂接触拆点应保留可匹配姿态。以上15秒与30秒示例都是待测设计，不能跳过本次交接检查直接冒充平台实测方案。
+Use generation handoff to establish platform operation and real assets first. Specify reference responsibilities only for provided images; without them, describe self-contained appearances. Check independent events, opening/ending support, and observable acceptance per generation segment. Storyboard shots and generation segments need not map one-to-one; complex-contact splits retain matchable poses. Both 15/30-second cases are untested designs, not platform-tested plans exempt from current handoff.
 
-可用结构：`固定身份与持械手 → 当前空间/承接姿态 → 一个主要攻防及结果 → 镜头任务 → 表演 → 风格与特效限制 → 结束姿态/环境状态`。
+Usable structure: `Fixed identity and weapon hands → Current space/carried pose → One main attack/defense and result → Camera task → Performance → Style/effects constraints → Ending posture/environment state`.
 
-例如改写S06时，必须包含“C已在门内；A无可用薄膜；A向南避开胸高刺击并向西退；矛从原位置掠过；无命中闪光”。负面限制只保留高风险项。用户没指定生成平台时不编造其参数、时长上限或能力保证。
+For example, adapting S06 includes "C already inside; A has no membrane; A evades the chest-high thrust south while retreating west; the spear crosses the old position; no hit flash." Retain only high-risk negative constraints. Without a specified platform, invent no parameters, duration limits, or capability guarantees.
 
-## 并列非动作最小案例：30秒茶室对峙
+## Parallel non-action minimum case: 30-second tea-room standoff
 
-以下为原创设计案例，未做视频生成验证，与原30秒守门动作核心并列，不代表全部题材已验证。用户明确要结构时可展以下镜头安排；默认实际输入只交白话。
+An original design, not generation-validated, presented alongside the original 30-second gate core; it does not establish validation across every genre. Show these shots only for an explicit structural request; default actual input is plain prose.
 
-| 叙事预算 | 场景组织 | 声音与意义 |
+| Narrative timing | Scene organization | Sound and meaning |
 |---|---|---|
-| 约前8秒 | 双人同框建立门、桌、湿信封；客人把信放到杯旁 | 门槛滴水，房内静默；物证进入 |
-| 约中间8秒 | 守门人看向信：“你从哪条路回来？”；客人看门口再答“桥断了。” | 短句后留反应，不另加内心旁白 |
-| 约随后8秒 | 中近景保持一次停手，守门人将杯移到信旁，给出门口通路 | 杯底轻碰桌面；是否放行由动作表明 |
-| 约末6秒 | 回到双人同框，客人收回手并起身，门外雨声渐近 | 保留未说尽的关系，不新增追兵 |
+| First ~8 s | Two-shot establishes door/table/wet envelope; visitor places letter beside cup | Dripping threshold, quiet room; evidence enters |
+| Middle ~8 s | Doorkeeper looks at letter: "Which road did you take back?" Visitor looks at doorway, answers "The bridge is down." | Reaction room after short lines, no added inner narration |
+| Next ~8 s | Medium-close holds one stopped hand; doorkeeper moves cup beside letter, yielding doorway route | Cup base touches table; action shows whether passage is granted |
+| Final ~6 s | Return two-shot; visitor withdraws hand and rises, rain outside grows nearer | Retain unfinished relationship, no new pursuers |
 
-结构接[叙事结构](../narrative/story-and-scene.md)，镜头接[对话场景](../narrative/story-and-scene.md)，留白接[氛围仪式](../narrative/story-and-scene.md)。30秒为剪辑目标，实际请求段长按平台；此表不等于四次生成或四个事件单元。角色外观用项目已定卡，实际提交每段自足，声音按本次原生能力分流。
+Connect structure to [narrative structure](../narrative/story-and-scene.md), shots to [dialogue scenes](../narrative/story-and-scene.md), and breathing room to [atmosphere/ritual](../narrative/story-and-scene.md). 30 seconds is an editing goal; actual request durations follow the platform. The table is neither four generations nor four event units. Use established project appearance cards, submit self-contained segments, and route sound by current native capability.
+
+
+
+
+
+
+
+
+

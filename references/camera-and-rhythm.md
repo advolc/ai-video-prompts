@@ -1,159 +1,165 @@
-# 运镜、分镜与节奏
+# Camera Movement, Storyboarding, and Rhythm
 
-构图层规则见[画面构图](../visual/composition-and-color.md)，本文件负责运镜与时间节奏；既有构图相关例证仅作为摄影说明，不另立一套构图阈值。
+See [composition](../visual/composition-and-color.md) for composition-layer rules. This file handles camera movement and timing; existing composition examples explain photography rather than establish a second set of composition thresholds.
 
-## 每个镜头交付一条主要信息
+## Each shot delivers one primary piece of information
 
-先写“观众此刻需要知道什么”，再选景别与运动。全身动作、接触细节、角色判断、局势结果是不同任务；一个镜头可承接次要信息，但不要同时高速环绕、变焦、翻滚并隐藏主要接触。
+Write “what the audience needs to know now” before choosing framing and movement. Full-body action, contact detail, a character's judgment, and the resulting situation are different tasks. A shot may carry secondary information, but do not combine rapid orbiting, zooming, rolling, and concealment of the principal contact.
 
-| 方法 | 适合的任务 | 执行限制 |
+| Method | Suitable task | Execution limits |
 |---|---|---|
-| 稳定全景/中全景 | 初始距离、连贯攻防、双方能力差 | 不把人物缩成看不清的点；给轮廓留背景对比 |
-| 横移/平行跟随 | 追逐、进退、侧向身法 | 背景锚点显示移动，速度适当留出下一威胁 |
-| 推轨/拉轨 | 进入心理压力或揭示环境结果 | 摄影机位移会改变透视关系，不能与纯变焦混写 |
-| 摇摄/甩跟 | 转移注意、突然来袭 | 落点要可识别；甩糊不能藏掉全部关键动作 |
-| 短弧线/环绕 | 展示绕侧、攻守交换或控制局面 | 地形与主轴可辨；转过后重新记录屏幕左右 |
-| 低机位/高机位 | 重量、压迫、高差、路线 | 机位本身不等于角色强弱，需与动作和构图共同成立 |
-| 接触特写 | 握、卡、断、破防等决定性机制 | 前后接得回人物身体；近景不能凭空增加一只手 |
-| 视线/主观镜头 | 威胁识别、误判、锁定目标 | 给出看向对象；意识模糊可有意不稳但需后续定位 |
-| 远景/俯瞰 | 尺度、群战关系、落点与环境破坏 | 接回近景时维持方向与高度 |
-| 固定镜头留人出画 | 突然速度、余波、悬念 | 随后交代必要结果，不靠出画永久逃避动作设计 |
+| Stable wide / medium-wide | Initial distance, continuous exchanges, differences in ability | Do not reduce characters to unreadable dots; separate silhouettes from the background |
+| Lateral move / parallel tracking | Pursuit, advance/retreat, lateral movement | Background anchors demonstrate travel; pace it to leave room for the next threat |
+| Dolly in / out | Enter psychological pressure or reveal environmental results | Camera translation changes perspective and cannot be described as pure zooming |
+| Pan / whip-follow | Redirect attention, sudden attack | Identifiable endpoint; whip blur cannot hide all critical action |
+| Short arc / orbit | Flanking, exchanges of attack/defense, control of the situation | Readable terrain and main axis; update screen left/right after the turn |
+| Low / high camera | Weight, pressure, elevation, route | Camera height alone does not establish character strength; action and composition must support it |
+| Contact close-up | Decisive grip, jam, break, guard breach | Reconnect to the body before/after; a close-up cannot invent an extra hand |
+| Eyeline / POV | Threat recognition, misjudgment, target acquisition | Specify the gaze target; impaired awareness may justify instability but requires later reorientation |
+| Distant / overhead view | Scale, group-fight relationships, landings, environmental damage | Preserve direction and height when returning closer |
+| Fixed camera allowing exit from frame | Sudden speed, aftermath, suspense | Establish necessary results afterward; going offscreen is not a permanent escape from action design |
 
-焦段未实测时给广角感、正常透视或压缩感即可。需要3D摄影参数时，说明传感器/画幅条件并标为预演建议；从成片不能精确反推出镜头毫米数。画幅、安全区与小画面验收见 [画幅与合规](framing-and-compliance.md)；横移/摇摄在AI中的使用条件与边缘失真检查见 [生成段](prompts-and-segments.md)。
+Without measured focal length, a wide-angle feel, normal perspective, or compressed feel suffices. For 3D camera parameters, state sensor/format conditions and label them previs suggestions; precise lens millimeters cannot be reverse-engineered from the final film. See [framing and compliance](framing-and-compliance.md) for aspect ratio, safe areas, and small-screen acceptance; see [generation segments](prompts-and-segments.md) for AI lateral/panning conditions and edge-distortion checks.
 
-## 分镜连续
+## Shot continuity
 
-记录镜头起止构图、人物屏幕位置、视线对象、运动方向和出入画边。通常保持主轴两侧关系；有意越轴时，可用连续移位、中性方向镜头或清楚的新全景重新定位。多方向群战可以重新定义局部轴线，不能机械以同一条轴解释全场。
+Record opening/closing composition, character screen positions, gaze targets, movement direction, and entry/exit edges. Usually preserve relationships across the main axis. For deliberate axis crossings, reorient through continuous movement, a neutral-axis shot, or a clear new wide. Multidirectional group fights can redefine local axes; one axis cannot mechanically explain the entire scene.
 
-群战还需把当前/接近/绕路/封口威胁映射到本镜头左右分区与前后层；角色越位或摄影换侧后更新映射，见 [武指群战](choreography.md)。
+Group fights also map current/approaching/flanking/exit-blocking threats to screen-left/right regions and depth layers. Update after characters cross or the camera changes sides; see [group choreography](choreography.md).
 
-切点可落在动作发起、接触、反应或落点，各有不同效果。先看到危险再反应制造紧张；先受惊再揭示危险制造突然性。不要每次都固定“眼睛—拳头—爆光”。关键攻击即使跨镜头，路径和结果仍须连接。
+Cuts at initiation, contact, reaction, or landing have different effects. Showing danger before reaction creates suspense; showing the startle before revealing danger creates surprise. Do not always repeat “eyes—fist—flash.” Even across shots, a key attack's path and result must connect.
 
-可适度重复极短动作阶段强调冲击，但不得让角色无解释地倒退重做。故意让观众迷失方向适用于眩晕、恐惧等主观段，结束后重新建立空间；它是设计选择，不是错误连续性的补丁。
+A very short action phase may be repeated moderately to emphasize impact, but do not make characters inexplicably reverse and repeat. Deliberate disorientation suits subjective dizziness or fear; restore geography afterward. It is a design choice, not a continuity-error patch.
 
-## 四条时间分别控制
+## Control four timelines separately
 
-1. 动作时间：起势、加速、交汇、回收与后果。
-2. 摄影时间：镜头何时启动、跟随、超过主体、停稳。
-3. 剪辑时间：镜头何时切换、信息是否已读到。
-4. 动画时间：关键姿态间距、保持与中间画面密度。输出帧率不等于每秒独立绘制姿态数；不要把文件30fps当作所有部位都每秒更新30次。
+1. Action time: initiation, acceleration, meeting, recovery, consequences.
+2. Camera time: when the camera starts, follows, passes the subject, and settles.
+3. Editing time: when a cut occurs and whether the information has been read.
+4. Animation time: spacing between key poses, holds, and in-between density. Output frame rate is not the number of independently drawn poses per second; a 30 fps file does not mean every part updates thirty times each second.
 
-快感可来自较长镜头内的连续交锋；慢感可来自观察和未决的威胁。爆发前后的安静、姿态幅度和空间变化往往比增加切数更有效。
+Speed can come from continuous exchanges in a longer shot; slowness can come from observation and an unresolved threat. Quiet around a burst, pose amplitude, and spatial change often matter more than adding cuts.
 
-## 规划节奏
+## Planning rhythm
 
-节奏曲线由情境档案与动作模式决定（[情境路由](../core/context-routing.md)、[动作模式](action-modes.md)）：对决可有起伏与停顿，困兽之斗是持续压迫，潜入是漫长接近加一次接触，对练允许纠错停顿，仪式性对决由规矩规定停顿。下文各点是菜单，不是统一曲线。
+The rhythm curve follows context and action mode ([context routing](../core/context-routing.md), [action modes](action-modes.md)): duels may rise, fall, and pause; last stands sustain pressure; infiltration has a long approach and one contact; sparring allows correction pauses; ritual duels pause under their rules. The following are a menu, not one universal curve.
 
-先写信息节拍，例如“试探—识破—转向—局部失败—借环境脱离”，再分秒数。也可开场即高潮、持续压迫或喜剧停顿，不强制同一曲线。
+Write information beats first, for example “probe—recognize—redirect—local failure—escape through the environment,” then assign seconds. An opening climax, sustained pressure, or comic pauses are equally possible; no single curve is mandatory.
 
-对峙停顿要有信息变化：重心转移、对方注意力改变、出口缩小或人物决定。慢动作强调识别难点或主观体验；定格可用于风格化重音；两者都不是默认的原作规律。高速交锋后给受力、喘息、目标进度或新距离，让峰值兑现。
+A standoff pause needs an information change: weight shift, redirected attention, reduced exit access, or a decision. Slow motion emphasizes recognition difficulty or subjective experience; a freeze can provide stylized emphasis. Neither is a default rule of the source work. Follow fast exchanges with force response, breathing, goal progress, or a new distance so the peak has consequences.
 
-以镜头时长和动作可完成性双重检查。24fps下若建议2帧强调，标注约0.083秒且只是试验起点；其他帧率重新计算，不把“震屏三帧”等变成所有风格硬指标。跨镜同时发生的动作按同一时间轴计时，不能重复计入总长。
+Check both shot duration and action feasibility. If suggesting a two-frame emphasis at 24 fps, label it approximately 0.083 seconds and only an experimental starting point. Recalculate for other rates; “three frames of screen shake” is not a hard rule for every style. Simultaneous actions across shots use one timeline and are not counted twice toward total duration.
 
-## 镜头姿态：旁观、参与、主观（按情境路由）
+## Camera stance: observer, participant, subjective (context-routed)
 
-镜头姿态由情境档案决定，不是统一设定。
+Camera stance follows the Context Profile rather than a universal setting.
 
-| 姿态 | 适用情境 | 做法 | 避免 |
+| Stance | Context | Method | Avoid |
 |---|---|---|---|
-| 旁观 | 仪式性对决、潜入、压倒性优势、正式谈话、庄重告别 | 固定或缓慢移动，较长焦距或对称广角，景别变化少，让动作在画内发生 | 全程旁观，把整场打斗拍成侧面剖面的舞台 |
-| 参与 | 困兽之斗、伏击、混战、街头争吵、逃亡 | 手持贴近，随受力抖动，低位俯冲、推近、甩镜绕肩；视线跟着危险走，被刀光逼退 | 无动机乱晃；遮住关键接触 |
-| 主观 | 恐惧、负伤、醉酒、眩晕、濒死 | 以角色视线、焦点收窄、失焦、呼吸晃动表达状态 | 用模糊遮盖失败的动作；不交代就回到客观视角 |
+| Observer | Ritual duel, infiltration, overwhelming advantage, formal talk, solemn farewell | Fixed/slow movement, longer lens or symmetrical wide, few framing changes; action happens within frame | Remaining an observer throughout and staging the entire fight as a side-view cross-section |
+| Participant | Last stand, ambush, melee, street argument, escape | Close handheld, movement with force, low dives, pushes, whip around shoulders; attention follows danger and retreats from the blade | Unmotivated shaking; hidden critical contact |
+| Subjective | Fear, injury, intoxication, dizziness, near death | Character eyeline, narrowed focus, defocus, breathing motion express state | Blurring failed action; returning to an objective view without explanation |
 
-姿态在**转折点**切换，例如对练转真打时由旁观转参与；切换要有诱因（一击见血、一声喊叫）。若所用模型不执行文字写的“切镜”（已有实测被渲染为连续镜头），参与感改用连续的镜头运动表达：手持后退、低位俯冲、推近、绕肩甩镜；需要硬切时改用平台自己的分镜语法。
+Switch stance at a **turn**, such as observer to participant when sparring becomes real; provide a trigger such as a blood-drawing strike or a shout. Choose cuts or continuous movement for the requested dramatic and spatial goal. If an actual output misses a requested cut, inspect that output and its inputs before choosing another attempt, a documented storyboard control, or separate shots joined in editing. A continuous retreat, low dive, push or shoulder arc is an alternative only when it preserves the user's shot intent. Missing evidence does not establish that a model cannot cut; one successful cut does not establish reliable execution. See [evidence boundaries](source-scope.md#model-observation-record).
 
-**镜头轴线要变化。** 摄影轴相对对战线（两人连线）至少用两种以上：90度侧拍、约45度三分之二、越肩后拍、高位或低位。固定的侧面剖面会把所有位移压平成一条线，掩盖横向与纵深移动。加入景深线索：前景遮挡物（岩石、柱子）、运动镜头的视差、可见的远墙、不同距离的物件；用低位或高位展示Z轴，让落点在跳跃后可见。模型不执行文字切镜时，用连续运动穿过多条轴线：环绕、升降、手持弧线、绕肩推近（见[空间战术](spatial-tactics.md)第7节）。
+**Choose the camera axis for the action.** Follow the spatial requirements in [spatial tactics](spatial-tactics.md), section 5. A fixed side view may preserve clear geography; it is valid when it serves the scene or is explicitly requested. When travel, depth or height needs another view, use a motivated three-quarter, over-shoulder, high/low view or continuous arc. Keep landings and contact readable, and preserve the user's requested camera ambition. Foreground, parallax and landmarks can clarify depth; do not add a second axis merely to meet a quota.
 
-## 声音与台词时间
+## Sound and dialogue timing
 
-声音方案可分预兆、破风、接触、躯体/机械反应、环境尾音和呼吸。选择主声音，避免每层都顶满；强冲击前短收环境声可作为主观处理，但不是每拳固定模板。音乐节拍可辅助，动作因果不应为卡点被切断。
+Sound can include warning, air movement, contact, bodily/mechanical response, environmental tail, and breath. Choose a primary sound rather than maximizing every layer. Briefly reducing ambience before a strong impact can be subjective treatment, not a template for every punch. Music beats can help; do not cut action causality merely to hit a beat.
 
-台词先按角色语气实读，再看是否容得下，给吸气和回应留空间；未试听音轨时，只提新设计，不评价参考原声。低配预演至少检查一次连续播放；只看静态分镜不能证明节奏已经成立。
+Read dialogue in the character's delivery first, then check fit, allowing inhalation and response. Without listening to the track, propose new design only; do not evaluate the reference audio. Even low-cost previs needs at least one continuous playback check; static storyboards alone do not prove rhythm.
 
-## 把提示词写成拍摄单
+## Turn prompts into a shooting plan
 
-先填可检查字段，再连成简洁提示词；“电影级、震撼、疯狂运镜、大片感”不作为拍摄指令。
+Fill checkable fields first, then connect them into concise prose. “Cinematic,” “stunning,” “wild camera,” and “blockbuster feel” are not shooting instructions.
 
-| 字段 | 要填写的内容 | 判定方式 |
+| Field | Content | Assessment |
 |---|---|---|
-| 机位/高度 | 低位、平视、肩后或柱后；地面基准与建议离地高度 | 首帧机位与指定对象关系一致；高度是设计目标，不是AI精确执行保证 |
-| 构图 | 人物左右前后、画面占比、双脚/地砖是否可见、接触安全区 | 关键身体与兵器有空间，近景也能接回整体 |
-| 运动 | 推/拉/摇/移之一，方向、起止锚点、时间内行程、起停方式 | 背景视差与机位运动相符，不用“高速”一词代替路径 |
-| 主动作 | 谁从哪起动、攻击线、谁应对、一次主要接触与后果 | 手、刃、目标和支撑能对上，尾状态可供下一段继承 |
-| 光照 | 主光方向与软硬、暗部保留、能力补光；雨雾/湿地仅在设定有时加入 | 光向、地面状态与前后段一致，角色轮廓不被吞没 |
-| 时间 | 净时长、关键事件时段、请求余量与剪辑区间 | 净时长与动作量匹配，不将重复余量计入剧情 |
+| Camera position/height | Low, eye-level, behind shoulder/pillar; ground reference and suggested height | First-frame relationship to the specified subject agrees; height is a design target, not guaranteed AI precision |
+| Composition | Character left/right/depth, frame share, visible feet/tiles, contact safe area | Key bodies/weapons have room; close shots reconnect to the whole |
+| Movement | One of push/pull/pan/track, direction, start/end anchors, travel during the interval, start/stop behavior | Background parallax agrees with travel; “high speed” does not replace a path |
+| Main action | Who starts where, attack line, responder, one principal contact and consequence | Hands, blade, target, support align; end state carries into the next segment |
+| Lighting | Key direction/softness, shadow detail, power-generated fill; rain/fog/wet ground only if established | Light direction and ground state agree across segments; silhouettes remain readable |
+| Time | Net duration, key-event interval, request margin, edit interval | Duration fits action volume; repeated margins are not story time |
 
-示例拍摄单：16:9，净4秒；摄影机在通道南侧，建议离地0.6米，轻微仰角，中全景保留双脚，地面约占下三分之一；A在左、B在右。B持矛向左进步刺，A右手短杖向北架偏，只有一次杆身交汇；接触后A左退半步，B收矛。摄影机向左平移约半步，在接触前减速，接触时收稳；门柱保留在左后。冷光从画面右上进入，暗部能读衣褶；无天气新增、无大面积爆光。结尾双方武器仍在原手中。
+Example shooting plan: 16:9, net four seconds; camera south of the passage, suggested height 0.6 m, slight upward angle, medium-wide retaining both feet, ground around the lower third; A left, B right. B steps left with a spear thrust. A's right-hand short staff deflects north, with one shaft contact. After contact A steps half a pace left, B retracts the spear. Camera tracks left around half a pace, slows before contact and settles at contact; doorpost stays rear left. Cool light enters upper right, shadow folds remain readable; no added weather or broad flash. Both weapons remain in their original hands at the end.
 
-高度、地面比例和横移量须同时通过首帧/预演构图核对，不能把互相矛盾的数字全部塞给生成工具。具体人物身份、衣饰与兵器比例由批准参考补齐。
+Height, ground proportion, and lateral travel must all pass first-frame/previs composition checks together. Do not submit contradictory numbers to the generation tool. Approved references supply exact identity, clothing, and weapon proportions.
 
-## 景别动机与心理调度（防“流水账监控”）
+## Motivated framing and psychological staging (avoid routine surveillance coverage)
 
-- **拒绝无效平铺**：一般对话以中景或双人全景建立关系和站位，不代表把日常过程一笔带过；优先在心理转折、发现线索、武器出鞘或其他确需看清的关键接触处使用特写。特写是视觉重音，要有新增信息，不为每句台词切一次脸，也不静默删掉用户明确要求的表情/物件特写。
-- **过肩与遮挡**：文戏可用过肩镜头保留对方肩线，或用已有门框、柱子、碎发形成前景层次；遮挡不得盖住当前关键视线、手部或接触。机位与视线轴要能接回双人空间，不为了电影感额外新增前景物。
-- **动势转场**：两场本已存在相近动作时，可用匹配剪辑，如已定上一镜举杯、下一镜举刀；这是两个镜头的后期连接，不让同一镜中的杯子自动变刀，也不为匹配硬添兵器。声音桥用下一场已有声音提前进入当前画面，按实际音频与剪辑层处理。
+- **Reject uninformative flattening:** ordinary dialogue uses medium/two-person wides to establish relationship and position, but that does not mean skipping lived processes. Favor close-ups for psychological turns, clues, weapon draws, or other critical contacts requiring clarity. A close-up is visual emphasis and adds information; do not cut to a face every line or silently remove explicitly requested expression/object close-ups.
+- **Over-shoulder and occlusion:** dialogue may retain the partner's shoulder or use existing doorframes, pillars, or loose hair as foreground layers. Occlusion must not cover the current critical eyeline, hands, or contact. Camera/eyeline axes reconnect to shared geography; do not add foreground objects solely for a cinematic look.
+- **Motion transitions:** use a match cut when similar actions already exist in both scenes, such as an established cup lift followed by a blade lift. This is a post-production connection between two shots; the cup does not transform into a blade within one shot, and no weapon is added just to make a match. A sound bridge brings existing sound from the next scene into the current picture early, handled in actual audio/editing layers.
 
-每段仍只有一个主要摄影任务；匹配切、声音桥、变速与剪辑执行放管理层，不伪装成平台控制参数或新战斗动作。景别与心理注意对象关联，摄影建议不增加A层事件。
+Each segment still has one principal camera task. Match cuts, sound bridges, speed changes, and edit execution stay in management notes, not disguised as platform controls or new combat actions. Framing follows the psychological attention target; camera suggestions add no Tier A events.
 
-## 主观镜语增量接口
+## Subjective camera extension interface
 
-基础机位、景别、轴线、摄影路径与一镜主任务仍在本页。用户所写的production/camera-and-rhythm.md现接为[主观情绪镜语](camera-and-rhythm.md)，仅补状态驱动的摄影、透视选择与真实镜头介质，不复制或替换本页。主观镜语是当前片段的基础情境选择，不强制开启深度心理或台词系统，也不把失焦/污迹当动作遮羞布。
+Basic camera position, framing, axes, path, and one-shot task remain on this page. The user-mentioned production/camera-and-rhythm.md now connects to [subjective emotional camera language](camera-and-rhythm.md), extending only state-driven photography, perspective choice, and physical lens media, without copying or replacing this page. Subjective camera is a basic context choice for the segment; it does not require enabling deep psychology/dialogue systems, and defocus/dirt cannot conceal failed action.
 
-## 附：主观情绪镜语（并入自production/camera-and-rhythm）
+## Appendix: Subjective emotional camera language (merged from production/camera-and-rhythm)
 
-本文件是主观情绪镜语的增量模块，id为subjective-camera-and-rhythm；基础景别、轴线与运镜仍由[原运镜节奏](../references/camera-and-rhythm.md)维护。保留旧路径，不复制原规则形成第二套主定义。只在当前视角与人物状态确有关系时默认静默选用，客观全景不强行变成眼睛视角。
+This is the subjective-camera extension, ID `subjective-camera-and-rhythm`. [Original camera and rhythm](../references/camera-and-rhythm.md) still maintains basic framing, axes, and movement. Preserve the old path without duplicating rules into another primary definition. Silently choose it by default only when current perspective genuinely relates to character state; do not force an objective wide into an eye POV.
 
-### 状态→注意对象→摄影选择
-先读已定恐惧、重伤或紧张的具体刺激、身体支撑和当前注意目标，再选一种摄影反应。恐惧也可能表现为稳定凝视，重伤也可能压住呼吸；不要固定“恐惧=手持抖”“受伤=失焦”。可选择缓慢靠近注意对象、低幅不稳但维持接触可读，或一次有动机的焦点转移。镜头呼吸是细微起停/节奏，不暗示焦点控制精确到帧。
-同一段只保一个主要摄影任务，不把晃动、拉焦、环绕、眩晕和推拉全部叠加。关键交汇时保持可见窗口；焦点短暂离开目标须有新信息接棒，不能把整段拍糊当心理表达。
+### State → attention target → camera choice
 
-### 视觉语言的叙事功能（可选加深）
+Read the established stimulus for fear, serious injury, or tension, body support, and current attention target before choosing one camera response. Fear may be a steady stare; serious injury may involve controlled breathing. Do not hard-code “fear = shaky handheld” or “injury = defocus.” Options include a slow approach to the attention target, slight instability preserving readable contact, or one motivated focus transfer. Camera breathing means subtle starting/stopping or rhythm, not frame-accurate focus control.
 
-默认启用；用户明确要“简版/lite”时可省略。这里只管功能，不复制[构图手段](../visual/composition-and-color.md)或[基础运镜](../references/camera-and-rhythm.md)；下列不是必须照拍的规则。
+Keep one principal camera task per segment rather than stacking shake, rack focus, orbit, dizziness, and dolly movement. Preserve a visible window at critical contact. If focus briefly leaves the target, new information must take over; an entirely blurred segment is not psychological expression.
 
-#### 景别的叙事功能
+### Narrative functions of visual language (optional depth)
 
-| 景别 | 叙事功能 | 常见误用 |
+Enabled by default; omit for an explicit “brief/lite” request. This addresses function without duplicating [composition methods](../visual/composition-and-color.md) or [basic camera movement](../references/camera-and-rhythm.md). The following are not mandatory shooting rules.
+
+#### Narrative function of shot size
+
+| Framing | Function | Common misuse |
 |---|---|---|
-| 远景/全景 | 建立位置与人物环境比例 | 人物缩成点仍要求读细微判断 |
-| 中景 | 读距离、动作关系、接触 | 微相过细，关键接触挤在边缘 |
-| 中近景 | 读判断、选择、手部与视线对应 | 同时塞复杂打斗和精准微相 |
-| 近景/特写 | 读握持、接触面或决定性小动作 | 每句话切脸，特写没有新信息 |
+| Distant / wide | Establish position and character/environment scale | Characters reduced to dots while subtle judgments are still demanded |
+| Medium | Read distance, action relationships, contact | Excessively fine facial detail; key contact at frame edges |
+| Medium close-up | Read judgment, choice, correspondence between hands and gaze | Complex combat and precise subtle facial acting together |
+| Close / extreme close-up | Read grip, contact surface, decisive small action | Cutting to a face every line with no new information |
 
-#### 角度的叙事功能
+#### Narrative function of angle
 
-| 角度 | 可承担的叙事功能 | 边界 |
+| Angle | Possible function | Boundary |
 |---|---|---|
-| 平视 | 中性观察、对等、交给观众判断 | 构图仍可偏置，不自动客观 |
-| 低机位 | 压迫、重量、被俯视的处境 | 不自动等于更强，须与本场动作成立 |
-| 高机位 | 围困、被观察或整体地图 | 不自动等于更弱 |
-| 斜角 | 失衡、异常、主观不安 | 不每镜使用，连续强调会疲劳 |
-| 过肩/遮挡 | 关系距离与前后位置 | 保留关键接触和视线目标 |
+| Eye-level | Neutral observation, equality, viewer judgment | Composition may still be biased; not automatically objective |
+| Low | Pressure, weight, being looked down upon | Not automatically stronger; current action must support it |
+| High | Confinement, observation, overview map | Not automatically weaker |
+| Canted | Imbalance, anomaly, subjective unease | Not every shot; continuous emphasis fatigues |
+| Over-shoulder / occluded | Relationship distance and depth placement | Preserve critical contact and gaze targets |
 
-#### 视觉母题的复现规则
+#### Rules for recurring visual motifs
 
-| 阶段 | 内部检查 | 候选变化 |
+| Stage | Internal check | Candidate change |
 |---|---|---|
-| 初现 | 该景别、角度或摄影变化先建立了什么关系？ | 同一观察关系先呈现对峙 |
-| 复现 | 关系改变后，这次复现多说了什么？ | 同一手段表现原对峙者开始让步 |
-| 结尾 | 视觉手段的保留/消失能否体现选择？ | 因已定关系破裂或靠近而改变观看关系 |
+| Introduction | What relationship did this framing, angle, or camera change establish? | The same observing relationship first establishes confrontation |
+| Recurrence | After the relationship changes, what more does repetition say? | The same device shows a former opponent beginning to yield |
+| Ending | Can keeping/removing the device embody a choice? | The established rupture or approach changes the viewing relationship |
 
-无新增意义就删重复，不为统一机械复用。这里管视觉手段复现；[叙事母题](../narrative/story-and-scene.md)管物、声音、颜色如何获得意义，不各写一套剧情。术语与功能表只在后台使用，最终按[摄影现场推演](delivery-and-qa.md)翻成空间限制、角色轨迹、情绪张力共同支持的自然语言，复杂摄影仍绑定动作锚点。
+Remove repetition without added meaning; do not mechanically reuse for uniformity. This handles recurring visual devices; [narrative motifs](../narrative/story-and-scene.md) handles how objects, sounds, and colors gain meaning. Do not invent separate plots for each. Terms/function tables remain backstage. Translate through [on-set camera reasoning](delivery-and-qa.md) into natural language supported by spatial constraints, character paths, and emotional tension; complex photography remains anchored to action.
 
-### 视觉欺骗的可行性
-极度压迫可评估希区柯克变焦（移动机位与变焦协同，主体大小近似不变而背景透视改变），先检查摄影路径、主体支撑、工具是否可控；未经验证不宣称平台存在精确参数。不可控时可选稳定近景或另做后期/可控预演，不把术语直接塞给模型。
-长焦压缩须有相应机位距离与空间布置，不等于在原地拉焦就改变物理距离。只在该空间关系服务叙事时采用，不每次情绪转折都拉伸背景；夸张幻觉需用户既定风格许可。
+### Feasibility of visual illusion
 
-### 环境脏镜头与前景
-先问内部：相机是否真的处于泥水/碎屑的飞溅路径，现场是否已有这种物质，当前动作能否造成它。既有血液或泥水可按位置短暂触及镜头边缘；没有对应伤情不添血，没有近景冲击不凭空糊镜。优先已有门框、肩线等前景，不为“电影感”硬添遮挡。
-脏点只能服务空间与力度，不能盖住整段关键动作；若保留污迹，后续机位连续性也要交代，不能同一连续镜头忽然干净。复杂镜头效果可转后期，不冒充实际拍摄完成。
+For extreme pressure, consider a dolly zoom: camera translation and zoom coordinated so subject size stays roughly stable as background perspective changes. First check camera path, subject support, and tool control; do not claim precise platform parameters without verification. If uncontrollable, choose a stable close shot or separate post/controllable previs rather than merely feeding the term to the model.
 
-### 呈现
-可执行摄影关系直接自然融入白话，不解释心理学或列镜头清单。固定机位/焦点细化不新增核心必执行；独立相机切换与额外运动不能藏进氛围，仍受原单镜摄影与[负荷契约](../core/pipeline.md)限制。匹配切、精确顿帧和后期合成按原三层分流。
+Telephoto compression requires corresponding camera distance and spatial arrangement; changing focus in place does not change physical distance. Use it only when that relationship serves the narrative, not to stretch the background at every emotional turn. Exaggerated hallucination requires the user's established stylistic permission.
 
+### Environmental lens dirt and foreground
 
-## 对话走位与摄影的交接
+Ask internally whether the camera is actually in a mud/debris splash path, whether that material exists, and whether current action can cause it. Existing blood/mud may briefly reach the lens edge as position allows; add no blood without a corresponding injury and no unexplained lens smear without nearby impact. Favor existing doorframes/shoulders; do not invent occlusion for a cinematic look.
 
-先按[对话空间调度](../dialogue/spatial-blocking.md)设计人物的空间选择，再用摄影呈现。全景、中全景或有锚点的中景可交代起身、绕行、让路、停在门槛和听者回应；路径成立后再切近景，不把每句台词拆成正反打。保持不动的场景可以固定机位，不套用上文打戏的双轴指标。
+Dirt serves space and force rather than covering the entire critical action. If retained, track it in camera continuity; a continuous shot cannot suddenly become clean. Complex lens effects can move to post; do not claim actual filming is complete.
 
-推近、环绕和反打只改变观看关系，不计作人物位移。角色绕桌、移至窗边或改变高低关系时，机位必须容纳可衔接的路径与落点；不能仅用前后两个位置掩盖瞬移。空间发展是亲密或合作时，不自动改拍成压迫、追逼或居高临下。对话与打斗混合时分别使用各自的空间设计，转入另一模式时承接真实位置。
+### Presentation
+
+Integrate executable camera relationships directly into plain prose without psychology explanations or a shot checklist. Refining fixed position/focus adds no core mandatory action. Independent camera switches and extra movement cannot hide in atmosphere; the original one-shot camera rules and [load contract](../core/pipeline.md) still apply. Route match cuts, precise frame holds, and post compositing through the original three layers.
+
+## Dialogue blocking and camera handoff
+
+Design characters' spatial choices through [dialogue spatial blocking](../dialogue/spatial-blocking.md) before photographing them. Wide, medium-wide, or anchored medium shots can establish rising, walking around, yielding a route, pausing at a threshold, and listener responses. Move closer after the path is established; do not make every line a shot/reverse shot. A scene holding position can use a fixed camera; the combat dual-axis criteria above do not apply.
+
+Pushes, orbits, and reverse angles change the viewing relationship, not character displacement. When characters circle a table, move to a window, or change relative height, camera coverage must contain a connectable path and destination; two isolated before/after positions cannot conceal teleportation. Intimate or cooperative spatial development does not automatically become pressure, pursuit, or looming. For mixed dialogue/combat, use each mode's spatial design and carry real positions into the transition.

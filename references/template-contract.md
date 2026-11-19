@@ -1,26 +1,19 @@
-# Design Ledger Contract
+# Design and Production Ledger Contract
 
-v1 used FIXED / EVENT / SEAM blocks as the authoring surface and a script to export them. v3 writes the **prompt first** and treats ledgers as an optional internal check. The export script is retired; `scripts/lint_prompt.py` replaces it.
+## Required design, optional expanded paperwork
 
-## 1. When to use a ledger
+Design precedes the prompt. Every fight checks space using [spatial tactics](spatial-tactics.md); complex choreography uses its arena and position ledger; every dialogue or silent-interaction unit uses the spatial spine in [dialogue blocking](../dialogue/spatial-blocking.md). For a short simple scene, concise opening/path-or-hold/response/end facts suffice. Expand records for complexity, not by default. The user receives depicted prose by default, not the records.
 
-Only when the user asks for the engineering view, or when planning a long multi-clip sequence. Never in the copy block.
+Expanded project, shot, generation and post-production tables are optional: use them for a multi-clip production or when the user asks for an engineering view. Optional paperwork does not waive required spatial, contact, capacity or seam checks. Keep unchanged facts compact instead of refilling a full form per line.
 
-## 2. Ledger fields
+## Production fields
 
-**Project card:** `genre/format | length | world rules | aspect/resolution | model and verified conditions | reference inputs actually used | locked facts`
+- Project: goal, duration, world/identity locks, platform and verified conditions, actual references and output scope.
+- Assets: version, recognizable identity, handedness, material, held objects, actual reference responsibilities.
+- Space: existing anchors, routes, support, starting and ending geometry; fight ledger or dialogue spatial spine as applicable.
+- Request: distinct events, selected performance, actual input, camera tasks, timing/load risks and observable acceptance checks.
+- Seam: position/facing, support, held objects, injury/stamina, environment, light, prop state; dialogue routes/access and unresolved invitations.
 
-**Character card:** `ID/version | face structure and asymmetry | skin and hair | costume materials and wear | handedness | weapon or prop | voice (pace, register, DNA) | status default | locked looks`
+Use the [production-notes template](../assets/templates/production-notes.md) when these expanded records help. Fill a project copy, not the installed template. Keep engineering labels and detailed audio/psychology analysis outside the copy block. B/C richness is limited by coherence and length; A events use the [capacity check](generation-handoff.md), not a universal numerical quota. Verified, assumed and untested remain distinct.
 
-**Scene card:** `ID/version | layout and anchors | light sources (direction, color temperature) | atmosphere | props and their states | camera paths`
-
-**Clip card:** `clip ID | duration | Tier A events | beats (Tier B) | texture choices (Tier C) | speech and delivery | start state | end state | camera tasks | test conditions`
-
-**Seam card:** `position and facing | support and posture | held objects | injury and stamina | ability state | environment state | light | prop state | distance`
-
-## 3. Rules
-
-- A ledger is derived from the prompt and the design record. It does not constrain the prompt's richness.
-- Texture (Tier C) and performance (Tier B) never sit in an event-count budget. Only Tier A is counted.
-- Fields marked "verified" need a source (docs, the user, or a clip). Everything else is "assumed" or "untested".
-- Keep ledgers outside the copy block and unlinked to model syntax.
+Select the expanded view and shared fields through [record selection](../core/records.md); that file owns template-use decisions.

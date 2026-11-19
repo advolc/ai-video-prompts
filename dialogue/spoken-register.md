@@ -8,23 +8,23 @@ Read every line aloud, imagining two people at a table. If it sounds like a fort
 
 ## 2. The features of real speech
 
-| Feature | 中文 | Example (EN / 中文) |
-|---|---|---|
-| False start and repair | 起头又改口 | "The shipment, it, uh, it didn't clear." / "货……那批货，没、没过关。" |
-| Filler and hedge | 语气词、含糊词 | "Well, I mean...", "sort of", "I guess" / "呃", "这个", "那个", "就是" |
-| Trailing off | 话说一半 | "If you'd just let me explain, then—" / "你要是肯听我说，那——" |
-| Interruption | 被打断 | "But the—" / "可是——" |
-| Overlap | 抢话 | Both start at once; one yields |
-| Backchannel | 附和与回应 | "mm", "right", "go on" / "嗯", "是吗", "接着说" |
-| Echo and repeat | 复述对方的词 | Chen: "Tuesday." |
-| Ellipsis and fragments | 省略、碎片句 | "Tuesday." "Not yet." "Who says?" / "周二？" "还没。" |
-| Contractions and slang | 缩略、口语 | "didn't", "gonna" / "咋回事", "得了" |
-| Address terms | 称呼 | "Sir", "boss" / "陈总", "老板", "师父" |
-| Register shift under stress | 紧张时语体变化 | Formal turns clipped, or the reverse |
-| Breath groups | 气口 | Short bursts split by inhales, never one unbroken paragraph |
-| Pauses | 停顿 | A pause is an action beat: a swallow, a cup lifting |
-| Laughter, sighs | 笑、叹气 | A short exhale through the nose, "heh", a dry laugh |
-| Volume and pitch movement | 音量音高变化 | Dropping to a murmur on the blunt sentence |
+| Feature | Example |
+|---|---|
+| False start and repair | "The shipment, it, uh, it didn't clear." |
+| Filler and hedge | "Well, I mean...", "sort of", "I guess" |
+| Trailing off | "If you'd just let me explain, then—" |
+| Interruption | "But the—" |
+| Overlap | Both start at once; one yields |
+| Backchannel | "mm", "right", "go on" |
+| Echo and repeat | Chen: "Tuesday." |
+| Ellipsis and fragments | "Tuesday?" "Not yet." "Who says?" |
+| Contractions and slang | "didn't", "gonna", "what's going on", "give it a rest" |
+| Address terms | "Sir", "boss", "Director Chen", "master" |
+| Register shift under stress | Formal turns clipped, or the reverse |
+| Breath groups | Short bursts split by inhales, never one unbroken paragraph |
+| Pauses | A pause is an action beat: a swallow, a cup lifting |
+| Laughter, sighs | A short exhale through the nose, "heh", a dry laugh |
+| Volume and pitch movement | Dropping to a murmur on the blunt sentence |
 
 ## 3. Calibrating disfluency to the character
 
@@ -56,7 +56,7 @@ Write delivery as a short cue attached to the line, one or two per line, no stac
 | Breath | a short inhale first, an exhale through the nose after |
 | Smile in the voice | a faint smile in the voice, a dry half-laugh |
 
-Form: `Chen says, low and unhurried, "Tuesday."` / `陈总低声、不紧不慢地说："周二。"`. Keep it attached to a body beat (a swallow, a sip, a glance).
+Form: `Chen says, low and unhurried, "Tuesday."`. Keep it attached to a body beat (a swallow, a sip, a glance).
 
 ## 6. Converting v1 cards and designed lines
 
@@ -67,7 +67,7 @@ Form: `Chen says, low and unhurried, "Tuesday."` / `陈总低声、不紧不慢�
 | "I never said he was at the north gate." | "North gate? ...I never said north gate." | Echo, pause, the catch lands as a repeat |
 | "Your tea has gone cold. Shall I have it changed, or is the person you're waiting for not coming?" | "Your tea's gone cold. I can have it changed. ...Or, well. Is he not coming?" | Soft menace through the pause and the polite offer |
 | "You saved me half a bowl of porridge once. I thought it cold and didn't drink it." | "You saved me half a bowl of porridge once. Remember? ...I thought it'd gone cold. Couldn't drink it. Couldn't throw the bowl out, either." | Specific detail, hesitations, a trailing end |
-| 「你的剑，从前只斩落叶。今日对着谁？」 | 「你那把剑……从前只砍落叶的。今天，这是对着谁啊？」 | A pause, an echo, a colloquial ending particle |
+| "Your sword once cut only falling leaves. At whom is it pointed today?" | "That sword of yours... it used to cut falling leaves. Today—who are you pointing it at?" | A pause, an echo, a colloquial question ending |
 
 ## 7. Subtext in speech
 
@@ -75,7 +75,7 @@ Say less than you mean. Answer the question behind the question. Change the subj
 
 ## 8. Two outputs, both first-class
 
-1. **Native-dialogue prompt (default).** Lines go **inline** in the Extended prompt as quoted speech with delivery cues and body beats. When the platform has native speech, this is the render path. When it does not, the quotes still give the model mouth shapes and timing; whether lips sync is **model-specific**: on one tested model it worked acceptably (`models/observed-wuxia-30s-clip.md`); check yours (`models/README.md`, item 5). Never promise sync.
+1. **Native-dialogue prompt (default).** Lines go **inline** in the Extended prompt as quoted speech with delivery cues and body beats. When the platform has native speech, this is the render path. When it does not, the quotes still give the model mouth shapes and timing; whether lips sync is **model-specific**: check the actual model and input conditions (`models/README.md`, item 5). Never promise sync.
 2. **Voice script** (outside the copy block): for post, TTS, or a voice actor.
 
 ```
@@ -95,3 +95,7 @@ Write the speech in the character's own language. In a mixed-language scene, kee
 - No whole plan narrated in one speech.
 - No change to the user's locked lines. If the user's line is stilted, keep it and offer a spoken-form alternative as a candidate.
 - No line stuffed into a clip where the body is mid-impact or breath-held; move it to a pause or a voice-over.
+
+## 11. Register-sensitive review
+
+Use the over-tea test as a naturalness check only where conversational realism is intended. Ritual, period, poetic and stylized speech may be formal and polished. Preserve established character voice and exact user lines. Fillers, fragments and stammers need a scene-specific cause; they are not universal evidence of natural dialogue.

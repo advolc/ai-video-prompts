@@ -1,8 +1,8 @@
 # The Lens Layer: from design to depiction
 
-A video model does not read your reasoning. It reads a description and renders what the description makes it picture. So the final text must be **what a camera and microphone would record, in time order**, and nothing else. The Director's Room's depth survives by being converted into things you can see and hear.
+A video model does not read your reasoning. It reads a description and renders what the description makes it picture. So the final text must be **what a camera and microphone would record, in time order**, with concise context where it helps interpretation. The Director's Room's depth survives by being converted into things you can see and hear.
 
-Test for every sentence: *could a camera operator film this, or a sound recordist capture it?* If not, rewrite it or delete it.
+Test for every sentence: *could a camera operator film this, or a sound recordist capture it?* If not, translate analytical scaffolding into behavior; preserve necessary context, exact speech and verified platform syntax.
 
 ## 1. The depiction grammar
 
@@ -28,6 +28,7 @@ Test for every sentence: *could a camera operator film this, or a sound recordis
 - A recurring subject keeps one stable descriptor ("Chen", "the white-haired man"). Repeat identity anchors when the subject changes or the shot cuts; do not repeat them every sentence otherwise.
 - Pause and silence are written as action: "He lets the question sit; the lid of the cup ticks against porcelain." Never "(pause)".
 - Put the most important image early in its sentence.
+- Reconcile named shot size with claimed visibility. A waist-up medium does not also show both feet. Keep off-frame support facts in the continuity design and show their visible effects; do not widen a locked frame just to display every checked body part. If an explicitly required visible contact cannot fit the locked frame, resolve that conflict before delivery. A cut to a new size starts another shot; "fixed" camera motion alone does not require every shot to share one size.
 
 ## 3. Using cinematography vocabulary
 
@@ -49,18 +50,18 @@ Rules:
 | He is afraid but protective | His rear foot gives half a pace; his forearm stays across the child's chest. |
 | The strike must not launch the opponent before contact | The palm heel touches the chest; then the white-clad man's shoulders and back lean away and both boots slide back across the ice, scraping two pale lines. |
 | Micro-expression of contempt, brief | For a flicker, one corner of his mouth tightens and lifts; then his face returns to a blank, patient look. |
-| 他强压怒火 (suppressed fury) | 他下颌的肌肉绷紧又缓缓松开，指节在杯壁上泛白，视线仍落在对方的手上。 |
-| 对峙，气氛紧张 (tense standoff) | 两人隔一步站立，雪片落在两人之间；他握剑的拇指在护手上来回压了一下，对面的人没有眨眼。 |
+| Suppressed fury | His jaw tightens and slowly releases; his knuckles pale against the cup while his gaze stays on the other person's hands. |
+| Tense standoff | They stand a pace apart as snow falls between them. His sword-hand thumb presses and releases the guard; the other person keeps a steady, unblinking gaze. |
 
 ## 5. From design record to prompt: the procedure
 
 1. **Freeze the facts.** List locked facts and user demands (identity, weapon, outcome, named moves, lines, face targets).
 2. **Write the beat timeline.** For dialogue or silent interaction, carry the already-designed [unit spatial spine](../dialogue/spatial-blocking.md): cue, path or concrete hold, listener response, resulting relation. Keep body movement in world space distinct from camera movement. Then write time-ordered visible events across all characters, with Tier A events marked. Use the design record's status shifts, subtext, and speech acts as the *reason* for each beat, but write only the beat.
-3. **Convert each beat to a recordable statement** using section 1. Replace every emotion and theory word with its physical proxy (`face-pass.md`, `body-and-status.md`).
-4. **Run the five passes** (Extended default): optics, light, skin and material, face, body. Each pass adds only what the shot size can show and what is consistent with locked facts.
+3. **Convert each beat to a recordable statement** using section 1. Translate analytical notes into physical behavior; preserve useful context and exact speech (`face-pass.md`, `body-and-status.md`).
+4. **Select relevant detail** from optics, light, skin/material, face and body. Read and apply needed passes; an irrelevant dimension may add nothing. Match shot size, style and locked facts.
 5. **Order into the skeleton** (`output-skeletons.md`).
 6. **Check coherence** (section 6).
-7. **Lint** with `scripts/lint_prompt.py`. Fix flags; the linter finds patterns, not meaning.
+7. **Lint** with `scripts/lint_prompt.py`. Review flags in context; fix actual defects, preserve valid speech and syntax. The linter finds patterns, not meaning.
 8. **Write the one-line added-texture note** and any assumptions outside the copy block.
 
 ## 6. Coherence checklist (run before delivery)
@@ -107,3 +108,7 @@ Fighters move through three dimensions, and the prompt has to say how (`referenc
 - Level changes are depicted, not named: "drops under the sweep and rolls to one knee", "springs onto the low rock, a full pace above him".
 - A prompt in which most movement is "steps in", "steps back", "retreats half a step" keeps the fight on one line. `lint_prompt.py` warns on this pattern.
 - Camera axis variety is part of the depiction: a fight filmed only in side profile looks linear whatever the ledger says.
+
+## 10. Language is interpreted in context
+
+The rewrite table teaches a preference for depiction, not literal word bans. A clothing seam, physical tension in a rope, and negations or emotion words inside dialogue are legitimate. Do not rewrite locked speech to satisfy a regex. Brief emotional or relational context can accompany concrete behavior. Preserve verified platform-specific control syntax when required, with controls separated where the interface permits. Lint findings require human/semantic review.

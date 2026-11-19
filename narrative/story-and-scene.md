@@ -1,132 +1,131 @@
-# 叙事与场景（合并版）
+# Story and Scene (Consolidated)
 
-本文件合并了v1的叙事结构、剧本、人物弧光、主题母题、世界观、题材混搭、对话场景组织、氛围仪式、道具叙事。v3中，肢体与生活化表演见[身体与地位](../lens/body-and-status.md)，对白口语化见[口语层](../dialogue/spoken-register.md)与[对话单元](../dialogue/conversation-units.md)。
+Combines v1 narrative structure, scripts, character arcs, themes and motifs, worldbuilding, genre mixing, dialogue-scene organization, atmosphere and ritual, and prop storytelling. In v3, see [body and status](../lens/body-and-status.md) for physical and everyday performance, and [spoken register](../dialogue/spoken-register.md) and [conversation units](../dialogue/conversation-units.md) for conversational dialogue.
 
-## 叙事结构与节奏
+## Narrative structure and pacing
 
-### 入口：先给后问
-用户只有“帮我写个江湖故事”，先给2—3个一句话方向，例如：失约镖师护送仇人、守桥旧友试探来信、弃剑者被迫借剑救人；允许用户自定。选定后只追问会改人物/结局的1—2项，不先发主题、欲望、世界规则问卷。与[灵感向导](../references/inspiration-wizard.md)非线性跳级保持一致；用户已给完整故事直接执行。
+### Intake: offer first, then ask
+When the user asks for complete story directions, offer 2–3 one-sentence directions: an escort who broke a promise protects an enemy; old friends guarding a bridge test the meaning of a letter; someone who abandoned the sword must borrow one to save another person. Allow their own direction. Once selected, ask only 1–2 questions that would change characters or the ending, rather than opening with a questionnaire about theme, desire, and world rules. For an open request with no chosen workflow, use the [inspiration wizard](../references/inspiration-wizard.md) and its scale/genre intake and gradual exploration. Direct requests for full proposals or drafts authorize that branch. Execute directly when the user already supplied a complete story.
 
-### 结构是诊断工具
-三幕用建立目标→受阻选择→结果代价；起承转合用提出关系→深化→改变理解→落结果。英雄之旅只在任务确需成长历程时借用，不强制每个短片塞导师、试炼、归来。每段先看用户自己的东西是否仍在，模板不替作者定主题。
+### Structure is a diagnostic tool
+A three-act structure can establish a goal → obstruct it and require a choice → reveal results and costs. A four-part introduction/development/turn/resolution structure can introduce a relationship → deepen it → change its interpretation → deliver a result. Borrow the hero's journey only when the task needs a growth journey; do not force a mentor, trials, and return into every short. At each passage, first check that the user's own material survives; a template does not choose the author's theme.
 
-| 净长候选 | 信息安排建议，不是平台可生成时长 |
+| Candidate net runtime | Information arrangement, not a platform generation-duration claim |
 |---|---|
-| 15秒 | 目标一眼成立→一次变化→留清楚结果 |
-| 30秒 | 目标→应对→逆转或代价→结果 |
-| 60秒 | 建关系→试探→证据/动作转折→一次选择→余波 |
-| 3分钟 | 建目标→两次递进障碍→不可逆选择→结果代价 |
-| PV | 先承诺体验→展示冲突和差异→留下行动入口，避免无关镜头堆砌 |
+| 15 seconds | Immediately readable goal → one change → clear result |
+| 30 seconds | Goal → response → reversal or cost → result |
+| 60 seconds | Establish relationship → probe → evidence/action turn → one choice → aftermath |
+| 3 minutes | Establish goal → two escalating obstacles → irreversible choice → results and costs |
+| Promotional video (PV) | Promise an experience → demonstrate conflict and distinction → leave a point of entry for action; avoid unrelated shots piled together |
 
-节奏曲线记录每段信息密度、动作强度和留白，不要求强度一路升高。揭示先后可为观众比角色多知、同时发现或延迟理解；不要用随机藏信息假造悬念。
+The pacing curve records information density, action intensity, and breathing room for each passage; intensity need not rise continuously. Revelations may let viewers know more than characters, discover simultaneously, or understand later. Randomly withholding information does not create suspense.
 
-场景转换：硬切用于清楚改变；匹配切建立形状/动作联系；叠化表现时间经过时谨慎使用；声音桥让下一场先进入；动作桥接同一行动。时间处理：闪回要有触发与回到当下的锚点，平行线要让观众辨认两处目标，压缩跳过重复，延展只保关键瞬间。具体镜头和剪辑见[剪辑语法](../production/workflow.md)。
+Scene transitions: a hard cut marks clear change; a match cut relates shape or action; use dissolves cautiously to convey elapsed time; a sound bridge introduces the next scene early; an action bridge connects the same action. Time handling: flashbacks need a trigger and an anchor back to the present; parallel lines need distinguishable goals in both places; compression skips repetition; expansion retains only key instants. See [editing grammar](../production/workflow.md) for shots and editing.
 
-## 剧本与可拍动作
+## Scripts and filmable action
 
-先区分用户要文学剧本、分镜剧本还是最终生成输入；格式服从所求，不把所有写作变成工程表。文学稿管叙事和人物选择，分镜稿把信息分配给镜头；两者都不是直接视频提示词。
+Distinguish a literary script, a shot script, and final generation input first. Follow the requested format instead of turning all writing into engineering tables. Literary drafts organize narrative and choices; shot scripts distribute information among shots. Neither is directly a video prompt.
 
-### 工作格式
-场景标题写内/外、地点、时段；动作段只写可见可听事实；人物名与对白分开；特殊转场写切入目的，没目的的硬切不用反复标。示例（写作格式，非最终输入）：
+### Working format
+Scene headings state interior/exterior, location, and time. Action contains only visible or audible facts; character names and dialogue are separate. Special transitions state their purpose; ordinary purposeless hard cuts need not be repeatedly labeled. Example of script format, not final input:
 
 ```text
-内景·旧茶室·夜
-灯只照到桌面。客人把沾雨的信放在杯旁。
-守门人：你从哪条路回来？
-客人看向仍在滴水的门槛，没有回答。
+INT. OLD TEA ROOM — NIGHT
+The lamp lights only the tabletop. The visitor places a rain-wet letter beside the cup.
+DOORKEEPER: Which road did you take back?
+The visitor looks at the still-dripping threshold and does not answer.
 ```
 
-一页约一分钟只是以常规排版对白剧本作粗估的经验值；中文排版、打斗、无声长镜和语速差异很大。用试读和时间轴逐段实测，不靠页数承诺净长。先列进入/离开场景时谁掌握什么信息，每场至少一次选择或信息改变，静止场也能成立。
+One page per minute is only a rough convention for conventionally formatted dialogue scripts. Chinese formatting, fights, silent long takes, and speaking rates vary substantially. Measure passages through read-throughs and timelines; page count does not guarantee net runtime. List who knows what entering and leaving the scene. Every scene has at least one choice or information change; a still scene can satisfy this.
 
-动作描述不写不可见的内心断语；“他认出背叛”转成看向物证、停手等行为，具体选择须符合用户设定。对白加工按需走[单句台词引擎](../references/dialogue-engine.md)，场景组织走[对话场景](story-and-scene.md)。最终生成须经[镜头层](../lens/lens-layer.md)转译为可记录的画面，再交白话，不能把文学稿原样排版返还。写作结构见[叙事结构](story-and-scene.md)。
+Do not write invisible psychological verdicts as action. Convert "he recognizes the betrayal" into looking at evidence, stopping a hand, or similar behavior that fits the user's setup. Process dialogue as needed through [single-line dialogue design](../references/dialogue-engine.md), and scene organization through [dialogue scenes](story-and-scene.md). Translate final generation input through the [Lens layer](../lens/lens-layer.md) into recordable images and then plain prose; do not simply return the literary draft with its formatting. See [narrative structure](story-and-scene.md) for writing structure.
 
-## 人物弧光与选择
+## Character arcs and choices
 
-本文件管人物在故事中怎样变化；[角色表演](../references/character-and-performance.md)管此刻怎样可见地表现，不拿一段微相当完整成长。
+This file handles how a character changes through the story; [character performance](../references/character-and-performance.md) handles visible behavior now. A brief facial flicker is not a complete growth arc.
 
-内部卡：欲望（想得到的具体东西）→障碍（外界与自身）→选择（可替代的行动）→代价（失去什么）→变化（下一次不同选择）。前史只解释当前行为，不让新前史覆盖用户已定事实。没有变化的角色也可通过坚持让环境改变，不强制所有人觉醒。
+Internal card: desire (a concrete want) → obstacle (external and internal) → choice (alternative actions) → cost (what is lost) → change (a different choice next time). Backstory explains current behavior without overriding established user facts. An unchanging character may change the environment by remaining steadfast; not everyone needs an awakening.
 
-可见化例：原来只顾保管信物的人在桥断时把信物交给同伴，自己留下扶桥。这是行为证据，不靠旁白“他终于懂了责任”。用户未定代价时给候选，不擅自伤亡或改胜负。
+Visible example: someone formerly intent only on protecting a token gives it to a companion when a bridge breaks, then stays to hold the bridge. This is behavioral evidence, not narration saying "he finally understands responsibility." If the user has not decided the cost, offer candidates rather than inventing death, injury, or a changed winner.
 
-配角每人承担独立压力、信息或选择，避免全是解释设定。反派有具体目标、方法与界限，不以“天生邪恶”代替设计。群像用“谁依赖谁/谁误解谁/谁掌握资源”三条关系作图；一个短场只让最相关的关系变化。
+Each supporting character carries distinct pressure, information, or choice rather than existing only to explain lore. An antagonist needs a concrete goal, method, and limits; "born evil" is not design. Map an ensemble through who depends on whom, who misunderstands whom, and who controls resources. A short scene changes only the most relevant relationship.
 
-检查：每次情绪是否由事件触发？角色动作是否符合知识范围与伤势？结局是否来自选择而非新能力救场？只在用户要求评审时明确评价，不在日常润色中强迫补弧光。相关世界限制见[世界观设计](story-and-scene.md)。
+Checks: does an event trigger each emotion? Do actions respect knowledge and injuries? Does the ending follow choice rather than a new rescue ability? Give explicit evaluation only when the user requests review; routine polishing does not require adding an arc. See [worldbuilding](story-and-scene.md) for related limits.
 
-## 主题与母题
+## Theme and motif
 
-主题是当前选择要检验的关系，例如“守约是否值得付代价”，不是自动给作品贴宏大名词。母题是可再次出现并改变含义的物、声音、颜色或动作；象征要在场内建立，不能要求观众读设计说明。
+A theme is the relationship tested by the current choice, such as "is keeping a promise worth its cost?" It is not an automatic grand label. A motif is an object, sound, color, or action that can recur with changed meaning. Establish symbolism inside the scene rather than requiring viewers to read the design notes.
 
-一场优先一个主母题、必要时一个辅助；次数是按净长和变化安排，不机械三次。初现建立功能，复现改变意义，结尾体现选择；复现没有新增关系就删重复。视觉母题可为一扇门，叙事母题为“谁允许谁离开”，两者由开门/挡门的行为关联。
+Prefer one primary motif and, if needed, one secondary motif per scene. Arrange recurrence around runtime and change, not a mechanical three appearances. The first appearance establishes function, recurrence changes meaning, and the ending embodies choice. Remove repetition that adds no relationship. A visual motif may be a door; the narrative motif, "who permits whom to leave," linked by opening or blocking the door.
 
-以“张艺谋红色”作创作候选案例：不要先断言红永远等于欲望或权力。若用户的红林已定，可让红叶先遮路，交汇时被扫开，尾镜显出通路；颜色依附原场景与动作，不额外增加爆破。该例是新设计，非某部原片的观察记录。
+As an original creative candidate inspired by "Zhang Yimou red," do not declare that red always means desire or power. If the user's red forest is established, red leaves might first obstruct a path, be swept aside at the crossing, and reveal a route in the final shot. Color attaches to the existing scene and action without adding an explosion. This is a new design, not an observation of a particular film.
 
-内部检查：母题来自已定现场吗？复现是否改变信息或关系？是否抢占关键接触？用户个人词是否被通用意象覆盖？没有物件可用也可选既有声音/站位，不为凑母题硬添酒杯、花瓣或秘密。最终提示词只写可见复现，分析与意图留管理层。色彩关系按需见[色彩系统](../visual/composition-and-color.md)。
+Internal checks: is the motif from the established location? Does recurrence change information or relationships? Does it compete with key contact? Has a generic image overwritten the user's personal vocabulary? Existing sound or position can serve when no object is suitable; do not invent cups, petals, or secrets to supply a motif. Final prompts depict the recurrence only; analysis and intent stay in management notes. See the [color system](../visual/composition-and-color.md) as needed.
 
-## 世界规则与日常
+## World rules and everyday life
 
-本文件设计架空规则；[文化考据](../references/cultural-research.md)核实真实年代、器物和用法，设计选择不能冒充史实。历史借用要记实证/推测/原创改动。
+This file designs fictional rules; [cultural research](../references/cultural-research.md) verifies real periods, objects, and usage. Design choices are not historical facts. Mark historical borrowings as evidence, inference, or original alterations.
 
-从本场会用到的规则开始：能力能做什么、不能做什么、触发条件、代价、谁知道；不先写百科全书。历史只保影响当前冲突的一条事件，文化体现礼仪、物件和称呼，社会结构体现谁能进入哪里，地理体现路线与时间，经济体现资源如何流动，日常细节让人住得下去。
+Begin with rules used in this scene: what an ability can and cannot do, triggers, costs, and who knows them. Do not start with an encyclopedia. Retain only one historical event affecting the current conflict; express culture through etiquette, objects, and forms of address; social structure through access; geography through routes and time; economy through resource flow; everyday detail through a place people can inhabit.
 
-内部规则表：`规则｜建立画面｜限制｜例外条件｜代价｜影响的角色/场景`。如悬桥靠风驱动，必须看出风停后如何通行；新例外要在解围前建立，不能战败时临时获得无限力。现代枪与古代服装可以共存，但需既定技术来源，不以题材名一刀禁绝。
+Internal rule table: `Rule | Establishing image | Limit | Exception conditions | Cost | Affected characters/scenes`. If wind powers a suspension bridge, show how people cross after the wind stops. Establish new exceptions before rescue; do not grant unlimited strength at defeat. Modern guns may coexist with ancient clothing if an established technological source supports them; do not ban the mixture by genre label alone.
 
-一致性检查：同一规则是否跨段有效；伤损和资源是否继承；谁不知道秘密就不能据此行动；旅行距离与时间是否成立；材质和工具是否对应技术水平。用户改世界时只标受影响的武器/建筑/能力为待确认，给同步改或保留混搭的选择，不清空关系与结局。空间锚点继续由[场景风格](../references/world-and-style.md)维护。
+Continuity checks: rules remain effective across segments; damage and resources carry over; characters cannot act on secrets they do not know; travel distances and times work; materials and tools fit the technological level. When the user changes the world, mark only affected weapons/buildings/abilities for confirmation, offering synchronized changes or retained hybridity. Do not erase relationships or endings. [Scene and style](../references/world-and-style.md) continues maintaining spatial anchors.
 
-## 题材混搭
+## Genre mixing
 
-先定主体验和一个次元素，再谈比例；“武侠为主、科幻提供能力代价”比僵硬百分比更可执行。比例若使用仅作设计估计，不是验收分数。世界规则、材质和台词需同源，冲突由[裁决](../core/precedence.md)处理，不自动换用户主设定。
+Choose the main experience and one secondary element before discussing proportions. "Wuxia leads, while science fiction supplies ability costs" is more actionable than a rigid percentage. Any proportion is a design estimate, not an acceptance score. World rules, materials, and dialogue need a common logic; resolve conflicts through [precedence](../core/precedence.md), without automatically replacing the user's main setup.
 
-| 组合 | 统一支点 | 容易失效的地方 |
+| Combination | Unifying basis | Common failure |
 |---|---|---|
-| 武侠+科幻 | 身法受机械负荷约束，器物形制保持一套逻辑 | 古语与工程口号随机轮换；科技无限解围 |
-| 恐怖+喜剧 | 同一误判先带危险再产生笑点 | 笑点消除后果，恐怖毫无压力 |
-| 爱情+悬疑 | 亲密关系决定谁可信与信息可见范围 | 用隐瞒全部信息冒充悬疑 |
-| 黑色+奇幻 | 超常能力也有交易代价和人际后果 | 魔法抹平已建立的道德选择 |
+| Wuxia + science fiction | Movement is constrained by mechanical load; objects share one design logic | Random alternation between archaic speech and engineering slogans; technology solves everything |
+| Horror + comedy | The same misjudgment creates danger before a joke | Jokes erase consequences and horror carries no pressure |
+| Romance + mystery | Intimacy determines trust and access to information | Withholding all information masquerades as mystery |
+| Noir + fantasy | Extraordinary abilities still incur transactional costs and interpersonal consequences | Magic erases established moral choices |
 
-流程：保留主类型的核心承诺→选择次元素进入哪个可见机制→列不可兼容点→给一个融合或分离候选→先做最小场景。失败症状是光色、台词、物理规则分别来自不同片，角色像贴图；先减次元素，不靠更多风格词粘合。混搭卡是启发，不是自动套用；所有动作事件仍按A层控制。
+Procedure: retain the main genre's core promise → select the visible mechanism receiving the secondary element → list incompatibilities → offer one integrated or separated candidate → build the smallest scene first. Failure looks like light/color, dialogue, and physics from different films, with characters pasted in. Reduce the secondary element before adding more style words. Mixing cards inspire, not automatically apply; all action events still follow Tier A.
 
-## 对话场景组织
+## Organizing dialogue scenes
 
-本文件管一个场景的镜头、站位和信息分配；[台词引擎](../references/dialogue-engine.md)管单句意图/潜台词/语言DNA。未授权单句深挖仍可做基本场景组织，交叉链接不构成自动加载授权。
+This file handles shots, blocking, and information distribution for a scene; [dialogue design](../references/dialogue-engine.md) handles individual intent, subtext, and language DNA. Read relevant sections according to the scene's dialogue without waiting for module authorization. Cross-links neither require the whole library nor authorize changes to established story.
 
-先定两人目标、权力距离、物件和出口，再选覆盖方式：双人同框显示关系；正反打追踪说与听；过肩保另一人的空间存在；反应镜头只在理解或选择改变时用；视线匹配要有明确对象。多人对话轮流接话不等于逐人切镜，按谁改变局面分配镜头。
+Set both goals, power distance, objects, and exits before coverage. A two-shot shows the relationship; shot/reverse-shot follows speaking and listening; over-shoulder retains the other person's spatial presence; reaction shots accompany changes of understanding or choice; matched eyelines need a specific target. Turn-taking among several speakers does not mean cutting to every person; distribute shots by who changes the situation.
 
-节奏由言语行动与反应形成，沉默要让观众看见在等什么；不能所有句尾都切到皱眉。潜台词可用手从信封移开、给对方让出出口来体现，一镜只选最相关的微相与肢体代理。观察→判断→行动属B层表演节拍，不增加A层事件。
+Speech acts and responses create rhythm. Silence shows what someone is waiting for; do not cut to a frown after every line. Subtext may appear through a hand leaving an envelope or someone yielding an exit. Choose only the most relevant facial signal and body proxy per shot. Observe → judge → act are Tier B performance beats, not extra Tier A events.
 
-60秒候选：建立两人同框与物证→一句试探→听者通过目光发现物证→短答改变关系→行动选择→留余波。长度来自试读与预演，不靠表格自动对齐口型。复杂停顿/重音进制作备注；视频正文用本次实际支持的声音；台词以口语化引号形式写入时间线。明确索要分镜时才展表，默认最终输入仍逐段自足白话。
+A 60-second candidate: establish both characters and evidence → one probe → the listener notices evidence through gaze → a short reply changes the relationship → a physical choice → aftermath. Runtime comes from read-throughs and previs, not a table that automatically synchronizes lips. Complex pauses and stresses stay in production notes; video prose includes intended audible content and conversational quoted lines. Actual sound channels and unverified items follow [generation handoff](../references/generation-handoff.md). Show a table only when a storyboard is explicitly requested; default final input remains self-contained plain prose per segment.
 
-## 氛围、空镜与仪式
+## Atmosphere, empty shots, and ritual
 
-空镜提供地点、时间、危险或余波，不自动等于美。每镜回答“少了它会丢什么信息/感受”；若只是重复上镜就压缩。环境叙事用既有损毁、物件位置、声音余响暗示过去，不能把自己的推测写成用户剧情。
+Empty shots convey place, time, danger, or aftermath; they are not automatically beautiful. Ask what information or feeling would disappear without each shot; compress it if it merely repeats the previous one. Environmental storytelling may suggest the past through existing damage, object positions, or lingering sound, but cannot turn the writer's inference into user-established plot.
 
-静止长镜的主信息可以是等待、权力距离或一次选择；观察者的视线和画外动静能形成变化。不要因为摄影规则就强迫推拉和快切。与[运镜节奏](../references/camera-and-rhythm.md)冲突按[裁决](../core/precedence.md)处理：留白成立须有目的，而非用无变化画面凑净长。
+A still long take may convey waiting, power distance, or a choice. An observer's gaze and off-screen activity can create change. Camera rules do not force pushes, pulls, or fast cutting. Resolve conflicts with [camera and rhythm](../references/camera-and-rhythm.md) through [precedence](../core/precedence.md): breathing room needs a purpose, not unchanged footage padding runtime.
 
-仪式化调度把重复动作与地位、秩序相关联：先让动作的规则可看懂，再用一次偏离制造转折。无需人人同步、慢动作或对称；从角色当前任务自然生出。氛围与叙事比例依据观看意图，15秒试片优先一次明确变化，长文戏可留反应空隙，不能定通用百分比。
+Ritual blocking links repeated actions to status and order. First make the action's rule readable, then create a turn through one deviation. Synchronization, slow motion, and symmetry are not required; let them arise from the current task. Atmosphere/narrative proportions depend on viewing intent. A 15-second pilot prioritizes one clear change; longer dialogue may leave reaction gaps. There is no universal percentage.
 
-节奏位置：高强度前建立空间，转折前短暂停留，结果后交代代价。声音可在画外先入，设计参照[整体声音](../sound/sound-and-voice.md)。最终生成把空镜场景与变化说清，剪辑、变速和配乐另放管理层。
+Rhythmic placement: establish space before intensity, briefly linger before a turn, and reveal costs after the result. Sound may enter off-screen early; see [overall sound](../sound/sound-and-voice.md). Final generation input clearly depicts the empty-shot setting and change; editing, speed changes, and scoring stay in management notes.
 
+### Physical grounding for transitions and everyday passages
 
-### 过渡戏与日常的“实体落地”规则
+When writing walking, opening doors, eating/drinking, waiting, or post-fight bandaging without major conflict, do not replace the process with "he enters the inn and sits down." In shots requiring development here, retain at least two visible physical interactions or environmental responses, preferably one main interaction plus one natural response, and identify a clear focus for the camera's hold.
 
-写行路、推门、吃喝、等待、战后包扎等非强冲突段落时，不用“他走进客栈坐下”一句流水账替代过程。在本场需要展开的镜头里，至少保留两项可见的物理交互或环境反馈，优先一项主要交互加一项自然反馈，并给出一个明确的镜头停留焦点。
+- **Object interaction:** sitting may show a hand pulling a bench and its legs moving across the floor; drinking tea may show breath parting foam and a fingertip on a rough rim. Use "lays the sword across the table corner" only if the character already carries a sword; do not force weapons into everyday scenes.
+- **Environment and sound:** establish space through visible responses such as wet boot marks, a curtain corner moving after a door opens, or steam from a pot. Intended sounds from existing sources, such as a creaking hinge or distant calls, may be inline; distinguish actual native/post-production execution and mark unknown capabilities unverified outside the prose, following generation handoff.
+- **Camera task:** linger on hand-object contact or use a medium shot to retain the proportions of character and furnishings. Information change motivates the hold; do not add orbits, zooms, or unchanged runtime merely for a breathing feel.
 
-- **物件交互**：坐下可写手拉条凳、凳脚沿地面挪动；喝茶可写吹开浮沫、指腹触着粗糙碗口。只有角色本来带剑才使用“把剑横在桌角”的例子，不给生活戏强添武器。
-- **环境与声音**：以靴底留下水痕、门开后帘角摆动、锅口热气等可见反馈建立空间；门轴吱呀、远处吆喝等声音，仅在本次支持并采用原生音频时进入生成层，否则保留在制作备注。
-- **镜头任务**：停留在手与物件的接触，或用中景保住人物和陈设的比例；由信息变化决定停留，不为呼吸感额外加环绕、变焦和无变化时长。
+These details are Tier B/C and may be an action and its consequence within the same interaction, not two compulsory new actions. A camera hold belongs to the segment's main photography, not an added Tier A event. Retain the Lite exemption when the user requests a one-sentence inspiration or explicitly minimal output; do not mechanically add props. Prefer established characters, objects, and environment rather than turning examples into new story.
 
-细节属B/C层，可来自同一交互的动作与后果，不能强制变成两次新动作。镜头停留属于该段主摄影，不增加A层事件；用户只要一句灵感或明示极简时沿用Lite豁免，不机械补道具。优先使用已定人物、物件和环境，不把示例套成新的剧情。
+## Implicit storytelling through props
 
-## 道具的隐性叙事
+### Draw only from the current location
+Once the concept and scene are established, silently inspect existing carried and local objects by default: who uses one, its current state, what the character wants to avoid/accomplish, and the smallest contact that conveys the current relationship. Add nothing if no object fits. Do not draw stock "bloody ring, old photograph, cigarette butt" cards or import props and plot from a style reference.
 
-### 只从当前现场提取
-创意与场次已定后默认静默检视已有随身物和现场物：谁正在用、物品现在是什么状态、角色想避免/完成什么、哪种接触最少却能传递当前关系。没有合适物件就不加，不从“带血戒指、旧照片、烟头”库存抽卡，不借画风参考带入原片物品与情节。
+Broken chopsticks, a worn hilt, or an unlit cigarette are usable only when already present. Traces may suggest hesitation or familiarity, but do not prove a particular emotion. Prefer the existing grip resting on a polished patch, or hesitation in an already-occurring handover. This module does not delete complete selected dialogue; "objects instead of words" replaces only undecided or redundant explanation, preserving key lines and story information.
 
-折断筷子、磨损刀柄、未点燃的烟只有本场已经存在时才可使用；物品的痕迹可以显出迟疑或熟练，但不是某种情绪的唯一证据。让原本的握持停留在磨亮处、让递物路线留下犹豫等，优先复用正在发生的动作。不因这个模块把完整选定台词删掉；“以物代话”只替代尚未定案或冗余解释，关键对白和剧情信息仍保留。
+### Wear follows use
+Reason from established identity, material, carrying method, and contact areas to a few nicks, patches, patina, or polished grip surfaces. Locate and explain polish where hands touch or repairs where cloth takes strain. Poverty does not always mean rags, nor wealth gilding. Do not force dirt or damage onto new objects, gifts, or clean assets.
+Minor texture not fixed by the design may be low-risk detail; nicks or blood that change identity marks, era, function, integrity, or imply a new past cannot be silently approved. "Wear storytelling" cannot break a weapon or invent a history of killing.
 
-### 岁月磨损由用法产生
-按已定身份、材料、携带方式与使用部位推演少量缺口、补丁、包浆或握持光泽。常接触处的抛光、织物受力处的补缀要有位置和原因；不把穷人必破旧、贵人必镶金当固定分类。新物、礼物、洁净资产不强行加污损。
-现有设计未定的小纹理可作为低风险表现细节；会改变身份标记、年代、功能、物件完整性或暗示全新前史的缺口/血迹，不可静默定案。不能因为“磨损叙事”就使兵器折断或给人物新增杀人经历。
-
-### 自然缝合与共享预算
-物件现有纹理/状态是固定描述，不占核心必执行；本来握持/递物过程中的非关键轻微变化属C层质感，可自然带入。新增取物、折断、点燃、丢弃、藏物或递交若构成独立事件，默认不作为装饰添入，按A层事件处理；原有物件损毁变化也要继承接缝。
-与[身体与地位](../lens/body-and-status.md)协同：道具动作属B层，须有功能锚点，不做无因循环。不合适就留白，最终只交自然语言，不向创作用户解释象征意义或模块来源。详见[共用契约](../core/pipeline.md)。
+### Natural integration and shared budgets
+Existing object texture/state is fixed description, not a core required action. Nonessential slight changes during an already-occurring grip/handover are Tier C texture and may enter naturally. A new retrieval, break, ignition, discard, concealment, or handover that forms an independent event is not decorative by default; check it as Tier A. Existing damage changes also carry through seams.
+Coordinate with [body and status](../lens/body-and-status.md): prop business is Tier B, needs a functional anchor, and does not loop without cause. Leave space when nothing fits. Deliver natural language only, not explanations of symbolism or module origin to the creative user. See the [shared contract](../core/pipeline.md).

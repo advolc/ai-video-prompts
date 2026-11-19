@@ -1,183 +1,185 @@
-# 风格卡库（合并版）
+# Style Card Library (Consolidated)
 
-合并了风格卡索引、八张风格候选卡与空卡。全部为待验证的创作候选。
+Combines the index, eight candidate style cards, and an empty card. All are creative candidates awaiting verification.
 
-## 风格卡索引
+## Style card index
 
-以下八张是可供改写的风格候选，不是导演全作品的归纳；本版没有新增逐帧来源分析或视频试片，统一为待验证。用户明确要求对应目标才读取；图片仅说“感觉”先做参考分类。
+These eight adaptable candidates do not summarize any director's entire work. This version adds no source-located framewise analysis or generated pilots; all remain unverified. Read a card only when the user explicitly requests its corresponding goal; for an image described only as a "feeling," classify the reference first.
 
-| 卡 | 标签 | 适用候选 | 状态 |
+| Card | Tags | Candidate uses | Status |
 |---|---|---|---|
-| [单色寓言江湖](style-library.md) | 红/灰、几何、材质 | 仪式对峙、红林 | 待验证，观察待核 |
-| [都市距离](style-library.md) | 霓虹、遮挡、错拍 | 旧友、夜行 | 待验证，观察待核 |
-| [天气与群体](style-library.md) | 雨风、群像、纵深 | 群体抉择 | 待验证，观察待核 |
-| [极简巨物](style-library.md) | 巨构、单色、雾 | 陌生空间 | 待验证，观察待核 |
-| [晴空与距离](style-library.md) | 云、光、城市尺度 | 青春离别 | 待验证，观察待核 |
-| [现实裂隙](style-library.md) | 匹配切、反差、错认 | 主观转场 | 待验证，观察待核 |
-| [水墨](style-library.md) | 留白、笔势 | 写意空间 | 待验证，观察待核 |
-| [赛博](style-library.md) | 湿面、广告、义体 | 技术都市 | 待验证，观察待核 |
+| [Monochrome martial-world fable](style-library.md) | Red/gray, geometry, material | Ritual standoff, red forest | Unverified; observations pending confirmation |
+| [Urban distance](style-library.md) | Neon, occlusion, displaced rhythm | Old friends, night journey | Unverified; observations pending confirmation |
+| [Weather and groups](style-library.md) | Rain/wind, ensembles, depth | Group choice | Unverified; observations pending confirmation |
+| [Minimal monumental scale](style-library.md) | Megastructure, monochrome, mist | Unfamiliar space | Unverified; observations pending confirmation |
+| [Clear skies and distance](style-library.md) | Clouds, light, urban scale | Youthful farewell | Unverified; observations pending confirmation |
+| [Fractured reality](style-library.md) | Match cuts, contrast, misrecognition | Subjective transitions | Unverified; observations pending confirmation |
+| [Ink wash](style-library.md) | Negative space, brush energy | Expressive space | Unverified; observations pending confirmation |
+| [Cyberpunk](style-library.md) | Wet surfaces, advertising, prosthetics | Technological city | Unverified; observations pending confirmation |
 
-扩展用[空卡](style-library.md)；先确认参考职责，再按[风格转译](style-translation.md)填写。卡用于诊断补缺，不用于机械套人名；不能把候选当实测能力。
+Extend with the [empty card](style-library.md). Confirm reference responsibilities, then fill through [style translation](style-translation.md). Cards diagnose gaps rather than mechanically applying names; candidates are not measured capabilities.
 
-卡内可能同时有美术、动作与视听候选。索引标签仅便于查找，不是完整签名；使用前按[美术七维与视听三维](style-translation.md#美术风格七维与视听语言三维)拆分：借画风只继承获准的美术维度，卡中的摄影、剪辑、声音与具体剧情不自动带入。签名主题对应与演化属于明确请求后的深层，lean只取当前基础特征。
+Cards may contain art, action, and audiovisual candidates together. Index tags are retrieval aids, not full signatures. Before use, separate them through the [seven art and three audiovisual dimensions](style-translation.md#seven-visual-art-dimensions-and-three-audiovisual-dimensions). Borrowing visual style inherits only authorized art dimensions, not a card's camera, editing, sound, or plot automatically. Signature/theme mapping and evolution are deeper work after explicit requests; lean use takes only current basic features.
 
-## 赛博都市
+## Cyberpunk city
 
-### 定位与状态
-风格ID：cyberpunk。本卡是“湿面与技术反馈候选”的创作候选，不宣称概括署名创作者的全部作品。状态：**待验证；观察待核**。本版未新增可定位原片逐帧观察，也未跑视频模型；用户给参考后先做维度分类，再决定继承什么。风格候选不替代用户的角色、剧情和个人意象。
+### Position and status
+Style ID: cyberpunk. A creative candidate for "wet surfaces and technological feedback," not a claim to summarize a credited creator's entire work. Status: **unverified; observations pending confirmation**. This version adds no source-located framewise observations and ran no video model. Classify dimensions when references arrive, then decide inheritance. Candidates do not replace the user's characters, plot, or personal imagery.
 
-### 签名候选
-有限霓虹、湿金属反射、信息遮挡、既定义体反馈。用户确认后继承签名。可变项：服饰细节、年代、明度，服从用户已定题材。
+### Candidate signatures
+Limited neon, wet-metal reflections, information occlusion, established prosthetic feedback. Inherit signatures after user confirmation. Variables: costume details, era, value, subject to the established genre.
 
-### 转成可执行关系
-先确认角色是否有义体、义眼及技术代价；广告只是空间层不要求生成可读长文字；湿面反射遵循光源，限制竞争色。神经反馈替代微相须角色本来具备该结构，不能因题材强添器官。
+### Executable relationships
+First confirm prosthetic limbs/eyes and technological costs. Advertising is spatial detail, not a demand for readable long text. Wet reflections follow sources with limited competing colors. Neural feedback can substitute for facial detail only when the character already has that structure; genre does not authorize new organs.
 
-提示词片段：短发黑色防水外套的人停在窄巷侧面，冷青招牌在积水中形成断续倒影。她抬起既定金属左手护住胸前装置，肩膀靠墙稳住，门口暖光照亮手背接缝。
+Prompt fragment: A short-haired figure in a black waterproof coat stops beside a narrow alley. A cool-cyan sign forms broken reflections in standing water. She raises her established metal left hand over the device on her chest and braces a shoulder against the wall; warm doorway light reveals seams on the back of her hand.
 
-### 常见失败与退路
-自动给人新增义体；广告乱码喧宾夺主；地面像镜面而动作没有摩擦。 优先减次要信息、固定主要机位和接触区；不能靠增加风格术语解决。后期手段单列制作备注，实际平台参数另放。按同一场景试两个候选并比较签名是否仍清楚，验证记录包含实际输入、参考、设置和输出。只交卡片时继续写待验证，不写“已实现”。
+### Common failures and fallbacks
+Automatic new prosthetics; garbled advertising dominates; mirror-like ground with frictionless movement. Reduce secondary information and fix the main camera/contact zone first; more style jargon will not solve it. Keep post methods in separate production notes and actual platform parameters elsewhere. Test two candidates in the same scene, comparing signature clarity. Validation records contain actual inputs, references, settings, and outputs. A card-only delivery remains unverified, never "achieved."
 
-本卡用于诊断补缺；最终正文仍自足、无标签；风格元素属B/C层，事件仍按A层控制。回到[索引](style-library.md)或[风格转译](style-translation.md)，不全量复制其他卡。
+This card diagnoses gaps. Final prose stays self-contained and unlabeled; style elements are Tier B/C and events still follow Tier A. Return to the [index](style-library.md) or [style translation](style-translation.md), rather than copying all other cards.
 
-## 水墨留白
+## Ink wash and negative space
 
-### 定位与状态
-风格ID：ink-wash。本卡是“笔势空间候选”的创作候选，不宣称概括署名创作者的全部作品。状态：**待验证；观察待核**。本版未新增可定位原片逐帧观察，也未跑视频模型；用户给参考后先做维度分类，再决定继承什么。风格候选不替代用户的角色、剧情和个人意象。
+### Position and status
+Style ID: ink-wash. A creative candidate for "brush-driven space," not a claim to summarize a credited creator's entire work. Status: **unverified; observations pending confirmation**. This version adds no source-located framewise observations and ran no video model. Classify dimensions when references arrive, then decide inheritance. Candidates do not replace the user's characters, plot, or personal imagery.
 
-### 签名候选
-纸白空地、墨色层次、可辨轮廓、受力笔势。用户确认后继承签名。可变项：服饰细节、年代、明度，服从用户已定题材。
+### Candidate signatures
+Paper-white open ground, layered ink values, readable silhouettes, force-driven brushwork. Inherit signatures after user confirmation. Variables: costume details, era, value, subject to the established genre.
 
-### 转成可执行关系
-留白必须保留脚下支撑和左右关系；墨痕随兵器或身体路径出现，有附着位置和消散方式；背景淡墨、主体浓墨分层，不能用全屏泼墨遮掉接触。水墨不是某位导演的专属标签。
+### Executable relationships
+Negative space retains ground support and left/right relationships. Ink follows body/weapon routes with a location and dissipation; pale background ink separates from dense subject ink. Full-frame splashes cannot hide contact. Ink wash is not one director's exclusive label.
 
-提示词片段：纸白山道中，深墨长衣的剑客沿淡灰石阶进步，剑尖扫过时留下逐渐变细的墨线。剑身碰到对方横起的木杖后停住，墨点沿交汇处短促散开。
+Prompt fragment: On a paper-white mountain path, a swordsman in deep-ink robes advances along pale-gray stone steps. A tapering ink line follows the passing sword tip. The blade meets the opponent's horizontal wooden staff and stops; dots of ink scatter briefly from the crossing.
 
-### 常见失败与退路
-人物化成无身份墨团；脚下无支撑；墨迹先于动作凭空铺满画面。 优先减次要信息、固定主要机位和接触区；不能靠增加风格术语解决。后期手段单列制作备注，实际平台参数另放。按同一场景试两个候选并比较签名是否仍清楚，验证记录包含实际输入、参考、设置和输出。只交卡片时继续写待验证，不写“已实现”。
+### Common failures and fallbacks
+Figures become anonymous ink masses; feet lack support; ink fills the frame before action. Reduce secondary information and fix the main camera/contact zone first; more style jargon will not solve it. Keep post methods in separate production notes and actual platform parameters elsewhere. Test two candidates in the same scene, comparing signature clarity. Validation records contain actual inputs, references, settings, and outputs. A card-only delivery remains unverified, never "achieved."
 
-本卡用于诊断补缺；最终正文仍自足、无标签；风格元素属B/C层，事件仍按A层控制。回到[索引](style-library.md)或[风格转译](style-translation.md)，不全量复制其他卡。
+This card diagnoses gaps. Final prose stays self-contained and unlabeled; style elements are Tier B/C and events still follow Tier A. Return to the [index](style-library.md) or [style translation](style-translation.md), rather than copying all other cards.
 
-## 现实裂隙
+## Fractured reality
 
-### 定位与状态
-风格ID：kon。本卡是“主观匹配转场候选”的创作候选，不宣称概括署名创作者的全部作品。状态：**待验证；观察待核**。本版未新增可定位原片逐帧观察，也未跑视频模型；用户给参考后先做维度分类，再决定继承什么。风格候选不替代用户的角色、剧情和个人意象。
+### Position and status
+Style ID: kon. A creative candidate for "subjective match transitions," not a claim to summarize a credited creator's entire work. Status: **unverified; observations pending confirmation**. This version adds no source-located framewise observations and ran no video model. Classify dimensions when references arrive, then decide inheritance. Candidates do not replace the user's characters, plot, or personal imagery.
 
-### 签名候选
-相似动作、构图对应、现实线索、一次断裂。用户确认后继承签名。可变项：服饰细节、年代、明度，服从用户已定题材。
+### Candidate signatures
+Similar actions, corresponding composition, reality cues, one rupture. Inherit signatures after user confirmation. Variables: costume details, era, value, subject to the established genre.
 
-### 转成可执行关系
-先定两个空间的共同形状与主动作，匹配切由剪辑层完成；变化后给清楚新锚点，不让单次视频同时自动变脸换装换地点；声音桥可以保留前空间余响，需后期核同步。
+### Executable relationships
+Establish a shared shape and main action in both spaces first; editing performs the match cut. Give clear new anchors afterward rather than expecting one video to change face, costume, and place automatically. A sound bridge may retain the earlier space's tail, with synchronization checked in post.
 
-提示词片段：黑衣女子在室内抬手合上圆镜盖，镜头正对圆形轮廓。下一镜中，同样位置的车窗圆框映出她垂下的手，窗外光线滑过脸侧，她转头确认身处车厢。
+Prompt fragment: Indoors, a woman in black raises a hand to close a round mirror lid; the camera faces its circular outline. In the next shot, a circular train-window frame at the same position reflects her lowering hand. Outside light crosses her cheek, and she turns to register the carriage around her.
 
-### 常见失败与退路
-把叙事错认变成随机形变；连续身份漂移；没有共同锚点的炫技转场。 优先减次要信息、固定主要机位和接触区；不能靠增加风格术语解决。后期手段单列制作备注，实际平台参数另放。按同一场景试两个候选并比较签名是否仍清楚，验证记录包含实际输入、参考、设置和输出。只交卡片时继续写待验证，不写“已实现”。
+### Common failures and fallbacks
+Narrative misrecognition becomes random morphing; continuous identity drift; showy transitions without common anchors. Reduce secondary information and fix the main camera/contact zone first; more style jargon will not solve it. Keep post methods in separate production notes and actual platform parameters elsewhere. Test two candidates in the same scene, comparing signature clarity. Validation records contain actual inputs, references, settings, and outputs. A card-only delivery remains unverified, never "achieved."
 
-本卡用于诊断补缺；最终正文仍自足、无标签；风格元素属B/C层，事件仍按A层控制。回到[索引](style-library.md)或[风格转译](style-translation.md)，不全量复制其他卡。
+This card diagnoses gaps. Final prose stays self-contained and unlabeled; style elements are Tier B/C and events still follow Tier A. Return to the [index](style-library.md) or [style translation](style-translation.md), rather than copying all other cards.
 
-## 天气与群体
+## Weather and groups
 
-### 定位与状态
-风格ID：kurosawa。本卡是“雨地群像候选”的创作候选，不宣称概括署名创作者的全部作品。状态：**待验证；观察待核**。本版未新增可定位原片逐帧观察，也未跑视频模型；用户给参考后先做维度分类，再决定继承什么。风格候选不替代用户的角色、剧情和个人意象。
+### Position and status
+Style ID: kurosawa. A creative candidate for "rain-soaked ensemble staging," not a claim to summarize a credited creator's entire work. Status: **unverified; observations pending confirmation**. This version adds no source-located framewise observations and ran no video model. Classify dimensions when references arrive, then decide inheritance. Candidates do not replace the user's characters, plot, or personal imagery.
 
-### 签名候选
-天气造成阻力、群体层次、明确方向、动作后果。用户确认后继承签名。可变项：服饰细节、年代、明度，服从用户已定题材。
+### Candidate signatures
+Weather resistance, group depth, clear direction, action consequences. Inherit signatures after user confirmation. Variables: costume details, era, value, subject to the established genre.
 
-### 转成可执行关系
-将雨势作为脚下泥水与视线阻力；前中后景区分观察者、行动者、目标；长焦压缩只能作为摄影候选，实际空间仍需地图；一场只选一个群体转折。
+### Executable relationships
+Rain creates mud/water underfoot and visual resistance. Separate observer, actor, and target across depth layers. Telephoto compression is only a camera candidate; actual space still needs a map. Choose one group turn per scene.
 
-提示词片段：朴素雨衣的三人沿泥坡错开站位，侧面远景保留坡顶出口。前人踩陷泥坑，后人伸手托住其肘部，二人稳住后一起望向坡上。雨水沿衣角持续滴落。
+Prompt fragment: Three figures in plain raincoats occupy staggered positions on a muddy slope; a distant side view retains the exit at its crest. The front figure sinks a foot into a mud hole. The next catches their elbow; once steady, both look uphill. Water keeps dripping from their hems.
 
-### 常见失败与退路
-人群变复制身体；暴雨吞掉手脚；长焦压扁后误把距离当接触。 优先减次要信息、固定主要机位和接触区；不能靠增加风格术语解决。后期手段单列制作备注，实际平台参数另放。按同一场景试两个候选并比较签名是否仍清楚，验证记录包含实际输入、参考、设置和输出。只交卡片时继续写待验证，不写“已实现”。
+### Common failures and fallbacks
+Crowds become cloned bodies; downpour swallows hands/feet; compressed telephoto distance is mistaken for contact. Reduce secondary information and fix the main camera/contact zone first; more style jargon will not solve it. Keep post methods in separate production notes and actual platform parameters elsewhere. Test two candidates in the same scene, comparing signature clarity. Validation records contain actual inputs, references, settings, and outputs. A card-only delivery remains unverified, never "achieved."
 
-本卡用于诊断补缺；最终正文仍自足、无标签；风格元素属B/C层，事件仍按A层控制。回到[索引](style-library.md)或[风格转译](style-translation.md)，不全量复制其他卡。
+This card diagnoses gaps. Final prose stays self-contained and unlabeled; style elements are Tier B/C and events still follow Tier A. Return to the [index](style-library.md) or [style translation](style-translation.md), rather than copying all other cards.
 
-## 晴空与距离
+## Clear skies and distance
 
-### 定位与状态
-风格ID：shinkai。本卡是“明亮天空下的离别候选”的创作候选，不宣称概括署名创作者的全部作品。状态：**待验证；观察待核**。本版未新增可定位原片逐帧观察，也未跑视频模型；用户给参考后先做维度分类，再决定继承什么。风格候选不替代用户的角色、剧情和个人意象。
+### Position and status
+Style ID: shinkai. A creative candidate for "farewell beneath bright skies," not a claim to summarize a credited creator's entire work. Status: **unverified; observations pending confirmation**. This version adds no source-located framewise observations and ran no video model. Classify dimensions when references arrive, then decide inheritance. Candidates do not replace the user's characters, plot, or personal imagery.
 
-### 签名候选
-层叠云、城市尺度、清透反射、人物间距。用户确认后继承签名。可变项：服饰细节、年代、明度，服从用户已定题材。
+### Candidate signatures
+Layered clouds, urban scale, clear reflections, character separation. Inherit signatures after user confirmation. Variables: costume details, era, value, subject to the established genre.
 
-### 转成可执行关系
-天空饱和度作为上方主关系，地面与肤色保持较克制；光斑只来自可解释的逆光与玻璃；以站台、坡道等既定空间显示距离。此卡不授权新增校园或恋爱剧情。
+### Executable relationships
+Sky saturation is the main upper-frame relationship; ground and skin remain restrained. Bokeh/light spots come only from explainable backlight and glass. Existing platforms/ramps express distance. This card does not authorize a school or romance plot.
 
-提示词片段：白衬衫与深蓝外套的两人站在天桥两端，明亮云层越过城市楼顶。女孩把手从栏杆上移开，男孩向前一步后停住，逆光只在金属扶手边缘留下细亮线。
+Prompt fragment: Two figures in white shirts and dark-blue jackets stand at opposite ends of a footbridge. Bright clouds pass above city rooftops. The girl removes her hand from the rail; the boy takes one step and stops. Backlight leaves a thin bright edge only on the metal handrail.
 
-### 常见失败与退路
-云和光斑抢走表演；颜色无层级；为了青春感擅自换年龄与服饰。 优先减次要信息、固定主要机位和接触区；不能靠增加风格术语解决。后期手段单列制作备注，实际平台参数另放。按同一场景试两个候选并比较签名是否仍清楚，验证记录包含实际输入、参考、设置和输出。只交卡片时继续写待验证，不写“已实现”。
+### Common failures and fallbacks
+Clouds and light spots overpower acting; no color hierarchy; age/costume changed without permission for a youthful feel. Reduce secondary information and fix the main camera/contact zone first; more style jargon will not solve it. Keep post methods in separate production notes and actual platform parameters elsewhere. Test two candidates in the same scene, comparing signature clarity. Validation records contain actual inputs, references, settings, and outputs. A card-only delivery remains unverified, never "achieved."
 
-本卡用于诊断补缺；最终正文仍自足、无标签；风格元素属B/C层，事件仍按A层控制。回到[索引](style-library.md)或[风格转译](style-translation.md)，不全量复制其他卡。
+This card diagnoses gaps. Final prose stays self-contained and unlabeled; style elements are Tier B/C and events still follow Tier A. Return to the [index](style-library.md) or [style translation](style-translation.md), rather than copying all other cards.
 
-## 极简巨物
+## Minimal monumental scale
 
-### 定位与状态
-风格ID：villeneuve。本卡是“陌生巨构候选”的创作候选，不宣称概括署名创作者的全部作品。状态：**待验证；观察待核**。本版未新增可定位原片逐帧观察，也未跑视频模型；用户给参考后先做维度分类，再决定继承什么。风格候选不替代用户的角色、剧情和个人意象。
+### Position and status
+Style ID: villeneuve. A creative candidate for "unfamiliar megastructures," not a claim to summarize a credited creator's entire work. Status: **unverified; observations pending confirmation**. This version adds no source-located framewise observations and ran no video model. Classify dimensions when references arrive, then decide inheritance. Candidates do not replace the user's characters, plot, or personal imagery.
 
-### 签名候选
-单一巨构、微小人物、低色度雾、缓慢尺度揭示。用户确认后继承签名。可变项：服饰细节、年代、明度，服从用户已定题材。
+### Candidate signatures
+One megastructure, tiny figures, low-chroma mist, gradual scale revelation. Inherit signatures after user confirmation. Variables: costume details, era, value, subject to the established genre.
 
-### 转成可执行关系
-先让人和门槛同框确认尺度，再展示巨构；只选一处主光，雾保留层次；低频属于声音方案，不能替代空间叙事。极简不是空镜无变化，靠一次选择或尺度认知推进。
+### Executable relationships
+First show person and threshold together to establish scale, then reveal the megastructure. Choose one key source and layered mist. Low frequencies belong to sound, not a substitute for spatial storytelling. Minimalism is not an unchanged empty shot; advance through a choice or a recognition of scale.
 
-提示词片段：灰白防护服的人停在黑色巨门前，门缝的冷光落成细长矩形。他沿光带向前走两步，停在高过头顶的门槛旁；镜头缓慢退远，显出门体更大的轮廓。
+Prompt fragment: A figure in gray-white protective clothing stops before a black monumental door. Cold light through the gap forms a long narrow rectangle. He follows it two steps and pauses beside a threshold higher than his head; the camera slowly withdraws to reveal the larger outline of the door.
 
-### 常见失败与退路
-只有雾和大词；主体小到不可读；把慢推拉当全部叙事。 优先减次要信息、固定主要机位和接触区；不能靠增加风格术语解决。后期手段单列制作备注，实际平台参数另放。按同一场景试两个候选并比较签名是否仍清楚，验证记录包含实际输入、参考、设置和输出。只交卡片时继续写待验证，不写“已实现”。
+### Common failures and fallbacks
+Only mist and grand words; unreadably small subject; slow pushes/pulls treated as all the story. Reduce secondary information and fix the main camera/contact zone first; more style jargon will not solve it. Keep post methods in separate production notes and actual platform parameters elsewhere. Test two candidates in the same scene, comparing signature clarity. Validation records contain actual inputs, references, settings, and outputs. A card-only delivery remains unverified, never "achieved."
 
-本卡用于诊断补缺；最终正文仍自足、无标签；风格元素属B/C层，事件仍按A层控制。回到[索引](style-library.md)或[风格转译](style-translation.md)，不全量复制其他卡。
+This card diagnoses gaps. Final prose stays self-contained and unlabeled; style elements are Tier B/C and events still follow Tier A. Return to the [index](style-library.md) or [style translation](style-translation.md), rather than copying all other cards.
 
-## 都市距离
+## Urban distance
 
-### 定位与状态
-风格ID：wong-kar-wai。本卡是“夜城错身候选”的创作候选，不宣称概括署名创作者的全部作品。状态：**待验证；观察待核**。本版未新增可定位原片逐帧观察，也未跑视频模型；用户给参考后先做维度分类，再决定继承什么。风格候选不替代用户的角色、剧情和个人意象。
+### Position and status
+Style ID: wong-kar-wai. A creative candidate for "passing in a night city," not a claim to summarize a credited creator's entire work. Status: **unverified; observations pending confirmation**. This version adds no source-located framewise observations and ran no video model. Classify dimensions when references arrive, then decide inheritance. Candidates do not replace the user's characters, plot, or personal imagery.
 
-### 签名候选
-局部霓虹、玻璃遮隔、短距离擦身、时间错位。用户确认后继承签名。可变项：服饰细节、年代、明度，服从用户已定题材。
+### Candidate signatures
+Local neon, glass separation, close passes, temporal displacement. Inherit signatures after user confirmation. Variables: costume details, era, value, subject to the established genre.
 
-### 转成可执行关系
-只保留一冷一暖两处画内光源；隔着玻璃看人，反射不复制角色；克制近距跟随，独白如需使用放音频制作备注；抽帧作为后期选择，不能靠多写模糊实现。
+### Executable relationships
+Keep only two in-frame sources, one cool and one warm. Observe through glass without reflections duplicating characters. Restrained close following; if needed, monologue belongs in audio production notes. Frame skipping is a post choice, not achieved by writing more blur.
 
-提示词片段：短发深色外套的青年停在雨店玻璃旁，暖灯照亮半张脸，身后的冷青招牌映在湿路上。他看着对方从门口走过，手指停在尚未推开的门把上。
+Prompt fragment: A short-haired young man in a dark coat stops beside a shop window in the rain. Warm light reveals half his face, while a cool-cyan sign behind reflects on the wet road. He watches the other person pass the doorway; his fingers pause on the handle of the still-closed door.
 
-### 常见失败与退路
-全屏霓虹导致肤色丢失；手持乱晃；把抽帧和任何镜头都当情绪捷径。 优先减次要信息、固定主要机位和接触区；不能靠增加风格术语解决。后期手段单列制作备注，实际平台参数另放。按同一场景试两个候选并比较签名是否仍清楚，验证记录包含实际输入、参考、设置和输出。只交卡片时继续写待验证，不写“已实现”。
+### Common failures and fallbacks
+Full-frame neon erases skin; uncontrolled handheld shaking; frame skipping and arbitrary shots become emotional shortcuts. Reduce secondary information and fix the main camera/contact zone first; more style jargon will not solve it. Keep post methods in separate production notes and actual platform parameters elsewhere. Test two candidates in the same scene, comparing signature clarity. Validation records contain actual inputs, references, settings, and outputs. A card-only delivery remains unverified, never "achieved."
 
-本卡用于诊断补缺；最终正文仍自足、无标签；风格元素属B/C层，事件仍按A层控制。回到[索引](style-library.md)或[风格转译](style-translation.md)，不全量复制其他卡。
+This card diagnoses gaps. Final prose stays self-contained and unlabeled; style elements are Tier B/C and events still follow Tier A. Return to the [index](style-library.md) or [style translation](style-translation.md), rather than copying all other cards.
 
-## 单色寓言江湖
+## Monochrome martial-world fable
 
-### 定位与状态
-风格ID：zhang-yimou。本卡是“红林对决候选”的创作候选，不宣称概括署名创作者的全部作品。状态：**待验证；观察待核**。本版未新增可定位原片逐帧观察，也未跑视频模型；用户给参考后先做维度分类，再决定继承什么。风格候选不替代用户的角色、剧情和个人意象。
+### Position and status
+Style ID: zhang-yimou. A creative candidate for "a red-forest duel," not a claim to summarize a credited creator's entire work. Status: **unverified; observations pending confirmation**. This version adds no source-located framewise observations and ran no video model. Classify dimensions when references arrive, then decide inheritance. Candidates do not replace the user's characters, plot, or personal imagery.
 
-### 签名候选
-暗红叶面、灰黑人物、稳定几何、风压叶片。用户确认后继承签名。可变项：服饰细节、年代、明度，服从用户已定题材。
+### Candidate signatures
+Dark-red leaves, gray-black figures, stable geometry, wind pressing leaves. Inherit signatures after user confirmation. Variables: costume details, era, value, subject to the established genre.
 
-### 转成可执行关系
-保留红叶地面与后景，人物用灰黑轮廓分离；树干构成重复竖线，双方在稳定中轴两侧；冷侧光擦亮刃口，叶片只在动作扫过后扬起。
+### Executable relationships
+Retain red leaves in ground/background, separating gray-black figure silhouettes. Tree trunks form repeated verticals, with opponents on either side of a stable axis. Cold side light catches blades; leaves rise only after action sweeps them.
 
-提示词片段：灰黑长衣的两人隔着暗红落叶对峙，笔直树干延伸到薄雾中，侧光照亮握剑的手。进步时脚掌压开叶面，剑刃交汇后叶片沿受力方向掀起。
+Prompt fragment: Two figures in gray-black long robes confront each other across dark-red leaves. Straight trunks recede into thin mist; side light reveals sword hands. Feet part the leaves on entry. After blades cross, leaves lift along the direction of force.
 
-### 常见失败与退路
-全身和脸都染红；强风盖住接触；把不同作品的色彩方案混成固定五色轮流切换。 优先减次要信息、固定主要机位和接触区；不能靠增加风格术语解决。后期手段单列制作备注，实际平台参数另放。按同一场景试两个候选并比较签名是否仍清楚，验证记录包含实际输入、参考、设置和输出。只交卡片时继续写待验证，不写“已实现”。
+### Common failures and fallbacks
+Faces/bodies tinted red; strong wind obscures contact; different works' palettes become a fixed rotation of five colors. Reduce secondary information and fix the main camera/contact zone first; more style jargon will not solve it. Keep post methods in separate production notes and actual platform parameters elsewhere. Test two candidates in the same scene, comparing signature clarity. Validation records contain actual inputs, references, settings, and outputs. A card-only delivery remains unverified, never "achieved."
 
-本卡用于诊断补缺；最终正文仍自足、无标签；风格元素属B/C层，事件仍按A层控制。回到[索引](style-library.md)或[风格转译](style-translation.md)，不全量复制其他卡。
+This card diagnoses gaps. Final prose stays self-contained and unlabeled; style elements are Tier B/C and events still follow Tier A. Return to the [index](style-library.md) or [style translation](style-translation.md), rather than copying all other cards.
 
-## 风格卡空壳
+## Empty style card
 
 ```text
-风格ID：______
-用户想继承的维度：______
-参考来源与可访问范围：______
-签名元素（最多3—5项，每项标美术七维之一与抽掉后的差别；只借少数维度时不强凑）：______
-主题对应（用户明确展开并确认时填写）：______
-获准视听继承（运镜/剪辑/声音；未授权留空）：______
-可变元素：______
-禁用元素（至多2项，转写时正向表达）：______
-提示词片段（可见材质/面积/位置/动作）：______
-观察状态：待核 / 已观察（附定位）______
-生成验证：待验证 / 已试片（附输入、设置、输出与结论）______
+Style ID: ______
+Dimensions the user wants to inherit: ______
+Reference sources and accessible scope: ______
+Signature elements (at most 3–5; label each with one of the seven art dimensions and the difference if removed; do not pad when borrowing few dimensions): ______
+Theme relationship (fill when explicitly developed and confirmed by the user): ______
+Authorized audiovisual inheritance (camera/editing/sound; blank without authorization): ______
+Variable elements: ______
+Excluded elements (at most 2; express positively in prose): ______
+Prompt fragment (visible material/area/location/action): ______
+Observation status: pending / observed (with locator)______
+Generation validation: unverified / piloted (with inputs, settings, outputs, conclusion)______
 ```
-不为填空新增场景或角色。观察与模型执行分开记；真正生成前仍执行A层事件检查与默认白话。此模板是设计工具，不进入最终提示词。
+Do not add settings or characters to fill blanks. Record observation separately from model execution. Before actual generation, still apply Tier A checks and the plain-prose default. This is a design tool, not final prompt input.
+
+

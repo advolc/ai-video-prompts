@@ -26,7 +26,7 @@ In the Director's Room, before any module runs, build a one-line profile from th
 | Subsystem | Routed by | Where |
 |---|---|---|
 | Fight pacing, initiative, pause legitimacy, fatigue, reach, terrain, fail-states | Purpose, power, state, space, tools, stakes | `references/action-modes.md` |
-| Fighter movement through the arena (3D ledger, footwork, path vocabulary, line-break rule) | Space, mode, tools | `references/spatial-tactics.md` |
+| Fighter movement through the arena (space record, footwork, path or hold vocabulary) | Space, mode, tools | `references/spatial-tactics.md` |
 | Clip splitting and Tier A density | Action mode | `references/generation-handoff.md` section 3 |
 | Dialogue physicality, movement, timing, silence, coverage | Situation (purpose, space, audience, relationship, arousal) | `dialogue/situation-profiles.md` |
 | Dialogue/silent-interaction geometry, paths, deliberate holds and listener responses | Purpose, relationship, state, actual routes and access | [Dialogue spatial blocking](../dialogue/spatial-blocking.md) |

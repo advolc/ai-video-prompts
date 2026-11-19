@@ -1,194 +1,194 @@
-# 台词参考卡库
+# Dialogue Reference Card Library
 
-按[台词深度引擎](dialogue-engine.md)启用条件检索，先按场景目的筛选，再按题材与人物DNA改写。下列14张卡用于创作结构示意，不作为影视引文、学术来源或已验证的表演处方；例句只用于适配改写，不直接照抄。`prompt_fragment`用于编剧/配音设计，不能直接塞进视频正文；复杂停顿与潜台词整体转制作备注。
+Retrieve according to the activation conditions in the [Dialogue Depth Engine](dialogue-engine.md). Filter by scene purpose first, then rewrite for genre and character DNA. The following 14 cards illustrate creative structures; they are not film/TV quotations, academic sources, or verified performance prescriptions. Example lines are for adapted rewriting only, never direct copying. `prompt_fragment` serves screenwriting/voiceover design and must not be inserted directly into the video body; move complex pauses and subtext as a whole into production notes.
 
-## 潜台词类：4张
+## Subtext: 4 Cards
 
 ```json
 [
   {
     "id": "SUB-01",
-    "source": "原创示例：门口的回避",
-    "principle": "用可行动的物件回避暴露恐惧",
-    "pattern": "对方问心理状态，回答眼前未完成的任务",
-    "prompt_fragment": "问：你怕了？答：门还没关。",
-    "anti_pattern": "回答与在场物件、目标完全无关",
-    "genre_fit": ["武侠", "犯罪", "悬疑"],
-    "scene_fit": "出口仍开着，人物确实要守住门，恐惧不宜明说"
+    "source": "Original example: evasion at the doorway",
+    "principle": "Use an actionable object to avoid revealing fear",
+    "pattern": "When asked about a mental state, answer with the immediate unfinished task",
+    "prompt_fragment": "Question: Are you afraid? Answer: The door is still open.",
+    "anti_pattern": "The answer is entirely unrelated to objects or goals present in the scene",
+    "genre_fit": ["Wuxia", "Crime", "Suspense"],
+    "scene_fit": "The exit remains open, the character genuinely needs to hold the door, and fear should not be stated directly"
   },
   {
     "id": "SUB-02",
-    "source": "原创示例：临别整理",
-    "principle": "以具体照顾承载未说出口的牵挂",
-    "pattern": "情感表达改为对已存在物件的一句叮嘱",
-    "prompt_fragment": "扣子扣好，外面风大。",
-    "anti_pattern": "场景无风、服装无扣仍机械套用",
-    "genre_fit": ["日常", "历史", "武侠"],
-    "scene_fit": "熟悉的人即将分别，关系支持克制关心"
+    "source": "Original example: straightening clothes before parting",
+    "principle": "Concrete care carries unspoken attachment",
+    "pattern": "Replace an emotional declaration with a reminder concerning an existing object",
+    "prompt_fragment": "Button up. It's windy outside.",
+    "anti_pattern": "Mechanically apply the line when the scene has no wind or the costume has no buttons",
+    "genre_fit": ["Everyday life", "Historical", "Wuxia"],
+    "scene_fit": "People who know each other are about to part, and their relationship supports restrained care"
   },
   {
     "id": "SUB-03",
-    "source": "原创示例：泄露方向",
-    "principle": "借不应知道的细节暴露信息差",
-    "pattern": "抓住对方未获告知却说出的具体名词",
-    "prompt_fragment": "我没说过人在北门。",
-    "anti_pattern": "前文已经明确告知北门，却还假装抓到破绽",
-    "genre_fit": ["悬疑", "犯罪", "科幻"],
-    "scene_fit": "剧情已经建立知情边界，人物察觉对方说漏嘴"
+    "source": "Original example: revealing a direction",
+    "principle": "A detail someone should not know exposes an information gap",
+    "pattern": "Catch the specific noun the other person says despite never having been told it",
+    "prompt_fragment": "I never said they were at the north gate.",
+    "anti_pattern": "Pretend to catch a slip even though the north gate was explicitly disclosed earlier",
+    "genre_fit": ["Suspense", "Crime", "Science fiction"],
+    "scene_fit": "The story has established information boundaries, and the character notices the other person letting something slip"
   },
   {
     "id": "SUB-04",
-    "source": "原创示例：嘴上放行",
-    "principle": "言行错位显露不愿承认的挽留",
-    "pattern": "口头允许离开，身体仍守住出口",
-    "prompt_fragment": "随你。说话者的手仍压着门闩。",
-    "anti_pattern": "没有动机地制造控制行为，或改变双方关系性质",
-    "genre_fit": ["日常", "武侠", "悬疑"],
-    "scene_fit": "人物本就想留住对方，出口与门闩真实在场"
+    "source": "Original example: verbal permission to leave",
+    "principle": "Speech-action mismatch reveals an unacknowledged wish to keep someone",
+    "pattern": "Verbally allow departure while the body still guards the exit",
+    "prompt_fragment": "Suit yourself. The speaker's hand still presses down on the door bolt.",
+    "anti_pattern": "Introduce controlling behavior without motivation, or change the nature of their relationship",
+    "genre_fit": ["Everyday life", "Wuxia", "Suspense"],
+    "scene_fit": "The character already wants the other person to stay, and the exit and bolt are physically present"
   }
 ]
 ```
 
-## 言语行动类：3张
+## Speech Acts: 3 Cards
 
 ```json
 [
   {
     "id": "ACT-01",
-    "source": "原创示例：把注意移向手",
-    "principle": "试探对方保护对象，诱使其暴露选择",
-    "pattern": "指出一个可见习惯，等待对方纠正或遮掩",
-    "prompt_fragment": "你一直护着那只手。",
-    "anti_pattern": "画面没有保护动作，却凭台词凭空识破秘密",
-    "genre_fit": ["武侠", "犯罪", "热血"],
-    "scene_fit": "先前确有护手动作，说话者试探而非全知"
+    "source": "Original example: directing attention to the hand",
+    "principle": "Probe what the other person protects and induce them to reveal a choice",
+    "pattern": "Point out a visible habit and wait for correction or concealment",
+    "prompt_fragment": "You keep protecting that hand.",
+    "anti_pattern": "Dialogue discovers a secret from nowhere when no protective action appears in the image",
+    "genre_fit": ["Wuxia", "Crime", "Hot-blooded action"],
+    "scene_fit": "A hand-protecting action genuinely occurred earlier; the speaker is probing, not omniscient"
   },
   {
     "id": "ACT-02",
-    "source": "原创示例：有条件的让路",
-    "principle": "把威吓变成可执行的条件交换",
-    "pattern": "一个明确条件，换一个当前能履行的承诺",
-    "prompt_fragment": "放下钥匙，我让开这道门。",
-    "anti_pattern": "承诺超出人物控制范围，或条件无法被看见兑现",
-    "genre_fit": ["犯罪", "科幻", "悬疑"],
-    "scene_fit": "钥匙是既定目标，说话者确实控制出口"
+    "source": "Original example: conditional passage",
+    "principle": "Turn intimidation into an executable conditional exchange",
+    "pattern": "One clear condition in exchange for a promise that can currently be kept",
+    "prompt_fragment": "Put down the key, and I'll move away from this door.",
+    "anti_pattern": "The promise exceeds the character's control, or fulfillment of the condition cannot be seen",
+    "genre_fit": ["Crime", "Science fiction", "Suspense"],
+    "scene_fit": "The key is an established objective, and the speaker genuinely controls the exit"
   },
   {
     "id": "ACT-03",
-    "source": "原创示例：让同伴先动",
-    "principle": "安抚通过具体行动指令生效",
-    "pattern": "短指令后接本人能承担的动作",
-    "prompt_fragment": "看着台阶，我扶你过去。",
-    "anti_pattern": "本人双手持械或不在身旁，却声称正在扶人",
-    "genre_fit": ["日常", "历史", "热血"],
-    "scene_fit": "同伴犹疑，双方距离与空手状态允许搀扶"
+    "source": "Original example: getting a companion moving first",
+    "principle": "Reassurance works through concrete action instructions",
+    "pattern": "A short instruction followed by an action the speaker can undertake",
+    "prompt_fragment": "Watch the steps. I'll help you across.",
+    "anti_pattern": "The speaker claims to be supporting someone while holding weapons in both hands or standing elsewhere",
+    "genre_fit": ["Everyday life", "Historical", "Hot-blooded action"],
+    "scene_fit": "A companion hesitates, and their distance and free-hand availability permit physical support"
   }
 ]
 ```
 
-## 类型对白类：7张（原3张＋4种质感）
+## Genre Dialogue: 7 Cards (Original 3 + 4 Textures)
 
 ```json
 [
   {
     "id": "GEN-01",
-    "source": "原创示例：武侠的欠账",
-    "principle": "用既定旧物承载未清的关系",
-    "pattern": "提物不提情，行动补足意义",
-    "prompt_fragment": "剑还你，账还没清。",
-    "anti_pattern": "凭空增加旧债、借剑经历或复仇关系",
+    "source": "Original example: a wuxia debt",
+    "principle": "An established old object carries an unsettled relationship",
+    "pattern": "Mention the object instead of the emotion; action completes the meaning",
+    "prompt_fragment": "Here's your sword back. We're not even yet.",
+    "anti_pattern": "Invent an old debt, an experience of borrowing a sword, or a revenge relationship",
     "genre_fit": [
-      "武侠",
-      "历史"
+      "Wuxia",
+      "Historical"
     ],
-    "scene_fit": "归还兵器和未解决的关系都已在剧情中确立"
+    "scene_fit": "Both the weapon's return and the unresolved relationship are established in the story"
   },
   {
     "id": "GEN-02",
-    "source": "原创示例：科幻的权限",
-    "principle": "技术词必须改变当下选择",
-    "pattern": "给一项有限权限，同时指出其直接后果",
-    "prompt_fragment": "我能开门，关不上第二次。",
-    "anti_pattern": "为了台词临时改变设备规则，或长篇解释系统史",
+    "source": "Original example: science-fiction permissions",
+    "principle": "Technical words must change the immediate choice",
+    "pattern": "Provide a limited permission while pointing out its direct consequence",
+    "prompt_fragment": "I can open the door. I can't close it a second time.",
+    "anti_pattern": "Change device rules on the spot for a line, or explain the system's history at length",
     "genre_fit": [
-      "科幻",
-      "悬疑"
+      "Science fiction",
+      "Suspense"
     ],
-    "scene_fit": "门控限制已定，人物需要据此决定撤离顺序"
+    "scene_fit": "Door-control limitations are established, and the characters must use them to decide the evacuation order"
   },
   {
     "id": "GEN-03",
-    "source": "原创示例：热血的关键词回响",
-    "principle": "相同短句在行动变化后获得新含义",
-    "pattern": "前段由被保护者听到，后段由其主动说出",
-    "prompt_fragment": "这次，跟着我。",
-    "anti_pattern": "没有能力或选择变化，只靠重复制造成长假象",
+    "source": "Original example: a keyword echo in hot-blooded action",
+    "principle": "The same short line gains a new meaning after action changes",
+    "pattern": "Earlier the protected person hears it; later they actively say it",
+    "prompt_fragment": "This time, follow me.",
+    "anti_pattern": "Use repetition alone to create an illusion of growth without a change in ability or choice",
     "genre_fit": [
-      "热血",
-      "武侠",
-      "日常"
+      "Hot-blooded action",
+      "Wuxia",
+      "Everyday life"
     ],
-    "scene_fit": "此前确有带领关系，本场发生可信的责任交接"
+    "scene_fit": "A prior leadership relationship exists, and this scene credibly transfers responsibility"
   },
   {
     "id": "GEN-04",
-    "source": "结构示例：权力宣示的定义权接管",
-    "principle": "拒绝在对方框架里自证，接管裁定权",
-    "pattern": "对方否定资格，角色接管定义并逐层升级",
-    "prompt_fragment": "你问我算什么东西——现在我来告诉你。你不敢管的我管，你管不了的我更要管。",
-    "anti_pattern": "只在音量上压人，没有定义权接管和递进；照抄示例或凭空补权限",
+    "source": "Structural example: taking over the power to define in an assertion of authority",
+    "principle": "Refuse to prove oneself within the other person's frame; take over the right to rule",
+    "pattern": "The other person denies qualification; the character takes over the definition and escalates layer by layer",
+    "prompt_fragment": "You ask what I amount to—now let me tell you. What you dare not handle, I will. What you cannot handle, I have even more reason to handle.",
+    "anti_pattern": "Overpower through volume alone without taking over the definition or escalating; copy the example or invent authority",
     "genre_fit": [
-      "历史权谋",
-      "武侠",
-      "犯罪"
+      "Historical political intrigue",
+      "Wuxia",
+      "Crime"
     ],
-    "scene_fit": "对方先否定资格，角色有已确立的权限来源；例句按当前权限与动作空当重写"
+    "scene_fit": "The other person first denies qualification, and the character has an established source of authority; rewrite the example for current authority and available action openings"
   },
   {
     "id": "GEN-05",
-    "source": "结构示例：阴柔威胁的关心句式",
-    "principle": "用关心句式包裹威胁，用具体细节替代狠话",
-    "pattern": "用一件可核的小事让对方意识到被看穿",
-    "prompt_fragment": "你这杯茶凉了。要不要我替你换一杯——还是说，你等的人不会来了？",
-    "anti_pattern": "直接写我要杀你；具体细节、缺席者或不再到来的信息没有依据",
+    "source": "Structural example: caring phrasing in soft-spoken menace",
+    "principle": "Wrap a threat in caring phrasing and replace generic threats with specific details",
+    "pattern": "A small verifiable fact makes the other person realize they have been seen through",
+    "prompt_fragment": "Your tea has gone cold. Shall I get you another cup—or is the person you're waiting for not coming?",
+    "anti_pattern": "Write I'll kill you directly; specific details, an absent person, or knowledge that they will not arrive lack a basis",
     "genre_fit": [
-      "悬疑",
-      "犯罪",
-      "历史权谋"
+      "Suspense",
+      "Crime",
+      "Historical political intrigue"
     ],
-    "scene_fit": "茶、等待对象及说话者获知其无法到来的依据均已成立，本场不需动手；不成立就改写"
+    "scene_fit": "The tea, awaited person, and speaker's basis for knowing they cannot arrive are all established, and no physical attack is needed here; otherwise rewrite"
   },
   {
     "id": "GEN-06",
-    "source": "结构示例：反讽试探的答非所问",
-    "principle": "表面赞同/请教，实际否定/逼问",
-    "pattern": "借对方话里的矛盾让其暴露",
-    "prompt_fragment": "你说得对，北门最安全。那你为什么从南边来？",
-    "anti_pattern": "解释反讽；每句都带刺；方位与来路未定",
+    "source": "Structural example: the oblique answer in ironic probing",
+    "principle": "Apparent agreement/request for guidance is actually denial/pressing a question",
+    "pattern": "Expose the other person through a contradiction in their words",
+    "prompt_fragment": "You're right, the north gate is safest. Then why did you come from the south?",
+    "anti_pattern": "Explain the irony; make every sentence barbed; leave direction and approach route unestablished",
     "genre_fit": [
-      "悬疑",
-      "犯罪",
-      "历史权谋"
+      "Suspense",
+      "Crime",
+      "Historical political intrigue"
     ],
-    "scene_fit": "双方不亮底牌，已建立北门判断、南边来路和相应信息差"
+    "scene_fit": "Neither side shows their cards; the north-gate assessment, southern approach, and corresponding information gap have been established"
   },
   {
     "id": "GEN-07",
-    "source": "原创结构示例：旧事轻描的独白",
-    "principle": "具体小事承载未明说的情绪，不补解释",
-    "pattern": "一件已定旧事＋一句轻描淡写＋不解释",
-    "prompt_fragment": "那次你替我留了半碗粥，我嫌凉没喝。后来那只碗，一直没舍得扔。",
-    "anti_pattern": "只说那句话很重要却不指明旧事；直接解释后悔或痛苦；凭空补经历",
+    "source": "Original structural example: a monologue understating a past event",
+    "principle": "A specific small incident carries unstated emotion, without added explanation",
+    "pattern": "An established past incident + one understated sentence + no explanation",
+    "prompt_fragment": "You saved me half a bowl of porridge that time. I said it was cold and didn't eat it. Afterward, I could never bring myself to throw that bowl away.",
+    "anti_pattern": "Say only that a sentence mattered without identifying the past incident; directly explain regret or pain; invent experience",
     "genre_fit": [
-      "日常",
-      "武侠",
-      "悬疑"
+      "Everyday life",
+      "Wuxia",
+      "Suspense"
     ],
-    "scene_fit": "独处或对不在场者说话，留粥旧事、碗及保留关系已有依据；否则换成项目已定的小事"
+    "scene_fit": "The speaker is alone or addressing someone absent; the saved-porridge incident, bowl, and attachment that explains keeping it have a basis. Otherwise use a small incident established in the project"
   }
 ]
 ```
 
-## 检索与落位
+## Retrieval and Placement
 
-用`scene_fit`检查事实，用`genre_fit`缩小风格；一次取最相关的1—3张做备选，不强塞14张。移植的是说话策略，人物、道具和秘密必须来自当前项目。台词文本、潜台词分析和重音进制作备注；可见的手位、视线与动作反应再经负荷检查进入内部G单元。最终纯文本照常去标签、补角色前缀，卡ID不进入正文。
+Check facts with `scene_fit` and narrow style with `genre_fit`; take the most relevant 1–3 cards as alternatives at a time, without forcing in all 14. Transfer the speaking strategy; characters, props, and secrets must come from the current project. Dialogue text, subtext analysis, and stress go into production notes. Visible hand positions, eyelines, and action reactions pass a load check before entering internal G units. Final plain text removes labels and adds character prefixes as usual; card IDs do not enter the body.

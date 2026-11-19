@@ -1,117 +1,119 @@
-# 动作编排、武指与状态连续
+# Action Choreography, Fight Direction, and State Continuity
 
-> **情境路由：** 本页是通用的物理与因果规则（选择、兵器、发力链、距离、接触、状态）。整场打斗的**节奏、主动权、停顿是否合法、体力曲线、距离与环境影响、失败态**由[动作模式](action-modes.md)按[情境档案](../core/context-routing.md)路由；下方“动作单元”是记录一次交汇的格式，不是整场的节奏模板。**人在场内怎么走（场地卡、三维位置账本、走位路径、防直线规则）**由[空间战术](spatial-tactics.md)规定，编排任何交汇前必须先完成。
+> **Context routing:** This page provides general physical/causal rules: choices, weapons, force chains, distance, contact, state. The fight's **rhythm, initiative, legitimacy of pauses, stamina curve, range/environment effects, and fail states** are routed through [action modes](action-modes.md) by the [Context Profile](../core/context-routing.md). The “action unit” below records one encounter; it is not a rhythm template for the whole fight. **Space checks, purposeful paths/holds and expanded records for complex geography are specified by [spatial tactics](spatial-tactics.md)**. Check usable space before choreography.
 
-## 从角色的选择开始
+## Begin with character choices
 
-为主要交手者各写：要得到什么、不能失去什么、擅长的距离、愿意付的代价。例如“拖住追兵让同伴撤离”与“击杀对方”会产生不同站位、追击和收招。实力差通过判断、效率和控制表现，不只比较光球大小。
+For each principal fighter, write what they seek, what they cannot lose, their preferred range, and the cost they accept. “Delay pursuers so a companion can escape” and “kill the opponent” produce different positions, pursuit, and recovery. Show differences in ability through judgment, efficiency, and control, not merely energy-ball size.
 
-编排有变化的攻防单元：试探获得信息、逼出防守习惯、改变高度或角度、利用空门、被反制、付代价换目标。按剧情选择，不要求每场齐全。喜剧可以靠错误判断与意外结果，恐怖可以让观众先知危险，竞技可以强调得分条件与剩余时间。整场的节奏、主动权与停顿是否合法，不在本页规定，由[动作模式](action-modes.md)按情境路由。
+Choreograph changing exchanges: probing for information, exposing defensive habits, changing height/angle, exploiting an opening, being countered, paying a cost for a goal. Select by story rather than requiring all in every scene. Comedy can use misjudgment and surprises; horror can let viewers know danger first; sport can stress scoring conditions and remaining time. This page does not prescribe whole-fight rhythm, initiative, or valid pauses; [action modes](action-modes.md) routes them by context.
 
-## 兵器逻辑先于招式包装
+## Weapon logic precedes move styling
 
-为主要兵器建立动作规格：`总长/有效攻击部位｜质量与重心（已知数值或重量感假设）｜刚性/弹性｜单手/双手及握距｜刃、尖、棍身的用途｜起动、制动和回收｜携带与取用｜场地净空`。
+Create operating specifications for principal weapons: `overall length/effective striking parts | mass and center of mass (known values or assumed weight feel) | rigidity/flexibility | one/two hands and grip spacing | uses of edge, point, shaft | initiation, braking, recovery | carrying and access | scene clearance`.
 
-有原型和实物数据时据来源记录；缺数据时标为造型/预演建议，不把“大剑必重”“细剑必轻”当历史定论。长度和质量分布都会影响操控，不能只靠外形判断惯性。
+Record sources for real prototypes/data. Without data, label design/previs suggestions; “large swords are always heavy” and “thin swords are always light” are not historical conclusions. Length and mass distribution both affect handling; appearance alone cannot determine inertia.
 
-动作规格应改变编排：长兵器需要回摆和控距，贴身后可能换握距、撤步或改用近身段；这些是本角色可选策略，不是所有长兵器的固定套路。重心偏前的设计需交代加速、收停和方向改变的代价，不能每次全力挥空后无过渡反向满速挥击。轻巧兵器也需要支撑和有效接触，不等于随意抖腕就能挡住一切。
+Specifications should change choreography. Long weapons need backswing clearance and distance control; at close range a character might change grip spacing, step away, or use a nearer section. These are options, not a universal long-weapon routine. A forward-heavy design requires costs for acceleration, stopping, and redirection; a full-power miss cannot instantly reverse at full speed without transition. Light weapons also need support and effective contact; arbitrary wrist flicks cannot block everything.
 
-指定哪一面/段发生接触、握持手是否换位、双手是否仍连接同一根柄。换手、拔剑、入鞘、抓握兵器与武器脱手都给可读过渡。能力兵器明确惯性、实体接触和长度变化规则；若能消除惯性或延长刃口，写进能力机制并保持一致。
+Specify which face/section contacts, whether hands change position, and whether both hands remain on the same handle. Give readable transitions to hand switches, drawing, sheathing, grabbing a weapon, and disarming. Power-based weapons need rules for inertia, solid contact, and length changes. If inertia can be canceled or the edge extended, include it in the ability mechanism and remain consistent.
 
-## 人物武器与形制推演系统（防“白板武器”）
+## Character weapon/form design (avoid blank generic weapons)
 
-不能只写“他拿着一把剑”。按已定职业、阶层、世界规则与使用习惯，明确形制轮廓、握持结构和一项有依据的材质/状态细节；三种尺度择其一：
+Do not write only “he holds a sword.” Based on established occupation, class, world rules, and habits, specify form/silhouette, grip structure, and one grounded material/state detail. Choose one approach:
 
-1. **现实考据向**：底层刀客可用带少量崩口的旧刃、旧麻绳缠柄，世家子弟可用镶饰剑鞘或特定剑穗作为设计候选；真实年代/地域/身份另核，不把贫富直接等同武器好坏，不让崩口破坏本场必须成立的刃部功能。
-2. **现实+创作向**：可设计带机括倒刺的铁尺、竹杖内藏细剑；必须交代机构、收纳尺寸和启闭时机，机构变化本身占原事件负荷，不能免费塞进一次攻击。
-3. **纯AI创作向**：悬浮金属环拼接刃、无实体柄的半透明灵力刃须已有能力来源，明确受力、握持/控制、结构数量与变化代价；不能凭“AI创作”取消支撑和接触因果。
+1. **Researched realism:** a low-status swordsman might use an old edge with a few chips and old hemp grip wrapping; an aristocratic youth might have an ornamented scabbard or particular tassel. These are candidates: verify real period/region/identity separately. Wealth does not directly determine weapon quality, and chips cannot destroy the edge function this scene requires.
+2. **Reality plus invention:** design an iron ruler with mechanical barbs or a slim sword inside a bamboo staff. Explain mechanism, storage dimensions, and activation timing. The mechanism change occupies existing event load rather than entering an attack for free.
+3. **Pure AI invention:** a blade assembled from floating metal rings or a translucent spirit blade without a physical handle requires an established power source. Define force transfer, grip/control, component count, and transformation cost. “AI invention” does not cancel support or contact causality.
 
-先继承用户批准武器，不擅自添崩口、倒刺、装饰或改成新兵器；无武器人物保持空手。形制、材质和磨损是固定身份锚点，不等于多次动作；变形、出鞘、切换握法和触发机构则按A层事件与主要交互检查计入，依旧先守本页兵器规格再包装外形。
+Inherit the approved weapon first; do not add chips, barbs, decoration, or a new weapon unilaterally. Unarmed characters remain unarmed. Form, material, and wear are fixed identity anchors, not repeated actions. Transformation, drawing, grip changes, and mechanism triggers are checked as Tier A events/principal interactions. Preserve weapon specifications before styling the exterior.
 
-## 发力链与支撑
+## Force chains and support
 
-对承重和明显打击，优先检查脚/支撑点—腿髋与腰—躯干肩带—手/兵器的传力关系，并写出接触后的制动、反作用和重心去向。这是检查路径，不是要求每招机械地从脚到手逐段慢放；短打、借力、落势、弹性器械与特定技术可能采用不同组织方式。
+For weight-bearing and clear impacts, prioritize the transfer relationship from feet/support → legs/hips/waist → torso/shoulder girdle → hands/weapon, then describe braking, reaction, and center-of-mass destination after contact. This is a check path, not a requirement to replay every move mechanically foot-to-hand in slow motion. Short strikes, redirection, descending momentum, elastic equipment, and particular techniques may organize force differently.
 
-- 出手前：支撑点在哪里，髋肩是否能在服装和地形约束下运动？
-- 交汇时：身体与兵器方向是否一致，还是有意通过转体架偏？只动手臂却让全身重量无缘无故出现，应改动作或明确能力来源。
-- 收势时：重心落在哪里，哪一肢能接下一动作？后仰、转身或落脚是否来得及？
-- 空中：说明起跳/前一碰撞留下的动量、可用支点或能力推力（空中格挡成立的条件见[空间战术](spatial-tactics.md)的空中规则：借对方刃、墙、柱等的冲量蹬踏，或既定能力）；允许转体调整姿态，不把无支撑摆腿自动当作改变整体飞行方向的充分原因。
-- 负伤/负重：握力、支撑侧、肩腰活动与呼吸变化须进入连招选择，不让情绪爆发自动清除动作限制。
+- Before action: where is support, and can hips/shoulders move within costume and terrain constraints?
+- At contact: do body and weapon directions agree, or intentionally turn to deflect? If only the arm moves yet full-body weight appears without cause, revise action or establish the ability source.
+- During recovery: where does weight settle; which limb can take the next action? Is there time to lean, turn, or plant?
+- Airborne: identify momentum from takeoff/previous collision, available support, or power thrust. For airborne blocks, see [spatial tactics](spatial-tactics.md): an impulse through the opponent's blade, wall, pillar, or established ability. Rotation may adjust posture; unsupported leg movement alone does not sufficiently explain changing the entire flight direction.
+- Injury/load: grip strength, support side, shoulder/waist mobility, and breathing must affect combination choices. Emotional surges do not automatically remove movement restrictions.
 
-## 距离感与有效攻击
+## Distance and effective attacks
 
-先在俯视/侧视预演里区分接近距离、有效触及区、贴身受限区与脱离区；数值随人物比例、兵器、步法、身法与能力确定，不套统一米数。攻击线应与对方在交汇时的位置相关，不能朝已经离开的空地挥完再让对方凭空受伤。距离只是位置的一个分量，不能代替位置：同样的距离可以出现在无数方位与高度上，方位角和高度必须写进位置账本。
+In overhead/side previs, distinguish approach range, effective reach, restricted close range, and disengagement range. Values follow body proportions, weapons, footwork, movement skills, and abilities rather than one universal meter count. The attack line must relate to the opponent's position at encounter time. Do not swing at abandoned space and then invent an injury. Distance is only one position component: the same distance exists at countless bearings/heights, so include bearing and height in the position ledger.
 
-有效攻击可以命中，也可以迫使有价值的反应：抬盾暴露下盘、退步让出出口、转头失去目标或中断施法。佯攻也要让观众看出它诱导了什么。双方各自在够不到对方的位置挥舞、对方却夸张格挡，是无效距离；应补进步、延伸机制或改为可读的试探。
+An effective attack may hit or force a useful response: raising a shield exposes low targets, retreat yields an exit, turning the head loses a target, or casting is interrupted. A feint must reveal what it induced. Both parties swinging out of reach while one performs exaggerated blocks is ineffective spacing; add an approach, extension mechanism, or readable probing.
 
-近景放大与透视压缩不会改变实际可达距离。决定性招式至少用关键姿态、完整片段或空间参照证实路径；接触前后姿态与落点能够对上。武器穿过目标、明显留空却配命中效果、格挡面不在攻击线上，优先修动作。
+Close-up magnification and perspective compression do not change real reach. Verify decisive paths through key poses, a full segment, or spatial references; pre/post-contact poses and landing points must align. Fix action first when weapons penetrate targets, hit effects accompany an obvious gap, or the blocking surface misses the attack line.
 
-## 成套连招的记忆点
+## Memorable combinations
 
-围绕一个角色特有的动作关系组织连招母题，例如“架偏—贴进—短打”，而不是把互不相干的招式堆成清单。为母题记录：`进入条件｜可辨起势/轮廓｜主节奏｜连续攻击线｜对方反应｜收势/代价｜可变分支`。
+Organize a combination motif around a character-specific action relationship, such as “deflect—close—short strike,” rather than unrelated moves. Record: `entry conditions | recognizable initiation/silhouette | primary rhythm | continuous attack lines | opponent response | recovery/cost | optional branches`.
 
-记忆点可以是握法、脚步节奏、惯用角度、借环境方式或留白后的突然出手。第一次让观众看清，第二次保留识别特征并改变结果；第三次可以被对手识破，促成变招。按戏长取舍，不强求每套出现三次。短场面可以只用一套有转折的连招。
+A signature may be grip, footwork rhythm, preferred angle, use of terrain, or a sudden strike after silence. Let viewers read it first; retain identifiers but change the result on the second use. A third use might be recognized and countered. Adapt to runtime; no mandatory three repetitions. A short scene may use one combination with a turn.
 
-新创作示例：角色用短杖架偏来刺，进步封住长兵器回线，以肩带杖做短促推击；对手先后退脱离，下一次则缩握抢回中线，迫使短杖者停止同样的贴进。记忆点来自“架偏后贴进”的关系及其被破解，不是给每一步起响亮招名。动作是否成立仍按实际兵器和比例预演。
+Original example: a short-staff fighter deflects a thrust, steps in to close the long weapon's recovery line, and uses the shoulder to drive a brief staff push. The opponent first retreats out of range; next time, a shortened grip retakes the centerline and stops the same close-in. The signature is closing after deflection and its eventual counter, not a grand name for every step. Validate with actual weapon/proportion previs.
 
-先做不带粒子、不持续震屏的动作预演，检查起势、交汇、后果和连招衔接；关键姿态截图能看懂还不够，连续播放时也要成立。仅在静态分镜阶段时，把这项列为待验证，不声称武指已通过动态检验。
+First run action previs without particles or persistent screen shake. Check initiation, encounter, consequence, and connections. Readable key-pose screenshots are insufficient; continuous playback must also hold together. At static-storyboard stage, mark this pending rather than claiming dynamic choreography validation.
 
-如需从真实武术流派和影视武指中检索发力链等原理，在用户明确要求或接受推荐后，读取[动作参考卡系统](action-reference-system.md)；只提炼适合当前支撑、接触和场景的可见措辞，不自动加载其他高级模块。
+When principles such as force chains need visible wording, read relevant [action reference cards](action-reference-system.md) as needed. Do not await additional module authorization or load unrelated libraries. Real schools, film attributions, and unverified facts remain subject to evidence boundaries.
 
-## 动作单元
+## Action unit
 
-| 字段 | 应说明的内容 |
+| Field | Required description |
 |---|---|
-| 起点 | 三维位置（x,y,z）、与对方的相对方位角、距离、各自朝向、所依托的地物锚点、持械手、支撑或飞行方式（位置账本见[空间战术](spatial-tactics.md)） |
-| 意图 | 抢位、诱导、夺械、保护、脱离或打断什么 |
-| 招式路径 | 出招从哪侧、什么高度、向哪个目标运动（这是出招的路径，走位见下一行“位移”） |
-| 应对 | 对方看见了什么，凭什么防、躲、截或硬接 |
-| 位移（走位） | 此刻谁、沿什么路径（进退/离线侧闪/绕步/穿身/沉身/腾跃/借力蹬踏/逼入地形/绕障碍）移动到哪个位置、什么高度、哪个锚点。防守回应必须含位移；原地硬接须声明为“定桩承受”并给理由，且不超过三个回合中的一个 |
-| 交汇 | 接触面、落空间隙或能力判定边界 |
-| 结果 | 谁失衡、移动、受限、消耗、失去目标或得到窗口 |
-| 衔接 | 收势如何变成下一动作，而非瞬间复位；是否与上一动作重叠由动作模式决定 |
-| 主动权 | 此刻谁掌控局势，是否因本次交汇易手，原因是什么 |
-| 代价与痕迹 | 体力、站位、地形或装备留下了什么，会怎样改变下一动作 |
+| Start | Relational or numeric 3D position, relative bearing, distance, each facing, terrain anchor, weapon hand, support/flight method; see [spatial tactics](spatial-tactics.md) position ledger |
+| Intent | What position, lure, disarm, protection, escape, or interruption is sought |
+| Move path | Starting side, height, and target of the attack; this is the attack path, while body travel is in “Displacement” below |
+| Response | What the opponent sees and what enables a block, dodge, interception, or absorption |
+| Displacement (blocking) | Who travels by what path (advance/retreat, off-line dodge, arc, pass, drop, leap, push-off, terrain funnel, obstacle route) to what position, height, and anchor. A defensive response may use travel or a supported hold. Explain the contact and force-redirection mechanism; there is no stationary-defense quota |
+| Encounter | Contact surface, miss clearance, or ability-effect boundary |
+| Result | Who loses balance, moves, becomes restricted, spends resources, loses a target, or gains a window |
+| Connection | How recovery becomes the next action rather than instant reset; overlap follows action mode |
+| Initiative | Who controls the situation now, whether this encounter transfers it, and why |
+| Cost and traces | What remains in stamina, position, terrain, or equipment and how it changes the next action |
 
-不是每项都要单独成镜头。设计时成立，观众需要的信息才进入画面。省略行程可以加速，不能省略决定胜负的机制后再假装它已解释清楚。同一单元格式适用于所有模式；但“交汇后分开、重置、再交汇”只是对决模式的节奏，困兽之斗、潜入、伏击、对练等按[动作模式](action-modes.md)处理重叠、停顿与终态。
+Not every field needs its own shot. Establish the design, then show information viewers need. Omitting travel can accelerate a scene; omitting the decisive mechanism cannot count as explaining it. All modes use this record, but “separate—reset—meet again” is duel rhythm only. Last stands, infiltration, ambushes, and sparring follow [action modes](action-modes.md) for overlap, pauses, and end states.
 
-## 身体与力的阅读
+## Reading bodies and force
 
-- 写实或半写实：支撑脚、髋肩传递、刃口方向和回收路径互相支持；受力者躯干先响应，衣发、配件及环境按需要延续余势。
-- 风格化2D：预备、主姿态、夸张变形、恢复服务于运动方向；拖影和夸张长肢可以出现，前后关键姿态仍能识别人物与目标。
-- 机甲/怪物：支撑面积、转身空间、关节限制、驱动与反冲规则先确定；重量感不等于所有动作都缓慢。
-- 超自然：允许瞬间加速、滞空或非接触冲击，但给稳定的触发与结果语言。世界允许无后坐力时，不强行套真实武器后坐；也不随镜头随意变规则。
+- Realist/semi-realist: supporting foot, hip/shoulder transfer, edge direction, and recovery path support one another. The recipient's torso responds first; clothing/hair, accessories, and environment carry follow-through as needed.
+- Stylized 2D: anticipation, principal pose, exaggerated deformation, and recovery serve movement direction. Smears and stretched limbs are allowed, while adjacent key poses preserve identity and target.
+- Mecha/monsters: establish support area, turning room, joint limits, drive, and recoil rules. Weight does not make all movement slow.
+- Supernatural: instant acceleration, hovering, and non-contact impacts are allowed with stable trigger/result language. If the world allows recoilless weapons, do not force real recoil; do not change rules by shot.
 
-硬接不动的角色，可用攻击侧被架偏、脚下材料受压、防御层形变或对手手臂反震显示力去哪里。避让则展示攻击线确实掠过原位置，不能一边“躲开”一边叠加无依据的受击血光。
+For an unmoving defender, show where force goes through attack-side deflection, compressed ground, deformed defense layers, or recoil in the opponent's arm. Evasion shows the attack truly passing through the abandoned position; do not pair a dodge with unsupported bloody hit effects.
 
-## 多人、护送与特殊武器
+## Multiple characters, escorting, and special weapons
 
-### 横屏同框威胁的左右分区
+### Left/right threat regions in landscape framing
 
-给同框镜头记：`世界方位/局部主轴｜屏幕左/中/右｜前中后景｜当前接触者｜接近/绕路/封口者｜跨区动作与重建时点`。例如护送目标在左后、守方在中、近身敌人在右前、绕路者在右后；当前攻击居中可读，同时保留左侧目标为何限制闪避。分区是本镜头的关系，不是每场都要主角居中、敌人永远在右。
+Record `world direction/local main axis | screen left/center/right | foreground/midground/background | current contact fighter | approaching/flanking/exit-blocking fighters | region crossings and reorientation points`. For example: escort target rear left, defender center, close enemy front right, flanker rear right. Keep current attack readable centrally while preserving why the left-side target limits dodging. These are this shot's relationships, not rules placing every hero centrally and every enemy right.
 
-角色跨越同伴/对手位置时，先用连续全景展示经过，或在越位后给门柱、道路等锚点的新关系镜头，并更新分区。摄影绕到另一侧时左右可交换，世界位置不能随之重置；不能通过镜像翻片修左右却改变惯用手和服饰。边缘敌人只承担能读出的威胁提示，决定性接触回中心安全区或补中景。
+When characters cross allies/opponents, show the passage in a continuous wide or provide a new anchored relationship after crossing, such as a doorpost/road, and update regions. The camera may switch left/right by moving to the other side, but world positions cannot reset. Do not mirror footage to repair screen directions while changing handedness/costume. Edge enemies provide only readable threat cues; decisive contact returns to the central safe area or gets a medium shot.
 
-群战每个时刻可有多条威胁，但保留一条最清楚的交汇路径；其他人推进、绕行或等待射线须有理由。具体轴线处理见 [运镜](camera-and-rhythm.md)，小画面和安全区见 [画幅](framing-and-compliance.md)。
+Group fights can have several threats at once but retain one clearest encounter path; others need reasons for approaching, circling, or waiting for a firing line. See [camera](camera-and-rhythm.md) for axes and [framing](framing-and-compliance.md) for small images/safe areas.
 
-群战将威胁按空间和时机分配：当前接触者、正在接近者、绕路者、封出口者。人物可能被同伴挡住或等待安全射线，但不要全部无理由停住。可以多个威胁同时发生，让一条主要攻防线最清晰，其他威胁通过深度、方向与声画提示存在。
+Distribute group threats by space and timing: current contact, approaching, flanking, blocking exits. Allies may obstruct someone or delay a safe firing line, but do not make everyone stop without reason. Multiple threats may coexist while one attack/defense line stays clearest; depth, direction, and sound/picture cues establish the rest.
 
-护送先固定保护目标的移动能力、搬运负担和攻击线。主角横闪后身后的人是否暴露？救人需要何时抓牢、如何转身、何处落脚？带着受伤者不能突然完成与空手时一样的翻滚。
+For escorting, first lock the protected person's mobility, carrying burden, and attack lines. Does a lateral dodge expose the person behind? When must the rescuer secure a grip, how do they turn, where do they plant? Carrying an injured person cannot suddenly allow the same roll as moving unburdened.
 
-投射兵器记录离手、飞行、落点/回收；软兵器记录握持端、自由端/连接端、松紧和扫掠面；长武器记录墙、门框与同伴是否挡住回摆。范围攻击记录边界和友军位置。无须画全轨迹，但重新出现时有可解释的状态。
+For projectiles, record release, flight, landing/recovery. For flexible weapons, record held end, free/connected end, slack/tension, and swept plane. For long weapons, track whether walls, doorframes, or allies obstruct the backswing. Area attacks track boundaries and ally positions. The full path need not be drawn, but reappearance requires an explainable state.
 
-## 状态账本
+## State ledger
 
-在局势转折或镜头连接处更新，不必逐帧登记：
+Update at turns or shot joins rather than every frame:
 
-`角色三维位置(x,y,z)与朝向｜所依托的地物锚点｜支撑与姿态｜武器/物件持有者｜伤势与体力｜能力余量/限制｜目标状态｜环境变化`
+`character 3D position (x,y,z) and facing | terrain anchor | support and posture | weapon/object ownership | injury and stamina | ability reserve/limits | target state | environmental changes`
 
-保留损伤的行为后果：腿伤影响起跳/落地或迫使换策略；愤怒可以改变判断，不能自动治好腿。体力与伤势须按[体力路由](action-modes.md)改变速度、防守高度、步幅与呼吸，而不只是登记在账本里。能力治疗或修复必须属于现有设定，并写明可见触发及代价。
+Preserve damage's behavioral consequences: a leg wound affects takeoff/landing or strategy; anger may change judgment but cannot heal the leg automatically. [Stamina routing](action-modes.md) must change speed, guard height, stride, and breath, not merely ledger entries. Healing/repair abilities must be established and have visible triggers/costs.
 
-编排前先写[场地卡](spatial-tactics.md)并建立三维位置账本，每个回合更新；若连续两个回合以上相对方位角几乎不变、且无高度或锚点变化，视为“直线对站”，必须改位移（可用 `scripts/check_spatial.py` 检查）。再用极简俯视图和数个关键姿态做通路检查。若拿掉镜头晃动与特效后仍无法说清谁打谁、人在场内怎么走，先修编排，再美化画面。
+Before choreography, check space and support using [spatial tactics](spatial-tactics.md). Use a concise relational record for simple exchanges, or an arena and per-beat position ledger for complex paths. Linear travel or planted defense is valid when motivated. Use an overhead map and key poses where useful. If removing shake/effects leaves attacks, contact or paths unclear, repair choreography before visual polish.
 
-## 全风格打击上下文推演的武指接口
+## Choreography interface for all-style impact context reasoning
 
-接触编排完成后，用同一条受击部位、来力方向/强弱、支撑、防护与环境材料链，推演既定受击方怎样卸力和恢复；重量、伤势和能力规则不能被特效覆盖。不把“重击必干呕/轻击必偏头”当通用表。
-具体颗粒、顿帧感、材质火星与气息只采用[打击上下文](hit-feel.md#全风格打击上下文推演)中适合本次条件的一项或少量关系，优先嵌入原交锋；动作不成立先修距离和传力，不用声光补错。新增摔倒、转体反击、撞墙破坏等若改变支撑、局势或接触对象，仍是原事件负荷，默认不作为“细节”无偿加进去。
-天气真的影响本次路径时再看[环境干预](../visual/environment-interaction.md)，主观摄影按[主观镜语](camera-and-rhythm.md)按需处理。跨链接不等于全量自动加载，完整一轮仍遵守六模块预算。
+After contact choreography, use the same chain of struck body part, force direction/strength, support, protection, and environmental material to infer how the established recipient yields and recovers. Effects cannot override weight, injury, or ability rules. “Heavy hits always cause retching” and “light hits always turn the head” are not universal tables.
+
+For particles, held-frame feel, material sparks, and breath, select one or a few relationships from [impact context](hit-feel.md#all-style-impact-context-reasoning) that fit this case, preferably within the original exchange. Fix distance/force transfer before adding sound/light. New falls, turning counters, or wall destruction that change support, situation, or contact targets remain part of event load; do not add them free as “detail.”
+
+Consult [environment intervention](../visual/environment-interaction.md) when weather actually affects the path, and [subjective camera](camera-and-rhythm.md) as needed. Cross-links do not automatically load everything; read relevant sections and use the shared [request-capacity check](generation-handoff.md).

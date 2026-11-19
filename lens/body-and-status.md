@@ -1,6 +1,7 @@
 # Pass 5: Body, Status, and Proxemics
 
-Body language is the largest channel the old skill left almost unused. Two people at a table are not mannequins who take turns moving their mouths. They sit, shift, hold things, listen, and make status moves the audience feels before it understands them. This pass replaces v1's "one life-action per scene" cap. Plan macro dialogue geometry with [spatial blocking](../dialogue/spatial-blocking.md) before enriching body detail; a hand gesture is not a replacement for that plan. Body beats are **Tier B**: generous, anchored, readable. Terms are **confirm per model**; test how many simultaneous beats your model can follow.
+Evidence: this is a design vocabulary; direct renderer response follows [evidence classes](../models/capabilities.md#evidence-classes). Preserve the craft even when the final prompt uses ordinary visible language.
+Body language is the largest channel the old skill left almost unused. Two people at a table are not mannequins who take turns moving their mouths. They sit, shift, hold things, listen, and make status moves the audience feels before it understands them. This pass replaces v1's "one life-action per scene" cap. Plan macro dialogue geometry with [spatial blocking](../dialogue/spatial-blocking.md) before enriching body detail; a hand gesture is not a replacement for that plan. Body beats are **Tier B**: generous, anchored, readable. test how many simultaneous beats your model can follow.
 
 ## 1. Status is a transaction
 
@@ -12,17 +13,17 @@ The prompt never says "status". It shows the channels below.
 
 ## 2. Status channels
 
-| Channel | 中文 | High status shows as | Low status shows as |
-|---|---|---|---|
-| Height and elevation | 高度 | Sits deeper and higher; stands while the other sits; the better chair | Perches, sits lower, stands when it is rude to |
-| Space | 空间占有 | Takes up room: limbs spread, an arm along the chair back, objects spread across the desk | Contained: knees together, elbows in, things stacked close |
-| Orientation and openness | 朝向与开放 | Body angled away, torso open, unguarded center | Body turned toward the other, hands guarding the front |
-| Stillness and tempo | 静止与节奏 | Slow, unhurried, long still holds | Quick, frequent small adjustments |
-| Eye control | 视线控制 | Looks first, looks longest, looks away last or does not need to | Breaks eye contact first, checks the other's face for permission |
-| Touch | 触碰 | Touches objects and space freely; rarely self-touches | Touches self: neck, cuff, hair, hands |
-| Response latency | 回应延迟 | Lets silence stand, answers late | Answers fast, fills silences |
-| Voice | 声音 | Lower, slower, fewer words, lets sentences end | Higher, faster, trailing, apologetic |
-| Ownership | 所属 | Moves through the other's belongings, owns the room | Asks, waits, stays out of bounds |
+| Channel | High status shows as | Low status shows as |
+| --- | --- | --- |
+| Height and elevation | Sits deeper and higher; stands while the other sits; the better chair | Perches, sits lower, stands when it is rude to |
+| Space | Takes up room: limbs spread, an arm along the chair back, objects spread across the desk | Contained: knees together, elbows in, things stacked close |
+| Orientation and openness | Body angled away, torso open, unguarded center | Body turned toward the other, hands guarding the front |
+| Stillness and tempo | Slow, unhurried, long still holds | Quick, frequent small adjustments |
+| Eye control | Looks first, looks longest, looks away last or does not need to | Breaks eye contact first, checks the other's face for permission |
+| Touch | Touches objects and space freely; rarely self-touches | Touches self: neck, cuff, hair, hands |
+| Response latency | Lets silence stand, answers late | Answers fast, fills silences |
+| Voice | Lower, slower, fewer words, lets sentences end | Higher, faster, trailing, apologetic |
+| Ownership | Moves through the other's belongings, owns the room | Asks, waits, stays out of bounds |
 
 ## 3. Proxemics (distance bands)
 
@@ -40,42 +41,42 @@ Edward Hall's widely used bands: **intimate** about 0–0.45 m, **personal** 0.4
 
 ## 5. Posture lexicon
 
-| Posture | 中文 | Reads as |
-|---|---|---|
-| Sits far back, ankle resting over the opposite knee | 身体靠后，脚踝搭在另一侧膝上 | Ease, ownership, patience |
-| Sits on the front third of the chair, palms flat on thighs | 只坐椅子前三分之一，双手平放膝上 | Readiness, deference, nerves |
-| Hands steepled, fingertips touching | 双手指尖相抵成塔 | Evaluation, control |
-| Arms crossed, weight on one hip | 双臂交叉，重心偏向一侧 | Withholding, defense |
-| Elbows on knees, leaning forward | 手肘撑膝前倾 | Engagement, confession, pressure |
-| Hands behind the back | 双手背在身后 | Authority, patience |
-| One hand in a pocket, shoulder against the wall | 一手插袋，肩靠墙 | Casual challenge |
-| Chin up, eyes lowered | 下巴微抬，目光下垂 | Superiority |
-| Chin tucked, eyes up | 下巴内收，目光上抬 | Deference or wariness |
-| Shoulders dropped and wide | 肩松而开 | Calm |
-| Shoulders raised and forward | 耸肩前扣 | Tension |
-| Weight on the back foot | 重心在后脚 | Reluctance, retreat |
-| Weight on the front foot, torso forward | 重心在前脚 | Commitment, attack |
-| Kneeling sit (跪坐) with straight back | 跪坐，背脊挺直 | Formality in traditional settings |
+| Posture | Reads as |
+| --- | --- |
+| Sits far back, ankle resting over the opposite knee | Ease, ownership, patience |
+| Sits on the front third of the chair, palms flat on thighs | Readiness, deference, nerves |
+| Hands steepled, fingertips touching | Evaluation, control |
+| Arms crossed, weight on one hip | Withholding, defense |
+| Elbows on knees, leaning forward | Engagement, confession, pressure |
+| Hands behind the back | Authority, patience |
+| One hand in a pocket, shoulder against the wall | Casual challenge |
+| Chin up, eyes lowered | Superiority |
+| Chin tucked, eyes up | Deference or wariness |
+| Shoulders dropped and wide | Calm |
+| Shoulders raised and forward | Tension |
+| Weight on the back foot | Reluctance, retreat |
+| Weight on the front foot, torso forward | Commitment, attack |
+| Kneeling sit (formal kneeling posture) with straight back | Formality in traditional settings |
 
 ## 6. Hands and prop business
 
 Prop business is the main way a body "thinks" on screen. It must use **ordinary, setting-consistent props** (Texture Authority: open). Every prop beat has a **function**.
 
-| Business | 中文 | Does |
-|---|---|---|
-| Lifting a cup, lid scraping, sipping | 端杯、拨盖、啜饮 | Delays the answer; punctuates the other's line; shows leisure |
-| Setting a cup down with a small click | 杯子轻磕在桌上 | Closes a point; marks a decision |
-| Turning the cup on its saucer | 转杯 | Displaces nerves; stalling |
-| Pouring or refilling for someone | 斟茶 | Offers or withholds; controls tempo |
-| Pen or brush: writing, capping, tapping | 笔：写、盖帽、敲 | Claims record; signals impatience |
-| Papers: squaring, flipping, sliding across | 整理、翻动、推过桌面 | Gives or withholds information |
-| Glasses: removing, cleaning, resettling | 摘下、擦拭、戴回眼镜 | Buys time; resets the room |
-| Cuff, sleeve, watch | 袖口、衣袖、手表 | Time ownership; tidying under pressure |
-| Keys, coin, ring turned in the fingers | 钥匙、硬币、戒指 | Anxious handling; hidden calculation |
-| Door, window, curtain | 门、窗、帘 | Controls exit and light |
-| Prayer beads (佛珠), jade, fan (折扇) | 佛珠、玉、折扇 | Composure, ritual, a closed fan tapped in the palm like a decision |
-| Chess stones, tea ceremony tools | 棋子、茶具 | Ritual strategy; ordered movements |
-| Weapon hilt: resting hand, thumb on the guard | 剑柄上放手、拇指压护手 | Quiet threat; readiness |
+| Business | Does |
+| --- | --- |
+| Lifting a cup, lid scraping, sipping | Delays the answer; punctuates the other's line; shows leisure |
+| Setting a cup down with a small click | Closes a point; marks a decision |
+| Turning the cup on its saucer | Displaces nerves; stalling |
+| Pouring or refilling for someone | Offers or withholds; controls tempo |
+| Pen or brush: writing, capping, tapping | Claims record; signals impatience |
+| Papers: squaring, flipping, sliding across | Gives or withholds information |
+| Glasses: removing, cleaning, resettling | Buys time; resets the room |
+| Cuff, sleeve, watch | Time ownership; tidying under pressure |
+| Keys, coin, ring turned in the fingers | Anxious handling; hidden calculation |
+| Door, window, curtain | Controls exit and light |
+| Prayer beads (ritual beads), jade, fan (folding fan) | Composure, ritual, a closed fan tapped in the palm like a decision |
+| Chess stones, tea ceremony tools | Ritual strategy; ordered movements |
+| Weapon hilt: resting hand, thumb on the guard | Quiet threat; readiness |
 
 **Prop state is continuity.** Track it: the cup's level, the lid's position, the cigarette's length, the paper pile. Do not reset it between beats or clips.
 
@@ -90,7 +91,7 @@ The listener is half the scene. Write what the listener does while the other spe
 - **A posture shift at a lie or a weak point** (leaning back, tapping a finger, letting the silence lengthen).
 - **Looking away at the weakest sentence**, then back.
 - **Mirroring or refusing to mirror** the other's posture.
-- **Verbal backchannel** in the speech layer ("mm", "right", "是吗") when it fits the character.
+- **Verbal backchannel** in the speech layer ("mm", "right", "really?") when it fits the character.
 
 ## 8. Dyad templates for seated and formal scenes (situation profile A)
 
@@ -126,7 +127,7 @@ The Lens turns this into prose (see `examples/v3-extended-examples.md`).
 
 ## 10. Period and culture
 
-This vocabulary is a **starting point**, not universal rules. Gestures, seating order, and distances differ by culture and era. For period pieces, check etiquette (traditional Chinese seating hierarchy, sleeve handling, the fist-and-palm salute 抱拳礼, who sits facing the door) against the setting. For modern workplaces, adjust for company culture. When unsure, choose the gesture that fits the established world and flag the assumption outside the copy block.
+This vocabulary is a **starting point**, not universal rules. Gestures, seating order, and distances differ by culture and era. For period pieces, check etiquette (traditional Chinese seating hierarchy, sleeve handling, the fist-and-palm salute, who sits facing the door) against the setting. For modern workplaces, adjust for company culture. When unsure, choose the gesture that fits the established world and flag the assumption outside the copy block.
 
 ## 11. Rules (Tier B)
 

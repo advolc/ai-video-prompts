@@ -38,17 +38,7 @@ Silence is a turn too: a long hold with a visible action in it (a lid ticking on
 
 ## 4. Timing math
 
-Conversational speech runs about **2 to 3 English words per second** and about **3.5 to 5 Chinese characters per second**, with pauses taking more. These figures are for **calm speech**. Other states change the pace (hot anger, whisper, grief, breathless, panic): use the table in `situation-profiles.md` section 2 and plan with the pace of the character's state. Then read it aloud.
-
-| Clip length | English speech incl. pauses | Chinese speech incl. pauses |
-|---|---|---|
-| 8 s | about 12–20 words | about 20–32 characters |
-| 12 s | about 20–32 words | about 32–50 characters |
-| 15 s | about 25–40 words | about 40–60 characters |
-
-- Silence share depends on the situation: about 5–15% in a street argument or banter, 20–35% in a formal exchange, 35–55% in a farewell or a confession (`situation-profiles.md`). Do not fill the silence the situation needs.
-- If the speech will not fit, lengthen the clip, split the unit, or cut a turn. Never rush the delivery to cram lines in.
-- These figures are working estimates. Time the real read-through when you can.
+Use the single [speech pace table](situation-profiles.md#2-speech-timing-by-arousal) for state-dependent starting estimates and the selected situation for silence. Count the actual locked words/characters, reserve time for breaths, listener responses and movement, and time a read-through when possible. Do not maintain a separate clip-length word quota here. Estimates are not measured timings. If speech does not fit, preserve its wording and negotiate duration/staging/splitting; do not rush or silently cut a required line.
 
 ## 5. Overlap and interruption
 
@@ -72,7 +62,7 @@ Do not cut to a face for every line. Add camera cues where a change of informati
 
 ## 6b. Framing: choose for acting, not for fear of sync
 
-One observation: on the user's model, two lines spoken in a medium-wide, camera-retreating shot were audible and the lip sync was judged good enough (`models/observed-wuxia-30s-clip.md`). So do not avoid wider framing just to protect sync. Choose framing for **performance**: when a line carries a status shift or a face beat, give it a medium or close shot and a listener beat; when the shot is a moving wide, the lines can still ride on it, but expect little face acting. Verify on your own model; one clip is one data point.
+Do not assume that dialogue always requires a close-up or that a wider frame guarantees poor sync. Verify the target model under the actual shot and audio conditions. Choose framing for **performance**: when a line carries a status shift or a face beat, give it a medium or close shot and a listener beat; when the shot is a moving wide, the lines can still ride on it, but expect little face acting. Verify on your target model; a successful clip is still only one data point.
 
 ## 7. Chaining units (seams)
 

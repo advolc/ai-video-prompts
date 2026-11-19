@@ -1,160 +1,162 @@
-# 台词深度引擎
+# Dialogue Depth Engine
 
-用户明确要求深挖台词/角色语言，或接受[主动推荐](../SKILL.md#主动识别与推荐协议)后启用。先确定动作因果、空间与剧情结果，再加工对白；不把每个5秒试片升级成长篇人物分析。参考卡按需读[台词参考卡库](dialogue-reference-cards.md)，辅助稿使用[台词提示词卡模板](../assets/templates/台词提示词卡模板.md)。
+When a scene contains dialogue, use the relevant internal checks by default according to its purpose; when the user requests a compact version, shorten delivery and optional elaboration while retaining necessary design checks without waiting for additional module authorization. Establish action causality, space, and the story outcome before refining dialogue; do not turn every five-second test into a lengthy character analysis. Read the [Dialogue Reference Cards](dialogue-reference-cards.md) as needed; use the [Dialogue Prompt Card Template](../assets/templates/dialogue-design-card.md) for supporting drafts.
 
 
-台词深化之前，按[对话空间调度](../dialogue/spatial-blocking.md)完成单元空间线；空间选择也适用于普通对话和无声互动，不以启用深度台词分析为前提。保持剧情与台词目标，身体行动不自动新增逼迫、离场或秘密。
-## 四层模型：不填满不出词
+Before deepening dialogue, complete the unit's spatial line according to [Dialogue Spatial Blocking](../dialogue/spatial-blocking.md); spatial choices also apply to ordinary conversations and silent interactions, without requiring in-depth dialogue analysis to be enabled. Preserve the story and dialogue objectives; physical action does not automatically introduce coercion, departures, or secrets.
+## Four-Layer Model: Check the Scene Without Forcing Hidden Meaning
 
-这里的“填满”指内部四个决策都有依据，不要求用户填表。信息够时AI推演；缺项会改变角色或结局时才补问，否则列为候选，不冒称用户已定。
+Here, “fill in” means all four internal decisions have a basis; the user need not complete a form. When information is sufficient, the AI reasons it through; ask only when a missing item would change a character or ending. Otherwise, list it as a candidate without claiming that the user has settled it.
 
-| 层 | 必答问题 | 内部记录示例 |
+| Layer | Required question | Internal record example |
 |---|---|---|
-| 意图层 | 此刻想让谁做出什么改变？ | 让追兵停在门外，而不是表达“很生气” |
-| 潜台词层 | 不能直说/不愿承认的需求、信息或关系是什么？ | 自己已负伤，却要让对方相信仍能守门 |
-| 言语行动层 | 这句话是在对对方做什么？ | 试探、诱导、威吓、恳求、安抚、划界、转移注意 |
-| 风格层 | 题材、角色语言DNA、关系权力与当下负荷怎样约束表达？ | 克制短句；呼吸急，不能长篇解释 |
+| Intention | Whom do they want to change, and how, at this moment? | Make the pursuers stop outside the door, rather than express “being very angry” |
+| Subtext | What need, information, or relationship cannot be stated directly or is not willingly acknowledged? | Already wounded, they must make the other person believe they can still hold the door |
+| Speech act | What is this line doing to the other person? | Probing, leading, intimidating, pleading, reassuring, setting a boundary, diverting attention |
+| Style | How do genre, character language DNA, relational power, and current load constrain expression? | Restrained short sentences; breath is rapid, so no lengthy explanation |
 
-这些词是编剧分析，不进入视频提示词。心理意图必须落到可见身体选择；台词不能替代尚未成立的攻防机制。
+These terms are screenwriting analysis and do not enter the video prompt. Psychological intention must become visible physical choices; dialogue cannot replace an attack-and-defense mechanism that has yet to be established.
 
-## 台词深度三轴（可选加深）
+## Three Axes of Dialogue Depth (Optional Deepening)
 
-仅在full路径且用户明确要“台词更有深度/藏得更深/多层含义/深挖台词”时读；默认启用；用户明确要“简版/lite”时可省略。三轴是内部检查，不要求用户填表，不默认全开。
+Check the relevant axes by default according to context; compact versions may shorten their records while retaining necessary checks. The three axes are internal questions, not a form for the user, and not every line must contain three levels of meaning; direct, sincere, or functional expression can work.
 
-| 轴 | 检查问句 | 可见化候选 |
+| Axis | Check question | Candidates for making it visible |
 |---|---|---|
-| 潜台词分层 | 表层说什么，中层暗示什么关系，深层自己不愿承认什么？ | 三层不必全说；中层可让听者察觉，深层可只留观众，是否揭示服从剧情知情范围 |
-| 信息释放结构 | 谁在什么时候知道什么，这句话说给谁听？ | 说给A却实际影响B，只说一半，用已有物件承载未说部分 |
-| 多重言说对象 | 同时对在场者、不在场者或自己的过去说什么？ | 表面回应在场者，实际回应已确立的缺席关系或过去，不凭空新增往事 |
+| Layers of subtext | What does the surface say, what relationship does the middle layer imply, and what does the speaker refuse to admit at the deepest layer? | All three need not be spoken; the listener may perceive the middle layer while the deepest layer is left to the audience. Whether to reveal it follows the story's information boundaries |
+| Information-release structure | Who knows what, when, and to whom is this line addressed? | Address A while actually affecting B, tell only half, or use an existing object to carry the unsaid portion |
+| Multiple addressees | What is simultaneously being said to someone present, someone absent, or one's own past? | Seemingly answer someone present while actually answering an established absent relationship or past event; do not invent backstory |
 
-三轴与六种深度手法并列，不互相覆盖。一句通常选一轴为主；直白威吓、紧急命令、真诚坦白都可以有效，不因未用三轴判浅，也不为深度强行三轴全用。
+The three axes sit alongside the six depth techniques; neither replaces the other. Usually choose one principal axis per line. Direct intimidation, urgent commands, and sincere confessions can all be effective; do not call them shallow for lacking these axes, or force all three merely to add depth.
 
-## 核心优先：就地取材（防机械套词）
+## Core Priority: Draw From What Is Already There (Prevent Mechanical Phrasing)
 
-台词里的意象必须来自当前画面或已经确立、人物有理由知道的剧情事实，严禁生搬硬套，避免只为显得高深而写台词。在意象选取上按以下顺序；人物意图、知情范围、用户已定事实始终优先。
+Dialogue imagery must come from the current image or established story facts the character has reason to know. Mechanical transplantation is strictly forbidden; avoid writing lines merely to sound profound. Choose imagery in the following order; character intention, information boundaries, and user-established facts always take priority.
 
-1. **第一优先级（现场萃取）**：优先观察正在发生的雪、雨、冰缝、门闩、火光等，选择能承载本场关系变化的一项。画面有雪可谈雪，脚下有冰缝可谈冰，但不要求每句重复天气；与说话目的无关就不用。
-2. **第二优先级（动作绑定）**：人物看向酒杯、握住滴血的剑、护住伤处时，可围绕该物件或动作说话；提及必须改变眼前选择，而不是重复画面。杯中内容、血的归属和伤情未知时不凭空补全。
-3. **第三优先级（题材兜底）**：只有现场和已定关系/动作中确实没有可用锚点时，才从题材种子库借通用意象；纯黑虚空也可能有对手、兵器或旧承诺，先检查这些。借意象不等于新增实体场景、历史、能力或秘密；必要时直接说话或保持沉默，不强造比喻。
+1. **First priority (extract from the scene):** First observe ongoing snow, rain, ice cracks, a door bolt, firelight, and so on, then select something capable of carrying this scene's relationship change. Snow in the image may support talk of snow; ice cracks underfoot may support talk of ice, but not every line must repeat the weather. Omit it when irrelevant to the speaking purpose.
+2. **Second priority (bind to action):** When a character looks at a wine cup, grips a blood-dripping sword, or protects a wound, the line may concern that object or action. Mentioning it must change the immediate choice rather than repeat the image. Do not invent the cup's contents, whose blood it is, or the injury's condition when unknown.
+3. **Third priority (genre fallback):** Borrow generic imagery from the genre seed bank only when the scene and established relationships/actions truly offer no useful anchor. Even a pitch-black void may contain an opponent, a weapon, or an old promise; check these first. Borrowing imagery does not introduce a physical setting, history, ability, or secret. Speak directly or remain silent when appropriate; do not manufacture a metaphor.
 
-权力宣示的窄例外：仅在使用该质感引擎、角色处于上位裁决或权限宣示场景时，合法性锚点可取自已确立的体制授权或身份事实（如“军令在此”），不强制从现场物件萃取；不得新增未确立的权限、历史或秘密。其他质感仍按上述三级取材。
+Narrow exception for asserting authority: only when using that texture engine and the character is delivering a superior's ruling or declaring authority may the legitimacy anchor come from established institutional authorization or identity facts (such as “The military order is here”), rather than a physical object in the scene. Do not invent unestablished powers, history, or secrets. All other textures follow the three priorities above.
 
-先问“这句话想让对方做什么”，再选物象；说到雪、雨或剑本身不代表有潜台词。道具、情报、关系与称谓均不得为了凑一句漂亮话而无依据新增。
+First ask “What does this line want the other person to do?” and only then choose imagery. Mentioning snow, rain, or swords does not itself create subtext. Props, intelligence, relationships, and forms of address must never be introduced without a basis merely to produce a beautiful line.
 
-## 多题材基调种子库（用于定调与启发，严禁直接照抄）
+## Multi-Genre Tone Seed Bank (For Tone and Inspiration; Direct Copying Strictly Forbidden)
 
-以下仅为基调启发种子及原创衍生示例，示例中的人物身份、物件、历史与数值都只是示例前提，不自动带入用户项目。语气是选项，不把所有科幻人物写成机器、所有江湖人物写成沧桑老人。
+The following are only tone seeds and original derivative examples. Character identities, objects, histories, and numbers in the examples are example premises only; they do not automatically enter the user's project. Tone is an option: do not make every science-fiction character sound like a machine or every martial-world character like a world-weary elder.
 
-- **仙侠/玄幻（宿命/苍生）**：种子词：天道、劫数、香火、飞升。可选语气：超然或孤傲。
-  - 衍生示例：“山门前那棵枯了三百年的老梅，偏偏在今天开了花。你说，这是劫，还是命？”仅在山门、老梅和相关历史已定时适用。
-- **科幻/赛博（规则/异化）**：种子词：代码、协议、算力、温度。可选语气：冰冷理性，以技术限制映照人的选择。
-  - 衍生示例：“外面的雨还在下，我的义体却报出只剩三秒的存活窗口。协议中止了。”仅在义体、预警与协议规则已定时适用；时间窗口和概率不能混为同一量。
-- **历史/权谋（天下/制衡）**：种子词：棋局、退路、刀笔、台阶。可选语气：绵里藏针，让一句话服务具体利益。
-  - 衍生示例：“陛下，昨夜御花园的牡丹折了一枝。臣替您查了，不是风吹的，是根烂了。”须已有相应身份、调查依据和可承载的权力关系，不能凭台词新增查证结论。
-- **现代悬疑（日常/崩坏）**：种子词：旧照片、车流、账单、距离。可选语气：日常平静反衬异常。
-  - 衍生示例：“楼下那辆黑色的车，已经停了四个小时。你猜，他们是来抓我的，还是来抓你的？”须已建立车辆、观察时长及人物怀疑的依据，不把猜测当已证实事实。
-- **传统江湖（道义/人情）**：种子词：酒、剑、落叶、残阳。可选语气：豪迈或沧桑。
-  - 衍生示例：“这酒里掺了水，就像你刚才那一剑，虚得很。喝了这碗，咱们两清。”须有酒、刚才的剑招与可了结的关系，不能把“酒剑残阳”当江湖固定套餐。
+- **Xianxia/fantasy (fate/all living beings):** Seed words: the Way of Heaven, tribulation, devotional offerings, ascension. Optional tone: detached or proud and solitary.
+  - Derivative example: “That old plum tree before the sect gate has been withered for three hundred years, yet it flowered today of all days. Tell me: is this tribulation, or fate?” Applicable only when the sect gate, old plum tree, and relevant history are established.
+- **Science fiction/cyberpunk (rules/alienation):** Seed words: code, protocol, computing power, temperature. Optional tone: cold rationality, reflecting human choices through technical limitations.
+  - Derivative example: “The rain outside hasn't stopped, but my cybernetic body reports a survival window of just three seconds. The protocol has terminated.” Applicable only when the cybernetic body, warning, and protocol rules are established; a time window and a probability must not be treated as the same quantity.
+- **Historical/political intrigue (the realm/checks and balances):** Seed words: a chess game, a retreat route, administrative penmanship, a face-saving way out. Optional tone: a needle hidden in silk, with each line serving a concrete interest.
+  - Derivative example: “Your Majesty, a branch broke off a peony in the imperial garden last night. I investigated for you. It wasn't the wind. The roots have rotted.” Requires the corresponding identity, basis for investigation, and a power relationship capable of carrying the implication. Dialogue cannot introduce a newly verified conclusion.
+- **Modern suspense (daily life/breakdown):** Seed words: an old photograph, traffic, bills, distance. Optional tone: everyday calm contrasting with something abnormal.
+  - Derivative example: “That black car downstairs has been parked there for four hours. Do you think they're here for me, or for you?” Requires the vehicle, observation duration, and grounds for the character's suspicion to have been established; do not treat speculation as confirmed fact.
+- **Traditional martial world (principle/human ties):** Seed words: wine, sword, fallen leaves, setting sun. Optional tone: bold or weathered.
+  - Derivative example: “This wine is watered down, just like that sword strike of yours: all show. Drink this bowl, and we're even.” Requires wine, the preceding sword move, and a relationship that can be settled; “wine, sword, setting sun” is not a mandatory martial-world package.
 
-## 三大场景台词生成公式
+## Three Major Scene Formulas for Dialogue Generation
 
-公式是内部编剧支架，不是必须输出的三段格式。每句只采用当前需要的关系与意象，不强制每句话都做比喻或权谋交锋。
+The formulas are internal screenwriting scaffolds, not a mandatory three-part output format. Each line uses only the relationship and imagery currently needed; neither metaphor nor political sparring is compulsory in every line.
 
-1. **打戏/生死对峙**
-   - 公式：身份羁绊＋动作/武器锚点＋极简陈述。
-   - 原则：用少量字制造压迫，克制人物可轻声说狠话；紧急警告、求救或既定张扬人物按实际场景表达，不强制全员低语。没有既定羁绊就不虚构旧情。
-   - 示例：“以前，你的剑只用来斩落叶。今天，它指着谁？”仅在旧事与剑的指向均成立时使用这类结构。
-2. **剧情对话/交锋**
-   - 公式：接住（回应字面意思）→位移（转向当前环境意象）→刺穿（潜台词改变关系或选择）。
-   - 原则：看似闲聊，仍有具体言语行动；真诚交流、日常玩笑不必句句带刺。
-   - 示例：问：“这杯茶，凉了。”答：“凉了，才能品出苦味。”仅在已定关系能赋予“苦味”另一层含义时成立，不能只靠文雅措辞判为深刻。
-3. **内心独白/画外音**
-   - 公式：宏大背景（天下/江湖等）＋微小意象（一滴雨/一阵风等）＋人物对处境的结论。
-   - 原则：片头片尾的凝练段落通常不超两句，不长篇说理；宿命结论仅适合相应人物与主题，现代或喜剧也可落在具体选择上。不把所有独白都写成江湖宿命。
-   - 可选收束只取一种：悖论句、半截话或反问不求解。悖论句对应“悖论自省”，半截话可用于自省或已有具体旧事的轻描，反问对应“反问不求解”；详见下方独白体引擎。旧事轻描也可完整收束，不为凑变体强行截断。
-   - 示例：“人们总说踏入江湖身不由己。可没人告诉我，这江湖的雪，要下到哪一年，才能埋尽所有的债。”仅适配已定江湖、雪与债的主题。
+1. **Fight/life-or-death confrontation**
+   - Formula: identity bond + action/weapon anchor + minimal statement.
+   - Principle: create pressure with few words. Restrained characters may deliver threats softly; urgent warnings, cries for help, and established flamboyant characters follow the actual scene, without forcing everyone to whisper. Do not invent shared history when no bond is established.
+   - Example: “Your sword used to cut only fallen leaves. Who is it pointing at today?” Use this structure only when both that past event and the sword's direction are established.
+2. **Story conversation/verbal exchange**
+   - Formula: receive (answer the literal meaning) → shift (turn to imagery in the current environment) → pierce (subtext changes the relationship or choice).
+   - Principle: an apparent casual chat still performs a concrete speech act; sincere exchanges and everyday jokes need not sting in every sentence.
+   - Example: Question: “This tea has gone cold.” Answer: “Only when it's cold can you taste the bitterness.” Works only when the established relationship gives “bitterness” another meaning; elegant phrasing alone does not make a line profound.
+3. **Interior monologue/voiceover**
+   - Formula: a broad backdrop (the realm/the martial world, and so on) + a small image (a raindrop/a gust of wind, and so on) + the character's conclusion about their situation.
+   - Principle: condensed opening or closing passages usually stay within two sentences, without lengthy argument. Fatalistic conclusions suit only appropriate characters and themes; modern stories or comedies may instead arrive at a concrete choice. Do not turn every monologue into martial-world fatalism.
+   - Choose only one optional ending: paradox, unfinished sentence, or rhetorical question seeking no answer. A paradox corresponds to “Paradoxical self-reflection”; an unfinished sentence can serve self-reflection or an understated reference to an established specific past event; a rhetorical question corresponds to “Rhetorical question seeking no answer.” See the monologue engines below. An understated past event may also end fully; do not truncate it merely to produce a variant.
+   - Example: “People always say that once you enter the martial world, your life is no longer your own. But no one told me how many more years its snow must fall before it buries every debt.” Fits only established themes of the martial world, snow, and debts.
 
-## 台词质感引擎库（可选加深）
+## Dialogue Texture Engine Library (Optional Deepening)
 
-仅在full且用户明确要“台词更有味道/换一种质感/某种说话感觉”时读；默认启用；用户明确要“简版/lite”时可省略。质感与深度轴分开：它给同一深度换说话味道，一句通常一个主引擎，一轮最多一个主引擎加一个辅助；不默认全开。下面是后台语法，不把引擎名和分析粘进视频正文。
+Select an applicable texture for the current character and scene; compact versions may simplify it. The user's specified language feel takes priority. Texture is separate from the depth axes: it changes the speaking flavor at the same depth. Usually use one principal engine per line, with at most one principal and one supporting engine per round; do not enable all by default. The following is backstage grammar; do not paste engine names or analysis into the video body.
 
-### 对白体引擎（有对象，有来有回）
+### Dialogue Engines (An Addressee and an Exchange)
 
-| 引擎 | 触发信号 | 核心语法 | 克制检查 |
+| Engine | Trigger signal | Core grammar | Restraint check |
 |---|---|---|---|
-| 权力宣示 | 上位者被否定资格，需要亮权限 | 接管定义权＋2—3组由补缺到接管权限的递进＋已定合法性锚点＋短收束 | 不堆感叹号或凭空预告后果，排比不超3组；动作时段不够则缩句或移至已获准的对白空当 |
-| 阴柔威胁 | 用亲近和慢制造不安 | 关心句式包裹威胁，已知具体细节替代空泛狠话 | 不靠音量，不为漂亮威胁新增失踪者、秘密或截杀 |
-| 反讽试探 | 双方都不亮底牌 | 表面赞同或请教，实际否定或逼问；答非所问 | 不解释反讽，不每句带刺，线索须在既定知情范围 |
-| 情感压迫 | 亲密关系指责、挽留、决裂 | 用具体旧事与选择承载指责，停顿可代替哭喊 | 不用抽象情绪包办表演，不编造旧事；真诚坦白仍可直说 |
-| 谈判博弈 | 双方有筹码，要交换 | 报价、压价、试底线，以可兑现条件组织 | 条件必须在人物控制范围，不写无筹码空话 |
-| 留白/沉默 | 话越少越重，关系临界 | 短句、打断、不回答承担信息 | 不补解释；等待对象清楚，沉默不是自动停掉原对白 |
+| Assertion of authority | A superior's qualification is denied, requiring a declaration of authority | Take over the power to define + 2–3 escalating groups moving from filling gaps to assuming authority + established legitimacy anchor + short close | Do not pile on exclamation marks or predict baseless consequences; no more than 3 parallel groups. Shorten the line when the action interval is insufficient, or move it to an authorized dialogue opening |
+| Soft-spoken menace | Closeness and slowness create unease | Wrap a threat in caring phrasing; replace generic threats with known specific details | Do not rely on volume or invent missing people, secrets, or intercepted killings for an elegant threat |
+| Ironic probing | Neither side shows their cards | Apparent agreement or a request for guidance actually negates or presses a question; answering obliquely | Do not explain the irony or make every sentence barbed; clues must remain within established information boundaries |
+| Emotional pressure | Accusation, attempts to retain someone, or rupture in an intimate relationship | Carry accusation through specific past events and choices; pauses can replace crying or shouting | Do not let abstract emotion stand in for all performance or fabricate past events; sincere confession may still be direct |
+| Negotiation | Both sides possess bargaining chips and seek an exchange | Offers, counteroffers, testing limits, organized around deliverable conditions | Conditions must be within the character's control; no empty talk without leverage |
+| Omission/silence | Fewer words carry greater weight as a relationship reaches a threshold | Short lines, interruptions, and nonanswers carry information | Add no explanation; make the object of waiting clear. Silence does not automatically cancel the original dialogue |
 
-### 独白体引擎（无即时对象，或对象不在场）
+### Monologue Engines (No Immediate Addressee, or an Absent One)
 
-| 引擎 | 触发信号 | 核心语法 | 克制检查 |
+| Engine | Trigger signal | Core grammar | Restraint check |
 |---|---|---|---|
-| 悖论自省 | 失去之后、独处、回忆 | 一个悖论＋一次时间对照＋半截话或反问收束 | 不同时叠满收束，不补全故意留下的话，不堆抽象情绪 |
-| 旧事轻描 | 一件小事说很大的事 | 已定具体旧事＋轻描淡写一句＋不解释 | 以可指认的小事承载情绪，不能只写“那句话/那件事”冒充具体 |
-| 江湖意象 | 景大人孤，题材相容 | 宏大背景＋微小意象＋人物对处境的结论 | 意象来自已定世界，不新增物件；现代或喜剧不强写江湖 |
-| 反问不求解 | 问句承担已认定的感叹 | 一次不求答案的反问 | 不连发反问，后面不补解释；仍可被具体人物语言DNA调整 |
+| Paradoxical self-reflection | After loss, solitude, recollection | One paradox + one temporal contrast + an unfinished sentence or rhetorical-question ending | Do not stack every ending, complete words deliberately left unfinished, or pile on abstract emotion |
+| Understated past event | A small incident speaks to something large | Established specific past event + one understated sentence + no explanation | Carry emotion through an identifiable small incident; “that sentence/that thing” alone cannot pass for specificity |
+| Martial-world imagery | Vast scenery, a solitary person, and a compatible genre | Broad backdrop + small image + the character's conclusion about the situation | Imagery comes from the established world; introduce no objects. Do not force the martial world into modern stories or comedies |
+| Rhetorical question seeking no answer | A question carries an already-held exclamation | One rhetorical question that seeks no answer | Do not fire off successive rhetorical questions or add explanation afterward; the specific character's language DNA may still modify it |
 
-### 加载路由
+### Loading Routes
 
-- 只说“深挖台词”：四层模型＋三轴，不自动开质感引擎。
-- “上位者宣示/西厂那类权限交锋”：在已定身份支持下选权力宣示；不照抄影视原句或带入机构设定。
-- 只有“压迫感”先据当前关系辨别是权力、亲密关系还是环境压力，不能自动路由权力宣示；语境不足只澄清所需的一点。
-- “阴柔反派/笑里藏刀”：阴柔威胁；“互相试探/都不说实话”：反讽试探；有筹码交换才选谈判。
-- “独白/旁白/说不出来的感觉”：在独白体按具体语境选择，不强塞有对手的权力对白。
-- “换一种台词质感”：列上述六个对白体与四个独白体的名字供选，同时接受自定，不默认替选；若已明确授权代选，则在范围内选一主味道并按代定告知说明。
-- lean未展开时只保原基础表达，不偷读本节；用户明确只要一条味道示例可局部升级，仅给一条核心语法与一句适配示例，不展开全部克制检查。
+- “Explore the dialogue more deeply” alone: use the four-layer model and three axes; do not automatically enable texture engines.
+- “A superior asserting authority/an authority clash like the Western Depot”: choose assertion of authority when supported by established identity; do not copy film/TV lines or import the institution's setting.
+- With only “a sense of pressure,” first distinguish power, intimate relationship, or environmental pressure from the current relationship. Do not automatically route to assertion of authority; when context is insufficient, clarify only the needed point.
+- “A soft-spoken villain/a knife behind a smile”: soft-spoken menace. “Probing each other/neither tells the truth”: ironic probing. Choose negotiation only when bargaining chips are being exchanged.
+- “Monologue/narration/a feeling that cannot be said”: choose among monologue engines according to context; do not force in power dialogue requiring an opponent.
+- “Try another dialogue texture”: offer the names of the six dialogue engines and four monologue engines above and accept custom choices; do not select by default. If selection has already been explicitly delegated, choose one main flavor within scope and disclose it under the rule for AI-decided choices.
+- When the user wants only one line or one flavor example, deliver only the corresponding expression and necessary internal checks, without expanding the full engine catalog. A compact version still respects established intention and facts.
 
-### 与现有规则的关系
+### Relationship to Existing Rules
 
-不改四层模型、六种手法与三大场景公式；只在适用公式内选择说话味道。只有权力宣示使用上方合法性锚点窄例外。全部引擎共用不强叠手法、不新增现场物件/历史、不改变已定知情范围与动作负荷的约束。主引擎承担言语行动，辅助只改一层措辞；专业分析、停顿与重音仍转制作备注。
+The four-layer model, six techniques, and three major scene formulas remain unchanged; select a speaking flavor only within an applicable formula. Only assertion of authority uses the narrow legitimacy-anchor exception above. Every engine shares the constraints against forcing multiple techniques, introducing scene objects/history, or changing established information boundaries and action load. The principal engine carries the speech act; the supporting engine changes only one layer of phrasing. Professional analysis, pauses, and stress still move to production notes.
 
-## 角色语言 DNA 卡
+## Character Language DNA Card
 
-每人记录：`句长倾向｜常用词/回避词｜称呼方式｜口癖及使用频率｜陈述/提问习惯｜压力下的变化｜对不同对象的差异`。语言卡服务于选择，不强迫每句复读口癖。压力可以让话变短、断续、礼貌过度或重复某词，取一种最贴人物的变化，不能所有机制一起开。
+Record for each person: `Sentence-length tendency | Frequent/avoided words | Forms of address | Catchphrases and frequency | Statement/question habits | Changes under pressure | Differences by addressee`. The language card supports choices; it does not force a catchphrase into every sentence. Pressure may shorten or fragment speech, produce excessive politeness, or cause a repeated word. Choose the one change most suited to the character; do not activate every mechanism together.
 
-角色DNA属于管理/设计信息；最终配音稿只保留选定文本、说话者与真正需要的表演标注。
+Character DNA is management/design information; the final voice-recording script keeps only the selected text, speaker, and performance annotations that are truly needed.
 
-## 生成管线
+## Generation Pipeline
 
-剧情节点→锁动作空当、人物事实与知情边界→填四层模型→提取现场/动作锚点→选合适场景公式与一种主手法→按语言DNA写1—3个备选→试读删减并选定一版→少量可见表演→生成/后期分流。
+Story beat → lock action openings, character facts, and information boundaries → fill the four-layer model → extract scene/action anchors → select an appropriate scene formula and one principal technique → write 1–3 alternatives according to language DNA → read aloud, trim, and select one version → add a small amount of visible performance → route to generation/postproduction.
 
-不为公式或参考卡改掉已定剧情。用户已给原句时保留其意图、信息揭示顺序、关键招式名与角色关系；改变这些项先说明候选。没有实际试读就标“待试读”，不编造精确秒数；备选留设计阶段，最终只交选定版本，不让用户在工程表和白话之间再选。
+Do not alter the established story to suit a formula or reference card. When the user supplies original lines, preserve their intention, information-release order, key move names, and character relationships; present changes to those items as candidates first. Without an actual read-through, mark “read-through pending” and do not invent precise timings. Alternatives stay in the design stage; deliver only the selected final version without making the user choose again between an engineering table and plain language.
 
-## 六种深度手法及判定规则
+## Six Depth Techniques and Their Acceptance Rules
 
-| 手法 | 何时使用 | 原创示例 | 合格判定 |
+| Technique | When to use | Original example | Acceptance criterion |
 |---|---|---|---|
-| 答非所问 | 人物要回避危险信息，同时改变对方注意 | 问“你怕了？”答“门还没关。” | 回答仍与眼前目标有关，观众能理解回避 |
-| 信息差 | 双方掌握线索不对称 | “你怎么知道是北门？” | 既定剧情已支持那条信息，不凭空加秘密 |
-| 重复关键词 | 同一词因关系变化而换含义 | 前段“跟着我”，后段“这次，跟着我。” | 前后行动或权力确有变化 |
-| 具体化 | 抽象关心/恐惧需要落在物件上 | 用“扣子扣好”表达临别照顾 | 物件在场，人物关系支持这种说法 |
-| 未完成句 | 被动作/决定打断，保留未说出口的选择 | “你要是再往前——”随即被撞门声打断 | 打断有可见/可听原因，句子不是随意省略 |
-| 言行错位 | 掩饰、逞强或诱导 | 说“随你”，手却按住门闩 | 行为能解释矛盾，不破坏已定人物动机 |
+| Oblique answer | A character avoids dangerous information while redirecting attention | Asked “Are you afraid?” they answer “The door is still open.” | The answer still relates to the immediate goal, and the audience can understand the evasion |
+| Information gap | The sides possess unequal clues | “How did you know it was the north gate?” | The established story supports that information; do not invent secrets |
+| Repeated keyword | A word gains a different meaning as the relationship changes | Earlier, “Follow me”; later, “This time, follow me.” | Action or power has actually changed between the two instances |
+| Concretization | Abstract care/fear needs grounding in an object | “Button up” conveys care before parting | The object is present and the relationship supports that wording |
+| Unfinished sentence | An action/decision interrupts speech, retaining an unspoken choice | “If you take one more step—” is interrupted by a crash against the door | An audible/visible cause motivates the interruption; the sentence is not arbitrarily omitted |
+| Speech-action mismatch | Concealment, bravado, or inducement | They say “Suit yourself,” yet hold down the door bolt | Behavior explains the contradiction without breaking established motivation |
 
-一句话通常选一种主手法，不为“深度”强行叠满六种。语义直接可以是有效威吓/紧急命令，不把“我要杀了你”一概判成坏台词；只有它未实现本场具体意图时才提出改进。
+Usually choose one principal technique per line; do not force all six together for “depth.” Direct meaning may be effective intimidation or an urgent command. Do not universally dismiss “I'll kill you” as bad dialogue; suggest improvement only when it fails to serve this scene's concrete intention.
 
-## 负向约束清单
+## Negative Constraints
 
-- **反中二律（服务本场角色）**：克制、写实的对峙避免大喊招式名、长篇解释动机和无缘由咆哮。用户指定的核心招式名、仪式化报招、热血或喜剧风格必须保留，不把“反中二”当删用户设定的理由。短促动手时，选定狠话默认争取十字以内；这是精简目标，不是全题材或所有镜头的硬字数上限，仍以身体负荷和实际语气试读为准。
-- **反现代律（仅古风语言目标适用）**：古风/半文半白人物避免“搞定”等突兀口水表达，并按身份与年代选择措辞；“逻辑”“你冷静点”等是否合适看题材、人物与语境，不全局禁词。现代悬疑、科幻和日常人物按其语言DNA自然说话，不强制古雅。
-- 不以“我很愤怒/害怕”代替全部表演；用户明确需要直白坦白、喜剧或仪式表达时保留其意图。
-- 不无理由解释完整计划、复述观众已看清的画面或替所有角色旁白心理；不把说到天气就当作人物深度。
-- 不改变用户设定的知情范围、胜负、动机、伤势和关键台词含义来凑潜台词；不新增现场物件或历史给种子词配戏。
-- 不在高速翻滚、屏息受击等冲突时段塞长句；需要长独白时提议动作空当或画外声，不私自改场。
-- 不把多个备选同时当正式对白，不把原创示例冒充影视引文或已发生的剧情。
+- **Against adolescent bombast (serve this scene's character):** Restrained, realistic confrontations avoid shouted move names, lengthy motive explanations, and unmotivated roaring. Preserve user-specified core move names, ritual move announcements, hot-blooded styles, and comedy; “against adolescent bombast” is no reason to delete user settings. During brief physical action, aim by default to keep the selected threat within ten Chinese characters; this is a concision target, not a hard character limit for every genre or shot. Physical load and an actual read-through in the intended tone still govern.
+- **Against anachronistic modern phrasing (only for a period-language target):** Period-style/semiclassical characters avoid jarringly casual expressions such as “get it sorted,” choosing language according to identity and era. Whether “logic,” “calm down,” and similar expressions fit depends on genre, character, and context; they are not globally banned words. Modern suspense, science-fiction, and everyday characters speak naturally according to their language DNA, without compulsory archaic elegance.
+- Do not let “I am very angry/afraid” replace all performance; preserve the user's intention when direct confession, comedy, or ritual expression is explicitly required.
+- Do not explain a complete plan without cause, repeat images the audience has already understood, or narrate every character's psychology; talk of weather is not automatically character depth.
+- Do not change user-established information boundaries, victory/defeat, motives, injuries, or the meaning of key lines to create subtext; do not invent scene objects or history to stage seed words.
+- Do not insert long lines into conflicting intervals such as high-speed rolling or taking a blow while holding one's breath. When a long monologue is needed, propose an action opening or voiceover; do not silently change the scene.
+- Do not treat multiple alternatives as simultaneous official dialogue, or present original examples as film/TV quotations or events that have already happened in the story.
 
-## 音频与口型：强制分流
+## Audio and Lip Sync: Mandatory Routing
 
-**带复杂停顿、重音、潜台词解析的台词深度卡，整体进入制作备注/后期配音区。** 包含说话者、选定台词、意图、停顿、重音、呼吸、画内/画外、音频与口型待验项；不能把整张卡或省略号表演说明粘给视频模型。
+**An entire dialogue depth card containing complex pauses, stress, and subtext analysis goes into production notes/the postproduction dialogue-recording area.** It includes the speaker, selected line, intention, pauses, stress, breathing, on-screen/off-screen delivery, and audio/lip-sync items awaiting verification. Do not paste the entire card or ellipsis-based performance directions into a video model.
 
-**v3默认通道**：选定台词以口语化的引号台词写入视频正文的时间线，附发声提示与对应身体节拍（见[口语层](../dialogue/spoken-register.md)与[对话单元](../dialogue/conversation-units.md)），同时在制作备注给出配音稿。口语化改写不改变台词的意图、信息顺序与关键词；微表情与高速打斗仍分开设计。口型同步未经验证前不作承诺，也不自动上传、付费或调用任何工具。
+**v3 default channel:** Put the selected line into the video body's timeline as conversational quoted dialogue, with a vocal cue and corresponding physical beat (see [Spoken Register](../dialogue/spoken-register.md) and [Conversation Units](../dialogue/conversation-units.md)), and also provide a voice-recording script in production notes. A conversational rewrite does not change the line's intention, information order, or keywords; microexpressions and high-speed fighting remain separately designed. Make no lip-sync promise before verification, and do not automatically upload, pay, or call any tool.
 
-只有本次已核实支持原生对白、用户明确采用且需要精确说出的短句，才按[生成交接](generation-handoff.md)把选定短句与说话者、动作触发写入生成层；复杂深度卡仍留后期。原生音效支持、对白支持与精准对口型支持分别确认，不能相互推定。纯文本交付也不把对白卡、四层分析或后期说明混进视频正文。
+Capability verification determines the actual execution channel, not whether dialogue is designed. Following section 5 of [Generation Handoff](generation-handoff.md), include the selected quoted line, speaker, and brief vocal cue in the body by default. When capability is unknown, mark native dialogue and lip sync as unverified outside the body and attach a voice-recording script. Adapt to the user's goal when they choose visual-only or input prepared specifically for postproduction dubbing. Complex depth cards never enter the body; verify sound effects, dialogue, voice control, and precise lip sync separately.
 
-## 单句与场景分工
+## Division of Work Between Lines and Scenes
 
-本文件加工单句意图、潜台词和语言DNA；[对话场景](../narrative/story-and-scene.md)组织站位、正反打、反应和信息节奏。场景设计不自动授权深挖台词，复杂停顿和重音继续分流到制作备注。
+This file develops individual-line intention, subtext, and language DNA; [Dialogue Scenes](../narrative/story-and-scene.md) organizes blocking, shot/reverse shot, reactions, and information rhythm. Carry out the dialogue design this scene needs by default according to context. Keep complex pause and stress analysis in production notes, without expanding story material the user has not authorized.
+
+

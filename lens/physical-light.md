@@ -1,6 +1,7 @@
 # Pass 2: Physical Light and Atmosphere
 
-Name the **source first**, then the emotion. Light that has a place, a direction, a color temperature, and a falloff reads as photographed. Light that is only "dramatic" reads as generated. This pass carries over v1's lighting rules and extends them. Terms are **confirm per model**.
+Evidence: this is a design vocabulary; direct renderer response follows [evidence classes](../models/capabilities.md#evidence-classes). Preserve the craft even when the final prompt uses ordinary visible language.
+Name the **source first**, then the emotion. Light that has a place, a direction, a color temperature, and a falloff reads as photographed. Light that is only "dramatic" reads as generated. This pass carries over v1's lighting rules and extends them. 
 
 ## 1. Source before mood
 
@@ -10,30 +11,30 @@ Name the **source first**, then the emotion. Light that has a place, a direction
 
 ## 2. Color temperature families (approximate)
 
-| Source | 中文 | About | Look |
-|---|---|---|---|
-| Candle / oil lamp | 烛光/油灯 | 1800–2000 K | Deep orange, flicker, tiny pool |
-| Sodium street lamp | 钠灯路灯 | ~2000 K | Saturated orange, flat |
-| Tungsten bulb | 钨丝灯 | 2700–3200 K | Warm amber, cozy to tense |
-| Fluorescent | 荧光灯 | ~4000 K, green cast | Institutional, sickly skin |
-| Midday daylight | 正午日光 | 5500–5600 K | Neutral white, hard shadows |
-| Overcast | 阴天 | ~6500 K | Cool, soft, low contrast |
-| Open shade, blue hour | 阴影、蓝调时刻 | 7000–10000 K | Blue, calm, melancholy |
-| Moonlight (as rendered) | 月光 | reads blue against tungsten | Cool edge light, low intensity |
+| Source | About | Look |
+| --- | --- | --- |
+| Candle / oil lamp | 1800–2000 K | Deep orange, flicker, tiny pool |
+| Sodium street lamp | ~2000 K | Saturated orange, flat |
+| Tungsten bulb | 2700–3200 K | Warm amber, cozy to tense |
+| Fluorescent | ~4000 K, green cast | Institutional, sickly skin |
+| Midday daylight | 5500–5600 K | Neutral white, hard shadows |
+| Overcast | ~6500 K | Cool, soft, low contrast |
+| Open shade, blue hour | 7000–10000 K | Blue, calm, melancholy |
+| Moonlight (as rendered) | reads blue against tungsten | Cool edge light, low intensity |
 
 A shot uses **one family** for the key, with at most one contrasting practical (warm lamp against cool window). Write the contrast as depiction: "cool grey window light on the left half of his face, a warm lamp glow on the desk".
 
 ## 3. Direction and modeling
 
-| Position | 中文 | Visible effect | Risk and fix |
-|---|---|---|---|
-| Frontal | 顺光 | Face and cloth read clearly | Flat: separate with background layers |
-| Side | 侧光 | Volume, texture, contact surfaces | Keep detail on the dark side |
-| Back, rim | 逆光/轮廓光 | Silhouette, rain streaks, hair edge | Do not black out the subject |
-| Top | 顶光 | Pressed shoulders, deep eye sockets | Give eyes a natural reflection |
-| Under | 底光 | Unease, threat | Not automatically evil |
-| Short or broad | 窄/宽光 | Side of face away from camera lit (short) or toward camera (broad) | Short slims, broad opens |
-| Loop, Rembrandt, split, butterfly | 环形/伦勃朗/分割/蝴蝶光 | Named facial patterns | Always add the depiction ("a small triangle of light on the shadowed cheek") |
+| Position | Visible effect | Risk and fix |
+| --- | --- | --- |
+| Frontal | Face and cloth read clearly | Flat: separate with background layers |
+| Side | Volume, texture, contact surfaces | Keep detail on the dark side |
+| Back, rim | Silhouette, rain streaks, hair edge | Do not black out the subject |
+| Top | Pressed shoulders, deep eye sockets | Give eyes a natural reflection |
+| Under | Unease, threat | Not automatically evil |
+| Short or broad | Side of face away from camera lit (short) or toward camera (broad) | Short slims, broad opens |
+| Loop, Rembrandt, split, butterfly | Named facial patterns | Always add the depiction ("a small triangle of light on the shadowed cheek") |
 
 ## 4. Quality, falloff, fill
 
@@ -56,16 +57,16 @@ Dead eyes are a classic AI tell. Give the eyes a **catchlight** from a named sou
 
 ## 7. Atmosphere
 
-| Element | 中文 | Depict as | Needs |
-|---|---|---|---|
-| Haze / mist | 薄雾 | Visible shafts, lifted shadows, soft glow around lamps | Established setting |
-| Dust motes | 浮尘 | Specks drifting in a light beam, turning slowly | A beam and still air |
-| Steam | 蒸汽 | Thin rise from a cup, curling when someone moves | A hot object |
-| Smoke | 烟 | Slow drift following the air | An existing source |
-| Breath fog | 呼出白气 | A pale puff at each exhale | Cold air, around 5 C or colder |
-| Rain | 雨 | Streaks backlit, ripples, wet sheen | Established weather |
-| Wet surfaces | 湿面 | Reflections of nearby lights, darker cloth | Rain or recent wet |
-| Sweat sheen | 汗光 | Fine shine at hairline, temple, upper lip | Effort or heat |
+| Element | Depict as | Needs |
+| --- | --- | --- |
+| Haze / mist | Visible shafts, lifted shadows, soft glow around lamps | Established setting |
+| Dust motes | Specks drifting in a light beam, turning slowly | A beam and still air |
+| Steam | Thin rise from a cup, curling when someone moves | A hot object |
+| Smoke | Slow drift following the air | An existing source |
+| Breath fog | A pale puff at each exhale | Cold air, around 5 C or colder |
+| Rain | Streaks backlit, ripples, wet sheen | Established weather |
+| Wet surfaces | Reflections of nearby lights, darker cloth | Rain or recent wet |
+| Sweat sheen | Fine shine at hairline, temple, upper lip | Effort or heat |
 
 ## 8. Environmental micro-motion
 
@@ -78,13 +79,13 @@ Small, continuous motion makes a scene feel inhabited. It must follow the **esta
 
 ## 9. Time-of-day palettes
 
-| Time | 中文 | Palette |
-|---|---|---|
-| Golden hour | 黄金时刻 | Low amber sun, long soft shadows, warm skin, rim on hair |
-| Blue hour | 蓝调时刻 | Deep blue ambient with warm windows |
-| Overcast noon | 阴天正午 | Even soft light, pale shadows |
-| Night interior | 夜间室内 | Pools of practical light, dark corners |
-| Dawn | 黎明 | Pale cool light warming at the horizon |
+| Time | Palette |
+| --- | --- |
+| Golden hour | Low amber sun, long soft shadows, warm skin, rim on hair |
+| Blue hour | Deep blue ambient with warm windows |
+| Overcast noon | Even soft light, pale shadows |
+| Night interior | Pools of practical light, dark corners |
+| Dawn | Pale cool light warming at the horizon |
 
 ## 10. Light and skin
 
@@ -94,22 +95,8 @@ Skin shows depth when light grazes it: side or three-quarter light brings out po
 
 - *Interior power scene:* "A low tungsten desk lamp throws amber light across Wu's lower face from the left, steep falloff dropping his right cheek into shadow; cool grey window light behind Chen rims his silver hair, and a small window-shaped highlight shows in each of his eyes. Dust turns slowly in the window beam."
 - *Night exterior:* "Snow falls through the cold blue ambient light; a lantern on the doorpost throws amber light across the threshold and onto Lin's right cheek; each exhale leaves a pale puff in front of her face."
-- *中文：* "窗外的冷灰天光从左后方落在他肩上，桌边的钨丝灯在他下巴投下一小片暖色；两只眼睛里各有一个窗形的亮点，杯口的热气被他的呼吸吹得微微一偏。"
+- *Alternate wording:* "Cool grey window light falls on his shoulder from behind and to the left; the tungsten desk lamp leaves a small warm patch on his chin. A window-shaped catchlight appears in each eye, and his breath gently bends the steam above the cup."
 
 ## 12. Mood and context routing
 
-Light should answer the Context Profile (`core/context-routing.md`), not a preset.
-
-| Context | Lighting behavior |
-|---|---|
-| Private, intimate | Small warm sources; the light pool shrinks with closeness; shadows hold the edges |
-| Public, formal | Even, structural light (ceiling, daylight, windows); little shadow drama |
-| High stakes | More contrast; a single hard source; deeper shadow |
-| Low stakes, comic | High key, even, saturated |
-| Public humiliation or exposure | Flat bright light that hides nothing |
-| Stealth | One hard source, cool or night; deep shadow; the subject at the edge of the light |
-| Dominance | A clean edge light on the dominant; the other in softer or mixed light |
-| Grief | Soft window light, low contrast |
-| Time pressure | Moving or changing light (a flickering lamp, passing headlights) only if the source exists |
-
-The sources named in the scene stay consistent; routing chooses how they are used (how close, how hard, how much), never invents a new one.
+Use the single [context-to-look table](optics-and-stock.md#10-routing-the-look-from-context) for creative starting points. This file owns source direction, quality, falloff and material interaction, not a second mood preset system. Existing sources constrain the design: a turn in emotion does not make a lamp dim or a new source appear without an established cause. Render the selected mood through actual source placement, exposure and framing consistent with the scene.

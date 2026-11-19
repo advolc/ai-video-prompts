@@ -1,70 +1,70 @@
-# 动作参考卡系统
+# Action Reference Card System
 
-本模块用于把参考转为本场可见动作，属于可选设计工具。仅在用户点名要求动作参考/授权深挖，或接受[主动推荐](../SKILL.md#主动识别与推荐协议)后读取和应用；不因发现“激烈”二字就自动加载所有高级模块。
+Use this module to turn existing references or established actions into visible paths, support, and contact for the current scene. When an action has an execution gap, or the user requests reference analysis, use the relevant cards as needed; do not wait for an additional module to be enabled, or load the whole library merely because the request says “intense.” Follow [source scope](source-scope.md) for the evidence boundaries of references.
 
-## 动作参考卡 JSON 字段
+## Action reference card JSON fields
 
 ```json
 {
   "id": "ACT-EXAMPLE-01",
   "source": {
     "type": "original_design",
-    "title": "原创直拳画面拆解示例",
-    "locator": "本文件示例，未引用特定运动员或影片",
-    "evidence": "编排假设；未做真人动作或生成视频验证"
+    "title": "Original straight-punch visual breakdown example",
+    "locator": "Example in this file; no particular athlete or film is cited",
+    "evidence": "Choreographic hypothesis; not validated through live-action movement or generated video"
   },
-  "domain": "拳击发力",
-  "principle": "支撑、躯干转动与击后回收需要连续",
-  "action_patterns": ["后脚推地", "髋肩朝目标转动", "拳触及目标后收回"],
-  "style_tags": ["写实", "短促", "侧面可读"],
-  "exaggeration": "仅延长衣袖余势，人体支撑按本场设定",
-  "prompt_fragment": "右脚前掌推地，右髋随之向前转动，右肩带右拳沿直线击向对手胸前；拳面触及后右臂收回，重心稳在两脚之间。",
-  "anti_pattern": "手臂单独伸缩却让躯干瞬间跨越原距离",
-  "scene_fit": {"distance": "能触及胸前", "ground": "可承重地面", "camera": "侧面中景", "exclude": "当前支撑脚受伤或空中无推力"}
+  "domain": "Boxing force production",
+  "principle": "Support, torso rotation, and post-strike recovery need continuity",
+  "action_patterns": ["Rear foot pushes against the ground", "Hips and shoulders turn toward the target", "Fist retracts after touching the target"],
+  "style_tags": ["Realistic", "Brief", "Readable from the side"],
+  "exaggeration": "Extend only the sleeve's follow-through; body support follows this scene's setup",
+  "prompt_fragment": "The ball of the right foot pushes against the ground; the right hip turns forward, and the right shoulder carries the right fist along a straight path toward the opponent's chest. After the knuckles touch, the right arm retracts and the center of mass settles between both feet.",
+  "anti_pattern": "The arm extends and retracts alone while the torso instantly crosses the original distance",
+  "scene_fit": {"distance": "Within reach of the chest", "ground": "Weight-bearing ground", "camera": "Side medium shot", "exclude": "The current supporting foot is injured, or the body is airborne with no source of thrust"}
 }
 ```
 
-`id`仅用于检索；`principle`是解释；`prompt_fragment`是适配候选，不是可直接复用的整段最终输入。`source`至少区分用户提供素材、已核原始资料、原创假设；写明文件/链接、页码/时间点与证据边界。没有看过原片或查到资料，不编造真实流派、演员、教练或出处。原创卡不得称为真人教学结论。
+`id` is for retrieval only; `principle` explains the idea; `prompt_fragment` is a candidate for adaptation, not an entire final input ready for direct reuse. At minimum, `source` distinguishes user-supplied material, verified primary material, and original hypotheses; state the file/link, page/timecode, and evidence boundary. Without viewing the original footage or finding the material, do not invent real schools, actors, coaches, or attributions. An original card must not be described as a finding from live-action instruction.
 
-## 参考源分类表
+## Reference source categories
 
-| 分类 | 召回关注点 | 适合记录的观察 | 适配检查 |
+| Category | Retrieval focus | Observations worth recording | Adaptation checks |
 |---|---|---|---|
-| 拳击发力 | 支撑、拳路、护手、回收 | 哪只脚推地、髋肩和拳怎样衔接 | 有效触及、惯用手、脚下摩擦 |
-| 踢拳/泰拳 | 踢击支撑、转髋、近身距离 | 支撑脚位置、膝/胫的运动和回落 | 场地净空、衣甲约束、对手应对 |
-| 散打/传武 | 进退、架接、短打、节奏 | 参考里实际可见的肢体与接触 | 不用流派名称代替动作，不泛化所有门派 |
-| 摔柔 | 抓持、失衡、支点、落地 | 手抓哪里、重心越过什么、怎样落地 | 复杂抓持分期验证，保护身份与肢体数 |
-| 兵器 | 握法、攻击面、刃线、回收 | 兵器哪段与哪里交汇 | 长度、刚柔、握距、穿插与净空 |
-| 影视武指 | 攻防意图、机位、空间欺骗 | 观察到的动作与剪辑怎样分工 | 不能把借位命中当真实力学证明 |
-| 动画作画 | 预备、关键姿态、夸张、恢复 | 轮廓、速度变化、余势方向 | 转到3D时重查支撑和关节，不照搬变形 |
-| 生物力学 | 动量、重心、支撑和负荷 | 已核原始研究/数据的对象与条件 | 不编数值，不把群体研究当本角色精确参数 |
+| Boxing force production | Support, punch path, guard, recovery | Which foot pushes, and how hips, shoulders, and fist connect | Effective reach, handedness, ground friction |
+| Kickboxing / Muay Thai | Kicking support, hip rotation, close range | Supporting-foot placement, knee/shin travel and return | Space clearance, clothing/armor restrictions, opponent response |
+| Sanda / traditional Chinese martial arts | Advance/retreat, interception, short strikes, rhythm | Limbs and contact actually visible in the reference | Do not substitute a school name for an action or generalize across all schools |
+| Wrestling / grappling | Grips, imbalance, pivots, landing | Where hands grip, what the center of mass crosses, how the body lands | Validate complex grips in phases; preserve identity and limb count |
+| Weapons | Grip, striking surface, blade line, recovery | Which part of the weapon meets what | Length, rigidity/flexibility, grip spacing, interpenetration, clearance |
+| Screen fight choreography | Attack/defense intent, camera, spatial illusion | How observed action and editing divide the work | A cheated screen hit is not proof of real mechanics |
+| Animation drawing | Anticipation, key poses, exaggeration, recovery | Silhouette, speed changes, follow-through direction | Recheck support and joints when translating to 3D; do not copy deformation directly |
+| Biomechanics | Momentum, center of mass, support, load | Subjects and conditions of verified primary research/data | Do not invent numbers or treat group research as exact parameters for this character |
 
-真实资料优先使用用户素材及可核的原始教学、原片、作者分析或研究。涉及专业事实而不确定时先核来源；没有检索工具则标“待核参考”，仍可提供明确标注的原创编排候选，不伪装已完成检索。
+For factual material, prioritize user material and verifiable primary instruction, original footage, creator analysis, or research. Verify sources first when uncertain about a specialist fact. Without retrieval tools, mark the reference “pending verification”; clearly labeled original choreography candidates remain possible, but do not pretend retrieval has been completed.
 
-## 检索管线：解析→标签→召回→适配→落位
+## Retrieval pipeline: parse → tag → retrieve → adapt → place
 
-1. 解析任务：提取主动作目的、双方起点、兵器/手位、地面支撑、结局和镜头条件；冻结用户已定记忆点。
-2. 打标签：距离、接触对象、支撑、速度质感、风格夸张等级、场景净空。先找动作缺口，不为填卡增招。
-3. 召回3—5张候选卡：只是内部候选，不等于全部装进同一段；素材不足时如实给较少候选，不编来源凑数。仅展示最有关的差异。
-4. 适配改写：按当前人物左右、惯用手、武器、伤势、材质、机位重写，选择一个主方案；放弃不成立的卡，并记录原因。
-5. 拼入内部主模板：`prompt_fragment`按同一因果链合并/取舍后填【必执行】，`anti_pattern`只择最相关的1—2项填【禁止】。A层事件逐单元仍按“约5秒≤3条独立交互”控制，卡数绝不成为动作额度。
-6. 输出前语义转写：把术语、卡ID和标签移出正文；禁止项转为肯定的可见约束；角色/场景前缀与本段动作融合成自足白话。来源、改编理由与验证状态放制作备注。
+1. Parse the task: extract the main action's goal, both starting positions, weapons/hand positions, ground support, outcome, and camera conditions; freeze the user's established signature moments.
+2. Tag distance, contact target, support, speed character, stylistic exaggeration level, and scene clearance. Find the action gap first; do not add moves to fill a card.
+3. Retrieve 3–5 candidate cards: these are internal candidates, not a requirement to put them all in one segment. Honestly provide fewer when material is limited; do not invent sources to meet a count. Show only the most relevant differences.
+4. Adapt: rewrite for the characters' current left/right, handedness, weapons, injuries, materials, and camera; choose one primary plan. Reject cards that do not fit and record why.
+5. Integrate into the internal design record: merge/select `prompt_fragment` material along the same causal chain; use `anti_pattern` to check the most relevant current failure risk, without carrying old template labels into the prose. Preserve independent events individually, checking duration, contact, and simultaneous demands through [generation handoff](generation-handoff.md). Card count is not an action allowance and does not automatically determine request splitting.
+6. Transcribe semantically before output: remove terminology, card IDs, and labels from the body; turn prohibitions into positive visible conditions; integrate character/setting prefixes with the segment's action into self-contained plain prose. Put sources, adaptation reasons, and validation status in production notes.
 
-## 原理→措辞映射表
+## Principle → wording map
 
-以下是编排措辞示范，实际采用前需匹配人物姿态；不是要求每种动作都依次完成同一套发力。
+These demonstrate choreographic wording. Match the character's posture before using them; they do not require every action to use the same force-production sequence.
 
-| 设计术语 | 可见措辞候选 | 不能省略的条件 |
+| Design term | Candidate visible wording | Conditions that cannot be omitted |
 |---|---|---|
-| 发力链 | 后脚前掌推地，髋部先向目标转动，肩部带手臂向前送出 | 哪只脚可承重、手碰到哪里 |
-| 重心下沉 | 双膝弯曲，骨盆降低，躯干留在两脚支撑之间 | 不把压低写成跪地或凭空下坠 |
-| 整劲/身体协同 | 支撑脚踏实，髋肩朝同一方向转动，掌根向目标推出 | 以可见肢体关系替代术语，保留原技法差异 |
-| 卸力/借力 | 前臂斜接来拳，躯干沿来力方向侧转，让拳路偏向身外 | 先有接触，支撑允许转动 |
-| 失衡 | 被拉的一侧肩先移出脚底支撑范围，随后同侧脚跨出补位 | 明确抓持与触发，不凭空摔飞 |
-| 预备与爆发 | 右肩短暂后撤，右脚踏稳后，手臂沿既定路径迅速前送 | 不重复加一次新的蓄力攻击 |
-| Laban质感：重/直/突发 | 肘部贴近躯干，前脚踏实，拳沿短直线路径骤然送出 | 术语留设计说明，不把“重”变成所有动作慢放 |
-| 动画余势 | 主体停稳后，衣摆沿原运动方向继续摆动再回落 | 衣摆不承担唯一的命中证据 |
+| Kinetic chain | The ball of the rear foot pushes against the ground; the hips turn toward the target first, and the shoulder carries the arm forward | Which foot can bear weight; where the hand makes contact |
+| Lowered center of mass | Both knees bend, the pelvis lowers, and the torso remains within the support of both feet | Do not turn lowering into kneeling or an unsupported fall |
+| Whole-body coordination | The supporting foot plants firmly, hips and shoulders turn in the same direction, and the palm heel pushes toward the target | Replace terminology with visible limb relationships while preserving distinctions in the original technique |
+| Yielding / redirecting force | The forearm meets the incoming fist obliquely; the torso turns sideways along the incoming force, guiding the punch outside the body | Contact occurs first; support permits rotation |
+| Imbalance | The shoulder on the pulled side moves outside the base of support first, then the foot on that side steps out to catch it | Make the grip and trigger explicit; no uncaused flying fall |
+| Anticipation and burst | The right shoulder draws back briefly; after the right foot plants, the arm drives quickly forward along the established path | Do not add a second wind-up attack |
+| Laban effort: heavy / direct / sudden | Elbow close to the torso, front foot firmly planted, the fist shoots out on a short straight path | Keep terminology in design notes; “heavy” does not make every movement slow motion |
+| Animated follow-through | After the body stops, the hem continues swinging in the original direction before settling | The hem is not the sole evidence of a hit |
 
-## 对接与验证边界
+## Integration and validation boundaries
 
-卡片是设计辅助，不进入最终提示词。每次调用结束只保留“已选卡/来源、可见动作、起止状态、待测风险”短摘要；后续无需重复读全库。身体细节属B层，不是额外A层事件；与现有动作竞争时用它替换含混措辞，而不是再叠一招。试片失败按[AI管线](ai-pipeline.md)先查最早失效处，不靠再堆术语返工。
+Cards assist design and stay out of final prompts. At the end of each use, retain only a short summary: “selected card/source, visible action, start/end states, risks to test”; the entire library need not be reread later. Body detail belongs to Tier B, not additional Tier A events. When it competes with existing action, use it to replace ambiguous wording rather than stack on another move. When a test clip fails, follow the [AI pipeline](ai-pipeline.md) to find the earliest failure instead of adding more terminology.

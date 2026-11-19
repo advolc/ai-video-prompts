@@ -24,13 +24,32 @@ Reference IDs and asset names are for management. If the platform does not carry
 
 ## 3. Clip splitting (Tier A)
 
-- **Main interaction:** one exchange of attack, defense, or transfer with a clear outcome.
-- **Density depends on the action mode** (`references/action-modes.md`), not on one number: duel 1–3 per ~5 s, last stand 2–4 with overlap, ambush 3 or more in the first 2 s then 1–2, sparring 1–2, stealth 0–1 per clip, ritual 0–2. Starting points for short clips; scale after testing at your real duration.
-- **Splitting by mode:** a duel splits by exchange pairs; a last stand chains clips and carries stamina and injury in the seam; a stealth takedown keeps approach and strike in one unit; an ambush splits burst from aftermath; sparring splits by teaching beat; a flight fight splits by terrain segment.
-- **Split** when a clip contains a new attack, a changed defensive relationship, a new complex contact, or a second camera task. A longer duration does not make several exchanges into one.
-- **Long takes:** a dodge of one wave with no complex contact can remain one long unit, if the prompt says it is one continuous take.
+### Event boundaries
+
+An event is one causal interaction: a directed attack/threat, control attempt or transfer, the response to it, and its immediate result. Identify the initiator, target, required response and resulting relationship. Do not count verbs or call an entire fight one exchange.
+
+- Approach, a sidestep, a parry and recovery belong to the same interaction when they realize or answer the same threat. They still consume runtime and contact complexity.
+- A counterattack that creates a new threat starts another interaction even without a pause. A renewed thrust after an evasion is another; independent simultaneous attacks are separate interactions even when one motion answers both.
+- A sustained bind or push can remain one interaction while the same control relationship continues. A new disarm attempt, changed target or independent threat starts another. Minor grip adjustments alone do not.
+- Record a lasting result once: a strike and its directly caused knockdown are one interaction with a persistent result. An independent door closure, transfer or environmental collapse is a separate state transition. Trace dependencies rather than double-counting the same consequence.
+
+| Sequence | Working decomposition |
+|---|---|
+| Thrust, sidestep clear, counter, retreat clear, renewed thrust | Three interactions: thrust/evasion, counter/retreat, renewed thrust and its response; not five verbs or one whole exchange |
+| Blade bind maintained while both circle | One sustained interaction if control is unchanged; time and support still need checking |
+| Block a downward blade while a second attacker thrusts | Two independent threats, with their separate response demands, even if simultaneous |
+| Strike knocks the target down; a door then shuts independently | One strike interaction with knockdown result, plus one separate door transition |
+
+This is a design convention, not a calibrated measure of model difficulty. Rhythm examples in [action modes](action-modes.md) use these interaction starts. One event is neither one shot nor one generation request. For natural-language prompting, keep these labels in the internal design record.
+
+### Capacity and grouping
+
+- **Rhythm and request capacity differ.** The action mode suggests pacing; its density examples are estimates, not quotas or platform limits. Check the actual runtime, contact complexity, available assets and verified model behavior. Mark untested combinations as untested.
+- **Candidate grouping by mode:** consider exchange pairs for a duel, continuous pressure with carried stamina for a last stand, approach and strike together for stealth, burst/aftermath boundaries for ambush, teaching beats for sparring, and terrain segments for pursuit. These are possible joins, not mandatory cuts or request counts.
+- **Recheck** at a new attack, changed defensive relationship, complex contact or camera task. Keep distinct events visible and test whether their timing, support, hands, consequences and recovery fit together. Re-stage, adjust timing/camera, or split when demands cannot coexist. Successive shots in a supported multi-shot request are not automatically separate requests; extra runtime does not erase event complexity.
+- **Long takes:** one continuous evasion can remain one shot or request when its motion and timing fit. Independent threats remain separate events in the design even when a single movement avoids them; writing "continuous take" does not establish capacity.
 - **Dialogue scenes** split by conversation unit (`dialogue/conversation-units.md`), not by event count.
-- **Test first:** when complex contact is unverified, generate one main exchange or one landing before committing to the whole sequence.
+- **Pilot when useful:** recommend testing a principal interaction or landing before costly batch generation; do not withhold a requested complete draft or reduce continuous-action ambition because capability is unknown. Generation still requires actual tools, inputs and authorization.
 - **Bridges:** backward to forward needs braking and thrust; mid-air direction change needs an ability or momentum reason; a beam breaking under a hanging load needs a stated force path.
 
 ## 4. Multi-shot and long models
@@ -56,3 +75,7 @@ The goal is kept; the plan changes. Say what changed and which specific load con
 ## 9. A "ready-to-submit test prompt"
 
 Only when the conditions and assets are real, the Tier A check is done, the text does not depend on missing references, and key events have observable acceptance checks. This status means organized input, not a working clip.
+
+## 10. Delivery choice
+
+Reuse the user's choice of complete text or a test segment. An explicit full-draft request authorizes full text delivery; a staged exploration request keeps its chosen sequence. Ask only when this choice is genuinely unresolved and affects delivery. Text delivery and generation request length are separate decisions. Recommend a pilot for untested complexity without withholding requested text or spending on generation without authorization.

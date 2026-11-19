@@ -1,31 +1,31 @@
-# 横屏画幅、观看条件与合规
+# Landscape Framing, Viewing Conditions, and Compliance
 
-## 项目规格一次选定
+## Choose project specifications once
 
-默认项目规格：16:9、1920×1080。若用户选择4K则项目锁3840×2160，并记录原生生成、放大与交付分辨率，不把放大称原生4K。2.39:1只在明确选用时启用；同一项目不因某段更好看而来回换画幅。
+For landscape short-drama projects without chosen specifications, a starting proposal is 16:9, 1920×1080. Other tasks choose ratio and delivery dimensions from their actual purpose and platform; preserve existing specifications. If the user selects 4K, lock 3840×2160 and record native generation, upscaling, and delivery resolutions separately; do not call an upscale native 4K. Use 2.39:1 only when explicitly chosen. Do not switch ratios within a project merely because one segment looks better.
 
-规格卡：`画幅｜生成画布｜有效画面矩形｜交付画布/分辨率｜帧率｜显示/承载方式｜动作安全区｜字幕区｜平台UI遮挡｜最小观看尺寸｜校验状态`。坐标统一用最终交付画布归一化x/y，原点左上；示意图同时标有效画面与安全区。
+Specification card: `aspect ratio | generation canvas | active-image rectangle | delivery canvas/resolution | frame rate | display/container method | action safe area | subtitle area | platform UI occlusion | minimum viewing size | validation status`. Use normalized x/y on the final delivery canvas, origin upper left; diagrams mark both active image and safe areas.
 
-2.39:1构图如需16:9成片，开拍前选择16:9画布内完整承载宽银幕有效画面（上下留边），或按16:9重新布局生成。宽银幕镜头的决定性接触和主要角色关系落在中心动作安全区；两侧可承担氛围与次要威胁，不能承担唯一的胜负信息。不要把宽画面左右硬裁、拉伸或自动扩边当成跨画幅制作方案。留边也会进一步缩小手机显示，需单独验收。
+If a 2.39:1 composition needs a 16:9 final, decide before production whether to contain the full widescreen image in a 16:9 canvas with top/bottom bars, or recompose and generate for 16:9. Decisive contact and principal relationships in widescreen stay in the central action-safe area. Sides may hold atmosphere/secondary threats, not the sole decisive information. Hard cropping, stretching, or automatic outpainting is not a cross-ratio production plan. Bars further reduce phone image size and need separate acceptance.
 
-安全区必须填写实际矩形。本项目起稿可试用x=0.12—0.88、y=0.10—0.78作为关键动作区，y=0.82—0.94作为字幕候选带；这是可调整的制作建议，不是平台标准。与有效画面、人物全身动作或UI冲突时重新布局，不能硬套百分比。主体可居中偏上，但起跳、俯冲和多人关系按具体动作取景，保留头顶与足底空间。
+Fill actual safe-area rectangles. As a drafting suggestion, try x=0.12–0.88, y=0.10–0.78 for key action, and y=0.82–0.94 for a candidate subtitle band. These are adjustable production suggestions, not platform standards. Recompose if they conflict with active image, full-body action, or UI; do not force the percentages. Subjects may sit slightly above center, but jumps, dives, and group relationships need action-specific framing with head/foot room.
 
-## 手机竖持看横屏
+## Watching landscape video on a vertically held phone
 
-按手机可用屏宽模拟播放，包含真实播放器留白、字幕及UI，不把源图全屏放大后判断。以9:16竖持屏幕、无UI、16:9画面铺满宽度为例：视频高度约占屏高31.6%，并非宽度只能占1/3；设备比例和播放器会改变结果。
+Simulate playback at usable phone width with actual player bars, subtitles, and UI, rather than enlarging the source image fullscreen for judgment. On a 9:16 portrait screen with no UI and a width-filling 16:9 video, video height is about 31.6% of screen height; this does not mean the width is only one-third. Device ratio/player change the result.
 
-全景交代空间，决定性抓腕、剑盾接触或表情判断用中景/中近景补读；不要把每招裁成脸和拳。减少边缘信息负担，敌我用轮廓、明暗和动作方向共同区分。字幕避开手、武器和接触路径，必要时调镜头、排版或时机；不能一概放底部就算合格。
+Wide shots establish space; decisive wrist grabs, sword/shield contacts, or facial judgments need medium/medium-close coverage for readability. Do not crop every move to face/fist. Reduce edge information; distinguish sides through silhouette, value, and movement direction together. Subtitles avoid hands, weapons, and contact paths; adjust shot, layout, or timing as needed. Placement at the bottom alone is not a pass.
 
-验收记录：`设备/模拟视口｜实际视频显示尺寸｜是否读出谁攻谁守｜关键接触/字幕是否可读｜边缘信息是否遗漏｜修改镜号`。在桌面全尺寸和竖持小画面各连续看一遍。
+Acceptance record: `device/simulated viewport | actual displayed video size | attacker/defender identifiable | key contact/subtitle readability | missed edge information | shots to revise`. Watch continuously once at desktop full size and once in a small portrait-held-phone view.
 
-## 横屏形态与观看条件
+## Landscape formats and viewing conditions
 
-作为规划档，可将番剧按15—24分钟、横屏短剧/漫剧按1—3分钟、PV/概念片按30—90秒起稿；实际依委托与内容确定，不宣称所有作品都符合。番剧打戏服务整集情节，短剧单集要有局部目标、变化和结果，PV可用主题/能力展示组织而不假装完整因果。
+Planning starting points may be 15–24 minutes for episodic animation, 1–3 minutes for landscape short drama/motion comics, and 30–90 seconds for PV/concept films. Actual briefs/content determine duration; these are not claims about every work. Episodic fights serve the whole episode; short episodes need a local goal, change, and result; PVs may organize theme/ability displays without pretending to provide complete causality.
 
-横屏通过同框关系、环境操作与镜头内信息变化组织观看，不强套每3秒钩子。可用3—5个长镜头式交锋覆盖单集，也可按需要切换；镜头数是设计选择。具体生成段长度由平台测试决定，多段拼接见 [生成段](prompts-and-segments.md)。
+Landscape viewing develops through shared-frame relationships, environmental use, and changing information within shots, not a forced hook every three seconds. An episode may use 3–5 long-take-style exchanges or switch shots as needed; shot count is a design choice. Platform tests determine generation-segment length; see [generation segments](prompts-and-segments.md) for joining segments.
 
-## 尺度与素材权限
+## Content intensity and material permissions
 
-项目卡约定目标受众、暴力/血腥表现尺度、恐怖强度、敏感题材与发行平台。用受力、破坏、反应或画外结果表达代价；具体情境按用户意图决定表现，不为全体题材强加同一弱化等级。实际发布时核对目标平台当时公开规则；未查验不声称已过审。
+The project card establishes target audience, violence/gore level, horror intensity, sensitive themes, and release platform. Force response, destruction, reactions, or offscreen consequences may express cost. Choose depiction for the actual context and user's intent rather than imposing one reduced intensity on every genre. At publication, check the target platform's then-current public rules; without checking, do not claim moderation approval.
 
-素材台账：`素材ID｜作者/来源｜权利或许可依据｜允许的改编/商用/声音用途｜署名要求｜限制｜核实状态`。角色图、训练材料、声音、音乐、字体、纹样资料与参考视频分别记录。公开可见与取得使用许可不是同一件事；不从“AI生成”直接推断所有权利已清。人物声音/肖像使用按相应授权范围核对。存在具体法律判断时查权威现行来源并说明适用地区；本表不是法律结论或平台过审保证。
+Material ledger: `material ID | creator/source | rights/license basis | permitted adaptation/commercial/voice uses | attribution | restrictions | verification status`. Record character art, training materials, voices, music, fonts, pattern research, and reference video separately. Public availability is not permission to use, and “AI-generated” does not establish that all rights are cleared. Check voice/likeness use against applicable authorization. For concrete legal judgments, consult authoritative current sources and state jurisdiction; this ledger is not a legal conclusion or platform-approval guarantee.

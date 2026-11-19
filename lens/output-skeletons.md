@@ -1,32 +1,32 @@
 # Output Skeletons
 
-**Extended is the default for every prompt.** Compact and Standard exist only for when the user asks for "short", "lite", "quick", "简版", or when a model's documented prompt limit forces them.
+**Extended is the default level of relevant richness.** It has no minimum word count. Standard and Compact change delivery length, while necessary design checks remain. Choose a shorter expression when the scene is sparse, the user requests brevity or actual model evidence favors it; retain all explicit targets.
 
-The skeleton is a writing order, not a visible structure. The delivered prompt is plain prose: paragraphs allowed, no headings, no brackets, no labels, no bullet points, no timestamps.
+The skeleton is a coverage aid, not seven mandatory paragraphs. Deliver plain prose by default. Verified platform syntax or an explicit user format may use headings, tags or timestamps; keep analytical notes outside the copy block.
 
 ## 1. The seven slots (Extended order)
 
 | # | Slot | Content | Weight |
 |---|---|---|---|
 | 1 | Look anchor | Medium and format (live-action, 3D, 2D), aspect ratio, lens family and focal length, depth of field, stock or sensor character, grain, grade and contrast, shutter feel, overall light family | 1–3 sentences |
-| 2 | Subject lock | Per character: age band, face structure with one asymmetry, skin state, hair state, build, costume materials and wear, weapon or prop with material and wear, one distinctive identifier. Re-state in every clip | 2–4 sentences each |
+| 2 | Subject lock | Per character: age band, face structure with one asymmetry, skin state, hair state, build, costume materials and wear, weapon or prop with material and wear, one distinctive identifier. Carry the identifiers needed per clip; reference/first-frame inputs may reduce repeated description | 2–4 sentences each |
 | 3 | Set and light physics | Space anchors and surfaces, **the named landmarks and heights the action will use**, named light sources with direction and color temperature, atmosphere (haze, dust, steam, rain), time of day, temperature cues | 2–5 sentences |
 | 4 | Performance timeline | Time-ordered beats: body, hands, gaze, face, prop business, listener, spoken lines with delivery, and any Tier A contact events written as one recordable chain | Weight set by scene type (section 11); about 55–65% for dialogue-driven and mixed scenes |
 | 5 | Camera behavior | Framing, motivated movement, focus pulls, handheld micro-motion, reframing, always attached to the beat it serves | 1–4 sentences, woven near their beats |
-| 6 | Sound and speech | Ambience, foley, room tone, voice quality, breath; native-audio platforms only, otherwise one line of ambience | 1–4 sentences |
+| 6 | Sound and speech | Ambience, foley, room tone, selected speech and brief voice/breath cues; actual native-audio or post-production execution is tracked outside the prose in generation-handoff | 1–4 sentences |
 | 7 | End state | The final frame or the handoff state (end modes in section 11): positions, posture, held objects, light. It may hold still or leave motion in progress. Doubles as the seam into the next clip | 1–2 sentences |
 
 ## 2. Length
 
 | Tier | English words | Chinese characters | Use |
 |---|---|---|---|
-| **Extended (default)** | about 320–520 per clip | about 650–1000 | Every prompt unless told otherwise |
+| **Extended (default)** | about 320–520 per clip | about 650–1000 | Rich scenes when useful; no minimum |
 | Standard | about 150–250 | about 300–500 | Models with tighter limits; mid-depth requests |
-| Compact | about 60–110 | about 120–220 | "short/lite/quick/简版"; fast iteration |
+| Compact | about 60–110 | about 120–220 | "short/lite/quick"; fast iteration |
 
-- **Scale with duration.** The ranges above fit a single short clip of about 5–10 s. For longer clips and multi-shot generations, scale by runtime. One observation (a 30 s multi-shot wuxia clip, 997 words, followed closely by the model; see `models/observed-wuxia-30s-clip.md`) gives a starting point of **about 25–35 English words per second** (about 50–70 Chinese characters per second). That is a single data point, so treat it as a hypothesis and test it with `evals/cases.md` case 10. It describes a **dense, multi-event** clip; sparse scenes (stealth, atmosphere, a held look) need fewer words per second, and padding them with invented activity breaks their mode (section 11). `scripts/lint_prompt.py --seconds 30` applies this scaling.
+- **Do not scale mechanically with duration.** The ranges above fit a single short clip of about 5–10 s. For longer clips, size the text by the actual changes, speech and camera tasks. For planning a dense multi-shot clip, use the provisional range of **about 25–35 English words per second** (about 50–70 Chinese characters per second). Treat this as a hypothesis and test it with `evals/cases.md` case 10. It describes a **dense, multi-event** clip; sparse scenes (stealth, atmosphere, a held look) need fewer words per second, and padding them with invented activity breaks their mode (section 11). Use `scripts/lint_prompt.py --seconds 30 --scene-type action` for this dense-action estimate; other scene types use the section 11 ranges.
 - These are working ranges, not promises. The real ceiling is the target model's documented prompt limit. Check `models/README.md` item 10 (prompt length behavior). If the limit is unknown, deliver Extended and add one line outside the copy block: "If this truncates or the model drifts, try the Standard version."
-- A multi-clip piece gets Extended per clip.
+- Each clip is self-contained at the appropriate length; carry identity and seam facts without padding.
 - A clip that is mostly dialogue spends its length on the performance timeline and speech (slot 4), not on more adjectives.
 - When a limit forces cuts, sacrifice in this order (see `core/pipeline.md`): repeated or secondary optics, secondary ambient texture, secondary Tier B beats. Never Tier A causality, identity anchors, or locked demands.
 
@@ -72,17 +72,17 @@ Spoken lines are written **inline** as quoted speech inside the timeline, each w
 
 ## 9. Chinese output
 
-Same slots, written in natural Chinese: 画面基调（镜头、焦段、景深、胶片颗粒、调色）→ 主体锁定 → 场景与光线 → 表演时间线（含引号对白）→ 运镜 → 声音 → 收束状态. Use the Chinese columns of the pass files. Do not mix English jargon into a Chinese prompt unless the model is known to respond better to it.
+Use the same slots in natural Chinese when Chinese is the requested or best-supported output language: look (lens, focal length, depth of field, grain and grade) -> subject lock -> setting and light -> performance timeline with quoted speech -> camera -> sound -> end state. Translate the physical descriptions into the output language. Avoid mixed-language jargon unless verified model behavior warrants it.
 
 ## 10. Control parameters stay out of the prose
 
-Resolution, duration, and frame rate ("1080p", "30s", "24 fps") belong in the platform's own fields. Written in the prompt they are not controls: in the observed clip the prompt ended with "16:9, 30s, 1080p", the video came out 1280x720 at 24 fps, and only the duration and aspect ratio matched. Aspect ratio may stay in the look anchor because it shapes composition. `lint_prompt.py` warns on the rest.
+Set resolution, duration and frame rate in the platform's documented controls when available. Prose such as "1080p", "30s" or "24 fps" is not proof that those output settings were applied. Describe dramatic timing where useful and retain an aspect-ratio composition anchor if relevant; keep export/settings labels in control notes unless the verified interface expects them in text. Inspect delivered stream metadata separately from visual adherence. This is an input-handling rule, not a conclusion from a bundled generation test. `lint_prompt.py` flags control-like prose for review; `--format platform` permits verified structured syntax. See [evidence boundaries](../references/source-scope.md#model-observation-record).
 
 ## 11. Scene-type weighting and end-state modes
 
 Slot weights and length follow the **scene type**, set by the Context Profile.
 
-| Scene type | Emphasis | Words per second (rough lean) |
+| Scene type | Emphasis | English words per second (planning range) |
 |---|---|---|
 | Action-dominant (fight, chase) | Slot 4 with the Tier A chain about 60–70%; slot 5 camera 2–5 sentences; slot 6 impact and breath; slot 3 compact | 25–35 for dense multi-shot |
 | Dialogue-dominant | Slot 4 beats and speech about 60–70%; slot 2 faces; camera 1–3 sentences | 15–30, by the speech pace |
@@ -103,4 +103,4 @@ A still hold at the end of a chase or last stand tells the model the fight has s
 
 ## 12. Before delivery
 
-Run `python scripts/lint_prompt.py prompt.txt`. Then confirm the coherence checklist in `lens/lens-layer.md` section 6, the length against the model's limit, and the one-line added-texture note.
+Run `python scripts/lint_prompt.py prompt.txt --seconds N --scene-type action|dialogue|emotional|atmosphere`, selecting the actual scene type; omit runtime if unknown. Length estimates are guidance, not reasons to invent activity. Then confirm the coherence checklist in `lens/lens-layer.md` section 6, the length against the model's limit, and the one-line added-texture note.

@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "common_prompt": [
+    {
+      "path": "core/precedence.md",
+      "heading": "# Precedence"
+    },
+    {
+      "path": "core/pipeline.md",
+      "heading": "## 2. Texture Authority"
+    },
+    {
+      "path": "core/pipeline.md",
+      "heading": "## 3. Tiered budgets"
+    },
+    {
+      "path": "core/pipeline.md",
+      "heading": "## 8. Quality preservation"
+    },
+    {
+      "path": "core/context-routing.md",
+      "heading": "## 1. The Context Profile"
+    },
+    {
+      "path": "lens/lens-layer.md",
+      "heading": "## 1. The depiction grammar"
+    },
+    {
+      "path": "lens/lens-layer.md",
+      "heading": "## 2. Sentence craft"
+    },
+    {
+      "path": "lens/output-skeletons.md",
+      "heading": "## 1. The seven slots (Extended order)"
+    },
+    {
+      "path": "lens/output-skeletons.md",
+      "heading": "## 2. Length"
+    },
+    {
+      "path": "references/delivery-and-qa.md",
+      "heading": "## 9. Target coverage before style polish"
+    }
+  ],
+  "routes": {
+    "action": {
+      "uses_common_prompt": true,
+      "sections": [
+        {
+          "path": "references/generation-handoff.md",
+          "heading": "## 3. Clip splitting (Tier A)"
+        },
+        {
+          "path": "references/action-modes.md",
+          "heading": "## 2. The modes"
+        },
+        {
+          "path": "references/choreography.md",
+          "heading": "## Begin with character choices"
+        },
+        {
+          "path": "references/choreography.md",
+          "heading": "## Weapon logic precedes move styling"
+        },
+        {
+          "path": "references/choreography.md",
+          "heading": "## Force chains and support"
+        },
+        {
+          "path": "references/choreography.md",
+          "heading": "## Reading bodies and force"
+        },
+        {
+          "path": "references/choreography.md",
+          "heading": "## Action unit"
+        },
+        {
+          "path": "references/hit-feel.md",
+          "heading": "## Contact before emphasis"
+        },
+        {
+          "path": "references/spatial-tactics.md",
+          "heading": "## 5. Spatial integrity and optional variety"
+        },
+        {
+          "path": "references/camera-and-rhythm.md",
+          "heading": "## Each shot delivers one primary piece of information"
+        }
+      ]
+    },
+    "dialogue": {
+      "uses_common_prompt": true,
+      "sections": [
+        {
+          "path": "dialogue/situation-profiles.md",
+          "heading": "## 1. The profiles"
+        },
+        {
+          "path": "dialogue/situation-profiles.md",
+          "heading": "## 2. Speech timing by arousal"
+        },
+        {
+          "path": "references/dialogue-engine.md",
+          "heading": "## Four-Layer Model: Check the Scene Without Forcing Hidden Meaning"
+        },
+        {
+          "path": "dialogue/spatial-blocking.md",
+          "heading": "## 2. A scene sketch and a unit spatial spine"
+        },
+        {
+          "path": "dialogue/spatial-blocking.md",
+          "heading": "## 3. When staying still is valid"
+        },
+        {
+          "path": "dialogue/conversation-units.md",
+          "heading": "## 3. Turn anatomy"
+        },
+        {
+          "path": "dialogue/conversation-units.md",
+          "heading": "## 4. Timing math"
+        },
+        {
+          "path": "dialogue/spoken-register.md",
+          "heading": "## 3. Calibrating disfluency to the character"
+        },
+        {
+          "path": "dialogue/spoken-register.md",
+          "heading": "## 11. Register-sensitive review"
+        },
+        {
+          "path": "lens/body-and-status.md",
+          "heading": "## 7. Listening is acting"
+        }
+      ]
+    },
+    "visual": {
+      "uses_common_prompt": true,
+      "sections": [
+        {
+          "path": "visual/style-translation.md",
+          "heading": "## Seven visual-art dimensions and three audiovisual dimensions"
+        },
+        {
+          "path": "visual/composition-and-color.md",
+          "heading": "## Composition system"
+        },
+        {
+          "path": "visual/environment-interaction.md",
+          "heading": "## Reason from conditions on location, not weather keywords"
+        },
+        {
+          "path": "lens/physical-light.md",
+          "heading": "## 1. Source before mood"
+        },
+        {
+          "path": "lens/skin-and-material.md",
+          "heading": "## 6. What each shot size can show"
+        }
+      ]
+    },
+    "ideation": {
+      "uses_common_prompt": false,
+      "sections": [
+        {
+          "path": "references/inspiration-wizard.md",
+          "heading": "## Mandatory Preliminary Confirmation (Prevent Scope Reduction and Drift)"
+        },
+        {
+          "path": "ux/interaction.md",
+          "heading": "## Wizard protocol: assemble one dimension at a time"
+        },
+        {
+          "path": "references/inspiration-wizard.md",
+          "heading": "### 1. State Snapshot"
+        }
+      ]
+    },
+    "review": {
+      "uses_common_prompt": false,
+      "sections": [
+        {
+          "path": "references/ai-pipeline.md",
+          "heading": "## Failure diagnosis tree"
+        },
+        {
+          "path": "references/delivery-and-qa.md",
+          "heading": "## 8. Honest status language"
+        },
+        {
+          "path": "quality/quality.md",
+          "heading": "## Controlled comparisons"
+        }
+      ]
+    }
+  }
+}

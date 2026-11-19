@@ -1,100 +1,101 @@
-# 制作流程（合并版）
+# Production Workflow (Consolidated)
 
-本文件合并了v1的剪辑语法、负面约束、预演、镜头清单、故事板、工具链、批量与筛选。提示词写法见[镜头层](../lens/lens-layer.md)。
+Combines v1 editing grammar, negative constraints, previs, shot lists, storyboards, toolchains, batch generation, and selection. See the [Lens layer](../lens/lens-layer.md) for prompt writing.
 
-## 剪辑语法
+## Editing grammar
 
-本文件管叙事节奏、信息选择与镜头连接；[生成段](../references/prompts-and-segments.md)管技术接缝与首尾状态。叙事上可跳时空的切镜不等于技术无缝，技术匹配也不能证明戏有推进。
+This file handles narrative rhythm, information selection, and shot connections; [generation segments](../references/prompts-and-segments.md) handles technical seams and opening/closing states. A narrative cut across time/space is not technical seamlessness; technical matching does not prove dramatic progress.
 
-动作剪辑在起势、接触或结果择切，保方向与目标；接触不能永远藏在切点。情绪剪辑按谁的理解改变分配反应，不每句台词都正反打。音乐剪辑选择真正有意义的节拍，不能让每个音都触发切镜；环境声/静默也可形成节奏。
+Action cuts may fall on preparation, contact, or outcome while retaining direction and target; contact cannot always hide in cuts. Emotional editing assigns reactions by whose understanding changes rather than using shot/reverse-shot after every line. Music editing selects meaningful beats, not a cut for every sound; environment and silence also create rhythm.
 
-硬切适合明确变化，匹配切靠形状/动作，声音桥延续信息，叠化适合时间流逝但会叠出双人重影。跳切必须是有意压缩且观众能辨认，补空间镜不等于拖慢。升格/降格/速度曲线属于后期，真实帧率与运动采样决定余量；不要用插帧推断新攻防动作。
+Hard cuts suit clear changes; match cuts connect shapes/actions; sound bridges carry information; dissolves suit elapsed time but can create double figures. Jump cuts must intentionally compress readable time. An establishing shot need not slow the scene. Overcranking/undercranking and speed curves belong in post; actual frame rates and motion samples determine latitude. Interpolation cannot establish new attack/defense actions.
 
-多段拼接先核六项状态，再核摄影方向、光线与声尾；匹配失败可用明确切镜而非强叠化。检查完整播放和最小观看尺寸，不只查时间表。最终生成正文写可见运动速度，剪辑点、变速、定格和转场执行留制作备注。
+For multi-segment assembly, check the six state categories first, then camera direction, light, and sound tails. Failed matching may use an explicit cut rather than a forced dissolve. Check full playback and the smallest viewing size, not only the schedule. Final generation prose depicts visible movement speed; cut points, retiming, freezes, and transition execution stay in production notes.
 
-## 针对性负面约束
+## Targeted negative constraints
 
-内部至多2条针对性禁止，选本段最可能出错且真正影响目标的项，不把以下词库整段复制。最终正文默认写正向可见关系；平台有独立负面字段且官方确认可用时才给参数外的适配版本，不能假设所有模型吃负面词。
+Internally use at most 2 targeted exclusions: choose the likeliest mistakes that materially affect this segment's goals rather than copying the whole vocabulary below. Final prose defaults to positive visible relationships. Supply a separate adapted negative-field version only when the platform has such a field and official confirmation of its availability; do not assume all models respond to negatives.
 
-| 类别 | 内部风险例 | 正向转写候选 |
+| Category | Internal risk examples | Candidate positive rewrite |
 |---|---|---|
-| 画风 | 2D/写实无故混变 | 固定线条/材质语言，说明已定质感 |
-| 构图 | 复制人物、关键手出画 | 保持既定人数，手和接触置于可见区 |
-| 光线 | 主光跳边、暗部死黑 | 同世界光向，暗侧保衣纹 |
-| 动作 | 接触前受击、双脚漂移 | 接触后才位移；脚掌交替落地承重 |
-| 材质 | 刃变软、玻璃变水 | 保持直刃刚性、碎裂后的固体碎片 |
-| 平台伪影 | 闪烁、随机文字、融合脸 | 简化重复纹理，保单一身份，标识后期添加 |
+| Style | Unmotivated shifts between 2D and realism | Retain established line/material language and describe its texture |
+| Composition | Duplicated figures, key hands out of frame | Established headcount, hands and contact in readable space |
+| Light | Key switches sides, dead-black shadows | Same world-space light direction, cloth detail on the dark side |
+| Action | Reaction before contact, floating feet | Displacement follows contact; feet alternate in taking ground support |
+| Material | Soft blades, glass becomes water | Rigid straight blade, solid fragments after breakage |
+| Platform artifacts | Flicker, random text, fused faces | Simpler repeated textures, one consistent identity, graphics added in post |
 
-不该用：武指距离本来不成立、参考图手持错误、互相矛盾的目标、模型无相应控制、已超过信息负荷。先修设计与输入；否定词不能让不存在的功能出现。正向句必须保持原对象和触发条件，不借示例加新兵器/爆炸。平台差异见[提示词工程](../lens/lens-layer.md)与[生成交接](../references/generation-handoff.md)。
+Do not use negatives to solve invalid choreography distance, wrong reference grip, contradictory goals, absent model controls, or exceeded information capacity. Repair design and input first; negation cannot create a missing feature. Positive rewrites retain the original object and trigger; examples do not authorize new weapons/explosions. See [prompt engineering](../lens/lens-layer.md) and [generation handoff](../references/generation-handoff.md) for platform differences.
 
-## 低成本预演
+## Low-cost previs
 
-先选最低成本能验证风险的方法：静态故事板加临时音轨和时间轴可看信息/节奏；3D白模可看尺度、遮挡、机位和支撑；真实生成小样才看该模型如何执行。白模不能证明最终材质、微相、身份或口型稳定。
+Choose the cheapest method that tests the risk. Static storyboards with scratch audio and a timeline test information/rhythm; 3D white models test scale, occlusion, camera position, and support; actual generated pilots reveal that model's execution. White models do not prove final material, facial detail, identity, or lip-sync stability.
 
-静态预演：导入每格→按试读或动作预算摆时长→加临时对白/脚步→连续播放→记录最早不明处。3D白模：地面/入口/人物高度→关键站位和接触代理→相机路径→关键姿态过渡→连续播放。临时音轨须标临时，使用授权素材或自制，不冒充最终音效。
+Static previs: import panels → assign duration by read-through/action estimates → add scratch dialogue/footsteps → play continuously → record the earliest ambiguity. 3D white models: ground/entrances/character height → key positions and contact proxies → camera path → pose transitions → continuous playback. Mark scratch audio temporary and use authorized or self-made material, never presenting it as final effects.
 
-通过条件：能说清目标和结果；关键接触/落点不被挡；反应有读懂时间；连续状态无跳变；声音预留不挤对白。尚未播放的预演不写已看，只有静帧不写动作验证通过。发现问题先改空间/节奏，不能靠后期闪白遮盖。
+Pass criteria: goal and result can be stated; key contact/landings remain visible; reactions have reading time; continuous states do not jump; sound space does not crowd dialogue. Unplayed previs is not viewed; stills alone do not establish motion validation. Fix space/rhythm first instead of hiding problems with white flashes in post.
 
-差距管理表：预演已确认什么、生成仍需试什么、哪些最终效果由后期负责。明确动态支撑与角色朝向后再投入高成本生成；用户只要文字时提供预演计划，不自动运行付费工具。衔接[工具链](workflow.md)与[AI管线](../references/ai-pipeline.md)。
+Gap-management table: what previs confirms, what generation still needs to test, and which final effects belong to post. Establish dynamic support and character orientation before expensive generation. For text-only requests, provide a previs plan without automatically running paid tools. Connect to the [toolchain](workflow.md) and [AI pipeline](../references/ai-pipeline.md).
 
-## 镜头脚本与拍摄清单
+## Shot script and shooting list
 
-常用制作字段：`镜号｜景别｜角度｜主运镜｜净长｜主内容与起止｜声音｜备注`。这是便于不同岗位共享的字段集合，不声称所有工业项目都有同一强制表。已有分镜表更重空间/动作；本清单补执行、覆盖与声音交接，不覆盖原表。
+Common production fields: `Shot number | Shot size | Angle | Main camera move | Net duration | Main content and opening/ending | Sound | Notes`. These help departments share information; they are not a claim that every professional production mandates one table. Existing storyboard tables emphasize space/action; this list adds execution, coverage, and sound handoff without replacing them.
 
-### 信息层级（可选加深）
+### Information hierarchy (optional depth)
 
-默认启用；用户明确要“简版/lite”时可省略。用于分镜自检，字段名不进最终提示词。
+Enabled by default; may be omitted for explicit "compact/lite" requests. This is storyboard self-checking; field names stay out of final prompts.
 
-| 字段 | 设计问题 | 候选 |
+| Field | Design question | Candidate |
 |---|---|---|
-| 主信息 | 本镜必须读到的一件事是什么？ | 已定架偏使攻击线离开目标 |
-| 次信息 | 哪一到两项辅助理解？ | 原动作中的退步、收回、既有出口方位 |
-| 背景信息 | 漏掉也不影响理解的是什么？ | 非关键天气、衣摆或背景细节 |
-| 注意力入口 | 第一眼应落在哪？ | 原动作的入画端、接触点或明确视觉差异 |
-| 必读窗口 | 接触/选择持续多久才能读清？ | 按接近、交汇、结果的动作可完成性安排，不给通用帧数 |
-| 可漏项 | 漏掉什么不会中断主信息？ | 背景密度、非关键装饰数量 |
+| Main information | What one thing must be readable? | An established deflection moves the attack line off the target |
+| Secondary information | Which one or two items support understanding? | Retreat/recovery in the original action, direction of an existing exit |
+| Background information | What can be missed without harming understanding? | Secondary weather, hems, or background detail |
+| Attention entry | Where should the first glance land? | Entry side of the original action, contact point, or clear visual distinction |
+| Required reading window | How long must contact/choice remain readable? | Based on feasible approach, crossing, and result, not a universal frame count |
+| Missable items | What can disappear without breaking the main information? | Background density, nonessential ornament count |
 
-验收三问：主信息是否只有一个？多个独立主信息先降级或重组，确需才拆镜；同一紧密因果链不机械切碎。必读窗口是否足够？不足先调整净长、构图或景别，不把后期慢放当自动补救。可漏项真的可漏吗？唯一因果证据不能降成背景或氛围；次信息含独立行为时仍计事件，不借层级绕过A层事件检查。
+Three acceptance questions: is there only one main information task? Downgrade or reorganize separate primary tasks first; split a shot only when needed, not a tight causal chain mechanically. Is the reading window sufficient? Adjust net duration, framing, or shot size before treating post slow motion as automatic repair. Are missable items truly optional? The sole causal evidence cannot become background/atmosphere. Independent actions in secondary information still count as events; hierarchy does not bypass Tier A checks.
 
-### AI任务裁剪与交接
+### AI task reduction and handoff
 
-AI任务裁剪：先保留主内容、景别、主运镜、起止状态和预计净长；控制参数、素材绑定、模型请求时长另列；授权、验收与后期备注归管理。单镜一主要相机任务，移焦和大幅环绕不和复杂多次接触同时争注意力。
+For AI tasks, first retain main content, shot size, main camera movement, opening/ending state, and estimated net duration. List control parameters, asset binding, and model request duration separately; authorization, acceptance, and post notes belong in management. One main camera task per shot; focus pulls and large orbits do not compete with multiple complex contacts.
 
-SHOT可对应多个GEN，也可一个GEN裁出多个CLIP；必须记录实际映射与选用区间，净长之和才是成片长度。请求时长是平台真实可选值，不由分镜秒数推定。切镜方式进剪辑层，不写成模型可控制参数。
+A SHOT may span multiple GENs, and one GEN may yield several CLIPs. Record the actual mapping and selected intervals; only their net-duration sum is the final runtime. Request duration must be a real platform option, not inferred from storyboard seconds. Cut execution belongs to editing, not invented model parameters.
 
-验收：同场关键位置至少有一镜清楚交代；反应镜有新信息；每镜与前后关系可说明；声音谁负责已定。用户明确要表才展示，最终复制正文不含镜号或时间表。[故事板](workflow.md)管空间图，[剪辑语法](workflow.md)管选择与连接。
+Acceptance: at least one shot clearly establishes key positions in the same scene; reactions add information; each shot's relation to its neighbors can be explained; sound ownership is assigned. Show the table only when explicitly requested; final copy prose has no shot numbers or schedule. [Storyboards](workflow.md) handle spatial images; [editing grammar](workflow.md) handles selection and connections.
 
-## 故事板
+## Storyboards
 
-只有用户索要故事板/分镜图时展示工程内容；最终提示词仍白话。每格统一画幅，画面标地面、出口、人物左右前后、目光/攻击线与支撑；用简单人形而非漂亮插图掩盖空间缺失。
+Show engineering content only when the user requests storyboards/panels; final prompts remain plain prose. Use one aspect ratio per panel and mark ground, exits, figure left/right/depth, gaze/attack lines, and support. Simple figures expose missing space better than attractive illustrations that hide it.
 
-图内实线箭头表示人物/物件位移，空心箭头表示相机路径，虚线表示视线；箭头须图例说明，静帧不能自行推断时间。景别用远/全/中/近/特写或清楚缩写，避免混用不解释的符号。每格旁写主信息、起点与终点、声音职责，不塞整篇文学稿。
+Solid arrows denote character/object displacement, hollow arrows camera paths, dotted lines gaze; explain these in a legend. A still cannot establish timing by itself. Use long/wide/medium/close/extreme-close sizes or clear abbreviations instead of unexplained mixed symbols. Beside each panel, state main information, opening/ending, and sound responsibilities rather than inserting a literary draft.
 
-图到提示词：人物位置→起始空间；箭头→路径与先后；接触点→身体/兵器反馈；结尾姿态→下格承接。多格是一组镜头意图，不代表一个模型请求能完成所有格；格/SHOT、事件G、请求GEN和选段CLIP分别管理。参考图控制若支持则绑定，不能靠九宫格自动锁身份。
+Panel to prompt: figure placement → opening space; arrows → routes and sequence; contact point → body/weapon response; final pose → next-panel handoff. Multiple panels express shot intentions, not proof that one model request can execute all panels. Manage panels/SHOTs, action events G, requests GEN, and selections CLIP separately. Bind reference control when supported; a nine-panel grid does not automatically lock identity.
 
-验收：遮住文字仍能辨认谁对谁、通路、主接触；翻格后左右、武器手位和损毁可接；只展示起终两张不等于动态已验证。下一步用[镜头清单](workflow.md)和[预演](workflow.md)测节奏。
+Acceptance: even with text hidden, who faces whom, routes, and main contact remain recognizable; left/right, weapon hands, and damage connect across panels. Two opening/ending stills do not prove motion. Test rhythm through the [shot list](workflow.md) and [previs](workflow.md).
 
-## 生成到交付工具链
+## Generation-to-delivery toolchain
 
-不绑定品牌，先以交接物选工具类型，再按当前官方资料/实际界面核功能。不存在因写了本流程就已连接软件或已生成视频。
+Do not bind to brands. Select tool types by handoff artifacts, then verify features using current official material/actual interfaces. Writing this workflow does not mean software is connected or video generated.
 
-| 阶段 | 工具类型/交接物 | 进入下一步的检查 | 可跳过条件 |
+| Stage | Tool type/handoff | Check before proceeding | When skippable |
 |---|---|---|---|
-| 文字设计 | 助手/草案、规则、固定身份 | 目标与因果成立，用户所求保留 | 已有合格稿 |
-| 文生图/资产 | 绘图工具/角色图、场景图、职责 | 身份可辨、手持物与支撑正确 | 用户选无图或已有素材 |
-| 图生/文生视频 | 视频生成器/实际输入与原片 | 主动作、状态、身份、摄影可读 | 已有合格原片 |
-| 编辑 | 非线性编辑器/时间线与选段 | 六项连续、信息节奏与净长 | 单段无需组接 |
-| 后期 | 调色/合成/字幕/声音工具及工程 | 视觉统一、字幕可读、同步可听 | 对应项目无此需求 |
-| 输出 | 编码器/母版、交付版、字幕与清单 | 完整解码、播放、元数据和目标规格 | 仅交文字设计 |
+| Text design | Assistant/drafts, rules, fixed identity | Sound goals/causality, user's request preserved | Qualified draft exists |
+| Text-to-image/assets | Image tool/character images, scene images, responsibilities | Recognizable identity, correct held objects and support | User chooses no images or has assets |
+| Image/text-to-video | Video generator/actual inputs and raw clips | Readable main action, state, identity, camera | Qualified raw clips exist |
+| Editing | Nonlinear editor/timeline and selections | Six-category continuity, information rhythm, net runtime | One clip needs no assembly |
+| Post | Grading/compositing/subtitle/sound tools and projects | Unified visuals, readable subtitles, audible synchronization | Corresponding work is unnecessary |
+| Output | Encoder/master, delivery copy, subtitles, manifest | Full decoding, playback, metadata, target specifications | Text design only |
 
-每一步记录输入版本、输出路径、状态与下一岗位；高风险片段先试。授权范围、预算和次数按原AI管线，不因批量模块新增而自动付费或发布。模型选择见[决策树](../models/README.md)，错误先回最早失败阶段，不把结构文档当动态成功证明。
+Record input version, output path, status, and next department at every step; pilot high-risk passages first. Authorization scope, budget, and attempt count follow the existing AI pipeline; batch tools do not automatically authorize payment or publication. See the [decision tree](../models/README.md) for model choice. Return to the earliest failed stage rather than calling structural documentation proof of dynamic success.
 
-## 批量生成与筛选
+## Batch generation and selection
 
-批量前必须有用户授权的次数/金额/时间边界；本模块不给付费或外部发布授权。先跑风险最高的代表段，合格再扩；每批保留原片，不直接覆盖。用户只要文字可给完整方案，不强制其先跑一段。
+Before batching, obtain user-authorized boundaries for attempts, money, and time; this module grants no paid-generation or publication authority. First test the most risky representative passage, expanding only after it qualifies. Preserve raw clips per batch rather than overwriting. For text-only users, deliver the complete plan without making a pilot mandatory.
 
-筛选先看关键否决项（身份、接触、六项状态、用户硬目标），再看风格与观感；漂亮但关键错误的片段不能入选当下一段尾帧。标签建议：ID身份、SP空间、CT接触、MO动量/支撑、FX效果、CA摄影、AU音频、ED接缝、PF平台条件；区分设计问题与执行偏差。
+Screen hard vetoes first: identity, contact, six-category states, and explicit user goals. Then consider style and feel. A beautiful clip with a critical error cannot be selected as the next segment's final frame. Suggested labels: ID identity, SP space, CT contact, MO momentum/support, FX effects, CA camera, AU audio, ED seams, PF platform conditions. Distinguish design faults from execution deviations.
 
-内部记录：`样本ID｜稿件/资产/模型模式版本｜请求设置｜主要变量｜输出路径｜可用区间｜失败标签与定位｜保留/弃用理由`。不把未选样本删掉造成不可比较；用户要求清理时限定本次生成文件。
+Internal record: `Sample ID | Draft/asset/model-mode versions | Request settings | Main variable | Output path | Usable interval | Failure label and location | Retain/discard rationale`. Do not delete unselected samples and lose comparison; when cleanup is requested, limit it to files generated for this task.
 
-估算用“计划次数×当前已核单次价格+后期时间”，价格来自界面且记日期；时长按实测队列/生成/审核分开。没有价格和样本不报确定预算/成功率，可给经验区间且明示假设。同类失败重复且无新变量可试就停，回到[AI管线](../references/ai-pipeline.md)或换可控方案。
+Estimate as "planned attempts × currently verified unit price + post-production time." Take the price from the interface and record its date; separate measured queue/generation/review durations. Without prices and samples, give no certain budget or success rate; an experience-based range must state assumptions. Stop when the same failure repeats with no new variable to test, returning to the [AI pipeline](../references/ai-pipeline.md) or a controllable approach.
+

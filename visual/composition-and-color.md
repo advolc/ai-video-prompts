@@ -1,44 +1,44 @@
-# 构图与色彩（合并版）
+# Composition and Color (Consolidated)
 
-合并了v1的构图手段与色彩系统。光学与光线的物理写法见[光学与胶片](../lens/optics-and-stock.md)与[物理光线](../lens/physical-light.md)。
+Combines v1 composition methods and color systems. For physical descriptions of optics and light, see [optics and stock](../lens/optics-and-stock.md) and [physical light](../lens/physical-light.md).
 
-## 构图系统
+## Composition system
 
-本文件管画面内的关系；[运镜节奏](../references/camera-and-rhythm.md)管画面如何随时间改变，不能把两边的建议叠成两套相机任务。
+This file handles relationships within the frame; [camera and rhythm](../references/camera-and-rhythm.md) handles changes over time. Do not stack their guidance into two sets of camera tasks.
 
-| 手段 | 叙事选择 | 检查 |
+| Method | Narrative choice | Check |
 |---|---|---|
-| 三分 | 留出行动前方 | 视线与兵器前方有空间 |
-| 中心对称 | 秩序、仪式或权力 | 背景几何稳定、主体身份不复制 |
-| 对角线 | 推进、倾斜压力 | 倾斜不掩盖真实支撑 |
-| 框架 | 门窗形成隔离 | 不盖住手与接触 |
-| 引导线 | 通路指向目标 | 线的消失点不错误牵走视线 |
-| 负空间 | 孤独、等待或威胁 | 空白承载方向，不只是主体太小 |
-| 视觉重心 | 权力与关注 | 最亮/最大块是否落在主信息 |
-| 重复节奏 | 秩序中显出异常 | 重复人物不变成复制脸 |
-| 前中后景 | 距离、遮挡、规模 | 前景不长期挡关键动作 |
+| Rule of thirds | Leave room ahead of action | Space ahead of gaze and weapons |
+| Central symmetry | Order, ritual, or power | Stable background geometry; no duplicated subject identity |
+| Diagonals | Progression, tilted pressure | Tilt does not conceal actual support |
+| Framing | Doors/windows create separation | Hands and contact stay visible |
+| Leading lines | A route points toward the target | Vanishing points do not misdirect attention |
+| Negative space | Isolation, waiting, or threat | Empty space has direction; the subject is not merely too small |
+| Visual center of gravity | Power and attention | The brightest/largest mass carries the main information |
+| Repetition | An anomaly within order | Repeated figures do not become cloned faces |
+| Foreground/midground/background | Distance, occlusion, scale | Foreground does not persistently hide key action |
 
-压迫可用狭框与上方重物；孤独用小人物与有方向的空地；自由给通路与开阔头顶；混乱可偏置重心但仍保主线。情绪映射是候选，不是强制公式。
+Oppression may use a narrow frame and weight overhead; isolation, a small figure and directional empty space; freedom, open routes and headroom; chaos, an off-center visual weight with the main line still clear. These emotional mappings are candidates, not compulsory formulas.
 
-16:9适合横向双人关系；2.39:1增强横向距离但小屏要放大接触；9:16重排垂直层，不硬裁两侧；1:1把目标集中在中心周围。画幅只取本次一项，输出控制栏设置。深焦交代前后威胁；浅焦只隔离一个焦点；移焦必须有新的信息接棒，不能多次拉焦同时高速打斗。
+16:9 suits a horizontal two-person relationship; 2.39:1 strengthens lateral distance but contact needs enlarging for small screens; 9:16 rearranges vertical layers rather than hard-cropping the sides; 1:1 concentrates the target near the center. Choose one aspect ratio for the task and set it in output controls. Deep focus reveals foreground and background threats; shallow focus isolates one plane. A focus pull needs new information to receive attention; do not repeatedly rack focus during fast combat.
 
-对称生成风险：门柱弯曲、左右复制、越轴后位置不明。静态先对齐中轴与透视，动态看完整视频的几何、主体数量和左右连续；单帧漂亮不能证明对称运动成立。冲突见[裁决](../core/precedence.md)。
+Symmetry-generation risks include bent doorposts, mirrored duplication, and unclear positions after crossing the axis. Align centerline and perspective in stills first; for motion, inspect geometry, subject count, and left/right continuity throughout the actual video. A beautiful frame does not prove symmetric motion works. Resolve conflicts through [precedence](../core/precedence.md).
 
-## 色彩系统
+## Color system
 
-### 先选关系，再选色名
-| 方案 | 用法与代价 |
+### Choose a relationship before a color name
+| Scheme | Use and tradeoff |
 |---|---|
-| 单色统治 | 主色进入背景大面、空气或服装；人物用明度分离，避免全画面同亮 |
-| 互补 | 两种相对色分配给阵营或前后景；限制第二色面积，避免各处同抢眼 |
-| 类似 | 邻近色衔接空间，靠明度和材质拉开，不依赖色相差辨认动作 |
-| 分裂互补 | 主色与两侧辅助色；辅助只服务焦点，别把所有光源都染色 |
-| 三色 | 分配主次而非等量；群像可区分身份，但跨镜头不能交换归属 |
-| 无彩+强调色 | 黑白灰建立层级，一处颜色承载目标；不能靠小色点代替看清动作 |
+| Dominant monochrome | Put the main hue into broad background areas, air, or costume; separate figures by value rather than making the whole frame equally bright |
+| Complementary | Assign opposing hues to sides or depth layers; limit the second hue's area so everything does not compete |
+| Analogous | Connect space through neighboring hues; separate through value and material rather than relying on hue differences to read action |
+| Split complementary | One main hue and two supporting hues; support the focal point rather than tinting every light source |
+| Triadic | Give colors unequal priority; they may distinguish ensemble identities but cannot change ownership across cuts |
+| Achromatic plus accent | Black/white/gray establish hierarchy, with one color carrying the target; a tiny accent cannot replace readable action |
 
-色彩叙事按一个段落一种主关系组织，不是每镜强换色。记录颜色对应时间/情绪/权力的依据与变化触发；不把红色必然等同愤怒。主色内部用明度、冷暖、粗糙/反射材质拉开。暂抽掉人物，环境是否仍受主色统治？再放回人物检查脸、手和兵器。
+Organize each passage around one main color relationship, not a forced hue change every shot. Record why colors correspond to time/emotion/power and what triggers changes; red does not invariably mean anger. Within the main hue, separate value, temperature, and rough/reflective materials. Temporarily remove the characters: does the environment still carry the dominant hue? Put them back and check faces, hands, and weapons.
 
-### 风格词落地
-胶片感→柔和高光过渡、有限颗粒；数字感→清楚边缘、干净暗部；低饱和→收敛色度仍保肤色差；高对比→关键手部留明度；青橙→冷背景与暖肤色分区；莫兰迪→灰调近邻色；漂白旁路→银灰低色度、高反差候选；暗部染色→阴影轻带所选色，不吞五官。它们是设计词，不是已执行调色。
+### Turn style words into visible facts
+Film-like → soft highlight roll-off and limited grain; digital → clear edges and clean shadows; low saturation → restrained chroma with skin variation retained; high contrast → readable value on key hands; teal/amber → cool background versus warm skin; Morandi palette → neighboring muted hues; bleach bypass → a candidate silvery, low-chroma, high-contrast look; tinted shadows → a slight chosen hue without losing facial features. These are design terms, not evidence of completed grading.
 
-提示词写“暗红叶面铺满地面，红布受侧光亮起，灰黑人物在红雾前分出轮廓”，不只写“红色电影感”。每段继承主色承载物与明度关系，色漂先减竞争色源或用参考；后期统一见[调色](../post/finishing-and-release.md)。风格签名见[风格转译](style-translation.md)。
+Write "dark red leaves cover the ground, red cloth brightens under side light, and gray-black figures separate from red mist," not merely "red cinematic look." Carry the main color-bearing surfaces and value relationships across segments. For drift, first reduce competing color sources or use references; see [grading](../post/finishing-and-release.md) for post-production unification and [style translation](style-translation.md) for style signatures.

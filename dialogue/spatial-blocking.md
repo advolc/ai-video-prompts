@@ -1,76 +1,76 @@
-# 对话空间调度：位置、通路与回应
+# Dialogue Spatial Blocking: Positions, Routes and Responses
 
-本页补足文戏的宏观身体行动。情境档案选择语境，对话单元组织交流转折，本页负责人物在交流中如何使用或保持空间。先设计空间关系，再写手部、微表情和摄影；不把打戏的步数、转角、高差指标移植到文戏。
+Situation profiles select context and conversation units organize dramatic turns. This module supplies macro physical action: how people use or retain space while communicating. Design spatial relationships before hands, facial detail and coverage. Combat step, bearing and elevation thresholds do not apply to dialogue.
 
-## 1. 必做的是空间决策
+## 1. A spatial decision is required
 
-有镜内人物参与交流的场景，包括同场对话、远程通话和无声回应，每个对话单元都要完成一次空间审查。同场交流设计双方关系；远程交流只审查各自实际出镜的本地空间，并以声音或已提供的远端画面承接回应，不建立虚假的共享几何。纯画外叙述不套双人协议。在内部设计记录里选择 **保持、移动、混合**，说明原因；在每次有意义的交流转折处，设计一个空间提议及回应，或明确保持现有关系的选择。一个单元可以全程坐着，一个长句也可以贯穿走位，不要求每句台词配一个动作。
+For each unit involving an on-screen participant, including co-present dialogue, remote calls and silent responses, perform an internal spatial review. Co-present scenes consider both people; remote scenes consider each visible person's actual local space, with responses carried by sound or supplied remote imagery. Do not invent shared geometry. Pure voice-over narration does not require a two-person protocol.
 
-空间提议是一次可被接受、拒绝、追随、避开或暂缓的身体选择，例如让出身边的座位、走向现有出口、绕过桌角靠近、停在门槛等待。主动方可以是听者。固定位置也能构成提议：被邀请靠近时仍坐在原处，伸手留出身边的位置等待回应。没有改变距离时，写清保持了什么，以及对方怎样回应；不能只填“克制”“有张力”“符合档案”。
+Choose **maintain, relocate or mixed** in the internal design record and give the reason. At each meaningful turn, design a spatial offer and response, or a deliberate choice to retain the existing relationship. A whole unit may remain seated; a long sentence may span a movement. No gesture or displacement is required per line.
 
-剧情或用户已明确建立走向窗边、跟上、离开、让路等移动目标时，要落实身体路径和落点；不能用“保持”分类、杯子动作或镜头推近覆盖该目标。未指定走位而需要编排时，先从当下目标和可用路线推导选择，不先套正面静坐再加微动作。
+A spatial offer is a physical choice that can be accepted, refused, followed, avoided or deferred: making a nearby seat available, turning toward an existing exit, approaching around a table corner, or waiting at a threshold. The listener may initiate. A fixed position can also be a choice: remaining seated after an invitation to approach, or leaving room beside oneself and waiting. If distance stays unchanged, identify what is retained and the counterpart's visible response. Labels such as restraint, tension or profile fit are insufficient.
 
-选择来自人物目标、关系、具体刺激与可用环境。亲密、合作、礼让、共同照料与喜剧，同样可以通过空间发展；不把所有对话升级成逼迫和控制。移动多、站得高、占地方大都不自动等于权力大。
+If the user or story establishes a movement goal such as reaching a window, following, leaving or giving way, depict the body path and destination. A maintain label, cup gesture or camera push cannot replace that target. When blocking is unspecified, derive choices from the current goal and real routes instead of starting with face-to-face seating and adding small gestures.
 
-## 2. 场景简图与单元空间线
+Choices follow goals, relationships, stimuli and available space. Intimacy, cooperation, courtesy, shared care and comedy can develop spatially too; do not turn every exchange into coercion or control. More movement, greater height or a larger physical footprint does not automatically mean greater power.
 
-先记已有的空间锚点、可用通路、可见/可听范围、支撑和行动限制。简单场景用“桌内侧、窗边、门槛”即可；跨房间、多人物或复杂换位时再加平面图和 x/y/z。人物世界位置与摄影机左右分别记录。高度包含站、坐、台阶等关系，脚底高度与身体姿态分开，不为凑三维而登高。
+## 2. A scene sketch and a unit spatial spine
 
-每个单元用一条简短记录覆盖以下内容，可在相邻单元复用未变字段：
+Record existing anchors, available routes, visibility/hearing, support and mobility limits first. Table-inner-side, window and threshold are enough for a simple scene; add a plan and x/y/z for complex crossings, rooms or groups. Track world position separately from camera left/right. Height includes standing, sitting and steps; distinguish foot elevation from posture and do not add climbing to fill a third dimension.
 
-`起始几何（各人锚点、距离、朝向、姿态/高度、通路） → 触发与目标 → 空间选择（保持/移动/混合） → 发起者的身体路径或保持理由 → 另一方的身体回应 → 结束几何与交流后果 → 下段承接`
+Use one concise record per unit, carrying unchanged fields forward:
 
-关键要求：
+`Opening geometry (each anchor, distance, facing, posture/elevation, route) -> cue and goal -> maintain/relocate/mixed -> initiator's body path or concrete hold reason -> counterpart's physical response -> ending geometry and conversational consequence -> next-unit handoff`
 
-- **移动有起止和路径。** 从桌外侧绕过空出的桌角，到窗前停住；避开椅背，手中杯子有可用的手承接。不能从座位切到窗边就假定已经走过。
-- **回应涉及关系。** 一方转向窗外，另一方可以留在桌旁继续说、走到斜后方停住、让出视线或停下追问。两人不必同时移动，也不必始终正面对视。
-- **环境真的可用。** 桌子能隔开也能被绕过，门框可能标记进退与旁听边界；用通路、视线、距离或接近权限说明锚点作用，摸一下桌面不等于完成空间调度。没有门、窗或角落时不为此新增。
-- **后果承接。** 靠近、退开、并肩、错位、分隔、离场或未被接受的邀请，应在下一句/下一单元中继续有效，不能切镜后复位。
-- **时间可执行。** 起身、放下物件、绕路、停住和听者反应都占时间。台词可以跨越移动；复杂换位与精细表情分时呈现，保持关键台词和动作目标。
+- **A move has an origin, path and destination.** Go from the table's outer side around the clear corner to the window, accounting for chair backs and any held cup. A cut from chair to window does not demonstrate the route.
+- **A response concerns the relationship.** When one turns to the window, the other may continue speaking from the table, approach to an offset behind them, leave their sightline clear, or stop questioning. Both need not move or face each other continuously.
+- **The environment is usable.** A table may separate people or be circled; a doorway may mark departure or a listening boundary. Show how an anchor affects route, sightline, distance or access. Touching a tabletop alone is not spatial blocking. Do not add a missing door, window or corner for this purpose.
+- **Consequences persist.** Approach, withdrawal, alignment, separation, departure and an unanswered invitation carry into the next line/unit rather than resetting after a cut.
+- **Timing is executable.** Rising, setting down an object, walking around furniture, stopping and reacting take time. Speech may span movement; separate complex repositioning from fine facial work while protecting the key line and action target.
 
-## 3. 保持不动的成立条件
+## 3. When staying still is valid
 
-保持是有效选择，不是失败豁免。审查以下理由是否由场景支持：
+Maintaining position is a choice, not a blanket exemption. Check whether the scene supports the reason:
 
-| 情况 | 检查什么 | 允许的空间发展 |
+| Situation | Check | Valid spatial development |
 |---|---|---|
-| 正式静坐、仪式、明确要求固定姿势 | 座次、边界与可接近权限是否成立；用户的静止要求是否保留 | 座位不变，邀请被推迟、共同注意对象改变，或一次拒绝得到对方回应 |
-| 亲密坦白、病床照护、悲伤 | 靠近或离开是否会破坏本场目的；实际行动能力如何 | 一方留在可触及处等待，另一方接受/回避；也可仅通过可见的听者反应完成保持 |
-| 真实受限空间、受伤或行动辅助 | 椅子、门、床、扶手和辅助器具的实际限制；没有通路不凭空制造 | 调整朝向、座位关系、触及范围或共同视线；可全程固定位置 |
-| 主动拒绝、耐心等待、守住职责 | 什么刺激使留在这里成为选择，对方如何应对 | 被催促仍留在任务锚点，对方改为在此交流或收回邀请；不自动增加威胁 |
-| 电话、远程、画外音 | 是否真实共享空间；镜内人物在做什么 | 各自按本地空间与可见反应设计，不伪造双方共同门窗、距离与接触；纯画外叙述不套双人协议 |
+| Formal seating, ritual or an explicitly fixed pose | Seating, boundaries and access are established; the user's stillness target survives | Seats remain unchanged while an invitation is deferred, shared attention shifts, or a refusal receives a response |
+| Intimate confession, bedside care or grief | Would approach/departure undermine the purpose? What movement is physically possible? | One waits within reach and the other accepts/avoids; a visible listening response can also complete a deliberate hold |
+| Real confinement, injury or mobility assistance | Actual limits of chairs, doors, beds, rails and aids; no invented route | Change orientation, seating relation, reach or shared sightline; fixed positions throughout are permitted |
+| Refusal, patient waiting or holding a duty | What stimulus makes staying a choice, and how does the counterpart answer? | A person stays at their task anchor despite prompting; the other exchanges there or withdraws the invitation, without an automatic threat |
+| Telephone, remote exchange or off-screen speech | Is space actually shared? What is the visible participant doing? | Use each local space and visible response, not fictional common doors, distances or contact; pure voice-over is outside the two-person protocol |
 
-明确要求完全静止时，可以只有眼神、呼吸、语言回应；保留该要求并写出交流变化，不能为“通过空间检查”擅自加起身、触碰或离场。此处不设每分钟移动次数、最低距离、固定镜头数量或强制高度变化。
+When complete stillness is explicit, eye, breath and verbal responses may be sufficient. Preserve the target and conversational change; do not add standing, contact or departure to pass a spatial check. There is no minimum movement count, travel distance, shot count or elevation change.
 
-## 4. 与现有系统的分工
+## 4. Division of responsibility
 
-- `situation-profiles.md` 的 13 种档案是起点，不是固定站位。“minimal movement”须经过保持审查；“walking talk”须有实际路线和领随/并肩关系，不能只让背景滚动。
-- `conversation-units.md` 的单元转折携带本页的空间线。不是每个说话回合都重新填表，也不是每个单元都必须换锚点。
-- `../lens/body-and-status.md` 细化已经设计的身体行动；增加杯盖、眨眼、摆手不能替代空间决策。
-- 普通起身、绕行、转向、让位和保持通常是 B 层表演，按实际时长与清晰度安排；不因多走一步就强制拆生成请求。造成剧情变化的阻门、强行接触、锁门、离场、物件转交、信息暴露等按既有事实与 A 层检查，不作为自由纹理新增。
-- `../references/camera-and-rhythm.md` 在走位之后选机位。机位环绕、推近、反打和景别切换都不改变人物世界位置。关键移动须有路径证据，可连续展示，也可用可衔接的中间状态；有意省略时明确时间省略，别声称展示了完整路径。
+- The thirteen `situation-profiles.md` profiles are starting points, not fixed marks. Minimal movement still gets a maintain review. Walking dialogue needs a real route and lead/follow or side-by-side relation, not just scrolling scenery.
+- The turn in `conversation-units.md` carries this spatial spine. Do not refill a table per utterance or require an anchor change in every unit.
+- `../lens/body-and-status.md` enriches designed physical action. A cup lid, blink or hand wave does not replace the spatial decision.
+- Ordinary rising, circling, turning, yielding and deliberate holds are usually Tier B performance, fitted to duration and readability. An extra step does not automatically split a request. Plot-changing obstruction, forced contact, locking a door, departure, transfer or disclosure uses existing story locks and Tier A checks; it is not free texture.
+- Choose camera behavior after blocking with `../references/camera-and-rhythm.md`. An orbit, push, reverse or shot-size change does not change world position. A key move needs path evidence, continuously or through connectable intermediate states. Mark an intentional time omission rather than claiming to show the entire path.
 
-## 5. 写入提示词
+## 5. Translation into prompt prose
 
-内部记录保留动机、空间选择和账本，最终提示词写身体事实及顺序。一个移动句至少交代人物、现有锚点、路径与落点，并把对方回应写进后续动作。例如：
+Keep motives, decisions and ledgers internal. Final prose gives physical facts in order. A movement sentence identifies the person, an existing anchor, the route and destination, then carries the counterpart's response. For example:
 
-> 她把杯子放回桌外侧，沿桌角空出的通道走到窗前，侧身望着玻璃上的雨。对方说到一半停住，仍留在桌边；等她回头，他才放低声音接着说。
+> She sets the cup on the outer side of the table and follows the clear corner to the window, turning sideways to watch rain on the glass. The other person stops halfway through a sentence and stays by the table; when she looks back, he resumes in a lower voice.
 
-保持也写成可见选择，而非抽象解释。例如：
+A maintain decision is also visible, rather than explained:
 
-> 她把身旁的椅子转向他，手停在椅背上等着。他坐在原来的位置，目光从空椅移回她脸上，轻声说：“我在这里听。”她把手收回，迎着他的目光继续说。
+> She turns the chair beside her toward him and waits with a hand on its back. He stays in his own seat, shifts his gaze from the empty chair to her face and says quietly, "I'll listen from here." She withdraws her hand and continues, meeting his eyes.
 
-例句只演示路径和回应，不授权新增杯子、窗、座位、台词或剧情。具体刺激、动作与结果来自本场事实或已授权的编排。
+These illustrate paths and responses; they do not authorize new cups, windows, seats, lines or plot. Actual cues, actions and outcomes come from this scene's facts or delegated staging.
 
-## 6. 必过的交付检查
+## 6. Required delivery checks
 
-在内部完成下列检查；简单场景直接人工核对，不要求导出 JSON 或另跑工具。
+Check internally; a simple scene needs no exported JSON or separate tool:
 
-1. **有决策：** 单元起止关系及保持/移动/混合选择明确；有意义的转折对应空间选择，或有具体的保持理由和可见回应。
-2. **有双向关系：** 发起者和听者都被考虑；不是说话者漫无目的地走、听者留成背景。
-3. **有物理连续性：** 路径、家具净空、支撑、持物手、耗时和朝向成立；切镜和镜头运动没有被当作身体位移。
-4. **有交流作用：** 空间选择影响距离、朝向、共同注意、视听可达性、路线或接近权限之一，或有意义地保持现状。若删去动作而交流与空间毫无区别，查是否为装饰性踱步。
-5. **有边界：** 没有为显得“活”而新增威胁、抓扯、锁门、秘密、离场或身体能力；固定场景与非对抗场景可正常通过。
-6. **有承接：** 下段延续站位、朝向、可用路线与未完成邀请；保留角色自己的左右和真实锚点。
+1. **Decision:** opening/ending relations and maintain/relocate/mixed are explicit. A meaningful turn has a spatial choice, or a concrete hold reason and visible response.
+2. **Reciprocity:** both initiator and listener are considered. The speaker is not wandering while the listener becomes background.
+3. **Physical continuity:** routes, furniture clearance, support, occupied hands, timing and facing work. Cuts and camera motion are not counted as body displacement.
+4. **Conversational function:** the choice changes distance, facing, joint attention, sight/hearing, route or access, or meaningfully preserves that state. If removing it changes nothing, inspect for decorative pacing.
+5. **Boundaries:** do not add threats, grabbing, locked doors, secrets, departure or physical abilities merely to make a scene lively. Fixed and non-adversarial scenes can pass.
+6. **Handoff:** carry anchors, facing, routes and unresolved invitations into the next unit; preserve character-local left/right and real landmarks.
 
-不能仅凭出现“绕、走、站起”或账本填写完整就判定通过。对已生成视频，另查连续画面中的身体位置与锚点；只看提示词或关键帧时标记动态未验证。记录失败可用 `dialogue-spatial-flat`（有转折却无空间决策）、`dialogue-spatial-busywork`（无因果的踱步）、`dialogue-spatial-jump`（路径/承接断裂）；先修最早失效的设计，不堆微动作或摄影术语。
+Movement words or a completed ledger do not by themselves pass the check. For generated video, inspect continuous images of bodies relative to anchors. Text or keyframes alone leave dynamics unverified. Failure labels: `dialogue-spatial-flat` (a turn without a spatial decision), `dialogue-spatial-busywork` (causeless pacing), `dialogue-spatial-jump` (broken path/handoff). Fix the earliest failed design rather than adding micro-actions or camera jargon.

@@ -1,37 +1,37 @@
-# 一致性工程
+# Consistency Engineering
 
-## 资产版本是基准
+## Asset versions are the baseline
 
-角色、场景、兵器、术法、服装与声音各有稳定ID和版本；文件名可用CHAR_A_v02等，镜头和生成段引用它们。批准图不被下一次抽卡覆盖；保留原图、裁取用途、修改记录与获准状态。改变角色外观时列出受影响镜头，避免半集新冠半集旧冠。
+Characters, settings, weapons, powers, costumes, and voices each have stable IDs and versions. Filenames may use `CHAR_A_v02`; shots and generation segments reference them. An approved image is not overwritten by the next generation. Retain originals, crop purposes, change records, and approval status. When appearance changes, list affected shots to avoid half an episode using a new crown and half the old one.
 
-一致性不只看脸：轮廓比例、黑白发分区、左右肩甲、纹样位置、惯用手、兵器长度/握距、术法构件数量、伤势、能量余量及背景结构都在基准内。固定种子和同一句提示词是可用工具，不是跨镜一致的保证。
+Consistency includes more than faces: silhouette proportions, black/white hair regions, left/right shoulder armor, pattern locations, handedness, weapon length/grip spacing, power-component count, injuries, energy reserves, and background structure. Fixed seeds and identical prompts are tools, not guarantees across shots.
 
-先按[生成交接检查](generation-handoff.md)核实实际输入。无图时用文字外观卡作为设计基准，批准图、角度覆盖和图像承接均记“未提供/未使用”，不虚填成已具备；固定文字描述不等于已锁定身份。若用户要求严格复现而素材不足，说明缺口并给可选补图或调整目标方案，不能自行改掉人物。
+First verify actual inputs through [generation handoff checks](generation-handoff.md). Without images, use a written appearance card as design baseline. Mark approved images, angle coverage, and image handoff “not provided/not used” rather than pretending they exist. Fixed text does not mean identity is locked. If strict reproduction is requested but material is insufficient, explain the gap and offer optional references or adjusted goals; do not change the character yourself.
 
-## 状态与空间账本
+## State and spatial ledger
 
-`时间点/SHOT/GEN｜角色位置/朝向/屏幕区｜支撑与动量｜持械手/武器归属｜衣饰和伤损｜能力状态｜场景锚点/损毁版本｜摄影侧/高度｜声音连续项`。
+`timepoint/SHOT/GEN | character position/facing/screen region | support and momentum | weapon hand/ownership | costume and damage | ability state | scene anchors/damage version | camera side/height | sound continuity items`.
 
-文戏另按[对话空间调度](../dialogue/spatial-blocking.md)承接各人的锚点、朝向、姿态/高度、距离、可用通路/接近权限与未完成的空间提议；位置保持也需承接，摄影转向不能替代身体移动。
+Dialogue additionally carries each character's anchor, facing, posture/height, distance, available routes/access, and unresolved spatial proposals through [dialogue spatial blocking](../dialogue/spatial-blocking.md). A held position also needs continuity; a camera turn cannot substitute for bodily movement.
 
-每个生成段分别记录计划起止状态与实际获准状态；下一段起始设计承接前段合格结果，或有明确省略与原因。只有实际使用首尾帧控制时才写已输入的帧，不把文字状态表称为图像锁定。记录世界坐标和屏幕坐标，摄影机转向不等于人物瞬移；左右装饰以角色自身左右为准，不能被镜像翻转悄悄交换。
+For every generation segment, record planned start/end states separately from actually approved states. The next opening inherits the preceding qualified result, or has an explicit ellipsis and reason. Name input frames only when first/last-frame controls are actually used; a written state sheet is not an image lock. Record world and screen coordinates. Camera rotation is not character teleportation; ornaments use character-relative left/right and must not silently switch through mirroring.
 
-## 场景锚点与一致性卡
+## Scene anchors and consistency cards
 
-角色卡见 [角色表演](character-and-performance.md)，场景卡见 [场景风格](world-and-style.md)。采用参考资产流程时，除标准角度外检查本场复杂姿态角度；武器碰撞重点核实手、柄和接触面，脸部肖像不能替代。采用无图流程时明确这些关系的文字描述与动态待验项，不把整套参考资产列为所有创意任务的前置条件。
+See [character performance](character-and-performance.md) for character cards and [world/style](world-and-style.md) for setting cards. With reference assets, check complex poses needed here beyond standard views; weapon collisions specifically need hands, handle, and contact surfaces, not merely a face portrait. In text-only workflows, explicitly describe those relationships and pending dynamic checks. A full reference-asset set is not a prerequisite for every creative task.
 
-比较同一资产的标准帧、本镜首/中/尾、跨段接缝与最后成片。允许风格化瞬时变形，但恢复后身份和结构应回到基准；一帧截取异常与持续身份漂移分别标注，按实际观看影响判断。
+Compare an asset's standard frame, this shot's start/middle/end, cross-segment seams, and final film. Stylized transient deformation is allowed, but recovered identity/structure should return to baseline. Label a single-frame anomaly separately from sustained identity drift and judge actual viewing impact.
 
-## 变更与局部返工
+## Changes and local rework
 
-失败标签按身份、空间、动作、接触、效果、声音/口型分类。定位最早出错处并检查依赖：若断盾被下一段恢复，要改后段状态参考；若前段尾帧已错，不把错帧继续作为唯一身份基准。
+Tag failures as identity, space, action, contact, effects, sound/lip sync. Locate the earliest failure and inspect dependencies: if a broken shield returns intact in the next segment, revise the later state reference. If the preceding end frame is already wrong, do not keep it as the sole identity baseline.
 
-只返工受影响的段或资产，剪辑与调色不得覆盖原输出。记录选择理由、弃用段和版本；修复一段后复看前后接缝及相关镜头，不必无理由重生成全片。合成或修图仅在可修范围内使用，不能宣称文本限制已经修好实际视频。
+Rework only affected segments/assets; editing and grading must not overwrite original output. Record selection reasons, rejected segments, and versions. After repair, review adjacent seams and related shots; do not regenerate the whole film without reason. Use compositing/image repair within their actual scope; text constraints alone cannot be described as a repaired video.
 
-## 版本与表演一致性补充
+## Additional version and performance consistency
 
-版本字段：方案ID、版本号、父版本、差异点、选用理由、弃用记录，按[版本控制](../post/finishing-and-release.md)关联资产/提示词/成片；回滚时同步相关接缝状态。
+Version fields: plan ID, version, parent version, differences, selection reason, rejection record. Link assets/prompts/final film through [version control](../post/finishing-and-release.md); rollbacks also restore relevant seam states.
 
-表演字段：表情基线、视线习惯、呼吸节奏、微相变体及适用刺激。记录用于保持角色，不要求逐段全部展示或加动作；主微相与相关肢体代理属B层，不增加A层事件。明确的脸部目标不可静默改为远景肢体。
+Performance fields: expression baseline, gaze habits, breathing rhythm, subtle-signal variants, applicable stimuli. These preserve character; they do not require every item to appear or add actions in every segment. The main subtle signal and related bodily proxy are Tier B, not additional Tier A events. An explicit facial target cannot silently become distant body acting.
 
-当场可见表演（视线、呼吸、微相、肢体代理）由 `references/character-and-performance.md` 与 `references/performance-and-psychology.md` 设计；本文件只负责跨段保持与承接，不重复设计表演，也不在状态卡里新增表演方案。
+`references/character-and-performance.md` and `references/performance-and-psychology.md` design immediately visible acting: gaze, breath, subtle signals, bodily proxies. This file handles only preservation and handoff across segments; do not redesign acting here or add performance plans inside state cards.

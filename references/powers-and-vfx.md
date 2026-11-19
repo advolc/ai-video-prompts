@@ -1,67 +1,67 @@
-# 能力风格与特效类型、程度
+# Ability Style and Effect Types/Intensity
 
-## 能力卡：先定规则，再设计外观
+## Ability card: rules before appearance
 
-`来源/载体｜触发条件｜作用对象｜方向与范围｜持续/冷却｜消耗与代价｜反制方法｜失败表现｜视觉识别｜与环境的关系`
+`source/carrier | trigger | target | direction/range | duration/cooldown | consumption/cost | countermeasures | failure appearance | visual identifiers | environment relationship`
 
-区分角色知道的规则、观众当前知道的规则和作者掌握的完整规则。悬念允许暂时隐瞒，但关键结果不能靠临时新增能力随意解决。
+Distinguish rules known by characters, rules currently known by viewers, and the author's full rules. Suspense may temporarily hide information, but decisive results cannot be solved through arbitrary new abilities.
 
-让两种能力在行为上不同：贴刃薄膜沿接触面偏折，压力环向外推动，细线需要端点和张力，幻象改变感知却未必产生物理冲击。仅把同一球体换色，不能说明机制差异。保持用户既定图案、构件数量和结构，不因远景或爆发随意改变。
+Make abilities differ behaviorally: a blade film deflects along contact, a pressure ring pushes outward, a thin line needs endpoints/tension, an illusion changes perception without necessarily causing physical impact. Recoloring the same sphere does not establish a different mechanism. Preserve the user's patterns, component counts, and structure rather than changing them for a wide shot or burst.
 
-## 特效类型与用途
+## Effect types and uses
 
-| 类型 | 要说明什么 | 关键字段与误用 |
+| Type | What to describe | Key fields and misuse |
 |---|---|---|
-| 轨迹/速度线/残影 | 方向、加速或短暂视觉强调 | 起止、跟随对象和消失时间；残影不是多出来的实体人 |
-| 火花/冲击面/气浪 | 接触、架偏、受力释放 | 接触点、法线或传播方向；未命中不能自动冒接触火花 |
-| 元素/能量 | 能力状态与作用机制 | 载体、运动规律、边界、相互作用；不默认全都爆炸 |
-| 护盾/屏障/力场 | 防御范围与承压过程 | 边界、形变、失效和泄漏；罩内外及友军位置要明确 |
-| 破坏/碎屑/烟尘 | 材料、尺度、落点与后果 | 受力源、大小层次、方向与残留；不可每次随机四散 |
-| 环境/天气 | 空间深度与常态运动 | 与脚步、撞击触发的局部扰动分开 |
-| 图形化强调 | 情绪、瞬时冲击或主观知觉 | 冲击帧、线条、色块的进入和退出；不误当世界真实物体 |
-| 镜头/合成处理 | 观众的观看感受 | 模糊、震动、曝光与色偏按信息需要控制；不能代替身体反应 |
-| 伤损/机体故障 | 战斗代价 | 服装破损、护甲缺口、动作受限、烟或火花；强度服从受众与剧情要求 |
+| Trails/speed lines/afterimages | Direction, acceleration, brief visual emphasis | Start/end, tracked subject, disappearance; an afterimage is not another physical person |
+| Sparks/impact plane/pressure wave | Contact, deflection, force release | Contact point, normal/propagation direction; a miss does not automatically create contact sparks |
+| Elements/energy | Ability state/mechanism | Carrier, motion rules, boundaries, interactions; not everything explodes |
+| Shields/barriers/fields | Defensive extent and loading | Boundary, deformation, failure, leakage; clarify inside/outside and ally positions |
+| Destruction/debris/dust | Material, scale, landing, consequence | Force source, size hierarchy, direction, residue; not random scattering every time |
+| Environment/weather | Depth and baseline motion | Separate from local disturbances triggered by footsteps/impacts |
+| Graphic emphasis | Emotion, momentary impact, subjective perception | Entry/exit of impact frames, lines, color blocks; not physical objects in the world |
+| Lens/compositing treatment | Viewing experience | Blur, shake, exposure, color shifts controlled by information needs; not substitutes for bodily reaction |
+| Damage/machine failure | Combat cost | Torn clothing, armor gaps, limited motion, smoke/sparks; intensity follows audience/story |
 
-## 强度不是一个滑杆
+## Intensity is not one slider
 
-分别给出：覆盖范围、亮度/对比、粒子或线条密度、持续时间、形变幅度、环境影响、摄影扰动。大范围效果可以低亮度，高威力攻击可以几乎不发光。人物实力、伤害程度和屏幕亮度不等同。
+Specify coverage, brightness/contrast, particle/line density, duration, deformation, environmental effect, and camera disturbance separately. A wide effect can be dim; a powerful attack can barely glow. Character strength, damage, and screen brightness are not equivalent.
 
-可用以下本项目内部层级交流，不当行业标准：
+The following internal project levels can support discussion, not serve as industry standards:
 
-- L0：无额外强调，依靠身体、道具与自然环境。
-- L1：局部强调，如短拖尾、少量碎屑或小幅材质变化。
-- L2：明确能力或重要交汇，覆盖局部区域并有可读受力后果。
-- L3：本场视觉峰值，可大幅改变环境或画面语言；保留前后因果和结果窗口。
+- L0: no additional emphasis; body, props, natural surroundings carry it.
+- L1: local emphasis, such as a short trail, a few fragments, or small material change.
+- L2: clear ability/important encounter, covering a local area with readable force consequences.
+- L3: this scene's visual peak, potentially changing environment or visual language substantially; retain causal lead-in and result windows.
 
-不强制每场达到L3，也不规定每场只能一次。多个峰值须有不同剧情含义与层次。给出强度同时说明哪个维度提高；“全部加强”通常不能指导制作。
+No requirement to reach L3 in every scene or limit it to once. Multiple peaks need different narrative meanings/hierarchy. State which dimension increases with intensity; “increase everything” rarely guides production.
 
-## 一个效果事件的规格
+## Specifications for one effect event
 
-`效果ID/镜头ID｜来源和附着对象｜触发动作｜起止时间｜路径/方向｜影响范围｜强度各维度｜遮挡限制｜照明响应｜消退与残留｜下一状态`
+`effect ID/shot ID | source and attachment | triggering action | start/end time | path/direction | affected range | intensity dimensions | occlusion limits | lighting response | decay/residue | next state`
 
-例如“刀盾相交时从接触点沿盾边溅出少量短火花，盾面局部压陷，角色后脚滑动；火花先灭，水痕留到下一镜”。不需要把常规物理碰撞变成能力光环。
+Example: “As blade meets shield, a few short sparks scatter from contact along the shield rim; the shield dents locally and the character's rear foot slides. Sparks die first; the water trace remains into the next shot.” An ordinary collision need not become a power halo.
 
-## 合成与制作顺序
+## Compositing and production order
 
-先验证动作与碰撞代理，再加入主效果，最后加次级碎屑、烟尘和摄影处理。把角色、道具、前景遮挡与效果的深度顺序写清；特效应从身体前后正确穿行，而不是始终像贴纸盖在人物脸上。
+Validate action/collision proxies, add the main effect, then secondary debris, dust, and camera treatment. Specify depth order among characters, props, foreground occluders, and effects. Effects pass correctly in front of/behind bodies rather than remaining stickers over faces.
 
-2D按本片线条、块面、笔触和姿态更新节奏绘制。3D先用低成本代理检查时机与边界，再做模拟/渲染；细碎粒子和体积效果按画幅与资源预算取舍。混合制作统一边缘、色阶和运动节奏，避免背景与能力像来自两部作品。
+For 2D, match the film's lines, planes, brushwork, and pose-update rhythm. For 3D, test timing/boundaries with inexpensive proxies before simulation/rendering; balance fine particles/volumes against framing/resources. Mixed production unifies edges, tonal steps, and movement rhythm so setting and abilities do not look like separate works.
 
-AI提示词把效果绑定到具体动作与对象，写清开始、触发、消退；复杂交互拆成可承接的小段。实际成片检查漂浮、穿透、提前爆发、武器复制和残留消失，不能认为写了限制就已经解决。
+AI prompts bind effects to specific actions/objects, describing start, trigger, and decay. Split complex interactions into connectable short segments. Inspect actual output for floating, penetration, premature bursts, weapon duplication, and vanishing residue; writing a restriction does not solve the video.
 
-## 特效四层与手刃可读性
+## Four effect layers and readable hands/blades
 
-先批准不带特效的动作底片，再按下面四种任务组织可编辑层。不是每一击都需要四层，也不强制四次独立AI生成；选择生成、跟踪合成、局部编辑或动画的合适方式。
+Approve action footage without effects first, then organize editable layers by these four tasks. Not every strike needs all four layers, nor four separate AI generations. Choose generation, tracked compositing, local editing, or animation appropriately.
 
-| 层 | 来源/绑定 | 制作与合成规格 | 验收重点 |
+| Layer | Source/binding | Production/compositing specifications | Acceptance focus |
 |---|---|---|---|
-| 拖尾 | 兵器或肢体的实际运动轨迹 | 跟踪起止点与方向，长度随速度/风格变化；轨迹置于适当深度，避开握持和刃形识别边界 | 不延迟到兵器停止后继续乱飞，不生成第二把实体武器 |
-| 亮核 | 真实交汇点 | 小范围短时强调，记录触发帧、峰值范围与消退；独立素材贴合时匹配视角与遮挡 | 先有接触再亮，保留接触面、手和刃口可辨边缘，避免曝白 |
-| 气浪 | 接触释放或明确能力触发点 | 按冲击面、材质和能力指定径向/定向扩散，可局部编辑或合成；不是所有攻击都圆形爆开 | 起源与方向成立，前后景穿行和角色遮挡正确 |
-| 余效 | 本次碰撞/破坏的后果 | 火花、烟尘、电弧按来源选择，分层叠加并匹配速度、光色、寿命；残留状态写入下一段 | 不突然清空破坏，不让持续烟尘遮住下一次关键接触 |
+| Trail | Actual weapon/limb trajectory | Track endpoints/direction; length varies with speed/style; correct depth, clear of grip and blade-identification boundaries | No continued erratic travel after the weapon stops; no second physical weapon |
+| Light core | Actual encounter point | Small/brief emphasis; record trigger frame, peak extent, decay; separate footage matches perspective/occlusion | Contact before light; readable contact surface, hands, blade edges; avoid white clipping |
+| Pressure wave | Contact release or explicit ability trigger | Radial/directional spread specified by impact plane, material, ability; local editing/compositing possible; not every attack explodes in a circle | Valid origin/direction, correct foreground/background travel and character occlusion |
+| Aftereffect | Consequences of this collision/destruction | Select sparks, dust, arcs by source; layer with matching speed, light/color, lifespan; record residue for next segment | No sudden clearing of damage or smoke obscuring the next critical contact |
 
-每个效果事件记录：`VFX_ID/镜号｜来源与跟踪对象｜触发/消退｜深度顺序｜手/刃/接触面保护区｜遮罩变化｜混合与光照响应｜素材版本｜残留状态`。保护区随运动逐帧跟踪，遮罩边缘匹配本片轮廓与模糊；不得为了看清手而把本来在手前的实体武器错误放到手后。
+Record each event: `VFX_ID/shot | source and tracked object | trigger/decay | depth order | protected hand/blade/contact areas | mask changes | blending/lighting response | material version | residue state`. Track protected areas frame by frame; mask edges match this film's silhouette/blur. Do not incorrectly move a physical weapon behind a hand merely to expose the hand.
 
-“手和刃始终清楚”落实为：效果不持续覆盖握持关系、武器轮廓与关键交汇。正常身体遮挡可以存在，但在接触前后有足够可读窗口；不要为强行全显露破坏真实遮挡。若用户要求整个交汇完全可见，先改摄影角度与效果路径，再处理遮罩。
+“Hands and blades stay clear” means effects do not persistently cover grip relationships, weapon outline, or critical encounters. Normal bodily occlusion is allowed with enough readable pre/post-contact windows. Do not destroy real occlusion to expose everything. If the user requires the entire encounter visible, revise camera angle/effect path before masks.
 
-验收顺序：动作底片 → 只开拖尾 → 加亮核 → 加气浪 → 加余效 → 全层与关闭特效对照。按实际播放速度和手机小画面确认谁攻、谁守、在哪里接触、谁移动。某层使原本清楚的机制读不出，优先缩范围、减持续、改路径或删除该层；不继续加亮来补救。
+Acceptance order: clean action → trail only → add light core → add pressure wave → add aftereffects → compare all layers with effects off. At actual speed and phone-small size, identify attacker, defender, contact point, and displaced character. If a layer hides a previously clear mechanism, reduce extent/duration, redirect, or remove it first; do not keep increasing brightness to compensate.

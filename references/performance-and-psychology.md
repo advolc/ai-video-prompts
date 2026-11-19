@@ -1,135 +1,136 @@
-# 表演、神态与心理动作系统
+# Performance, Expression, and Psychological Action System
 
-仅用户明确要求深挖表演/心理动作，或接受[主动推荐](../SKILL.md#主动识别与推荐协议)后启用。服务于可见表演设计，不用脸部动作诊断真实人物心理，也不将某个肌肉变化称为某情绪的唯一证据。辅助稿见[表演与微表情设计卡](../assets/templates/表演与微表情设计卡.md)。
+Use the relevant internal performance checks by default according to this scene's purpose and shot size; compact versions may shorten their records while retaining necessary checks without separately activating a module. They support visible performance design, not diagnosis of real people's psychology through facial movements, and no muscle change is treated as the sole evidence of an emotion. For supporting drafts, see the [Performance and Microexpression Design Card](../assets/templates/performance-design-card.md).
 
-## 心理动作四步法
+## Four Steps of Psychological Action
 
-| 步骤 | 内部设计问题 | 可交接结果 |
+| Step | Internal design question | Handoff result |
 |---|---|---|
-| 目的 | 他现在想从谁那里得到什么？ | 一个能改变眼前局面的目标 |
-| 障碍 | 谁/什么阻止他？他掌握什么信息？ | 已有剧情事实，不凭空增加秘密 |
-| 动作 | 他在对对方做什么？ | 及物动词：恳求对方、掩饰伤势、威吓追兵、安抚同伴 |
-| 结果 | 对方/身体/关系出现什么可见反馈？ | 视线转向、手的选择、距离或行动改变 |
+| Objective | What do they want from whom right now? | A goal capable of changing the immediate situation |
+| Obstacle | Who/what blocks them? What information do they possess? | Existing story facts, without inventing secrets |
+| Action | What are they doing to the other person? | Transitive verbs: pleading with the other person, concealing an injury, intimidating pursuers, reassuring a companion |
+| Result | What visible feedback appears in the other person/body/relationship? | A change of eyeline, hand choice, distance, or action |
 
-示例：想让守门者放行→被追兵逼近但不能暴露伤势→掩饰疼痛并试探守门者→受伤手缩进袖口，健侧肩朝出口转动。四步属于后台分析，不把“斯坦尼体系/心理动作/潜台词”作为视频正文。
+Example: wants the gatekeeper to let them pass → pursuers approach, but the injury cannot be exposed → conceals pain and probes the gatekeeper → the injured hand withdraws into the sleeve, and the uninjured shoulder turns toward the exit. These four steps are backstage analysis; do not put “Stanislavski system/psychological action/subtext” in the video body.
 
-## 微表情与神态拆解矩阵
+## Microexpression and Expression Breakdown Matrix
 
-下表是可选表演代理，不是情绪识别公式。每段先选一个主要可见信号，必要时再选一个次要信号，不能把整行肌肉动作堆进同一次打斗生成。
+The table below offers optional performance proxies, not an emotion-recognition formula. Select one principal visible signal for each segment, adding one secondary signal only if needed; do not stack an entire row's muscle movements into a single fight generation.
 
-| 维度 | 可选变化 | 适合观察的画面 | 降级选择 |
+| Dimension | Optional change | Suitable image for observation | Fallback |
 |---|---|---|---|
-| 视线：锁定 | 目光从脸转到对方持刀的手，停在该处 | 静态或低速中近景 | 头部轻转朝向该手，利用构图说明目标 |
-| 视线：闪躲 | 看向出口，再移回对方面部 | 对峙、有明确出口锚点 | 整个肩线朝出口转动 |
-| 眼睑 | 上眼睑抬起或眼睑略收紧 | 稳定近景，身份参考清楚 | 单一头部停顿/后移 |
-| 咬肌/下颌 | 下颌短暂收紧，随后放松 | 面部可读，低动作负荷 | 握拳后松开，避免挤压脸型 |
-| 眉心 | 眉头向中间聚拢，眉间纹理加深 | 稳定近景 | 身体前倾后停住，仍保持角色脸部比例 |
-| 嘴角 | 嘴角抿住，随后开口 | 短句或静默反应 | 收住说话动作，转用手部反应 |
-| 呼吸：轻/慢 | 肩胸起伏小，呼气较缓 | 动作空当或缓慢移动 | 用停顿和稳定支撑表达克制 |
-| 呼吸：重/快 | 胸肩起伏增大，短促呼气 | 有恢复时间的中景 | 身体稍俯、手扶膝或扶墙，但需本场允许 |
+| Eyeline: lock | Gaze shifts from the face to the opponent's knife-holding hand and stays there | Static or low-speed medium close-up | Turn the head slightly toward that hand; use composition to identify the target |
+| Eyeline: evade | Look toward the exit, then back to the other person's face | Confrontation with a clear exit anchor | Turn the entire shoulder line toward the exit |
+| Eyelids | Upper eyelids lift, or the eyelids tighten slightly | Stable close-up with a clear identity reference | A single head pause/backward movement |
+| Masseter/jaw | Jaw briefly tightens, then relaxes | Readable face, low action load | Clench and release a fist; avoid distorting facial shape |
+| Brow | Brows draw together and texture between them deepens | Stable close-up | Lean forward and stop, preserving the character's facial proportions |
+| Mouth corners | Lips press together, then open to speak | Short line or silent reaction | Arrest the speaking movement and use a hand reaction instead |
+| Breathing: light/slow | Small shoulder/chest movement, slower exhalation | Action opening or slow movement | Express restraint through pauses and stable support |
+| Breathing: heavy/fast | Larger chest/shoulder movement, short exhalations | Medium shot with recovery time | Lean slightly forward, with hands on knees or a wall, only if this scene permits |
 
-脸部具体变化是目标描述，不保证模型可控；远景不安排必须看清咬肌的验收项。不要默认所有人愤怒都咬牙、恐惧都后退，选择必须符合目的、障碍与角色习惯。
+Specific facial changes describe targets; model control is not guaranteed. Do not require a clearly visible masseter in a wide shot. Do not assume everyone grits their teeth when angry or backs away when afraid; the choice must suit the objective, obstacle, and character habits.
 
-## 从心理到可见提示词
+## From Psychology to Visible Prompts
 
-| 抽象设计 | 可见化候选 | 使用限制 |
+| Abstract design | Candidate visible expression | Use limitation |
 |---|---|---|
-| 他很愤怒 | 目光锁住对方持刀的手，下颌收紧，肩线向前压 | 大动作段优先只留锁定目标或前压其一 |
-| 他在掩饰 | 受伤手缩入袖口，另一只手稳住门闩 | 手和伤势已在设定中存在 |
-| 他想恳求 | 空着的手掌向上展开，身体停在对方一步外 | 不与持械、抓持和高速出拳争同一只手 |
-| 他在威吓 | 一步挡在出口中央，抬眼看向对手，停住 | 用位置和选择表达，不必配全脸怒容 |
-| 他害怕又想保护 | 后脚退半步，前臂仍横在同伴身前 | 距离与支撑能成立，不能凭空移动同伴 |
-| 他做出判断 | 视线从来拳移到对方前脚，随即侧移出攻击线 | 如果视线看不清，改成头肩转向与脚步 |
+| They are very angry | Gaze locks onto the opponent's knife-holding hand, jaw tightens, shoulder line presses forward | During major action, prioritize only locking onto the target or pressing forward |
+| They are concealing something | Injured hand withdraws into the sleeve while the other hand steadies the door bolt | The hand and injury already exist in the setting |
+| They want to plead | An empty hand opens palm-up; the body stops one step from the other person | Do not compete with weapon holding, gripping, or high-speed punching for the same hand |
+| They are intimidating | Step into the center of the exit, raise the eyes toward the opponent, and stop | Express it through position and choices; a full angry face is unnecessary |
+| They are afraid but want to protect | Rear foot retreats half a step while the forearm remains across the companion's front | Distance and support must work; do not relocate the companion from nowhere |
+| They make a judgment | Gaze moves from the incoming fist to the opponent's front foot, followed immediately by a sidestep out of the attack line | If the gaze cannot be read, use head/shoulder orientation and footwork instead |
 
-“眉心挤出川字纹”也是较精细的目标，不能当成比“皱眉”必然更可靠的提示；实际只取可读且不竞争的细节。情绪名可在设计说明出现，生成正文必须给可见代理，不能只写情绪结论。
+“Deep vertical furrows form between the brows” is also a fine-detail target, not a necessarily more reliable prompt than “frown.” Choose only readable details that do not compete. Emotion names may appear in design explanations; the generation body must provide visible proxies rather than only emotional conclusions.
 
-## 神态节奏：观察→判断→行动
+## Expression Rhythm: Observe → Judge → Act
 
-观察时给真实注意对象，判断用一次小动作泄露，行动兑现当前目标。三个阶段是同一选择的因果关系，不强制新增三个必执行。动作已足够说明心理时，不再叠面部细节；沉默、停手与让路也可有效表演。
+Give observation a real object of attention; let one small action disclose judgment; let action fulfill the current objective. The three stages are causal aspects of the same choice, not a requirement to add three mandatory actions. When movement already explains psychology, add no more facial detail; silence, stopping a hand, and making way can also be effective performance.
 
-## AI生成降级预案
+## AI Generation Fallback Plan
 
-1. **大动作与精细微表情隔离。** 打斗段优先支撑、接触、位移，用握拳、退半步、转头等较大的肢体信号承载心理；微表情场景优先稳定机位和低身体运动。不在同一次复杂交锋里强求“0.5秒精确微表情+连招+精确口型”。
-2. **可见反应优先。** 小肌肉目标失效时，先改为头肩/手/距离变化；远景直接用站位或动作选择，不重复增加肌肉术语。若必须新增剧情动作，作为候选说明，不能擅自改用户记忆点。
-3. **细节独立验证。** 确需极近景时，可提议单独反应镜头、静态关键帧/切片或后期2D辅助，再与打斗剪接；口型工具用于语音同步，不宣称能修复所有神态。改变连续长镜头或需要新资产前先确认用户接受；后期方案进制作备注，不塞进视频输入。
-4. **保留目标，不夸大能力。** 原生表演控制、脸部身份稳定、音频同步分别核实。试片失败按最早错误定位；没有实际结果，不判断某模型一定失败或承诺成功率。
+1. **Separate major action from fine microexpressions.** Fight segments prioritize support, contact, and displacement; larger bodily signals such as clenching a fist, retreating half a step, or turning the head carry psychology. Microexpression scenes prioritize stable camera positions and low body movement. Do not demand “a precise 0.5-second microexpression + a combo + precise lip sync” in the same complex exchange.
+2. **Prioritize visible reactions.** When small-muscle targets fail, first switch to head/shoulder, hand, or distance changes; in wide shots, use blocking or action choices directly rather than adding muscle terminology repeatedly. If a new story action must be introduced, explain it as a candidate; do not alter the user's memorable beat without authorization.
+3. **Verify details independently.** When an extreme close-up is truly needed, propose a separate reaction shot, static keyframe/slice, or postproduction 2D assistance, then edit it together with the fight. Lip-sync tools synchronize speech; do not claim they repair all expressions. Confirm user acceptance before changing a continuous long take or requiring new assets. Postproduction plans belong in production notes, not video input.
+4. **Preserve the target without exaggerating capabilities.** Verify native performance control, facial identity stability, and audio synchronization separately. Diagnose a failed test from its earliest error; without actual results, do not declare that a model must fail or promise a success rate.
 
-## 对接规则与信息预算
+## Integration Rules and Information Budget
 
-- 改变剧情的可见心理动作，替换或合并到内部【必执行】；仅作修饰、允许弱化的面部/呼吸细节进入【氛围】。身份、关键视线目标或决定胜负的反应不能降为氛围。
-- 不为心理四步各开一条必执行；表演属B层：按节拍写，不设固定条数；每个节拍有一个读得清的主信号，其余服务它，且不遮盖A层的接触与因果。超预算优先替换空泛描述，再考虑经用户认可拆出反应镜头。
-- 身体姿态/反应写必执行或氛围；只有取景、景别、对焦等摄影描述才写“单元摄影”，不能把心理动作藏到摄影栏规避计数。
-- 心理档案、微表情矩阵、选项与失败预案进设计/制作备注；最终正文只留所选画面。详细对白表演卡按[台词引擎](dialogue-engine.md)分流，未经用户启用不顺带加载整个台词模块。
+- Visible psychological action that changes the story replaces or merges into internal [Mandatory Execution]; facial/breathing details that merely decorate and may be weakened go into [Atmosphere]. Identity, key eyeline targets, and reactions deciding victory or defeat cannot be downgraded to atmosphere.
+- Do not create a separate mandatory action for each of the four psychological steps. Performance belongs to layer B: write by beats, without a fixed count. Each beat has one clearly readable principal signal; the rest serves it without obscuring layer A contact and causality. When over budget, first replace vague description, then consider a separate reaction shot accepted by the user.
+- Body posture/reaction goes into mandatory execution or atmosphere. Only cinematographic descriptions such as framing, shot size, and focus belong in “Unit Cinematography”; do not hide psychological action in the cinematography field to evade counting.
+- Psychological profiles, microexpression matrices, options, and failure plans go into design/production notes; the final body contains only the selected image. Route detailed dialogue performance cards according to the [Dialogue Engine](dialogue-engine.md). Read relevant dialogue sections only when this scene contains dialogue; do not expand into unrelated language libraries because of one expression.
 
-## 降级的告知与选择
+## Disclosing Fallbacks and Offering Choices
 
-- 只给“愤怒/紧张”等抽象情绪时，选择一个与当前动作相容的身体信号即可；不是先假设一套细微脸部动作，再自动把它删掉。若选择与用户原有措辞有明显差别，可在复制区外用一句说明实际取舍。
-- 用户明确要求“极度愤怒的扭曲特写”“咬牙切齿必须看清”等效果时，将脸部目标记入不可静默改动项。复杂打斗与近景表情冲突时，先给保留低运动特写、另拆反应镜头、保留原长镜头待测等少量候选；不得自动替换成握拳。仅当用户已授权该类降级或接受具体方案后，才执行替换。
-- 已获选择后可在正文之外说明：“注：按你选定的方案，本段将咬牙细节改为攥拳，优先验证这次接触与位移；脸部特写另作独立反应镜头。”必须换成实际修改和实际方案，没有拆镜就不说已经另作。只说明具体竞争任务，不把“保证连贯/提升成片率”当已验证结果。
-- 用户坚持脸部与打斗同场时，保留其目标，明确待测并减少未指定的次要任务；未经选择不删关键表情、不改胜负与时长。说明属于管理层，不进入纯文本正文，也不算新的必执行。
+- When given only an abstract emotion such as “angry/tense,” choose one bodily signal compatible with the current action; do not first assume a set of fine facial movements and then automatically delete it. If the choice differs noticeably from the user's original wording, explain the actual tradeoff in one sentence outside the copyable area.
+- When the user explicitly requests “an extremely angry, distorted facial close-up” or “the gritted teeth must be clearly visible,” record the facial target among items that cannot be changed silently. If a complex fight conflicts with close-up expression, first provide a few candidates: retain a low-movement close-up, separate a reaction shot, or preserve the original long take for testing. Do not automatically substitute a clenched fist. Replace it only after the user has authorized that class of fallback or accepted a specific plan.
+- After obtaining a choice, explain outside the body if appropriate: “Note: Under your selected plan, this segment replaces the gritted-teeth detail with a clenched fist, prioritizing verification of this contact and displacement; the facial close-up becomes a separate reaction shot.” Replace this with the actual modification and plan; do not say a shot has been separated when none was. Describe only the concrete competing tasks; do not present “guaranteed continuity/improved usable-output rate” as verified results.
+- If the user insists on face and fight in the same scene, preserve the target, mark it for testing, and reduce unspecified secondary tasks. Without their choice, do not delete key expressions or change victory/defeat or duration. This explanation belongs to the management layer, does not enter the plain-text body, and does not count as a new mandatory action.
 
-## 微相升级补充：反刻板、场景负荷与题材适配
+## Subtle-Signal Upgrade Supplement: Avoiding Stereotypes, Scene Load, and Genre Adaptation
 
-本节补充原四步法与降级预案，不另开主流程、不新增模板字段、不改变模块授权条件。这里的“微相”指创作中小幅、可读的身体/面部或已定机械反馈，并不等同心理学中的特定微表情测量，也不用于从单个动作判断真实情绪。先守用户设定与人物目标，再选本节的一个适用信号；与前文矩阵并用时，以本节的少量信号预算为准，不能把候选清单全部合并。
+This section supplements the original four-step method and fallback plan. It introduces no separate main workflow or template fields and does not widen creative authority. “Subtle signals” here means small, readable bodily/facial changes or established mechanical feedback used in creative work; it is not equivalent to a particular psychological measurement of microexpressions and is not used to infer real emotions from one action. Preserve user settings and character objectives first, then select one applicable signal from this section. When used with the earlier matrix, this section's small signal budget governs; do not combine entire candidate lists.
 
-### 1. 反刻板与反中二铁律
+### 1. Firm Rules Against Stereotypes and Adolescent Bombast
 
-- **禁用标签替代表演。** 最终画面指令不使用“邪魅一笑”“瞳孔地震”“倒吸一口凉气”“青筋暴起”“三分讥笑三分薄凉”等套话，不把它们换成同义夸张词就算改好。先找刺激、当场目标和可见反应。用户在原稿中使用这些词时保留其意图并转译；若它是用户要求保留的台词或专名，不擅自改词，画面另做可见化。
-- **禁止表情大杂烩。** 一个约3—5秒镜头以一个核心微相为主轴，可配合服务它的肢体与姿态节拍（见[身体与地位](../lens/body-and-status.md)），以读得清为限，不以条数为限；可以更少，不强制凑齐。肢体动作优先利用本来就有的握杯、持械、退步或停手，不额外再加一套手势。这里限制新增表演信息，不机械把同一攻防因果链的所有动词算作多次表演。
-- **克制是选择，不是生理定律。** 对隐忍、掩饰、控制型人物，强烈情绪可通过表面平静与一处负荷泄露的反差表现，避免默认五官同时扭动。但“越愤怒越僵硬”“真正杀意必然面无表情”不能作为所有人物的硬规则；明确的哭泣、惊呼、张扬反应及用户要求的夸张特写仍按其角色与画风处理，不把全员写成同一张冷脸。
-- **不添另一组刻板信号。** 本节不默认用青筋、咬牙、红眼眶或屏息取代所有情绪；同一情绪在不同伤势、场景和身体结构下可选不同信号。不能把自然呼吸写成每个镜头都必须骤停或喘息。
+- **Do not replace performance with labels.** Final image directions do not use stock phrases such as “a wickedly seductive smile,” “pupils quake,” “sucks in a breath of cold air,” “veins bulge,” or “three parts mockery and three parts icy indifference.” Swapping them for synonymous exaggerations is not a fix. First find the stimulus, immediate objective, and visible response. When the user's draft uses them, preserve the intention and translate it into performance. If a phrase is dialogue or a proper name the user requires preserved, do not change its wording without authorization; separately make its image visible.
+- **No expression miscellany.** A shot of about 3–5 seconds centers on one core subtle signal, with bodily/postural beats that serve it (see [Body and Status](../lens/body-and-status.md)). Readability, not an item count, limits them; fewer are fine, and no quota must be filled. Prefer existing cup holding, weapon holding, retreat, or stopping a hand, without adding another gesture routine. This limits new performance information; do not mechanically count every verb in one causal attack-and-defense chain as a separate performance.
+- **Restraint is a choice, not a physiological law.** For enduring, concealing, or controlling characters, strong emotion may appear through contrast between surface calm and a single sign of strain; avoid default simultaneous contortions of every feature. But “the angrier they are, the stiffer they become” and “true killing intent must be expressionless” are not hard rules for all characters. Explicit crying, exclamations, flamboyant reactions, and user-requested exaggerated close-ups still follow character and visual style; do not give everyone the same cold face.
+- **Do not introduce another set of stereotyped signals.** This section does not default to veins, gritted teeth, red eyes, or breath-holding for every emotion. The same emotion may call for different signals under different injuries, scenes, and body structures. Natural breathing need not suddenly stop or become panting in every shot.
 
-### 2. 生理负荷泄露法（Scene-Specific Subtext）
+### 2. Physiological Strain Leakage (Scene-Specific Subtext)
 
-内部设计公式：**外界刺激（已有寒风、伤痛、话语、声响等）→防御性细微反应→有意识维持的表面动作**。这是一条表演因果链，不是三个新增事件或三个必执行；画面只保留最可读的信号与当前动作。“潜意识/理性伪装”等分析词留设计备注，不直接进入生成正文，也不声称这些反应是某种心理状态的唯一证明。
+Internal design formula: **external stimulus (existing cold wind, injury pain, words, sounds, and so on) → a small defensive response → a consciously maintained surface action**. This is one performance causal chain, not three new events or three mandatory actions. Keep only the most readable signal and current action in the image. Analytical terms such as “subconscious/rational disguise” stay in design notes, never directly in the generation body; do not claim these responses uniquely prove a psychological state.
 
-先问：刺激是否已存在？角色想向谁掩饰什么？哪个细节在当前景别看得见？选择完再删掉竞争细节。潜台词可沿用当前已定人物意图；需要深挖[台词引擎](dialogue-engine.md)时仍须获得相应授权，不因用了本公式就自动加载台词模块。
+First ask: does the stimulus already exist? What does the character want to hide from whom? Which detail is visible at this shot size? After choosing, remove competing details. Subtext may use the currently established character intention; use relevant [Dialogue Engine](dialogue-engine.md) checks by context without a separate activation step. This formula does not require loading unrelated dialogue material or authorize changes to locked story facts.
 
-| 场景与前提 | 一个核心微相＋已有表面动作的候选 | 适配边界 |
+| Scene and premises | Candidate combining one core subtle signal with an existing surface action | Adaptation boundary |
 |---|---|---|
-| 古风/武侠；已有茶杯，对方的话触及人物隐忧 | 他仍把杯沿送到唇边，扣着杯壁的食指指节渐渐发白 | 手部特写或可读中近景；不是凭指节颜色证明杀意，杯壁材质/握法允许观察；没有茶杯不为示例添杯 |
-| 科幻/赛博；人物已有受损义眼及相应反馈规则 | 他稳住头部看向对手，义眼虹膜的光圈短暂收紧，随后恢复原亮度 | 属于已定机械反馈，不是人类通用微表情；“连续两次”仅在确需该节奏且已核可控时用，不默认要求精确次数 |
-| 现代/悬疑；警笛已在场景中，人物掩饰注意 | 警笛传来时，他仍面向桌前，喉间一次短促吞咽后继续听对方说话 | 喉部需在镜头内；用一次可读动作，不堆“频率加快”和反复吞咽，也不把它当恐惧诊断 |
-| 仙侠/玄幻；已有内伤与压住伤情的目标 | 他将一句话压得很轻，下颌短暂收紧后松开，持剑的手仍留在原处 | “血腥味”本身不可见，不为转译新增吐血；若已有吞咽动作则在吞咽和咬紧中择一个，不强求咬住牙关同时清楚说长句 |
+| Period/wuxia; a teacup already exists, and the other person's words touch a hidden concern | They continue bringing the cup rim to their lips while the index-finger knuckle gripping the cup slowly whitens | Hand close-up or readable medium close-up; knuckle color does not prove killing intent. Cup material/grip must allow observation; do not add a cup for this example |
+| Science fiction/cyberpunk; the character already has a damaged artificial eye and corresponding feedback rules | They steady their head toward the opponent; the artificial iris's luminous aperture briefly contracts, then returns to its original brightness | Established mechanical feedback, not a universal human microexpression. Use “twice in succession” only when that rhythm is truly needed and controllability has been verified; do not demand an exact count by default |
+| Modern/suspense; a siren is already in the scene, and the character conceals attention | As the siren sounds, they remain facing the table, swallow once briefly, and continue listening to the other person | The throat must be in frame. Use one readable action without piling on “increased frequency” and repeated swallowing, or treating it as a fear diagnosis |
+| Xianxia/fantasy; an internal injury and an objective to conceal it already exist | They deliver a line very softly; the jaw briefly tightens and relaxes while the sword hand remains where it was | A “taste of blood” is not itself visible; do not add coughing up blood to translate it. If swallowing already exists, choose swallowing or jaw tightening, rather than demanding clenched teeth and clear delivery of a long line simultaneously |
 
-机械提示音、警笛与呼吸声只有当前平台已核支持且本次采用原生声音时才进入生成正文；否则保留在制作备注。机械发光、受伤和损坏必须来自已定设定，不把题材标签当新增能力的许可。
+Mechanical beeps, sirens, and breathing from existing sources may appear in the body as intended audible content; verify actual native audio capability and the postproduction channel according to [Generation Handoff](generation-handoff.md), marking them outside the body. Honor a user-specified silent format. Mechanical glow, injuries, and damage must come from established settings; a genre label does not authorize new abilities.
 
-### 3. 多题材微相风格矩阵
+### 3. Multi-Genre Subtle-Signal Style Matrix
 
-| 世界与人物条件 | 可选质感与信号 | 不可机械套用的边界 |
+| World and character conditions | Optional texture and signal | Boundary against mechanical application |
 |---|---|---|
-| 传统武侠/仙侠；偏控制与隐忍的人物 | 眼睑轻垂、指尖小幅收紧、一次呼吸节奏变化中择一，用持械/端杯等原动作承接 | 题材不要求人人咬牙、苍凉或无表情；热血、喜剧和主动外放的角色保留其表达 |
-| 赛博/科幻；**已有义体/接口设定** | 义眼光圈调整、已定指示灯亮度变化、一次机械反馈中择一 | 普通人不能仅因身处科幻就瞳孔频闪、皮下发光；机械规则需已定，不默添义眼、神经植入或故障 |
-| 科幻中的普通人，或没有相应义体设定的角色 | 使用与身体结构相符的视线、手指、肩颈和呼吸反应 | 先尊重角色身体，不从题材硬搬机械信号；非人机械体不硬塞人类咬肌或胸膛呼吸 |
-| 现代/悬疑/权谋；需要维持社交表面的人物 | 礼貌笑容停在嘴角、目光短暂离开目标、肩线微僵中择一 | “假笑垮塌”需有前一笑容和当场刺激；权谋不限时代，语言与礼仪仍服从具体设定 |
-| 2D夸张、热血或喜剧；用户已选相应表演幅度 | 保留用户指定的夸张幅度，用清楚起因和一次主反应组织 | 不以“高级克制”擅自改写作品风格，也不让夸张破坏身份、支撑或关键接触 |
+| Traditional wuxia/xianxia; a character inclined toward control and endurance | Choose slightly lowered eyelids, a small tightening of fingertips, or one breathing-rhythm change, carried through an existing action such as holding a weapon/cup | The genre does not require everyone to grit their teeth, look desolate, or remain expressionless. Preserve the expression of hot-blooded, comic, and actively demonstrative characters |
+| Cyberpunk/science fiction; **cybernetic body/interface settings already exist** | Choose artificial-eye aperture adjustment, established indicator-brightness change, or one mechanical response | Ordinary people cannot have flickering pupils or subdermal glow simply because they inhabit science fiction. Mechanical rules must be established; do not silently add artificial eyes, neural implants, or faults |
+| An ordinary person in science fiction, or a character without corresponding cybernetic settings | Use eyeline, finger, shoulder/neck, and breathing responses suited to their body structure | Respect the character's body first; do not force mechanical signals out of genre. Do not force human masseter movement or chest breathing into nonhuman machines |
+| Modern/suspense/political intrigue; a character maintaining a social facade | Choose a polite smile stopping at the mouth corners, eyes briefly leaving the target, or a slightly stiff shoulder line | A “collapsing false smile” requires a previous smile and an immediate stimulus. Political intrigue spans eras; language and etiquette still follow the specific setting |
+| Exaggerated 2D, hot-blooded action, or comedy; the user has selected that performance amplitude | Preserve the user's specified exaggeration, organized around a clear cause and one principal response | Do not rewrite the work's style without authorization in the name of “sophisticated restraint,” or let exaggeration break identity, support, or key contact |
 
-以上是设计候选，不是“武侠=咬牙、赛博=频闪、悬疑=吞咽”的固定查表结果。优先选择当前事实能支撑、当前镜头能看清、人物有理由压住或外露的那一个信号。
+These are design candidates, not a fixed lookup of “wuxia = gritted teeth, cyberpunk = flickering, suspense = swallowing.” Prefer the one signal supported by current facts, clearly visible in the current shot, and reasonably suppressed or revealed by the character.
 
-### 4. 视距转译与纯文本融合
+### 4. Translation Across Viewing Distances and Integration Into Plain Text
 
-- **远景/大动作打斗。** 不把微肌肉细节设为必须看清的生成任务，优先用已有站位、肩线或支撑变化表达选择。只有手部确实可读时，握力才转为手指与柄的可见关系，不只说“握得更有力”；远景看不清手指就用肩线或站位，不硬留指节细节。衣发只能作为余势或相对静止的辅助线索，不能承担唯一的心理、命中或受力证据；有强风/奔跑时也不能为了“死寂感”让衣发无缘由冻结。
-- **明确脸部目标优先。** “远景降级”不能覆盖用户明确索要的脸部特写。沿用原有[降级的告知与选择](#降级的告知与选择)：先提出减小身体动作、调整取景或独立反应镜头的候选，改变核心表演需用户接受。不得自动用握拳替换“必须看清咬牙”。
-- **中近景与特写。** 选微相时同步考虑呼吸承载，可用一次自然呼气或原动作中的胸肩/鼻翼变化，融在同一因果链中，不另起第二套生理戏。脸部极近景看不到胸膛时，不强塞“胸膛骤停”；有遮挡、屏息动作或非呼吸型机械体时，改为当前确实可见且符合身体设定的反馈。核心微相仍是主轴；呼吸、眨眼等生理背景属C层质感，可自然带入，但不扩成多个可独立验收的面部变化。
-- **自然叙述，不列肌肉清单。** 将刺激、细微信号与表面动作写入原有动作句，不输出“情绪：/咬肌：/呼吸：”等字段。例如已有刀伤、持刀与低声说话时，可写：“对方提到那道伤，他把刀柄攥稳，鼻间的呼气短了一截，仍把话轻轻说完。”该句选一次呼吸变化作核心信号，持刀是原动作，不再追加咬牙、红眼、青筋和吞咽。
-- **细节不等于效果保证。** 指节、虹膜或呼吸能否在该机位清楚生成仍需试片；转成物理词不代表必然更稳定，不宣称已提高成片率。复杂对白、声音与后期处理继续分流，最终仍交自足白话纯文本。
+- **Wide shots/major fight action.** Do not make tiny muscle detail a generation task that must be clearly visible. Prioritize existing blocking, shoulder line, or support changes to express a choice. Translate grip strength into a visible relationship between fingers and handle only when the hand is genuinely readable; do not merely say “grips harder.” If fingers cannot be read in a wide shot, use shoulder line or blocking rather than forcing in knuckle detail. Clothes and hair can only support residual motion or relative stillness; they cannot be the sole evidence of psychology, a hit, or force. Strong wind/running also cannot leave clothes and hair inexplicably frozen merely to create “dead stillness.”
+- **Explicit facial targets take priority.** A “wide-shot fallback” cannot override a user-requested facial close-up. Follow [Disclosing Fallbacks and Offering Choices](#disclosing-fallbacks-and-offering-choices): first offer candidates reducing body action, adjusting framing, or separating a reaction shot. Changing core performance requires user acceptance. Do not automatically replace “the gritted teeth must be clear” with a clenched fist.
+- **Medium close-ups and close-ups.** Consider breathing support when choosing the subtle signal. A natural exhalation or a chest/shoulder/nostril change within the original action may join the same causal chain, without adding a second physiological performance. If an extreme facial close-up excludes the chest, do not force in “the chest suddenly stops.” With occlusion, breath-holding action, or a nonbreathing machine, use feedback actually visible and consistent with the body settings. The core subtle signal remains the spine; breathing and blinking as physiological background belong to layer C texture and may occur naturally, without expanding into multiple independently assessable facial changes.
+- **Narrate naturally; do not list muscles.** Integrate stimulus, subtle signal, and surface action into the existing action sentence; do not output fields such as “Emotion:/Masseter:/Breathing:”. For example, with an established knife wound, held knife, and quiet speech: “When the other person mentions that wound, they steady their grip on the knife handle, their nasal exhalation shortens, and they still finish the line softly.” This chooses one breathing change as the core signal. Holding the knife is an existing action; do not add gritted teeth, red eyes, bulging veins, and swallowing.
+- **Detail is not a guarantee of effect.** Whether knuckles, irises, or breathing generate clearly from that camera position still requires testing. Physical wording does not necessarily increase stability; do not claim an improved usable-output rate. Continue routing complex dialogue, sound, and postproduction separately; the final delivery remains self-contained plain-language text.
 
-### 5. 与预算分层的兼容及交付自检
+### 5. Compatibility With Budget Layers and Delivery Self-Check
 
-本节不增加A层事件。一个主微相与一个相关肢体动作只是表演设计上限，优先替换原来空泛的一句；若连同主打斗超载，删掉非关键表演修饰或提出用户可选的独立反应镜头。决定剧情的反应仍放必执行，可弱化的修饰才放氛围，不把真实动作藏入摄影栏。
+This section adds no layer A events. One principal subtle signal and one related body action are only a performance-design ceiling; prioritize replacing an existing vague sentence. If they overload the main fight, remove nonessential performance decoration or propose a separate reaction shot for user choice. Story-deciding reactions remain mandatory; only decoration that may weaken belongs in atmosphere. Do not hide actual actions in cinematography.
 
-交付前内部复核：刺激与身体条件是否已有依据？当前镜头有明确的主微相、没有新增独立事件？题材没有被用来添义体或套咬牙？呼吸与姿态/台词是否相容？远景已用可读身体信号而未删用户指定脸部目标？纯文本中抽象情绪指令与套话已被自然可见的动作替代？
+Before delivery, internally review: do the stimulus and bodily conditions have an existing basis? Does the current shot have a clear principal subtle signal without a new independent event? Has genre been used to add cybernetics or mechanically impose gritted teeth? Are breathing, posture, and dialogue compatible? Does the wide shot use readable bodily signals while retaining user-specified facial targets? Have abstract emotion directions and stock phrases in plain text been replaced with natural visible actions?
 
-检查只针对画面叙述，不能机械替换已定台词、角色专名或招式名中的“愤怒/悲伤/震惊”等字样。没有抽象情绪或表演缺口时，不为了通过检查强塞“微相＋生理反应＋肢体动作”三件套。后台按负荷取舍，用户不需填写新卡、看新矩阵或逐项确认。
+The check concerns image narration only; it must not mechanically replace “anger/sadness/shock” in established dialogue, character proper names, or move names. When no abstract emotion or performance gap exists, do not force a “subtle signal + physiological response + body action” trio merely to pass. Make load tradeoffs backstage; the user need not fill a new card, read a new matrix, or confirm items individually.
 
-## 心理深度三轴（可选加深）
+## Three Axes of Psychological Depth (Optional Deepening)
 
-默认启用；用户明确要“简版/lite”时可省略。三轴是虚构角色设计的内部问句，不是诊断人物心理的工具，不要求用户填表。
+Enabled by default; may be omitted when the user explicitly requests “compact/lite.” The three axes are internal questions for fictional character design, not psychological diagnosis, and require no user-completed form.
 
-| 轴 | 检查问句 | 可见化候选 |
+| Axis | Check question | Candidate visible expression |
 |---|---|---|
-| 防御机制 | 他可能如何掩饰：否认、转移、合理化、投射、反向形成？ | 说没事但手未松，回答别的问题，理性解释时避开既定目标；只是候选策略，不把动作等同唯一机制 |
-| 微表情时间结构 | 出现→持续→消退→掩饰，哪阶段最有信息？ | 不拍全四阶段，只选一段可读变化，其余由上下文补足，不要求模型精确到帧 |
-| 多角色心理咬合 | A的变化回应B的什么，两人的心理选择如何推动？ | 在原交互中A移开视线后B才接话，或原有退让后对方前进；不新增一套身体事件 |
+| Defense mechanism | How might they conceal: denial, displacement, rationalization, projection, reaction formation? | Say nothing is wrong while the hand stays clenched, answer a different question, avoid the established target while explaining rationally. These are candidate strategies, not actions equated with one unique mechanism |
+| Microexpression temporal structure | Appearance → duration → fading → concealment: which stage carries the most information? | Do not film all four; choose one readable change and let context supply the rest. Do not demand frame-exact model timing |
+| Multi-character psychological interplay | What in B does A's change answer, and how do their psychological choices drive events? | Within the original interaction, B speaks only after A looks away, or the other person advances after an existing concession; do not add another set of body events |
 
-与四步法、微相矩阵并列，三轴用于选“哪一个信号”，不是增加数量。约3—5秒仍以一个主微相为主轴，肢体节拍归B层、不设固定条数；不为凑三轴各加一项。克制是风格选择而非生理定律，明确夸张特写目标仍按原告知与选择规则处理。最终只写可见动作和关系反馈，机制、阶段与轴名不进生成正文。
+Alongside the four-step method and subtle-signal matrix, the three axes choose “which signal,” rather than increase quantity. About 3–5 seconds still centers on one principal subtle signal; bodily beats belong to layer B without a fixed item count. Do not add an item for each axis merely to fill them. Restraint is a style choice rather than a physiological law; explicit exaggerated-close-up targets still follow the original disclosure-and-choice rules. The final text contains only visible action and relational feedback; mechanism, stage, and axis names do not enter the generation body.
+

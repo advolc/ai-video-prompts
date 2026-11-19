@@ -1,65 +1,66 @@
-# 参考风格转译
+# Translating Reference Style
 
 
-入口先走[参考分类](../ux/interaction.md)，只分析用户想继承的维度。以下是基础范围分类，不是可选深层，精简路径也按此避免继承错误；分析维度分两组，不混用。
+Begin with [reference classification](../ux/interaction.md), analyzing only the dimensions the user wants to inherit. This is basic scope classification, not optional depth; even compact paths use it to prevent incorrect inheritance. Keep these two groups of analytical dimensions separate.
 
-## 美术风格七维与视听语言三维
+## Seven visual-art dimensions and three audiovisual dimensions
 
-**美术风格七维**（“借画风”默认只借这些维度中的所需项）：
-1. 造型与比例：头身比、形体概括、写实/夸张程度；动态参考中的形变归本维度的时间表现。
-2. 线条与边缘：有无描边、粗细、线质、边缘软硬；不把描边并进造型比例。
-3. 色彩：色彩关系、饱和度、明度层级、冷暖。
-4. 光影：光源逻辑、明暗对比、阴影与高光处理。
-5. 材质与纹理：材料表现、纹理密度、笔触/颗粒、渲染质感。
-6. 空间与透视：透视方式、景深、空间层次、留白与背景密度；静态构图按本维度记录。
-7. 特效绘制语言：写实粒子、图形色块、水墨笔触或线条的画法；只借表现方式，不借能力、威力或新物件。
+**Seven visual-art dimensions** ("borrow the visual style" defaults only to the needed items here):
+1. Form and proportion: head/body ratios, shape simplification, realism/exaggeration; deformation in moving references belongs to this dimension over time.
+2. Line and edge: presence of outlines, weight, line quality, soft/hard edges; do not merge outlines into form/proportion.
+3. Color: relationships, saturation, value hierarchy, temperature.
+4. Light and shadow: source logic, contrast, shadow and highlight treatment.
+5. Material and texture: material rendering, texture density, brushwork/grain, render finish.
+6. Space and perspective: perspective, depth of field, depth layers, negative space, background density; record static composition here.
+7. Effects rendering: realistic particles, graphic color blocks, ink strokes, or linework; borrow representation, not abilities, power, or new objects.
 
-**视听语言三维**（用户明确要借相应维度时才继承）：
-8. 运镜：观察位置如何变化、镜头时长感。
-9. 剪辑：切点节奏、转场方式。
-10. 声音：音效质感、音乐风格、静默使用。
+**Three audiovisual dimensions** (inherit only when explicitly requested):
+8. Camera movement: changes in viewing position and the feel of shot duration.
+9. Editing: cutting rhythm and transitions.
+10. Sound: effects texture, music style, silence.
 
-“借画风”不自动继承运镜、剪辑和声音；只有明确要“这个运镜/剪辑节奏/声音感觉”时才扩展相应视听维度。静图仅支持可观察的静态项，动态形变需有前后视频证据，声音必须实际听过。分类仍按参考输入执行，本表只细化“借什么”。美术七维不等于七维全借：只要颜色和材质就只取这两维，其余沿用用户已定设定；缺项按允许的默认假设处理，不扩大参考授权。
+Borrowing visual style does not automatically inherit camera movement, editing, or sound. Extend to the relevant audiovisual dimensions only for an explicit request for "this camera movement/editing rhythm/sound feel." Stills support observable static items only; deformation needs before/after video evidence, and sound requires actual listening. Classification still follows the reference inputs; this table only refines what is borrowed. Seven art dimensions do not mean all seven must be borrowed. If the user wants only color and material, take only those two and retain established settings elsewhere. Handle gaps through permitted assumptions rather than expanding reference authorization.
 
-**剥离参考片的内容**：“借画风”优先指视觉表现（渲染、光影、色彩、材质）。除非用户明确要求，否则严禁把参考片里的具体场地、天气、服装、武器能力或“受重伤反攻”的情节结构一起带入新片。
+**Separate the reference's content:** "borrow visual style" primarily means rendering, light/shadow, color, and materials. Unless explicitly requested, never import its specific location, weather, costume, weapon abilities, or "counterattack after severe injury" plot structure into the new film.
 
-## 流程
+## Procedure
 
-观察可访问资料→提取3—5个签名候选→按维度写成可见关系→转白话→试片→修订。
+Inspect accessible material → extract 3–5 candidate signatures → describe visible relationships by dimension → translate into plain prose → pilot → revise.
 
-每个美术签名必须能归入七维中的一维并注明；一项只承担一个维度，跨维组合拆成多项。暗红叶面的色相归色彩，窄肩长身的轮廓归造型与比例，笔直树列的纵深归空间与透视，冷侧光擦亮既有刃口归光影。“灰黑人物轮廓与红面分离”同时涉及颜色与形状时拆为色彩分离和形体概括两个签名，不能把颜色差硬归造型。不把“红/灰、几何、材质”这种索引标签当已明确签名。
+Each visual signature must be assigned to one of the seven dimensions and labeled. One item serves one dimension; split combinations spanning dimensions. The hue of dark-red leaves is color; a narrow-shouldered, elongated silhouette is form/proportion; straight rows of trees receding are space/perspective; cold side light catching an existing blade is light/shadow. If "gray-black figures separating from red ground" involves both hue and form, split it into color separation and shape simplification; do not force color differences into form. Index tags such as "red/gray, geometry, material" are not fully defined signatures.
 
-明确获准的视听继承另列相应三维记录，不塞进美术签名。签名候选不强凑3—5项：用户只借两维就只记录成立项。签名判定用反事实：抽掉这一元素，用户要的区别是否还成立？用户确认后才定为强继承，不让导演姓名压过用户原作。
+Record explicitly authorized audiovisual inheritance separately under the corresponding three dimensions, not within visual-art signatures. Do not force 3–5 candidates: if the user borrows two dimensions, record only supported items. Test a signature counterfactually: does removing this element remove the distinction the user wants? Mark strong inheritance only after user confirmation; a director's name cannot override the user's work.
 
-## 签名与主题的对应（可选加深）
+## Relating signatures to theme (optional depth)
 
-默认启用；用户明确要“简版/lite”时可省略。每个候选回答：归哪一维？抽掉后主题表达可能缺什么？下表示意，不是固定题材配方或必然心理效果，只在当前已有元素与主题适用时改写。
+Enabled by default; it may be omitted for an explicit "compact/lite" request. For each candidate, ask which dimension it belongs to and what thematic expression might be lost without it. This table illustrates possibilities, not fixed genre recipes or inevitable psychological effects. Adapt only where current elements and themes support them.
 
-| 签名 | 归哪一维 | 可服务的主题 | 抽掉后的候选差别 |
+| Signature | Dimension | Theme it may serve | Candidate difference if removed |
 |---|---|---|---|
-| 已有叶面的暗红色相与低明度 | 色彩 | 江湖代价与人物疏离 | 可能削弱该片已建立的代价色彩联想，不等于必须新增红叶 |
-| 人物窄肩长身、外轮廓向内收紧 | 造型与比例 | 压力中的克制 | 形体更松散时，该片原有自制感可能减弱 |
-| 既有人物与地面的灰黑/暗红分离 | 色彩 | 人被环境包围但仍可辨认 | 人物和地面的分离可能变弱；不与上一项合成混维签名 |
-| 笔直树列向薄雾深处延伸 | 空间与透视 | 秩序与出口不明 | 纵深压迫方向可能变弱，树木与雾均须已有依据 |
-| 冷侧光只擦亮既有刃口 | 光影 | 决定性动作被短暂看见 | 关键高光的叙事重音可能减弱，不借此新增兵器 |
+| Dark-red hue and low value of existing leaves | Color | Cost and estrangement in the martial world | May weaken this film's established association of cost with color; does not require new red leaves |
+| Narrow shoulders, elongated body, inward-contained silhouette | Form and proportion | Restraint under pressure | A looser form may weaken this film's established self-control |
+| Gray-black/dark-red separation of existing figures and ground | Color | A person surrounded by the environment yet still readable | Figure/ground separation may weaken; do not merge with the previous item into a cross-dimension signature |
+| Straight tree rows receding into light mist | Space and perspective | Order and uncertain exits | May weaken directional pressure in depth; trees and mist both require an established basis |
+| Cold side light catching only an existing blade edge | Light and shadow | A decisive action briefly revealed | May weaken a narrative highlight accent; does not authorize a new weapon |
 
-用户确认后，将单一维度、签名、主题关系记入[风格卡](style-library.md)，跨段继承二者。不强给每个签名找主题；无对应关系可保为装饰，不作强继承。表中候选不能代替本场推演，不把实例物件复制到新项目。
+After user confirmation, record the single dimension, signature, and thematic relationship in the [style card](style-library.md), carrying both signature and relationship across segments. Do not force a theme onto every signature. An unrelated element may remain decorative rather than strong inheritance. Candidates do not replace reasoning for this scene or authorize copying example objects into a new project.
 
-卡字段：`风格ID｜签名元素｜可变元素｜禁用元素｜提示词片段｜验证状态`。禁用元素只列当前最易误生的项；生成正文转正向，不把整张卡粘给模型。候选与观察分开，未看素材不写已观察，未试片不写已验证。变体先列保留的签名，再只换一个维度，以同场景对比是否仍可识别。
+Card fields: `Style ID | Signature elements | Variable elements | Excluded elements | Prompt fragment | Validation status`. Exclusions list only the likeliest current mistakes; convert final prose to positive depiction rather than pasting the entire card into a model. Separate candidates from observations: unseen material is not observed; an ungenerated pilot is not verified. For variants, list retained signatures first, then change one dimension and compare within the same scene for continued recognizability.
 
-## 风格混搭的克制（可选加深）
+## Restraint in style mixing (optional depth)
 
-默认启用；用户明确要“简版/lite”时可省略。先定主风格再选一个次元素，主风格承担70%以上视觉语言作为设计意图，不假称可量测的像素或成分比例。次元素只进入美术七维之一，例如只借光影或只借材质，不在多个维度平均拼两套卡。色彩、光影、材质、造型分别来自不同作品导致割裂时，先减次元素，不靠更多风格词修补。用户只要单一风格时不启用本节。
+Enabled by default; it may be omitted for an explicit "compact/lite" request. Choose the main style, then one secondary element. The main style supplies over 70% of visual language as a design intention, not a claim about measurable pixels or components. The secondary element enters only one of the seven visual-art dimensions, such as light or material, rather than averaging two cards across dimensions. When color, light, material, and form from different works feel fragmented, reduce secondary elements before adding more style terms. Do not use this section for a single-style request.
 
-| 感觉 | 三组候选组合（供用户选，不是固定答案） |
+| Feeling | Three candidate combinations for the user, not fixed answers |
 |---|---|
-| 孤独 | 冷灰远景+负空间+静机；暖灯小室+门框遮隔+缓慢退远；白昼荒原+低饱和+长影 |
-| 压迫 | 窄框+顶光+缓推；低机位巨物+薄雾+低频；高反差侧光+近距遮挡+静默 |
-| 自由 | 开阔天际+侧向追随+清楚风向；明亮草地+深焦+长动作；屋顶高差+暖光+向外留白 |
-| 神秘 | 局部光+遮挡+画外声；雾中反射+浅焦+一次移焦；黑白留白+远处人物+迟到脚步 |
-| 温暖 | 柔侧光+近邻暖色+同框；桌面实用灯+旧木纹+缓慢靠近；阴天窗光+低反差+生活拟音 |
-| 荒凉 | 土灰远景+重复废墟+风；冷白盐地+高天际+孤小主体；锈橙残骸+静机+机械余响 |
+| Isolation | Cool-gray distant view + negative space + locked camera; small warm-lit room + doorway separation + slow retreat; daylight wasteland + low saturation + long shadows |
+| Oppression | Narrow frame + top light + slow push; low-angle giant mass + mist + low frequencies; high-contrast side light + nearby occlusion + silence |
+| Freedom | Open horizon + lateral follow + clear wind direction; bright grassland + deep focus + sustained action; rooftop height changes + warm light + outward negative space |
+| Mystery | Partial light + occlusion + off-screen sound; reflections in mist + shallow focus + one focus pull; black-and-white negative space + distant figure + delayed footsteps |
+| Warmth | Soft side light + analogous warm hues + shared frame; practical tabletop lamp + old wood grain + slow approach; overcast window light + low contrast + everyday foley |
+| Desolation | Earth-gray distant view + repeated ruins + wind; cold-white salt flat + high horizon + tiny lone figure; rust-orange wreckage + locked camera + mechanical decay |
 
-用户只说“我想要孤独感/压迫感/自由感”时，给出对应 3 组组合让用户挑，或接受用户自定；不直接替用户选第一组，不把组合表当默认答案直接套进提示词。
+When the user says only "I want isolation/oppression/freedom," offer the corresponding 3 combinations or accept their own. Do not choose the first for them or paste this table into prompts as a default answer.
 
-对应[风格库](style-library.md)只按需选一张；没有参考时这些是创作提案。配色、构图、光线分别由[色彩](composition-and-color.md)、[构图](composition-and-color.md)、[光线](../lens/physical-light.md)提供细化，预算不足分阶段，不全读。
+Select only one relevant card from the [style library](style-library.md) as needed. Without references, these are creative proposals. [Color](composition-and-color.md), [composition](composition-and-color.md), and [light](../lens/physical-light.md) provide detail; stage the reading when the budget is limited rather than loading everything.
+

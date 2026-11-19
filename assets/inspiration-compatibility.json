@@ -1,0 +1,1355 @@
+{
+  "purpose": "Runtime compatibility data for English card IDs and legacy draw histories; not an experimental ledger.",
+  "records": [
+    {
+      "id": "card-001",
+      "legacy_id": "world::\u4f20\u7edf\u4e1c\u65b9/\u4fee\u4ed9::\u96e8\u591c\u9556\u5c40",
+      "key": "world::Traditional Eastern/Cultivation::Rain-Night Escort Agency"
+    },
+    {
+      "id": "card-002",
+      "legacy_id": "world::\u4f20\u7edf\u4e1c\u65b9/\u4fee\u4ed9::\u7af9\u6d77\u95ee\u5251",
+      "key": "world::Traditional Eastern/Cultivation::Sword Duel in a Bamboo Sea"
+    },
+    {
+      "id": "card-003",
+      "legacy_id": "world::\u4f20\u7edf\u4e1c\u65b9/\u4fee\u4ed9::\u96ea\u5bfa\u6b8b\u949f",
+      "key": "world::Traditional Eastern/Cultivation::Broken Bell at a Snowbound Temple"
+    },
+    {
+      "id": "card-004",
+      "legacy_id": "world::\u4f20\u7edf\u4e1c\u65b9/\u4fee\u4ed9::\u6c34\u58a8\u6c5f\u6e56",
+      "key": "world::Traditional Eastern/Cultivation::Ink-Wash Martial World"
+    },
+    {
+      "id": "card-005",
+      "legacy_id": "world::\u4f20\u7edf\u4e1c\u65b9/\u4fee\u4ed9::\u76ae\u5f71\u6597\u6cd5",
+      "key": "world::Traditional Eastern/Cultivation::Shadow-Puppet Sorcery Duel"
+    },
+    {
+      "id": "card-006",
+      "legacy_id": "world::\u4f20\u7edf\u4e1c\u65b9/\u4fee\u4ed9::\u9752\u94dc\u4ed9\u671d",
+      "key": "world::Traditional Eastern/Cultivation::Bronze Immortal Dynasty"
+    },
+    {
+      "id": "card-007",
+      "legacy_id": "world::\u4f20\u7edf\u4e1c\u65b9/\u4fee\u4ed9::\u76d0\u6e56\u5fa1\u5251",
+      "key": "world::Traditional Eastern/Cultivation::Flying Swords over a Salt Lake"
+    },
+    {
+      "id": "card-008",
+      "legacy_id": "world::\u4f20\u7edf\u4e1c\u65b9/\u4fee\u4ed9::\u7eb8\u624e\u591c\u884c",
+      "key": "world::Traditional Eastern/Cultivation::Night Walk Through Paper Effigies"
+    },
+    {
+      "id": "card-009",
+      "legacy_id": "world::\u4f20\u7edf\u4e1c\u65b9/\u4fee\u4ed9::\u50a9\u9762\u77f3\u57ce",
+      "key": "world::Traditional Eastern/Cultivation::Nuo Masks in a Stone City"
+    },
+    {
+      "id": "card-010",
+      "legacy_id": "world::\u4f20\u7edf\u4e1c\u65b9/\u4fee\u4ed9::\u74f7\u5c71\u4fee\u4ed9",
+      "key": "world::Traditional Eastern/Cultivation::Cultivation on Porcelain Mountain"
+    },
+    {
+      "id": "card-011",
+      "legacy_id": "world::\u8d5b\u535a/\u672a\u6765\u79d1\u5e7b::\u9713\u8679\u4e49\u4f53\u5df7",
+      "key": "world::Cyberpunk/Future Science Fiction::Neon Cybernetic Alley"
+    },
+    {
+      "id": "card-012",
+      "legacy_id": "world::\u8d5b\u535a/\u672a\u6765\u79d1\u5e7b::\u8f68\u9053\u7ef4\u4fee\u6218",
+      "key": "world::Cyberpunk/Future Science Fiction::Orbital Maintenance Battle"
+    },
+    {
+      "id": "card-013",
+      "legacy_id": "world::\u8d5b\u535a/\u672a\u6765\u79d1\u5e7b::\u6570\u636e\u6298\u53e0\u57ce",
+      "key": "world::Cyberpunk/Future Science Fiction::Data-Folding City"
+    },
+    {
+      "id": "card-014",
+      "legacy_id": "world::\u8d5b\u535a/\u672a\u6765\u79d1\u5e7b::\u751f\u7269\u673a\u7532\u5ead",
+      "key": "world::Cyberpunk/Future Science Fiction::Biomechanical Armor Garden"
+    },
+    {
+      "id": "card-015",
+      "legacy_id": "world::\u8d5b\u535a/\u672a\u6765\u79d1\u5e7b::\u78c1\u60ac\u6d6e\u64c2\u53f0",
+      "key": "world::Cyberpunk/Future Science Fiction::Maglev Arena"
+    },
+    {
+      "id": "card-016",
+      "legacy_id": "world::\u8d5b\u535a/\u672a\u6765\u79d1\u5e7b::\u50cf\u7d20\u6545\u969c\u533a",
+      "key": "world::Cyberpunk/Future Science Fiction::Pixel Glitch Zone"
+    },
+    {
+      "id": "card-017",
+      "legacy_id": "world::\u8d5b\u535a/\u672a\u6765\u79d1\u5e7b::\u6db2\u6001\u91d1\u5c5e\u7ad9",
+      "key": "world::Cyberpunk/Future Science Fiction::Liquid-Metal Station"
+    },
+    {
+      "id": "card-018",
+      "legacy_id": "world::\u8d5b\u535a/\u672a\u6765\u79d1\u5e7b::\u590d\u53e4\u592a\u7a7a\u6b4c\u5267",
+      "key": "world::Cyberpunk/Future Science Fiction::Retro Space Opera"
+    },
+    {
+      "id": "card-019",
+      "legacy_id": "world::\u8d5b\u535a/\u672a\u6765\u79d1\u5e7b::\u8bb0\u5fc6\u6253\u5370\u5382",
+      "key": "world::Cyberpunk/Future Science Fiction::Memory Printing Factory"
+    },
+    {
+      "id": "card-020",
+      "legacy_id": "world::\u8d5b\u535a/\u672a\u6765\u79d1\u5e7b::\u673a\u68b0\u6606\u866b\u738b\u5ead",
+      "key": "world::Cyberpunk/Future Science Fiction::Mechanical Insect Court"
+    },
+    {
+      "id": "card-021",
+      "legacy_id": "world::\u73b0\u4ee3\u90fd\u5e02/\u5f02\u80fd::\u51cc\u6668\u4fbf\u5229\u5e97",
+      "key": "world::Modern Urban/Superpowers::Convenience Store Before Dawn"
+    },
+    {
+      "id": "card-022",
+      "legacy_id": "world::\u73b0\u4ee3\u90fd\u5e02/\u5f02\u80fd::\u65e7\u697c\u697c\u68af\u95f4",
+      "key": "world::Modern Urban/Superpowers::Old-Building Stairwell"
+    },
+    {
+      "id": "card-023",
+      "legacy_id": "world::\u73b0\u4ee3\u90fd\u5e02/\u5f02\u80fd::\u73bb\u7483\u91d1\u878d\u57ce",
+      "key": "world::Modern Urban/Superpowers::Glass Financial District"
+    },
+    {
+      "id": "card-024",
+      "legacy_id": "world::\u73b0\u4ee3\u90fd\u5e02/\u5f02\u80fd::\u672b\u73ed\u5730\u94c1",
+      "key": "world::Modern Urban/Superpowers::Last Subway Train"
+    },
+    {
+      "id": "card-025",
+      "legacy_id": "world::\u73b0\u4ee3\u90fd\u5e02/\u5f02\u80fd::\u62f3\u9986\u505c\u7535\u591c",
+      "key": "world::Modern Urban/Superpowers::Blackout at the Boxing Gym"
+    },
+    {
+      "id": "card-026",
+      "legacy_id": "world::\u73b0\u4ee3\u90fd\u5e02/\u5f02\u80fd::\u66b4\u96e8\u5929\u53f0",
+      "key": "world::Modern Urban/Superpowers::Rooftop in a Downpour"
+    },
+    {
+      "id": "card-027",
+      "legacy_id": "world::\u73b0\u4ee3\u90fd\u5e02/\u5f02\u80fd::\u5916\u5356\u9a91\u624b\u89c9\u9192",
+      "key": "world::Modern Urban/Superpowers::Delivery Rider Awakening"
+    },
+    {
+      "id": "card-028",
+      "legacy_id": "world::\u73b0\u4ee3\u90fd\u5e02/\u5f02\u80fd::\u5f71\u5b50\u665a\u9ad8\u5cf0",
+      "key": "world::Modern Urban/Superpowers::Shadow Rush Hour"
+    },
+    {
+      "id": "card-029",
+      "legacy_id": "world::\u73b0\u4ee3\u90fd\u5e02/\u5f02\u80fd::\u65f6\u95f4\u6162\u534a\u62cd",
+      "key": "world::Modern Urban/Superpowers::Time Half a Beat Slow"
+    },
+    {
+      "id": "card-030",
+      "legacy_id": "world::\u73b0\u4ee3\u90fd\u5e02/\u5f02\u80fd::\u58f0\u97f3\u5b9e\u4f53\u8857\u533a",
+      "key": "world::Modern Urban/Superpowers::Solid-Sound District"
+    },
+    {
+      "id": "card-031",
+      "legacy_id": "world::\u5f02\u661f\u5e9f\u571f/\u672b\u65e5::\u7ea2\u6c99\u94c1\u9ab8",
+      "key": "world::Alien Wasteland/Apocalypse::Iron Skeletons in Red Sand"
+    },
+    {
+      "id": "card-032",
+      "legacy_id": "world::\u5f02\u661f\u5e9f\u571f/\u672b\u65e5::\u51b0\u5c01\u53cd\u5e94\u5806",
+      "key": "world::Alien Wasteland/Apocalypse::Frozen Reactor"
+    },
+    {
+      "id": "card-033",
+      "legacy_id": "world::\u5f02\u661f\u5e9f\u571f/\u672b\u65e5::\u5b62\u5b50\u5e9f\u57ce",
+      "key": "world::Alien Wasteland/Apocalypse::Spore-Ruined City"
+    },
+    {
+      "id": "card-034",
+      "legacy_id": "world::\u5f02\u661f\u5e9f\u571f/\u672b\u65e5::\u53cc\u6708\u4f4e\u91cd\u529b",
+      "key": "world::Alien Wasteland/Apocalypse::Twin Moons and Low Gravity"
+    },
+    {
+      "id": "card-035",
+      "legacy_id": "world::\u5f02\u661f\u5e9f\u571f/\u672b\u65e5::\u76d0\u8680\u94a2\u8239\u575f",
+      "key": "world::Alien Wasteland/Apocalypse::Salt-Corroded Steel Ship Graveyard"
+    },
+    {
+      "id": "card-036",
+      "legacy_id": "world::\u5f02\u661f\u5e9f\u571f/\u672b\u65e5::\u5de8\u517d\u9aa8\u67b6\u9547",
+      "key": "world::Alien Wasteland/Apocalypse::Town in a Giant Skeleton"
+    },
+    {
+      "id": "card-037",
+      "legacy_id": "world::\u5f02\u661f\u5e9f\u571f/\u672b\u65e5::\u592a\u9633\u5e06\u8352\u539f",
+      "key": "world::Alien Wasteland/Apocalypse::Solar-Sail Wasteland"
+    },
+    {
+      "id": "card-038",
+      "legacy_id": "world::\u5f02\u661f\u5e9f\u571f/\u672b\u65e5::\u91cd\u529b\u88c2\u8c37",
+      "key": "world::Alien Wasteland/Apocalypse::Gravity Rift"
+    },
+    {
+      "id": "card-039",
+      "legacy_id": "world::\u5f02\u661f\u5e9f\u571f/\u672b\u65e5::\u5851\u6599\u6d77\u672b\u65e5",
+      "key": "world::Alien Wasteland/Apocalypse::Plastic-Sea Apocalypse"
+    },
+    {
+      "id": "card-040",
+      "legacy_id": "world::\u5f02\u661f\u5e9f\u571f/\u672b\u65e5::\u6d3b\u4f53\u884c\u661f",
+      "key": "world::Alien Wasteland/Apocalypse::Living Planet"
+    },
+    {
+      "id": "card-041",
+      "legacy_id": "space::\u6781\u5ea6\u72ed\u7a84/\u5c01\u95ed::\u5361\u5c42\u7535\u68af",
+      "key": "space::Extremely Confined/Enclosed::Elevator Stuck Between Floors"
+    },
+    {
+      "id": "card-042",
+      "legacy_id": "space::\u6781\u5ea6\u72ed\u7a84/\u5c01\u95ed::\u5367\u94fa\u5939\u9053",
+      "key": "space::Extremely Confined/Enclosed::Sleeper-Car Passage"
+    },
+    {
+      "id": "card-043",
+      "legacy_id": "space::\u6781\u5ea6\u72ed\u7a84/\u5c01\u95ed::\u6c34\u6ce5\u68c0\u4fee\u7ba1",
+      "key": "space::Extremely Confined/Enclosed::Concrete Maintenance Pipe"
+    },
+    {
+      "id": "card-044",
+      "legacy_id": "space::\u6781\u5ea6\u72ed\u7a84/\u5c01\u95ed::\u73bb\u7483\u7535\u8bdd\u4ead",
+      "key": "space::Extremely Confined/Enclosed::Glass Telephone Booth"
+    },
+    {
+      "id": "card-045",
+      "legacy_id": "space::\u6781\u5ea6\u72ed\u7a84/\u5c01\u95ed::\u8d27\u67dc\u8ff7\u76d2",
+      "key": "space::Extremely Confined/Enclosed::Container Maze Box"
+    },
+    {
+      "id": "card-046",
+      "legacy_id": "space::\u6781\u5ea6\u72ed\u7a84/\u5c01\u95ed::\u94c1\u7b3c\u5347\u964d\u4e95",
+      "key": "space::Extremely Confined/Enclosed::Iron-Cage Lift Shaft"
+    },
+    {
+      "id": "card-047",
+      "legacy_id": "space::\u6781\u5ea6\u72ed\u7a84/\u5c01\u95ed::\u65cb\u8f6c\u95e8\u56f0\u5c40",
+      "key": "space::Extremely Confined/Enclosed::Revolving-Door Trap"
+    },
+    {
+      "id": "card-048",
+      "legacy_id": "space::\u6781\u5ea6\u72ed\u7a84/\u5c01\u95ed::\u949f\u8179\u5185\u6218",
+      "key": "space::Extremely Confined/Enclosed::Fight Inside a Bell"
+    },
+    {
+      "id": "card-049",
+      "legacy_id": "space::\u6781\u5ea6\u72ed\u7a84/\u5c01\u95ed::\u5ca9\u7f1d\u64e6\u80a9",
+      "key": "space::Extremely Confined/Enclosed::Squeezing Through a Rock Cleft"
+    },
+    {
+      "id": "card-050",
+      "legacy_id": "space::\u6781\u5ea6\u72ed\u7a84/\u5c01\u95ed::\u6298\u53e0\u5e10\u7bf7",
+      "key": "space::Extremely Confined/Enclosed::Collapsing Tent"
+    },
+    {
+      "id": "card-051",
+      "legacy_id": "space::\u6781\u5ea6\u7a7a\u65f7/\u5927\u5c3a\u5ea6::\u65e0\u5f71\u767d\u76d0\u539f",
+      "key": "space::Extremely Open/Large Scale::Shadowless White Salt Flat"
+    },
+    {
+      "id": "card-052",
+      "legacy_id": "space::\u6781\u5ea6\u7a7a\u65f7/\u5927\u5c3a\u5ea6::\u5de8\u578b\u673a\u5e93",
+      "key": "space::Extremely Open/Large Scale::Giant Hangar"
+    },
+    {
+      "id": "card-053",
+      "legacy_id": "space::\u6781\u5ea6\u7a7a\u65f7/\u5927\u5c3a\u5ea6::\u73af\u5f62\u5e72\u8239\u575e",
+      "key": "space::Extremely Open/Large Scale::Circular Dry Dock"
+    },
+    {
+      "id": "card-054",
+      "legacy_id": "space::\u6781\u5ea6\u7a7a\u65f7/\u5927\u5c3a\u5ea6::\u5e9f\u5f03\u673a\u573a\u8dd1\u9053",
+      "key": "space::Extremely Open/Large Scale::Abandoned Airport Runway"
+    },
+    {
+      "id": "card-055",
+      "legacy_id": "space::\u6781\u5ea6\u7a7a\u65f7/\u5927\u5c3a\u5ea6::\u6708\u9762\u9668\u5751",
+      "key": "space::Extremely Open/Large Scale::Lunar Crater"
+    },
+    {
+      "id": "card-056",
+      "legacy_id": "space::\u6781\u5ea6\u7a7a\u65f7/\u5927\u5c3a\u5ea6::\u9000\u6f6e\u9ed1\u6c99\u6ee9",
+      "key": "space::Extremely Open/Large Scale::Black Beach at Low Tide"
+    },
+    {
+      "id": "card-057",
+      "legacy_id": "space::\u6781\u5ea6\u7a7a\u65f7/\u5927\u5c3a\u5ea6::\u4e07\u5e2d\u7a7a\u7403\u573a",
+      "key": "space::Extremely Open/Large Scale::Empty Stadium with Ten Thousand Seats"
+    },
+    {
+      "id": "card-058",
+      "legacy_id": "space::\u6781\u5ea6\u7a7a\u65f7/\u5927\u5c3a\u5ea6::\u65e0\u9650\u68cb\u76d8\u5385",
+      "key": "space::Extremely Open/Large Scale::Infinite Chessboard Hall"
+    },
+    {
+      "id": "card-059",
+      "legacy_id": "space::\u6781\u5ea6\u7a7a\u65f7/\u5927\u5c3a\u5ea6::\u5de8\u6811\u6839\u5e73\u539f",
+      "key": "space::Extremely Open/Large Scale::Plain of Giant Tree Roots"
+    },
+    {
+      "id": "card-060",
+      "legacy_id": "space::\u6781\u5ea6\u7a7a\u65f7/\u5927\u5c3a\u5ea6::\u4e91\u4e0a\u65b9\u7891\u9635",
+      "key": "space::Extremely Open/Large Scale::Obelisks Above the Clouds"
+    },
+    {
+      "id": "card-061",
+      "legacy_id": "space::\u7279\u6b8a\u5730\u8868/\u4ecb\u8d28\uff08\u6e7f\u6ed1\u3001\u5931\u91cd\u3001\u6c34\u4e0b\u7b49\uff09::\u8584\u51b0\u56de\u58f0",
+      "key": "space::Special Surfaces/Media (Slippery, Weightless, Underwater, etc.)::Thin-Ice Echo"
+    },
+    {
+      "id": "card-062",
+      "legacy_id": "space::\u7279\u6b8a\u5730\u8868/\u4ecb\u8d28\uff08\u6e7f\u6ed1\u3001\u5931\u91cd\u3001\u6c34\u4e0b\u7b49\uff09::\u9f50\u8170\u6025\u6d41",
+      "key": "space::Special Surfaces/Media (Slippery, Weightless, Underwater, etc.)::Waist-Deep Rapids"
+    },
+    {
+      "id": "card-063",
+      "legacy_id": "space::\u7279\u6b8a\u5730\u8868/\u4ecb\u8d28\uff08\u6e7f\u6ed1\u3001\u5931\u91cd\u3001\u6c34\u4e0b\u7b49\uff09::\u5931\u91cd\u8d27\u8231",
+      "key": "space::Special Surfaces/Media (Slippery, Weightless, Underwater, etc.)::Weightless Cargo Hold"
+    },
+    {
+      "id": "card-064",
+      "legacy_id": "space::\u7279\u6b8a\u5730\u8868/\u4ecb\u8d28\uff08\u6e7f\u6ed1\u3001\u5931\u91cd\u3001\u6c34\u4e0b\u7b49\uff09::\u6df1\u6f5c\u73bb\u7483\u5eca",
+      "key": "space::Special Surfaces/Media (Slippery, Weightless, Underwater, etc.)::Flooded Deep-Sea Glass Walkway"
+    },
+    {
+      "id": "card-065",
+      "legacy_id": "space::\u7279\u6b8a\u5730\u8868/\u4ecb\u8d28\uff08\u6e7f\u6ed1\u3001\u5931\u91cd\u3001\u6c34\u4e0b\u7b49\uff09::\u6cb9\u819c\u505c\u8f66\u573a",
+      "key": "space::Special Surfaces/Media (Slippery, Weightless, Underwater, etc.)::Oil-Film Parking Lot"
+    },
+    {
+      "id": "card-066",
+      "legacy_id": "space::\u7279\u6b8a\u5730\u8868/\u4ecb\u8d28\uff08\u6e7f\u6ed1\u3001\u5931\u91cd\u3001\u6c34\u4e0b\u7b49\uff09::\u6eda\u73e0\u5730\u677f",
+      "key": "space::Special Surfaces/Media (Slippery, Weightless, Underwater, etc.)::Ball-Bearing Floor"
+    },
+    {
+      "id": "card-067",
+      "legacy_id": "space::\u7279\u6b8a\u5730\u8868/\u4ecb\u8d28\uff08\u6e7f\u6ed1\u3001\u5931\u91cd\u3001\u6c34\u4e0b\u7b49\uff09::\u9ecf\u571f\u6c89\u811a",
+      "key": "space::Special Surfaces/Media (Slippery, Weightless, Underwater, etc.)::Feet Sinking in Clay"
+    },
+    {
+      "id": "card-068",
+      "legacy_id": "space::\u7279\u6b8a\u5730\u8868/\u4ecb\u8d28\uff08\u6e7f\u6ed1\u3001\u5931\u91cd\u3001\u6c34\u4e0b\u7b49\uff09::\u6d41\u6c99\u786c\u58f3",
+      "key": "space::Special Surfaces/Media (Slippery, Weightless, Underwater, etc.)::Quicksand Crust"
+    },
+    {
+      "id": "card-069",
+      "legacy_id": "space::\u7279\u6b8a\u5730\u8868/\u4ecb\u8d28\uff08\u6e7f\u6ed1\u3001\u5931\u91cd\u3001\u6c34\u4e0b\u7b49\uff09::\u5f39\u6027\u83cc\u6bef",
+      "key": "space::Special Surfaces/Media (Slippery, Weightless, Underwater, etc.)::Elastic Fungal Carpet"
+    },
+    {
+      "id": "card-070",
+      "legacy_id": "space::\u7279\u6b8a\u5730\u8868/\u4ecb\u8d28\uff08\u6e7f\u6ed1\u3001\u5931\u91cd\u3001\u6c34\u4e0b\u7b49\uff09::\u6db2\u955c\u5012\u60ac",
+      "key": "space::Special Surfaces/Media (Slippery, Weightless, Underwater, etc.)::Inverted Liquid Mirror"
+    },
+    {
+      "id": "card-071",
+      "legacy_id": "space::\u5782\u76f4\u843d\u5dee/\u9ad8\u7a7a::\u53cc\u5c42\u6311\u6a90",
+      "key": "space::Vertical Drops/High Altitude::Two-Tier Eaves"
+    },
+    {
+      "id": "card-072",
+      "legacy_id": "space::\u5782\u76f4\u843d\u5dee/\u9ad8\u7a7a::\u65ad\u6865\u60ac\u94fe",
+      "key": "space::Vertical Drops/High Altitude::Chains of a Broken Bridge"
+    },
+    {
+      "id": "card-073",
+      "legacy_id": "space::\u5782\u76f4\u843d\u5dee/\u9ad8\u7a7a::\u5854\u540a\u6a2a\u81c2",
+      "key": "space::Vertical Drops/High Altitude::Tower-Crane Jib"
+    },
+    {
+      "id": "card-074",
+      "legacy_id": "space::\u5782\u76f4\u843d\u5dee/\u9ad8\u7a7a::\u87ba\u65cb\u5916\u68af",
+      "key": "space::Vertical Drops/High Altitude::Spiral Exterior Stair"
+    },
+    {
+      "id": "card-075",
+      "legacy_id": "space::\u5782\u76f4\u843d\u5dee/\u9ad8\u7a7a::\u7011\u540e\u6808\u9053",
+      "key": "space::Vertical Drops/High Altitude::Walkway Behind a Waterfall"
+    },
+    {
+      "id": "card-076",
+      "legacy_id": "space::\u5782\u76f4\u843d\u5dee/\u9ad8\u7a7a::\u60ac\u7a7a\u4e66\u67b6",
+      "key": "space::Vertical Drops/High Altitude::Floating Bookshelves"
+    },
+    {
+      "id": "card-077",
+      "legacy_id": "space::\u5782\u76f4\u843d\u5dee/\u9ad8\u7a7a::\u706b\u5c71\u540a\u7bee",
+      "key": "space::Vertical Drops/High Altitude::Volcanic Gondola"
+    },
+    {
+      "id": "card-078",
+      "legacy_id": "space::\u5782\u76f4\u843d\u5dee/\u9ad8\u7a7a::\u70ed\u6c14\u7403\u7f06\u7f51",
+      "key": "space::Vertical Drops/High Altitude::Hot-Air-Balloon Rope Net"
+    },
+    {
+      "id": "card-079",
+      "legacy_id": "space::\u5782\u76f4\u843d\u5dee/\u9ad8\u7a7a::\u7535\u68af\u4e95\u8ffd\u843d",
+      "key": "space::Vertical Drops/High Altitude::Falling Chase in an Elevator Shaft"
+    },
+    {
+      "id": "card-080",
+      "legacy_id": "space::\u5782\u76f4\u843d\u5dee/\u9ad8\u7a7a::\u5012\u6302\u53e4\u5854",
+      "key": "space::Vertical Drops/High Altitude::Inverted Ancient Tower"
+    },
+    {
+      "id": "card-081",
+      "legacy_id": "relation::\u5bbf\u654c/\u52bf\u5747\u529b\u654c::\u540c\u95e8\u62c6\u62db",
+      "key": "relation::Archrivals/Evenly Matched::Schoolmates Countering Familiar Moves"
+    },
+    {
+      "id": "card-082",
+      "legacy_id": "relation::\u5bbf\u654c/\u52bf\u5747\u529b\u654c::\u65ad\u5251\u65e7\u7ea6",
+      "key": "relation::Archrivals/Evenly Matched::Old Pact of Broken Swords"
+    },
+    {
+      "id": "card-083",
+      "legacy_id": "relation::\u5bbf\u654c/\u52bf\u5747\u529b\u654c::\u955c\u50cf\u7ee7\u627f\u8005",
+      "key": "relation::Archrivals/Evenly Matched::Mirror Heirs"
+    },
+    {
+      "id": "card-084",
+      "legacy_id": "relation::\u5bbf\u654c/\u52bf\u5747\u529b\u654c::\u51a0\u519b\u5f52\u96f6",
+      "key": "relation::Archrivals/Evenly Matched::Champions Back to Zero"
+    },
+    {
+      "id": "card-085",
+      "legacy_id": "relation::\u5bbf\u654c/\u52bf\u5747\u529b\u654c::\u730e\u624b\u4e92\u6362",
+      "key": "relation::Archrivals/Evenly Matched::Hunters Exchange Roles"
+    },
+    {
+      "id": "card-086",
+      "legacy_id": "relation::\u5bbf\u654c/\u52bf\u5747\u529b\u654c::\u4e0d\u80af\u62d4\u5203",
+      "key": "relation::Archrivals/Evenly Matched::Refusing to Draw"
+    },
+    {
+      "id": "card-087",
+      "legacy_id": "relation::\u5bbf\u654c/\u52bf\u5747\u529b\u654c::\u5171\u4eab\u4f24\u52bf",
+      "key": "relation::Archrivals/Evenly Matched::Shared Injuries"
+    },
+    {
+      "id": "card-088",
+      "legacy_id": "relation::\u5bbf\u654c/\u52bf\u5747\u529b\u654c::\u501f\u62db\u8fd8\u503a",
+      "key": "relation::Archrivals/Evenly Matched::Repaying a Debt with Borrowed Moves"
+    },
+    {
+      "id": "card-089",
+      "legacy_id": "relation::\u5bbf\u654c/\u52bf\u5747\u529b\u654c::\u6700\u540e\u4e00\u5c40\u68cb",
+      "key": "relation::Archrivals/Evenly Matched::Last Chess Game"
+    },
+    {
+      "id": "card-090",
+      "legacy_id": "relation::\u5bbf\u654c/\u52bf\u5747\u529b\u654c::\u53ea\u4e89\u4e00\u9762\u65d7",
+      "key": "relation::Archrivals/Evenly Matched::One Flag Only"
+    },
+    {
+      "id": "card-091",
+      "legacy_id": "relation::\u7edd\u5883/\u5b9e\u529b\u60ac\u6b8a::\u4f24\u817f\u5b88\u9699",
+      "key": "relation::Desperate Odds/Unequal Strength::Guarding a Gap with an Injured Leg"
+    },
+    {
+      "id": "card-092",
+      "legacy_id": "relation::\u7edd\u5883/\u5b9e\u529b\u60ac\u6b8a::\u7a7a\u624b\u6321\u7532",
+      "key": "relation::Desperate Odds/Unequal Strength::Bare Hands Against Armor"
+    },
+    {
+      "id": "card-093",
+      "legacy_id": "relation::\u7edd\u5883/\u5b9e\u529b\u60ac\u6b8a::\u6700\u540e\u4e00\u53e3\u6c14",
+      "key": "relation::Desperate Odds/Unequal Strength::Last Breath of Air"
+    },
+    {
+      "id": "card-094",
+      "legacy_id": "relation::\u7edd\u5883/\u5b9e\u529b\u60ac\u6b8a::\u672f\u529b\u5c06\u5c3d",
+      "key": "relation::Desperate Odds/Unequal Strength::Magic Almost Spent"
+    },
+    {
+      "id": "card-095",
+      "legacy_id": "relation::\u7edd\u5883/\u5b9e\u529b\u60ac\u6b8a::\u5de8\u5f71\u8ffd\u8eab",
+      "key": "relation::Desperate Odds/Unequal Strength::Giant Shadow in Pursuit"
+    },
+    {
+      "id": "card-096",
+      "legacy_id": "relation::\u7edd\u5883/\u5b9e\u529b\u60ac\u6b8a::\u8fdf\u949d\u62a4\u7532",
+      "key": "relation::Desperate Odds/Unequal Strength::Sluggish Armor"
+    },
+    {
+      "id": "card-097",
+      "legacy_id": "relation::\u7edd\u5883/\u5b9e\u529b\u60ac\u6b8a::\u5f92\u624b\u62a4\u706f",
+      "key": "relation::Desperate Odds/Unequal Strength::Unarmed Guardian of a Lamp"
+    },
+    {
+      "id": "card-098",
+      "legacy_id": "relation::\u7edd\u5883/\u5b9e\u529b\u60ac\u6b8a::\u6162\u8005\u7834\u5feb",
+      "key": "relation::Desperate Odds/Unequal Strength::Slowness Defeats Speed"
+    },
+    {
+      "id": "card-099",
+      "legacy_id": "relation::\u7edd\u5883/\u5b9e\u529b\u60ac\u6b8a::\u5c01\u58f0\u53cd\u51fb",
+      "key": "relation::Desperate Odds/Unequal Strength::Silent Counterattack"
+    },
+    {
+      "id": "card-100",
+      "legacy_id": "relation::\u7edd\u5883/\u5b9e\u529b\u60ac\u6b8a::\u8d8a\u6253\u8d8a\u91cd",
+      "key": "relation::Desperate Odds/Unequal Strength::Heavier with Every Exchange"
+    },
+    {
+      "id": "card-101",
+      "legacy_id": "relation::\u62a4\u536b/\u6b7b\u5b88::\u62a4\u4eba\u8fc7\u95e8",
+      "key": "relation::Protection/Holding the Line::Protecting Someone Through a Gate"
+    },
+    {
+      "id": "card-102",
+      "legacy_id": "relation::\u62a4\u536b/\u6b7b\u5b88::\u8f66\u53a2\u62a4\u9001",
+      "key": "relation::Protection/Holding the Line::Freight-Car Escort"
+    },
+    {
+      "id": "card-103",
+      "legacy_id": "relation::\u62a4\u536b/\u6b7b\u5b88::\u80cc\u540e\u662f\u6865",
+      "key": "relation::Protection/Holding the Line::The Bridge Behind Them"
+    },
+    {
+      "id": "card-104",
+      "legacy_id": "relation::\u62a4\u536b/\u6b7b\u5b88::\u62b1\u74f7\u8131\u8eab",
+      "key": "relation::Protection/Holding the Line::Escaping with Porcelain"
+    },
+    {
+      "id": "card-105",
+      "legacy_id": "relation::\u62a4\u536b/\u6b7b\u5b88::\u5b88\u4f4f\u547c\u5438\u673a",
+      "key": "relation::Protection/Holding the Line::Protecting the Ventilator"
+    },
+    {
+      "id": "card-106",
+      "legacy_id": "relation::\u62a4\u536b/\u6b7b\u5b88::\u4e0d\u8bb8\u89e6\u5730",
+      "key": "relation::Protection/Holding the Line::It Must Not Touch the Ground"
+    },
+    {
+      "id": "card-107",
+      "legacy_id": "relation::\u62a4\u536b/\u6b7b\u5b88::\u62a4\u4f4f\u8bc1\u4eba",
+      "key": "relation::Protection/Holding the Line::Protecting a Witness"
+    },
+    {
+      "id": "card-108",
+      "legacy_id": "relation::\u62a4\u536b/\u6b7b\u5b88::\u6700\u540e\u4e00\u5f20\u5e06",
+      "key": "relation::Protection/Holding the Line::The Last Sail"
+    },
+    {
+      "id": "card-109",
+      "legacy_id": "relation::\u62a4\u536b/\u6b7b\u5b88::\u7ed9\u964c\u751f\u4eba\u6321\u4e00\u51fb",
+      "key": "relation::Protection/Holding the Line::Taking a Blow for a Stranger"
+    },
+    {
+      "id": "card-110",
+      "legacy_id": "relation::\u62a4\u536b/\u6b7b\u5b88::\u5b88\u5230\u95e8\u5f00",
+      "key": "relation::Protection/Holding the Line::Hold Until the Door Opens"
+    },
+    {
+      "id": "card-111",
+      "legacy_id": "relation::\u730e\u6740/\u6697\u6218::\u96e8\u75d5\u8fa8\u4eba",
+      "key": "relation::Hunting/Covert Conflict::Reading Rain Traces"
+    },
+    {
+      "id": "card-112",
+      "legacy_id": "relation::\u730e\u6740/\u6697\u6218::\u955c\u540e\u8ffd\u8e2a",
+      "key": "relation::Hunting/Covert Conflict::Tracking Through Reflections"
+    },
+    {
+      "id": "card-113",
+      "legacy_id": "relation::\u730e\u6740/\u6697\u6218::\u53cc\u91cd\u8bf1\u9975",
+      "key": "relation::Hunting/Covert Conflict::Double Decoy"
+    },
+    {
+      "id": "card-114",
+      "legacy_id": "relation::\u730e\u6740/\u6697\u6218::\u65e0\u58f0\u6362\u73ed",
+      "key": "relation::Hunting/Covert Conflict::Silent Shift Change"
+    },
+    {
+      "id": "card-115",
+      "legacy_id": "relation::\u730e\u6740/\u6697\u6218::\u8ffd\u5230\u5047\u4f24",
+      "key": "relation::Hunting/Covert Conflict::Following a False Injury"
+    },
+    {
+      "id": "card-116",
+      "legacy_id": "relation::\u730e\u6740/\u6697\u6218::\u8c01\u5728\u7167\u8c01",
+      "key": "relation::Hunting/Covert Conflict::Who Is Illuminating Whom"
+    },
+    {
+      "id": "card-117",
+      "legacy_id": "relation::\u730e\u6740/\u6697\u6218::\u76ee\u6807\u4f1a\u6362\u8138",
+      "key": "relation::Hunting/Covert Conflict::A Face-Changing Target"
+    },
+    {
+      "id": "card-118",
+      "legacy_id": "relation::\u730e\u6740/\u6697\u6218::\u5e26\u8def\u7684\u94c3\u94db",
+      "key": "relation::Hunting/Covert Conflict::A Bell Leading the Way"
+    },
+    {
+      "id": "card-119",
+      "legacy_id": "relation::\u730e\u6740/\u6697\u6218::\u56f4\u730e\u4e2d\u7684\u5185\u5e94",
+      "key": "relation::Hunting/Covert Conflict::An Insider in the Hunt"
+    },
+    {
+      "id": "card-120",
+      "legacy_id": "relation::\u730e\u6740/\u6697\u6218::\u730e\u7269\u8bbe\u7ec8\u70b9",
+      "key": "relation::Hunting/Covert Conflict::Prey Chooses the Finish"
+    },
+    {
+      "id": "card-121",
+      "legacy_id": "action::\u5947\u95e8\u5175\u5668/\u975e\u6807\u6b66\u5668::\u6298\u9aa8\u94c1\u4f1e",
+      "key": "action::Unusual/Nonstandard Weapons::Folding Iron Umbrella"
+    },
+    {
+      "id": "card-122",
+      "legacy_id": "action::\u5947\u95e8\u5175\u5668/\u975e\u6807\u6b66\u5668::\u53cc\u7aef\u8f6f\u94fe",
+      "key": "action::Unusual/Nonstandard Weapons::Double-Ended Flexible Chain"
+    },
+    {
+      "id": "card-123",
+      "legacy_id": "action::\u5947\u95e8\u5175\u5668/\u975e\u6807\u6b66\u5668::\u7b97\u76d8\u9501\u5203",
+      "key": "action::Unusual/Nonstandard Weapons::Abacus Blade Lock"
+    },
+    {
+      "id": "card-124",
+      "legacy_id": "action::\u5947\u95e8\u5175\u5668/\u975e\u6807\u6b66\u5668::\u95e8\u677f\u5de8\u76fe",
+      "key": "action::Unusual/Nonstandard Weapons::Door-Panel Greatshield"
+    },
+    {
+      "id": "card-125",
+      "legacy_id": "action::\u5947\u95e8\u5175\u5668/\u975e\u6807\u6b66\u5668::\u78c1\u73af\u62f3\u5957",
+      "key": "action::Unusual/Nonstandard Weapons::Magnetic-Ring Gauntlets"
+    },
+    {
+      "id": "card-126",
+      "legacy_id": "action::\u5947\u95e8\u5175\u5668/\u975e\u6807\u6b66\u5668::\u7eb8\u9875\u8584\u5203",
+      "key": "action::Unusual/Nonstandard Weapons::Paper-Page Blades"
+    },
+    {
+      "id": "card-127",
+      "legacy_id": "action::\u5947\u95e8\u5175\u5668/\u975e\u6807\u6b66\u5668::\u6db2\u6676\u82b1\u9635",
+      "key": "action::Unusual/Nonstandard Weapons::Liquid-Crystal Flower Array"
+    },
+    {
+      "id": "card-128",
+      "legacy_id": "action::\u5947\u95e8\u5175\u5668/\u975e\u6807\u6b66\u5668::\u957f\u51f3\u622a\u8def",
+      "key": "action::Unusual/Nonstandard Weapons::Bench Blocks the Route"
+    },
+    {
+      "id": "card-129",
+      "legacy_id": "action::\u5947\u95e8\u5175\u5668/\u975e\u6807\u6b66\u5668::\u7ef8\u5e26\u501f\u6881",
+      "key": "action::Unusual/Nonstandard Weapons::Silk Ribbon Around a Beam"
+    },
+    {
+      "id": "card-130",
+      "legacy_id": "action::\u5947\u95e8\u5175\u5668/\u975e\u6807\u6b66\u5668::\u9505\u76d6\u56de\u5f39",
+      "key": "action::Unusual/Nonstandard Weapons::Pot-Lid Rebound"
+    },
+    {
+      "id": "card-131",
+      "legacy_id": "action::\u73af\u5883\u4ea4\u4e92/\u573a\u666f\u7834\u574f::\u74e6\u810a\u53cc\u75d5",
+      "key": "action::Environmental Interaction/Destruction::Twin Tracks on a Tiled Ridge"
+    },
+    {
+      "id": "card-132",
+      "legacy_id": "action::\u73af\u5883\u4ea4\u4e92/\u573a\u666f\u7834\u574f::\u67f1\u88c2\u4f20\u529b",
+      "key": "action::Environmental Interaction/Destruction::Force Through a Cracking Pillar"
+    },
+    {
+      "id": "card-133",
+      "legacy_id": "action::\u73af\u5883\u4ea4\u4e92/\u573a\u666f\u7834\u574f::\u540a\u706f\u6539\u7ebf",
+      "key": "action::Environmental Interaction/Destruction::Chandelier Reroutes Pursuit"
+    },
+    {
+      "id": "card-134",
+      "legacy_id": "action::\u73af\u5883\u4ea4\u4e92/\u573a\u666f\u7834\u574f::\u4e66\u5899\u584c\u53e3",
+      "key": "action::Environmental Interaction/Destruction::Gap in a Collapsing Book Wall"
+    },
+    {
+      "id": "card-135",
+      "legacy_id": "action::\u73af\u5883\u4ea4\u4e92/\u573a\u666f\u7834\u574f::\u6c34\u5e55\u663e\u5f62",
+      "key": "action::Environmental Interaction/Destruction::Water Curtain Reveals the Strike"
+    },
+    {
+      "id": "card-136",
+      "legacy_id": "action::\u73af\u5883\u4ea4\u4e92/\u573a\u666f\u7834\u574f::\u6728\u6865\u9010\u683c\u65ad",
+      "key": "action::Environmental Interaction/Destruction::Wooden Bridge Breaks Board by Board"
+    },
+    {
+      "id": "card-137",
+      "legacy_id": "action::\u73af\u5883\u4ea4\u4e92/\u573a\u666f\u7834\u574f::\u73bb\u7483\u7559\u8bc1",
+      "key": "action::Environmental Interaction/Destruction::Glass Records Contact"
+    },
+    {
+      "id": "card-138",
+      "legacy_id": "action::\u73af\u5883\u4ea4\u4e92/\u573a\u666f\u7834\u574f::\u8f6c\u76d8\u501f\u52bf",
+      "key": "action::Environmental Interaction/Destruction::Turntable Momentum"
+    },
+    {
+      "id": "card-139",
+      "legacy_id": "action::\u73af\u5883\u4ea4\u4e92/\u573a\u666f\u7834\u574f::\u6c99\u5899\u843d\u7a7a",
+      "key": "action::Environmental Interaction/Destruction::Miss Behind a Sand Wall"
+    },
+    {
+      "id": "card-140",
+      "legacy_id": "action::\u73af\u5883\u4ea4\u4e92/\u573a\u666f\u7834\u574f::\u95e8\u95f8\u5939\u6746",
+      "key": "action::Environmental Interaction/Destruction::Gate Traps a Pole"
+    },
+    {
+      "id": "card-141",
+      "legacy_id": "action::\u7279\u6b8a\u8eab\u6cd5/\u6781\u9650\u5fae\u64cd::\u534a\u6b65\u8ba9\u7ebf",
+      "key": "action::Special Movement/Extreme Fine Control::Half-Step Off the Line"
+    },
+    {
+      "id": "card-142",
+      "legacy_id": "action::\u7279\u6b8a\u8eab\u6cd5/\u6781\u9650\u5fae\u64cd::\u501f\u5899\u53cd\u8e22",
+      "key": "action::Special Movement/Extreme Fine Control::Wall-Assisted Counterkick"
+    },
+    {
+      "id": "card-143",
+      "legacy_id": "action::\u7279\u6b8a\u8eab\u6cd5/\u6781\u9650\u5fae\u64cd::\u8d34\u67f1\u6362\u4fa7",
+      "key": "action::Special Movement/Extreme Fine Control::Switching Sides Around a Pillar"
+    },
+    {
+      "id": "card-144",
+      "legacy_id": "action::\u7279\u6b8a\u8eab\u6cd5/\u6781\u9650\u5fae\u64cd::\u843d\u5730\u4e8c\u6b21\u5378\u529b",
+      "key": "action::Special Movement/Extreme Fine Control::Two-Stage Landing Absorption"
+    },
+    {
+      "id": "card-145",
+      "legacy_id": "action::\u7279\u6b8a\u8eab\u6cd5/\u6781\u9650\u5fae\u64cd::\u5200\u80cc\u6258\u8155",
+      "key": "action::Special Movement/Extreme Fine Control::Knife Spine Supports the Wrist"
+    },
+    {
+      "id": "card-146",
+      "legacy_id": "action::\u7279\u6b8a\u8eab\u6cd5/\u6781\u9650\u5fae\u64cd::\u547c\u5438\u95f4\u85cf\u6b65",
+      "key": "action::Special Movement/Extreme Fine Control::Steps Hidden Between Breaths"
+    },
+    {
+      "id": "card-147",
+      "legacy_id": "action::\u7279\u6b8a\u8eab\u6cd5/\u6781\u9650\u5fae\u64cd::\u5931\u91cd\u501f\u7bb1",
+      "key": "action::Special Movement/Extreme Fine Control::Pushing a Crate in Weightlessness"
+    },
+    {
+      "id": "card-148",
+      "legacy_id": "action::\u7279\u6b8a\u8eab\u6cd5/\u6781\u9650\u5fae\u64cd::\u6298\u7eb8\u8eb2\u8eab",
+      "key": "action::Special Movement/Extreme Fine Control::Origami Evasion"
+    },
+    {
+      "id": "card-149",
+      "legacy_id": "action::\u7279\u6b8a\u8eab\u6cd5/\u6781\u9650\u5fae\u64cd::\u5f71\u9762\u63a5\u529b",
+      "key": "action::Special Movement/Extreme Fine Control::Solid-Shadow Relay"
+    },
+    {
+      "id": "card-150",
+      "legacy_id": "action::\u7279\u6b8a\u8eab\u6cd5/\u6781\u9650\u5fae\u64cd::\u5012\u8f6c\u843d\u811a",
+      "key": "action::Special Movement/Extreme Fine Control::Inverted Footfall"
+    },
+    {
+      "id": "card-151",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e1",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 1"
+    },
+    {
+      "id": "card-152",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e2",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 2"
+    },
+    {
+      "id": "card-153",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e3",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 3"
+    },
+    {
+      "id": "card-154",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e4",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 4"
+    },
+    {
+      "id": "card-155",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e5",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 5"
+    },
+    {
+      "id": "card-156",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e6",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 6"
+    },
+    {
+      "id": "card-157",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e7",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 7"
+    },
+    {
+      "id": "card-158",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e8",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 8"
+    },
+    {
+      "id": "card-159",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e9",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 9"
+    },
+    {
+      "id": "card-160",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e10",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 10"
+    },
+    {
+      "id": "card-161",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e11",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 11"
+    },
+    {
+      "id": "card-162",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e12",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 12"
+    },
+    {
+      "id": "card-163",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e13",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 13"
+    },
+    {
+      "id": "card-164",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e14",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 14"
+    },
+    {
+      "id": "card-165",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e15",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 15"
+    },
+    {
+      "id": "card-166",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e16",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 16"
+    },
+    {
+      "id": "card-167",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e17",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 17"
+    },
+    {
+      "id": "card-168",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e18",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 18"
+    },
+    {
+      "id": "card-169",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e19",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 19"
+    },
+    {
+      "id": "card-170",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e20",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 20"
+    },
+    {
+      "id": "card-171",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e21",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 21"
+    },
+    {
+      "id": "card-172",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e22",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 22"
+    },
+    {
+      "id": "card-173",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e23",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 23"
+    },
+    {
+      "id": "card-174",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e24",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 24"
+    },
+    {
+      "id": "card-175",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e25",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 25"
+    },
+    {
+      "id": "card-176",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e26",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 26"
+    },
+    {
+      "id": "card-177",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e27",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 27"
+    },
+    {
+      "id": "card-178",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e28",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 28"
+    },
+    {
+      "id": "card-179",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e29",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 29"
+    },
+    {
+      "id": "card-180",
+      "legacy_id": "blind::\u53cd\u5e38\u89c4/\u6df7\u642d\u76f2\u76d2::\u8111\u6d1e30",
+      "key": "blind::Unconventional / Blind Mix::Wild Idea 30"
+    },
+    {
+      "id": "card-181",
+      "legacy_id": "mood::\u538b\u8feb/\u7d27\u7ef7::\u4f4e\u9876\u5ba1\u95ee",
+      "key": "mood::Oppressive/Tense::Low-Ceiling Interrogation"
+    },
+    {
+      "id": "card-182",
+      "legacy_id": "mood::\u538b\u8feb/\u7d27\u7ef7::\u95e8\u540e\u547c\u5438",
+      "key": "mood::Oppressive/Tense::Breathing Behind the Door"
+    },
+    {
+      "id": "card-183",
+      "legacy_id": "mood::\u538b\u8feb/\u7d27\u7ef7::\u7ea2\u7ebf\u5c06\u65ad",
+      "key": "mood::Oppressive/Tense::Red Cord About to Snap"
+    },
+    {
+      "id": "card-184",
+      "legacy_id": "mood::\u538b\u8feb/\u7d27\u7ef7::\u65e0\u58f0\u8ffd\u706f",
+      "key": "mood::Oppressive/Tense::Silent Pursuit of Light"
+    },
+    {
+      "id": "card-185",
+      "legacy_id": "mood::\u538b\u8feb/\u7d27\u7ef7::\u80cc\u5149\u6765\u5ba2",
+      "key": "mood::Oppressive/Tense::Backlit Visitor"
+    },
+    {
+      "id": "card-186",
+      "legacy_id": "mood::\u538b\u8feb/\u7d27\u7ef7::\u5899\u9762\u903c\u8fd1",
+      "key": "mood::Oppressive/Tense::Closing Walls"
+    },
+    {
+      "id": "card-187",
+      "legacy_id": "mood::\u538b\u8feb/\u7d27\u7ef7::\u676f\u53e3\u672a\u843d",
+      "key": "mood::Oppressive/Tense::Cup Still Raised"
+    },
+    {
+      "id": "card-188",
+      "legacy_id": "mood::\u538b\u8feb/\u7d27\u7ef7::\u89c6\u7ebf\u5c01\u9501",
+      "key": "mood::Oppressive/Tense::Sightline Lockdown"
+    },
+    {
+      "id": "card-189",
+      "legacy_id": "mood::\u538b\u8feb/\u7d27\u7ef7::\u96e8\u58f0\u5012\u6570",
+      "key": "mood::Oppressive/Tense::Rainfall Countdown"
+    },
+    {
+      "id": "card-190",
+      "legacy_id": "mood::\u538b\u8feb/\u7d27\u7ef7::\u5c18\u57c3\u60ac\u505c",
+      "key": "mood::Oppressive/Tense::Suspended Dust"
+    },
+    {
+      "id": "card-191",
+      "legacy_id": "mood::\u6e29\u6696/\u8f7b\u76c8::\u7089\u8fb9\u7559\u4f4d",
+      "key": "mood::Warm/Light::A Seat by the Stove"
+    },
+    {
+      "id": "card-192",
+      "legacy_id": "mood::\u6e29\u6696/\u8f7b\u76c8::\u98ce\u8fc7\u7eb8\u7a97",
+      "key": "mood::Warm/Light::Wind Through Paper Windows"
+    },
+    {
+      "id": "card-193",
+      "legacy_id": "mood::\u6e29\u6696/\u8f7b\u76c8::\u70ed\u6c64\u505c\u6218",
+      "key": "mood::Warm/Light::Truce over Hot Soup"
+    },
+    {
+      "id": "card-194",
+      "legacy_id": "mood::\u6e29\u6696/\u8f7b\u76c8::\u4f1e\u4e0b\u8ba9\u6b65",
+      "key": "mood::Warm/Light::Giving Way Under Umbrellas"
+    },
+    {
+      "id": "card-195",
+      "legacy_id": "mood::\u6e29\u6696/\u8f7b\u76c8::\u767d\u5e06\u6162\u5f52",
+      "key": "mood::Warm/Light::White Sail Returning Slowly"
+    },
+    {
+      "id": "card-196",
+      "legacy_id": "mood::\u6e29\u6696/\u8f7b\u76c8::\u706f\u4e0b\u8865\u8863",
+      "key": "mood::Warm/Light::Mending Clothes by Lamplight"
+    },
+    {
+      "id": "card-197",
+      "legacy_id": "mood::\u6e29\u6696/\u8f7b\u76c8::\u8349\u5761\u5931\u91cd\u611f",
+      "key": "mood::Warm/Light::Weightless Feeling on a Grassy Slope"
+    },
+    {
+      "id": "card-198",
+      "legacy_id": "mood::\u6e29\u6696/\u8f7b\u76c8::\u94c3\u58f0\u6e05\u6668",
+      "key": "mood::Warm/Light::Morning Bells"
+    },
+    {
+      "id": "card-199",
+      "legacy_id": "mood::\u6e29\u6696/\u8f7b\u76c8::\u5fae\u5c18\u5348\u7761",
+      "key": "mood::Warm/Light::Dust-Mote Nap"
+    },
+    {
+      "id": "card-200",
+      "legacy_id": "mood::\u6e29\u6696/\u8f7b\u76c8::\u5f52\u9014\u6162\u62cd",
+      "key": "mood::Warm/Light::Homeward at a Slow Beat"
+    },
+    {
+      "id": "card-201",
+      "legacy_id": "mood::\u60b2\u58ee/\u8be1\u5f02/\u8352\u51c9::\u65d7\u5012\u4eba\u7acb",
+      "key": "mood::Tragic and Heroic/Uncanny/Desolate::Flag Falls, Defender Stands"
+    },
+    {
+      "id": "card-202",
+      "legacy_id": "mood::\u60b2\u58ee/\u8be1\u5f02/\u8352\u51c9::\u7a7a\u5e2d\u4f59\u6e29",
+      "key": "mood::Tragic and Heroic/Uncanny/Desolate::Warmth at an Empty Seat"
+    },
+    {
+      "id": "card-203",
+      "legacy_id": "mood::\u60b2\u58ee/\u8be1\u5f02/\u8352\u51c9::\u767d\u5730\u9ed1\u5f71",
+      "key": "mood::Tragic and Heroic/Uncanny/Desolate::Black Shadow on White Ground"
+    },
+    {
+      "id": "card-204",
+      "legacy_id": "mood::\u60b2\u58ee/\u8be1\u5f02/\u8352\u51c9::\u949f\u54cd\u65e0\u4eba",
+      "key": "mood::Tragic and Heroic/Uncanny/Desolate::Bell Rings with No One There"
+    },
+    {
+      "id": "card-205",
+      "legacy_id": "mood::\u60b2\u58ee/\u8be1\u5f02/\u8352\u51c9::\u6d77\u5e95\u5ba2\u5385",
+      "key": "mood::Tragic and Heroic/Uncanny/Desolate::Undersea Living Room"
+    },
+    {
+      "id": "card-206",
+      "legacy_id": "mood::\u60b2\u58ee/\u8be1\u5f02/\u8352\u51c9::\u5012\u884c\u96e8\u6ef4",
+      "key": "mood::Tragic and Heroic/Uncanny/Desolate::Rain Running Backward"
+    },
+    {
+      "id": "card-207",
+      "legacy_id": "mood::\u60b2\u58ee/\u8be1\u5f02/\u8352\u51c9::\u98ce\u5377\u7a7a\u7532",
+      "key": "mood::Tragic and Heroic/Uncanny/Desolate::Wind Moves Empty Armor"
+    },
+    {
+      "id": "card-208",
+      "legacy_id": "mood::\u60b2\u58ee/\u8be1\u5f02/\u8352\u51c9::\u65ad\u6865\u9001\u522b",
+      "key": "mood::Tragic and Heroic/Uncanny/Desolate::Farewell Across a Broken Bridge"
+    },
+    {
+      "id": "card-209",
+      "legacy_id": "mood::\u60b2\u58ee/\u8be1\u5f02/\u8352\u51c9::\u51b7\u7076\u65e7\u7070",
+      "key": "mood::Tragic and Heroic/Uncanny/Desolate::Old Ash in a Cold Stove"
+    },
+    {
+      "id": "card-210",
+      "legacy_id": "mood::\u60b2\u58ee/\u8be1\u5f02/\u8352\u51c9::\u82b1\u5f00\u94c1\u68fa",
+      "key": "mood::Tragic and Heroic/Uncanny/Desolate::Flowers on an Iron Coffin"
+    },
+    {
+      "id": "card-211",
+      "legacy_id": "visual::\u5355\u8272/\u65e0\u5f69::\u7ea2\u53f6\u9ed1\u8863",
+      "key": "visual::Monochrome/Achromatic::Red Leaves, Black Clothes"
+    },
+    {
+      "id": "card-212",
+      "legacy_id": "visual::\u5355\u8272/\u65e0\u5f69::\u84dd\u591c\u767d\u5899",
+      "key": "visual::Monochrome/Achromatic::Blue Night, White Walls"
+    },
+    {
+      "id": "card-213",
+      "legacy_id": "visual::\u5355\u8272/\u65e0\u5f69::\u7eff\u6c34\u94dc\u6865",
+      "key": "visual::Monochrome/Achromatic::Green Water, Bronze Bridge"
+    },
+    {
+      "id": "card-214",
+      "legacy_id": "visual::\u5355\u8272/\u65e0\u5f69::\u767d\u96ea\u7070\u7532",
+      "key": "visual::Monochrome/Achromatic::White Snow, Gray Armor"
+    },
+    {
+      "id": "card-215",
+      "legacy_id": "visual::\u5355\u8272/\u65e0\u5f69::\u9ed1\u7eb8\u94f6\u7ebf",
+      "key": "visual::Monochrome/Achromatic::Black Paper, Silver Lines"
+    },
+    {
+      "id": "card-216",
+      "legacy_id": "visual::\u5355\u8272/\u65e0\u5f69::\u571f\u9ec4\u6b8b\u57ce",
+      "key": "visual::Monochrome/Achromatic::Ochre Ruined City"
+    },
+    {
+      "id": "card-217",
+      "legacy_id": "visual::\u5355\u8272/\u65e0\u5f69::\u6697\u7d2b\u76d0\u6e56",
+      "key": "visual::Monochrome/Achromatic::Dark Purple Salt Lake"
+    },
+    {
+      "id": "card-218",
+      "legacy_id": "visual::\u5355\u8272/\u65e0\u5f69::\u7070\u9636\u706b\u70b9",
+      "key": "visual::Monochrome/Achromatic::Grayscale Sparks"
+    },
+    {
+      "id": "card-219",
+      "legacy_id": "visual::\u5355\u8272/\u65e0\u5f69::\u9752\u74f7\u7559\u75d5",
+      "key": "visual::Monochrome/Achromatic::Celadon Traces"
+    },
+    {
+      "id": "card-220",
+      "legacy_id": "visual::\u5355\u8272/\u65e0\u5f69::\u94c1\u9508\u66ae\u8272",
+      "key": "visual::Monochrome/Achromatic::Rust-Colored Dusk"
+    },
+    {
+      "id": "card-221",
+      "legacy_id": "visual::\u5199\u610f/\u7ed8\u5236::\u5e72\u7b14\u5c71\u9053",
+      "key": "visual::Expressive/Painted::Dry-Brush Mountain Path"
+    },
+    {
+      "id": "card-222",
+      "legacy_id": "visual::\u5199\u610f/\u7ed8\u5236::\u6e7f\u58a8\u96e8\u57ce",
+      "key": "visual::Expressive/Painted::Wet-Ink Rain City"
+    },
+    {
+      "id": "card-223",
+      "legacy_id": "visual::\u5199\u610f/\u7ed8\u5236::\u526a\u7eb8\u8ffd\u5f71",
+      "key": "visual::Expressive/Painted::Paper-Cut Shadow Chase"
+    },
+    {
+      "id": "card-224",
+      "legacy_id": "visual::\u5199\u610f/\u7ed8\u5236::\u7248\u753b\u98ce\u96ea",
+      "key": "visual::Expressive/Painted::Woodcut Wind and Snow"
+    },
+    {
+      "id": "card-225",
+      "legacy_id": "visual::\u5199\u610f/\u7ed8\u5236::\u7c89\u5f69\u9ec4\u660f",
+      "key": "visual::Expressive/Painted::Pastel Dusk"
+    },
+    {
+      "id": "card-226",
+      "legacy_id": "visual::\u5199\u610f/\u7ed8\u5236::\u94c5\u7b14\u8bd5\u63a2",
+      "key": "visual::Expressive/Painted::Pencil Probing"
+    },
+    {
+      "id": "card-227",
+      "legacy_id": "visual::\u5199\u610f/\u7ed8\u5236::\u6cb9\u5f69\u91cd\u6b65",
+      "key": "visual::Expressive/Painted::Heavy Steps in Oil Paint"
+    },
+    {
+      "id": "card-228",
+      "legacy_id": "visual::\u5199\u610f/\u7ed8\u5236::\u6d6e\u4e16\u6d6a\u7eb9",
+      "key": "visual::Expressive/Painted::Ukiyo-e Wave Patterns"
+    },
+    {
+      "id": "card-229",
+      "legacy_id": "visual::\u5199\u610f/\u7ed8\u5236::\u6c34\u5f69\u8584\u96fe",
+      "key": "visual::Expressive/Painted::Watercolor Mist"
+    },
+    {
+      "id": "card-230",
+      "legacy_id": "visual::\u5199\u610f/\u7ed8\u5236::\u7eb8\u5076\u9f7f\u8f6e",
+      "key": "visual::Expressive/Painted::Paper-Puppet Gears"
+    },
+    {
+      "id": "card-231",
+      "legacy_id": "visual::\u5149\u5b66/\u6570\u5b57::\u9713\u8679\u6e7f\u5df7",
+      "key": "visual::Optical/Digital::Neon Wet Alley"
+    },
+    {
+      "id": "card-232",
+      "legacy_id": "visual::\u5149\u5b66/\u6570\u5b57::\u67d4\u9897\u7c92\u5ba4\u5185",
+      "key": "visual::Optical/Digital::Soft-Grain Interior"
+    },
+    {
+      "id": "card-233",
+      "legacy_id": "visual::\u5149\u5b66/\u6570\u5b57::\u51b7\u6570\u7801\u8d70\u5eca",
+      "key": "visual::Optical/Digital::Cool Digital Corridor"
+    },
+    {
+      "id": "card-234",
+      "legacy_id": "visual::\u5149\u5b66/\u6570\u5b57::\u4f53\u79ef\u5149\u88c2\u53e3",
+      "key": "visual::Optical/Digital::Gap of Volumetric Light"
+    },
+    {
+      "id": "card-235",
+      "legacy_id": "visual::\u5149\u5b66/\u6570\u5b57::\u4f4e\u591a\u8fb9\u8352\u5c9b",
+      "key": "visual::Optical/Digital::Low-Poly Desert Island"
+    },
+    {
+      "id": "card-236",
+      "legacy_id": "visual::\u5149\u5b66/\u6570\u5b57::\u50cf\u7d20\u5927\u96e8",
+      "key": "visual::Optical/Digital::Pixel Downpour"
+    },
+    {
+      "id": "card-237",
+      "legacy_id": "visual::\u5149\u5b66/\u6570\u5b57::\u626b\u63cf\u7ebf\u7a97\u53e3",
+      "key": "visual::Optical/Digital::Scanline Window"
+    },
+    {
+      "id": "card-238",
+      "legacy_id": "visual::\u5149\u5b66/\u6570\u5b57::\u70ed\u6210\u50cf\u8ffd\u8e2a",
+      "key": "visual::Optical/Digital::Thermal-Imaging Tracking"
+    },
+    {
+      "id": "card-239",
+      "legacy_id": "visual::\u5149\u5b66/\u6570\u5b57::\u73bb\u7483\u6298\u5c04",
+      "key": "visual::Optical/Digital::Glass Refraction"
+    },
+    {
+      "id": "card-240",
+      "legacy_id": "visual::\u5149\u5b66/\u6570\u5b57::\u96fe\u9762\u91d1\u5c5e",
+      "key": "visual::Optical/Digital::Matte Metal"
+    },
+    {
+      "id": "card-241",
+      "legacy_id": "archetype::\u6e38\u79bb/\u53cd\u6297::\u5b64\u72fc\u9886\u8def",
+      "key": "archetype::Outsiders/Rebels::Lone Wolf Leads the Way"
+    },
+    {
+      "id": "card-242",
+      "legacy_id": "archetype::\u6e38\u79bb/\u53cd\u6297::\u9003\u5175\u56de\u8eab",
+      "key": "archetype::Outsiders/Rebels::Deserter Turns Back"
+    },
+    {
+      "id": "card-243",
+      "legacy_id": "archetype::\u6e38\u79bb/\u53cd\u6297::\u53db\u5f92\u5b88\u7ea6",
+      "key": "archetype::Outsiders/Rebels::Traitor Keeps a Promise"
+    },
+    {
+      "id": "card-244",
+      "legacy_id": "archetype::\u6e38\u79bb/\u53cd\u6297::\u8fb9\u57ce\u6e38\u533b",
+      "key": "archetype::Outsiders/Rebels::Border-Town Traveling Healer"
+    },
+    {
+      "id": "card-245",
+      "legacy_id": "archetype::\u6e38\u79bb/\u53cd\u6297::\u65e0\u540d\u66ff\u8eab",
+      "key": "archetype::Outsiders/Rebels::Nameless Stand-In"
+    },
+    {
+      "id": "card-246",
+      "legacy_id": "archetype::\u6e38\u79bb/\u53cd\u6297::\u5f03\u68b0\u62f3\u624b",
+      "key": "archetype::Outsiders/Rebels::Boxer Lays Down Equipment"
+    },
+    {
+      "id": "card-247",
+      "legacy_id": "archetype::\u6e38\u79bb/\u53cd\u6297::\u5931\u660e\u5f15\u8005",
+      "key": "archetype::Outsiders/Rebels::Blind Guide"
+    },
+    {
+      "id": "card-248",
+      "legacy_id": "archetype::\u6e38\u79bb/\u53cd\u6297::\u6f02\u6cca\u4fee\u5320",
+      "key": "archetype::Outsiders/Rebels::Wandering Repairer"
+    },
+    {
+      "id": "card-249",
+      "legacy_id": "archetype::\u6e38\u79bb/\u53cd\u6297::\u53cd\u65d7\u4f20\u4ee4",
+      "key": "archetype::Outsiders/Rebels::Rebel Messenger"
+    },
+    {
+      "id": "card-250",
+      "legacy_id": "archetype::\u6e38\u79bb/\u53cd\u6297::\u79bb\u7fa4\u5b88\u591c",
+      "key": "archetype::Outsiders/Rebels::Solitary Night Watcher"
+    },
+    {
+      "id": "card-251",
+      "legacy_id": "archetype::\u5b88\u62a4/\u62c5\u5f53::\u5b88\u95e8\u957f\u59d0",
+      "key": "archetype::Guardians/Responsibility::Elder Sister at the Door"
+    },
+    {
+      "id": "card-252",
+      "legacy_id": "archetype::\u5b88\u62a4/\u62c5\u5f53::\u8fdf\u5f52\u8001\u5e08",
+      "key": "archetype::Guardians/Responsibility::Teacher Returning Late"
+    },
+    {
+      "id": "card-253",
+      "legacy_id": "archetype::\u5b88\u62a4/\u62c5\u5f53::\u5e74\u8001\u76fe\u624b",
+      "key": "archetype::Guardians/Responsibility::Aging Shield Bearer"
+    },
+    {
+      "id": "card-254",
+      "legacy_id": "archetype::\u5b88\u62a4/\u62c5\u5f53::\u6c89\u9ed8\u9886\u822a",
+      "key": "archetype::Guardians/Responsibility::Silent Navigator"
+    },
+    {
+      "id": "card-255",
+      "legacy_id": "archetype::\u5b88\u62a4/\u62c5\u5f53::\u63a5\u73ed\u5b66\u5f92",
+      "key": "archetype::Guardians/Responsibility::Apprentice Takes Over"
+    },
+    {
+      "id": "card-256",
+      "legacy_id": "archetype::\u5b88\u62a4/\u62c5\u5f53::\u8d1f\u4f24\u961f\u957f",
+      "key": "archetype::Guardians/Responsibility::Wounded Captain"
+    },
+    {
+      "id": "card-257",
+      "legacy_id": "archetype::\u5b88\u62a4/\u62c5\u5f53::\u4eba\u8d28\u62a4\u536b",
+      "key": "archetype::Guardians/Responsibility::Hostage Escort"
+    },
+    {
+      "id": "card-258",
+      "legacy_id": "archetype::\u5b88\u62a4/\u62c5\u5f53::\u96e8\u68da\u53a8\u5e08",
+      "key": "archetype::Guardians/Responsibility::Awning Cook"
+    },
+    {
+      "id": "card-259",
+      "legacy_id": "archetype::\u5b88\u62a4/\u62c5\u5f53::\u5931\u7ea6\u5f52\u4eba",
+      "key": "archetype::Guardians/Responsibility::Returner Who Broke a Promise"
+    },
+    {
+      "id": "card-260",
+      "legacy_id": "archetype::\u5b88\u62a4/\u62c5\u5f53::\u6700\u540e\u706f\u5de5",
+      "key": "archetype::Guardians/Responsibility::Last Lamplighter"
+    },
+    {
+      "id": "card-261",
+      "legacy_id": "archetype::\u4f2a\u88c5/\u77db\u76fe::\u80cc\u53db\u8005\u9012\u6c34",
+      "key": "archetype::Disguise/Contradiction::Betrayer Offers Water"
+    },
+    {
+      "id": "card-262",
+      "legacy_id": "archetype::\u4f2a\u88c5/\u77db\u76fe::\u7b11\u9762\u7a0e\u5b98",
+      "key": "archetype::Disguise/Contradiction::Smiling Tax Official"
+    },
+    {
+      "id": "card-263",
+      "legacy_id": "archetype::\u4f2a\u88c5/\u77db\u76fe::\u80c6\u602f\u82f1\u96c4",
+      "key": "archetype::Disguise/Contradiction::Timid Hero"
+    },
+    {
+      "id": "card-264",
+      "legacy_id": "archetype::\u4f2a\u88c5/\u77db\u76fe::\u6e29\u67d4\u5ba1\u5224\u8005",
+      "key": "archetype::Disguise/Contradiction::Gentle Judge"
+    },
+    {
+      "id": "card-265",
+      "legacy_id": "archetype::\u4f2a\u88c5/\u77db\u76fe::\u88c5\u50bb\u8c0b\u58eb",
+      "key": "archetype::Disguise/Contradiction::Strategist Feigns Foolishness"
+    },
+    {
+      "id": "card-266",
+      "legacy_id": "archetype::\u4f2a\u88c5/\u77db\u76fe::\u5931\u5fc6\u89c1\u8bc1\u4eba",
+      "key": "archetype::Disguise/Contradiction::Amnesiac Witness"
+    },
+    {
+      "id": "card-267",
+      "legacy_id": "archetype::\u4f2a\u88c5/\u77db\u76fe::\u654c\u65b9\u6551\u63f4\u8005",
+      "key": "archetype::Disguise/Contradiction::Enemy Rescuer"
+    },
+    {
+      "id": "card-268",
+      "legacy_id": "archetype::\u4f2a\u88c5/\u77db\u76fe::\u5b8c\u7f8e\u66ff\u7f6a\u4eba",
+      "key": "archetype::Disguise/Contradiction::Perfect Scapegoat"
+    },
+    {
+      "id": "card-269",
+      "legacy_id": "archetype::\u4f2a\u88c5/\u77db\u76fe::\u75af\u766b\u770b\u5b88",
+      "key": "archetype::Disguise/Contradiction::Deranged Guard"
+    },
+    {
+      "id": "card-270",
+      "legacy_id": "archetype::\u4f2a\u88c5/\u77db\u76fe::\u6000\u7591\u7684\u667a\u8005",
+      "key": "archetype::Disguise/Contradiction::Doubting Sage"
+    }
+  ]
+}

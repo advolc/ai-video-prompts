@@ -1,28 +1,28 @@
-# 环境与天气叙事干预
+# Environment and Weather as Narrative Influences
 
-## 从现场条件推演，不抽天气词
-在创作或精修已定片段时默认静默检查：天气/介质→人物所处位置与遮蔽→感知与摩擦/支撑→当前动作受到何种影响。只选与本次主信息有关的一条，不每场都强风吹衣摆，也不凭空加雨、雪、风沙、积水或泥地。真实参考的天气只有用户要求继承时才继承。
+## Reason from conditions on location, not weather keywords
+When creating or refining an established passage, silently check by default: weather/medium → character location and shelter → perception and friction/support → effect on the current action. Select only one relationship relevant to the main information. Do not add strong wind to every costume, or invent rain, snow, blowing sand, standing water, or mud. Inherit weather from a real reference only when the user requests it.
 
-已有雨可改变握持与脚下摩擦，雪地可影响落脚深度，侧风可压低本来就在外翻的衣角，狭窄空间可限制既定兵器回摆。写清来源、接触部位、发生时机与结果，而非“环境恶劣”。环境反应有先后：身体经过后才扰动雾，脚承重后才挤开水膜。
+Established rain may change grip and traction; snow may change foot penetration; crosswind may press down an already-flaring hem; narrow space may limit an established weapon's backswing. State the source, contact area, timing, and result instead of "harsh environment." Responses follow sequence: a body passes before mist is disturbed; a foot takes weight before a water film is displaced.
 
-风沙迷眼造成失明、暴雨打滑造成失衡，都是可能改变局势的事件，不是免费氛围。只有剧情本已包含该结果，才在原动作里补足原因；若会新增伤势、失去防守或改变胜负，默认不加入，需要该变化时走原设计确认与事件负荷规则。普通雨战可只让步幅更稳、落脚反馈更清楚，不自动让人摔倒。
+Sand blinding the eyes and a rain-induced loss of footing can change the situation; they are not free atmosphere. Supply causes within the original action only when the story already contains that outcome. By default, add neither new injury, lost defense, nor altered victory. If such a change is needed, use the existing design-confirmation and event-load rules. Ordinary rain combat may simply show steadier strides and clearer footfall feedback rather than automatically causing a fall.
 
-## 光影突变按真实光源与叙事时机
-先定位本场已有闪电、霓虹、火盆、门窗和遮挡。已定雷暴的电光可短暂显出人物后再回到原暗部；已有火盆前的遮挡移动可改变脸部明暗；已存在故障的霓虹才可明灭。不能为了压迫感凭空断电、闪电或点燃物品，不能把每次动作都变成白闪。
-变化只强调一个关键可读信息，并恢复连续的主光/阴影关系；强光不能吞没交汇点，黑暗不能掩盖必要接触和结果。动态光细化见[光线系统](../lens/physical-light.md)，与[场景物理](../references/world-and-style.md)共用同一天气和空间状态，不写两套风向。
+## Sudden light changes follow actual sources and narrative timing
+First locate the scene's existing lightning, neon, braziers, doors/windows, and occluders. Lightning in an established thunderstorm may briefly reveal figures before the original shadows return; an occluder passing an existing brazier may change facial light; neon flickers only when a fault is already established. Do not invent a power failure, lightning, or ignition for pressure, or turn every move into a white flash.
+A change emphasizes one readable fact and restores the continuous key/shadow relationship. Bright light cannot swallow the crossing, and darkness cannot conceal necessary contact or results. See [light](../lens/physical-light.md) for moving-light detail; share the same weather and spatial state with [scene physics](../references/world-and-style.md), rather than writing two wind directions.
 
-## 可交互物分级（可选加深）
+## Interactive-object classification (optional depth)
 
-默认启用；用户明确要“简版/lite”时可省略。依据本场后果分级，不把某种道具固定归某一等级。
+Enabled by default; it may be omitted when the user explicitly requests "compact/lite." Classify by consequences in this scene, not by assigning a prop permanently to a category.
 
-| 级别 | 定义 | 候选例 | 计入什么 |
+| Class | Definition | Candidate examples | Accounting |
 |---|---|---|---|
-| 免费细节 | 既有动作对已有物件的非关键反馈，可删而不改变局势 | 原落脚带起少量水，原有衣摆擦过桌角，原本就扶门的手与门框接触 | 不另计独立事件，所有模块仍共用原最多2条氛围；关键受力证据留主因果链 |
-| 需计事件 | 有意使用已有物件，改变局部交互但未改变既定胜负 | 借门板完成一次格挡，踢翻已有凳子阻碍一步 | 计入必执行或独立事件，按A层事件与因果链判断，不因为道具小就免费 |
-| 改变局势 | 使用后改变空间通路、胜负或关系 | 推倒书架封通路，损坏已定支撑导致坍塌 | 计独立事件，复核授权、接缝与状态连续性；不能当氛围附送 |
+| Free detail | Nonessential response of an existing object to an existing action; removable without changing the situation | An established footfall raises a little water, an existing hem brushes a table corner, a hand already bracing a doorway contacts its frame | Not a separate event; arrange Tier B/C detail by readability, coherence, and prompt length, without a universal count; keep essential force evidence in the main causal chain |
+| Counted event | Intentional use of an existing object changes a local interaction but not the established outcome | One block with a door panel, kicking over an existing stool to obstruct a step | A required action or independent event, checked by Tier A causality; small props do not make it free |
+| Situation-changing | Use changes routes, victory, or relationships | Toppling a bookshelf to block a route, damaging established support until it collapses | An independent event; recheck authorization, seams, and state continuity; never an atmospheric bonus |
 
-“免费”仅指纯质感：若原本没有扶门动作，新增扶门/取物仍先按事件判断。新取物、新造物与凭空道具不在免费细节内；用户需要新增实体时走原设计确认。分级不能用来强加本来不存在的火灾、武器或障碍。
+"Free" means texture only: if no bracing action existed, adding a hand on the doorway or retrieving an object still needs event classification first. New retrievals, created objects, and invented props are not free detail; use the existing design confirmation when the user needs a new entity. Classification never authorizes an otherwise absent fire, weapon, or obstacle.
 
-## 静默交付与事件边界
-常态风向、材质、已有光源属于固定条件；非关键衣发/薄雾/反光只占现有氛围位，原主动作的自然反馈不另立必执行。独立滑倒、坠落、光源破坏和场景损毁必须按原事件处理，不用本模块绕过A层事件；细节过多先删候选，不扩大动作任务。
-最终自然叙述具体接触/反光/受限路径，不输出推演步骤或规则名。需要声音时按本次原生能力分流；关键状态变化继承六项接缝。参照[共用契约](../core/pipeline.md)。
+## Silent delivery and event boundaries
+Normal wind direction, materials, and existing sources are fixed conditions. Secondary hair/clothing, mist, and reflections are Tier C; natural responses to the original main action are not separate events. An independent slip, fall, destroyed source, or damaged set is handled as an event. This module does not bypass Tier A; if detail grows excessive, remove candidates instead of expanding the action assignment.
+The final prose naturally depicts specific contact, reflections, and constrained routes, not reasoning steps or rule names. Distinguish intended sound from actual native/post-production execution through [generation handoff](../references/generation-handoff.md). Carry key state changes through the six seam categories. See the [shared contract](../core/pipeline.md).

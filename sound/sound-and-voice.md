@@ -1,72 +1,72 @@
-# 声音与音色（合并版）
+# Sound and Voice (Consolidated)
 
-合并了整体声音设计与角色音色设计。对白口语化与交付通道见[口语层](../dialogue/spoken-register.md)。
+Combines overall sound design and character voice design. For conversational dialogue and delivery channels, see [spoken register](../dialogue/spoken-register.md).
 
-## 整体声音设计
+## Overall sound design
 
-本文件管整场声音的信息与空间；[打击感](../references/hit-feel.md)管接触/受力的瞬间声。两边分工互补，不给每次接触叠一套配乐规则。
+This file handles the information and space conveyed by sound across the scene; [hit feel](../references/hit-feel.md) handles the instant of contact or force. These roles complement each other; do not stack a separate set of scoring rules onto every contact.
 
-| 层 | 功能 | 无声打戏的候选 |
+| Layer | Function | Candidates for a fight without dialogue |
 |---|---|---|
-| 环境 | 地点、尺度、连续性 | 雨落瓦、远处风，镜头之间保持同空间 |
-| 拟音 | 动作材质与重量 | 脚掌承重、布料回收、刃口短鸣，接触时才起声 |
-| 音乐 | 关系和节奏 | 接触前收低，结果后再进入，主旋律不压关键响动 |
-| 静默 | 突出判断或余波 | 决定前短减音乐和次要声，空间底噪是否保留按意图 |
+| Environment | Place, scale, continuity | Rain on roof tiles, distant wind; preserve the same space across shots |
+| Foley | Material and weight of movement | A foot taking weight, cloth settling, a brief ring of steel beginning at contact |
+| Music | Relationship and rhythm | Lower it before contact and bring it back after the result; the main melody yields to important sounds |
+| Silence | Highlight a decision or aftermath | Briefly reduce music and secondary sounds before a decision; retain spatial room tone according to intent |
 
-声画同步让事件可读，对位可令温和音乐映照紧张但不能破坏必要因果，桥接用画外下一场声音引导，画外声应有方向与空间依据。音乐驱动先标主拍/段落，再决定哪些动作对齐；主题变奏改变配器、节奏或音区，不必每场换新曲。
+Synchronization makes events readable. Counterpoint can place gentle music against tension, but cannot disrupt essential causality. Sound bridges use off-screen sound from the next scene; off-screen sound needs a direction and spatial basis. For music-driven work, mark the main beats and sections first, then decide which actions align. Theme variations change instrumentation, rhythm, or register; every scene need not receive a new track.
 
-声音不是画面重复说明：画面给刀停住，声音给金属仍在受压；对白不再解说显而易见结果。本次平台确有原生音频且采用时，简单环境/接触音进生成层；混音、精细BGM、复杂对白、响度和精确口型归[音频后期](../post/finishing-and-release.md)。实际听过才评价听感；仅波形/参数不能证明好听。
+Sound does not merely explain the picture again: the image shows a stopped blade, while sound conveys metal still under pressure; dialogue does not narrate an obvious result. The prose may describe environment/contact sounds from existing sources and the selected quoted lines; actual execution channels and unverified capabilities follow [generation handoff](../references/generation-handoff.md). Mixing, detailed background music, dialogue-analysis cards, loudness, and exact lip-sync work belong in [audio post-production](../post/finishing-and-release.md). Judge the listening experience only after listening; waveforms or parameters alone do not establish that it sounds good.
 
-### 主观心理声学：按角色当下状态推演
+### Subjective acoustics: reason from the character's current state
 
-从已经成立的接触/冲击、角色体能、注意对象与叙事视角，判断是否需要一次主观声音变化；不是“受击→耳鸣”或“恐惧→心跳”的固定查表。轻触、疲劳和重击不共用同一组声音，客观旁观镜头也不自动进入受击者听觉。
+Use established contact or impact, physical capacity, attention, and narrative viewpoint to decide whether a subjective sound change is useful. This is not a fixed lookup of "hit → ringing ears" or "fear → heartbeat." A light touch, fatigue, and a heavy blow do not share the same sounds; an objective observing shot does not automatically enter the victim's hearing.
 
-可在合适条件下选择短暂高频残响、环境声退远、心跳突出或短时听觉衰减；只取对本场有信息的一项，给进入、恢复与原空间底的连续性。不从声效反推出新增失聪/脑伤，不把主观处理冒称新的身体伤势；没有对应受力就不凭空出现强烈耳鸣。
+Where appropriate, choose a brief high-frequency ring, receding environment, prominent heartbeat, or temporary attenuation. Select only one that conveys information here, and provide an entry, a recovery, and continuity with the original spatial bed. Do not infer new deafness or brain injury from an effect, or present subjective treatment as a new physical injury. Strong ringing cannot appear without corresponding force.
 
-极度恐惧或杀招前可评估“抽真空”式心理静默：削弱次要音乐/环境，只留下现场已有的一个微声，如袖口摩擦或呼吸。是否静默取决于人物注意与既定节奏，不能每次出招都停音，也不删掉读懂关键接触必须的声音。这里是主观混音，不是真的改变场景介质或物理空气。
+Before extreme fear or a killing move, consider a "vacuum-like" subjective silence: reduce secondary music/environment and retain one small sound already present, such as a cuff rubbing or breathing. Silence follows the character's attention and established rhythm, not every attack; preserve sounds essential to reading key contact. This is subjective mixing, not an actual change to the medium or physical air.
 
-生理声依体能与既定发力/受击时机自然连接，详见[接触声音](../references/hit-feel.md#全风格打击上下文推演)；精细耳鸣滤波、响度曲线、静默卡点默认归[音频后期](../post/finishing-and-release.md)。本次平台已核实支持并采用所需原生声音时，可将简短声画意图自然放进正文；不支持/不清楚时保留制作计划，不把复杂混音词硬塞给视频模型，也不因此强制用户改平台。最终纯提示词不附模块解释；不能仅看声音计划或波形就称已试听通过。
+Physiological sounds connect naturally to physical capacity and established exertion/impact timing; see [contact sound](../references/hit-feel.md#all-style-impact-context-reasoning). Detailed ringing filters, loudness curves, and precisely timed silence belong by default in [audio post-production](../post/finishing-and-release.md). Brief audiovisual intent may enter the prose; when capabilities are unknown, mark them unverified outside it and retain the post-production plan. Complex mixing instructions stay in post; do not force a platform change. Adapt to the user's goal when they request purely visual input. Pure final prompts contain no module explanations; a sound plan or waveform is not evidence of a successful listening check.
 
-## 角色音色设计
+## Character voice design
 
-用户明确要求设计音色或接受推荐后启用；默认启用；用户明确要“简版/lite”时可省略。本文件管角色声音属性，不替代[场景声音设计](sound-and-voice.md)的环境/拟音/音乐/静默四层，也不替代[音频后期](../post/finishing-and-release.md)的混音与响度。
+When the scene contains a human voice, select the applicable voice texture and rhythm by default. A compact version may simplify these; no additional module authorization is required. This file handles character voice properties, not the four environment/foley/music/silence layers of [scene sound design](sound-and-voice.md), or the mixing and loudness of [audio post-production](../post/finishing-and-release.md).
 
-### 六个参数（按需设计，不强制全填）
+### Six parameters (design as needed; not all are mandatory)
 
-| 参数 | 设计问题 | 可听化描述候选 |
+| Parameter | Design question | Candidate audible descriptions |
 |---|---|---|
-| 音高与音色 | 相对音高、共鸣听感与质感怎样区分人物？ | 胸声感/头声感，低沉/清亮/沙哑/圆润；选相容描述，不堆同义词 |
-| 气息 | 支撑、呼吸节奏与换气位置是什么？ | 句尾是否漏气，紧张时变浅或屏住，长句何处换气 |
-| 咬字与语速 | 咬字松紧、速度、停顿与重音习惯是什么？ | 字头清楚或连贯，快时是否吞音，停顿在句中或句尾，重音是否落动词 |
-| 口音与阶层 | 已定地域、职业、时代对声音有何影响？ | 依据设定选择语音与语气词特点，不用“古风腔”替代具体设计，也不把口音当阶层高低证明 |
-| 情绪变化规律 | 同一角色在情绪变化时声音怎样变？ | 音高升或压、气息断或稳、咬字紧或松、速度与气息谁先变化；不是全员同一公式 |
-| 关系映射 | 对不同对象时声音如何相互适配？ | 音高/语速/气息的差异，谁跟随谁、谁在谁面前改变表达；不只用强弱分类 |
+| Pitch and timbre | How do relative pitch, perceived resonance, and texture distinguish characters? | Chest/head resonance, low/clear/raspy/rounded; choose compatible descriptions rather than stacked synonyms |
+| Breath | What are the support, breathing rhythm, and breath points? | Air escaping at sentence ends, shallow or held breath under stress, breath placement within a long line |
+| Articulation and pace | How tight is articulation, and what are the speed, pause, and stress habits? | Clear or connected onsets, swallowed sounds at speed, pauses mid-line or at the end, stress on verbs |
+| Accent and social background | How do established region, occupation, and era influence the voice? | Setting-based pronunciation and particles; a generic "period voice" does not replace concrete design, and accent does not prove social rank |
+| Pattern of emotional change | How does this character's voice change with emotion? | Raised or lowered pitch, broken or steady breath, tight or loose articulation, whether pace or breath changes first; not one formula for everyone |
+| Relationship mapping | How does the voice adapt to different listeners? | Differences in pitch/pace/breath, who follows whom, and around whom someone changes their delivery; more than a strong/weak classification |
 
-### 使用边界
+### Boundaries
 
-- 音色参数用于配音设计与TTS；视频正文中以简短的“声音质感与节奏”提示附在引号台词旁（见[口语层](../dialogue/spoken-register.md)），不放参数表。
-- 本次已核实支持原生对白、且用户明确采用时，选定台词、说话者及本次工具确实能执行的音色提示进入生成层；复杂参数仍留制作备注。音效、对白、音色可控与精准口型分别确认。
-- 没有实际试听不写“音色已通过”；未实际生成的参数是候选，不是效果保证。不自动上传、付费或调用任何工具。
-- 不把低沉等同强、清亮等同弱；不得为凑参数新增人物前史、地域或阶层，只用已定事实或本次获准的代拟。
+- Voice parameters support dubbing and TTS. In video prose, attach a brief voice-texture/rhythm cue to the quoted line (see [spoken register](../dialogue/spoken-register.md)); do not include the parameter table.
+- Quoted lines and brief voice cues are inline by default. Actually controllable tool parameters and execution channels follow [generation handoff](../references/generation-handoff.md); flag anything unverified and keep complex parameters in production notes. Verify sound effects, dialogue, timbre control, and exact lip sync separately.
+- Never write "voice approved" without listening. Parameters not actually generated are candidates, not guarantees. Do not automatically upload, pay, or call tools.
+- Low does not mean strong, and clear does not mean weak. Do not invent a past, region, or social class to fill parameters; use established facts or provisional design authorized for this task.
 
-### 对接
+### Handoffs
 
-- [台词设计](../references/dialogue-engine.md)管文本与意图，本文件不重复四层模型。
-- [场景声音](sound-and-voice.md)管环境/拟音/音乐/静默，音色是角色属性，不新增声音层。
-- [混音与响度](../post/finishing-and-release.md)管后期，音色设计不等于混音完成。
-- 六项参数记录在[角色一致性卡](../references/character-and-performance.md#可交接的角色一致性卡)，以版本和批准状态跨段继承；本段状态引起的变化另记，不能每段换声。
+- [Dialogue design](../references/dialogue-engine.md) handles text and intent; this file does not repeat its four-layer model.
+- [Scene sound](sound-and-voice.md) handles environment/foley/music/silence. Timbre is a character property, not a new sound layer.
+- [Mixing and loudness](../post/finishing-and-release.md) handles post-production; voice design does not mean mixing is complete.
+- Record the six parameters in the [character continuity card](../references/character-and-performance.md#handoff-ready-character-consistency-card), carrying versions and approval status across segments. Record changes caused by the current state separately rather than changing the voice every segment.
 
-## 按情境路由的声音策略
+## Sound strategy routed by context
 
-声音密度与静默由情境档案决定，不是统一铺满：
+The Context Profile determines sound density and silence, rather than filling every scene uniformly:
 
-- **潜入/暗杀：** 近乎静默，只留一个受控的声音（靴底碎石、一口气），让静默成为张力。
-- **困兽之斗：** 破碎的呼吸、衣物、持续的撞击，不给安静的恢复。
-- **对练：** 木器或软器的轻响，随口的交谈、笑。
-- **仪式性对决：** 近乎寂静，一个仪式性的声音，规矩被破坏时声音才破。
-- **街头争吵：** 人群、叫喊、重叠的话语，声音多层。
-- **告别：** 环境声拖长，人离开后保留一段空间的声音（站台、门外的风）。
-- **耳语/秘密：** 呼吸占主导，环境里的响动制造威胁。
-- **事后喘息：** 呼吸、金属落地、衣物摩擦，台词被呼吸切断。
+- **Stealth/assassination:** near silence, one controlled sound (gravel under a boot, one breath); silence carries tension.
+- **Cornered struggle:** broken breathing, clothing, continuous impacts, no quiet recovery.
+- **Sparring:** light wooden or padded contact, casual speech, laughter.
+- **Ritual duel:** near silence, one ritual sound; sound breaks when the code breaks.
+- **Street argument:** crowd, shouting, overlapping voices, multiple layers.
+- **Farewell:** let environmental tails linger and retain the space's sound after someone leaves (a platform, wind outside).
+- **Whisper/secret:** breathing leads, with environmental noises suggesting threat.
+- **Post-exertion:** breathing, metal landing, clothing rubbing, lines broken by breath.
 
-选择一项主声音，其余让位；原生音频是否可用仍以实测为准。
+Choose one leading sound and let the others yield. Native-audio availability still requires an actual test.

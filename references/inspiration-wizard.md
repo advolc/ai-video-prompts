@@ -1,174 +1,177 @@
-# 向导式灵感孵化
+# Guided Inspiration Incubation
 
-服务“没有灵感”“只有一个词/一幅画面”“有两套想法还没选”的用户。用词库和小问题帮助用户长出想法，不在首轮抛完整剧情、分镜或提示词；已有明确方案的用户直接走设计/制作入口，不强行重做向导。
+Serve users who have “no inspiration,” “only one word/one image,” or “two ideas they have not chosen between.” Use the vocabulary library and small questions to help ideas grow; do not present a complete plot, storyboard, or prompt in the first round. Users with a clear plan go directly to design/production, without being forced through the wizard again.
 
-## 强制前置确认（防降维与防跑偏）
+Length figures stated in Chinese characters describe the Chinese version's brevity, not a required output language. In another requested language, use comparably concise wording while retaining the same fields.
 
-当用户说出“做电影/长片/剧集/微电影”，或仅说“做个古风/科幻故事”等宏观需求时，不能直接生成场景标签、默认进入打戏/对峙，或擅自缩成一个生成片段。先确认项目体量与故事大类；本节先于后文抽卡、场景推荐和通用故事方向菜单执行。
+## Mandatory Preliminary Confirmation (Prevent Scope Reduction and Drift)
 
-1. **确认体量（防降维）**：体量未定时先问：“这是一个完整的电影/剧集项目，还是先试拍一场戏？如果想从零建，我们走世界观→人物→大纲的前期流程；如果已经有故事线，可以直接选其中一场试拍。”已有故事线不代表自动同意只做单场，用户仍可选择完整项目规划。
-2. **确认大类（防跑偏）**：只有古风、科幻等背景信息时，询问更想做纯文戏、悬疑、权谋、生活，还是其他自定类型。古风不能自行窄化为拔剑复仇/快意恩仇，科幻也不自动等于机甲战斗；已明确的类型不重问。
+When the user says “make a film/feature/series/short film,” or gives only a broad request such as “make a period-style/science-fiction story,” do not immediately generate scene tags, default to a fight/confrontation, or reduce it to one generation segment without authorization. Confirm project scale and broad story category first; this section precedes card drawing, scene recommendations, and generic story-direction menus below.
 
-已由前文、附件或用户本轮确定的体量、类型与故事线直接沿用，只补会改变走向的缺项；若两类都未定，先体量、下一轮再问故事大类，一轮只问一个问题，不要求用户填长表。用户明确只要单场/一句灵感/直接试做时，按其范围继续，不借本节强迫搭建整部世界观。宏观需求尚未确认时先不问视频平台、不做五秒稿；用户选整片前期则先组织世界规则、人物与大纲，之后再选场。
+1. **Confirm scale (prevent scope reduction):** When scale is undecided, first ask: “Is this a complete film/series project, or do you want to test one scene first? If you want to build from scratch, we'll follow preproduction from worldbuilding to characters to outline; if you already have a storyline, we can choose one scene to test.” An existing storyline does not automatically authorize single-scene-only work; the user may still choose full-project planning.
+2. **Confirm broad category (prevent drift):** When only background information such as period style or science fiction is available, ask whether they prefer dialogue-driven drama, suspense, political intrigue, everyday life, or another category of their own. Do not narrow period style to drawing swords for revenge or settling scores, or make science fiction automatically mean mecha combat. Do not ask again about an already explicit genre.
 
-进入探索前必须执行[逐维拼装协议](../ux/interaction.md)：默认一轮一维、按世界→空间→关系→奇观/核心动作顺序处理；本页保留状态与交付细则，不能用旧的非线性说明绕过顺序或拼成套餐。用户明确改变流程时按协议例外执行。
+Reuse scale, genre, and storyline established earlier, in attachments, or in the current turn; ask only about missing items that would change direction. If both categories remain undecided, ask about scale first and story category in the next round; one question per round, without a long form. If the user explicitly wants only one scene/one inspiration line/a direct trial, follow that scope rather than forcing construction of an entire world. Before confirming a broad request, do not ask about the video platform or produce a five-second draft. If the user chooses whole-film preproduction, organize world rules, characters, and outline first, then select a scene.
 
-## 核心交互原则
+Before exploration, you must execute the [Dimension-by-Dimension Assembly Protocol](../ux/interaction.md): by default, one dimension per round in the order world → space → relationship → spectacle/core action. This page retains state and delivery details; do not use old nonlinear descriptions to bypass the order or assemble packages. When the user explicitly changes the workflow, follow the protocol's exceptions.
 
-**严格区分确认范围**：选择角色类别只确认角色类别；选择平台只确认工具。创意阶段未确认的设定，不能因为用户回答了其他问题，就被 AI 当成默认批准。
+## Core Interaction Principles
 
-### 1. 状态快照
+**Strictly distinguish what has been confirmed:** Selecting a character category confirms only that category; selecting a platform confirms only the tool. The AI must not treat creative settings still unconfirmed as approved defaults simply because the user answered other questions.
 
-在对话内后台维护五个核心槽位，不要求用户填表，不自动写入长期记忆或声称已建外部数据库：
+### 1. State Snapshot
 
-| 槽位 | 记录内容 | 相关依赖 |
+Maintain five core slots backstage within the conversation. Do not ask the user to fill a form, automatically write to long-term memory, or claim to have created an external database:
+
+| Slot | Recorded content | Relevant dependencies |
 |---|---|---|
-| 世界观 | 时代/技术与能力规则；情绪和画风可作附属描述 | 武器、材质、建筑与能力来源 |
-| 空间 | 场地、尺度、支撑、退路与高低差 | 有效距离、走位、攻击范围、破坏后果 |
-| 关系 | 谁对谁、保护/争夺目标、动机及期望局势 | 下手程度、攻防选择与结局 |
-| 奇观 | 武器/术法外观、环境交互、可识别记忆点 | 形态一致性、代价、接触/破坏规则 |
-| 核心动作 | 一条主要攻防及应对/结果，优先可看清的身体动作 | 武器长度、空间、支撑与动量 |
+| World | Era/technology and ability rules; mood and visual style may be supplementary descriptions | Weapons, materials, architecture, and ability sources |
+| Space | Location, scale, support, retreat routes, and height differences | Effective distance, movement, attack range, consequences of destruction |
+| Relationship | Who relates to whom, protection/contested target, motives, and intended situation | Degree of force, attack/defense choices, and ending |
+| Spectacle | Weapon/spell appearance, environmental interaction, recognizable memorable beat | Shape consistency, cost, contact/destruction rules |
+| Core action | One principal attack/defense and response/outcome, prioritizing clearly readable bodily action | Weapon length, space, support, and momentum |
 
-每个值附来源（用户明确/AI候选）、状态（待定/候选/已定/待复核）与所属分支。用户给的词优先保留，不把AI建议默认为用户已选。目标时长、工具信息与交付偏好另记，不能挤掉五个槽位。
+Attach a source (explicit user choice/AI candidate), status (undecided/candidate/settled/pending review), and branch to every value. Preserve the user's words first; do not assume AI suggestions are user selections. Record target duration, tool information, and delivery preferences separately; they cannot displace the five slots.
 
-向导模式每次回复末尾，用约50字简报五槽；待定如实标待定，不为凑字补设定。分支较多时用A/B标签压缩，后台仍保留各支完整值。提示词交付后仍处于本模式时继续附快照，但放在生成正文/可复制块之外，属于管理信息。用户退出本模式后停止附快照；维护技能的对话不算已进入孵化。
+In wizard mode, end every reply with a roughly 50-Chinese-character briefing of all five slots; mark undecided items honestly, without adding settings to fill length. With multiple branches, compress using A/B labels while preserving each branch's full values backstage. If the mode continues after prompt delivery, keep attaching snapshots outside the generation body/copyable block as management information. Stop attaching them after the user exits this mode; skill-maintenance conversations do not count as entering incubation.
 
-简报形态：`状态：世界…；空间…；关系…；奇观…；动作…。` 若上游改动未处理，相关值写“待复核”，不能仍显示已定。
+Briefing form: `Status: World…; Space…; Relationship…; Spectacle…; Action….` If an upstream change remains unresolved, mark related values “pending review,” never still “settled.”
 
-对话内另记活动分支、当前关注槽、大纲版本及各分支已确认版本、待联动项、生成条件、文字交付偏好。它们是交互控制状态，不是增加第六个创意槽，也不逐项展示给用户。状态转移为：
+Also record within the conversation the active branch, current focus slot, outline version and each branch's confirmed version, pending linked changes, generation conditions, and text-delivery preference. These are interaction-control state, not a sixth creative slot, and are not displayed individually. State transitions are:
 
-| 当前状态 | 触发与转移 |
+| Current state | Trigger and transition |
 |---|---|
-| 探索 | 先归槽用户提供的全部信息，再按逐维协议处理最早未定项；四维已处理或用户明确要求跳步成案→校验 |
-| 校验 | 有影响主动作的矛盾→回到相关槽；可成立→百字大纲与待确认 |
-| 待确认 | 用户修改→更新受影响分支并校验；确认当前版本→生成交接；未回复不自行通过 |
-| 生成交接 | 补平台条件与未知交付偏好；已有信息不重问；条件就绪或用户明确选择通用假设稿→按偏好交付 |
-| 交付/诊断 | 全量一次给齐，分批等试片反馈；失败→AI管线局部诊断；用户改要全量→给齐余下 |
-| 任意状态 | 用户推翻设定→标记涟漪影响，相关分支旧大纲确认失效，再校验；不受影响的分支和槽保持 |
+| Exploration | First assign all user-provided information to slots, then handle the earliest undecided item under the dimension-by-dimension protocol; four dimensions handled or explicit user request to skip to a proposal → validation |
+| Validation | A contradiction affects the principal action → return to the relevant slot; viable → roughly 100-Chinese-character outline and awaiting confirmation |
+| Awaiting confirmation | User modifies → update affected branches and validate; user confirms current version → generation handoff; no response never self-approves |
+| Generation handoff | Complete platform conditions and unknown delivery preferences; do not re-ask known information; conditions ready or user explicitly chooses a generic assumption-based draft → deliver according to preference |
+| Delivery/diagnosis | Deliver all text at once, or deliver in batches awaiting test feedback; failure → local AI-pipeline diagnosis; user switches to all-at-once → deliver the remainder |
+| Any state | User overturns a setting → mark ripple effects, invalidate old-outline confirmation for related branches, then revalidate; unaffected branches and slots remain intact |
 
-状态机用于记录修改与恢复，不授权AI自行跳过默认四维顺序。已定项不重问；只有用户明确改流程时才按其范围跳步。用户明确退出或改为已有方案的直接制作任务时，结束向导并保留其已定信息。
+The state machine records changes and recovery; it does not authorize the AI to skip the default four-dimension order. Do not re-ask settled items; skip only within the scope of an explicit user workflow change. When the user explicitly exits or switches to direct production with an existing plan, end the wizard while preserving established information.
 
-### 2. 状态恢复与用户指定的跳步、分叉
+### 2. State Recovery and User-Directed Skips/Branches
 
-默认四维顺序以[逐维拼装协议](../ux/interaction.md)为准。用户自发提供多槽信息全部记录，接下来仍只处理最早未定维度；不因模型已有灵感就跨槽出套餐。用户明确指定先聊某维、跳过某步或直接交完整方案时才切换，依最新明确意图执行，保留待定与来源。
+The default four-dimension order follows the [Dimension-by-Dimension Assembly Protocol](../ux/interaction.md). Record all information the user volunteers across slots, then handle only the earliest undecided dimension; do not jump across slots to present packages because the model has an idea. Switch only when the user explicitly asks to discuss a dimension first, skip a step, or receive a complete plan directly. Follow the latest explicit intention while preserving undecided status and sources.
 
-两套场地可并列为当前空间分支，暂不附带两套人物/剧情。用户只说“两套都看看”时先给本维度的短对比；明确要“两套完整故事”才交跨维方案。选定或合并分支后归档未选值，不默默改写已定槽。上游推翻时回访受影响项，处理完再从当前最早未定维度续接，不重复整套问卷。
+Two locations may coexist as current space branches without attaching two sets of characters/plots. If the user says only “show me both,” first provide a short comparison within the current dimension; deliver cross-dimension plans only when they explicitly request “two complete stories.” After selecting or merging branches, archive unselected values rather than silently rewriting settled slots. When an upstream premise is overturned, revisit affected items, then resume from the earliest currently undecided dimension instead of repeating the whole questionnaire.
 
-### 3. 溯源修改与涟漪效应
+### 3. Traceable Changes and Ripple Effects
 
-用户改上游设定时，记录新值与旧值，将相关下游标待复核，主动问是否同步调整，不自动清空全案，也不自动替换武器/人物。常见依赖：世界→武器/材质/场景/能力来源；空间→武器长度/动作半径/爆炸范围/退路；关系→攻防目标与伤害结果；奇观→发力/支撑与核心动作。
+When the user changes an upstream setting, record old and new values, mark related downstream items pending review, and proactively ask whether to adjust them together. Do not automatically clear the whole plan or replace weapons/characters. Common dependencies: world → weapons/materials/location/ability sources; space → weapon length/action radius/blast radius/retreat route; relationship → attack/defense objective and injury outcome; spectacle → force generation/support and core action.
 
-例如“现代都市改东方玄幻”：世界更新；既有冲锋枪、钢制电梯、玻璃幕墙成为待复核项。可提出A改为法器与机关建筑、B保留为有解释的混合世界、C仅先改视觉材质，或接纳用户自定。主动问武器、材质和场景是否随之变；不能把“古代不能有枪”当普遍禁令，用户选择混合设定时补能力/技术来源即可。
+For example, “change modern urban to Eastern fantasy”: update the world; the existing submachine gun, steel elevator, and glass curtain wall become pending-review items. Offer A: change to magical implements and mechanical architecture; B: retain an explained hybrid world; C: change only visual materials first; or accept a custom choice. Proactively ask whether weapons, materials, and locations should change too. Do not treat “ancient settings cannot have guns” as a universal ban; if the user selects a hybrid setting, establish the ability/technology source.
 
-同步范围确认前，可以继续探索不受影响的动机等槽位，不把待复核内容写成已批准的最终稿。已确认大纲被改变时，只重审受影响部分，必要时更新百字大纲，避免整套从头盘问。
+Before the synchronization scope is confirmed, continue exploring unaffected slots such as motives, but do not write pending-review content as an approved final draft. When a confirmed outline changes, reassess only affected portions and update the roughly 100-Chinese-character outline if necessary, without interrogating the user from scratch.
 
-### 4. 开放包容，不强制二选一
+### 4. Stay Open; Do Not Force a Binary Choice
 
-每次给出选项，必须同时附开放提示：**“你可以选本批任意一项，或者直接告诉我你脑子里蹦出来的词，我都能接得住。”** 抽卡按本批实际数量标A—E或A—F，不以A/B/C暗示只有三个选项。选项是灵感踏板，不是限制；即使只有两套已有分支，也保留“并留/自定义”的出口。使用问询工具时保留自由输入，不把工具的选项当作唯一合法答案。
+Every set of options must include the open invitation: **“You can choose any item in this batch, or simply tell me whatever word springs to mind—I can work with it.”** Label drawn cards A–E or A–F according to the actual batch size; A/B/C must not imply only three options. Options are stepping stones for inspiration, not limits. Even with only two existing branches, retain “keep both/customize.” When using a question tool, retain free input; its options are not the only legitimate answers.
 
-用户自定义后先简短提取核心元素并归槽，再据此问下一维度的具体问题；不要求把自由文本重新改填成编号。用户说“都不知道”时换成更具体、感官化的画面，每批仍以5—6项起稿；用户主动要求更少时按其偏好，不责备也不重复同一问卷。用户授权“你帮我定/全由你设计”时，按逐维协议每轮只代选并汇报一维；不把选择权授权当作直接甩成品的授权，也不把未回复当同意。明确同时要求跳过探索直接出稿时按例外。
+After a custom response, briefly extract the core elements and assign slots, then ask a concrete question about the next dimension. Do not require free text to be resubmitted as a numbered choice. If the user says “I don't know any of it,” switch to more specific sensory images, still drafting 5–6 per batch; if they actively request fewer, follow that preference without blame or repeating the same questionnaire. If the user authorizes “decide for me/design everything,” select and report only one dimension each round under the dimension-by-dimension protocol. Delegated choice is not authorization to dump a finished product, and silence is not consent. If they also explicitly request skipping exploration and drafting directly, follow the exception.
 
-## 向导五步收敛流
+## Five-Step Wizard Convergence Flow
 
-每轮通常采用“接住用户的词→随机精选5—6项→一个开放问题与换批/自由输入提示→末尾五槽快照”。初轮不索要整套项目卡、平台参数和预算，先让用户抓住一个想做的画面。专用[巨型灵感库](inspiration-library.md)按维度与子类读取，不整表倾倒，也不预植现有示例人物和术法。
+A typical round uses “receive the user's words → randomly curate 5–6 items → one open question with new-batch/free-input invitations → end-of-reply five-slot snapshot.” Do not request the entire project card, platform parameters, or budget in the opening round; first help the user grasp an image they want to make. Read the dedicated [Large Inspiration Library](inspiration-library.md) by dimension and category, without dumping the entire table or preloading characters and spells from existing examples.
 
-### 抽卡式展示与无限换批
+### Card-Draw Presentation and Unlimited New Batches
 
-1. **只露冰山一角。** 世界观、空间、关系、奇观/核心动作每次需要灵感菜单时，只展示当前维度的5—6项；不能同轮把四个维度各露一批，更不能把270项全发出。校验或修复联动设定时仍只问必要问题，不为凑抽卡数增加无关菜单。
-2. **随机且多样。** 从对应维度的不同子类随机抽取，尽量跨子类与画面类型，保持写实到夸张的跨度；用户指定子类时在该类内选不同标签，不强塞其他风格。每项保留“标签＋一句画面”，可按已定槽位筛掉不相容项，不能悄悄改掉用户世界观或武器规则。
-3. **换批入口每批必带。** 展示后明确说：**“这只是冰山一角，如果你觉得这些不够对味，可以说‘换一批’，我给你看看其他类型的。”** 同时保留：**“如果你脑子里有更好的词，直接告诉我。”** 再以约50字五槽快照结尾，开放提示不是强制选择题。
-4. **无限换批不无限重复。** 后台记录各维度、活动分支、已展示标签和最近一批。收到“换一批”只替换当前菜单，不清空已定槽位、不自动跳到下一步、不把未选候选写成设定；优先用未展示项，其次避开上一批再轮换。换批次数不设上限，用户未满意时不催其必须选一个。
-5. **指定子类立即响应。** “有没有古风的”立即从传统东方/修仙抽一批，“想看科幻”立即从赛博/未来科幻抽一批；空间、关系与动作同样可按子类筛选。原有世界已锁定时，这批先作为候选展示，不自动改写世界；结合上下文辨别是换菜单还是改设定，不明确时展示后附一个范围问题，真要改设定再走涟漪联动。
-6. **有限库诚实轮换。** 固定词库只有270项，同一10项子类无法永久提供全新6项。剩余新项不足时可将新项与旧项混排并说明有回看；整类看完后可轮换旧项、换子类或按用户词现场衍生，衍生项标为“新组合”，不谎称库里仍有无限未见条目。每批内部标签不重复。
-7. **抽卡不影响交付决定。** 用户选定本维度即停止该维度自动换批，下一轮处理顺序中最早未定维度；四维逐一处理后才走逻辑校验、大纲确认与高级生成交接。明确要求跳过探索直接交完整方案时按例外；已有全量/分批偏好直接沿用。
+1. **Show only the tip of the iceberg.** Whenever an inspiration menu is needed for world, space, relationship, or spectacle/core action, show only 5–6 items from the current dimension. Do not show a batch from each of the four dimensions in one round, much less all 270 items. During validation or repair of linked settings, ask only necessary questions; do not add irrelevant menus to meet a card count.
+2. **Random and diverse.** Draw randomly across categories within the corresponding dimension, spanning categories and image types where possible, from realism to exaggeration. If the user specifies a category, choose different tags within it rather than forcing other styles. Retain “tag + one image sentence” for each item. Filter incompatible cards against settled slots without silently changing the user's world or weapon rules.
+3. **Every batch needs a new-batch invitation.** After presentation, explicitly say: **“This is only the tip of the iceberg. If these don't feel right, say ‘another batch’ and I'll show you other types.”** Also retain: **“If a better word comes to mind, just tell me.”** End with the roughly 50-Chinese-character five-slot snapshot; the open invitation is not a compulsory multiple-choice question.
+4. **Unlimited batches, not unlimited repetition.** Record dimensions, active branch, shown tags, and latest batch backstage. “Another batch” replaces only the current menu, without clearing settled slots, automatically advancing, or recording unselected candidates as settings. Prefer unseen items, then avoid the immediately preceding batch when rotating. There is no batch-change limit; do not pressure an unsatisfied user to choose one.
+5. **Respond immediately to a specified category.** “Anything period-style?” immediately draws from Traditional Eastern/Cultivation; “I want science fiction” immediately draws from Cyberpunk/Future Science Fiction. Space, relationship, and action can likewise filter by category. If the original world is locked, present the batch as candidates first rather than automatically rewriting it. Use context to distinguish a menu change from a setting change; if unclear, show the batch and add one scope question, then apply ripple handling if settings really change.
+6. **Rotate a finite library honestly.** The fixed vocabulary library contains only 270 items; a category of 10 cannot supply six perpetually new items. When too few unseen items remain, mix new and old and disclose revisiting. After the whole category has been seen, rotate old items, change categories, or derive live from user words. Label derived items “new combination,” rather than claiming infinitely many unseen library entries. Tags within each batch never repeat.
+7. **Card drawing does not alter the delivery decision.** Once the user selects within a dimension, stop automatically refreshing that dimension. In the next round, handle the earliest undecided dimension in sequence. Only after all four dimensions have been handled individually proceed to logic validation, outline confirmation, and advanced generation handoff. Explicit requests to skip exploration and receive a complete plan follow the exception. Reuse known all-at-once/batched preferences.
 
-需要实际随机抽取时使用包内[scripts/draw_inspiration.py](../scripts/draw_inspiration.py)，由标准库随机源跨子类抽卡。它支持维度、指定子类、5/6项数量和可选会话历史；历史文件仅放项目work目录，绝不改写词库或长期记忆。默认无历史时不保证跨轮去重；向导应传入同一会话历史或自行维护已展示标签。多分支可各用一份历史，用户切分支时不混淆已定槽位。
+For actual random drawing, use the bundled [scripts/draw_inspiration.py](../scripts/draw_inspiration.py), which draws across categories using a standard-library random source. It supports dimension, specified category, batches of 5/6, and optional session history. History files belong only in the project's work directory; never rewrite the vocabulary library or long-term memory. Without history, cross-round deduplication is not guaranteed by default; the wizard should pass the same session history or maintain shown tags itself. Multiple branches may each use a separate history; switching branches must not confuse settled slots.
 
 ```text
 python -X utf8 ai-video-prompts/scripts/draw_inspiration.py --dimension world --count 6 --history work/inspiration-draws.json
-python -X utf8 ai-video-prompts/scripts/draw_inspiration.py --dimension world --category 古风 --count 6 --history work/inspiration-draws.json
+python -X utf8 ai-video-prompts/scripts/draw_inspiration.py --dimension world --category "Traditional Eastern/Cultivation" --count 6 --history work/inspiration-draws.json
 ```
 
-上述命令从包含ai-video-prompts目录的项目父目录运行，并先创建项目work；技能装在别处时改用真实绝对脚本路径，历史仍在项目work，不能写进技能目录。维度参数对应：world世界、space空间、relation关系、action奇观与动作、blind混搭盲盒。可用`--exclude-tags`在抽取前排除与已定设定冲突的标签。返回的复用计数和候选池状态用于后台，不能在用户菜单后倒出整份历史。工具不可用时仍按相同多样轮换规则选卡，不虚称已运行随机脚本。
+Run these commands from the project parent containing the ai-video-prompts directory, creating project work first. If the skill is installed elsewhere, use the real absolute script path; history stays in project work, never inside the skill directory. Dimension parameters correspond to: world = world, space = space, relation = relationship, action = spectacle and action, blind = blind mix. Use `--exclude-tags` to exclude tags conflicting with established settings before drawing. Reuse counts and candidate-pool status returned by the tool are for backstage use; do not dump the full history after the user menu. If the tool is unavailable, select cards under the same diverse-rotation rules without pretending the random script ran.
 
-### 1. 世界与画风基调（广度发散）
+### 1. World and Visual Tone (Broad Divergence)
 
-从灵感库第一维度跨传统东方、赛博科幻、现代都市、异星废土子类抽5—6项，只展示世界与画风特征。离奇方向也在当前维度内探索；跨维混搭盲盒仅在用户明确要完整组合时使用。情绪候选如压迫、轻盈、悲壮、诡异、狠快可随画面点出，不额外展开一整套菜单。可先问“更想看哪种感觉”，也可从用户自由输入的声音、颜色或动作出发；世界与情绪不必同轮都确定。
+Draw 5–6 items from the library's first dimension across Traditional Eastern, Cyberpunk Science Fiction, Modern Urban, and Alien Wasteland categories, showing only world and visual characteristics. Explore unusual directions within the current dimension too; cross-dimension blind mixes are used only when the user explicitly requests complete combinations. Mood candidates such as oppressive, light, tragic and heroic, uncanny, or fierce and fast may accompany the image without expanding into another entire menu. Ask “Which feeling would you rather see?” or begin with the user's freely supplied sound, color, or action. World and mood need not both be settled in one round.
 
-### 2. 空间限制
+### 2. Spatial Constraints
 
-结合已定世界，从灵感库第二维度的狭窄、空旷、特殊介质和高空子类随机抽5—6项。用各卡的一句画面解释动作差别，如“狭窄处长兵器难展开、断桥让退路成为代价”；接纳自定义场景。不能只换背景色而保持同一套走位。
+Using the settled world, randomly draw 5–6 items from the library's second dimension across confined, open, special-medium, and high-altitude categories. Explain action differences through each card's image sentence, such as “a narrow space restricts long weapons; a broken bridge makes retreat costly”; accept custom settings. Do not merely change background color while preserving identical movement.
 
-### 3. 动机与关系
+### 3. Motive and Relationship
 
-从灵感库第三维度跨宿敌、绝境、护卫和暗战随机抽5—6项，问清此刻要保护或改变什么，而非先写人物长传记。保留用户自定目标的出口，不强迫在这些动机中选一个。期望结局可以暂定，不擅自添加觉醒、牺牲或救场人物。
+Draw 5–6 items from the third dimension across rivals, desperate odds, protection, and covert conflict. Clarify what must be protected or changed right now instead of first writing long character biographies. Retain an opening for user-defined objectives rather than forcing one of these motives. The desired ending may remain provisional; do not introduce awakening, sacrifice, or a rescuing character without authorization.
 
-### 4. 视觉奇观与核心动作
+### 4. Visual Spectacle and Core Action
 
-从灵感库第四维度跨奇门兵器、环境交互、特殊身法随机抽5—6项，用户指定其中一类时按该类换批。选中后将“奇观外观”与“身体动作”分别归槽，不因为抽中一张卡就强制接受整张卡的世界或关系；已有兵器、术法规则优先。
+Draw 5–6 items from the fourth dimension across unusual weapons, environmental interaction, and special movement. If the user specifies one category, refresh within it. After selection, assign “spectacle appearance” and “body action” to their respective slots. Drawing a card does not require accepting all its world or relationship premises; established weapon and spell rules take priority.
 
-先找一个“想看清的动作记忆点”，再补对手怎样迫使它发生、做完改变了什么。奇观不是无限增加特效；精细构件留为固定结构，动作先满足距离、支撑、接触与结果。
+First find one “memorable action to see clearly,” then establish how the opponent forces it to happen and what changes afterward. Spectacle does not mean endlessly adding effects; fine components stay as fixed structure, while action first satisfies distance, support, contact, and result.
 
-如果用户想出的动作/奇观仍偏抽象（如“降维打击”“疯狂连招”），且缺口影响具体动作落地，按[主动识别与推荐协议](../SKILL.md#主动识别与推荐协议)用一句话建议启用[动作参考卡系统](action-reference-system.md)，例如“需要我把这次冲击的支撑、落点与受力补具体吗？忽略则按当前方案继续。”用户明确接受后才读取；不替换本轮创意问题，不把“降维”强改成写实武术。
+If the selected action/spectacle remains abstract (for example, “dimensional reduction strike” or “wild combo”), use the [Action Reference Card System](action-reference-system.md) within the current dimension to complete applicable paths, support, landing, and force. This is internal choreography, not another module-activation question. Gaps involving new abilities, story, or outcomes still follow the user's decisions; do not force “dimensional reduction” into realistic martial arts.
 
-### 5. 逻辑校验与大纲确认
+### 5. Logic Validation and Outline Confirmation
 
-默认四维逐一处理完成后，才汇总世界、空间、关系、奇观、核心动作，检查物理/空间/画风与设定依赖。用户明确要求跳过探索时按例外收敛；未定值写明获准代拟的假设，不凭空冒称用户已选。
+By default, summarize world, space, relationship, spectacle, and core action only after handling all four dimensions in sequence. Check physical/spatial/visual-style consistency and setting dependencies. Explicit user requests to skip exploration follow the exception; identify undecided values as authorized draft assumptions rather than falsely claiming the user selected them.
 
-“狭窄电梯+大范围爆炸”要指出冲击会影响人物与厢体、退路和后续场景，给出定向冲击/小范围破坏、换更大场地或明确术法保护等可选调整；用户自定义解释也可接纳。不是看见夸张就禁用，而是补成立的规则与可见代价。
+For “narrow elevator + large explosion,” point out effects on people and car structure, retreat routes, and subsequent scenes. Offer directional impact/small-scale damage, a larger location, explicit magical protection, or other possible adjustments; accept custom user explanations. Do not ban exaggeration on sight; establish workable rules and visible costs.
 
-解决影响主动作的冲突后给约100字大纲，包含起点、动机、空间限制、一次核心交锋和局势结果，区分用户已定与AI建议。请用户确认或改一处，等待回复，不能在首次提问后马上附完整分镜和提示词；用户明确要求跳过确认并授权代拟时按其最新选择执行。大纲展示后用户说“按这个，全给我”同时表示确认和全量选择，不再多问一次；此前只说想全量交付，不等于批准尚未展示的大纲。每轮末尾仍有约50字五槽快照。
+After resolving conflicts affecting the main action, provide a roughly 100-Chinese-character outline covering the starting point, motive, spatial constraint, one core exchange, and resulting situation, distinguishing user-established facts from AI suggestions. Ask the user to confirm or change one thing and wait; do not immediately append a complete storyboard and prompts after the first question. If the user explicitly skips confirmation and authorizes drafting, follow that latest choice. After seeing the outline, “use this, give me everything” simultaneously confirms it and selects all-at-once delivery, without another question. A prior request for all-at-once text does not approve an outline not yet shown. Each round still ends with a roughly 50-Chinese-character five-slot snapshot.
 
-在出具百字大纲前或确认节点，若强烈冲突/关系转折中的具体对白或身体反应仍有明显短板，可按主入口的一句话协议推荐[台词深度引擎](dialogue-engine.md)或[表演与心理动作系统](performance-and-psychology.md)中的**一项**。强冲突本身不等于必须加载；同一节点不连推多个模块，已有待回应推荐时不再加一问，拒绝/忽略照常给大纲。首次与后续正式提示词均按[主入口交付规则](../SKILL.md#交付与完成条件)默认只给纯文本，工程表仅在用户主动明确索要时展示；向导快照仍在复制区外。
+Before producing the short outline or at confirmation, check the [Dialogue Design](dialogue-engine.md) or [Performance Design](performance-and-psychology.md) needed by the current context. Read only relevant sections without creating extra waits through module recommendations; strong conflict does not require loading an entire library. Both the first and later formal prompts default to self-contained plain text under [Delivery Rules](delivery-and-qa.md). Show engineering tables only on explicit user request; the wizard snapshot stays outside the copyable area.
 
-## 交付策略：大纲确认后接高级生成管线
+## Delivery Strategy: After Outline Confirmation, Connect to the Advanced Generation Pipeline
 
-### 必须先介入生成交接
+### Generation Handoff Must Intervene First
 
-用户确认大纲后读取并执行[generation-handoff.md](generation-handoff.md)，在具体提示词前确认本次平台/模式、单段可选时长、是否实际使用参考图/首尾帧，以及是否支持原生音效/台词。沿用已知信息，集中补问会改变交付的缺项；版本未知不伪装已核，用户不清楚功能时可请其描述实际选项，或核实官方资料/界面。条件尚未知时继续给叙事草案，不把它标为可直接提交的定稿；用户明确要平台无关提示稿时可按明示假设交付。
+After the user confirms the outline, read and execute [generation-handoff.md](generation-handoff.md). Before specific prompts, confirm the current platform/mode, available duration per segment, whether reference images/first and last frames are actually used, and native sound-effect/dialogue support. Reuse known information and consolidate questions about missing items that would change delivery. Do not present an unknown version as verified. If the user does not know the features, ask them to describe actual options or verify official materials/UI. While conditions remain unknown, continue with narrative drafts without labeling them ready-to-submit finals. If the user explicitly requests platform-independent prompts, deliver under stated assumptions.
 
-随后接[生成段](prompts-and-segments.md)、[一致性](consistency.md)和[AI管线](ai-pipeline.md)；使用复用模板时再执行[结构契约](template-contract.md)。五槽快照、选择记录和QA属于管理信息，不能混进生成正文。
+Then connect to [Generation Segments](prompts-and-segments.md), [Consistency](consistency.md), and the [AI Pipeline](ai-pipeline.md); when using reusable templates, also execute the [Structure Contract](template-contract.md). Five-slot snapshots, choice records, and QA are management information and cannot enter the generation body.
 
-### 交付选择与专业建议
+### Delivery Choices and Professional Advice
 
-区分两个独立决定：**一次拿齐文字还是分批拿文字**，以及**平台一次生成还是多次生成**。一次拿齐拆好的提示词不等于把全案拼成一次模型请求；推荐先做小样不等于扣住后续文字。若用户此前已明确要全量或分批，直接沿用，不重新询问相同选择。
+Distinguish two independent decisions: **receive all text at once or in batches**, and **generate once or multiple times on the platform**. Receiving all segmented prompts at once does not mean concatenating the project into one model request; recommending a test first does not authorize withholding later text. If the user already explicitly chose all-at-once or batched delivery, reuse it without asking the same question again.
 
-尚无交付偏好时，采用[生成交接中的独立交付选择](generation-handoff.md)：一次性交付全部分段纯文本，或先交一个试做段，也接纳“先改大纲”等自定义选择。建议按最高风险动作先试，但保留用户决定权；不把“一次生成30秒”混进文字交付菜单，不把全量交付标为无条件默认建议。
+When no delivery preference exists, use the [Delivery choice in Generation Handoff](generation-handoff.md#10-delivery-choice): deliver all segmented plain text at once, or one test segment first; also accept custom choices such as “revise the outline first.” Recommend testing the highest-risk action first while retaining the user's decision. Do not mix “generate 30 seconds at once” into the text-delivery menu or label all-at-once delivery an unconditional default recommendation.
 
-目标为30秒时可具体问“一次拿齐30秒所需的全部分段纯文本，还是先拿一段试水？”；其他目标时长同步替换，不默认改成30秒，也不默认让用户看工程编号或分镜表。这个交付选择在抽卡选定、逻辑校验与大纲确认后进行，不能取代前面的创意探索；用户已有选择时直接执行。
+For a 30-second target, ask concretely: “Would you like all the segmented plain text needed for 30 seconds at once, or one segment to test first?” Replace that duration for other targets; do not default to 30 seconds or force engineering IDs/storyboard tables on the user. This delivery choice comes after card selection, logic validation, and outline confirmation; it cannot replace creative exploration. Execute an existing choice directly.
 
-对30秒及以上、尚未验证的复杂多事件方案，根据实际事件负荷说明风险并给分组建议，不把时长本身当失败证据：
+For complex, unverified multi-event plans of 30 seconds or more, explain risk according to actual event load and suggest grouping; duration alone is not evidence of failure:
 
-> 这30秒里如果有多次攻防、复杂接触或场景变化，合在一次生成里可能丢动作或衔接。我们可以先按事件分组：你想一次拿齐整套提示词，还是先拿一段试做？具体段长按你的平台和试片结果确定。
+> If these 30 seconds contain multiple attack-and-defense exchanges, complex contact, or scene changes, a single generation may lose actions or transitions. We can first group by event: would you like the full prompt set at once, or one segment to test first? Specific segment lengths depend on your platform and test results.
 
-3×10秒只是30秒成片的一种候选分组，不是所有模型的时长上限，也不表示30秒必然失败。具体请求长度服从本次平台与已测能力；非30秒项目同步改为实际总长，已有同条件成功证据时据此适配。选项后仍必须附开放提示。
+3 × 10 seconds is only one candidate grouping for a 30-second finished piece, not every model's duration limit or a claim that 30 seconds must fail. Actual request length follows this platform and tested capabilities. For other projects, substitute the actual total duration; adapt using successful evidence under the same conditions when available. Options must still include the open invitation.
 
-可将30秒候选分成三个约10秒交付组，每组再含两个约5秒事件单元，即G01—G06示例；每个G仍做A层事件与主要交互负荷检查。10秒组不必等于一次GEN请求，实际单元数量也不强制为六个，复杂接触可更多。
+A candidate 30-second plan may contain three roughly 10-second delivery groups, each with two roughly five-second event units: G01–G06 as an example. Every G still receives a layer A event and principal-interaction load check. A 10-second group need not equal one GEN request; the actual unit count is not fixed at six, and complex contact may require more.
 
-### 用户要全量：一次给齐，不设试片关卡
+### User Wants Everything: Deliver All at Once Without a Test Gate
 
-在已确认条件下，同轮给齐全部实际提交所需的自足白话，不以先跑首段作为解锁条件；超出消息容量时同轮提供完整文件，不重复索取已给的全量授权。自足性、六项可见承接与参数/备注分流统一执行[生成交接](generation-handoff.md#从分镜压缩成实际输入)，语义转写与工程版例外统一执行[交付协议](delivery-and-qa.md)。
+Under confirmed conditions, deliver all self-contained plain-language text needed for actual submission in the same round. Do not require running the first segment to unlock the rest. If message capacity is exceeded, provide a complete file in that round rather than requesting the already-given all-at-once authorization again. Follow [Generation Handoff](generation-handoff.md) uniformly for self-containment, six visible continuity elements, and separation of parameters/notes; follow the [Delivery Protocol](delivery-and-qa.md) uniformly for semantic rewriting and engineering-version exceptions.
 
-向导特有的五槽快照放复制区外；若展示用户索要的工程版，快照放在工程版说明之后。只要一句灵感或不拆段时用简版（Compact）。
+Keep the wizard-specific five-slot snapshot outside the copyable area; if showing a user-requested engineering version, place the snapshot after its explanation. Use Compact for one inspiration line or an unsegmented request.
 
-### 用户接受分批：先给首个单元，按结果推进
+### User Accepts Batches: Deliver the First Unit and Advance According to Results
 
-先将所选试做单元转为自足的纯文本正文，本次必要参考、设置和小量验收项放复制区外；也可按用户选择先试最高风险段，用简短导航说明其位置，正文自身写清初始状态，不能装成开头。随后等用户试做结果，不自行付费运行。
+First turn the chosen test unit into a self-contained plain-text body; place necessary references, settings, and a small number of acceptance checks outside the copyable area. The user may also choose the highest-risk segment first; briefly identify its position, and state the initial condition within the body itself rather than pretending it is the opening. Then wait for the user's test result; do not pay to run it yourself.
 
-若用户反馈失败，执行[ai-pipeline.md](ai-pipeline.md)：取得实际输出、实际输入和设置，先定位最早失败处，区分动作负荷、空间、接触、参考与平台执行问题；一次只改主要变量并交修改稿。没有文件或足够画面时只给带不确定性的候选原因，不虚构已看片结论。不机械重置五槽或让用户重新选世界；若必须改核心设定，按涟漪规则处理。用户随时改要全量时，立即给齐余下单元，不继续强制分批。
+If the user reports failure, execute [ai-pipeline.md](ai-pipeline.md): obtain actual output, actual input, and settings; identify the earliest failure first, distinguishing action load, space, contact, reference, and platform-execution problems. Change only the principal variable at a time and deliver a revision. Without files or sufficient frames, provide candidate causes with uncertainty rather than inventing conclusions from footage you have not viewed. Do not mechanically reset the five slots or make the user choose the world again; apply ripple rules if a core setting must change. If the user switches to all-at-once at any time, immediately provide the remaining units without continuing compulsory batching.
 
-## 首轮示意与自检
+## Opening-Round Example and Self-Check
 
-大纲确认、重要设定变更、试片验收完成或用户准备换聊天时，按[继续创作状态卡](../assets/templates/继续创作状态卡.md)整理可带走的短卡；记录分支、五槽、平台条件和当前接缝。每轮约50字尾注继续保留，完整状态卡不必轮轮重复，也不能声称平台永久记住了所有分支。
+At outline confirmation, major setting changes, completed test acceptance, or preparation to switch chats, use the [Continue-Creation State Card](../assets/templates/continuation-state-card.md) to organize a short portable card recording branches, five slots, platform conditions, and current seams. Retain the roughly 50-Chinese-character endnote each round; the full state card need not repeat every turn. Do not claim the platform permanently remembers every branch.
 
-无灵感首轮从世界维度实际抽出5—6项，以A—E或A—F列“标签＋一句画面”，然后只问“哪一项最让你脑子里出现画面？”；紧接换批提示、自由输入提示和五槽快照。不要固定复用同一组三个示例，也不要把本轮所有候选都记入已定设定。
+For an uninspired user's first round, actually draw 5–6 world-dimension items and label “tag + one image sentence” A–E or A–F. Then ask only “Which one most makes an image appear in your mind?” Immediately follow with the new-batch invitation, free-input invitation, and five-slot snapshot. Do not reuse a fixed set of three examples or record all current candidates as settled settings.
 
-交互自检：是否先归槽再问？每批是否仅5—6项并保持多样、能换批/指定子类/自由输入？换批是否保留已定槽位并避免近期重复？是否默认按四维顺序一轮一维，选项无跨维套餐，“全由你定”也逐轮代选汇报，只有用户明确改流程才跳步？是否保留当前维度分叉并对上游改动主动问联动？是否在大纲确认前过早交完整方案？是否在提示词前执行生成交接并确认交付偏好？每次向导回复是否以约50字五槽快照结束？全量请求是否真的交齐，分批失败是否走AI管线？
+Interaction self-check: were inputs assigned to slots before asking? Does each batch contain only 5–6 diverse items and permit new batches/specified categories/free input? Does changing batches preserve settled slots and avoid recent repeats? Does the default follow four dimensions, one per round, with no cross-dimension packages; does “you decide everything” still select and report round by round, skipping only after an explicit workflow change? Are current-dimension branches preserved, with linked-change questions proactively asked after upstream changes? Was a complete plan delivered prematurely before outline confirmation? Were generation handoff and delivery preference confirmed before prompts? Does each wizard reply end with the roughly 50-Chinese-character five-slot snapshot? Did an all-at-once request actually receive everything, and did a failed batch follow the AI pipeline?
 
-## 风格诊断分支
+## Style Diagnosis Branch
 
-用户给参考且说“这种感觉”，先用[参考输入分类](../ux/interaction.md)确认借颜色、构图、动作、氛围或整体；明确的无需重问。再按[风格转译](../visual/style-translation.md)提出风格卡候选，用户确认/调整后回到空间、关系或动作，不自动套导演整库。
+When the user provides a reference and says “this kind of feel,” first use [Reference Input Classification](../ux/interaction.md) to establish whether they mean color, composition, action, atmosphere, or the whole; do not re-ask an explicit intent. Then propose style-card candidates under [Style Translation](../visual/style-translation.md). After user confirmation/adjustment, return to space, relationship, or action rather than automatically applying an entire director library.
 
-仅此分支在原五槽之外增加“风格签名（候选/已定）”，不改所有向导为六槽；来源范围与未核项留内部。原每轮约50字快照保留，附签名简述；退出向导后按[对话规则](../ux/interaction.md)恢复低频总结。已有抽卡、换批、自由输入和全量/分批选择保持。
+Only this branch adds “style signature (candidate/settled)” outside the original five slots; do not turn every wizard into six slots. Keep source scope and unverified items internal. Retain the roughly 50-Chinese-character snapshot each round and append a brief signature; after leaving the wizard, restore low-frequency summaries under [Conversation Rules](../ux/interaction.md). Existing card drawing, new batches, free input, and all-at-once/batched choices remain.
 
-扩展抽卡可按情绪氛围(mood)、视觉风格(visual)、角色原型(archetype)探索，每轮仍只5—6项，绝不同时展开全部维度。
+Extended card draws may explore mood (mood), visual style (visual), and character archetype (archetype), still only 5–6 items per round, never all dimensions at once.
+

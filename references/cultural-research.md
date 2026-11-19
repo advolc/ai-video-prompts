@@ -1,53 +1,53 @@
-# 文化考据与服装道具
+# Cultural Research, Costume, and Props
 
-## 先确定作品采用什么历史边界
+## Establish the work's historical boundaries first
 
-根据用户设定选择有明确年代的历史背景、限定原型的架空世界，或多源融合的幻想体系。先确认年代/时期、地域、人物身份、用途、季节与场合。用户已锁定的角色图作为创作约束；发现与特定历史原型不符时指出差异和可选调整，不擅自重做角色。
+Follow the user's setting: a dated historical background, an invented world with bounded prototypes, or fantasy drawing from multiple sources. First establish period, region, character identity, use, season, and occasion. Locked character images are creative constraints. If they differ from a particular historical prototype, identify the difference and optional adjustments rather than redesigning the character unilaterally.
 
-历史题材按所定背景核对；架空题材建立借鉴规则，说明哪些形制有原型、哪些为功能改造、哪些纯属幻想。同一作品可以有跨地域或跨文化物品，但需与交流、身份或故事背景相符，不能把随意混搭标为“某朝制式”。
+Check historical work against its selected background. For invented settings, establish borrowing rules: which forms have prototypes, which are functional adaptations, which are fantasy. A work may contain objects from different regions/cultures when exchange, identity, or backstory supports them; arbitrary mixtures cannot be labeled “standard equipment of a particular dynasty.”
 
-## 考据流程与证据
+## Research process and evidence
 
-只深入研究当前镜头实际需要的内容。先提出具体问题，如衣袖结构是否允许该动作、兵器如何佩挂、某纹样是否适合人物身份，而非泛搜“古风”。
+Research only what the current shot actually needs. Ask a concrete question—whether sleeve construction permits the action, how a weapon is suspended, whether a pattern suits the character's identity—instead of broadly searching “historical aesthetic.”
 
-涉及具体年代、形制、名称、材质、身份限制或使用方式的事实判断，查验可追溯来源：博物馆/考古机构的藏品与发掘资料、原始图像或文献，以及可信学术研究。需要联网时用检索工具核实，尽量直达原始机构/出版来源；不能用生成图片、影视服装或商业复原图单独证明历史事实。
+For factual claims about specific dates, forms, names, materials, identity restrictions, or usage, consult traceable sources: museum/archaeological collections and excavation records, primary images/texts, and reliable scholarship. When online access is needed, verify through retrieval tools and aim for the original institution/publication. Generated images, screen costumes, or commercial reconstructions alone cannot prove historical facts.
 
-记录藏品/图像名称、机构、年代或断代范围、链接/页码及实际支持的细节。区分器物制作年代、出土环境年代和后世图像再现；不要自动把单件器物推广成全地域、全阶层的普遍惯例。原始文献、实物与现代复原存在差异时保留争议和置信度，不编造唯一结论。缺乏证据时标“待核实/创作假设”，仍可推进不依赖该结论的设计。
+Record artifact/image name, institution, date/range, link/page, and the detail actually supported. Distinguish manufacture date, archaeological-context date, and later depiction. Do not generalize one artifact into a universal practice across every region/class. Preserve disputes and confidence when primary texts, artifacts, and modern reconstructions differ; do not invent one definitive conclusion. Mark unsupported details “pending verification/creative hypothesis” and continue design work that does not depend on them.
 
-本文件提供考据方法，不自带已核实的朝代形制数据库。
+This file supplies a research method, not a verified database of dynastic forms.
 
-## 考据对象要转化成使用逻辑
+## Turn researched objects into use logic
 
-| 对象 | 核对问题 | 与打戏的关系 |
+| Object | Questions to verify | Relationship to combat |
 |---|---|---|
-| 衣服形制 | 领、襟、袖、袍/裙/裤结构、层次、开合与固定方式 | 抬臂、跨步、跪地、翻身时的活动与遮挡 |
-| 冠发与配饰 | 固定结构、身份场合、材质和佩戴位置 | 奔跑/倒地是否松脱，头部活动是否受限，掉落能否有叙事用途 |
-| 护具与鞋靴 | 构造、连接、柔硬分区、足底接触 | 肩髋活动、蹲身、抓地、滑步和负重 |
-| 兵器与携具 | 实物比例、柄与刃结构、护手、鞘和悬挂 | 握持、拔收、回摆净空，是否会撞衣甲或同伴 |
-| 纹样与标识 | 年代/地域、载体、位置、工艺、身份寓意的证据 | 在肩、袖、兵器或建筑上正确落位，建立角色和场所辨识 |
-| 器物与机关 | 材料、尺度、连接、使用流程与原型依据 | 手能否操作、需要几步、耗时与声音是否匹配 |
-| 建筑与陈设 | 构件关系、开间/门道、材质和时代依据 | 通路、遮挡、受力与破坏顺序，不把装饰件当承重件 |
+| Garment form | Collar, opening, sleeve, robe/skirt/trouser construction, layers, closure, fastening | Mobility/occlusion while raising arms, striding, kneeling, rolling |
+| Headwear/hair/accessories | Fastening, identity/occasion, material, wearing position | Loosening during running/falls, restricted head motion, whether a fallen headpiece or accessory can serve the narrative |
+| Protection/footwear | Construction, connections, flexible/rigid regions, sole contact | Shoulder/hip mobility, crouching, traction, sliding, load |
+| Weapons/carrying equipment | Artifact proportions, handle/blade construction, guard, scabbard, suspension | Grip, draw/sheath, backswing clearance, collision with clothing/armor/allies |
+| Patterns/insignia | Evidence for date/region, carrier, location, technique, status meaning | Correct placement on shoulders, sleeves, weapons, architecture; identifying people/places |
+| Utensils/mechanisms | Materials, scale, connections, operating sequence, prototype evidence | Hand operation, number of steps, time/sound correspondence |
+| Architecture/furnishings | Component relationships, bays/passages, material/period evidence | Routes, occlusion, force and destruction sequence; decoration is not load-bearing structure |
 
-衣物、纹样、器物不只做静态展览：让结带、衣袖、携具、门闩或地面材料在动作中体现用途和限制。选择本场有价值的文化细节，避免每个道具都抢镜。
+Costumes, patterns, and objects are not merely static exhibits. Ties, sleeves, carrying equipment, bolts, and floor material should show function and limitations through action. Choose cultural details valuable here; do not make every prop compete for attention.
 
-## 改编记录与服装道具交接
+## Adaptation records and costume/prop handoff
 
-关键资产使用简洁记录：
+Use a concise record for key assets:
 
-`资产/镜头｜背景与身份｜历史原型｜来源与定位｜确认细节/不确定点｜创作改动及理由｜固定/佩挂方式｜动作影响｜状态变体`
+`asset/shot | background and identity | historical prototype | source and locator | confirmed detail/uncertainty | creative change and reason | fastening/suspension | action impact | state variants`
 
-例如把袖口收紧以露出持械手，应标为本作品的功能改造；不能反称原型本来如此。若保留宽袖，则安排束袖、控制挥动或改变动作，不能让袖料持续穿过兵器。幻想冠甲可保留原创形态，同时说明其固定和活动规则，不伪造实物出处。
+For example, tightening cuffs to expose a weapon hand is this work's functional adaptation, not evidence that the prototype was originally made that way. If broad sleeves are retained, arrange ties, controlled motion, or changed action rather than letting fabric continually pass through weapons. Original fantasy crowns/armor can retain their form with explicit fastening/movement rules, without fabricated artifact sources.
 
-给服装道具建正侧背与穿戴/装配关系，动作验证优先检查跨步、蹲跪、过肩举械、拔收与倒地。角色挂件、武器鞘与腰带共同布置，防止各自成立、组合后互相干涉。根据镜头需要制作完好、污损、松脱、断裂状态，损伤后延续。
+Build front/side/back views and wearing/assembly relationships. Prioritize stride, squat/kneel, overhead weapon lift, drawing/sheathing, and falls in action checks. Arrange character ornaments, scabbard, and belt together so separately valid pieces do not interfere when combined. Create intact, dirty/damaged, loosened, and broken states as shots require, carrying damage forward.
 
-## 验收
+## Acceptance
 
-- 已作具体历史断言的部分有支持该断言的来源；推测、复原与原创改动可辨。
-- 年代、地域、身份、用途和工艺没有未经解释的冲突；纹样不只是随机贴图。
-- 道具比例和佩戴关系能支持角色动作，关键操作有可读过程。
-- 文化细节至少在造型识别、角色身份、操作行为或空间叙事中发挥相应作用。
-- 考据结论与用户美术选择发生冲突时给出可选方案，遵循用户最终选择并保留真实性标注。
+- Specific historical assertions have sources supporting those assertions; conjecture, reconstruction, and original changes are distinguishable.
+- Date, region, identity, use, and craft have no unexplained conflict; patterns are more than random textures.
+- Prop scale and wearing relationships support movement, with readable key operations.
+- Cultural detail serves an appropriate role in appearance recognition, identity, operation, or spatial storytelling.
+- When research conflicts with the user's art choice, offer alternatives, honor the final choice, and retain authenticity labels.
 
-## 世界设计分工
+## World-design responsibilities
 
-[世界观设计](../narrative/story-and-scene.md)创造架空社会和能力规则；本文件核实历史形制与操作依据。原创混搭不冒充考据，真实物件也不反过来强改用户架空设定。
+[Worldbuilding](../narrative/story-and-scene.md) creates invented societies and ability rules; this file verifies historical forms and operating evidence. Original mixtures are not research findings, and real objects do not override the user's invented setting.

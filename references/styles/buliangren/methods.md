@@ -1,20 +1,20 @@
-# 不良人参考方法模块
+# Buliangren Reference Methods
 
-这是总技能内部的可选风格模块，不是另一个需要调用的skill。用户要求这类打法，或希望复用已学参考时读取。通用武指、横屏规格与AI制作规则仍由总技能其他模块负责。
+An optional style module within the main skill, not a separate skill to invoke. Read when the user requests this fighting approach or wants to reuse previously studied references. General choreography, horizontal framing, and AI-production rules remain the responsibility of the main skill's other modules.
 
-## 适用方法
+## Applicable methods
 
-- 低位宽画面保留地面、柱列和身体距离；观众先知道人在哪里，速度才有参照。镜头任务是读进退、换位和落点，不默认每镜仰拍。
-- 近景解释抓腕、控脚、架压等身体关系，再回宽景读局势；表情特写要有判断对象，紧接行动回应。
-- 每次连招改变距离、高度、侧位或控制。收势可以转成躲闪，不逐招复位。强者少动也要有精准拦截与卸力机制。
-- 轨迹说明路线，接触亮核说明交汇，释放效果说明方向/范围，余效与材料反馈说明后果。颜色不是功法的唯一差别。
-- 快攻、具体控制关系与新威胁形成节奏反差；姿态保持、慢化、剧情等待分别判断，不照抄二次剪辑停留时长。
-- 群战用近身、接近、绕路、封口威胁与前后层次；护人让闪避选择受到身后目标约束。屋面与雨夜反馈按材料和实际施力解释。
+- A low, wide frame retains the ground, columns, and body distances. Viewers need to know positions before speed has a reference. The camera reads advances/retreats, position changes, and landings; not every shot defaults to looking upward.
+- Closer views explain wrist grips, foot control, and bracing pressure, then return wide to reveal the situation. A facial close-up needs an object of judgment and an immediate action response.
+- Every combination changes distance, height, lateral position, or control. Recovery may turn into evasion rather than resetting after every move. Even a stronger fighter who barely moves needs precise interception and force-redirection mechanisms.
+- A trail explains a route; a bright contact core explains the crossing; a release effect explains direction/range; residual effects and material responses explain consequences. Color is not the sole distinction between abilities.
+- Fast attacks, concrete control relationships, and new threats create rhythmic contrast. Judge held poses, slowdown, and story-driven waiting separately; do not copy the holds of a secondary edit.
+- Group combat uses close, approaching, flanking, and exit-blocking threats in depth layers. Protecting someone constrains evasive choices through the target behind the defender. Explain roof and rain-night responses through materials and actual force.
 
-## 按需使用与来源边界
+## Use as needed and source boundaries
 
-动作起稿、招式关系与提示词例子见[原创编排案例](plan-patterns.md)；参考文件的范围、检查方法与证据限制见[方法来源](../../source-scope.md)。两者随安装包保留，日常创作不依赖原片或历史长稿。
+For action drafts, move relationships, and prompt examples, see [original choreography cases](plan-patterns.md). For reference-file scope, inspection method, and evidence limits, see [method sources](../../source-scope.md). Both ship with the package; routine creation does not depend on the original clips or long historical drafts.
 
-A/B、C、D逐段拆解已移入独立历史资料包，供追溯研究，不作为本模块的运行依赖或现行规范。原四段均未试听音轨、未检查原始工程；历史时间码是定位约值，不是官方制作表，本次清理没有重新审片。
+The A/B, C, and D segment-by-segment studies have moved to a separate historical-materials package for traceable research, not runtime dependencies or current rules. None of the original four segments received an audio listening check or original-project inspection. Historical timecodes are approximate locators, not official production sheets; this cleanup did not re-review the clips.
 
-参考中的角色、材质、蓝金配色和地点不自动成为用户新项目设定。原创案例的秒数和拆段是设计建议，实际生成仍以本次条件和现行交接规则为准。
+Reference characters, materials, blue/gold palettes, and locations do not automatically become the user's new setting. Timings and segmentation in original cases are design suggestions; actual generation follows current task conditions and handoff rules.

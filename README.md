@@ -1,68 +1,60 @@
-# ai-video-prompts v3.3.1
+# ai-video-prompts v3.5.0-beta2 (English release)
 
-Dialogue/silent-interaction updates use `dialogue/spatial-blocking.md`: mandatory spatial decisions and listener responses, with motivated stillness preserved; fight thresholds remain fight-specific.
+Director-level design translated into self-contained, camera-recordable AI video prompts. Story facts remain the user's; sensory detail is enriched within those facts. Extended is the default; the user can request a shorter tier.
 
-A director-level system for AI video prompts. The deep thinking (choices and contact causality, the four-layer dialogue engine, psychological action, status and power, continuity seams) stays **internal**. What comes out is **pure cinematic execution**: one vivid, camera-recordable **Extended** prompt per clip, with real optics, physical light, skin, face, body language, and spoken-register dialogue.
+## Entry and routing
 
-## Architecture: three rooms
+Start with `SKILL.md`, then the relevant sections of its routed files. Context selects action mode, dialogue situation, performance and camera behavior. Run design before Lens translation; keep analysis and production tables outside final prose.
 
-```
-Director's Room (design)  ->  Lens (translate + enrich)  ->  Prompt (Extended output + lint)
- v1's deep systems, kept       depiction grammar,             plain prose, 7-slot skeleton,
- internal, never in the        five passes: optics, light,    quoted spoken lines, notes
- prompt                        skin, face, body and status    outside the copy block
-```
+- Fights: `references/spatial-tactics.md` supplies space checks and expanded arena/position design for complex scenes, before exchanges and camera coverage.
+- Dialogue and silent interaction: `dialogue/spatial-blocking.md` supplies required spatial choices and counterpart responses. Motivated stillness is valid; fight displacement thresholds do not apply.
+- Expanded production records: `references/template-contract.md` and its linked template are optional; required spatial/contact/seam checks still apply.
+- Request capacity and audio execution: `references/generation-handoff.md` is the shared definition. Rhythm examples are not model limits. Dialogue is inline by default; unknown audio/lip-sync capability is labeled outside the copy block.
+- Model evidence classes, dated interface records and evaluation procedures: `models/` and `evals/cases.md`. Text checks are not dynamic generation evidence; no auditable original generation sample is bundled.
 
-**Context-Aware Routing:** before anything is written, the Director's Room builds a Context Profile (purpose, power, body state, space, audience, relationship, tools, tone, stakes) that routes to an action mode, a dialogue situation, display rules, a camera stance, and a look. There is no default scene.
+## First use
 
-Texture Authority: story facts are **locked**; sensory texture is **open**. Budgets are three tiers (A story and contact: strict; B performance: generous; C texture: unlimited but coherent).
+Extract the ZIP and open a terminal inside its `ai-video-prompts` folder. With Python 3.9+ available, these commands use only bundled files and the standard library:
 
-## Layout
-
-```
-SKILL.md                      Entry: pipeline, defaults, 7 rules, one precedence ladder, routing
-core/        pipeline.md      Three rooms, Texture Authority, tiered budgets
-             precedence.md    Resolution examples for the single ladder
-             context-routing.md  Context Profile and routing to modes, situations, display rules, camera, look
-lens/        lens-layer.md            Depiction grammar and the design-to-prompt procedure
-             output-skeletons.md      Extended (default), Standard, Compact, multi-shot, continuation
-             optics-and-stock.md      Pass 1: lens, depth of field, stock, grain, halation, camera behavior
-             physical-light.md        Pass 2: sources, color temperature, falloff, catchlights, atmosphere
-             skin-and-material.md     Pass 3: skin, hair, fabric, material, anti-plastic
-             face-pass.md             Pass 4: FACS-informed face lexicon, micro-expressions, masking
-             body-and-status.md       Pass 5: Status & Proxemics, posture, prop business, listening
-dialogue/    spoken-register.md       Real-speech texture, delivery tags, voice script
-             conversation-units.md    Multi-turn units, timing math, coverage, seams
-             situation-profiles.md    13 situation profiles: movement, pace, silence, camera
-references/  action-modes.md  Ten fight modes with pacing, fatigue, reach, terrain, fail-states
-             spatial-tactics.md  Arena card, 3D position ledger, path vocabulary, line-break rules, spatial QA gate
-             Director's Room systems: choreography, hit-feel, dialogue-engine, performance-and-psychology,
-             character-and-performance, consistency, camera-and-rhythm, world-and-style, powers-and-vfx,
-             action-reference-system, prompts-and-segments, ai-pipeline, delivery-and-qa, generation-handoff, ...
-visual/ narrative/ sound/ production/ post/ quality/ ux/   Domain files (stubs merged)
-models/       README.md + adapter template   Capability checklist, how answers change the prompt
-evals/        cases.md                       12 cases, rubric, A/B protocol
-examples/     context-routing-examples.md    Six routed cases (stealth, last stand, sparring, street argument, farewell, public/private)
-              v3-extended-examples.md        Three Extended prompts (EN, ZH, face close-up) + before/after
-              legacy-v1/                     v1 examples (design-side illustration; kept for reference)
-scripts/      lint_prompt.py                 Lint a final prompt for the Lens grammar
-              check_spatial.py               Spatial QA gate on a fight's position ledger (design check)
-              check_skill.py                 Lint the package (links, routing, competing authorities)
-              draw_inspiration.py            v1 inspiration drawing tool (unchanged)
-MIGRATION.md                    What changed from v1 and why
+```text
+python -X utf8 -B scripts/check_skill.py .
+python -X utf8 -B scripts/read_route.py --list
+python -X utf8 -B scripts/lint_prompt.py examples/first-prompt.txt --lang en --tier standard --seconds 5 --scene-type action
 ```
 
-## Using it
+Expect the structure check to print `OK`, the route list to include `action`, and lint to report a nonzero English word count and `0 error(s)`. The bundled sample is deliberately one stationary parry, not a template for every fight. Length ranges are advisory; `BELOW` or `ABOVE` asks for review, not padding or automatic cuts. Exit 0 means no text-pattern errors, not a validated video.
 
-- Say what you want. The default is full depth and an Extended prompt. Say "short", "lite", or "简版" for the Compact tier.
-- Check a prompt: `python scripts/lint_prompt.py prompt.txt` (add `--tier standard|compact` if relevant).
-- Check the package after editing: `python scripts/check_skill.py .`
-- Measure: run `evals/cases.md` on your model before trusting any rule or any vocabulary.
+To create your own prompt, ask the assistant to use this skill with your scene, locked facts and desired pace/camera/performance. It reads the relevant route, designs the scene and delivers copyable prose. Save that prose as `prompt.txt`; for a mixed action/dialogue scene it can read `python -X utf8 -B scripts/read_route.py action dialogue`. No route output is a finished prompt. Without Python, the assistant can read the exact files/headings in [routes](assets/routes.json) manually; automatic checks are then unavailable.
 
-## Context cost
+## Tools
 
-Extended by default loads more than v1's lean path did. Rough estimates (Chinese counted at ~1.3 characters per token, other text at ~4): the Extended core alone is about 19K tokens; a dialogue scene about 30K; a fight scene about 25K. If your model or plan struggles with that, say "short" or "lite", or trim the passes you do not need for the shot.
+```text
+python scripts/check_skill.py .
+python scripts/lint_prompt.py prompt.txt --lang auto --seconds 20 --scene-type dialogue
+python scripts/lint_prompt.py prompt.txt --lang auto --seconds 30 --scene-type action
+python scripts/check_spatial.py ledger.json
+python scripts/analyze_clip.py clip.mp4 --json metrics.json --sheet contact.png
+python scripts/draw_inspiration.py --dimension action
+```
 
-## Status
+`check_skill.py` checks links, routing, stale gates and runtime debris. `lint_prompt.py` checks text patterns and scene-specific length guidance; a clean result does not certify acting or blocking. `check_spatial.py` validates design data and reports per-character changes; only explicit project requirements create target failures. `analyze_clip.py` needs FFmpeg/FFprobe and measures cuts and pixel motion, including camera motion; inspect actual frames and listen separately. Inspiration history belongs in project work, not this skill.
 
-v3 encodes design principles and a vocabulary. It has not been benchmarked on any video model. Optics, light, face, and speech terms are marked "confirm per model". Language note: the v1 depth systems keep their original Chinese; the v3 layers are written in English with Chinese equivalents in the lexicons. Prompts are written in the language the target model handles best.
+The first-use commands run as written. In this larger tool list, `prompt.txt`, `ledger.json` and `clip.mp4` are your own project inputs, not missing package files. For mixed-language text, `--lang auto` is a heuristic; use `--lang en` or `--lang zh` when you intend one counting convention.
+
+For setup, copyable commands, output fields and troubleshooting, read the [video analyzer usage guide](scripts/analyze_clip.md).
+
+## Package boundaries
+
+The active package contains current instructions, useful templates, scripts and routed examples. Legacy patch reports and v1 examples are archived outside the installed runtime. Git metadata remains in the local repository but is excluded from portable ZIPs. Preserve `LICENSE` when copying the package.
+
+The [inspiration compatibility data](assets/inspiration-compatibility.json) is a runtime dependency: it maps legacy draw histories and localized aliases to the English card library. It is not development output. Source prose, templates and filenames in this release are English; escaped multilingual matching data preserves non-English input support.
+
+Extended means relevant richness with no minimum length. Necessary checks survive Compact delivery. Lint supports `--format platform` for verified structured syntax and optional `--density-diagnostic`. No text checker replaces target coverage review.
+
+## Product candidate entry points
+
+Use [loading](core/loading.md) and [routes](assets/routes.json) for exact-section reading, [ownership](core/ownership.md) for rule maintenance, [records](core/records.md) for optional forms, and [capabilities](models/capabilities.md) for dated evidence. Run `python scripts/read_route.py --list`, `python scripts/read_route.py action dialogue --stats`, or omit `--stats` to read source sections. Expanded references remain available in the [index](core/reference-index.md).
+
+This is an engineering beta retaining v3.4.0 as the creative baseline and superseding v3.5.0-rc1's engineering draft. It is available for supervised trials; generated-video non-regression and broad production suitability remain unestablished. Package hashes, issue disposition, diffs and actual test artifacts are delivered separately from runtime instructions.
+
+Runtime tools require Python 3.9+. Run the portable regression suite with `python -B tests/regression.py`. Video analysis additionally needs FFmpeg/FFprobe. No API keys or paid generation are needed for these static/text checks.

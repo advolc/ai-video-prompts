@@ -1,112 +1,112 @@
-# 角色建造与战斗表演
+# Character Construction and Combat Performance
 
-## 造型必须支持打法
+## Design must support the fighting style
 
-角色设定卡分四层：
+A character design card has four layers:
 
-- 身份锁定：脸型、比例、发型轮廓、服装结构、标志物与主色。用户已定设计优先。
-- 动作结构：惯用手、重心习惯、活动范围、武器长度、持握点、脚底支撑和战斗轮廓。
-- 性格打法：谨慎者观察和留后路，急躁者可能过量出手；避免性格标签决定所有行为，保留当场选择和成长。
-- 当前状态：伤势、疲劳、衣物损坏、污迹、恐惧与自制程度。用状态变体延续，别每镜恢复干净。
+- Identity lock: face shape, proportions, hair silhouette, costume structure, identifiers, dominant colors. The user's established design takes priority.
+- Action structure: handedness, habitual center of mass, range of motion, weapon length, grip points, foot support, combat silhouette.
+- Personality in combat: cautious characters observe and retain an escape; impatient ones may overcommit. Do not let personality labels determine every behavior; preserve immediate choices and growth.
+- Current state: injury, fatigue, costume damage, dirt, fear, self-control. Carry state variants forward rather than restoring a clean character every shot.
 
-长发、披风、裙摆、盔甲与兵器鞘要检查挥臂、深蹲、扭腰和倒地空间。可删减遮挡、设计分片或控制次级运动；不要靠身体穿模解决动作。脸和武器在小画面中也要有可辨轮廓。
+Check long hair, capes, skirts, armor, and scabbards for clearance during arm swings, deep squats, waist rotation, and falls. Reduce occlusion, design segmented parts, or control secondary motion; do not solve action through body interpenetration. Faces and weapons need identifiable silhouettes even in a small image.
 
-## 人物建模与骨相质感推演（防“塑料假人感”）
+## Facial structure and surface design (avoid a plastic mannequin look)
 
-不能只写“英俊/美丽”，要用角色阅历与既定画风提出可见的骨相、皮相候选。人物尚未锁定时，面部至少选一个细微不对称识别点，如左眉骨旧疤、单侧眼睑微垂或鼻梁微偏；选一种，不把疤痕、衰老、歪鼻全叠在同一张脸上。三种尺度择其一：
+Do not write only “handsome/beautiful.” Use the character's experience and established style to propose visible facial-structure and surface candidates. For an unlocked character, select at least one subtle asymmetric facial identifier, such as an old scar at the left brow, a slightly lowered eyelid on one side, or a faint bend in the nose. Choose one rather than stacking scars, aging, and a crooked nose. Choose one of three approaches:
 
-1. **现实考据向**：从生活负荷选择日晒斑、指节粗大、指腹薄茧等具体痕迹；脸部与手部按本镜可见部位取舍，形制与年代依据见[文化考据](cultural-research.md)。
-2. **现实+创作向**：用精瘦轮廓、颧骨转折、可活动肩背等功能性形体支持打法；这是造型候选，不把职业直接等同某种骨相，也不拿“爆发力”代替可见结构与动作。
-3. **纯AI创作向**：按已定世界观选择妖族非人瞳孔、苍白半透明肤质或体修宽厚骨架；先明确该形态和能力来源，不因题材标签自动异化角色。
+1. **Researched realism:** choose specific traces of life load, such as sun spots, thick knuckles, or light fingertip calluses. Select face/hand details by what this shot shows; see [cultural research](cultural-research.md) for form and period evidence.
+2. **Reality plus invention:** support movement with functional form such as a lean silhouette, cheekbone transitions, and mobile shoulders/back. These are design candidates; do not equate an occupation with a particular bone structure or substitute “explosive power” for visible structure and action.
+3. **Pure AI invention:** within established world rules, choose nonhuman pupils for a demon species, pale translucent skin, or a broad skeletal frame for a body cultivator. Establish the form and source of abilities first; a genre label does not automatically transform the character.
 
-用户已定脸、参考图与身份特征优先，不能为满足不对称要求擅自加疤、改鼻或改变年龄；已有非对称细节直接复用，确需新设计时给候选再确认。干净、平面或理想化画风不强加毛孔与衰老，用风格允许的轮廓/眉形差异表达。设计卡可详细，实际提示词只保本镜可见的必要锚点，固定骨相不新增表演动作。
+The user's established face, references, and identity features take priority. Do not add scars, change the nose, or change age to satisfy asymmetry. Reuse existing asymmetry; offer candidates for confirmation if a new design is genuinely necessary. Clean, flat, or idealized styles do not receive imposed pores or aging; use permitted silhouette/brow differences. Design cards may be detailed, but prompts retain only necessary anchors visible in the shot. Fixed facial structure adds no performance action.
 
-## 人物着装与质感推演（防“廉价Cosplay”）
+## Costume and material design (avoid cheap cosplay)
 
-不能只写“穿古装”，按已定阶层、职业、年代和动作范围，明确材质、剪裁、固定方式与磨损位置。三种尺度择其一，不能把全部细节堆进同一个角色：
+Do not write only “wearing historical clothing.” Specify material, cut, fastenings, and wear locations according to established class, occupation, period, and range of motion. Choose one of three approaches; do not stack every detail onto one character:
 
-1. **现实考据向**：粗布短打、便于行动的靴、洗白麻布或磨损袖口可作候选；捕快、书生的具体形制仍须核时代和身份，不把例子当跨朝代通用史实。
-2. **现实+创作向**：刺客可采用宽外袍内衬贴身护具、袖口绑带等结构；说明它们怎样固定与让出关节活动空间，不用“宽袍”掩盖穿模。
-3. **纯AI创作向**：已定修仙者可选水波般半透明织物，已定赛博剑客可选防水纳米纤维；用厚薄、反光、垂坠和受力反应表现，不能只写材料名。
+1. **Researched realism:** coarse-cloth short clothing, movement-friendly boots, washed-out linen, or worn cuffs may be candidates. Verify period/identity for constables' or scholars' exact clothing; examples are not universal historical facts across dynasties.
+2. **Reality plus invention:** an assassin might wear a broad outer robe over fitted protection, with tied cuffs. Explain fastening and joint clearance rather than hiding interpenetration under “loose robe.”
+3. **Pure AI invention:** an established cultivator might use waterlike translucent fabric; an established cyber swordsman might use waterproof nanofiber. Depict thickness, reflection, drape, and response to force rather than only naming materials.
 
-磨损应与当前状态相符，洁净礼服、新衣或特定身份不强行做旧；不因“太素”就自动换阶层与年代。材质与剪裁优先于加装饰或发光，服装层次继续支持原有挥臂、深蹲、持械与遮挡检查。
+Wear follows current state. Do not distress clean formalwear, new clothes, or a specified identity unnecessarily, or automatically change class/period because a design seems plain. Materials and cut precede added ornament/glow; clothing layers still support checks for arm swings, squats, weapon use, and occlusion.
 
-## 视觉叙事三问（可选加深）
+## Three visual storytelling questions (optional depth)
 
-默认启用；用户明确要“简版/lite”时可省略。只在后台检查，不要求用户填表，用户已定设计优先。
+Enabled by default; omit for an explicit “brief/lite” request. Check internally rather than requiring user forms. Established designs take priority.
 
-| 问 | 设计问题 | 候选 |
+| Question | Design inquiry | Candidate |
 |---|---|---|
-| 外形在讲什么经历？ | 哪项骨相、皮肤、姿态或着装来自具体经历？ | 已定长期握械可用指节/手茧，已定旧伤才用单侧变化；不凭空添疤或推断前史 |
-| 外形在讲什么阶层/职业？ | 材质、剪裁、磨损是否支持角色？ | 选择有依据的劳作服或礼服功能，不把穷人必破旧、贵人必镶金当分类 |
-| 同框角色是什么视觉关系？ | 轮廓、色块、材质如何区分？ | 高矮、宽窄、深浅或粗细选合适的一项，不只靠发光划阵营 |
+| What experience does appearance communicate? | Which facial structure, skin, posture, or clothing comes from a specific experience? | Established long-term weapon use may justify knuckles/calluses; unilateral changes require an established old injury. Add no scars or invented backstory |
+| What class/occupation does appearance communicate? | Do material, cut, and wear support the character? | Choose grounded workwear/formalwear functions; poverty does not mandate rags, wealth does not mandate gold |
+| What visual relationship exists between characters in frame? | How do silhouette, color blocks, and material distinguish them? | Choose a suitable height, width, value, or texture contrast, rather than separating factions only through glow |
 
-与骨相和着装三尺度并列，一人选一个核心叙事点即可，不把三问全叠成造型任务。洁净礼服、新衣、批准形象照常保留，不能用深度设计改掉人物身份。
+These questions sit alongside the three approaches to face and costume. One principal narrative point per character suffices; do not turn all three questions into cumulative design tasks. Retain clean formalwear, new clothes, and approved looks; depth is not permission to change identity.
 
-## 可交接的角色一致性卡
+## Handoff-ready character consistency card
 
-`CHAR_ID/版本/批准状态｜脸部比例与辨识点｜发色分区/正侧背轮廓｜人物自身左右肩甲与纹样｜衣服层次/固定方式｜身高比例｜惯用手/武器尺寸握法｜术法固定构件｜初始及变化伤损｜声音/口型基准｜参考文件与职责/不继承项`。
+`CHAR_ID/version/approval status | facial proportions and identifiers | hair-color regions/front-side-back silhouettes | character-relative left/right shoulder armor and patterns | clothing layers/fastenings | height proportions | handedness/weapon dimensions and grip | fixed power components | initial and changing damage | voice/lip-sync baseline | reference files, responsibilities, and non-inherited elements`.
 
-本阶段变化轨迹：初始状态______；本阶段变化______；依据______。记录实际已定变化，未知不编造，跨段依版本承接。
+State trajectory for this stage: initial state ______; changes this stage ______; basis ______. Record established changes only; do not invent unknowns. Carry versions across segments.
 
-每项关联实际参考图或明确描述，标“不可变”“可随表演变化”“随剧情更新”。身份卡不包含临时站姿；状态表承接每个生成段的灰尘、伤口、武器归属与能力余量。正侧背不足以支持复杂抬头、倒地或持械交互时补相应角度，不拿新抽卡改脸当补角度。版本维护见 [一致性工程](consistency.md)。
+Connect every item to an actual reference or explicit description and label it “immutable,” “may vary with performance,” or “updated by story.” Identity cards exclude temporary stances; state sheets carry dust, wounds, weapon ownership, and remaining abilities across generation segments. If front/side/back views do not support complex upward looks, falls, or weapon interactions, add the relevant angles; generating a different face is not filling angle coverage. See [consistency engineering](consistency.md) for version maintenance.
 
-## 人物模型/设定的实际建造路线（按需）
+## Actual character model/design construction routes (as needed)
 
 ### 2D
 
-先定正侧背与关键角度，统一比例和识别特征；再做战斗关键姿态、表情口型、衣发分层及伤损替换。逐帧绘制与剪纸式绑定需要不同资源：前者允许为夸张角度重画，后者需规划转面替换、肢体遮挡和控制点，不能把一张立绘直接当完整动作资产。
+First establish front/side/back and critical angles, proportions, and identifiers; then combat key poses, expressions/visemes, layered clothing/hair, and damage replacements. Frame-by-frame drawing and cutout rigs need different resources: the former can redraw exaggerated angles; the latter needs planned turn replacements, limb occlusion, and controls. One character illustration is not a complete action asset.
 
 ### 3D
 
-按轮廓与比例做粗模，在常见镜头下检查头身和武器尺度，再细化。拓扑优先支持肩、肘、髋、膝、手与面部变形；盔甲等硬表面按真实/设定连接关系分件。UV与材质按景别分配，绑定提供躯干、重心、手脚、眼睛、下颌以及必要的面部控制。
+Block out silhouette/proportions, check head/body and weapon scale in common shots, then refine. Topology prioritizes deformation at shoulders, elbows, hips, knees, hands, and face; split armor/hard surfaces according to real or established connections. Allocate UVs/materials by framing. Rig torso, center of mass, limbs, eyes, jaw, and necessary facial controls.
 
-根据动作需要配置手脚IK/FK切换、接触锁定、武器挂点、双手持握关系和衣发控制；不是所有角色都需要同一套控制器。先用代理形体试动作，再做贵的衣物/毛发模拟。风格化挤压拉伸可以设计进绑定，恢复后仍保持身份。
+Configure hand/foot IK/FK switching, contact locks, weapon attachments, two-hand grip relationships, and clothing/hair controls according to action needs. Not every character needs the same controllers. Test proxy geometry before costly cloth/hair simulation. Stylized squash/stretch can be built into the rig, with identity preserved after recovery.
 
-最低变形检查选本场真正要用的姿态，例如高举手臂、跨步蹲身、躯干扭转、握持、倒地和回头。检查关节塌陷、脚滑、穿插、挂点跳动、脸部拉裂。只完成设定卡或提出绑定要求，不等于已经做出可用3D模型。
+Minimum deformation checks use poses actually needed here, such as raised arms, wide squats, torso twists, gripping, falling, and turning the head. Check joint collapse, foot sliding, intersections, attachment jumps, and facial tearing. A completed design card or rigging specification does not mean a usable 3D model exists.
 
-### AI生成资产
+### AI-generated assets
 
-固定角色身份图、全身服装和关键道具参考，说明各图负责身份、动作还是风格。必要时补侧面和背面；不要让一张面部近照承担完整服装一致性。生成后实际核对脸、惯用手、道具数量与伤损承接。提示词是约束意图，不能保证输出正确，也不能替代模型文件。
+Fix identity images, full-body costume, and key-prop references, assigning each image responsibility for identity, action, or style. Add side/back views as needed. A facial close-up cannot carry full costume consistency. After generation, actually check face, handedness, prop count, and damage continuity. Prompts express constraints; they do not guarantee correct output or replace model files.
 
-## 神态由注意与身体负荷驱动
+## Expression follows attention and bodily load
 
-用“看见什么→如何判断→身体改变→采取什么行动”设计表演。表情不只写眉眼，连接呼吸、颈肩、手指和站姿。
+Design performance as “what is seen → how it is judged → bodily change → action taken.” Expression extends beyond brows/eyes to breathing, neck/shoulders, fingers, and stance.
 
-| 战斗状态 | 眼神/面部选择 | 身体与呼吸 | 台词倾向 |
+| Combat state | Gaze/facial choice | Body and breath | Dialogue tendency |
 |---|---|---|---|
-| 观察与试探 | 视线在武器、脚位或出口间切换，眉口可保持克制 | 重心可调整，保留收招余地 | 试探对方意图，或不说话 |
-| 主动进攻 | 锁定具体目标，表情可专注而非必然愤怒 | 发力时呼气，动作后恢复支撑 | 短指令或误导，避免每招报名称 |
-| 受压/意外 | 眼神先追新威胁，下颌或嘴角紧张 | 突然改变支撑、呼吸被打断 | 未说完的短句或气声 |
-| 疼痛与损伤 | 局部紧缩、保护性视线，幅度依性格和画风 | 护住伤处、负重转移、动作范围受限 | 可以掩饰，不必大喊 |
-| 疲劳 | 焦点转换变慢或刻意集中，不机械画成眼皮下垂 | 呼吸间隔、抬臂与回收变化，仍保留策略 | 缩短句子，留恢复时间 |
-| 判断反转 | 视线从受威胁处移到机会，紧张可收住 | 重心先于反击改变 | 一句有目的的话，或让行动先说 |
-| 恐惧/愤怒 | 表现为瞳向、眉口及回避/盯视的组合 | 恐惧可僵住或过快反应，愤怒可鲁莽也可冷静 | 服从人物既有说话方式 |
+| Observation/probing | Gaze moves among weapon, feet, or exit; brows/mouth may stay restrained | Adjust weight while retaining recovery options | Probe intent or remain silent |
+| Active attack | Fix on a specific target; focused need not mean angry | Exhale with effort, restore support afterward | Short instruction or misdirection; avoid naming every move |
+| Pressure/surprise | Eyes first follow the new threat; jaw or mouth tightens | Sudden support change, interrupted breathing | Unfinished short phrase or breathy voice |
+| Pain/damage | Local contraction, protective gaze; scale follows personality/style | Protect injury, shift load, restrict movement | May conceal it; shouting is not required |
+| Fatigue | Slower focus shifts or deliberate concentration, not mechanically drooping lids | Changes in breathing intervals, arm lift, recovery, while retaining strategy | Shorter phrases, recovery time |
+| Reversal of judgment | Gaze leaves the threatened area for an opportunity; tension may subside | Weight changes before the counter | One purposeful line, or let action speak first |
+| Fear/anger | A combination of gaze direction, brows/mouth, avoidance/staring | Fear may freeze or overaccelerate; anger may be reckless or calm | Follow the character's established speech |
 
-不要所有情绪同时开到最大。小画幅可放大关键表情，克制人物可由手与呼吸泄露情绪。面部表演可先于动作一瞬让观众读判断，也可先身体逃避再面部意识到危险，按叙事目的选择。
+Do not maximize all emotions at once. A small image may need stronger key expressions; restrained characters can reveal feeling through hands/breath. Facial acting may briefly precede action to reveal judgment, or bodily avoidance may precede facial recognition of danger. Choose for narrative purpose.
 
-如需系统的心理动作拆解、微表情矩阵与可见化转换，在用户明确要求或接受推荐后读取[表演与心理动作系统](performance-and-psychology.md)。发现“他很紧张”等抽象描述确实妨碍本场表达时，按主入口的一句话协议推荐，不强行加载。
+When this scene needs psychological-action breakdown, subtle expression, and visible translation, read the relevant [performance and psychology](performance-and-psychology.md) sections by default. Ground vague wording such as “he is tense” in visible behavior here; do not await extra module authorization or load unrelated matrices.
 
-**防涣散眼神约束**：生成正文不能只用“对视/看着前方”等抽象方向词代替注意对象，必须写具体物理交汇点，如视线落在对方握刀的手指、桌上信封封口或门闩；有意对视时写清双方眼睛的对应关系，不擅自把注视脸部改成盯武器。远景用头肩朝向和身体朝向表现目标，中近景可写视线轨迹，特写才按需要写瞳孔收缩；同镜只保原表演负荷，不加多个微相。
+**Prevent unfocused gaze:** generation prose must not substitute abstract directions such as “look at each other/look forward” for attention targets. Name the physical point, such as fingers gripping the opponent's knife, an envelope seal on the table, or a door bolt. For intentional eye contact, specify how their eyes meet rather than replacing face attention with weapon attention. Wide shots use head/shoulder and body orientation; medium close-ups can trace eyelines; close-ups specify pupil contraction only as needed. Retain the existing performance load, adding no collection of subtle signals.
 
-## 台词：先有说话目的
+## Dialogue: purpose before words
 
-每句选择一个作用：传递战术、拖延、诱导、掩饰伤势、改变关系或暴露认知。删掉仅重复画面、无人物依据的口号。不是全员沉默；话多、爱表演或仪式化报招可以是角色特征，但对手与战局仍在变化。
+Choose one function per line: convey tactics, delay, lure, conceal injury, change relationship, or reveal understanding. Remove slogans that merely repeat the picture without character grounding. This does not make everyone silent; talkativeness, theatricality, or ritual move-naming may define a character, while the opponent and battle continue changing.
 
-示例为新创作：护送者说“先过门，我跟上”，改变同伴行动；敌人说“你一直在护左边”，暴露观察；防守者故意回答“那就试试”，可以配合诱导，但下一步要兑现这一选择。
+Original examples: an escort says “Go through the door first. I'll follow,” changing the companion's action; an enemy says “You keep protecting your left,” revealing observation; a defender deliberately answers “Then try it,” supporting a lure that the next action must fulfill.
 
-短促发力、窒息或连续翻滚时通常容不下从容长句。若是内心独白、主观时间或喜剧规则，要标明。台词长度用实际语气试读，不用固定字数公式冒充表演时长。区分说话、呼吸、呻吟和无声口型；没有录音不能声称听感已验收。
+Brief exertion, choking, or repeated rolls usually leave no room for calm long sentences. Identify internal monologue, subjective time, or comic rules when used. Time lines through actual delivery; fixed character-count formulas are not performed duration. Distinguish speech, breathing, groans, and silent mouth movement. Without recording, do not claim listening acceptance.
 
-如需将台词工程化为四层模型、角色语言DNA及六种深度手法，在用户明确要求或接受推荐后读取[台词深度引擎](dialogue-engine.md)，按需使用[台词辅助设计卡](../assets/templates/台词提示词卡模板.md)；深度卡中的复杂停顿、重音与潜台词说明整体转后期备注。
+For dialogue in this scene, use relevant [dialogue design](dialogue-engine.md) checks by context by default. Use the [dialogue support card](../assets/templates/dialogue-design-card.md) when expanded records are needed. Complex pauses, emphasis, and subtext analysis remain in production notes; every line need not use every device.
 
-## 声音与口型交接
+## Voice and lip-sync handoff
 
-音色参数：按需见[角色音色设计](../sound/sound-and-voice.md)；记录音高与音色、气息、咬字与语速、口音与阶层、情绪变化、关系映射六项及声音版本/批准状态，作为角色属性跨段继承。未启用时不强填，不因角色卡有该字段自动加载音色模块。
+Voice parameters: see [character voice design](../sound/sound-and-voice.md) as needed. Record applicable pitch, breath, articulation, accent, change patterns, and voice version as character properties carried across segments. Do not fill them without a voice task or load the entire parameter system merely because the character card has the field.
 
-建立`台词ID/角色声音版本｜文本与说话目的｜起止/停顿/呼吸｜画内说话/画外/内心｜脸部角度与可见口型｜音频来源/授权状态｜同步验收`。正式口型以选定音频的时序为准，先试读再锁动作空当；一边高速转身一边长句对嘴容易同时牺牲表演与稳定性，应缩句、移到可读时段或明确用画外声。
+Build `line ID/character voice version | text and speaking purpose | start/end/pauses/breath | onscreen/offscreen/internal | face angle and visible mouth shapes | audio source/authorization | sync acceptance`. Final lip sync follows the selected audio timing. Read through before locking action gaps; a long lip-synced sentence during a fast turn can sacrifice performance and stability. Shorten it, move it to a readable interval, or explicitly use offscreen voice.
 
-可同生音频时先测音色、内容和时间可控性，不把一次声音结果当跨段一致保证；不可控时后配音、气息和效果，口型需要时再局部处理。跨段继承未说完的音节、吸气和尾音，不能句子每段从头再来。听实际音频并看实际口型，才报告同步通过；字幕正确不等于说话内容或口型正确。
+If audio can be generated with video, first test voice, content, and timing control; one result does not guarantee consistency across segments. If uncontrollable, add voice, breath, and effects afterward, repairing local lip sync if needed. Carry unfinished syllables, inhales, and tails across segments rather than restarting every sentence. Report synchronization passed only after hearing actual audio and viewing actual mouth movement; correct subtitles do not prove correct spoken content or lip sync.
 
-## 弧光与表演分工
+## Character arcs and performance responsibilities
 
-[人物弧光](../narrative/story-and-scene.md)管欲望、选择、代价与跨场变化；本文件管当场可见表演。一个呼吸变化不能替代整个人物成长，弧光也不要求每镜堆微相。
+[Character arcs](../narrative/story-and-scene.md) handles desire, choice, cost, and change across scenes. This file handles immediately visible acting. One breathing change cannot replace an entire arc, and an arc does not require subtle signals piled into every shot.

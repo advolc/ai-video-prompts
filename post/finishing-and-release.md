@@ -1,139 +1,140 @@
-# 后期、发布与管理（合并版）
+# Post-production, Release, and Management (Consolidated)
 
-本文件合并了v1的后期（音频、调色、合成、输出规格、字幕、特效合成）、发布分发（封面标题、多平台、发布策略）与项目管理（协作、反馈、模板、版本）。均为简要检查清单。
+Combines v1 post-production (audio, grading, compositing, output specifications, subtitles, effects compositing), distribution (covers/titles, multiple platforms, release strategy), and project management (collaboration, feedback, templates, versions). All are brief checklists.
 
-## 音频后期
+## Audio post-production
 
-先确认对白、环境、拟音、音乐分轨；对白清楚为先，音乐ducking随台词适度下降并平滑恢复，不能每个字都抽吸。环境底保持空间连续，接触声与可见触发对齐；临时TTS/音效须与最终版区分。
+Confirm separate dialogue, environment, foley, and music tracks first. Prioritize intelligible dialogue; duck music moderately beneath speech and restore it smoothly, without pumping on every word. Preserve spatial continuity in the environmental bed and align contact sounds with visible triggers. Distinguish scratch TTS/effects from final versions.
 
-混音先清理明显噪声与断口，再平衡频段、动态与空间；母带检查整体响度与真峰值，LUFS数值须按交付平台/节目规范核实，不把某个常见数字写成全球标准。测量报告记录工具、范围和数值，不以响度合格代替听感。
+Clean obvious noise and discontinuities before balancing frequency, dynamics, and space. Mastering checks overall loudness and true peak; verify LUFS against the target platform/program requirements rather than declaring a common number universal. Measurement reports record tool, range, and values; compliant loudness does not replace listening.
 
-立体声注意中心对白、左右声像与单声道折叠；5.1只有在需求与工具确立时制作，正确分配声道，不把普通双声道复制六份。空间声遵循画面距离和遮挡，镜头切换可保环境尾响。
+For stereo, check centered dialogue, left/right imaging, and mono fold-down. Produce 5.1 only with established requirements and tools, assigning channels correctly rather than duplicating ordinary stereo six times. Spatial sound follows visual distance and occlusion; environmental tails may survive cuts.
 
-验收先仪表看削波/真峰值/响度，再实际听清对白、低频与音画；耳机和小扬声器按本次可用设备分别说明。复杂停顿、重音、潜台词卡在此与配音/口型工具交接，视频正文不塞解析。声音设计来源见[整体声音](../sound/sound-and-voice.md)，发布规格见[输出规格](finishing-and-release.md)。
+Acceptance begins with meters for clipping/true peak/loudness, then actual listening for dialogue clarity, bass, and audiovisual synchronization. State the available headphone and small-speaker checks separately. Complex pause, stress, and subtext cards hand off here to voice/lip-sync tools, not as analysis inside video prose. See [overall sound](../sound/sound-and-voice.md) for design sources and [output specifications](finishing-and-release.md) for release requirements.
 
-## 后期调色
+## Color grading
 
-先校正曝光/白平衡/色彩空间，再匹配镜头，最后风格化；不是套LUT就完成。确认素材是已显示变换的普通视频还是Log/HDR，LUT需匹配输入/输出，重复转换会压黑或偏色。没有元数据先查项目来源，不凭视觉猜曲线。
+Correct exposure, white balance, and color space, then match shots, then stylize. Applying a LUT is not completion. Determine whether material is ordinary display-transformed video or Log/HDR. Match LUT input/output; duplicate transforms may crush blacks or shift color. Without metadata, investigate the project source rather than guessing a curve visually.
 
-统一顺序：选参考镜→匹配黑白位与肤色→校正主光冷暖→恢复段间主色比例→局部保护脸/手/关键接触→完整播放查跳变。单色统治靠大面与空气关系，不把所有像素染成同一色；人物与背景靠明度、材质和局部冷暖区分。
+Unification order: choose a reference shot → match black/white levels and skin → correct key-light temperature → restore dominant-color proportions between segments → locally protect faces/hands/key contact → play through for jumps. Dominant monochrome uses broad surfaces and atmospheric relationships, not identical tint on every pixel. Separate character and background through value, material, and local temperature.
 
-AI调色适合候选探索，需警惕逐帧漂色/局部闪烁；手动更便于关键段追踪和对照，选工具依据实际控制而非品牌保证。肤色保护不是一律肤色线贴模板，服从角色、光源和已定画风；保留足够区分度。
+AI grading can explore candidates but risks framewise color drift and local flicker. Manual work allows more controlled tracking and comparison of key passages. Choose by actual controls, not brand guarantees. Skin protection does not mean forcing everyone onto a template skin-tone line; follow characters, sources, and established style while retaining sufficient differentiation.
 
-验收：相邻镜脸和白物无无故跳色；暗部细节与高光仍可读；原主色签名保留；观看设备/显示变换已记录。调色不能补回剪断的动作与不存在的细节。输出色彩标记见[输出规格](finishing-and-release.md)，设计关系见[色彩系统](../visual/composition-and-color.md)。
+Acceptance: no unmotivated hue jump on adjacent faces or white objects; readable shadows/highlights; original dominant-color signature retained; viewing device/display transform recorded. Grading cannot restore cut-off action or nonexistent details. See [output specifications](finishing-and-release.md) for color tags and the [color system](../visual/composition-and-color.md) for design relationships.
 
-## 基础合成
+## Basic compositing
 
-先明确要替换背景、修局部还是整合实拍/3D/AI层，再定最少图层。绿幕先检查溢色与边缘；无幕用Roto/分割但要逐帧查发丝与手指；跟踪要选平面/点/相机适配运动，不能给任何镜头都套二维位移。
+First decide whether to replace a background, repair locally, or combine live-action/3D/AI layers, then choose the fewest layers needed. Check green-screen spill and edges; without a screen, roto/segmentation still requires framewise checks of hair and fingers. Select planar/point/camera tracking for the actual motion instead of applying two-dimensional translation everywhere.
 
-顺序：统一画幅帧率与色彩解释→抠像/遮罩→几何与透视定位→遮挡和接触影→光色匹配→景深/运动模糊/颗粒统一→输出。深度合成用深度关系分前后，估计深度边缘错误需人工修；加了深度图不等于所有遮挡正确。
+Order: unify frame geometry/rate and color interpretation → key/mask → geometry and perspective → occlusion and contact shadows → light/color match → depth of field/motion blur/grain match → output. Depth compositing separates foreground/background through depth relationships; erroneous estimated-depth edges need manual repair. Adding a depth map does not make all occlusion correct.
 
-混合模式按目的选择，发光层相加要保高光，烟尘以透射关系为主，不全用屏幕模式洗白。角色站地必须有尺度、脚底接触和地面反射/阴影；AI素材原有模糊和3D清晰边缘要匹配，不一味给全部加糊。
+Choose blend modes by purpose. Additive glow protects highlights; smoke/dust primarily follows transmission rather than washing everything white with Screen. A grounded character needs scale, foot contact, and ground reflections/shadows. Match the original blur of AI material to sharp 3D edges instead of blurring everything indiscriminately.
 
-验收看连续画面：边缘呼吸、抠漏、滑动、阴影方向、前后遮挡与光色是否一致。管理层记录可返工工程、素材版本与色彩设置，不能写进生成正文。专用效果层接[特效合成](finishing-and-release.md)。
+Inspect continuous footage for breathing edges, keying holes, sliding, shadow direction, depth occlusion, and light/color consistency. Record editable projects, asset versions, and color settings in management notes, not generation prose. Specialized effects connect to [effects compositing](finishing-and-release.md).
 
-## 母版与平台交付
+## Masters and platform delivery
 
-母版保留尽可能完整画质、音轨与可编辑工程；交付版按目标平台压缩、改画幅、加字幕。两者分开命名，别用平台转码文件覆盖母版。规格至少记录容器、视频编码/像素格式、码率策略、帧率、实际尺寸、色彩空间/传递/矩阵、音频编码/采样/声道和字幕方式。
+Masters preserve as much image quality, audio, and editable project information as possible. Delivery copies use target-specific compression, aspect, and subtitles. Name them separately; platform transcodes never overwrite masters. Record at least container, video codec/pixel format, bitrate strategy, frame rate, actual dimensions, color space/transfer/matrix, audio codec/sample rate/channels, and subtitle method.
 
-帧率优先沿用项目实际运动采样；升帧不证明新动作合理。SDR/HDR先核源与目标，不能只改标签完成转换。分辨率看真实尺寸；拉伸/加边需意图，不擅自裁人物。
+Prefer the project's actual motion sampling for frame rate; upsampling does not prove new motion valid. Verify SDR/HDR source and target before conversion; changing tags alone is not conversion. Resolution means actual dimensions. Stretching/letterboxing needs intent; do not crop characters without permission.
 
-已核示例（2026-10-31，非所有平台通用）：YouTube官方推荐MP4/H.264、音频48kHz；SDR建议BT.709；1080p标准帧率推荐视频码率8Mbps、高帧率12Mbps；保持录制帧率上传。来源：[官方上传编码建议](https://support.google.com/youtube/answer/1722171?hl=en)。这是文档核查，未做本项目上传试验；其他平台按[矩阵](../models/README.md)逐项确认。
+Verified example (2026-10-31, not universal): YouTube officially recommends MP4/H.264 and 48 kHz audio; BT.709 for SDR; 8 Mbps for standard-frame-rate 1080p and 12 Mbps for high frame rates; upload at the recorded frame rate. Source: [official upload encoding recommendations](https://support.google.com/youtube/answer/1722171?hl=en). This was a document check, not a project upload test. Verify other platforms item by item through the [matrix](../models/README.md).
 
-输出验收分三类：文件检查（尺寸/帧率/时长/音轨/完整解码）、播放检查（头尾/接缝/字幕/画面）、实际听音（清晰/同步/峰值和音量体验）。三者分别报告，不能元数据正确就写播放/听感通过。交付包含母版/目标版/字幕/必要分轨/工程依赖与说明，缺项明确实际范围，不伪称上传发布。
+Report three independent acceptance categories: file checks (dimensions/frame rate/duration/audio/full decode), playback checks (beginning/end/seams/subtitles/picture), and actual listening (clarity/synchronization/peaks and volume experience). Correct metadata does not establish playback/listening success. Delivery includes master/target copy/subtitles/necessary stems/project dependencies and instructions. State missing items and actual scope; never imply uploading or publishing occurred.
 
-## 标题与字幕
+## Titles and subtitles
 
-先分画面文字、讲解字幕和发布封面；生成模型里不强制画可读长字，精确文字优先后期。字体需可用且有对应使用权限；中文选笔画清楚的常规字形，避免细笔画在压缩后丢失。
+Separate on-screen text, explanatory subtitles, and release covers first. Do not force readable long text from generation models; precise text is preferably added in post. Fonts must be available with applicable usage rights. For Chinese, choose clear conventional forms whose fine strokes survive compression.
 
-字幕按实际音轨切语义，不机械逐字跳；关键停顿与说话者变化决定断句，多语言各自试读长度，不用同一行宽硬塞翻译。位置避脸、手、接触与平台界面；安全区按目标真实预览，不给所有平台一个永久像素值。画幅改变后重排而非等比缩小。
+Segment subtitles semantically against the actual audio rather than mechanically animating every character. Pauses and speaker changes inform breaks. Read through each language's length instead of forcing translations into the same line width. Avoid faces, hands, contact, and platform UI; check safe areas in the actual target preview rather than using one permanent pixel value for all platforms. Reflow after aspect changes rather than merely scaling down.
 
-动效服务读懂：短入淡出或轻位移，少量强调关键词；不让每字弹跳与打斗同时抢注意。画面负责可见事实，字幕补对白或讲解，不重复堆旁白说明已看清动作。
+Animation serves reading: brief fades or slight movement, sparing keyword emphasis. Do not bounce every character while combat competes for attention. The picture carries visible facts; subtitles add speech/explanation rather than redundant narration of readable action.
 
-验收：手机尺寸可读、无错字/乱码/缺字、时间在音轨内且不遮关键信息；导出外挂SRT/VTT或烧录版按实际平台选择。字幕语言与版本写清，不能把OCR草稿冒充已校对。交付核对见[输出规格](finishing-and-release.md)。
+Acceptance: readable at phone size, no typos/garbling/missing glyphs, timing within the audio, no obscured key information. Choose external SRT/VTT or burned-in versions for the actual platform. State language and version; OCR drafts are not proofread subtitles. See [output specifications](finishing-and-release.md) for delivery checks.
 
-## 特效后期合成
+## Effects compositing in post
 
-术法的数量、形状与触发服从原能力规则；后期粒子、光、爆炸、烟尘只实现已定因果，不借补效果改胜负。主体接触片先成立，再叠效果；原片中接触错了不能用白闪冒充修复。
+Ability counts, shapes, and triggers follow established rules. Post particles, light, explosions, and smoke implement existing causality, not a changed winner. Establish subject contact first, then layer effects; a white flash cannot repair incorrect raw contact.
 
-层次：接触点/核心形状→前后景遮挡→粒子路径→光照影响→烟尘残留→镜头/材质统一。爆炸须交代触发、扩散与碎片方向，烟尘随空间和风向；光效影响邻物不能无穷扩大。按原片帧率、快门质感、景深和透视匹配，不把高帧率粒子直接贴到低采样主体上。
+Layers: contact point/core shape → foreground/background occlusion → particle paths → lighting influence → smoke/dust residue → camera/material unification. Explosions specify trigger, expansion, and debris direction; smoke follows space and wind. Light influence on neighboring objects cannot expand without limit. Match raw frame rate, shutter feel, depth of field, and perspective; do not paste high-frame-rate particles over a sparsely sampled subject.
 
-| 失败 | 先查 |
+| Failure | Check first |
 |---|---|
-| 像贴纸 | 跟踪、透视、遮挡、接触光影 |
-| 白成一片 | 叠加次数、亮度与作用范围 |
-| 效果漂移 | 锚点与跟踪丢失，不靠加粒子掩盖 |
-| 先炸后碰 | 触发帧与声画同步 |
-| 烟忽现忽消 | 状态版本、持续时长与后镜继承 |
+| Looks like a sticker | Tracking, perspective, occlusion, contact light/shadow |
+| White washout | Layer count, brightness, influence range |
+| Drifting effect | Lost anchor/tracking; do not conceal it with more particles |
+| Explosion before contact | Trigger frame and audiovisual sync |
+| Appearing/disappearing smoke | State version, persistence, inheritance in the next shot |
 
-验收保住手/刃/支撑的可读窗口，关效果还能看懂主动作；效果状态纳入术法与损毁接缝。基础管线见[基础合成](finishing-and-release.md)，原形态分层见[能力特效](../references/powers-and-vfx.md)。
+Retain readable windows for hands/blades/support. The main action remains intelligible with effects disabled. Include effect states in ability/damage seams. See [basic compositing](finishing-and-release.md) for the pipeline and [powers and effects](../references/powers-and-vfx.md) for original form layers.
 
-## 封面与标题
+## Covers and titles
 
-先定用户要点击导向还是艺术表达，再选一个核心承诺。封面只放一个主视点、必要识别文字和可读的动作/关系；不能用没在成片出现的爆炸或角色误导。手机缩略图核主体、文字与对比，不把大屏设计等比缩小就交。
+Determine whether the user prioritizes clicks or artistic expression, then choose one core promise. A cover has one main focal point, necessary identifying text, and a readable action/relationship. Do not mislead with explosions or characters absent from the film. Check subjects, text, and contrast as phone thumbnails; do not simply shrink a large-screen design.
 
-标题候选：具体困境+变化；明确对象+独特机制；提问+可兑现内容。避空泛夸张与虚构结果，教程标题交代能学什么，叙事标题不必把结局全说完。封面和标题分工，一个给画面冲突，一个给观看理由，不重复同一句长文。
+Title candidates: specific dilemma + change; clear subject + distinct mechanism; question + deliverable content. Avoid empty exaggeration and invented outcomes. Tutorial titles state what can be learned; narrative titles need not reveal the ending. Cover and title divide labor: one shows visual conflict, the other gives a viewing reason, instead of repeating the same long sentence.
 
-所谓算法偏好只作经验假设，未获官方证据不声称平台固定奖励某配色、字数或时段。A/B只改封面或标题一项，记录曝光来源和观察区间，不能把不同流量阶段差异全归设计。详见[对照测试](../quality/quality.md)。风格卡只补缺，不覆盖用户个人印记。
+Supposed algorithm preferences are experience-based hypotheses. Without official evidence, do not claim fixed platform rewards for colors, word counts, or time slots. Change only the cover or title in A/B tests and record exposure source and observation interval. Different traffic phases cannot be attributed entirely to design. See [controlled comparisons](../quality/quality.md). Style cards fill gaps without overriding the user's personal signature.
 
-## 多平台版本改编
+## Adapting versions for multiple platforms
 
-先冻结故事结果、身份、关键接触与风格签名，再分别设计横/竖/方和15/30/60秒版本。这里是通用重排方法，不是竖屏短剧或品牌专用创作系统。
+Freeze story outcome, identity, key contact, and style signatures first, then separately design horizontal/vertical/square and 15/30/60-second versions. This is general rearrangement, not a specialized vertical-drama or brand-creation system.
 
-画幅改变要重构人物关系：横向双人可改前后/上下、加入必要反应镜，不硬裁掉一人或兵器。先用框线预览目标版，关键手、脸、路径始终在可读区；原素材不够时补镜或承认需重新生成，不用缩放变形冒充。
+An aspect change reconstructs character relationships: a lateral pair may become depth/vertical staging with necessary reactions, not a crop deleting a person or weapon. Preview target framing first; key hands, faces, and paths remain readable. If source material is insufficient, add shots or acknowledge regeneration is needed rather than substituting distorted scaling.
 
-时长改变按信息因果压缩：保目标→必要接触/选择→结果，删重复不删触发；长版用关系/余波补信息，不只加慢动作。字幕断句和位置、封面、声音起止全部重排，不能只裁画面。每版独立查六项连续与净长，输出规格按目标平台重核。
+Compress runtime by information causality: preserve goal → essential contact/choice → result, removing repetition rather than triggers. Longer versions add relationship/aftermath information, not only slow motion. Reflow subtitles, covers, and sound entry/exit, not only image crops. Independently check six-category continuity and net runtime for each version, and reverify target output specifications.
 
-交接表：源母版/选段、保留与改动、画幅、净长、需补资产、字幕版、音频版、输出路径。版本管理见[版本控制](finishing-and-release.md)，内容结果不因平台自动改变。
+Handoff table: source master/selections, retained/changed items, aspect, net runtime, missing assets, subtitle version, audio version, output path. See [version control](finishing-and-release.md). Platform changes do not automatically change story results.
 
-## 发布策略
+## Release strategy
 
-规划目标受众、发布入口、主片与预告的关系、可持续更新节奏和反馈时间窗；不承诺某时段保证流量。先用实际项目节奏排计划，别把一次短片自动扩成系列。
+Plan audience, entry point, main-film/trailer relationship, sustainable update rhythm, and feedback window. No time slot guarantees traffic. Schedule around the actual project rather than automatically expanding one short into a series.
 
-若已有系列需求，预告只承诺主片真实内容，标清观看入口与版本；这是通用运营方法，不是系列化创作专用系统。互动用一个具体问题收反馈，如“哪次接触最清楚”，避免只求泛夸。评论区归类理解困难、制作问题与偏好，回到[项目反馈](finishing-and-release.md)处理，不因一条评论推翻全案。
+If a series is already requested, teasers promise only real main-film content and clearly identify viewing entry and version. This is general operations guidance, not a specialized serialized-creation system. Ask one concrete feedback question, such as "which contact was clearest?", rather than seeking generic praise. Classify comments as comprehension, production, or preference and return them to [project feedback](finishing-and-release.md); one comment does not overturn the whole design.
 
-发布前核画面、声音、字幕、说明与链接，按[平台矩阵](../models/README.md)查本次规格；所有外部发布、替换、发送需用户明确授权，写计划不等于获准操作。记录发布时间、版本和后续修改，不删掉旧结论伪装效果。触达与互动是观察数据，不是作品质量的自动分数。
+Before release, check picture, sound, subtitles, description, and links, using the [platform matrix](../models/README.md) for current specifications. External publication, replacement, and sending require explicit user authorization; a plan does not authorize operation. Record release time, version, and later edits rather than deleting old conclusions to disguise results. Reach and engagement are observations, not automatic work-quality scores.
 
-## 项目协作与交接
+## Project collaboration and handoff
 
-角色职责：编剧锁目标/事实；分镜锁空间/信息；生成岗位保存实际输入/设置/原片；后期负责选段/合成/调色/字幕；声音负责音轨/同步/混音。单人项目也可复用职责，不必强设团队。
+Responsibilities: writing locks goals/facts; storyboarding locks space/information; generation preserves actual inputs/settings/raw outputs; post handles selections/compositing/grading/subtitles; sound owns tracks/sync/mixing. Solo projects may reuse these responsibilities without inventing a team.
 
-每次交接含：输入版本、选定方案、不可改项、产物路径、完成范围、未执行项、接收人/下一步。验收按岗位可观察事实，不以“电影级”签字；生成合格片才可传尾帧，后期不得悄悄改剧情和口型目标。
+Each handoff includes input version, chosen design, protected facts, output paths, completed scope, unexecuted items, recipient/next step. Acceptance uses observable role-specific facts, not a "cinematic" sign-off. Only qualified generated clips provide final frames; post cannot silently change story or lip-sync goals.
 
-团队同时改动时指定当前主稿与负责人，意见进统一台账，先解决冲突再覆盖文件。用户已授权日常可逆修改继续做；外部发送或发布不由此流程自动授权。模板见[项目空壳](finishing-and-release.md)，变更记录见[版本控制](finishing-and-release.md)。
+When a team edits concurrently, name the current master and owner, record feedback centrally, and resolve conflicts before overwriting. Continue routine reversible changes already authorized by the user; this workflow grants no external-send/publication authority. See [project shells](finishing-and-release.md) for templates and [version control](finishing-and-release.md) for changes.
 
-## 项目级反馈循环
+## Project-level feedback loop
 
-本文件管跨版本、多角色意见的落实台账；[实时反馈归因](../ux/interaction.md)管对话里的碎片微调，先改再按需记，不要求用户填表。
+This file handles implementation ledgers across versions and contributors; [live feedback attribution](../ux/interaction.md) handles fragmentary conversational edits. Revise first and record as needed, without making the user complete a table.
 
-意见先归感觉/内容/形式/技术，标出处和范围，按用户硬目标/事实错误→影响理解→审美偏好处理。客户、导演、观众身份不是事实优先级；冲突交用户确定取舍，不用多数票改已定剧情。模糊“不好看”只问一次可见差别，如“是颜色太艳还是动作太挤”，也接受自由描述。
+Classify feedback as feeling/content/form/technical, mark source and scope, then prioritize hard user goals/factual errors → comprehension → taste. Client, director, and viewer roles are not factual precedence. Let the user resolve conflicting tradeoffs rather than majority-voting changes to confirmed plot. For vague "looks bad," ask once about a visible distinction, such as "too colorful or too much action?", while accepting free description.
 
-台账：`反馈ID｜来源｜对应版本/镜段｜原话｜归因层｜拟改动作｜保留项｜优先级｜负责人｜结果/证据｜用户是否接受`。落实后给结果，不长篇播报流程；同一问题反复出现先查是否改错层，避免不断加模块。拒绝或停止是边界，不当成待解决的反对意见。
+Ledger: `Feedback ID | Source | Version/shot | Original wording | Attributed layer | Proposed change | Retained items | Priority | Owner | Result/evidence | User acceptance`. After implementation, give the result rather than a long process broadcast. Repeated problems suggest changing the wrong layer; do not endlessly add modules. Refusal or stopping is a boundary, not an objection to overcome.
 
-## 项目管理空壳
+## Project-management shells
 
-这些空壳用于立项和交接，不进入最终提示词，不要求用户填写。AI从已有信息整理，真实缺项保空或候选。按[模板契约](../references/template-contract.md)分层，规则和表默认内部使用。
+These shells support setup and handoff, never final prompts, and do not require user completion. The assistant organizes existing information; real gaps stay blank or provisional. Separate layers according to the [template contract](../references/template-contract.md); rules and tables are internal by default.
 
 ```text
-通用：项目ID______ 版本______ 目标观众/观看条件______
-故事目标/用户不可改项______ 时长/画幅______ 平台模式______
-已定角色/资产______ 预算/授权/尝试上限______
-输入/输出路径______ 已完成范围______ 下一交接物______
+General: Project ID______ Version______ Audience/viewing conditions______
+Story goal/protected user facts______ Runtime/aspect______ Platform mode______
+Established characters/assets______ Budget/authorization/attempt ceiling______
+Input/output paths______ Completed scope______ Next handoff______
 ```
 
-| 类型 | 专属槽位空壳 | 交接重点 |
+| Type | Specific shell slots | Handoff focus |
 |---|---|---|
-| 短片 | 一次选择______ 代价______ 结果______ | 结构→镜头→实际输入→母版 |
-| PV | 体验承诺______ 差异点______ 结尾入口______ | 预告内容可兑现，不能无关蒙太奇 |
-| 单集 | 本集变化______ 进入/离开状态______ 衔接事实______ | 单集字段，不宣称系列管理系统 |
-| 广告 | 展示对象______ 唯一主收益______ 证据画面______ 行动入口______ | 不虚构功效，不代表品牌专用系统 |
+| Short | One choice______ Cost______ Result______ | Structure → shots → actual inputs → master |
+| Promotional video | Experience promise______ Distinction______ Ending entry______ | Teaser promises are deliverable, not unrelated montage |
+| Episode | Episode change______ Entry/exit states______ Connecting facts______ | Episode fields, not a claim of a series-management system |
+| Advertisement | Featured object______ One main benefit______ Evidence image______ Action entry______ | No invented efficacy; not a brand-specific system |
 
-每项目交付清单：选定文字、实际控制设置、制作备注、原片/选段、工程/依赖、母版/平台版、字幕/分轨（按任务有则列），验证分别写文件检查、播放、听音和实际上传。版本见[版本控制](finishing-and-release.md)，协作见[协作](finishing-and-release.md)。
+Per-project delivery list: selected text, actual controls, production notes, raw/selected clips, project/dependencies, master/platform versions, subtitles/stems where applicable. Report file checks, playback, listening, and actual uploads separately. See [version control](finishing-and-release.md) and [collaboration](finishing-and-release.md).
 
-## 版本与回滚
+## Versions and rollback
 
-分别记录项目方案、角色/场景资产、提示词、实际生成与成片版本；不要所有东西都叫final。建议命名`项目_类型_镜段_版本_状态`，例如`bridge_prompt_G02_v003_candidate`；这是管理命名，G编号不进入生成正文。
+Track design, character/scene assets, prompts, actual generations, and finished-film versions separately; do not name everything final. Suggested naming: `project_type_shot_version_status`, such as `bridge_prompt_G02_v003_candidate`. This is management naming; G numbers stay out of generation prose.
 
-版本表：`方案ID｜版本号｜父版本｜改动层/差异｜输入资产/模型模式｜输出路径｜选用理由｜弃用原因｜可回滚位置`。不覆盖原片与唯一合格版本；复制新稿再改，必要时用内容哈希确认同一文件。弃用不等于删除，清理按用户范围执行。
+Version table: `Design ID | Version | Parent version | Changed layer/differences | Input assets/model mode | Output path | Selection rationale | Discard reason | Rollback location`. Do not overwrite raw clips or the only qualified version. Copy a draft before editing; use content hashes when needed to confirm identical files. Discarding does not mean deletion; cleanup follows user scope.
 
-对比一次主要变量，选定后更新状态摘要，保留没选的分支；“用刚才红色那版”应能定位而不是要求用户重述。回滚需同步相关资产/提示词/接缝，不能只回文字留下新损毁图。项目级反馈见[反馈循环](finishing-and-release.md)，跨段事实仍由[一致性](../references/consistency.md)维护。
+Compare one main variable at a time, then update the state summary after selection and keep unused branches. "Use that red version from earlier" should be locatable without making the user repeat it. Rollback synchronizes assets/prompts/seams; restoring only text while leaving new damage images is incomplete. See the [feedback loop](finishing-and-release.md); [consistency](../references/consistency.md) still maintains cross-segment facts.
+

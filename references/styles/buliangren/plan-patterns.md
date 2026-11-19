@@ -1,100 +1,101 @@
-# 编排、分镜与提示词示例
+# Choreography, Storyboard, and Prompt Examples
 
-以下均为依据参考方法创作的新方案，不是原片招式或精确测量。
+All examples below are new designs based on reference methods, not original-film moves or exact measurements.
 
-## 把形容词改成可执行动作
+## Replace adjectives with executable action
 
-| 含糊写法 | 能指导执行的写法 |
+| Vague phrasing | Execution-guiding phrasing |
 |---|---|
-| 两人激烈缠斗 | A右手斜劈，B侧身让开刃线并扣住其右腕；A左肩顶开B，退到柱前两步处 |
-| 镜头疯狂旋转 | 镜头在两人南侧低位跟随A横移；A绕侧时镜头同步走短弧，保留柱子作参照 |
-| 内力爆炸，震撼全场 | 亮核出现在前臂与剑身接触处，短促气浪沿接触面向外扩散；A前脚滑退，衣摆晚于躯干甩出 |
-| 慢镜头突出打击感 | 接近快；手与剑的控制关系清晰时稍缓；气浪释放后恢复快，以中远景展示滑退 |
-| 他被打飞 | B掌根击中A上身，A胸肩先后仰、双脚离地，向身后门侧飞出；落地翻滚后撑剑起身 |
+| The two fight fiercely | A cuts diagonally with the right hand; B slips off the blade line and grips A's right wrist. A bumps B away with the left shoulder and retreats to two paces before the column |
+| The camera spins wildly | Low on their south side, the camera follows A laterally. As A flanks, it travels a short matching arc, retaining the column as reference |
+| Internal power explodes, stunning everyone | A bright core forms where forearm meets sword; a brief pressure wave spreads outward along the contact plane. A's lead foot slides back; the hem swings after the torso |
+| Slow motion emphasizes impact | Fast approach; slight slowing when hand/sword control becomes clear; speed returns after the pressure wave releases, with a medium-wide view of the slide |
+| He is blasted away | B's palm heel strikes A's upper body. A's chest/shoulders tilt back before both feet leave the ground toward the doorway behind; after landing and rolling, A braces on the sword to rise |
 
-## 根据本场目标选攻防关系
+## Choose attack/defense relationships by the scene's goal
 
-- **强弱压制：** 攻方不断加码，守方用更小动作截住；转折来自换策略，不只增大光效。
-- **势均力敌：** 先后手和位置交替；弱点被发现、保护、再次利用。
-- **双人合击：** 两名攻方任务、路线与进入时间有区别。一个牵制，一个打空门；守方先处理谁，决定另一人为何得手或失败。
-- **带伤脱身：** 旧伤改变支撑脚或持械方式；通过障碍、假动作与距离抢出口，不能突然忘记伤势。
-- **一对多突围：** 指定当前近身者、下一方向来袭者、封路者与出口。每次摆脱一人都改变与其余人的距离，不能把多个单挑直接串起来。
-- **护人或拖延：** 被保护者占据明确位置，迫使守方放弃某些躲法。追击、格挡、换位和撤离都考虑攻击是否会落到其身上，不只写一句“保护同伴”。
+- **Dominance:** the attacker escalates while the defender intercepts with smaller actions; a turn comes from changed strategy, not only larger light effects.
+- **Equals:** initiative and positions alternate; a weakness is discovered, protected, and exploited again.
+- **Two-person combination:** attackers have distinct tasks, routes, and entry times. One occupies the guard, one attacks the opening; whom the defender handles first explains the other's success/failure.
+- **Wounded escape:** existing injury changes support or grip; use obstacles, feints, and distance to gain an exit rather than forgetting the wound.
+- **One-against-many breakout:** name the current close opponent, next incoming direction, blocker, and exit. Escaping one opponent changes distances to the rest; do not string together isolated duels.
+- **Protection or delay:** locate the protected person clearly, constraining defensive dodges. Pursuit, blocks, position switches, and withdrawal consider whether the attack would hit that person; "protects a companion" is insufficient.
 
-不要每场都套“试探—合击—爆炸”。依据目标选择关系，把能力代价或位置损失写进转折。
+Do not impose "probe → combination → explosion" everywhere. Select relationships by goal and build ability costs or lost position into turns.
 
-### 群战的简短起稿示例
+### Brief group-fight draft
 
-新创作假设：主角持短棍，南侧是出口；敌甲在西侧近身，乙从东侧逼近，丙在北侧压上，南侧有低木案。主角短击甲持械腕让其退开，收棍转肩并压低头胸，让乙从东侧横扫的兵器掠过肩上；顺势向西南退到木案外侧，以木案挡住乙的追击直线，再向南门拉开距离。甲恢复后仍追，乙必须绕案，丙持续缩短北侧距离。
+Original design assumption: the protagonist carries a short staff, with an exit south; enemy A is close west, B approaches east, C presses from north, and a low wooden table stands south. The protagonist strikes A's weapon wrist to force separation, recovers the staff, turns the shoulder, and lowers head/chest as B's eastward-originating sweep passes overhead. Continuing southwest to the table's outside, the protagonist uses it to interrupt B's pursuit line and opens distance toward the south door. A recovers and pursues, B must go around the table, and C keeps closing from north.
 
-此例中木案只改变路线，未被打碎；没有命中的横扫不配撞击爆光。动作尚需细化成时间轴，不能当作已经验证过的成片。其重点是一个动作的收势同时服务于下一次避让，其他威胁始终在移动。
+The table changes routes but is not shattered; the missed sweep receives no impact flash. Timing still needs development; this is not a verified finished clip. The point is that recovery serves the next evasion while other threats remain in motion.
 
-### 按场景追加必要字段
+### Add necessary fields by scene
 
-| 场景类型 | 分镜中需要追加的具体信息 |
+| Scene type | Additional storyboard information |
 |---|---|
-| 群战 | 每名主要敌人的方向、任务、进入时间、被阻挡/绕行原因；主角摆脱后谁成为最近威胁 |
-| 环境破坏 | 谁施力、作用点、材料如何响应、碎片向哪走、人物如何失去/取得落脚点、破坏后的通路 |
-| 线、绳、鞭等软兵器 | 两端连接对象、松弛/绷紧变化、扫掠平面、避让距离、回收或转向时的受力 |
-| 空中或倒置视角 | 腾空前的位置与方向、空中身体朝向、画面旋转的理由、接回环境的镜头与落点 |
-| 护人 | 保护目标的位置、行动能力、搬动代价；守方让开后攻击会落在哪里；下一招如何继续挡住这条线 |
-| 对峙转出手 | 手/脚/武器的预动作、谁先察觉、威胁怎样进入有效距离、稳定构图在何处被动作打破 |
-| 雨夜 | 常态雨幕、湿地与能见度；局部接触的水花/水痕；闪光的实际来源与作用范围 |
+| Group fight | Direction, task, entry time, and obstruction/detour cause for each main enemy; nearest threat after the protagonist escapes |
+| Environmental destruction | Force source, application point, material response, debris direction, gained/lost support, routes after destruction |
+| Flexible weapons: line, rope, whip | Connections at both ends, slack/tension changes, sweep plane, clearance, force during recovery/redirection |
+| Airborne or inverted view | Position/direction before takeoff, airborne body orientation, reason for frame rotation, reestablishing shot and landing |
+| Protection | Target position, mobility, moving cost; where an attack lands if the defender yields; how the next move keeps blocking that line |
+| Standoff into attack | Preparatory hand/foot/weapon motion, who notices first, entry into effective distance, where action breaks stable framing |
+| Rain night | Normal rain, wet ground, visibility; local splash/water traces; actual flash source and range |
 
-上述字段由参考C的观察推导为设计工具，不是对原片隐藏设定的确认；证据范围见[方法来源](../../source-scope.md)，逐段观察已单独归档。
+These fields are design tools derived from reference C observations, not confirmation of hidden film lore. See [method sources](../../source-scope.md) for evidence scope; detailed observations are separately archived.
 
-### 护人场景怎样改变一招
+### How protection changes one move
 
-新创作假设：伤者靠北墙坐地，守方在其南侧两步处，攻方从更南侧突进。守方若单纯横闪，直刺会继续指向伤者，因此选择侧拨剑身并顶进半步，把刺线带到伤者右侧空地；随后向伤者方向退一步维持拦截位置，不追击远去的攻方。若改为携人脱身，需要另给扶起、负重转身和撤离的时间，不能一切镜便把伤者搬到出口。
+Original design assumption: an injured person sits against the north wall; the defender stands two paces south, with an attacker rushing from farther south. A simple lateral dodge would leave the thrust pointing at the injured person. Instead, the defender deflects the attacking blade sideways and steps in half a pace, guiding the thrust into empty ground to the target's right, then steps back toward the target to retain interception rather than pursuing the departing attacker. Carrying the injured person away requires separate time to raise them, turn under load, and withdraw; a cut cannot teleport them to the exit.
 
-这里没有强制觉醒或救场；需要反转时按已有故事给介入者的预兆、来路与代价。护人关系、器物预动作和雨夜处理的来源范围见[方法来源](../../source-scope.md)中的参考D记录；逐段观察已单独归档。
+No awakening or rescue is compulsory. If a reversal is needed, established story supplies the entrant's foreshadowing, route, and cost. For the scope behind protection, prop preparation, and rain-night treatment, see reference D in [method sources](../../source-scope.md); detailed observations are separately archived.
 
-## 15秒分镜示例：正面受阻后改抢侧位
+## 15-second storyboard: blocked head-on, then take the flank
 
-**条件：** A持右手单剑、动作快；B空手、力量强，可将防御内劲短时附在前臂，以侧向架偏剑身，不能裸臂迎向刃口。石殿东侧有门，中间偏北有柱。A起于西侧，B在中央，间距约4米。目的只为争取侧位，本段无伤亡。短白剑迹与金色防御亮点只是本例选择，不属于通用要求。
+**Conditions:** A is fast with a right-handed single sword. B is powerful and unarmed, briefly coating a forearm in defensive internal energy to deflect the sword's side, never presenting bare flesh to its edge. A stone hall has an east door and a column north of center. A begins west, B central, about 4 meters apart. The sole aim is to gain lateral position; no casualties. Short white blade trails and golden defensive highlights are choices for this example, not universal requirements.
 
-空间占位供自检：西为负x，北为正y。柱约(0,2)，A起点(-4,0)，B起点(0,0)。主要拍摄在南侧。
+Provisional positions for self-check: west is negative x, north positive y. Column near (0,2), A at (-4,0), B at (0,0). Main coverage is from south.
 
-| 时间 | 动作与结果 | 起止站位 | 景别与运镜 | 节奏与特效 |
+| Time | Action and result | Opening/ending positions | Shot size and camera | Rhythm and effects |
 |---|---|---|---|---|
-| 0—1.5秒 | A压低重心，目光从B扫向柱侧；B守中线 | A西，B中，4米 | 南侧低位中远景，短推；柱与门可见 | 稳定，无大面积发光 |
-| 1.5—3.5秒 | A冲近右手斜劈；B左前臂架偏剑身侧面，刃线离开身体 | A由西进入B西侧近身范围 | 南侧横向跟进，保留脚下 | 接近快，白迹跟刃口，金点在接触处出现 |
-| 3.5—5秒 | 看清B左臂外架、右掌抵住A肩前，截断继续压剑的路径 | 双方近身，位置不交换 | 手臂、剑身与肩部同框近景，轻推后稳 | 控制关系上稍缓，光不遮住手与剑 |
-| 5—7秒 | B右掌推开A；A向西滑退两步，重新踩稳，剑回身前 | A退至(-2,0)附近，B近中央 | 回中远景跟退，展示落脚 | 推开快、落脚稍留；肩先动，衣摆滞后，鞋底尘 |
-| 7—8.5秒 | A确认肩部受限，转看柱子；B准备再拦截 | A西，B中 | A上身与视线近景，末尾回双人关系 | 判断停顿，不加长蓄力 |
-| 8.5—11.5秒 | A抬剑佯攻上盘，诱B上架，随即不接触，斜向北绕至柱西南；B转身跟住 | A至约(-0.8,1)，B小幅转向 | 南侧中远景跟短弧，柱可辨 | 缓转快，佯攻不造命中爆光 |
-| 11.5—13.5秒 | B追一步伸右掌；A向柱南侧压低身位掠过，掌擦过其肩上方，未命中 | A由柱西南向B东北侧移；B向北小移 | 较宽画面连续展示，不靠切镜换位 | 快；衣发被掠过方向带动，无受伤反应 |
-| 13.5—15秒 | A在B东北侧两步外收剑立稳，B转身相对，变成侧位交锋 | A约(1.2,1)，B约(0,0.5) | 双人中远景，重新交代轴线 | 留结果，光迹消退，柱确认关系改变 |
+| 0–1.5 s | A lowers the center of gravity and looks from B to the column side; B holds center | A west, B center, 4 m apart | Low southern medium-wide, short push; column and door visible | Stable, no broad glow |
+| 1.5–3.5 s | A rushes in with a right diagonal cut; B's left forearm deflects the sword's side off the body | A enters close range west of B | Southern lateral follow, feet retained | Fast approach, white trail follows blade edge, gold appears at contact |
+| 3.5–5 s | B's left arm braces outward and right palm meets the front of A's shoulder, stopping further sword pressure | Close, no position swap | Arms, blade, shoulder in one close view; slight push then settle | Slightly slower on control, light preserves hands/sword |
+| 5–7 s | B pushes A away with right palm; A slides two steps west, replants, sword returns in front | A near (-2,0), B near center | Return medium-wide and follow retreat/feet | Fast push, brief landing read; shoulder moves before hem; dust at soles |
+| 7–8.5 s | A registers shoulder restriction and looks to column; B prepares another interception | A west, B center | A's upper body/gaze close, then restore the pair | Decision pause, no prolonged charge |
+| 8.5–11.5 s | A raises sword to feint high, draws B's upper guard, then avoids contact and angles north to column southwest; B turns to follow | A near (-0.8,1), B turns slightly | Southern medium-wide short arc, column readable | Slow to fast, no impact flash on feint |
+| 11.5–13.5 s | B steps after A and reaches right palm; A lowers and passes south of column, palm missing above shoulder | A moves from column southwest toward B's northeast; B slightly north | Wider continuous view; no cut-based position swap | Fast; cloth/hair follow passing direction, no injury response |
+| 13.5–15 s | A recovers sword and plants two paces northeast of B; B turns to face, now a flank exchange | A near (1.2,1), B near (0,0.5) | Two-person medium-wide reestablishes axis | Read the result, trails fade, column confirms changed relationship |
 
-总长：1.5+2+1.5+2+1.5+3+2+1.5=15秒。
+Total: 1.5 + 2 + 1.5 + 2 + 1.5 + 3 + 2 + 1.5 = 15 seconds.
 
-变化来自“正面受阻—看地形—佯攻绕侧”。具体脚步、近身距离与柱间空隙需在实际布局/白模中核对；坐标只是方案占位，并非动作捕捉验证。
+The change follows "frontal obstruction → notice terrain → feint and flank." Actual steps, close distance, and column clearance need layout/white-model checks. Coordinates are provisional blocking, not motion-capture validation.
 
-## 如何调节节奏
+## Adjusting rhythm
 
-- 更硬朗：压缩无信息蓄力，让时间给清楚的拦截、身体反应与落点。
-- 更压迫：延长一个控制关系，让被制者尝试挣脱，施压者的细小手部变化也持续传递信息。
-- 更快：压缩接近和重复出招，保留一次完整攻防阅读窗口与峰值后的结果。
-- 更宏大：扩大距离、传播路径和地形后果，同时拉开镜头；不能只把光放大，人物仍原地互推。
+- Harder: shorten uninformative preparation and allocate time to clear interception, bodily response, and landing.
+- More oppressive: extend one control relationship, show attempts to escape, and let tiny pressure-hand changes continue conveying information.
+- Faster: compress approach and repeated attacks while preserving one complete attack/defense reading window and the result after the peak.
+- Grander: expand distance, propagation, and terrain consequences while widening the camera; enlarging light while figures keep pushing in place is insufficient.
 
-若要帧级剪辑表，先确认目标帧率，再换算并校验总帧数。参考含变速与重复姿态，不能推算成所有动作应持续几帧的统一标准。
+For a frame-level edit sheet, confirm target frame rate first, then convert and check total frames. References contain retiming and repeated poses; they cannot establish one universal frame duration for all moves.
 
-## 按需转写 AI 视频提示词
+## Adapting to AI video prompts as needed
 
-按通用[生成交接检查](../../generation-handoff.md)先确认使用条件与素材。每小段检查一个主要攻防事件；连续冲近与同一次格挡可构成一条因果链，后续肩控、推击、绕柱反击则另查负荷，不把整套动作只命名为“格挡”。前段终点成为后段设计起点，实际连续性仍须视频核对。
+Use the general [generation handoff](../../generation-handoff.md) to establish conditions/assets first. Check one main attack/defense event per short passage. Continuous approach and the same block may form one causal chain; subsequent shoulder control, push, and column counterattack need separate capacity checks rather than naming the entire sequence "a block." One ending supplies the next designed opening; actual continuity still needs video inspection.
 
-组织顺序：`主体与起始姿态 → 主动作和应对 → 路径/接触/后果 → 场地锚点 → 风格 → 主要运镜与切点 → 结束状态 → 按需声音`。
+Order: `Subjects and opening posture → Main action and response → Route/contact/consequence → Scene anchors → Style → Main camera movement and cuts → Ending state → Sound as needed`.
 
-格挡段示例（仅斜劈与架偏，肩部控制另段；新拟提示词，尚未动态验证）：
+Block example (diagonal cut and deflection only; shoulder control is separate; new prompt, not dynamically verified):
 
-> 黑色短发、深蓝短袍的青年剑客在画面左侧，右手持单剑；束发、暗金长袍的中年空手武者在中央。剑客已进入一剑距离，右手剑斜劈武者肩侧。武者左前臂附着局部防御内劲，从剑身侧面架偏，使刃线离开自己身体；剑客右臂随偏转移向外侧，单剑仍在右手。稳定侧面中全景保留双方脚下、左后石柱与右后殿门。硬朗三维武侠动作，接触金光短闪后消退，手与剑清楚。结束时刃口已偏出武者肩线，双方仍近身，武者右掌留在自己胸前。
+> A young swordsman with short black hair and a dark-blue short robe stands screen left, holding a single sword in his right hand. A middle-aged unarmed fighter with tied hair and a dark-gold long robe stands central. Within sword range, the swordsman cuts diagonally toward the fighter's shoulder. Local defensive internal energy coats the fighter's left forearm as it deflects the sword's side away from his body. The swordsman's right arm follows outward; the sword remains in his right hand. A stable side-on medium-wide retains both fighters' feet, the stone column rear left, and hall door rear right. Crisp three-dimensional wuxia action; contact gold flashes briefly and fades, hands and sword readable. At the end the edge lies outside the fighter's shoulder line, both remain close, and the fighter's right palm stays before his own chest.
 
-如需声音可另加鞋底擦地、短促金属碰击、衣袖掠动等新设计，不归因为参考听感。
+If sound is needed, add new designs such as sole scrapes, brief metal contact, or passing sleeves; do not attribute them to listening to the reference.
 
-**实际提供参考时的职责：** 角色图用于身份、衣装与武器；动作视频借攻防、路线与速度关系；场景图用于地标、空间和光向；风格图用于材质与色调。不借参考的水印、字幕、人物身份与平台片尾。已有术法形态另行保留，不被示例颜色覆盖；图片是输入约束，动态是否遵守需验证。无参考时使用文字分支，不声称图已锁定。
+**Responsibilities of references actually provided:** character images supply identity, clothing, and weapons; action video supplies attack/defense, routes, and speed relationships; scene images supply landmarks, space, and light direction; style images supply materials and palette. Do not borrow watermarks, subtitles, identities, or platform end cards. Preserve established ability forms separately; example colors do not override them. Images are input constraints, while dynamic adherence needs verification. Without references, use the text-only branch and never claim image locking.
 
-## 调用示例
+## Invocation example
 
-`使用 $ai-video-prompts，并选择不良人参考模块。角色：……；武器/能力：……；场地：……；时长：……；目的/结果：……。给我攻防编排、时间轴分镜、运镜、节奏和特效反馈。`
+`Use $ai-video-prompts and select the Buliangren reference module. Characters: …; weapons/abilities: …; arena: …; duration: …; goal/result: …. Give me attack/defense choreography, timed storyboard, camera, rhythm, and effects feedback.`
 
-信息不齐仍可先给方案。只有用于特定生成工具时，才追加该工具的时长、参考输入与提示词格式限制。
+A design may be offered despite incomplete information. Add tool-specific duration, reference-input, and prompt-format limits only when adapting to a particular generator.
+

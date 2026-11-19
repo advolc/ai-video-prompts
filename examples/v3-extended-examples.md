@@ -40,27 +40,27 @@ Wu | "Tuesday. Yes, sir. The paperwork was filed late, and I should have caught 
 
 **What the lint sees:** a few modal words ("should have caught it") appear inside a quoted line and are fine.
 
-## Example 2: Action with a seam (Chinese)
+## Example 2: Action with a seam (translated example)
 
-**Inputs:** 雪夜，旧塔门口。林握短杖守门，韩持长矛。林左前臂有伤，不能暴露。韩一刺，林架开并近身，韩退半步。结果：不分胜负。
+**Inputs:** A snowy night at an old tower door. Lin guards the entrance with a short staff; Han carries a spear. Lin has a concealed left-forearm injury. Han thrusts, Lin parries and closes, and Han gives half a step. Neither wins.
 
-**情境档案：** 动作模式：对决（守门的僵持，一方隐藏伤势）｜终态：定格。若改为困兽之斗，节奏会不同（见 `context-routing-examples.md` 第2例）。
+**Context Profile:** Duel: a doorway stalemate with one person concealing an injury. End-state: hold. A last-stand version would need different rhythm (see case 2 in `context-routing-examples.md`).
 
-**设计记录（内部）：** 锁定：林左前臂伤、短杖、长矛、不分胜负。新增质感：雪、呼出白气、门边灯笼、杖上的包浆。事件层（A）：刺—架—近身—退，一条接触链。表演层（B）：林左手藏袖、呼吸浅而平；韩目光落在她的袖口。质感层（C）：灯笼琥珀光、冷蓝环境、粗颗粒、窄快门。
+**Internal design:** Locked: Lin's left-forearm injury, staff, spear and unresolved result. Added texture: snow, breath fog, a doorway lantern and staff patina. Tier A: thrust -> parry -> close -> retreat in one contact chain. Tier B: Lin hides her left hand in her sleeve and breathes shallowly; Han watches her cuff. Tier C: amber lantern light, cold blue ambient, coarse grain and a narrow-shutter feel.
 
-**可复制文本（扩展版）：**
+**Copyable prose (Extended):**
 
-> 写实电影质感，16:9。35毫米镜头，手持带呼吸感，窄快门使动作清脆利落，35毫米胶片的中等颗粒，灯笼周围有淡淡的高光光晕，冷蓝与琥珀的色调，暗部压得厚重，黑色里保留粗布的纹理。
+> Photoreal cinematic imagery, 16:9. A 35 mm lens with handheld operator breath, crisp narrow-shutter motion and medium 35 mm film grain. Faint halation surrounds the lantern; cold blue and amber dominate, with dense shadows retaining coarse fabric texture.
 >
-> 林三十出头，脸窄，右眉略高于左眉，鼻尖和耳缘被冻得发红，嘴唇干裂、左嘴角有一道小口子；短发束在脑后，几缕碎发被风掀起；一身灰色旧棉袄，肘部压出扁平的棉线，左袖口垂得很长、被手磨得发白；右手握一根短铁头木杖，木纹被掌心磨得发亮。韩四十岁上下，高个，下颌胡茬粗短、杂着灰白，眼下有一道旧痕，灰色旅行外套，肩头积着雪，双手握一杆长矛，矛杆深色，握持处磨得发暗，矛尖蒙着一层薄油。
+> Lin is in her early thirties, narrow-faced, with the right brow slightly higher. Cold reddens her nose tip and ear rims; her lips are cracked with a small split at the left corner. Short hair is tied behind her head, stray strands lifting in the wind. Her old grey padded jacket has flattened quilting at the elbows and a long left cuff worn pale by her hand. Her right hand grips a short iron-tipped wooden staff, its grain polished by her palm. Han is about forty and tall, with coarse grey-flecked jaw stubble and an old mark under one eye. Snow gathers on the shoulders of his grey travel coat. He holds a long spear in both hands; its dark shaft has darkened further where it is gripped and its point carries a thin film of oil.
 >
-> 夜里的旧塔门口，石阶覆着薄雪，门框边挂着一盏灯笼，琥珀色的光落在门槛和林的右脸颊上，背景是冷蓝的雪夜，雪片从光里斜斜落下。两人每次呼气都留下一团白气，灯笼的火苗被穿堂风吹得微微偏向左侧，影子随之轻轻摆动。林的眼睛里有一个小小的灯形亮点。
+> Thin snow covers the old tower steps at night. A lantern beside the frame lights the threshold and Lin's right cheek amber against the cold blue snowfall. Flakes slant through its light and each exhale leaves a pale cloud. A cross-draft bends the flame slightly left, gently shifting its shadows. A small lantern-shaped catchlight sits in Lin's eyes.
 >
-> 林站在门里，重心压在右腿，左手缩进袖子，门闩斜靠在她右肩上，呼吸又浅又平。韩站在一矛之外，目光落在她的左袖上，长矛低垂在身前，他的呼气在冷空气里拉得很长。韩先把矛尖抬起半寸，随即向她胸口直刺。林的右手把短杖横过矛杆，向身体左侧一扫，矛尖滑过她原来胸口的位置；杖头压住矛杆后，她右脚向前一步，杖身与右肩一起顶上韩的胸口。韩的胸口先陷了一下，随后向后退出半步，膝微屈稳住脚，矛从身前收回。镜头随林的这一步向前微微跟推，在接触的一刻稳住，雪片在镜头前掠过。林停在原地，左臂仍藏在袖中，右手握杖，呼吸依旧又浅又平。
+> Lin stands inside the doorway with weight on her right leg, her left hand withdrawn into her sleeve and the short staff resting diagonally on her right shoulder. Her breathing stays shallow and even. Han waits a spear length away, watching her left sleeve, his spear lowered and his exhale drawn long in the cold. He lifts the point a small fraction, then thrusts straight at her chest. Lin brings her right-hand staff across the shaft and sweeps left; the point slides past where her chest had been. With the staff head pinning the shaft, she steps forward on her right foot and drives the staff and right shoulder into Han's chest. His chest compresses first; then he yields half a step, steadies on slightly bent knees and draws the spear back. The camera follows Lin's step in a small push, settling at contact as snow crosses the foreground. Lin stops with her left arm still hidden, staff in her right hand and the same shallow, even breath.
 >
-> 雪落在石阶上的声音很轻，木杖与矛杆碰撞发出一声短促的闷响，灯笼的灯绳在风里轻轻磕着门框。画面最后停在林站在门里、门开在她身后、韩在一矛之外收着长矛，雪继续落在两人之间，灯笼的琥珀光在林的脸颊上微微晃动。
+> Snow lands softly on the stone steps. Staff and spear shaft meet with a short dull knock, and the lantern cord lightly taps the frame in the draft. The final frame holds Lin inside the open door and Han a spear length away with his weapon recovered. Snow continues between them while amber lantern light gently moves over Lin's cheek.
 
-**备注（块外）：** 新增：灯笼、呼出白气、杖上的包浆、雪。假设：未核实原生音频。
+**Notes outside the block:** Added: lantern, breath fog, staff patina and snow. Native audio capability is unverified.
 
 ## Example 3: Face close-up (English, protect the user target)
 
@@ -76,7 +76,7 @@ Wu | "Tuesday. Yes, sir. The paperwork was filed late, and I should have caught 
 >
 > Han stands just out of focus in the foreground, the edge of his grey travel coat and a hand gripping a spear shaft softly blurred, and the stone doorway behind Lin shows a worn threshold under a thin layer of snow. Snow falls through cold blue air; a lantern at the camera's right throws a warm edge across her cheek and jaw, its flame leaning slightly in the draft, and a small lantern-shaped highlight sits in each of her eyes. Each exhale leaves a pale puff in front of her face.
 >
-> She looks at Han's face, her expression level, her breath shallow and even. When Han says her name, her upper lids lift a hair and her brows draw together for an instant; her lips press into a thin line, her throat moves in one swallow, and a pulse ticks at her neck. Then her face smooths into a calm, patient blankness, and her eyes drop for a moment to Han's hands before returning to his face. The camera's push-in has barely moved when Han speaks again, and a snowflake lands on her lashes and melts. Her gaze holds steady on him.
+> She looks at Han's face, her expression level, her breath shallow and even. When Han says, low and steady, "Lin, your left forearm is wounded," her upper lids lift a hair and her brows draw together for an instant; her lips press into a thin line, her throat moves in one swallow, and a pulse ticks at her neck. Then her face smooths into a calm, patient blankness, and her eyes drop for a moment to Han's hands before returning to his face. The camera's push-in has barely moved as his words trail off, and a snowflake lands on her lashes and melts. Her gaze holds steady on him.
 >
 > The night is quiet except for the soft tick of snow on stone and the faint creak of the lantern's cord. The shot ends on Lin's face holding still, the lantern's amber on her cheek, the cold blue behind her, and a single snowflake settling on her shoulder.
 
@@ -91,3 +91,12 @@ Wu | "Tuesday. Yes, sir. The paperwork was filed late, and I should have caught 
 ## Compact tier (same scene, for "short/lite")
 
 > Live-action drama, 85 mm, shallow depth of field, warm tungsten, fine grain. Chen, mid-fifties, grey stubble, charcoal jacket, sits far back in a leather armchair, ankle over knee, a porcelain cup on his knee; Wu, early thirties, grey suit, perches on the front of a wooden chair, palms on his thighs. Wu says, thin and fast, "Sir, the shipment, it, uh, it didn't clear customs on Tuesday." Chen lifts the cup, sips with his eyes on Wu, sets it down with a click, and says low, "Tuesday." Warm lamp on Wu's chin, grey window light on Chen's hair. The shot ends on both still in their seats.
+
+## Fixed-camera defense: short output, complete design
+
+User facts: a guard with a short staff holds a narrow doorway against a spear thrust, redirects it, and keeps the doorway. No injury or winner is added. Spatial record: guard inside threshold, attacker outside at spear reach; the guard remains planted, spear is redirected outside the opening. This is a design example, not a model test.
+
+> A fixed medium-wide view holds the doorway and both fighters. The guard braces his rear foot against the threshold, his short staff across his body. The attacker thrusts the spear at his chest. The guard catches the shaft with the staff and turns it toward the outer doorpost; his shoulders yield with the pressure while his feet keep their place. The spear point passes outside the opening. The attacker draws it back; the guard restores the staff across the doorway. Wood knocks against wood, then the scrape of the spear shaft fades.
+
+Coverage: attack, contact, redirection, recovery and continued guarding are visible. No camera orbit, height change or anchor change is needed. In a pursuit or open duel, the same toolkit may instead support extensive travel; do not transfer this hold to every fight.
+

@@ -1,362 +1,364 @@
-# AI 视频打戏灵感库
+# AI Video Fight Inspiration Library
 
-## 一、 世界与画风基调
+Traditional length labels such as chi and cun are retained where the fictional setting uses them; establish the appropriate physical scale in scene design.
 
-### 1. 传统东方/修仙
+## World
 
-- **【雨夜镖局】**：青石院落被雨水磨得发亮，两名镖师用沾水的木棍争夺门前一尺空隙。
-- **【竹海问剑】**：竹竿在山风里反复弯折，灰衣剑客借摇晃的竹影隐藏每次进剑的方向。
-- **【雪寺残钟】**：积雪压住破寺屋脊，交锋震动铜钟，让迟落的雪块暴露屋顶来人的位置。
-- **【水墨江湖】**：宣纸般的黑白山城里，刀尖划过的墨线短暂成为能踩踏的实体桥。
-- **【皮影斗法】**：暖黄幕布后的纸皮武者翻折关节，用竹签投影把对手困进灯光边缘。
-- **【青铜仙朝】**：悬浮祭坛由生锈青铜拼接，修士每次落脚都让鼎壁纹路亮起一格。
-- **【盐湖御剑】**：白色盐壳与天空连成镜面，低飞剑影先切开地表，再逼出藏在倒影中的人。
-- **【纸扎夜行】**：红灯笼照着纸糊街巷，纸甲守卫受到重击后散开又沿竹骨重新合拢。
-- **【傩面石城】**：戴木刻傩面的武者在黑石阶上对阵，面具裂缝逐次泄出另一副表情。
-- **【瓷山修仙】**：整座山门由白瓷烧成，剑客必须控制落脚力度以免把撤退路线踩成碎片。
+### 1. Traditional Eastern/Cultivation
 
-### 2. 赛博/未来科幻
+- **[Rain-Night Escort Agency]**: Rain polishes a bluestone courtyard until it shines; two armed escorts use wet wooden staffs to contest one chi of clearance before the door.
+- **[Sword Duel in a Bamboo Sea]**: Bamboo poles repeatedly bend in the mountain wind; a gray-robed swordsman uses their swaying shadows to conceal the direction of each thrust.
+- **[Broken Bell at a Snowbound Temple]**: Snow weighs down a ruined temple roof; the clash vibrates a bronze bell, and delayed falling snow reveals the rooftop intruder's position.
+- **[Ink-Wash Martial World]**: In a black-and-white mountain city resembling xuan paper, ink lines drawn by a blade tip briefly become solid bridges that can bear a footstep.
+- **[Shadow-Puppet Sorcery Duel]**: Behind a warm yellow screen, paper-and-hide warriors fold their joints and use bamboo-rod projections to trap an opponent at the edge of the light.
+- **[Bronze Immortal Dynasty]**: A floating altar is assembled from rusty bronze; each cultivator's footfall illuminates another segment of pattern on a ritual cauldron's wall.
+- **[Flying Swords over a Salt Lake]**: White salt crust and sky join into a mirror; low-flying sword shadows cut the surface before forcing out someone hiding in a reflection.
+- **[Night Walk Through Paper Effigies]**: Red lanterns light paper-built streets; paper-armored guards scatter under heavy blows, then close again along bamboo frames.
+- **[Nuo Masks in a Stone City]**: Warriors wearing carved wooden Nuo masks face off on black stone steps; cracks in their masks gradually release another expression.
+- **[Cultivation on Porcelain Mountain]**: The entire sect complex is fired from white porcelain; a swordsman must control footfall force to avoid crushing the retreat route into fragments.
 
-- **【霓虹义体巷】**：潮湿窄巷映着故障广告，义体拳手的机械肘每次过载都弹出赤热散热片。
-- **【轨道维修战】**：空间站外的铝合金桁架缓慢转动，两名维修员靠磁靴短吸附完成换位。
-- **【数据折叠城】**：玻璃街区像文件窗口逐层收起，追逐者必须在地面被归档前跳到下一层。
-- **【生物机甲庭】**：半透明培养舱组成温室，骨质机甲借柔韧管线改变挥拳后的回收路线。
-- **【磁悬浮擂台】**：六块金属平台按不同速度漂移，武者用磁力护腕临时固定一块落脚板。
-- **【像素故障区】**：街道边缘不断掉落方形色块，格斗者每闪避一次就留下短暂的低帧率残影。
-- **【液态金属站】**：无人车站的水银色闸机不断变形，追兵把栏杆拉成盾面封住出口。
-- **【复古太空歌剧】**：黄铜仪表与真空管铺满飞船走廊，披斗篷的剑士以电弧照亮狭窄交汇处。
-- **【记忆打印厂】**：半透明人形从树脂打印架上起身，守卫必须分辨哪一个影像真的压弯了地板。
-- **【机械昆虫王庭】**：巨型甲虫背部承载齿轮宫殿，骑手沿振动的金属翅鞘展开贴身争夺。
+### 2. Cyberpunk/Future Science Fiction
 
-### 3. 现代都市/异能
+- **[Neon Cybernetic Alley]**: Faulty advertisements reflect in a wet narrow alley; a cybernetic boxer's mechanical elbow ejects red-hot cooling fins whenever it overloads.
+- **[Orbital Maintenance Battle]**: Aluminum-alloy trusses slowly rotate outside a space station; two maintenance workers reposition through brief magnetic-boot attachments.
+- **[Data-Folding City]**: Glass city blocks fold away layer by layer like file windows; pursuers must jump to the next level before the ground is archived.
+- **[Biomechanical Armor Garden]**: Translucent cultivation tanks form a greenhouse; a bone-armored mech uses flexible tubing to alter its fist's recovery path after each punch.
+- **[Maglev Arena]**: Six metal platforms drift at different speeds; fighters use magnetic bracers to temporarily fix one foothold plate in place.
+- **[Pixel Glitch Zone]**: Square color blocks continually fall from the street edges; every dodge leaves a brief low-frame-rate afterimage behind the fighter.
+- **[Liquid-Metal Station]**: Mercury-colored gates continually reshape in an unmanned station; pursuers stretch railings into shield surfaces to block the exit.
+- **[Retro Space Opera]**: Brass instruments and vacuum tubes fill a spaceship corridor; a cloaked swordsman illuminates a narrow intersection with an electric arc.
+- **[Memory Printing Factory]**: Translucent human forms rise from resin-printing rigs; a guard must distinguish which image actually bends the floor.
+- **[Mechanical Insect Court]**: A gear-driven palace rides on a giant beetle's back; riders fight at close range along vibrating metal wing cases.
 
-- **【凌晨便利店】**：冷白灯照着塑料货架，两名普通人围绕唯一出口展开短促推挡与夺路。
-- **【旧楼楼梯间】**：剥落墙皮夹住回声，拳手靠扶手和转角遮挡限制对方连续逼近。
-- **【玻璃金融城】**：幕墙倒映数十个身影，能交换倒影位置的异能者让追兵不断误判距离。
-- **【末班地铁】**：不锈钢车厢随轨道摇摆，疲惫乘客抓住吊环稳住身体再避开一次扑击。
-- **【拳馆停电夜】**：拳台边只剩应急绿灯，两名旧队友靠脚步、呼吸和绳圈振动判断对手。
-- **【暴雨天台】**：城市屋顶积水没过鞋底，能控制一小片干燥地面的异能者争抢可靠落点。
-- **【外卖骑手觉醒】**：狭窄商场后巷堆着保温箱，骑手用瞬间变重的背包挡开一次冲撞。
-- **【影子晚高峰】**：人行天桥下车灯横扫，守卫只能在对手影子接上自己脚边时发动束缚。
-- **【时间慢半拍】**：写字楼茶水间里杯水仍在坠落，一名保洁员用局部慢时争取绕过刀线的半步。
-- **【声音实体街区】**：雨棚下的金属敲击声凝成短墙，街头乐手用节奏改变追兵的接近路线。
+### 3. Modern Urban/Superpowers
 
-### 4. 异星废土/末日
+- **[Convenience Store Before Dawn]**: Cold white lights illuminate plastic shelves; two ordinary people exchange brief pushes and blocks while contesting the only exit.
+- **[Old-Building Stairwell]**: Peeling walls contain the echoes; a boxer uses handrails and corner occlusion to restrict the opponent's successive advances.
+- **[Glass Financial District]**: Curtain walls reflect dozens of figures; a superpowered person who can swap reflection positions repeatedly makes pursuers misjudge distance.
+- **[Last Subway Train]**: A stainless-steel carriage sways with the track; an exhausted passenger grips a hanging strap to steady the body before avoiding a lunge.
+- **[Blackout at the Boxing Gym]**: Only green emergency lights remain beside the ring; two former teammates locate each other through footwork, breathing, and rope vibrations.
+- **[Rooftop in a Downpour]**: Water rises above shoe soles on a city rooftop; superpowered people who can control a small patch of dry ground compete for reliable footholds.
+- **[Delivery Rider Awakening]**: Insulated delivery boxes fill a narrow mall back alley; a rider blocks a collision with a backpack that instantly becomes heavier.
+- **[Shadow Rush Hour]**: Headlights sweep beneath a pedestrian overpass; a guard can bind an opponent only when their shadow reaches the guard's feet.
+- **[Time Half a Beat Slow]**: In an office kitchenette, spilled water is still falling; a cleaner uses localized slow time to gain the half-step needed to bypass a blade line.
+- **[Solid-Sound District]**: Metallic strikes beneath an awning condense into short walls; a street musician changes the pursuers' approach route through rhythm.
 
-- **【红沙铁骸】**：报废运输车半埋在铁红沙丘中，拾荒者沿车壳裂缝滑落以避开高处攻击。
-- **【冰封反应堆】**：废弃核岛覆着蓝色冰壳，厚重防寒服让守卫每次抬臂都显得迟缓而吃力。
-- **【孢子废城】**：菌丝穿过商场瓷砖，戴滤毒面罩的追逃者必须避开一踩就喷雾的软地面。
-- **【双月低重力】**：黑色玄武岩平原悬着两轮月亮，武者跃起后必须靠喷气背包修正过长的腾空。
-- **【盐蚀钢船坟】**：干涸海床上船体层层倾倒，拾荒队在白盐和锈铁之间争夺最后一只水箱。
-- **【巨兽骨架镇】**：定居点嵌在巨大肋骨之间，守门者沿弧形骨梁把追兵引向无法并排通过的缺口。
-- **【太阳帆荒原】**：破损反光薄膜在热风中翻卷，流亡者用炫目的帆影掩护一次近身反制。
-- **【重力裂谷】**：碎石在谷底向上坠落，猎人必须先判断哪块岩壁才是当前的落地方向。
-- **【塑料海末日】**：彩色废塑料压成漂浮岛，轻装者与重甲守卫因落脚承重不同而走出两条路线。
-- **【活体行星】**：地表像呼吸的皮膜起伏，骨刃武者每次攻击都可能触发脚下土地的收缩。
+### 4. Alien Wasteland/Apocalypse
 
-## 二、 空间与物理限制
+- **[Iron Skeletons in Red Sand]**: A scrapped transport lies half buried in iron-red dunes; a scavenger slides down a split in its shell to evade an attack from above.
+- **[Frozen Reactor]**: Blue ice covers an abandoned nuclear island; bulky cold-weather clothing makes every lift of a guard's arm slow and strenuous.
+- **[Spore-Ruined City]**: Fungal threads pierce shopping-mall tiles; masked pursuers and fugitives must avoid soft ground that sprays mist when stepped on.
+- **[Twin Moons and Low Gravity]**: Two moons hang over a black basalt plain; after leaping, fighters must use jetpacks to correct excessively long airtime.
+- **[Salt-Corroded Steel Ship Graveyard]**: Hulls lie toppled in layers on a dry seabed; scavengers contest the last water tank amid white salt and rusty iron.
+- **[Town in a Giant Skeleton]**: A settlement nestles between enormous ribs; the gatekeeper leads pursuers along curved bone beams toward a gap too narrow for side-by-side passage.
+- **[Solar-Sail Wasteland]**: Torn reflective film curls in hot wind; an exile uses dazzling sail shadows to cover a close-range counter.
+- **[Gravity Rift]**: Gravel falls upward from the valley floor; a hunter must first determine which rock face is the current landing direction.
+- **[Plastic-Sea Apocalypse]**: Colored waste plastic is compressed into floating islands; lightly equipped travelers and heavily armored guards follow different routes because their footholds bear different loads.
+- **[Living Planet]**: The surface rises and falls like breathing skin; every attack by a bone-blade warrior may trigger contraction of the ground underfoot.
 
-### 1. 极度狭窄/封闭
+## Space
 
-- **【卡层电梯】**：金属轿厢停在两层之间，长兵器无法展开，争斗围绕窄门缝和扶手发生。
-- **【卧铺夹道】**：列车卧铺只留一人宽通道，上铺垂下的床帘反复遮住近侧手臂。
-- **【水泥检修管】**：圆形排水管逼得双方侧身前进，膝肘动作比大幅挥拳更有空间。
-- **【玻璃电话亭】**：四面透明玻璃把双方困在原地，每次推挡都会改变亭外观察者看到的轮廓。
-- **【货柜迷盒】**：集装箱内堆满软包与木箱，守卫移动一只箱子就能重新堵住通道。
-- **【铁笼升降井】**：开放铁笼沿井壁上升，攻击者必须避开从栏杆外擦过的横梁。
-- **【旋转门困局】**：四扇玻璃翼不断转动，追逃双方只能在同一格接近或隔着玻璃错过。
-- **【钟腹内战】**：巨大铜钟内部没有直立空间，双方围绕摆动钟舌寻找可承重的位置。
-- **【岩缝擦肩】**：粗糙石壁只容半身挤过，先进入者必须在无法转身时保护背后的目标。
-- **【折叠帐篷】**：风暴压扁帆布与轻铝支架，营地守卫在不断变窄的空间里争取撑开出口。
+### 1. Extremely Confined/Enclosed
 
-### 2. 极度空旷/大尺度
+- **[Elevator Stuck Between Floors]**: A metal car stops between two floors; long weapons cannot extend, and the fight revolves around a narrow door gap and handrails.
+- **[Sleeper-Car Passage]**: A train's sleeping berths leave a one-person-wide aisle; curtains hanging from upper bunks repeatedly obscure the nearer arm.
+- **[Concrete Maintenance Pipe]**: A round drain forces both sides to advance sideways; knee and elbow actions have more room than broad punches.
+- **[Glass Telephone Booth]**: Four transparent glass walls confine both sides; each push or block changes the silhouettes seen by an observer outside.
+- **[Container Maze Box]**: Soft packages and wooden crates fill a shipping container; moving a single crate lets the guard block the passage again.
+- **[Iron-Cage Lift Shaft]**: An open iron cage rises along a shaft wall; the attacker must avoid crossbeams brushing past outside the bars.
+- **[Revolving-Door Trap]**: Four glass wings keep turning; pursuer and fugitive can approach only within the same compartment or pass each other separated by glass.
+- **[Fight Inside a Bell]**: A giant bronze bell offers no room to stand upright; both sides seek load-bearing positions around its swinging clapper.
+- **[Squeezing Through a Rock Cleft]**: Rough rock walls barely admit a sideways body; the first person in must protect the objective behind them while unable to turn around.
+- **[Collapsing Tent]**: A storm flattens canvas and lightweight aluminum supports; camp guards struggle to prop open an exit as the space keeps shrinking.
 
-- **【无影白盐原】**：平整盐地看不到掩体，攻击者的奔跑距离和扬尘成为唯一速度参照。
-- **【巨型机库】**：高顶机库里停着远大于人物的运输机，守卫必须跨过漫长空地才能接近舱门。
-- **【环形干船坞】**：百米船坞底部只有一层浅水，远处踏水声先于来敌身影抵达。
-- **【废弃机场跑道】**：粗沥青延伸到热浪里，追兵以跑道标线为尺逐步压缩双方距离。
-- **【月面陨坑】**：灰色盆地让身影显得极小，两名宇航员的每次跃进都留下可追溯的尘土弧线。
-- **【退潮黑沙滩】**：湿黑沙地缓慢露出大片空场，守卫利用退去的水线判断对方加速的时机。
-- **【万席空球场】**：空看台围住中央草坪，双方绕着球门与喷灌水柱进行长距离追逐。
-- **【无限棋盘厅】**：黑白石格一直铺到雾里，每走错一格都会让相邻地面升起成为新墙。
-- **【巨树根平原】**：树根如山脊横贯草地，奔跑者从低矮人物逐渐变成巨根表面的移动点。
-- **【云上方碑阵】**：孤立石碑漂在广阔云海中，双方必须提前选择数次跳跃后的落脚路线。
+### 2. Extremely Open/Large Scale
 
-### 3. 特殊地表/介质（湿滑、失重、水下等）
+- **[Shadowless White Salt Flat]**: A level salt plain offers no cover; an attacker's running distance and raised dust become the only speed references.
+- **[Giant Hangar]**: A transport aircraft far larger than the people stands beneath a high hangar roof; guards must cross a long open stretch to reach its hatch.
+- **[Circular Dry Dock]**: A hundred-meter dock holds only shallow water; distant splashes arrive before the approaching enemy becomes visible.
+- **[Abandoned Airport Runway]**: Rough asphalt extends into heat shimmer; pursuers use runway markings as a ruler while gradually closing the gap.
+- **[Lunar Crater]**: A gray basin makes the figures tiny; each bounding advance by two astronauts leaves a traceable arc of dust.
+- **[Black Beach at Low Tide]**: Wet black sand slowly reveals broad open ground; a guard reads the receding waterline to judge when the opponent accelerates.
+- **[Empty Stadium with Ten Thousand Seats]**: Empty stands surround a central lawn; both sides pursue over long distances around goals and sprinkler jets.
+- **[Infinite Chessboard Hall]**: Black-and-white stone squares extend into fog; every wrong step raises adjacent ground into a new wall.
+- **[Plain of Giant Tree Roots]**: Roots cross the grass like mountain ridges; a runner gradually changes from a small human figure into a moving speck on a giant root.
+- **[Obelisks Above the Clouds]**: Isolated stone monuments float across a vast cloud sea; both sides must plan foothold routes several jumps ahead.
 
-- **【薄冰回声】**：湖面冰壳在脚下不断细裂，双方越想发力越可能先失去支撑。
-- **【齐腰急流】**：浑水持续推着膝腿，武者借上游石块暂时稳身再完成一次格挡。
-- **【失重货舱】**：漂浮箱体缓慢相撞，人物必须推开物件才能获得反向移动的动量。
-- **【深潜玻璃廊】**：海底观景廊突然进水，厚玻璃与浮力让冲刺变成缓慢而沉重的贴近。
-- **【油膜停车场】**：光滑水泥覆着彩色油膜，双方用车轮挡块和粗糙柱脚寻找可靠落点。
-- **【滚珠地板】**：散落钢珠铺满仓库，武者只能抓住固定货架才能抵住对方的推力。
-- **【黏土沉脚】**：湿红黏土反复吸住鞋底，轻装逃亡者用短步转髋躲开重甲追兵。
-- **【流沙硬壳】**：沙面看似平整却逐块下陷，守卫每次落脚都必须先探出一片承重区域。
-- **【弹性菌毯】**：柔软菌毯像鼓面回弹，人物能借反弹升高，却难以立即停在原位置。
-- **【液镜倒悬】**：水银般的镜面上下互换，追逐者只能沿一条保持实体的石线重新建立方向。
+### 3. Special Surfaces/Media (Slippery, Weightless, Underwater, etc.)
 
-### 4. 垂直落差/高空
+- **[Thin-Ice Echo]**: Fine cracks continually spread through the lake ice underfoot; the harder either side tries to exert force, the more likely they are to lose support first.
+- **[Waist-Deep Rapids]**: Muddy water continually pushes knees and legs; a fighter briefly steadies against an upstream rock before completing a block.
+- **[Weightless Cargo Hold]**: Floating crates slowly collide; characters must push objects away to gain momentum in the opposite direction.
+- **[Flooded Deep-Sea Glass Walkway]**: An underwater observation corridor suddenly floods; thick glass and buoyancy turn a rush into a slow, heavy approach.
+- **[Oil-Film Parking Lot]**: Rainbow oil film covers smooth concrete; both sides seek reliable footing on wheel stops and rough pillar bases.
+- **[Ball-Bearing Floor]**: Scattered steel balls cover a warehouse; a fighter can resist the opponent's push only by gripping a fixed shelf.
+- **[Feet Sinking in Clay]**: Wet red clay repeatedly grips shoe soles; a lightly equipped fugitive uses short steps and hip turns to evade an armored pursuer.
+- **[Quicksand Crust]**: Apparently level sand sinks patch by patch; a guard must probe a load-bearing area before each footfall.
+- **[Elastic Fungal Carpet]**: A soft fungal mat rebounds like a drumhead; characters can bounce higher but struggle to stop immediately at their original positions.
+- **[Inverted Liquid Mirror]**: A mercury-like mirror swaps up and down; pursuers can restore their orientation only along one stone line that remains solid.
 
-- **【双层挑檐】**：人物从高处撞穿瓦檐后落向下层斜屋面，必须用双靴承重而非悬空滑行。
-- **【断桥悬链】**：木板桥断成两半，只剩湿滑铁链连接，双方争夺能同时容纳一只脚的落点。
-- **【塔吊横臂】**：黄色钢梁在高空轻微摆动，追逐者通过钢索位置判断下一步能否转身。
-- **【螺旋外梯】**：锈铁楼梯盘绕水塔外壁，攻守双方隔着不同高度的平台互相截路。
-- **【瀑后栈道】**：狭窄木道贴着陡壁延伸，倾泻水帘让远近与脚下边缘时隐时现。
-- **【悬空书架】**：高大书架像踏步错层漂浮，翻落的硬皮书会暴露下一块将倾倒的平台。
-- **【火山吊篮】**：粗绳拉着金属篮跨越熔岩裂口，守卫必须保住绳索而无法随意挥砍。
-- **【热气球缆网】**：柔软缆绳把两只气囊连在一起，人物体重改变整张网的倾斜方向。
-- **【电梯井追落】**：空井里每隔数米伸出一道钢梁，下坠者必须先建立接触才能改向。
-- **【倒挂古塔】**：石塔从云层向下生长，修士绕塔檐翻转身体，在新的重力方向重新落脚。
+### 4. Vertical Drops/High Altitude
 
-## 三、 人物羁绊与动机
+- **[Two-Tier Eaves]**: After crashing through tiled eaves from above, a character falls toward a lower sloping roof and must bear weight through both boots rather than slide unsupported in midair.
+- **[Chains of a Broken Bridge]**: A plank bridge breaks in half, leaving only slippery wet iron chains; both sides contest a foothold with room for one foot at a time.
+- **[Tower-Crane Jib]**: A yellow steel beam sways slightly high above the ground; pursuers judge whether they can turn on the next step from the steel cable's position.
+- **[Spiral Exterior Stair]**: Rusty iron stairs coil around a water tower; attacker and defender intercept each other across platforms at different heights.
+- **[Walkway Behind a Waterfall]**: A narrow wooden path follows a sheer cliff; falling water intermittently obscures distance and the edge underfoot.
+- **[Floating Bookshelves]**: Tall shelves float at staggered levels like steps; tumbling hardback books expose the next platform about to tip.
+- **[Volcanic Gondola]**: Thick ropes pull a metal basket across a lava fissure; the guard must preserve the ropes and cannot slash freely.
+- **[Hot-Air-Balloon Rope Net]**: Flexible ropes join two gas envelopes; a character's weight changes the tilt of the entire net.
+- **[Falling Chase in an Elevator Shaft]**: Steel beams project into an empty shaft every few meters; a falling person must establish contact before changing direction.
+- **[Inverted Ancient Tower]**: A stone tower grows downward from the clouds; cultivators rotate around its eaves and land again under a new gravity direction.
 
-### 1. 宿敌/势均力敌
+## Relationship
 
-- **【同门拆招】**：旧武馆木地板上，两名同门都认得对方起手，只能靠节奏变化争取半步。
-- **【断剑旧约】**：石桥中央的两名剑客各持半截断剑，谁先跨过桥缝就必须兑现旧日约定。
-- **【镜像继承者】**：铜镜长廊里两名继承人使用相同招式，却因保护不同物件露出不同破绽。
-- **【冠军归零】**：空拳台拆掉所有计分灯，两位退役拳手只想确认当年未打完的一次交锋。
-- **【猎手互换】**：积雪林间两个熟悉彼此脚印的人互换猎物身份，谁先追得过急谁就失去掩护。
-- **【不肯拔刃】**：雨棚下的旧友都握着刀鞘，不愿先拔刀却不断被对方逼近胸前距离。
-- **【共享伤势】**：白石庭院中两人受伤会留下对应裂纹，胜负取决于谁更能控制卸力而非谁打得更重。
-- **【借招还债】**：废弃戏台上，一名武者逐招使出对手曾教他的动作，逼对方承认旧日恩情。
-- **【最后一局棋】**：石桌旁的宿敌每击落一枚棋子便失去一条退路，直到两人被迫近身。
-- **【只争一面旗】**：风沙城头两名骑手都不伤坐骑，只能用身位与缰绳路线争夺同一面旧旗。
+### 1. Archrivals/Evenly Matched
 
-### 2. 绝境/实力悬殊
+- **[Schoolmates Countering Familiar Moves]**: On an old martial-arts school's wooden floor, two fellow disciples recognize each other's opening moves and can gain half a step only by changing rhythm.
+- **[Old Pact of Broken Swords]**: At the center of a stone bridge, two swordsmen each hold half a broken sword; whoever crosses the bridge crack first must honor an old agreement.
+- **[Mirror Heirs]**: Two heirs use identical moves in a bronze-mirror corridor but expose different openings because they protect different objects.
+- **[Champions Back to Zero]**: All scoring lights have been removed from an empty ring; two retired boxers want only to settle an exchange left unfinished years earlier.
+- **[Hunters Exchange Roles]**: In a snowy forest, two people familiar with each other's footprints exchange hunter and prey roles; whoever pursues too hastily loses cover.
+- **[Refusing to Draw]**: Old friends beneath an awning both grip their scabbards, unwilling to draw first while continually being forced closer to chest range.
+- **[Shared Injuries]**: In a white-stone courtyard, wounds to either fighter leave corresponding cracks; victory depends on controlling force dissipation rather than striking harder.
+- **[Repaying a Debt with Borrowed Moves]**: On an abandoned stage, a fighter performs moves the opponent once taught them, one by one, forcing acknowledgment of an old kindness.
+- **[Last Chess Game]**: Archrivals beside a stone table lose a retreat route with every chess piece they knock down, until both are forced into close range.
+- **[One Flag Only]**: On a sandblown city wall, neither rider will injure a mount; they can contest the same old flag only through body position and rein routes.
 
-- **【伤腿守隙】**：地下车库里一人膝部受限，只能依靠承重柱把重甲来敌限制在正面。
-- **【空手挡甲】**：碎石坡上，轻装者无法击穿装甲，只能借斜坡迫使对手每次出拳后失衡。
-- **【最后一口气】**：进水的石室只剩门顶一小片空气，弱者必须边换气边寻找开启机关的机会。
-- **【术力将尽】**：焦黑祭台边，护盾每亮一次都会缩小，守卫需要在最后一次防御后立刻离开原位。
-- **【巨影追身】**：狭谷中的巨大兽影覆盖整条道路，逃亡者沿岩缝穿行以切断它的直线冲撞。
-- **【迟钝护甲】**：老旧宇航服的关节逐渐冻结，穿戴者靠舱壁反推而非奔跑避开追击。
-- **【徒手护灯】**：大雪石阶上，失去兵器的人一手护住残灯，只能用另一侧肩肘争取退路。
-- **【慢者破快】**：转动齿轮间，动作迟缓的守卫诱使高速对手进入必须等待齿槽的通道。
-- **【封声反击】**：空旷钟楼中，弱者一开口就会暴露位置，只能利用铜钟余振掩盖最后一次接近。
-- **【越打越重】**：铁砂场里，敌人能让对手兵器不断增重，守卫必须在握不住之前改变用力方式。
+### 2. Desperate Odds/Unequal Strength
 
-### 3. 护卫/死守
+- **[Guarding a Gap with an Injured Leg]**: In an underground garage, a person with a restricted knee can use only load-bearing pillars to keep a heavily armored enemy in front.
+- **[Bare Hands Against Armor]**: On a scree slope, a lightly equipped fighter cannot penetrate armor and must use the incline to unbalance the opponent after every punch.
+- **[Last Breath of Air]**: A flooding stone chamber has only a small air pocket above the door; the weaker fighter must alternate breathing with searching for a chance to activate the opening mechanism.
+- **[Magic Almost Spent]**: Beside a charred altar, a shield shrinks every time it lights; the guard must leave the position immediately after the final defense.
+- **[Giant Shadow in Pursuit]**: An enormous beast's shadow covers the entire road through a narrow valley; a fugitive threads rock cracks to interrupt its straight-line charge.
+- **[Sluggish Armor]**: The joints of an old spacesuit gradually freeze; its wearer pushes off cabin walls instead of running to evade pursuit.
+- **[Unarmed Guardian of a Lamp]**: On snow-covered stone steps, someone who has lost their weapon protects a dying lamp with one hand and uses only the opposite shoulder and elbow to secure a retreat.
+- **[Slowness Defeats Speed]**: Among rotating gears, a slow-moving guard lures a fast opponent into a passage that requires waiting for gaps between teeth.
+- **[Silent Counterattack]**: In an open bell tower, the weaker fighter would expose their position by speaking and can use only lingering bell vibrations to cover the final approach.
+- **[Heavier with Every Exchange]**: In an iron-sand yard, an enemy can continually increase the weight of an opponent's weapon; the guard must change how they apply force before losing their grip.
 
-- **【护人过门】**：石闸缓慢落下，守卫始终挡在抱箱同伴与长矛之间，目标只是让同伴先过门。
-- **【车厢护送】**：摇摆的货运车厢里，护卫必须守住固定担架，不能随意带着战斗位置后退。
-- **【背后是桥】**：朽木桥只够伤者慢行，留守者用短促架挡换取桥板不被敌人踩断的时间。
-- **【抱瓷脱身】**：雨巷里的人双手抱着易碎白瓷罐，只能靠肩背、转身与门框抵住追击。
-- **【守住呼吸机】**：临时诊所的塑料帘后仍有人治疗，护卫要把撞击与碎屑引向空房间。
-- **【不许触地】**：金属吊舱内的运输箱不能落地，双人护卫必须交替承重并挡开来敌。
-- **【护住证人】**：狭窄楼梯间里，护送者不求击倒追兵，只用楼层转角把证人与攻击线隔开。
-- **【最后一张帆】**：燃烧的木船上，守卫必须保住唯一未断的帆索，让船带伤离开包围。
-- **【给陌生人挡一击】**：崩塌车站里，逃亡者折返用行李箱挡开落梁，随后失去原本的撤离窗口。
-- **【守到门开】**：青铜门的机关需要持续压住踏板，守卫只能在一只脚不离位的条件下应敌。
+### 3. Protection/Holding the Line
 
-### 4. 猎杀/暗战
+- **[Protecting Someone Through a Gate]**: A stone gate slowly descends; a guard stays between a box-carrying companion and a spear, aiming only to let the companion pass first.
+- **[Freight-Car Escort]**: In a swaying freight car, an escort must protect a fixed stretcher and cannot freely retreat with the fight.
+- **[The Bridge Behind Them]**: A rotten wooden bridge permits only slow passage for the wounded; the rear guard buys time with short blocks so enemies cannot step through its planks.
+- **[Escaping with Porcelain]**: Someone in a rainy alley carries a fragile white porcelain jar in both hands and can resist pursuit only with shoulders, back, turns, and doorframes.
+- **[Protecting the Ventilator]**: Treatment continues behind a temporary clinic's plastic curtain; the guard must divert impacts and debris into an empty room.
+- **[It Must Not Touch the Ground]**: A transport case inside a metal gondola cannot be set down; two guards must alternate carrying its weight while blocking enemies.
+- **[Protecting a Witness]**: In a narrow stairwell, the escort seeks no knockout, using floor landings and corners only to separate the witness from attack lines.
+- **[The Last Sail]**: On a burning wooden ship, a guard must preserve the only unbroken sail rope so the damaged ship can escape encirclement.
+- **[Taking a Blow for a Stranger]**: In a collapsing station, a fugitive doubles back to block a falling beam with a suitcase, losing the original evacuation window afterward.
+- **[Hold Until the Door Opens]**: A bronze door's mechanism requires continuous pressure on a pedal; a guard must fight with one foot never leaving its position.
 
-- **【雨痕辨人】**：废楼外墙挂满水线，潜伏者通过某一片被身体挡住的雨判断来敌位置。
-- **【镜后追踪】**：夜间商场的反光玻璃连续映出同一只手套，逃亡者故意把追踪者引向错层扶梯。
-- **【双重诱饵】**：货柜码头两边各有一件会动的外套，真正携带目标的人藏在静止阴影里。
-- **【无声换班】**：蒸汽厂房里，潜入者每过一道铁门都必须让门轴声融进机器运转的节拍。
-- **【追到假伤】**：白色雪地上的拖痕引出受伤假象，猎手接近后才发现对方一直在侧面移动。
-- **【谁在照谁】**：手电光在地下走廊交错，两名追踪者都试图让对方先踩进唯一明亮的水洼。
-- **【目标会换脸】**：瓷砖车站里的人脸随广播闪变，追踪者只信鞋底留下的湿脚印。
-- **【带路的铃铛】**：竹廊里一串铜铃被故意触响，追兵需要判断声音来自来敌还是风牵动的细线。
-- **【围猎中的内应】**：芦苇浅滩上，包围队伍里有一人悄悄改变站位，为目标留下只能侧身通过的出口。
-- **【猎物设终点】**：老城区屋顶的逃亡者故意留下明显落瓦痕，把追兵引向一段无法急停的斜坡。
+### 4. Hunting/Covert Conflict
 
-## 四、 视觉奇观与核心动作
+- **[Reading Rain Traces]**: Water lines cover a ruined building's exterior wall; someone lying in wait locates the approaching enemy from a patch of rain blocked by a body.
+- **[Tracking Through Reflections]**: Reflective glass in a night-time mall repeatedly reveals the same glove; a fugitive deliberately leads the tracker toward split-level escalators.
+- **[Double Decoy]**: A moving coat appears on each side of a container dock; the person truly carrying the objective hides in a motionless shadow.
+- **[Silent Shift Change]**: In a steam-filled factory, an infiltrator must blend each iron door's hinge noise into the machines' rhythm.
+- **[Following a False Injury]**: Drag marks in white snow suggest an injury; only on approaching does the hunter discover the opponent has been moving along the side all along.
+- **[Who Is Illuminating Whom]**: Flashlight beams cross in an underground corridor; two trackers each try to make the other step into the only brightly lit puddle first.
+- **[A Face-Changing Target]**: Faces flicker and change with the announcements in a tiled station; the tracker trusts only wet footprints left by shoe soles.
+- **[A Bell Leading the Way]**: A string of bronze bells is deliberately sounded in a bamboo corridor; pursuers must judge whether the sound comes from an enemy or a thin thread tugged by wind.
+- **[An Insider in the Hunt]**: On a shallow reed flat, one member of an encircling team quietly changes position, leaving the target an exit passable only sideways.
+- **[Prey Chooses the Finish]**: A fugitive on old-town rooftops deliberately leaves obvious fallen-tile traces, leading pursuers toward a slope where an abrupt stop is impossible.
 
-### 1. 奇门兵器/非标武器
+## Action
 
-- **【折骨铁伞】**：青石巷里的黑铁伞先合拢架开来刃，再张开伞骨占住门前宽度。
-- **【双端软链】**：粗麻缠柄的铁链绕过石柱改变受力方向，持链者靠后撤而非凭空收紧。
-- **【算盘锁刃】**：木框铜珠算盘卡住短刃侧面，武者拨动珠列让兵器偏离胸线。
-- **【门板巨盾】**：拆下的实木门板顶住长廊攻势，持盾者必须用肩背和脚跟承担冲击。
-- **【磁环拳套】**：悬浮金属环沿前臂排开，只在真正格挡时合成一道短促承压面。
-- **【纸页薄刃】**：硬纸书页从书脊展开成扇面，交锋时纸层弯折而不是像钢板一样不动。
-- **【液晶花阵】**：数片透明晶瓣围绕空心悬浮，来刃压上最外侧花瓣后才触发定向反推。
-- **【长凳截路】**：酒馆木凳横放在两人之间，使用者通过移动凳腿位置阻断对方迈步。
-- **【绸带借梁】**：长绸绕住低梁形成临时支点，武者拉紧绸带后才改变腾空方向。
-- **【锅盖回弹】**：凹凸铝锅盖接住木棍后向内变形，持盖者借反弹旋身挤过厨房窄门。
+### 1. Unusual/Nonstandard Weapons
 
-### 2. 环境交互/场景破坏
+- **[Folding Iron Umbrella]**: In a bluestone alley, a black iron umbrella first closes to parry an incoming blade, then opens its ribs to occupy the width before a doorway.
+- **[Double-Ended Flexible Chain]**: An iron chain with hemp-wrapped grips passes around a stone pillar to redirect force; its user tightens it by retreating rather than inexplicably tightening it.
+- **[Abacus Blade Lock]**: A wooden-framed, brass-beaded abacus catches the side of a short blade; moving rows of beads deflects the weapon off the chest line.
+- **[Door-Panel Greatshield]**: A detached solid-wood door resists attacks down a corridor; its bearer must take the impact through shoulders, back, and heels.
+- **[Magnetic-Ring Gauntlets]**: Floating metal rings line a forearm, forming a brief load-bearing surface only at the moment of a real block.
+- **[Paper-Page Blades]**: Stiff book pages spread into a fan from the spine; their layers bend on contact rather than remaining rigid like steel plates.
+- **[Liquid-Crystal Flower Array]**: Several transparent crystal petals float around a hollow center; only an incoming blade pressing the outermost petal triggers a directional counter-push.
+- **[Bench Blocks the Route]**: A wooden tavern bench lies across the space between two people; its user repositions the bench legs to obstruct the opponent's next step.
+- **[Silk Ribbon Around a Beam]**: A long silk ribbon loops around a low beam as a temporary fulcrum; the fighter changes airborne direction only after pulling the ribbon taut.
+- **[Pot-Lid Rebound]**: A contoured aluminum pot lid deforms inward on catching a staff; its bearer uses the rebound to turn and squeeze through a narrow kitchen door.
 
-- **【瓦脊双痕】**：双靴落上斜瓦面后屈膝承重，沿后退方向压出两道连续破瓦痕。
-- **【柱裂传力】**：盾面受压后力量经身体传到石柱，裂缝先在支撑连接处出现再向上蔓延。
-- **【吊灯改线】**：绳索拉落金属吊灯封住直路，追兵被迫转向柱间重新进入攻击距离。
-- **【书墙塌口】**：厚重书架被侧推倾倒，纸页最后扬起，让刚出现的逃生缺口短暂被遮住。
-- **【水幕显形】**：一拳穿过垂落水帘，分开的水线先暴露拳路，再出现守方的侧身闪避。
-- **【木桥逐格断】**：重甲追兵的脚步依次压断桥板，轻装者必须利用尚未断裂的一侧换位。
-- **【玻璃留证】**：被架偏的兵器擦上橱窗，裂纹沿刃口实际掠过的位置扩散而非凭空全碎。
-- **【转盘借势】**：货仓转盘被冲撞带动，守方顺转盘移动到敌人侧面而不是无支撑瞬移。
-- **【沙墙落空】**：低位横扫扬起半人高沙幕，进攻者落空后从沉降沙粒里重新看见目标。
-- **【门闸夹杆】**：金属闸门先接上长杆并停在窄缝，守方才借追兵抽不回兵器的时间撤离。
+### 2. Environmental Interaction/Destruction
 
-### 3. 特殊身法/极限微操
+- **[Twin Tracks on a Tiled Ridge]**: Both boots land on a sloping tiled roof, knees bend to bear weight, and two continuous trails of broken tiles form in the retreat direction.
+- **[Force Through a Cracking Pillar]**: Pressure on a shield passes through the body into a stone pillar; cracks begin at the support connection before spreading upward.
+- **[Chandelier Reroutes Pursuit]**: A rope pulls down a metal chandelier to block the direct route; pursuers must turn between pillars before regaining attack distance.
+- **[Gap in a Collapsing Book Wall]**: A heavy shelf tips from a sideways push; pages rise last, briefly obscuring the newly opened escape gap.
+- **[Water Curtain Reveals the Strike]**: A fist passes through a falling curtain of water; parted water first exposes its path, followed by the defender's sideways dodge.
+- **[Wooden Bridge Breaks Board by Board]**: An armored pursuer's footsteps break bridge planks in sequence; a lightly equipped person must reposition along the still-intact side.
+- **[Glass Records Contact]**: A deflected weapon grazes a shop window; cracks spread along the blade's actual path rather than shattering the entire pane from nowhere.
+- **[Turntable Momentum]**: A collision sets a warehouse turntable moving; the defender rides it to the enemy's flank instead of teleporting without support.
+- **[Miss Behind a Sand Wall]**: A low sweep raises a waist-high sand curtain; after missing, the attacker reacquires the target through settling grains.
+- **[Gate Traps a Pole]**: A metal gate contacts a long pole and stops at a narrow gap; only then does the defender retreat while pursuers cannot withdraw the weapon.
 
-- **【半步让线】**：武者在石地上只退半步并转肩，让刃尖擦过原本胸口的位置。
-- **【借墙反踢】**：后脚先踏上砖墙形成支点，身体随反推转髋，以一记侧踢打断来敌追近。
-- **【贴柱换侧】**：守方绕圆柱低身换到另一侧，使追兵的长兵器先撞上柱面。
-- **【落地二次卸力】**：人物前脚接地后膝髋继续弯曲，再以后脚补撑阻止身体直接翻倒。
-- **【刀背托腕】**：短刀背面托起对方持械腕，另一只手只负责引导肘向而不凭空扭断关节。
-- **【呼吸间藏步】**：木地板上的脚步总在对手吐气时启动，用身体节奏差争取进入距离。
-- **【失重借箱】**：漂浮者双掌推开货箱，箱体向后移动的同时身体获得向前的反作用。
-- **【折纸躲身】**：纸片武者沿腰部折痕变薄，让宽刃从折起的轮廓外掠过后重新展开。
-- **【影面接力】**：异能者先让脚尖接住墙上的实体影面，再借新支撑完成空中折返。
-- **【倒转落脚】**：重力翻转前的一瞬，武者把脚掌提前贴近天花板，以屈膝接住新的下坠方向。
+### 3. Special Movement/Extreme Fine Control
 
-## 五、 反常规/混搭盲盒
+- **[Half-Step Off the Line]**: On stone ground, a fighter retreats only half a step and turns a shoulder, letting the blade tip pass through the chest's former position.
+- **[Wall-Assisted Counterkick]**: The rear foot first plants on a brick wall as support; the pushback turns the hips into a side kick that interrupts the enemy's approach.
+- **[Switching Sides Around a Pillar]**: The defender ducks around a round pillar to the opposite side, making the pursuer's long weapon hit the pillar first.
+- **[Two-Stage Landing Absorption]**: After the front foot meets the ground, knee and hip continue bending; the rear foot then adds support to prevent an immediate tumble.
+- **[Knife Spine Supports the Wrist]**: The back of a short knife lifts the opponent's weapon wrist; the other hand only guides the elbow rather than inexplicably snapping the joint.
+- **[Steps Hidden Between Breaths]**: Footsteps on a wooden floor always begin during the opponent's exhalation, using a difference in bodily rhythm to enter range.
+- **[Pushing a Crate in Weightlessness]**: A floating person pushes a cargo crate away with both palms; as the crate moves backward, the body gains a forward reaction.
+- **[Origami Evasion]**: A paper warrior folds thin along a waist crease, lets a broad blade pass outside the folded outline, then unfolds again.
+- **[Solid-Shadow Relay]**: A superpowered person first places the toes on a solid shadow surface on a wall, then uses the new support to reverse direction in midair.
+- **[Inverted Footfall]**: Just before gravity reverses, a fighter places the soles close to the ceiling in advance, bending the knees to receive the new fall direction.
 
-- **【脑洞1】**：凌晨的青铜便利店里，穿宇航服的剑仙以购物篮挡开一道来自收银机的飞剑。
-- **【脑洞2】**：暴雨中的月面站台上，退休拳王借一只会打喷嚏的铜鼎反推身体完成失重闪避。
-- **【脑洞3】**：唐代外形的磁悬浮电梯内，机械和尚用折叠木凳卡住正在长出竹枝的钢门。
-- **【脑洞4】**：正午的深海盐漠上，玻璃骨骼的外卖员骑着纸鱼从两座移动珊瑚间侧身穿过。
-- **【脑洞5】**：午夜的巨人茶杯内，两名皮影侦探沿漂浮茶叶追逐，必须在热水旋涡边完成换手。
-- **【脑洞6】**：清晨的赛博菜市场里，披龙鳞围裙的厨师用锅盖挡住无人机，让散落葱段显出气流。
-- **【脑洞7】**：夕照下的太空祠堂中，抱着瓷罐的机器人奶奶沿无重力族谱卷轴借力追身。
-- **【脑洞8】**：冬夜的塑料海戏台上，布偶将军甩出磁性长绸，把重甲骑士引向逐块下沉的积木。
-- **【脑洞9】**：午后的倒悬银行内，鱼尾律师踩着实体化印章，在翻转的金库门前截住追兵。
-- **【脑洞10】**：黄昏的火山图书馆里，雪人剑客以冰书架为支点转身，落脚后书架只剩一滩水。
-- **【脑洞11】**：暴雪中的霓虹寺院外，穿陶瓷甲的滑板快递员借钟声凝出的台阶避开低位兽影。
-- **【脑洞12】**：深夜的沙漠地铁站内，长着鹿角的修表匠踩住暂停的沙粒，在列车到来前架开短刃。
-- **【脑洞13】**：雨后的巨型算盘上，蜜蜂机甲驾驶员拨动山丘般的铜珠，让来敌失去原本的落点。
-- **【脑洞14】**：清晨的失重包子铺里，纸甲拳师推开蒸笼获得反向动量，沿一股实体蒸汽滑到门侧。
-- **【脑洞15】**：日落时的玻璃稻田中，石像歌手以可踩踏的尾音连接稻穗，避开地面连续破裂的刃线。
-- **【脑洞16】**：午夜的月球旧澡堂内，蘑菇侦探用吸水毛巾改变自身重量，从铜管缝里滚过追兵脚边。
-- **【脑洞17】**：正午的水下马戏团里，书页狮子翻开胸前纸层，把来袭长枪引入一扇折叠的纸门。
-- **【脑洞18】**：黎明的骨骼机场上，穿西装的石龟踩住移动肋骨，用旋转行李箱挡开机械鹰的扑击。
-- **【脑洞19】**：雷雨中的云端面馆内，面条剑客将长面绕住房梁，借拉力从瓷砖天花板翻回灶台。
-- **【脑洞20】**：暮色中的像素皇陵里，青铜巡警趁兵马俑加载迟滞，用实体路障架开一记断续长戟。
-- **【脑洞21】**：冰封的晨间赛车场上，骑木马的海盗会计用账本吸走摩擦力，让追兵连人带盾滑过出口。
-- **【脑洞22】**：盛夏的反重力祈雨坛上，透明水母武者踩住向上坠落的雨滴，在铜铃之间连续改变支撑。
-- **【脑洞23】**：午夜的未来婚礼电梯内，穿石甲的花童抱住会喷雷的花束，用狭窄门缝截断追击路线。
-- **【脑洞24】**：晨雾里的活体火车站中，木偶医生沿呼吸的地板屈膝卸力，把一只铜制听诊器绕上栏杆。
-- **【脑洞25】**：日落后的糖玻璃峡谷里，铁锈修女举着折扇承压，碎裂糖晶沿实际攻击方向依次剥落。
-- **【脑洞26】**：白昼的黑洞茶室内，长耳邮差把信封贴成临时地面，借一只正在坠落的茶壶反踢追兵。
-- **【脑洞27】**：寒夜的微缩便利店中，巨型螳螂调酒师用吸管挑起货架，逼迫两名铁皮骑士侧身换位。
-- **【脑洞28】**：破晓的古风服务器山门前，穿羽衣的维修机甲拔出散热片巨剑，先压弯纸盾再让冷却雾散开。
-- **【脑洞29】**：停电的海底篮球馆里，珊瑚拳王借弹性水面起跳，在悬浮铜钟下托住对手的持械腕。
-- **【脑洞30】**：雪夜的无限旋转门中，背着星球的老镖师只挪半步，让追击的液态龙撞进自己刚留下的倒影。
+## Blind Mix
 
-## 六、 情绪氛围
+- **[Wild Idea 1]**: In a bronze convenience store before dawn, a spacesuit-clad sword immortal uses a shopping basket to block a flying sword launched from the cash register.
+- **[Wild Idea 2]**: On a lunar platform in a downpour, a retired boxing champion uses a sneezing bronze ritual cauldron to push the body backward into a weightless dodge.
+- **[Wild Idea 3]**: Inside a maglev elevator with a Tang-dynasty exterior, a mechanical monk jams a steel door sprouting bamboo branches with a folding wooden stool.
+- **[Wild Idea 4]**: At noon on a deep-sea salt desert, a glass-skeleton delivery worker rides a paper fish and turns the body sideways to pass between two moving corals.
+- **[Wild Idea 5]**: Inside a giant's teacup at midnight, two shadow-puppet detectives chase along floating tea leaves, having to switch hands beside a hot-water vortex.
+- **[Wild Idea 6]**: At dawn in a cyberpunk produce market, a chef wearing a dragon-scale apron blocks a drone with a pot lid, letting scattered scallion pieces reveal the airflow.
+- **[Wild Idea 7]**: In a space ancestral hall at sunset, a robot grandmother carrying a porcelain jar pushes against weightless genealogy scrolls to pursue at close range.
+- **[Wild Idea 8]**: On a plastic-sea stage on a winter night, a puppet general whips out a magnetic silk ribbon, luring an armored knight onto building blocks sinking one by one.
+- **[Wild Idea 9]**: Inside an inverted bank in the afternoon, a fish-tailed lawyer steps on solidified seals to intercept pursuers before a rotating vault door.
+- **[Wild Idea 10]**: In a volcanic library at dusk, a snowman swordsman turns against an ice bookshelf as a fulcrum; after landing, only a puddle remains of the shelf.
+- **[Wild Idea 11]**: Outside a neon temple in a blizzard, a skateboard courier wearing ceramic armor uses steps condensed from bell sounds to evade a low beast shadow.
+- **[Wild Idea 12]**: Late at night in a desert subway station, an antlered watchmaker steps on paused sand grains and parries a short blade before the train arrives.
+- **[Wild Idea 13]**: On a giant abacus after rain, a bee-mech pilot moves hill-sized brass beads, depriving an approaching enemy of the intended landing point.
+- **[Wild Idea 14]**: At dawn in a weightless steamed-bun shop, a paper-armored boxer pushes away a steamer for opposite momentum and slides along solid steam to the doorway's side.
+- **[Wild Idea 15]**: In a glass rice field at sunset, a stone-statue singer links grain heads with a walkable trailing note, evading blade lines that repeatedly split the ground.
+- **[Wild Idea 16]**: At midnight in an old lunar bathhouse, a mushroom detective changes body weight with a water-absorbing towel and rolls through a gap in copper pipes beside pursuers' feet.
+- **[Wild Idea 17]**: At noon in an underwater circus, a book-page lion opens paper layers on its chest, guiding an incoming spear into a folding paper door.
+- **[Wild Idea 18]**: At dawn on a skeletal airport, a suited stone tortoise braces on a moving rib and uses a spinning suitcase to block a mechanical eagle's dive.
+- **[Wild Idea 19]**: In a cloud-top noodle shop during a thunderstorm, a noodle swordsman loops long noodles around a roof beam and uses their tension to flip from the tiled ceiling back to the stove.
+- **[Wild Idea 20]**: In a pixel imperial tomb at dusk, a bronze patrol officer exploits terracotta warriors' loading lag and parries an intermittent halberd strike with a solid road barrier.
+- **[Wild Idea 21]**: On a frozen morning racetrack, a pirate accountant riding a wooden horse absorbs friction with a ledger, sending a pursuer and shield sliding past the exit together.
+- **[Wild Idea 22]**: On an antigravity rain-prayer altar in midsummer, a transparent jellyfish warrior steps on upward-falling raindrops, repeatedly changing support between bronze bells.
+- **[Wild Idea 23]**: At midnight in a futuristic wedding elevator, a stone-armored young wedding attendant holds a bouquet that spits lightning and uses a narrow door gap to cut off pursuit.
+- **[Wild Idea 24]**: In a living train station in morning mist, a puppet doctor bends the knees to absorb force from the breathing floor and loops a bronze stethoscope around a railing.
+- **[Wild Idea 25]**: In a sugar-glass canyon after sunset, a rust nun bears pressure with a folding fan as fractured sugar crystals peel away sequentially along the actual attack direction.
+- **[Wild Idea 26]**: In a black-hole tearoom by day, a long-eared mail carrier lays envelopes into a temporary floor and uses a falling teapot to counterkick a pursuer.
+- **[Wild Idea 27]**: In a miniature convenience store on a cold night, a giant mantis bartender lifts a shelf with a straw, forcing two tin knights to switch positions sideways.
+- **[Wild Idea 28]**: Before a period-style server sect gate at daybreak, a feather-robed maintenance mech draws a cooling-fin greatsword, bends a paper shield first, then lets coolant mist disperse.
+- **[Wild Idea 29]**: In an underwater basketball court during a blackout, a coral boxing champion jumps from an elastic water surface and supports the opponent's weapon wrist beneath a floating bronze bell.
+- **[Wild Idea 30]**: Inside an infinite revolving door on a snowy night, an old armed escort carrying a planet shifts only half a step, letting a pursuing liquid dragon crash into the reflection just left behind.
 
-### 1. 压迫/紧绷
+## Mood
 
-- **【低顶审问】**：水泥低顶压在两人头上，桌灯只照见悬在桌边的一只手。
-- **【门后呼吸】**：狭门外脚步停下，门内的人把呼吸压成极浅的胸口起伏。
-- **【红线将断】**：悬桥红绳绷到发白，持刀者每踏一步都让木板下沉。
-- **【无声追灯】**：空仓库的灯从远到近熄灭，人影沿最后一格亮处后退。
-- **【背光来客】**：走廊尽头的来客站进强逆光，鞋尖停在房门投影边缘。
-- **【墙面逼近】**：石室两侧的粗糙墙面缓慢合拢，两人必须侧身交换位置。
-- **【杯口未落】**：会客厅里茶杯停在唇前，门外护卫的甲片声忽然断掉。
-- **【视线封锁】**：高架四个观察口依次亮灯，桥上的人把身体藏进立柱阴影。
-- **【雨声倒数】**：铁皮棚雨声持续加密，守门人把拇指扣上刀镡。
-- **【尘埃悬停】**：静止机舱里细尘停在面前，伸出的手只推进半寸。
+### 1. Oppressive/Tense
 
-### 2. 温暖/轻盈
+- **[Low-Ceiling Interrogation]**: A low concrete ceiling presses above two people; a desk lamp reveals only one hand hanging beside the table edge.
+- **[Breathing Behind the Door]**: Footsteps stop outside a narrow door; the person within reduces breathing to an extremely shallow rise and fall of the chest.
+- **[Red Cord About to Snap]**: A suspension bridge's red rope stretches pale; each step by the blade bearer sinks the planks.
+- **[Silent Pursuit of Light]**: Lights in an empty warehouse go out from far to near; a figure retreats along the last lit section.
+- **[Backlit Visitor]**: A visitor at a corridor's end steps into strong backlight, stopping the shoe tips at the edge of a doorway's shadow.
+- **[Closing Walls]**: Rough walls on both sides of a stone chamber slowly close in; two people must turn sideways to exchange positions.
+- **[Cup Still Raised]**: In a reception room, a teacup pauses before the lips; the sound of a guard's armor plates outside abruptly stops.
+- **[Sightline Lockdown]**: Four observation apertures along an elevated structure light up in sequence; a person on the bridge conceals the body in a pillar's shadow.
+- **[Rainfall Countdown]**: Rain strikes a tin roof more and more densely; the doorkeeper hooks a thumb onto the sword guard.
+- **[Suspended Dust]**: In a motionless cabin, fine dust hangs before a face; an extended hand advances only half a cun.
 
-- **【炉边留位】**：旧屋火炉旁多放一张木凳，来客脱下湿手套靠近火光。
-- **【风过纸窗】**：午后风鼓动纸窗，少年追着一片落纸绕开桌角。
-- **【热汤停战】**：街头两人隔着热汤碗收住争执，蒸汽挡住短暂相视。
-- **【伞下让步】**：窄巷两把旧伞互相偏开，肩头淋湿的人先笑着挪步。
-- **【白帆慢归】**：海堤暖光里白帆缓缓入港，等候者放松攥紧的衣角。
-- **【灯下补衣】**：木桌灯光照着旧袖破口，握针的人把兵器推远一点。
-- **【草坡失重感】**：柔软草坡上两人跃过浅沟，衣摆跟着轻风缓缓落下。
-- **【铃声清晨】**：山城石阶上的铃铛响起，背包客一边避让猫一边上坡。
-- **【微尘午睡】**：窗边浮尘穿过暖光，守候者放轻脚步替同伴合窗。
-- **【归途慢拍】**：晚霞下两人并肩走过积水，脚步先后落在同一道砖缝。
+### 2. Warm/Light
 
-### 3. 悲壮/诡异/荒凉
+- **[A Seat by the Stove]**: An extra wooden stool stands beside an old house's stove; a visitor removes wet gloves and approaches the firelight.
+- **[Wind Through Paper Windows]**: Afternoon wind billows a paper window; a youth chases a falling sheet of paper around a table corner.
+- **[Truce over Hot Soup]**: Two people in a street stop their argument across a bowl of hot soup; steam obscures a brief exchanged look.
+- **[Giving Way Under Umbrellas]**: Two old umbrellas tilt apart in a narrow alley; the person with a rain-soaked shoulder smiles and steps aside first.
+- **[White Sail Returning Slowly]**: A white sail slowly enters harbor in warm seawall light; someone waiting relaxes a tightly gripped hem.
+- **[Mending Clothes by Lamplight]**: Light on a wooden table illuminates a tear in an old sleeve; the person holding a needle pushes a weapon farther away.
+- **[Weightless Feeling on a Grassy Slope]**: Two people leap a shallow ditch on a soft grassy slope; their hems settle slowly with the light breeze.
+- **[Morning Bells]**: A bell rings on a mountain city's stone steps; a backpacker climbs while making room for a cat.
+- **[Dust-Mote Nap]**: Dust floats through warm window light; a watcher softens their footsteps and closes the window for a companion.
+- **[Homeward at a Slow Beat]**: Under sunset clouds, two people walk side by side through puddles, their steps landing one after another on the same brick seam.
 
-- **【旗倒人立】**：残城灰墙前战旗倒下，守城者伸手托住尚未落地的旗角。
-- **【空席余温】**：长桌尽头留下半杯热水，归来者把椅子轻轻推回原位。
-- **【白地黑影】**：盐碱荒原上黑衣人拖着长影，靴底敲碎薄盐壳。
-- **【钟响无人】**：雾中废镇的钟自行摇动，行人停步看向没有门的钟楼。
-- **【海底客厅】**：水下旧客厅的布帘缓慢翻卷，潜水者指尖停在家庭照片前。
-- **【倒行雨滴】**：旧电梯里雨滴沿金属门向上爬，乘客缓缓移开按键的手。
-- **【风卷空甲】**：沙地一副空甲被风推动，来者绕过头盔继续前行。
-- **【断桥送别】**：断桥两端的人隔雾抬手，木屑从最后一块悬板落下。
-- **【冷灶旧灰】**：空村灶台里残灰被鞋尖扬起，探路者蹲下摸过冰冷锅沿。
-- **【花开铁棺】**：废厂铁箱的缝隙长出白花，搬运者听见箱内一次轻响。
+### 3. Tragic and Heroic/Uncanny/Desolate
 
-
-## 七、 视觉风格
-
-### 1. 单色/无彩
-
-- **【红叶黑衣】**：暗红落叶覆盖林地，黑衣人物用灰亮刃口分出动作方向。
-- **【蓝夜白墙】**：深蓝夜色压住窄街，白墙反光照亮贴墙走过的人。
-- **【绿水铜桥】**：灰绿河水围住旧铜桥，桥上人的暖色手掌成为焦点。
-- **【白雪灰甲】**：大块雪白背景托住灰甲轮廓，脚下短影交代落点。
-- **【黑纸银线】**：黑纸般背景中银线勾出兵器，手腕转动时线宽随透视变化。
-- **【土黄残城】**：土黄砖墙与尘雾连成大面，深褐人物沿墙根移动。
-- **【暗紫盐湖】**：紫灰盐壳映着低亮天空，一道浅色脚印通向远处。
-- **【灰阶火点】**：黑白灰厂房里只有焊火带暖色，工人抬手挡住火星。
-- **【青瓷留痕】**：青白房间中青瓷碎片滑过地面，黑靴在碎片前停住。
-- **【铁锈暮色】**：锈红船壳铺满画面，蓝灰海水从底部窄缝露出。
-
-### 2. 写意/绘制
-
-- **【干笔山道】**：粗糙干笔画出石阶，人物每次落脚都压出深墨边缘。
-- **【湿墨雨城】**：淡墨屋檐向湿纸洇开，浓墨伞影沿清楚的街道前进。
-- **【剪纸追影】**：红纸人物折过关节穿窗，镂空花纹保持身体轮廓。
-- **【版画风雪】**：黑白木刻线条刻出横风，持杖者在密线中站稳。
-- **【粉彩黄昏】**：粉彩颗粒铺在旧巷墙面，人物衣摆擦过暖色光区。
-- **【铅笔试探】**：浅灰铅笔背景里手与兵器用重线描清，接触处只留一处涂黑。
-- **【油彩重步】**：厚油彩石路承接靴底，走动让颜料般的阴影连续拉长。
-- **【浮世浪纹】**：平面浪纹围住木船，人物重心随船板倾斜。
-- **【水彩薄雾】**：透明水彩山林里两人隔着淡雾停步，近处树皮保留清晰颗粒。
-- **【纸偶齿轮】**：纸板人物在黄铜齿轮间翻身，折痕与铆钉成为动作关节。
-
-### 3. 光学/数字
-
-- **【霓虹湿巷】**：有限青红招牌照进湿巷，鞋底踩开不规则倒影。
-- **【柔颗粒室内】**：暖灯下旧家具带细颗粒，皮肤高光缓慢过渡。
-- **【冷数码走廊】**：干净冷白走廊留清楚边缘，人物影子沿地砖连续移动。
-- **【体积光裂口】**：仓库屋顶裂口落下一束光，扬尘只在光柱中显形。
-- **【低多边荒岛】**：块面岩石围住浅滩，人物用清楚转折的姿态跨过水面。
-- **【像素大雨】**：像素街口雨线保持网格节奏，角色轮廓用明暗两级分离。
-- **【扫描线窗口】**：旧显示器边缘露出扫描线，画面中的人只在屏幕范围内失真。
-- **【热成像追踪】**：冷色楼道里热色手印逐个出现，追踪者把手掌贴近新痕迹。
-- **【玻璃折射】**：多层玻璃分出背景光带，前景人物的身体保持完整轮廓。
-- **【雾面金属】**：低反射金属机舱收敛眩光，手套抓住把手时留下浅痕。
+- **[Flag Falls, Defender Stands]**: Before the gray wall of a ruined city, a battle flag falls; its defender reaches to support a corner before it touches the ground.
+- **[Warmth at an Empty Seat]**: Half a cup of hot water remains at a long table's end; someone returning gently pushes the chair back into place.
+- **[Black Shadow on White Ground]**: A black-clad person drags a long shadow across a saline wasteland; boot soles crack its thin salt crust.
+- **[Bell Rings with No One There]**: A deserted town's bell swings by itself in fog; a passerby stops and looks toward a doorless bell tower.
+- **[Undersea Living Room]**: Cloth curtains slowly curl in an old underwater living room; a diver's fingertips pause before a family photograph.
+- **[Rain Running Backward]**: Raindrops crawl upward along an old elevator's metal door; a passenger slowly removes a hand from the button.
+- **[Wind Moves Empty Armor]**: Wind pushes a suit of empty armor across sand; a newcomer passes around the helmet and continues onward.
+- **[Farewell Across a Broken Bridge]**: People at either end of a broken bridge raise hands through fog; wood fragments fall from the last suspended plank.
+- **[Old Ash in a Cold Stove]**: A shoe tip stirs ash inside an empty village's stove; a scout crouches and touches the cold pot rim.
+- **[Flowers on an Iron Coffin]**: White flowers grow through cracks in an iron box in a derelict factory; a carrier hears one soft sound inside.
 
 
-## 八、 角色原型
+## Visual
 
-### 1. 游离/反抗
+### 1. Monochrome/Achromatic
 
-- **【孤狼领路】**：风雪山道上独行者走在队伍最前，回头只看同伴是否跟上。
-- **【逃兵回身】**：废桥上的逃兵听到后方呼救，停步把背包放下。
-- **【叛徒守约】**：破庙里被追捕的人把信物推过桌面，自己退到门边。
-- **【边城游医】**：沙地诊棚中医者卷起袖口，用身体挡住闯入者。
-- **【无名替身】**：后台镜前的替身摘下徽章，转身替受伤主角走向门外。
-- **【弃械拳手】**：拳馆旧垫上拳手扔开护具，以空手隔开争斗双方。
-- **【失明引者】**：石廊中的引路人用杖尖试地，另一只手让身后人停住。
-- **【漂泊修匠】**：港口修匠握着带缺口的工具，护住刚修好的小艇。
-- **【反旗传令】**：城墙传令者将旧旗卷进怀里，越过裂缝奔向另一道门。
-- **【离群守夜】**：营地外围的人独坐火光之外，听到异响便先站起。
+- **[Red Leaves, Black Clothes]**: Dark red leaves cover a forest floor; a black-clad figure makes the action direction readable with a gray-bright blade edge.
+- **[Blue Night, White Walls]**: Deep blue night weighs over a narrow street; reflected light from white walls illuminates a person walking close beside them.
+- **[Green Water, Bronze Bridge]**: Gray-green river water surrounds an old bronze bridge; the warm-colored palms of someone on it become the focus.
+- **[White Snow, Gray Armor]**: Broad snow-white areas support a gray-armored silhouette; short shadows underfoot establish landing points.
+- **[Black Paper, Silver Lines]**: Silver lines outline weapons against a black-paper-like background; line width changes with perspective as wrists turn.
+- **[Ochre Ruined City]**: Ochre brick walls and dusty mist form broad fields; a dark-brown figure moves along the wall base.
+- **[Dark Purple Salt Lake]**: Purple-gray salt crust reflects a dim sky; a pale trail of footprints leads into the distance.
+- **[Grayscale Sparks]**: In a black-white-gray factory, only welding sparks carry warmth; a worker raises a hand to block them.
+- **[Celadon Traces]**: Celadon fragments slide across a blue-white room's floor; black boots stop before them.
+- **[Rust-Colored Dusk]**: A rust-red hull fills the frame; blue-gray seawater appears through a narrow gap along the bottom.
 
-### 2. 守护/担当
+### 2. Expressive/Painted
 
-- **【守门长姐】**：木门前的姐姐把弟妹推到身后，用肩顶住门板。
-- **【迟归老师】**：空教室里老师合上卷册，站在破窗前等最后一名学生。
-- **【年老盾手】**：石阶上的老兵把盾沿抵住地面，让后方人先通过。
-- **【沉默领航】**：暴风机舱里领航员握稳控制杆，把备用面罩递给同伴。
-- **【接班学徒】**：熄火工坊中的学徒重新点灯，将师傅的锤子挂回手边。
-- **【负伤队长】**：泥地队长调整绑带后先检查队员站位，再抬手示意前进。
-- **【人质护卫】**：狭走廊里护卫侧身让人质贴墙，自己站进来袭者视线。
-- **【雨棚厨师】**：街边厨师放下铁勺，用厚木案挡住冲进摊位的人。
-- **【失约归人】**：旧码头归来者接过无人愿抬的担架，沿湿木板缓步前行。
-- **【最后灯工】**：断电街道上灯工攀上铁梯，把最后一盏灯转向避难门口。
+- **[Dry-Brush Mountain Path]**: Rough dry brush defines stone steps; each footfall presses a dark ink edge into the surface.
+- **[Wet-Ink Rain City]**: Pale ink eaves bleed into wet paper; dense ink umbrella silhouettes advance along a clearly defined street.
+- **[Paper-Cut Shadow Chase]**: Red paper figures fold their joints to pass through a window; openwork patterns preserve the body contours.
+- **[Woodcut Wind and Snow]**: Black-and-white woodcut lines carve a crosswind; a staff bearer holds firm amid the dense lines.
+- **[Pastel Dusk]**: Pastel grain covers an old alley's walls; a figure's hem brushes through a warm light area.
+- **[Pencil Probing]**: In a pale gray pencil background, strong lines clearly define hands and weapons; only one contact point is shaded black.
+- **[Heavy Steps in Oil Paint]**: A thickly painted stone path receives boot soles; movement continually lengthens paint-like shadows.
+- **[Ukiyo-e Wave Patterns]**: Flat wave patterns surround a wooden boat; a figure's center of gravity follows the deck's tilt.
+- **[Watercolor Mist]**: Two people stop across pale mist in a transparent watercolor mountain forest; nearby bark retains clear grain.
+- **[Paper-Puppet Gears]**: Cardboard figures turn among brass gears; folds and rivets become movement joints.
 
-### 3. 伪装/矛盾
+### 3. Optical/Digital
 
-- **【背叛者递水】**：审讯室里背叛者递来纸杯，手指避开对方仍带血的袖口。
-- **【笑面税官】**：账房里官员笑着合上账册，脚尖却挡住通往后门的路。
-- **【胆怯英雄】**：领奖台后的英雄反复摸索护腕，听到呼救后还是冲下台阶。
-- **【温柔审判者】**：白石厅中审判者替来客摆正椅子，再将证物放到灯下。
-- **【装傻谋士】**：茶铺谋士只低头剥果壳，听到关键名字时手停了一瞬。
-- **【失忆见证人】**：旧车站的见证人认不出照片，却绕开记忆中的坏台阶。
-- **【敌方救援者】**：废墟里敌军摘下手套试同伴呼吸，再把武器踢远。
-- **【完美替罪人】**：空房里的年轻人整平衣领，主动把手腕放到桌边。
-- **【疯癫看守】**：铁门看守对着空椅闲谈，危险靠近时突然准确扣住门栓。
-- **【怀疑的智者】**：藏书室智者翻回自己批注的一页，把旧结论划掉后望向窗外。
+- **[Neon Wet Alley]**: A limited set of cyan and red signs lights a wet alley; shoe soles break apart irregular reflections.
+- **[Soft-Grain Interior]**: Old furniture carries fine grain beneath warm lights; skin highlights transition gradually.
+- **[Cool Digital Corridor]**: A clean, cool-white corridor retains crisp edges; a figure's shadow moves continuously along floor tiles.
+- **[Gap of Volumetric Light]**: A roof opening sends one light shaft into a warehouse; raised dust appears only inside the beam.
+- **[Low-Poly Desert Island]**: Faceted rocks surround shallows; figures cross the water in clearly articulated poses.
+- **[Pixel Downpour]**: Rain lines at a pixel street corner retain grid rhythm; character silhouettes separate through two value levels.
+- **[Scanline Window]**: Scanlines show at an old monitor's edges; the person in the image distorts only within the screen's bounds.
+- **[Thermal-Imaging Tracking]**: Warm-colored handprints appear one by one in a cool-colored corridor; a tracker brings a palm toward a fresh mark.
+- **[Glass Refraction]**: Multiple glass layers separate background light bands; a foreground person's body retains a complete contour.
+- **[Matte Metal]**: Low-reflectivity metal in a cabin suppresses glare; a glove leaves a faint mark when gripping a handle.
+
+
+## Archetype
+
+### 1. Outsiders/Rebels
+
+- **[Lone Wolf Leads the Way]**: On a mountain path in wind and snow, a loner walks at the front of a group, looking back only to check whether companions keep up.
+- **[Deserter Turns Back]**: A deserter on a ruined bridge hears a cry for help behind, stops, and sets down the backpack.
+- **[Traitor Keeps a Promise]**: In a ruined temple, a hunted person pushes a token across a table and retreats to the doorway.
+- **[Border-Town Traveling Healer]**: In a clinic tent on sand, a healer rolls up the sleeves and blocks an intruder with the body.
+- **[Nameless Stand-In]**: A stand-in at a backstage mirror removes a badge, turns, and walks outside in place of the injured lead.
+- **[Boxer Lays Down Equipment]**: On an old gym mat, a boxer throws aside protective gear and separates two fighting sides with bare hands.
+- **[Blind Guide]**: In a stone corridor, a guide tests the ground with a cane tip while the other hand signals those behind to stop.
+- **[Wandering Repairer]**: A harbor repairer holds a chipped tool and protects a newly repaired small boat.
+- **[Rebel Messenger]**: A messenger on a city wall wraps an old flag against the chest and runs across a crack toward another gate.
+- **[Solitary Night Watcher]**: Outside a camp, someone sits alone beyond the firelight and rises first upon hearing an unusual sound.
+
+### 2. Guardians/Responsibility
+
+- **[Elder Sister at the Door]**: Before a wooden door, an elder sister pushes younger siblings behind her and braces the panel with her shoulder.
+- **[Teacher Returning Late]**: In an empty classroom, a teacher closes a bound volume and waits before a broken window for the last student.
+- **[Aging Shield Bearer]**: On stone steps, an old soldier plants a shield rim against the ground and lets those behind pass first.
+- **[Silent Navigator]**: In a storm-battered cockpit, a navigator steadies the control stick and hands a spare mask to a companion.
+- **[Apprentice Takes Over]**: In a workshop where the fire has gone out, an apprentice relights a lamp and hangs the master's hammer back within reach.
+- **[Wounded Captain]**: A captain in mud adjusts a bandage, checks the team's positions first, then raises a hand to signal advance.
+- **[Hostage Escort]**: In a narrow corridor, an escort turns sideways to let a hostage hug the wall and steps into an attacker's sightline.
+- **[Awning Cook]**: A street cook sets down an iron ladle and blocks someone rushing into the stall with a thick wooden worktable.
+- **[Returner Who Broke a Promise]**: At an old dock, a returner takes a stretcher no one else will lift and moves slowly along wet boards.
+- **[Last Lamplighter]**: On a blacked-out street, a lamplighter climbs an iron ladder and turns the last lamp toward a shelter entrance.
+
+### 3. Disguise/Contradiction
+
+- **[Betrayer Offers Water]**: In an interrogation room, a betrayer offers a paper cup, fingers avoiding the other person's still-bloody sleeve.
+- **[Smiling Tax Official]**: In an accounting room, an official smiles while closing a ledger, yet the shoe tip blocks the route to the back door.
+- **[Timid Hero]**: Behind an awards platform, a hero repeatedly fumbles with a bracer but still rushes down the steps upon hearing a cry for help.
+- **[Gentle Judge]**: In a white-stone hall, a judge straightens a visitor's chair before placing evidence under the light.
+- **[Strategist Feigns Foolishness]**: A strategist in a teashop looks down and shells fruit; hearing a key name stills the hands for a moment.
+- **[Amnesiac Witness]**: A witness at an old station fails to recognize a photograph but avoids a broken step retained in memory.
+- **[Enemy Rescuer]**: In rubble, an enemy soldier removes a glove to check a companion's breathing, then kicks a weapon farther away.
+- **[Perfect Scapegoat]**: In an empty room, a young person straightens the collar and voluntarily places wrists at the table edge.
+- **[Deranged Guard]**: An iron-door guard chats with an empty chair, then suddenly latches the bolt precisely as danger approaches.
+- **[Doubting Sage]**: In a library, a sage turns back to a self-annotated page, crosses out an old conclusion, and looks toward the window.
